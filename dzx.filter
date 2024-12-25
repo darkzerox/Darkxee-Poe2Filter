@@ -1,37 +1,36 @@
-
 Show
-Rarity Unique
-SetTextColor 175 96 37 255
-SetBorderColor 175 96 37 255
-SetBackgroundColor 53 13 13 255
-PlayAlertSound 3 200
-PlayEffect Brown
-MinimapIcon 1 Brown Star
-SetFontSize 40
-CustomAlertSound "soundeffect/level-up.mp3" 100
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  CustomAlertSound "soundeffect/unique.mp3" 100
 
 ## Divine Orb Style
 Show
-Class "Currency"
-BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayEffect Red
-MinimapIcon 0 Red Star
-PlayAlertSound 3 300
-CustomAlertSound "soundeffect/experimental.mp3" 200
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  PlayAlertSound 3 300
+  CustomAlertSound "soundeffect/special_currency.mp3" 200
 
 Show
-BaseType == "Distilled Isolation" "Distilled Suffering"
-SetFontSize 45
-SetTextColor 255 0 0 255
-SetBorderColor 255 0 0 255
-SetBackgroundColor 255 255 255 255
-PlayAlertSound 6 300
-PlayEffect Red
-MinimapIcon 0 Red Star
+  BaseType == "Distilled Isolation" "Distilled Suffering"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
 
 
 #--------------------------
@@ -39,26 +38,26 @@ MinimapIcon 0 Red Star
 #--------------------------
 
 Show
-AreaLevel >= 70
-StackSize >= 1000
-BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+  AreaLevel >= 70
+  StackSize >= 1000
+  BaseType == "Gold"
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  PlayEffect Orange Temp
 
 Show
-AreaLevel < 70
-StackSize >= 500
-BaseType == "Gold"
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayEffect Orange Temp
+  AreaLevel < 70
+  StackSize >= 500
+  BaseType == "Gold"
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  PlayEffect Orange Temp
 
 Show
-BaseType == "Gold"
-SetTextColor 180 180 180
-SetBorderColor 0 0 0 255
-SetBackgroundColor 0 0 0 180
+  BaseType == "Gold"
+  SetTextColor 180 180 180
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 0 0 0 180
 
 #--------------------------
 # Uncut Gems
@@ -66,59 +65,59 @@ SetBackgroundColor 0 0 0 180
 
 # Always make Spirit gems pop
 Show
-BaseType "Uncut Spirit Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+  BaseType "Uncut Spirit Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
 
 # Make support gems pop during campaign
 Show
-AreaLevel < 68
-BaseType "Uncut Support Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+  AreaLevel < 68
+  BaseType "Uncut Support Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
 
 # Make skill gems pop during campaign
 Show
-AreaLevel < 65
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+  AreaLevel < 65
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
 
 # Gems up to level 18 in maps don't get a special highlight
 Show
-ItemLevel <= 18
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  SetFontSize 35
 
 Show
-BaseType "Uncut Support Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-SetFontSize 35
+  BaseType "Uncut Support Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  SetFontSize 35
 
 # Level 19 gems and up in maps get a special highlight
 Show
-BaseType "Uncut Skill Gem"
-SetTextColor 20 240 240
-SetBorderColor 20 240 240
-PlayAlertSound 2 300
-PlayEffect Cyan
-MinimapIcon 1 Cyan Triangle
-SetFontSize 40
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -126,68 +125,68 @@ SetFontSize 40
 
 # Special A Tier - League specific socketables and jewels
 Show 
-BaseType "Soul Core" "Timeless"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 45
-MinimapIcon 0 Cyan Diamond
-PlayAlertSound 2 300
-PlayEffect Cyan
+  BaseType "Soul Core" "Timeless"
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
 
 # Special Highlight - Breach Rings
 Show 
-Rarity Rare
-BaseType == "Breach Ring"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayEffect Cyan
-PlayAlertSound 2 300
+  Rarity Rare
+  BaseType == "Breach Ring"
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 300
 
 Show 
-Rarity <= Magic
-BaseType == "Breach Ring"
-SetTextColor 0 240 190
-SetFontSize 35
-MinimapIcon 2 Cyan Diamond
-PlayEffect Cyan Temp
+  Rarity <= Magic
+  BaseType == "Breach Ring"
+  SetTextColor 0 240 190
+  SetFontSize 35
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
 
 # Special A Tier - Sanctum Relics
 Show 
-Class "Relic"
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayAlertSound 2 300
-PlayEffect Cyan
+  Class "Relic"
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
 
 # Special A Tier - Rare Jewels
 Show
-Class "Jewel"
-Rarity <= Rare
-SetTextColor 0 240 190
-SetBorderColor 0 240 190
-SetFontSize 40
-MinimapIcon 1 Cyan Diamond
-PlayEffect Cyan
-PlayAlertSound 2 300
+  Class "Jewel"
+  Rarity <= Rare
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 300
 
 # Special B Tier - Any Runes and Charms
 Show 
-BaseType " Rune" " Charm"
-SetTextColor 0 240 190
-PlayEffect Cyan Temp
+  BaseType " Rune" " Charm"
+  SetTextColor 0 240 190
+  PlayEffect Cyan Temp
 
 #--------------------------
 # Scroll of Wisdom High Level Hiding
 #--------------------------
 
 Hide
-BaseType "Scroll of Wisdom"
-AreaLevel >= 65
-Rarity <= Magic
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
 
 #--------------------------
 # Socketables and Special Character Equipment
@@ -195,114 +194,114 @@ Rarity <= Magic
 
 # Currency Tier A: Gemcutter, Annullment
 Show
-Class "Currency"
-BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
-SetTextColor 255 255 255 255
-SetBorderColor 255 255 255 255
-SetBackgroundColor 240 90 35
-PlayAlertSound 1 300
-PlayEffect White
-MinimapIcon 1 Yellow Circle
-SetFontSize 45
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  SetTextColor 255 255 255 255
+  SetBorderColor 255 255 255 255
+  SetBackgroundColor 240 90 35
+  PlayAlertSound 1 300
+  PlayEffect White
+  MinimapIcon 1 Yellow Circle
+  SetFontSize 45
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 # Currency Tier B: Exalt
 Show
-Class "Currency"
-BaseType "Exotic Coinage" "Exalted Orb"
-SetTextColor 255 207 92
-SetBorderColor 255 207 92
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect Yellow
-MinimapIcon 1 Yellow Circle
-SetFontSize 45
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Exotic Coinage" "Exalted Orb"
+  SetTextColor 255 207 92
+  SetBorderColor 255 207 92
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  SetFontSize 45
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 Show
-BaseType "Gold Key" "Silver Key" "Bronze Key"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
-CustomAlertSound "soundeffect/coin.mp3" 100
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 # Currency Tier B: Regal, Vaal ...
 Show
-Class "Currency"
-BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 Show
-Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 100
-PlayEffect White Temp
-MinimapIcon 1 White Kite
-SetFontSize 35
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 100
+  PlayEffect White Temp
+  MinimapIcon 1 White Kite
+  SetFontSize 35
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 Show
-Class "Omen"
-BaseType "Omen of"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Omen"
+  BaseType "Omen of"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 Show
-Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 2 White Circle
-SetFontSize 40
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Distilled" "Catalyst" "Essence of"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
-AreaLevel >= 70
-Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
-SetTextColor 220 190 132
-SetFontSize 35
-CustomAlertSound "soundeffect/coin.mp3" 100
+  AreaLevel >= 70
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  SetTextColor 220 190 132
+  SetFontSize 35
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
-Class "Currency"
-BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
-SetTextColor 220 190 132
-MinimapIcon 2 Grey Circle
-SetFontSize 35
-CustomAlertSound "soundeffect/coin.mp3" 100
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  SetTextColor 220 190 132
+  MinimapIcon 2 Grey Circle
+  SetFontSize 35
+  CustomAlertSound "soundeffect/currency.mp3" 100
 
 
 Show
@@ -312,141 +311,141 @@ BaseType "Scroll of Wisdom" "Shard"
 
 # Unknown currency
 Show
-Class "Currency"
-SetTextColor 255 207 132
-SetBorderColor 255 207 132
-SetBackgroundColor 76 51 12
-#PlayAlertSound 2 300
-PlayEffect Pink
-MinimapIcon 1 White Circle
+  Class "Currency"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  #PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
 
 
 Show
-Class "Pinnacle Keys"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect White
-MinimapIcon 1 Yellow Square
-SetFontSize 40
+  Class "Pinnacle Keys"
+  SetTextColor 255 207 255
+  SetBorderColor 255 207 255
+  SetBackgroundColor 65 20 80
+  PlayAlertSound 2 300
+  PlayEffect White
+  MinimapIcon 1 Yellow Square
+  SetFontSize 40
 
 Show
-BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect Purple
-MinimapIcon 1 Purple Square
-SetFontSize 45
+  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 255 207 255
+  SetBorderColor 255 207 255
+  SetBackgroundColor 65 20 80
+  PlayAlertSound 2 300
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 45
 
 Show
-Class "Tablet"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect Purple
-MinimapIcon 1 Purple Square
-SetFontSize 45
+  Class "Tablet"
+  SetTextColor 255 207 255
+  SetBorderColor 255 207 255
+  SetBackgroundColor 65 20 80
+  PlayAlertSound 2 300
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 45
 
 Show
-BaseType "Barya" "Ultimatum"
-SetTextColor 255 207 255
-SetBorderColor 255 207 255
-SetBackgroundColor 65 20 80
-PlayAlertSound 2 300
-PlayEffect Grey
-MinimapIcon 1 Grey Square
-SetFontSize 40
+  BaseType "Barya" "Ultimatum"
+  SetTextColor 255 207 255
+  SetBorderColor 255 207 255
+  SetBackgroundColor 65 20 80
+  PlayAlertSound 2 300
+  PlayEffect Grey
+  MinimapIcon 1 Grey Square
+  SetFontSize 40
 
 #--------------------------
 # Waystones
 #--------------------------
 
 Show
-WaystoneTier < 10
-AreaLevel > 77
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-SetFontSize 35
+  WaystoneTier < 10
+  AreaLevel > 77
+  BaseType "Waystone"
+  Rarity <= Rare
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  SetFontSize 35
 
 Show
-WaystoneTier < 5
-AreaLevel > 74
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-SetFontSize 35
+  WaystoneTier < 5
+  AreaLevel > 74
+  BaseType "Waystone"
+  Rarity <= Rare
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  SetFontSize 35
 
 Show
-BaseType "Waystone"
-Rarity <= Rare
-SetTextColor 255 255 255
-SetBorderColor 255 255 255
-PlayAlertSound 4 300
-PlayEffect White
-MinimapIcon 1 White Square
-SetFontSize 40
+  BaseType "Waystone"
+  Rarity <= Rare
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  PlayAlertSound 4 300
+  PlayEffect White
+  MinimapIcon 1 White Square
+  SetFontSize 40
 
 #--------------------------
 # Value Rares
 #--------------------------
 
 Show
-Class "Rings" "Amulets" "Belts"
-Rarity Rare
-SetFontSize 40
-SetTextColor 233 206 75
-SetBorderColor 233 206 75
-PlayEffect Yellow
-MinimapIcon 1 Yellow Diamond
+  Class "Rings" "Amulets" "Belts"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
 
 #--------------------------
 # Rings, Amulets, Belts
 #--------------------------
 
 Show
-Rarity Normal
-Class "Rings" "Amulets" "Belts"
-SetFontSize 40
+  Rarity Normal
+  Class "Rings" "Amulets" "Belts"
+  SetFontSize 40
 
 Show
-Class "Rings" "Amulets" "Belts"
-Rarity Magic
-SetFontSize 40
+  Class "Rings" "Amulets" "Belts"
+  Rarity Magic
+  SetFontSize 40
 
 #--------------------------
 # Salvagable Items
 #--------------------------
 
 Show
-Sockets > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+  Sockets > 0
+  Rarity Normal
+  SetBorderColor 200 200 200
+  SetFontSize 35
 
 Show
-Quality > 0
-Rarity Normal
-SetBorderColor 200 200 200
-SetFontSize 35
+  Quality > 0
+  Rarity Normal
+  SetBorderColor 200 200 200
+  SetFontSize 35
 
 Show
-Sockets > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+  Sockets > 0
+  Rarity Magic
+  SetBorderColor 0 0 200
+  SetFontSize 35
 
 Show
-Quality > 0
-Rarity Magic
-SetBorderColor 0 0 200
-SetFontSize 35
+  Quality > 0
+  Rarity Magic
+  SetBorderColor 0 0 200
+  SetFontSize 35
 
 #--------------------------
 # Random Rares
@@ -461,55 +460,89 @@ SetFontSize 35
 # SetFontSize 35
 
 Show
-Rarity Rare
-SetFontSize 35
+  Rarity Rare
+  SetFontSize 35
 
 #--------------------------
 # Hide Rules (only high level), super light edition
 #--------------------------
 
 Hide
-Quality = 0
-AreaLevel > 70
-Rarity <= Magic
-Class "Flasks"
+  Quality = 0
+  AreaLevel > 70
+  Rarity <= Magic
+  Class "Flasks"
 
 Hide
-AreaLevel >= 78
-Rarity <= Magic
-DropLevel < 65
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  AreaLevel >= 78
+  Rarity <= Magic
+  DropLevel < 65
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 75
-Rarity <= Magic
-DropLevel < 64
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  AreaLevel > 75
+  Rarity <= Magic
+  DropLevel < 64
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 73
-Rarity <= Magic
-DropLevel < 60
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  AreaLevel > 73
+  Rarity <= Magic
+  DropLevel < 60
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 Hide
-AreaLevel > 72
-Rarity <= Magic
-DropLevel < 55
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  AreaLevel > 72
+  Rarity <= Magic
+  DropLevel < 55
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
 
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
-AreaLevel > 74
-Rarity <= Magic
-DropLevel < 50
-Class "Quivers"
+  AreaLevel > 74
+  Rarity <= Magic
+  DropLevel < 50
+  Class "Quivers"
 
 Hide
-AreaLevel > 70
-Rarity <= Normal
-DropLevel < 50
-Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  AreaLevel > 70
+  Rarity <= Normal
+  DropLevel < 50
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+
+
+
+#######################################################
+##### Hide stuff
+#######################################################
+
+Hide
+  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Rarity <= Normal
+
+Hide
+  Class "Amulet" "Ring" "Belt"
+  Rarity <= Normal
+
+Hide
+  Class "Stackable Currency"
+  BaseType == "Scroll of Wisdom"
+
+Hide
+  Class "Flask"
+  Rarity <= Magic
+
+Hide
+  Class "Stackable Currency"
+  BaseType == "Gold"
+  StackSize < 50
+
+Hide
+  Class "Charms"
+  Rarity <= Magic
+  Quality == 0
+
 
 #--------------------------
 # OPTIONAL RULES
@@ -520,9 +553,9 @@ Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One 
 # REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
 
 Hide
-Rarity <= Magic
-Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-AreaLevel >= 65
+  Rarity <= Magic
+  Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+  AreaLevel >= 65
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
 
@@ -533,6 +566,8 @@ AreaLevel >= 65
 # DropLevel <= 50
 # SetBackgroundColor 0 0 0 125
 
+
+
 #--------------------------
 # Meta
 #--------------------------
@@ -542,4 +577,4 @@ AreaLevel >= 65
 # Get a new filter from www.filterblade.xyz
 
 Show
-BaseType == "Expert Laced Boots"
+  BaseType == "Expert Laced Boots"
