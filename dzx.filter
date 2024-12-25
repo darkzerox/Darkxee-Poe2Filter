@@ -3,11 +3,12 @@ Show
   SetTextColor 175 96 37 255
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
-  PlayAlertSound 3 200
   PlayEffect Brown
   MinimapIcon 1 Brown Star
   SetFontSize 40
   CustomAlertSound "soundeffect/unique.mp3" 100
+  PlayAlertSound 3 0
+  
 
 ## Divine Orb Style
 Show
@@ -19,7 +20,7 @@ Show
   SetBackgroundColor 255 255 255 255
   PlayEffect Red
   MinimapIcon 0 Red Star
-  PlayAlertSound 3 300
+  PlayAlertSound 3 0
   CustomAlertSound "soundeffect/special_currency.mp3" 200
 
 Show
@@ -199,11 +200,12 @@ Show
   SetTextColor 255 255 255 255
   SetBorderColor 255 255 255 255
   SetBackgroundColor 240 90 35
-  PlayAlertSound 1 300
   PlayEffect White
   MinimapIcon 1 Yellow Circle
   SetFontSize 45
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 1 0
+  
 
 # Currency Tier B: Exalt
 Show
@@ -212,11 +214,12 @@ Show
   SetTextColor 255 207 92
   SetBorderColor 255 207 92
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
   PlayEffect Yellow
   MinimapIcon 1 Yellow Circle
   SetFontSize 45
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 Show
@@ -224,11 +227,12 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 # Currency Tier B: Regal, Vaal ...
@@ -238,11 +242,12 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 Show
@@ -251,11 +256,12 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 100
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 Show
@@ -264,11 +270,12 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 Show
@@ -277,11 +284,12 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+  
 
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
@@ -315,7 +323,7 @@ Show
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
-  #PlayAlertSound 2 300
+  PlayAlertSound 2 300
   PlayEffect Pink
   MinimapIcon 1 White Circle
 
@@ -409,10 +417,10 @@ Show
 # Rings, Amulets, Belts
 #--------------------------
 
-Show
-  Rarity Normal
-  Class "Rings" "Amulets" "Belts"
-  SetFontSize 40
+#Show
+#  Rarity Normal
+#  Class "Rings" "Amulets" "Belts"
+#  SetFontSize 40
 
 Show
   Class "Rings" "Amulets" "Belts"
@@ -462,6 +470,7 @@ Show
 Show
   Rarity Rare
   SetFontSize 35
+
 
 #--------------------------
 # Hide Rules (only high level), super light edition
@@ -513,36 +522,6 @@ Hide
 
 
 
-#######################################################
-##### Hide stuff
-#######################################################
-
-Hide
-  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  Rarity <= Normal
-
-Hide
-  Class "Amulet" "Ring" "Belt"
-  Rarity <= Normal
-
-Hide
-  Class "Stackable Currency"
-  BaseType == "Scroll of Wisdom"
-
-Hide
-  Class "Flask"
-  Rarity <= Magic
-
-Hide
-  Class "Stackable Currency"
-  BaseType == "Gold"
-  StackSize < 50
-
-Hide
-  Class "Charms"
-  Rarity <= Magic
-  Quality == 0
-
 
 #--------------------------
 # OPTIONAL RULES
@@ -559,13 +538,12 @@ Hide
 
 ### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
 
-# Show
-# Rarity <= Magic
-# Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-# AreaLevel >= 65
-# DropLevel <= 50
-# SetBackgroundColor 0 0 0 125
-
+Show
+ Rarity <= Magic
+ Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+ AreaLevel >= 65
+ DropLevel <= 50
+ SetBackgroundColor 0 0 0 125
 
 
 #--------------------------
@@ -578,3 +556,36 @@ Hide
 
 Show
   BaseType == "Expert Laced Boots"
+  
+  
+
+
+#######################################################
+##### Hide stuff
+#######################################################
+
+Hide
+  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Rarity <= Normal
+
+Hide
+  Class "Amulet" "Ring" "Belts"
+  Rarity <= Normal
+
+Hide
+  Class "Stackable Currency"
+  BaseType == "Scroll of Wisdom"
+
+Hide
+  Class "Flasks"
+  Rarity <= Magic
+
+Hide
+  Class "Stackable Currency"
+  BaseType == "Gold"
+  StackSize < 50
+
+Hide
+  Class "Charms"
+  Rarity <= Magic
+  Quality == 0
