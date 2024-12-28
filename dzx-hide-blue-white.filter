@@ -1,6 +1,17 @@
 #----------------------
-#show items
+# hide items
 #----------------------
+Import "/filter_group/hide/scroll_of_wisdom.filter"
+Import "/filter_group/hide/rarity_normal.filter"
+Import "/filter_group/hide/rarity_magic.filter"
+Import "/filter_group/hide/rarity_rare.filter"
+
+#----------------------
+# show items
+#----------------------
+Import "/filter_group/show/rarity_magic.filter"
+Import "/filter_group/show/rarity_rare.filter"
+Import "/filter_group/show/rarity_unique.filter"
 
 Import "/filter_group/show/amulets.filter"
 Import "/filter_group/show/belts.filter"
@@ -17,18 +28,7 @@ Import "/filter_group/show/scroll_of_wisdom.filter"
 Import "/filter_group/show/socketables.filter"
 Import "/filter_group/show/waystones.filter"
 
-Import "/filter_group/show/rarity_magic.filter"
-Import "/filter_group/show/rarity_rare.filter"
-Import "/filter_group/show/rarity_unique.filter"
 
-#----------------------
-#hide items
-#----------------------
-
-Import "/filter_group/hide/scroll_of_wisdom.filter"
-Import "/filter_group/hide/rarity_normal.filter"
-Import "/filter_group/hide/rarity_magic.filter"
-Import "/filter_group/hide/rarity_rare.filter"
 
 
 

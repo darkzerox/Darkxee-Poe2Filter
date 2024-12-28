@@ -1,44 +1,52 @@
 Hide
   Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
   Rarity <= Normal
+  Continue
 
 Hide
   Class "Amulet" "Ring" "Belts"
   Rarity <= Normal
+  Continue
 
 Hide
   Class "Stackable Currency"
   BaseType == "Scroll of Wisdom"
+  Continue
 
 Hide
   Quality = 0
   AreaLevel > 70
   Rarity <= Normal
   Class "Flasks"
+  Continue
 
 Hide
   AreaLevel >= 78
   Rarity <= Normal
   DropLevel < 65
   Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  Continue
 
 Hide
   AreaLevel > 75
   Rarity <= Normal
   DropLevel < 64
   Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  Continue
 
 Hide
   AreaLevel > 73
   Rarity <= Normal
   DropLevel < 60
   Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  Continue
 
 Hide
   AreaLevel > 72
   Rarity <= Normal
   DropLevel < 55
   Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  Continue
 
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
@@ -46,18 +54,21 @@ Hide
   Rarity <= Normal
   DropLevel < 50
   Class "Quivers"
-
+  Continue
 
 Hide
   AreaLevel >= 65
   Rarity <= Normal
   Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+  Continue
 
 Hide
   Class "Flasks"
   Rarity <= Normal
+  Continue
 
 Hide
   Class "Charms"
   Rarity <= Normal
   Quality == 0
+  Continue
