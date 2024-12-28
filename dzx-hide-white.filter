@@ -26,10 +26,9 @@ Import "/filter_group/show/rarity_unique.filter"
 #----------------------
 
 Import "/filter_group/hide/scroll_of_wisdom.filter"
-# Import "/filter_group/hide/rarity_normal.filter"
+Import "/filter_group/hide/rarity_normal.filter"
 # Import "/filter_group/hide/rarity_magic.filter"
 # Import "/filter_group/hide/rarity_rare.filter"
-
 
 
 

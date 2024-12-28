@@ -1,0 +1,59 @@
+#------------------------------------------------------------------------------
+# Uncut Gems
+#------------------------------------------------------------------------------
+
+# Always make Spirit gems pop
+Show
+  BaseType "Uncut Spirit Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
+
+# Make support gems pop during campaign
+Show
+  AreaLevel < 68
+  BaseType "Uncut Support Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
+
+# Make skill gems pop during campaign
+Show
+  AreaLevel < 65
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  SetFontSize 35
+
+Show
+  BaseType "Uncut Support Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  SetFontSize 35
+
+# Level 19 gems and up in maps get a special highlight
+Show
+  BaseType "Uncut Skill Gem"
+  SetTextColor 20 240 240
+  SetBorderColor 20 240 240
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+  MinimapIcon 1 Cyan Triangle
+  SetFontSize 40

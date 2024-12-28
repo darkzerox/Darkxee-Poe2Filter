@@ -1,0 +1,13 @@
+Show
+  Class "Belts"
+  Rarity Magic
+  SetFontSize 40
+
+Show
+  Class "Belts"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond

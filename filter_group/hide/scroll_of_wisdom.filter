@@ -1,0 +1,4 @@
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
