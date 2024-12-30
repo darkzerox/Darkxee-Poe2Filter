@@ -1,10 +1,13 @@
-name: Run Python Script
+name: Run Python Script and Push Changes
 
 on:
   push:
     branches:
-      - main  # You can change this to any branch you want to trigger the action on.
+      - main
   workflow_dispatch:
+
+permissions:
+  contents: write  # Ensure the workflow has permission to push changes
 
 jobs:
   run-script:
@@ -17,7 +20,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'  # Specify the Python version you need
+        python-version: '3.x'
 
     - name: Install dependencies
       run: |
@@ -26,3 +29,16 @@ jobs:
 
     - name: Run Python script
       run: python script/run_script.py
+
+    - name: Configure git
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit and push changes
+      run: |
+        git add script/
+        git commit -m "Update after running script"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token to authenticate the push
