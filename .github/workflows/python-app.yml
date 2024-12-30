@@ -10,40 +10,29 @@ permissions:
   contents: write  # Ensure the workflow has permission to push changes
 
 jobs:
-  run-script:
+  getdataandrefreshmap:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-      with:
-        fetch-depth: 0  # Fetch all history for all branches and tags
-
-    - name: Set up Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
-    - name: Pull latest changes
-      run: git pull origin master  # Pull from master branch
-
-    - name: Run Python script
-      run: python script/run_script.py
-
-    - name: Configure git
-      run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-    - name: Commit and push changes
-      run: |
-        git add script/
-        git diff-index --quiet HEAD || git commit -m "Update after running script"
-        git push
-      env:
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner.
+      
+      - name: Pull latest changes
+        run: git pull origin master  # Pull from master branch
+      
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.8 #install the python needed
+      - name: Install dependencies
+        run: |
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: execute py script
+        run: |
+          python script/run_script.py
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "build file completed"
+          git push
+        env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
