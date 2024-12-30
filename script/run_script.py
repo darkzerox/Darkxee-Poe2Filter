@@ -5,9 +5,9 @@ mainGroup= [
     #----------------------
     # show items
     #----------------------
-    "show/rarity_magic.filter",
-    "show/rarity_rare.filter",
-    "show/rarity_unique.filter",
+    #"show/rarity_magic.filter",
+    #"show/rarity_rare.filter",
+    #"show/rarity_unique.filter",
 
     "show/amulets.filter",
     "show/belts.filter",
