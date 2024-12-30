@@ -15,17 +15,19 @@ jobs:
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner.
-      
-      - name: Pull latest changes
-        run: git pull origin master  # Pull from master branch
-      
+     
       - name: setup python
         uses: actions/setup-python@v4
         with:
           python-version: 3.8 #install the python needed
+      
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Pull latest changes
+        run: git pull origin master  # Pull from master branch
+
       - name: execute py script
         run: |
           python script/run_script.py
