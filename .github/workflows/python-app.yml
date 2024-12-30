@@ -10,7 +10,7 @@ permissions:
   contents: write  # Ensure the workflow has permission to push changes
 
 jobs:
-  getdataandrefreshmap:
+  buildFilter:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
