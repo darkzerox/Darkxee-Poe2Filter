@@ -34,5 +34,3 @@ jobs:
           git add .
           git commit -m "build file completed"
           git push
-        env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
