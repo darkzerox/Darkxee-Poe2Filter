@@ -3,7 +3,7 @@ name: Run Python Script and Push Changes
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -12,10 +12,12 @@ permissions:
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 0  # Fetch all history for all branches and tags
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -26,6 +28,9 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    - name: Pull latest changes
+      run: git pull origin master  # Pull from master branch
 
     - name: Run Python script
       run: python script/run_script.py
@@ -38,7 +43,7 @@ jobs:
     - name: Commit and push changes
       run: |
         git add script/
-        git commit -m "Update after running script"
+        git diff-index --quiet HEAD || git commit -m "Update after running script"
         git push
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token to authenticate the push
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
