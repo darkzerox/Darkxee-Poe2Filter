@@ -4,11 +4,6 @@ Hide
   Continue
 
 Hide
-  Class "Amulet" "Ring" "Belts"
-  Rarity <= Normal
-  Continue
-
-Hide
   Class "Stackable Currency"
   BaseType == "Scroll of Wisdom"
   Continue
@@ -72,3 +67,9 @@ Hide
   Rarity <= Normal
   Quality == 0
   Continue
+
+
+# Hide
+#   Class "Amulet" "Ring" "Belts"
+#   Rarity <= Normal
+#   Continue
