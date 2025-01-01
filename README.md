@@ -31,13 +31,6 @@ steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/P
 - **dzx-hide-white.filter** จะซ่อนของสีขาว แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้
 - **dzx-hide-white-blue.filter** จะซ่อนของสีขาว และสีฟ้า แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้
 
-<<<<<<< HEAD
-
-
-> filter นี้จะพยายามอัพเดตอยู่ตลอด ดังนั้นแล้วให้เข้ามาดูบ่อยๆนะ
-## credit
-Thankyou for Original filter from NeverSink's Indepth Loot Filter https://github.com/NeverSinkDev/NeverSink-PoE2litefilter
-=======
 ### For Dev
 - สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย
 - ไฟล์หลักจะอยู่ใน Folder **filter_group** ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข
@@ -52,4 +45,3 @@ Thankyou for Original filter from NeverSink's Indepth Loot Filter https://github
 Thankyou for Original filter from NeverSink's Indepth Loot Filter https://github.com/NeverSinkDev/NeverSink-PoE2litefilter
 
 Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย
->>>>>>> release/v0.1.1
