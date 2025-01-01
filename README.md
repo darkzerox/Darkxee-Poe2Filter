@@ -40,5 +40,8 @@ steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/P
 
 
 > filter นี้จะพยายามอัพเดตอยู่ตลอด ดังนั้นแล้วให้เข้ามาดูบ่อยๆนะ
+
 ## credit
 Thankyou for Original filter from NeverSink's Indepth Loot Filter https://github.com/NeverSinkDev/NeverSink-PoE2litefilter
+
+Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย
