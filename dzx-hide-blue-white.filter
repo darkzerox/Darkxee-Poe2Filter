@@ -10,11 +10,6 @@ Hide
   Continue
 
 Hide
-  Class "Amulet" "Ring" "Belts"
-  Rarity <= Normal
-  Continue
-
-Hide
   Class "Stackable Currency"
   BaseType == "Scroll of Wisdom"
   Continue
@@ -78,6 +73,12 @@ Hide
   Rarity <= Normal
   Quality == 0
   Continue
+
+
+# Hide
+#   Class "Amulet" "Ring" "Belts"
+#   Rarity <= Normal
+#   Continue
 
 #------------------------------------------------------------------------------
 # Hide Rules (only high level), super light edition
@@ -152,6 +153,10 @@ Hide
   Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
   Continue
 
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
 Show
   Rarity <= Magic
   Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
@@ -160,6 +165,10 @@ Show
   SetBackgroundColor 0 0 0 125
   Continue
 
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
 Show
   Rarity Rare
   SetFontSize 35
@@ -167,7 +176,7 @@ Show
 
 
 #------------------------------------------------------------------------------
-# Unique
+# Unique Items group
 #------------------------------------------------------------------------------
 
 Show
@@ -182,9 +191,13 @@ Show
   PlayAlertSound 3 0
   Continue
 
+#------------------------------------------------------------------------------
+# Amulets
+#------------------------------------------------------------------------------
+
 Show
   Class "Amulets"
-  Rarity Magic
+  Rarity <= Magic
   SetFontSize 40
 
 Show
@@ -195,6 +208,10 @@ Show
   SetBorderColor 233 206 75
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
+
+#------------------------------------------------------------------------------
+# Belts
+#------------------------------------------------------------------------------
 
 Show
   Class "Belts"
@@ -211,7 +228,7 @@ Show
   MinimapIcon 1 Yellow Diamond
 
 #------------------------------------------------------------------------------
-# Divine Orb Style
+# Currency
 #------------------------------------------------------------------------------
 
 Show
@@ -443,7 +460,10 @@ Show
   SetBorderColor 0 0 0 255
   SetBackgroundColor 0 0 0 180
 
-# Special A Tier - Rare Jewels
+#------------------------------------------------------------------------------
+# Jewel
+#------------------------------------------------------------------------------
+
 Show
   Class "Jewel"
   Rarity <= Rare
@@ -453,6 +473,19 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
+
+Show 
+  BaseType "Timeless"
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Key
+#------------------------------------------------------------------------------
 
 Show
   Class "Pinnacle Keys"
@@ -494,7 +527,10 @@ Show
   MinimapIcon 1 Grey Square
   SetFontSize 40
 
-# Special A Tier - Sanctum Relics
+#------------------------------------------------------------------------------
+# Relic
+#------------------------------------------------------------------------------
+
 Show 
   Class "Relic"
   SetTextColor 0 240 190
@@ -503,6 +539,10 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayAlertSound 2 300
   PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Rings
+#------------------------------------------------------------------------------
 
 Show
   Class "Rings"
@@ -538,7 +578,10 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
-# Special B Tier - Any Runes and Charms
+#------------------------------------------------------------------------------
+# Rune and Charms
+#------------------------------------------------------------------------------
+
 Show 
   BaseType " Rune" " Charm"
   SetTextColor 0 240 190
@@ -572,13 +615,20 @@ Show
   SetBorderColor 0 0 200
   SetFontSize 35
 
+#------------------------------------------------------------------------------
+# Scroll of Wisdom
+#------------------------------------------------------------------------------
+
 Show
   Class "Currency"
   BaseType "Scroll of Wisdom" "Shard"
 
-# Special A Tier - League specific socketables
+#------------------------------------------------------------------------------
+# Soul Core
+#------------------------------------------------------------------------------
+
 Show 
-  BaseType "Soul Core" "Timeless"
+  BaseType "Soul Core"
   SetTextColor 0 240 190
   SetBorderColor 0 240 190
   SetFontSize 45

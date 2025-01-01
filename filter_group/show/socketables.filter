@@ -1,9 +1,0 @@
-# Special A Tier - League specific socketables
-Show 
-  BaseType "Soul Core" "Timeless"
-  SetTextColor 0 240 190
-  SetBorderColor 0 240 190
-  SetFontSize 45
-  MinimapIcon 0 Cyan Diamond
-  PlayAlertSound 2 300
-  PlayEffect Cyan
