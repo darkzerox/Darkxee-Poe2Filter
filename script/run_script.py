@@ -21,7 +21,7 @@ mainGroup= [
     "show/rune_charms.filter",
     "show/salvage.filter",
     "show/scroll_of_wisdom.filter",
-    "show/socketables.filter",
+    "show/soul_core.filter",
     "show/waystones.filter",
 ]
 
