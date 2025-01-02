@@ -1,4 +1,43 @@
 #------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity <= Magic
+  Class "Flasks" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  AreaLevel >= 65
+  DropLevel <= 50
+  SetBackgroundColor 0 0 0 125
+  Continue
+  
+
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  SetFontSize 35
+  Continue
+
+#------------------------------------------------------------------------------
+# Unique Items group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  CustomAlertSound "soundeffect/unique.mp3" 100
+  PlayAlertSound 3 0
+  Continue
+  
+
+#------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
 
@@ -60,31 +99,38 @@ Show
   SetBorderColor 0 0 0 255
   SetBackgroundColor 0 0 0 180
 
+
 #------------------------------------------------------------------------------
 # Currency
 #------------------------------------------------------------------------------
 
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
-  SetFontSize 45
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
-  PlayEffect Red
-  MinimapIcon 0 Red Star
-  PlayAlertSound 3 0
-  CustomAlertSound "soundeffect/special_currency.mp3" 200
+  SetFontSize 40
+  CustomAlertSound "soundeffect/currency.mp3" 200
+  Continue
 
 Show
-  BaseType == "Distilled Isolation" "Distilled Suffering"
-  SetFontSize 45
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
+  SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "soundeffect/special_currency.mp3" 200
+  Continue
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+  PlayAlertSound 3 0
+
+Show
+  Class "Currency"
+  BaseType == "Distilled Isolation" "Distilled Suffering"
+  PlayAlertSound 6 300
 
 
 # Currency Tier A: Gemcutter, Annullment
@@ -96,9 +142,6 @@ Show
   SetBackgroundColor 240 90 35
   PlayEffect White
   MinimapIcon 1 Yellow Circle
-  SetFontSize 45
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 1 0
 
 # Currency Tier B: Exalt
 Show
@@ -109,9 +152,6 @@ Show
   SetBackgroundColor 76 51 12
   PlayEffect Yellow
   MinimapIcon 1 Yellow Circle
-  SetFontSize 45
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 2 0
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
@@ -120,9 +160,6 @@ Show
   SetBackgroundColor 76 51 12
   PlayEffect White
   MinimapIcon 2 White Circle
-  SetFontSize 40
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 2 0
 
 
 # Currency Tier B: Regal, Vaal ...
@@ -134,9 +171,6 @@ Show
   SetBackgroundColor 76 51 12
   PlayEffect White
   MinimapIcon 2 White Circle
-  SetFontSize 40
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 2 0
   
 Show
   Class "Currency"
@@ -147,9 +181,45 @@ Show
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 2 0
   
+
+Show
+  Class "Currency"
+  BaseType "Distilled" "Catalyst" "Essence of"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  AreaLevel >= 70
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  SetTextColor 220 190 132
+  SetFontSize 35
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  SetTextColor 220 190 132
+  MinimapIcon 2 Grey Circle
+  SetFontSize 35
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
+
 
 Show
   Class "Omen"
@@ -162,50 +232,6 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
   PlayAlertSound 2 0
-  
-Show
-  Class "Currency"
-  BaseType "Distilled" "Catalyst" "Essence of"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
-  PlayEffect White
-  MinimapIcon 2 White Circle
-  SetFontSize 40
-  CustomAlertSound "soundeffect/currency.mp3" 100
-  PlayAlertSound 2 0
-  
-
-
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
-Show
-  AreaLevel >= 70
-  Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
-  SetTextColor 220 190 132
-  SetFontSize 35
-  CustomAlertSound "soundeffect/currency.mp3" 100
-
-
-# Currency Tier C: Vaal, Chaos, Exalt, Exotic
-Show
-  Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
-  SetTextColor 220 190 132
-  MinimapIcon 2 Grey Circle
-  SetFontSize 35
-  CustomAlertSound "soundeffect/currency.mp3" 100
-
-
-# Unknown currency
-Show
-  Class "Currency"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
-  PlayEffect Pink
-  MinimapIcon 1 White Circle
 
 #------------------------------------------------------------------------------
 # Amulets
@@ -475,58 +501,25 @@ Show
   MinimapIcon 1 White Square
   SetFontSize 40
 
-#------------------------------------------------------------------------------
-# Magic Items Group
-#------------------------------------------------------------------------------
-
-Show
-  Rarity <= Magic
-  Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-  AreaLevel >= 65
-  DropLevel <= 50
-  SetBackgroundColor 0 0 0 125
-  
-
-#------------------------------------------------------------------------------
-# Rare Items Group
-#------------------------------------------------------------------------------
-
-Show
-  Rarity Rare
-  SetFontSize 35
-  
-
-
-#------------------------------------------------------------------------------
-# Unique Items group
-#------------------------------------------------------------------------------
-
-Show
-  Rarity Unique
-  SetTextColor 175 96 37 255
-  SetBorderColor 175 96 37 255
-  SetBackgroundColor 53 13 13 255
-  PlayEffect Brown
-  MinimapIcon 1 Brown Star
-  SetFontSize 40
-  CustomAlertSound "soundeffect/unique.mp3" 100
-  PlayAlertSound 3 0
-  
-
 Hide
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
   Continue
 
+#------------------------------------------------------------------------------
+# Hide Normal Rarity
+#------------------------------------------------------------------------------
+
 Hide
-  Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Class == "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   Rarity <= Normal
-  
+  Continue  
 
 Hide
   Class "Stackable Currency"
   BaseType == "Scroll of Wisdom"
+  Continue
   
 
 Hide
@@ -534,35 +527,12 @@ Hide
   AreaLevel > 70
   Rarity <= Normal
   Class "Flasks"
-  
 
 Hide
-  AreaLevel >= 78
+  Class "Flasks"
   Rarity <= Normal
-  DropLevel < 65
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-  
-
-Hide
-  AreaLevel > 75
-  Rarity <= Normal
-  DropLevel < 64
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-  
-
-Hide
-  AreaLevel > 73
-  Rarity <= Normal
-  DropLevel < 60
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-  
-
-Hide
-  AreaLevel > 72
-  Rarity <= Normal
-  DropLevel < 55
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-  
+  Continue
+ 
 
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
@@ -570,24 +540,13 @@ Hide
   Rarity <= Normal
   DropLevel < 50
   Class "Quivers"
-  
-
-Hide
-  AreaLevel >= 65
-  Rarity <= Normal
-  Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-  
-
-Hide
-  Class "Flasks"
-  Rarity <= Normal
-  
+  Continue
 
 Hide
   Class "Charms"
   Rarity <= Normal
   Quality == 0
-  
+  Continue
 
 
 # Hide
