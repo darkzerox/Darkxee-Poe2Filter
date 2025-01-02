@@ -5,6 +5,10 @@ mainGroup= [
     #----------------------
     # show items
     #----------------------
+    "show/rarity_magic.filter",
+    "show/rarity_rare.filter",
+    "show/rarity_unique.filter",
+
     "show/scroll_of_wisdom.filter",
     "show/salvage.filter",
     "show/gold.filter",
@@ -21,9 +25,7 @@ mainGroup= [
     "show/soul_core.filter",
     "show/waystones.filter",
 
-    "show/rarity_magic.filter",
-    "show/rarity_rare.filter",
-    "show/rarity_unique.filter",
+
 ]
 
 #----------------------
