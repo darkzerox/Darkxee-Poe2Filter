@@ -12,4 +12,4 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/unique.mp3" 100
   PlayAlertSound 3 0
-  Continue
+  
