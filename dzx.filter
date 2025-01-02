@@ -1,76 +1,64 @@
 #------------------------------------------------------------------------------
-# Magic Items Group
+# Scroll of Wisdom
 #------------------------------------------------------------------------------
 
 Show
-  Rarity <= Magic
-  Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
-  AreaLevel >= 65
-  DropLevel <= 50
-  SetBackgroundColor 0 0 0 125
-  Continue
+  Class "Currency"
+  BaseType "Scroll of Wisdom" "Shard"
 
 #------------------------------------------------------------------------------
-# Rare Items Group
+# Salvagable Items
 #------------------------------------------------------------------------------
 
 Show
-  Rarity Rare
+  Sockets > 0
+  Rarity Normal
+  SetBorderColor 200 200 200
   SetFontSize 35
-  Continue
-
-
-#------------------------------------------------------------------------------
-# Unique Items group
-#------------------------------------------------------------------------------
 
 Show
-  Rarity Unique
-  SetTextColor 175 96 37 255
-  SetBorderColor 175 96 37 255
-  SetBackgroundColor 53 13 13 255
-  PlayEffect Brown
-  MinimapIcon 1 Brown Star
-  SetFontSize 40
-  CustomAlertSound "soundeffect/unique.mp3" 100
-  PlayAlertSound 3 0
-  Continue
-
-#------------------------------------------------------------------------------
-# Amulets
-#------------------------------------------------------------------------------
+  Quality > 0
+  Rarity Normal
+  SetBorderColor 200 200 200
+  SetFontSize 35
 
 Show
-  Class "Amulets"
-  Rarity <= Magic
-  SetFontSize 40
-
-Show
-  Class "Amulets"
-  Rarity Rare
-  SetFontSize 40
-  SetTextColor 233 206 75
-  SetBorderColor 233 206 75
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Diamond
-
-#------------------------------------------------------------------------------
-# Belts
-#------------------------------------------------------------------------------
-
-Show
-  Class "Belts"
+  Sockets > 0
   Rarity Magic
-  SetFontSize 40
+  SetBorderColor 0 0 200
+  SetFontSize 35
 
 Show
-  Class "Belts"
-  Rarity Rare
-  SetFontSize 40
-  SetTextColor 233 206 75
-  SetBorderColor 233 206 75
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Diamond
+  Quality > 0
+  Rarity Magic
+  SetBorderColor 0 0 200
+  SetFontSize 35
+
+#------------------------------------------------------------------------------
+# Gold
+#------------------------------------------------------------------------------
+
+Show
+  AreaLevel >= 70
+  StackSize >= 1000
+  BaseType == "Gold"
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  PlayEffect Orange Temp
+
+Show
+  AreaLevel < 70
+  StackSize >= 500
+  BaseType == "Gold"
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  PlayEffect Orange Temp
+
+Show
+  BaseType == "Gold"
+  SetTextColor 180 180 180
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 0 0 0 180
 
 #------------------------------------------------------------------------------
 # Currency
@@ -220,6 +208,42 @@ Show
   MinimapIcon 1 White Circle
 
 #------------------------------------------------------------------------------
+# Amulets
+#------------------------------------------------------------------------------
+
+Show
+  Class "Amulets"
+  Rarity <= Magic
+  SetFontSize 40
+
+Show
+  Class "Amulets"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+
+#------------------------------------------------------------------------------
+# Belts
+#------------------------------------------------------------------------------
+
+Show
+  Class "Belts"
+  Rarity Magic
+  SetFontSize 40
+
+Show
+  Class "Belts"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+
+#------------------------------------------------------------------------------
 # Uncut Gems
 #------------------------------------------------------------------------------
 
@@ -278,32 +302,6 @@ Show
   PlayEffect Cyan
   MinimapIcon 1 Cyan Triangle
   SetFontSize 40
-
-#------------------------------------------------------------------------------
-# Gold
-#------------------------------------------------------------------------------
-
-Show
-  AreaLevel >= 70
-  StackSize >= 1000
-  BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-  PlayEffect Orange Temp
-
-Show
-  AreaLevel < 70
-  StackSize >= 500
-  BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-  PlayEffect Orange Temp
-
-Show
-  BaseType == "Gold"
-  SetTextColor 180 180 180
-  SetBorderColor 0 0 0 255
-  SetBackgroundColor 0 0 0 180
 
 #------------------------------------------------------------------------------
 # Jewel
@@ -433,42 +431,6 @@ Show
   PlayEffect Cyan Temp
 
 #------------------------------------------------------------------------------
-# Salvagable Items
-#------------------------------------------------------------------------------
-
-Show
-  Sockets > 0
-  Rarity Normal
-  SetBorderColor 200 200 200
-  SetFontSize 35
-
-Show
-  Quality > 0
-  Rarity Normal
-  SetBorderColor 200 200 200
-  SetFontSize 35
-
-Show
-  Sockets > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-
-Show
-  Quality > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-
-#------------------------------------------------------------------------------
-# Scroll of Wisdom
-#------------------------------------------------------------------------------
-
-Show
-  Class "Currency"
-  BaseType "Scroll of Wisdom" "Shard"
-
-#------------------------------------------------------------------------------
 # Soul Core
 #------------------------------------------------------------------------------
 
@@ -512,4 +474,42 @@ Show
   PlayEffect White
   MinimapIcon 1 White Square
   SetFontSize 40
+
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity <= Magic
+  Class "Flasks" "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Staves" "Quarterstaves" "Bows" "Crossbows" "Wands" "Sceptres"
+  AreaLevel >= 65
+  DropLevel <= 50
+  SetBackgroundColor 0 0 0 125
+  Continue
+
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  SetFontSize 35
+  Continue
+
+
+#------------------------------------------------------------------------------
+# Unique Items group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  CustomAlertSound "soundeffect/unique.mp3" 100
+  PlayAlertSound 3 0
+  Continue
 
