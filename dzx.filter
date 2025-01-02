@@ -8,6 +8,7 @@ Show
   AreaLevel >= 65
   DropLevel <= 50
   SetBackgroundColor 0 0 0 125
+  SetFontSize 30
   Continue
   
 
@@ -18,6 +19,7 @@ Show
 Show
   Rarity Rare
   SetFontSize 35
+  CustomAlertSound "soundeffect/rare.mp3" 200
   Continue
 
 #------------------------------------------------------------------------------
@@ -54,24 +56,32 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
+  CustomAlertSound "soundeffect/salvage.mp3" 100
+
 
 Show
   Quality > 0
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
+  CustomAlertSound "soundeffect/jewel.mp3" 100
+
 
 Show
   Sockets > 0
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
+  CustomAlertSound "soundeffect/jewel.mp3" 100
+
 
 Show
   Quality > 0
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
+  CustomAlertSound "soundeffect/jewel.mp3" 100
+
 
 #------------------------------------------------------------------------------
 # Gold
@@ -342,6 +352,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
+  CustomAlertSound "soundeffect/jewel.mp3" 200
 
 Show 
   BaseType "Timeless"
