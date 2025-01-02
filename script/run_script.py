@@ -31,10 +31,10 @@ mainGroup= [
 # for hight LV.!!
 #----------------------
 hideBlueWhiteGroupFile = [
-    "hide/scroll_of_wisdom.filter",
-    "hide/rarity_normal.filter",
+    # "hide/rarity_rare.filter",
     "hide/rarity_magic.filter",
-    "hide/rarity_rare.filter",
+    "hide/rarity_normal.filter",
+    "hide/scroll_of_wisdom.filter",
 ]
 output_file_name = 'dzx-hide-blue-white'
 merge_file.merge_files_from_array(hideBlueWhiteGroupFile+mainGroup, output_file_name)
@@ -44,8 +44,8 @@ merge_file.merge_files_from_array(hideBlueWhiteGroupFile+mainGroup, output_file_
 # hide white
 #----------------------
 hideWhiteGroupFile = [
-    "hide/scroll_of_wisdom.filter",
     "hide/rarity_normal.filter",
+    "hide/scroll_of_wisdom.filter",
 ]
 output_file_name = 'dzx-hide-white'
 merge_file.merge_files_from_array(hideWhiteGroupFile+mainGroup, output_file_name)
