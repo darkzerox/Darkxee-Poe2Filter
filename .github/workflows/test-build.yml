@@ -1,4 +1,4 @@
-name: Run Python Script and Push Changes
+name: Run build file for dev
 
 on:
   push:
