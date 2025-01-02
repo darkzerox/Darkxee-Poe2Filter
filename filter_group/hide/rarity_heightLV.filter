@@ -1,0 +1,28 @@
+#------------------------------------------------------------------------------
+# Hide Rules (only high level), super light edition
+#------------------------------------------------------------------------------
+
+Hide
+  Quality = 0
+  AreaLevel > 70
+  Rarity <= Magic
+  Class "Flasks"
+
+Hide
+  Rarity <= Magic
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+  
+
+# Quivers have some relevant bases at 50+ so we treat them different
+Hide
+  AreaLevel > 74
+  Rarity <= Magic
+  DropLevel < 50
+  Class "Quivers"
+  
+
+Hide
+  Class "Charms"
+  Rarity <= Magic
+  Quality == 0
+  

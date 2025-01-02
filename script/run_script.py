@@ -27,6 +27,21 @@ mainGroup= [
 ]
 
 #----------------------
+# hide All blue white
+# for hight LV.!!
+#----------------------
+hideBlueWhiteGroupFile = [
+    "hide/rarity_heightLV.filter",
+    "hide/scroll_of_wisdom.filter",
+    "hide/rarity_normal.filter",
+    "hide/rarity_magic.filter",
+    "hide/rarity_rare.filter",
+]
+output_file_name = 'dzx-for-hight-lv'
+merge_file.merge_files_from_array(hideBlueWhiteGroupFile+mainGroup, output_file_name)
+
+
+#----------------------
 # hide blue white
 # for hight LV.!!
 #----------------------
