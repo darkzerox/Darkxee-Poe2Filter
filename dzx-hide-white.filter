@@ -1,10 +1,4 @@
 Hide
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 65
-  Rarity <= Magic
-  Continue
-
-Hide
   Class == "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
   Rarity <= Normal
   Continue
@@ -79,6 +73,12 @@ Hide
 #   Class "Amulet" "Ring" "Belts"
 #   Rarity <= Normal
 #   Continue
+
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
+  Continue
 
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
