@@ -644,12 +644,12 @@ Hide
 Hide
   Quality = 0
   AreaLevel > 70
-  Rarity <= Normal
+  Rarity <= Magic
   Class "Flasks"
 
 Hide
   Class "Flasks"
-  Rarity <= Normal
+  Rarity <= Magic
   
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
