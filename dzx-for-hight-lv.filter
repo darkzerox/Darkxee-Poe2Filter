@@ -634,7 +634,17 @@ Hide
 
 Hide
   AreaLevel > 70
-  Rarity <= Rare
+  Rarity <= Normal
+  Class "Flasks"
+
+Hide
+  Class "Flasks"
+  Rarity <= Normal
+  
+# Quivers have some relevant bases at 50+ so we treat them different
+Hide
+  AreaLevel > 74
+  Rarity <= Magic
   DropLevel < 50
   Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
 
@@ -686,12 +696,12 @@ Hide
 Hide
   Quality = 0
   AreaLevel > 70
-  Rarity <= Normal
+  Rarity <= Magic
   Class "Flasks"
 
 Hide
   Class "Flasks"
-  Rarity <= Normal
+  Rarity <= Magic
   
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
