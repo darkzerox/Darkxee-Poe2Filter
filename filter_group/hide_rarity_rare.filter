@@ -4,7 +4,6 @@
 
 Hide
   AreaLevel > 70
-  Rarity <= Normal
+  Rarity <= Rare
   DropLevel < 50
   Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  Continue
