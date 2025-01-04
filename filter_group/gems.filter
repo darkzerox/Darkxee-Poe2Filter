@@ -2,6 +2,18 @@
 # Uncut Gems
 #------------------------------------------------------------------------------
 
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
 # Always make Spirit gems pop
 Show
   BaseType "Uncut Spirit Gem"

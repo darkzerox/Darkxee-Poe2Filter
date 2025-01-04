@@ -1,13 +1,8 @@
 #------------------------------------------------------------------------------
-# Hide Magic Rarity
+# Hide Rare Rarity
 #------------------------------------------------------------------------------
-Hide
-  Rarity <= Magic
-  Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  Continue
 
 Hide
-  Quality = 0
   AreaLevel > 70
   Rarity <= Normal
   Class "Flasks"
@@ -21,10 +16,4 @@ Hide
   AreaLevel > 74
   Rarity <= Magic
   DropLevel < 50
-  Class "Quivers"
-  
-Hide
-  Class "Charms"
-  Rarity <= Magic
-  Quality == 0
-  
+  Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"

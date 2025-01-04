@@ -1,43 +1,41 @@
 import merge_file as merge_file
-import os
 
 mainGroup= [
     #----------------------
     # show items
     #----------------------
-    "show/rarity_magic.filter",
-    "show/rarity_rare.filter",
-    "show/rarity_unique.filter",
+    "rarity_magic.filter",
+    "rarity_rare.filter",
+    "rarity_unique.filter",
 
-    "show/scroll_of_wisdom.filter",
-    "show/salvage.filter",
-    "show/gold.filter",
-    "show/currency.filter",
+    "scroll_of_wisdom.filter",
+    "salvage.filter",
+    "gold.filter",
+    "currency.filter",
 
-    "show/amulets.filter",
-    "show/belts.filter",
-    "show/gems.filter",
-    "show/jewel.filter",
-    "show/key.filter",
-    "show/relics.filter",
-    "show/ring.filter",
-    "show/rune_charms.filter",
-    "show/soul_core.filter",
-    "show/waystones.filter",
+    "amulets.filter",
+    "belts.filter",
+    "gems.filter",
+    "jewel.filter",
+    "key.filter",
+    "relics.filter",
+    "ring.filter",
+    "rune_charms.filter",
+    "soul_core.filter",
+    "waystones.filter",
 
 
 ]
 
 #----------------------
-# hide All blue white
-# for hight LV.!!
+# hide All rare blue white
+# for hight LV.!!!!
 #----------------------
 hideHeightLVGroupFile = [
-    "hide/scroll_of_wisdom.filter",
-    "hide/rarity_heightLV.filter",
-    "hide/rarity_rare.filter",
-    "hide/rarity_magic.filter",
-    "hide/rarity_normal.filter",
+    "hide_scroll_of_wisdom.filter",
+    "hide_rarity_heightLV.filter",
+    "hide_rarity_rare.filter",
+    "hide_rarity_magic.filter",
 ]
 output_file_name = 'dzx-for-hight-lv'
 merge_file.merge_files_from_array(mainGroup+hideHeightLVGroupFile, output_file_name)
@@ -48,10 +46,8 @@ merge_file.merge_files_from_array(mainGroup+hideHeightLVGroupFile, output_file_n
 # for hight LV.!!
 #----------------------
 hideBlueWhiteGroupFile = [
-    "hide/scroll_of_wisdom.filter",
-    "hide/rarity_magic.filter",
-    "hide/rarity_normal.filter",
-    # "hide/rarity_rare.filter",
+    "hide_scroll_of_wisdom.filter",
+    "hide_rarity_magic.filter",
 ]
 output_file_name = 'dzx-hide-blue-white'
 merge_file.merge_files_from_array(mainGroup+hideBlueWhiteGroupFile, output_file_name)
@@ -61,8 +57,8 @@ merge_file.merge_files_from_array(mainGroup+hideBlueWhiteGroupFile, output_file_
 # hide white
 #----------------------
 hideWhiteGroupFile = [
-    "hide/scroll_of_wisdom.filter",
-    "hide/rarity_normal.filter",
+    "hide_scroll_of_wisdom.filter",
+    "hide_rarity_normal.filter",
 ]
 output_file_name = 'dzx-hide-white'
 merge_file.merge_files_from_array(mainGroup+hideWhiteGroupFile, output_file_name)

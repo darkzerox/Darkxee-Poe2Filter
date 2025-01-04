@@ -10,7 +10,18 @@ Show
   SetBackgroundColor 0 0 0 125
   SetFontSize 30
   Continue
-  
+
+Show
+  BaseType == "Amethyst Ring" "Attuned Wand" "Breach Ring" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Construct Hammer" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Oak Greathammer" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Warpick" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Primed Quiver" "Prismatic Ring" "Rattling Sceptre" "Siphoning Wand" "Solar Amulet" "Voltaic Staff"
+  Rarity <= Magic
+  SetTextColor 255 230 201
+  SetBorderColor 255 163 117
+  SetBackgroundColor 215 206 36
+  PlayAlertSound 2 300
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Square
+  SetFontSize 40
+
 
 #------------------------------------------------------------------------------
 # Rare Items Group
@@ -28,16 +39,32 @@ Show
 
 Show
   Rarity Unique
+  CustomAlertSound "soundeffect/unique.mp3" 100
+  Continue
+
+Show
+  Rarity Unique
   SetTextColor 175 96 37 255
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
   PlayEffect Brown
   MinimapIcon 1 Brown Star
   SetFontSize 40
-  CustomAlertSound "soundeffect/unique.mp3" 100
   PlayAlertSound 3 0
-  Continue
-  
+
+Show
+  Rarity Unique
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
+
 
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
@@ -86,28 +113,33 @@ Show
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
+show
+  BaseType == "Gold"
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  Continue
 
 Show
   AreaLevel >= 70
   StackSize >= 1000
   BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
   PlayEffect Orange Temp
+  MinimapIcon 2 White Cross
+
 
 Show
   AreaLevel < 70
   StackSize >= 500
   BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
   PlayEffect Orange Temp
+  MinimapIcon 2 White Cross
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
   SetBorderColor 0 0 0 255
   SetBackgroundColor 0 0 0 180
+  MinimapIcon 2 Grey Cross
 
 
 #------------------------------------------------------------------------------
@@ -119,7 +151,7 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 200
   Continue
-
+ 
 Show
   Class "Currency"
   BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
@@ -175,7 +207,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
   Class "Currency"
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
@@ -207,28 +239,17 @@ Show
 Show
   AreaLevel >= 70
   Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   MinimapIcon 2 Grey Circle
   SetFontSize 35
-
-
-# Unknown currency
-Show
-  Class "Currency"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
-  PlayEffect Pink
-  MinimapIcon 1 White Circle
 
 
 Show
@@ -242,6 +263,18 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
   PlayAlertSound 2 0
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
+
 
 #------------------------------------------------------------------------------
 # Amulets
@@ -261,6 +294,13 @@ Show
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
 
+Show 
+  Rarity Normal
+  BaseType == "Stellar Amulet"
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+
 #------------------------------------------------------------------------------
 # Belts
 #------------------------------------------------------------------------------
@@ -279,9 +319,38 @@ Show
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
 
+Show 
+  Rarity Normal
+  BaseType == "Heavy Belt"
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+
+Show
+  Rarity Normal
+  Class "Belts"
+  AreaLevel < 65
+  SetFontSize 35
+
+Show
+  Rarity Normal
+  Class "Belts"
+
 #------------------------------------------------------------------------------
 # Uncut Gems
 #------------------------------------------------------------------------------
+
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
 
 # Always make Spirit gems pop
 Show
@@ -428,6 +497,7 @@ Show
   Class "Rings"
   Rarity Magic
   SetFontSize 40
+  Continue
 
 Show
   Class "Rings"
@@ -437,6 +507,7 @@ Show
   SetBorderColor 233 206 75
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
+  Continue
 
 
 # Special Highlight - Breach Rings
@@ -457,6 +528,14 @@ Show
   SetFontSize 35
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
+
+# Chancing bases
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring"
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
 
 #------------------------------------------------------------------------------
 # Rune and Charms
@@ -528,6 +607,12 @@ Hide
   Continue  
 
 Hide
+  AreaLevel > 70
+  Rarity <= Normal
+  DropLevel < 50
+  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "Quivers" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
+
+Hide
   Class "Stackable Currency"
   BaseType == "Scroll of Wisdom"
   Continue
@@ -559,9 +644,4 @@ Hide
   Quality == 0
   Continue
 
-
-# Hide
-#   Class "Amulet" "Ring" "Belts"
-#   Rarity <= Normal
-#   
 

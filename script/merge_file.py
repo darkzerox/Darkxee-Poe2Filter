@@ -29,7 +29,7 @@ def merge_files_from_array(file_paths, output_file_name):
 if __name__ == "__main__":
     # Example usage
     test_files = [
-        os.path.join("show", "rarity_magic.filter"),
-        os.path.join("show", "rarity_rare.filter")
+        os.path.join("rarity_magic.filter"),
+        os.path.join("rarity_rare.filter")
     ]
     merge_files_from_array(test_files, "test")

@@ -6,6 +6,7 @@ Show
   Class "Rings"
   Rarity Magic
   SetFontSize 40
+  Continue
 
 Show
   Class "Rings"
@@ -15,6 +16,7 @@ Show
   SetBorderColor 233 206 75
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
+  Continue
 
 
 # Special Highlight - Breach Rings
@@ -35,3 +37,11 @@ Show
   SetFontSize 35
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
+
+# Chancing bases
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring"
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond

@@ -8,7 +8,7 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 200
   Continue
-
+ 
 Show
   Class "Currency"
   BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
@@ -64,7 +64,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
   Class "Currency"
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
   SetTextColor 255 207 132
   SetBorderColor 255 207 132
   SetBackgroundColor 76 51 12
@@ -96,28 +96,17 @@ Show
 Show
   AreaLevel >= 70
   Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   SetFontSize 35
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   Class "Currency"
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Chance Shard"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   MinimapIcon 2 Grey Circle
   SetFontSize 35
-
-
-# Unknown currency
-Show
-  Class "Currency"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
-  PlayAlertSound 2 300
-  PlayEffect Pink
-  MinimapIcon 1 White Circle
 
 
 Show
@@ -131,3 +120,14 @@ Show
   SetFontSize 40
   CustomAlertSound "soundeffect/currency.mp3" 100
   PlayAlertSound 2 0
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
