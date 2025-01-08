@@ -7,7 +7,7 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/salvage.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
 Show
@@ -15,7 +15,7 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 
 Show
@@ -23,7 +23,7 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 
 Show
@@ -31,4 +31,4 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100

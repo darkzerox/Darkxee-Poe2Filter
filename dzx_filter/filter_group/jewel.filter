@@ -11,7 +11,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
-  CustomAlertSound "soundeffect/jewel.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 200
 
 Show 
   BaseType "Timeless"

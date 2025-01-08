@@ -34,7 +34,7 @@ steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/P
 ### For Dev
 - สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย
 - ไฟล์หลักจะอยู่ใน Folder **filter_group** ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข
-- ไฟล์เสียงจะอยู่ใน Folder **soundeffect**
+- ไฟล์เสียงจะอยู่ใน Folder **dzx_filter/soundeffect**
 - เมื่อแก้ไขไฟล์เสร็จแล้วให้ run ไฟล์ **run_script.py** เพื่อทำการรวมไฟล์ใหม่อีกครั้ง 
 - ใช้ภาษา python นะ
 

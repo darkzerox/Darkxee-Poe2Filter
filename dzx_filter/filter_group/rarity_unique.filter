@@ -4,7 +4,7 @@
 
 Show
   Rarity Unique
-  CustomAlertSound "soundeffect/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
   Continue
 
 Show

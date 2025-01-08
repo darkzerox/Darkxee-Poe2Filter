@@ -1,0 +1,13 @@
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity <= Magic
+  Class "Flasks" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  AreaLevel >= 65
+  DropLevel <= 50
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 30
+  Continue
+

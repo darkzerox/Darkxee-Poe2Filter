@@ -11,16 +11,6 @@ Show
   SetFontSize 30
   Continue
 
-Show
-  BaseType == "Amethyst Ring" "Attuned Wand" "Breach Ring" "Chiming Staff" "Expert Altar Robe" "Expert Barrier Quarterstaff" "Expert Bombard Crossbow" "Expert Brigand Mace" "Expert Cloaked Mail" "Expert Construct Hammer" "Expert Crumbling Maul" "Expert Doubled Gauntlets" "Expert Dualstring Bow" "Expert Dyad Crossbow" "Expert Edged Buckler" "Expert Elite Greathelm" "Expert Feathered Sandals" "Expert Feathered Targe" "Expert Feathered Tiara" "Expert Forlorn Crossbow" "Expert Goldcast Cuffs" "Expert Heavy Crown" "Expert Hexer's Robe" "Expert Hunter Hood" "Expert Hunting Shoes" "Expert Intricate Gloves" "Expert Iron Cuirass" "Expert Keth Raiment" "Expert Leaden Greathammer" "Expert Lizardscale Boots" "Expert Moulded Mitts" "Expert Oak Greathammer" "Expert Omen Crest Shield" "Expert Pathfinder Coat" "Expert Pelt Leggings" "Expert Pelt Mantle" "Expert Plumed Focus" "Expert Rogue Armour" "Expert Sacrificial Mantle" "Expert Scale Mail" "Expert Scalper's Jacket" "Expert Serpentscale Coat" "Expert Shaman Mantle" "Expert Shielded Helm" "Expert Slicing Quarterstaff" "Expert Spined Bracers" "Expert Spiral Wraps" "Expert Stacked Sabatons" "Expert Steel Plate" "Expert Stone Greaves" "Expert Stone Tower Shield" "Expert Studded Vest" "Expert Tribal Mask" "Expert Vaal Cuirass" "Expert Warpick" "Expert Waxed Jacket" "Expert Wayfarer Jacket" "Expert Zealot Bow" "Omen Sceptre" "Plate Belt" "Primed Quiver" "Prismatic Ring" "Rattling Sceptre" "Siphoning Wand" "Solar Amulet" "Voltaic Staff"
-  Rarity <= Magic
-  SetTextColor 255 230 201
-  SetBorderColor 255 163 117
-  SetBackgroundColor 215 206 36
-  PlayAlertSound 2 300
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Square
-  SetFontSize 40
 
 
 #------------------------------------------------------------------------------
@@ -30,7 +20,7 @@ Show
 Show
   Rarity Rare
   SetFontSize 35
-  CustomAlertSound "soundeffect/rare.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
   Continue
 
 #------------------------------------------------------------------------------
@@ -39,7 +29,7 @@ Show
 
 Show
   Rarity Unique
-  CustomAlertSound "soundeffect/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
   Continue
 
 Show
@@ -83,7 +73,7 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/salvage.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
 Show
@@ -91,7 +81,7 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 
 Show
@@ -99,7 +89,7 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 
 Show
@@ -107,13 +97,13 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
-show
+Show
   BaseType == "Gold"
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
@@ -149,7 +139,7 @@ Show
 Show
   Class "Currency"
   SetFontSize 40
-  CustomAlertSound "soundeffect/currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
   Continue
  
 Show
@@ -161,7 +151,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "soundeffect/special_currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
   Continue
 
 Show
@@ -261,7 +251,7 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
-  CustomAlertSound "soundeffect/currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
   PlayAlertSound 2 0
 
 
@@ -421,7 +411,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
-  CustomAlertSound "soundeffect/jewel.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 200
 
 Show 
   BaseType "Timeless"
