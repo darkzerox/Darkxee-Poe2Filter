@@ -1,3 +1,0 @@
-([('DZX Filter Updater',
-   '/Users/light/Data/poe2/dzx-filter-poe2/dist/DZX Filter Updater',
-   'EXECUTABLE')],)
