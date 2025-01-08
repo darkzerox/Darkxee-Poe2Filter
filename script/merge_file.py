@@ -5,7 +5,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 # Get project root (parent directory of script)
 project_path = os.path.dirname(script_dir)
 # Path to filter_group directory using os.path.join
-filter_group_path = os.path.join(project_path, "filter_group")
+filter_group_path = os.path.join(project_path,"dzx_filter","filter_group")
 
 def merge_files_from_array(file_paths, output_file_name):
     # Create output path using os.path.join

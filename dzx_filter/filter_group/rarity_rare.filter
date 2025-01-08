@@ -1,0 +1,9 @@
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
+  Continue

@@ -1,0 +1,133 @@
+
+#------------------------------------------------------------------------------
+# Currency
+#------------------------------------------------------------------------------
+
+Show
+  Class "Currency"
+  SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
+  Continue
+ 
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  Continue
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+  PlayAlertSound 3 0
+
+Show
+  Class "Currency"
+  BaseType == "Distilled Isolation" "Distilled Suffering"
+  PlayAlertSound 6 300
+
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+  Class "Currency"
+  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  SetTextColor 255 255 255 255
+  SetBorderColor 255 255 255 255
+  SetBackgroundColor 240 90 35
+  PlayEffect White
+  MinimapIcon 1 Yellow Circle
+
+# Currency Tier B: Exalt
+Show
+  Class "Currency"
+  BaseType "Exotic Coinage" "Exalted Orb"
+  SetTextColor 255 207 92
+  SetBorderColor 255 207 92
+  SetBackgroundColor 76 51 12
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+
+Show
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+# Currency Tier B: Regal, Vaal ...
+Show
+  Class "Currency"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  
+Show
+  Class "Currency"
+  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White Temp
+  MinimapIcon 1 White Kite
+  SetFontSize 35
+  
+
+Show
+  Class "Currency"
+  BaseType "Distilled" "Catalyst" "Essence of"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  AreaLevel >= 70
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 220 190 132
+  SetFontSize 35
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 220 190 132
+  MinimapIcon 2 Grey Circle
+  SetFontSize 35
+
+
+Show
+  Class "Omen"
+  BaseType "Omen of"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 255 207 132
+  SetBorderColor 255 207 132
+  SetBackgroundColor 76 51 12
+  PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle

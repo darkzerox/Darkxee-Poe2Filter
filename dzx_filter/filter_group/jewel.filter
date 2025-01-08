@@ -1,0 +1,23 @@
+#------------------------------------------------------------------------------
+# Jewel
+#------------------------------------------------------------------------------
+
+Show
+  Class "Jewel"
+  Rarity <= Rare
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 300
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 200
+
+Show 
+  BaseType "Timeless"
+  SetTextColor 0 240 190
+  SetBorderColor 0 240 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
