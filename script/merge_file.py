@@ -4,16 +4,21 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Get project root (parent directory of script)
 project_path = os.path.dirname(script_dir)
-# print(f'Project root: {project_path}')
-filterGroupPath = os.path.join(project_path, "filter_group")
+# Path to filter_group directory using os.path.join
+filter_group_path = os.path.join(project_path, "filter_group")
 
 def merge_files_from_array(file_paths, output_file_name):
-    output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', output_file_name + '.filter')
+    # Create output path using os.path.join
+    output_file = os.path.join(project_path, f"{output_file_name}.filter")
     
     try:
         with open(output_file, 'w') as outfile:
             for file_path in file_paths:
-                full_path = os.path.join(filterGroupPath, file_path)
+                # Ensure file_path doesn't start with path separator
+                file_path = file_path.lstrip(os.sep)
+                # Create full path using os.path.join
+                full_path = os.path.join(filter_group_path, file_path)
+                
                 if os.path.exists(full_path):
                     with open(full_path, 'r') as infile:
                         content = infile.read()
@@ -27,9 +32,16 @@ def merge_files_from_array(file_paths, output_file_name):
         return False
 
 if __name__ == "__main__":
-    # Example usage
     test_files = [
-        os.path.join("rarity_magic.filter"),
-        os.path.join("rarity_rare.filter")
+        "rarity_magic.filter",
+        "rarity_rare.filter"
     ]
+    
+    test_file_path = os.path.join(project_path, "test.filter")
+    if os.path.exists(test_file_path):
+        try:
+            os.remove(test_file_path)
+        except Exception as e:
+            print(f"Error removing file: {str(e)}")
+            
     merge_files_from_array(test_files, "test")
