@@ -287,9 +287,11 @@ Show
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet"
-  SetBorderColor 0 240 190
+  SetBorderColor 255 220 23
+  SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 #------------------------------------------------------------------------------
 # Belts
