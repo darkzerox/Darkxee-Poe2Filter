@@ -274,6 +274,7 @@ Show
   Class "Amulets"
   Rarity <= Magic
   SetFontSize 40
+  Continue
 
 Show
   Class "Amulets"
@@ -283,13 +284,18 @@ Show
   SetBorderColor 233 206 75
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
+  Continue
+
 
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet"
-  SetBorderColor 0 240 190
+  SetBorderColor 255 220 23
+  SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
 
 #------------------------------------------------------------------------------
 # Belts
