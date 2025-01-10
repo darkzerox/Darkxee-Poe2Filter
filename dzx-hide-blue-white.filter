@@ -78,7 +78,7 @@ Show
   Rarity Normal
   SetBorderColor 200 200 200
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
 Show
@@ -86,7 +86,7 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
 Show
@@ -94,7 +94,7 @@ Show
   Rarity Magic
   SetBorderColor 0 0 200
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
 #------------------------------------------------------------------------------
@@ -255,7 +255,6 @@ Show
   PlayAlertSound 2 300
   PlayEffect Pink
   MinimapIcon 1 White Circle
-
 
 #------------------------------------------------------------------------------
 # Amulets
@@ -476,6 +475,7 @@ Show
   PlayAlertSound 2 300
   PlayEffect Cyan
 
+
 #------------------------------------------------------------------------------
 # Rings
 #------------------------------------------------------------------------------
@@ -590,6 +590,7 @@ Hide
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
+  Continue
 
 #------------------------------------------------------------------------------
 # Hide Magic Rarity
