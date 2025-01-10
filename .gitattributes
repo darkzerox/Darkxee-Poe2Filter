@@ -13,3 +13,4 @@ LICENSE export-ignore
 script export-ignore
 update.py export-ignore
 version.txt export-ignore
+dzx_filter/filter_group export-ignore

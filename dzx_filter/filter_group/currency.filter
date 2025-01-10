@@ -7,7 +7,7 @@ Show
   Class "Currency"
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
-  Continue
+  
  
 Show
   Class "Currency"
@@ -19,7 +19,7 @@ Show
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
-  Continue
+  
 
 Show
   Class "Currency"
