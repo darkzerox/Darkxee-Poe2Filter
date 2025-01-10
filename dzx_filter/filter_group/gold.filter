@@ -1,11 +1,6 @@
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
-Show
-  BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-  Continue
 
 Show
   AreaLevel >= 70
@@ -13,7 +8,8 @@ Show
   BaseType == "Gold"
   PlayEffect Orange Temp
   MinimapIcon 2 White Cross
-
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
 
 Show
   AreaLevel < 70
@@ -21,6 +17,8 @@ Show
   BaseType == "Gold"
   PlayEffect Orange Temp
   MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
 
 Show
   BaseType == "Gold"

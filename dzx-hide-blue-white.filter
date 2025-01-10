@@ -19,18 +19,12 @@ Show
 
 Show
   Rarity Rare
-  SetFontSize 35
   CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
-  
+  Continue
 
 #------------------------------------------------------------------------------
 # Unique Items group
 #------------------------------------------------------------------------------
-
-Show
-  Rarity Unique
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-  
 
 Show
   Rarity Unique
@@ -41,6 +35,8 @@ Show
   MinimapIcon 1 Brown Star
   SetFontSize 40
   PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+  Continue
 
 Show
   Rarity Unique
@@ -52,6 +48,7 @@ Show
   PlayAlertSound 6 300
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 
 
@@ -103,11 +100,6 @@ Show
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
-Show
-  BaseType == "Gold"
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-  Continue
 
 Show
   AreaLevel >= 70
@@ -115,7 +107,8 @@ Show
   BaseType == "Gold"
   PlayEffect Orange Temp
   MinimapIcon 2 White Cross
-
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
 
 Show
   AreaLevel < 70
@@ -123,6 +116,8 @@ Show
   BaseType == "Gold"
   PlayEffect Orange Temp
   MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
 
 Show
   BaseType == "Gold"
@@ -140,7 +135,7 @@ Show
   Class "Currency"
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
-  
+  Continue
  
 Show
   Class "Currency"
@@ -153,11 +148,6 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
   
-
-Show
-  Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
-  PlayAlertSound 3 0
 
 Show
   Class "Currency"
@@ -174,6 +164,7 @@ Show
   SetBackgroundColor 240 90 35
   PlayEffect White
   MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 # Currency Tier B: Exalt
 Show
@@ -232,6 +223,7 @@ Show
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   SetFontSize 35
+  DisableDropSound
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
@@ -240,7 +232,6 @@ Show
   SetTextColor 220 190 132
   MinimapIcon 2 Grey Circle
   SetFontSize 35
-
 
 Show
   Class "Omen"
@@ -273,20 +264,18 @@ Show
 Show
   Class "Amulets"
   Rarity <= Magic
-  SetFontSize 40
+  SetFontSize 30
   Continue
 
 Show
   Class "Amulets"
   Rarity Rare
-  SetFontSize 40
+  SetFontSize 32
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
-  Continue
-
-
+  
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet"
@@ -296,20 +285,24 @@ Show
   MinimapIcon 2 Cyan Diamond
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
-
 #------------------------------------------------------------------------------
 # Belts
 #------------------------------------------------------------------------------
-
+Show
+  Class "Belts"
+  Rarity Normal
+  SetFontSize 30
+  
+  
 Show
   Class "Belts"
   Rarity Magic
-  SetFontSize 40
+  SetFontSize 30
 
 Show
   Class "Belts"
   Rarity Rare
-  SetFontSize 40
+  SetFontSize 35
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
@@ -328,9 +321,7 @@ Show
   AreaLevel < 65
   SetFontSize 35
 
-Show
-  Rarity Normal
-  Class "Belts"
+
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -413,7 +404,7 @@ Show
   Rarity <= Rare
   SetTextColor 0 240 190
   SetBorderColor 0 240 190
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
@@ -437,7 +428,7 @@ Show
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
   SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect White
   MinimapIcon 1 Yellow Square
   SetFontSize 40
@@ -447,30 +438,30 @@ Show
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
   SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Purple
   MinimapIcon 1 Purple Square
-  SetFontSize 45
+  SetFontSize 40
 
 Show
   Class "Tablet"
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
-  SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  SetBackgroundColor 115 36 141
+  PlayAlertSound 2 200
   PlayEffect Purple
   MinimapIcon 1 Purple Square
-  SetFontSize 45
+  SetFontSize 40
 
 Show
   BaseType "Barya" "Ultimatum"
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
-  SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  SetBackgroundColor 57 8 73
+  PlayAlertSound 12 200
   PlayEffect Grey
   MinimapIcon 1 Grey Square
-  SetFontSize 40
+  SetFontSize 35
 
 #------------------------------------------------------------------------------
 # Relic
@@ -488,17 +479,22 @@ Show
 #------------------------------------------------------------------------------
 # Rings
 #------------------------------------------------------------------------------
+Show
+  Class "Rings"
+  Rarity Normal
+  SetFontSize 35
+  Continue
 
 Show
   Class "Rings"
   Rarity Magic
-  SetFontSize 40
+  SetFontSize 35
   Continue
 
 Show
   Class "Rings"
   Rarity Rare
-  SetFontSize 40
+  SetFontSize 35
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
@@ -510,17 +506,20 @@ Show
 Show 
   Rarity Rare
   BaseType == "Breach Ring"
-  SetTextColor 0 240 190
-  SetBorderColor 0 240 190
+  SetTextColor 255 188 17
+  SetBorderColor 156 106 255
+  SetBackgroundColor 88 57 150
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 Show 
   Rarity <= Magic
   BaseType == "Breach Ring"
-  SetTextColor 0 240 190
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
   SetFontSize 35
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
@@ -591,7 +590,6 @@ Hide
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
-  Continue
 
 #------------------------------------------------------------------------------
 # Hide Magic Rarity

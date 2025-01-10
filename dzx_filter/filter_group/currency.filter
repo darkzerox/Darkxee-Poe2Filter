@@ -7,7 +7,7 @@ Show
   Class "Currency"
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
-  
+  Continue
  
 Show
   Class "Currency"
@@ -20,11 +20,6 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
   
-
-Show
-  Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
-  PlayAlertSound 3 0
 
 Show
   Class "Currency"
@@ -41,6 +36,7 @@ Show
   SetBackgroundColor 240 90 35
   PlayEffect White
   MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 # Currency Tier B: Exalt
 Show
@@ -99,6 +95,7 @@ Show
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 220 190 132
   SetFontSize 35
+  DisableDropSound
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
@@ -107,7 +104,6 @@ Show
   SetTextColor 220 190 132
   MinimapIcon 2 Grey Circle
   SetFontSize 35
-
 
 Show
   Class "Omen"
