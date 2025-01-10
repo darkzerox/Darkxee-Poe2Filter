@@ -7,7 +7,7 @@ Show
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
   SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect White
   MinimapIcon 1 Yellow Square
   SetFontSize 40
@@ -17,27 +17,27 @@ Show
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
   SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Purple
   MinimapIcon 1 Purple Square
-  SetFontSize 45
+  SetFontSize 40
 
 Show
   Class "Tablet"
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
-  SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  SetBackgroundColor 115 36 141
+  PlayAlertSound 2 200
   PlayEffect Purple
   MinimapIcon 1 Purple Square
-  SetFontSize 45
+  SetFontSize 40
 
 Show
   BaseType "Barya" "Ultimatum"
   SetTextColor 255 207 255
   SetBorderColor 255 207 255
-  SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
+  SetBackgroundColor 57 8 73
+  PlayAlertSound 12 200
   PlayEffect Grey
   MinimapIcon 1 Grey Square
-  SetFontSize 40
+  SetFontSize 35

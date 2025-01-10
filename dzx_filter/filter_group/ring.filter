@@ -1,17 +1,23 @@
+
 #------------------------------------------------------------------------------
 # Rings
 #------------------------------------------------------------------------------
+Show
+  Class "Rings"
+  Rarity Normal
+  SetFontSize 35
+  Continue
 
 Show
   Class "Rings"
   Rarity Magic
-  SetFontSize 40
+  SetFontSize 35
   Continue
 
 Show
   Class "Rings"
   Rarity Rare
-  SetFontSize 40
+  SetFontSize 35
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
@@ -23,17 +29,20 @@ Show
 Show 
   Rarity Rare
   BaseType == "Breach Ring"
-  SetTextColor 0 240 190
-  SetBorderColor 0 240 190
+  SetTextColor 255 188 17
+  SetBorderColor 156 106 255
+  SetBackgroundColor 88 57 150
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 300
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 Show 
   Rarity <= Magic
   BaseType == "Breach Ring"
-  SetTextColor 0 240 190
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
   SetFontSize 35
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
