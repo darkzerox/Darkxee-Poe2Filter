@@ -225,7 +225,7 @@ def generate_html_content(filter_array):
     <style>
         @font-face {{   
             font-family: 'Fontin';
-            src: url('/fonts/Fontin-Regular.ttf') format('truetype');
+            src: url('https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/fonts/Fontin-Regular.ttf') format('truetype');
         }}
         body {{
             font-family: Fontin, Arial, sans-serif;
@@ -263,7 +263,7 @@ def generate_html_content(filter_array):
     </style>
 </head>
 <body>
-    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="/dzx_filter/css/logo.png" alt="Darkxee Poe2 Filter">
+    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/css/logo.png" alt="Darkxee Poe2 Filter">
     <h1>Darkxee Poe2 Filter </h1>
     </div>
    
