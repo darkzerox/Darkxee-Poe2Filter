@@ -17,3 +17,4 @@ dzx_filter/filter_group export-ignore
 dzx_filter/css export-ignore
 dzx_filter/fonts export-ignore
 dzx_filter/index.html export-ignore
+index.html export-ignore

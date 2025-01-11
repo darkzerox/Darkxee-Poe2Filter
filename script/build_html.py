@@ -225,7 +225,7 @@ def generate_html_content(filter_array):
     <style>
         @font-face {{   
             font-family: 'Fontin';
-            src: url('./fonts/Fontin-Regular.ttf') format('truetype');
+            src: url('/fonts/Fontin-Regular.ttf') format('truetype');
         }}
         body {{
             font-family: Fontin, Arial, sans-serif;
@@ -263,7 +263,7 @@ def generate_html_content(filter_array):
     </style>
 </head>
 <body>
-    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="./css/logo.png" alt="Darkxee Poe2 Filter">
+    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="/dzx_filter/css/logo.png" alt="Darkxee Poe2 Filter">
     <h1>Darkxee Poe2 Filter </h1>
     </div>
    
@@ -339,7 +339,7 @@ def write_html_to_file(array_path, output_file_name="index.html"):
         return False
 
     # Create output directory if it doesn't exist
-    html_dir = os.path.join(project_path, 'dzx_filter')
+    html_dir = os.path.join(project_path)
     os.makedirs(html_dir, exist_ok=True)
 
     # Write HTML file
