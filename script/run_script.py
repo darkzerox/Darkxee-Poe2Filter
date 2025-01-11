@@ -1,4 +1,6 @@
 import merge_file as merge_file
+from build_css import filter_to_css
+from build_html import write_html_to_file
 
 mainGroup= [
     #----------------------
@@ -69,3 +71,14 @@ merge_file.merge_files_from_array(mainGroup+hideWhiteGroupFile, output_file_name
 #----------------------
 output_file_name = 'dzx'
 merge_file.merge_files_from_array(mainGroup, output_file_name)
+
+
+#----------------------
+# create css file
+filter_to_css(mainGroup+hideHeightLVGroupFile+hideBlueWhiteGroupFile+hideBlueWhiteGroupFile, "filter_styles.css")
+#----------------------
+
+#----------------------
+# create html preview
+write_html_to_file(mainGroup+hideHeightLVGroupFile+hideBlueWhiteGroupFile+hideBlueWhiteGroupFile, "index.html")
+#----------------------

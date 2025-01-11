@@ -1,0 +1,286 @@
+.flasks, .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+    background-color: rgb(0 0 0);
+    font-size: 30px;
+}
+
+[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Incense"], [data-basetype="Relic"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Vase"], [data-basetype="Relic"] {
+    font-size: 45px;
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(255 255 255);
+}
+
+[data-basetype="=="], [data-basetype="Gold"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+}
+
+[data-basetype="=="], [data-basetype="Gold"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+}
+
+[data-basetype="=="], [data-basetype="Gold"] {
+    color: rgb(180 180 180);
+    border-color: rgb(0 0 0);
+    background-color: rgb(0 0 0);
+}
+
+.currency {
+    font-size: 40px;
+}
+
+.currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Isolation"], [data-basetype="Distilled"], [data-basetype="Suffering"] {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(255 255 255);
+    font-size: 45px;
+}
+
+.currency, [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+    background-color: rgb(240 90 35);
+}
+
+.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"] {
+    color: rgb(255 207 92);
+    border-color: rgb(255 207 92);
+    background-color: rgb(76 51 12);
+}
+
+[data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"], [data-basetype="Bronze"], [data-basetype="Key"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"], [data-basetype="Chance"], [data-basetype="Shard"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+    font-size: 35px;
+}
+
+.currency, [data-basetype="Distilled"], [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+    color: rgb(220 190 132);
+    font-size: 35px;
+}
+
+.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+    color: rgb(220 190 132);
+    font-size: 35px;
+}
+
+.omen, [data-basetype="Omen"], [data-basetype="of"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+    font-size: 40px;
+}
+
+.currency {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.amulets {
+    font-size: 30px;
+}
+
+.amulets {
+    font-size: 32px;
+    color: rgb(233 206 75);
+    border-color: rgb(233 206 75);
+}
+
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
+    border-color: rgb(255 220 23);
+    color: rgb(233 75 75);
+    font-size: 40px;
+}
+
+.belts {
+    font-size: 30px;
+}
+
+.belts {
+    font-size: 30px;
+}
+
+.belts {
+    font-size: 35px;
+    color: rgb(233 206 75);
+    border-color: rgb(233 206 75);
+}
+
+[data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"] {
+    border-color: rgb(0 240 190);
+    font-size: 40px;
+}
+
+.belts {
+    font-size: 35px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
+    font-size: 45px;
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(255 255 255);
+}
+
+[data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 40px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 40px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 40px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 35px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 35px;
+}
+
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
+    color: rgb(20 240 240);
+    border-color: rgb(20 240 240);
+    font-size: 40px;
+}
+
+.jewel {
+    color: rgb(0 240 190);
+    border-color: rgb(0 240 190);
+    font-size: 35px;
+}
+
+[data-basetype="Timeless"] {
+    color: rgb(0 240 190);
+    border-color: rgb(0 240 190);
+    font-size: 45px;
+}
+
+.pinnacle, .keys {
+    color: rgb(255 207 255);
+    border-color: rgb(255 207 255);
+    background-color: rgb(65 20 80);
+    font-size: 40px;
+}
+
+[data-basetype="Simulacrum"], [data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
+    color: rgb(255 207 255);
+    border-color: rgb(255 207 255);
+    background-color: rgb(65 20 80);
+    font-size: 40px;
+}
+
+.tablet {
+    color: rgb(255 207 255);
+    border-color: rgb(255 207 255);
+    background-color: rgb(115 36 141);
+    font-size: 40px;
+}
+
+[data-basetype="Barya"], [data-basetype="Ultimatum"] {
+    color: rgb(255 207 255);
+    border-color: rgb(255 207 255);
+    background-color: rgb(57 8 73);
+    font-size: 35px;
+}
+
+.relic {
+    color: rgb(0 240 190);
+    border-color: rgb(0 240 190);
+    font-size: 40px;
+}
+
+.rings {
+    font-size: 35px;
+}
+
+.rings {
+    font-size: 35px;
+}
+
+.rings {
+    font-size: 35px;
+    color: rgb(233 206 75);
+    border-color: rgb(233 206 75);
+}
+
+[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
+    color: rgb(255 188 17);
+    border-color: rgb(156 106 255);
+    background-color: rgb(88 57 150);
+    font-size: 40px;
+}
+
+[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
+    color: rgb(156 106 255);
+    border-color: rgb(156 106 255);
+    font-size: 35px;
+}
+
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"] {
+    border-color: rgb(0 240 190);
+    font-size: 40px;
+}
+
+[data-basetype="Rune"], [data-basetype="Charm"] {
+    color: rgb(0 240 190);
+}
+
+[data-basetype="Soul"], [data-basetype="Core"] {
+    color: rgb(0 240 190);
+    border-color: rgb(0 240 190);
+    font-size: 45px;
+}
+
+[data-basetype="Waystone"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+    font-size: 35px;
+}
+
+[data-basetype="Waystone"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+    font-size: 35px;
+}
+
+[data-basetype="Waystone"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+    font-size: 40px;
+}
