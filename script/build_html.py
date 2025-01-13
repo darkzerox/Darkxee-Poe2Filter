@@ -221,7 +221,15 @@ def generate_html_content(filter_array):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZX Filter Preview</title>
+    <title>DZX Poe2 Filter</title>
+    <meta name="description" content="DZX Poe2 Filter สำหรับกรอง Item จากเกม Path of Exile 2">
+    <meta property="og:title" content="DZX Poe2 Filter">
+    <meta property="og:description" content="DZX Poe2 Filter สำหรับกรอง Item จากเกม Path of Exile 2">
+    <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
+    <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="DZX Poe2 Filter">
     <style>
         @font-face {{   
             font-family: 'Fontin';
@@ -261,10 +269,28 @@ def generate_html_content(filter_array):
         }}
         {css_content}
     </style>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':
+    new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    }})(window,document,'script','dataLayer','GTM-P8JFCCZC');</script>
+    <!-- End Google Tag Manager -->
+
 </head>
+
+
+
 <body>
-    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/css/logo.png" alt="Darkxee Poe2 Filter">
-    <h1>Darkxee Poe2 Filter </h1>
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8JFCCZC"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" alt="DZX Poe2 Filter">
+    <h1>DZX Poe2 Filter </h1>
     </div>
    
 
@@ -310,7 +336,7 @@ def generate_html_content(filter_array):
         <li>สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย</li>
         <li>ไฟล์หลักจะอยู่ใน Folder <strong>filter_group</strong> ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข</li>
         <li>ไฟล์เสียงจะอยู่ใน Folder <strong>dzx_filter/soundeffect</strong></li>
-        <li>เมื่อแก้ไขไฟล์เสร็จแล้วให้ run ไฟล์ <strong>run_script.py</strong> เพื่อทำการรวมไฟล์ใหม่อีกครั้ง</li>
+        <li>เมื่อแก้ไฟล์เสร็จแล้วให้ run ไฟล์ <strong>run_script.py</strong> เพื่อทำการรวมไฟล์ใหม่อีกครั้ง</li>
         <li>ใช้ภาษา python นะ</li>
     </ul>
 
