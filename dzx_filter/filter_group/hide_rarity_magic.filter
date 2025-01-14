@@ -50,7 +50,7 @@ Hide
 
 Hide
   Class "Flasks"
-  Rarity <= Magic
+  Rarity <= Normal
   
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
