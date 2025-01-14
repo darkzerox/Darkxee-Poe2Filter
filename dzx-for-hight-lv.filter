@@ -137,7 +137,7 @@ Show
 Show
   Class "Currency"
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
   Continue
  
 Show
@@ -167,7 +167,7 @@ Show
   SetBackgroundColor 240 90 35
   PlayEffect White
   MinimapIcon 1 Yellow Circle
-  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
 
 # Currency Tier B: Exalt
 Show
@@ -699,7 +699,7 @@ Hide
 
 Hide
   Class "Flasks"
-  Rarity <= Magic
+  Rarity <= Normal
   
 # Quivers have some relevant bases at 50+ so we treat them different
 Hide
