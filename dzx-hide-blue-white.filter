@@ -307,12 +307,6 @@ Show
   Rarity Normal
   SetFontSize 35
   Continue
-
-Show
-  Rarity Normal
-  Class "Belts"
-  AreaLevel < 65
-  SetFontSize 35  
   
 Show
   Class "Belts"
@@ -335,7 +329,11 @@ Show
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
 
-
+Show
+  Rarity Normal
+  Class "Belts"
+  AreaLevel < 65
+  SetFontSize 35
 
 
 

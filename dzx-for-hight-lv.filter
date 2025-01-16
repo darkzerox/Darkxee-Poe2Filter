@@ -306,7 +306,7 @@ Show
   Class "Belts"
   Rarity Normal
   SetFontSize 35
-  
+  Continue
   
 Show
   Class "Belts"
@@ -713,14 +713,7 @@ Hide
 
 Hide
   Class "Flasks"
-  Rarity <= Normal
-  
-# Quivers have some relevant bases at 50+ so we treat them different
-Hide
-  AreaLevel > 74
   Rarity <= Magic
-  DropLevel < 50
-  Class "Quivers"
   
 Hide
   Class "Charms"
