@@ -8,3 +8,9 @@ hideout
 
 CNAME
 OnlineFilters
+<<<<<<< HEAD
+
+.venv
+=======
+*.Identifier
+>>>>>>> 40fee62d34ec28a3f0e2ddc9f8d93b2d4b0b3664

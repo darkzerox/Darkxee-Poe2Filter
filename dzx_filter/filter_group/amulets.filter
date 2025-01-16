@@ -5,7 +5,7 @@
 Show
   Class "Amulets"
   Rarity <= Magic
-  SetFontSize 30
+  SetFontSize 35
   Continue
 
 Show
