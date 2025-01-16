@@ -190,6 +190,8 @@ Show
   SetBackgroundColor 76 51 12
   PlayEffect Yellow
   MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
+
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
