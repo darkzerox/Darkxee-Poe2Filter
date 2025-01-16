@@ -6,4 +6,6 @@ poe2_production
 test.filter
 hideout
 
+.venv
+OnlineFilters
 CNAME
