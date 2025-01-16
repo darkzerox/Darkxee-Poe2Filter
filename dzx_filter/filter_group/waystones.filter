@@ -29,3 +29,4 @@ Show
   PlayEffect White
   MinimapIcon 1 White Square
   SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200

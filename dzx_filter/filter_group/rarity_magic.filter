@@ -8,6 +8,6 @@ Show
   AreaLevel >= 65
   DropLevel <= 50
   SetBackgroundColor 0 0 0 125
-  SetFontSize 30
+  SetFontSize 35
   Continue
 
