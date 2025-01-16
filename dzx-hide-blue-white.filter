@@ -306,7 +306,13 @@ Show
   Class "Belts"
   Rarity Normal
   SetFontSize 35
-  
+  Continue
+
+Show
+  Rarity Normal
+  Class "Belts"
+  AreaLevel < 65
+  SetFontSize 35  
   
 Show
   Class "Belts"
@@ -329,11 +335,7 @@ Show
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
 
-Show
-  Rarity Normal
-  Class "Belts"
-  AreaLevel < 65
-  SetFontSize 35
+
 
 
 
@@ -661,14 +663,7 @@ Hide
 
 Hide
   Class "Flasks"
-  Rarity <= Normal
-  
-# Quivers have some relevant bases at 50+ so we treat them different
-Hide
-  AreaLevel > 74
   Rarity <= Magic
-  DropLevel < 50
-  Class "Quivers"
   
 Hide
   Class "Charms"
