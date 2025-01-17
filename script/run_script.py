@@ -42,6 +42,13 @@ merge_file.merge_files_from_array(mainGroup, output_file_name)
 
 
 #----------------------
+# merge all filter
+#----------------------
+output_file_name = 'dzx-poe2-PS5'
+merge_file.merge_files_from_array(mainGroup, output_file_name , True)
+
+
+#----------------------
 # create css file
 filter_to_css(mainGroup, "filter_styles.css")
 #----------------------
