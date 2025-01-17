@@ -57,3 +57,10 @@ Hide
   Rarity <= Magic
   Quality == 0
   
+
+
+# Skill Gems
+Hide
+  ItemLevel = 14
+  BaseType "Uncut Skill Gem"
+  Continue
