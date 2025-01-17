@@ -160,17 +160,7 @@ Show
   Class "Belts"
   Rarity Normal
   SetFontSize 35
-<<<<<<< HEAD:dzx.filter
-  Continue
   
-Show
-  Class "Belts"
-  Rarity Magic
-  SetFontSize 35
-
-=======
-  
->>>>>>> develop:dzx-poe2.filter
 Show
   Class "Belts"
   Rarity Rare
