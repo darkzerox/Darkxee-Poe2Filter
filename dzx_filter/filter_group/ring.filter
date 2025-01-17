@@ -4,13 +4,7 @@
 #------------------------------------------------------------------------------
 Show
   Class "Rings"
-  Rarity Normal
-  SetFontSize 35
-  Continue
-
-Show
-  Class "Rings"
-  Rarity Magic
+  Rarity Normal Magic
   SetFontSize 35
   Continue
 
@@ -35,7 +29,7 @@ Show
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 2 300
+  PlayAlertSound 9 300
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 Show 
@@ -50,7 +44,9 @@ Show
 # Chancing bases
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring"
-  SetBorderColor 0 240 190
+  BaseType == "Sapphire Ring" "Amethyst Ring"
+  SetBorderColor 242 255 100
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
+  PlayAlertSound 9 300
+  PlayEffect Cyan

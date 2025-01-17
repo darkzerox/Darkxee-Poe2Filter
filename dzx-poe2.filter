@@ -1,134 +1,3 @@
-#------------------------------------------------------------------------------
-# Magic Items Group
-#------------------------------------------------------------------------------
-
-Show
-  Rarity <= Magic
-  Class "Flasks" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
-  AreaLevel >= 65
-  DropLevel <= 50
-  SetBackgroundColor 0 0 0 125
-  SetFontSize 35
-  Continue
-
-
-
-#------------------------------------------------------------------------------
-# Rare Items Group
-#------------------------------------------------------------------------------
-Show
-  Rarity Rare
-  SetBackgroundColor 34 34 34 208
-  SetTextColor 255 231 72
-  SetBorderColor 34 34 34 208
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
-  Continue
-
-#------------------------------------------------------------------------------
-# Unique Items group
-#------------------------------------------------------------------------------
-
-Show
-  Rarity Unique
-  SetTextColor 175 96 37 255
-  SetBorderColor 175 96 37 255
-  SetBackgroundColor 53 13 13 255
-  PlayEffect Brown
-  MinimapIcon 1 Brown Star
-  SetFontSize 40
-  PlayAlertSound 3 0
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-  Continue
-
-Show
-  Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
-  SetFontSize 45
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
-  PlayEffect Red
-  MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-
-
-
-
-#------------------------------------------------------------------------------
-# Scroll of Wisdom
-#------------------------------------------------------------------------------
-
-Show
-  Class "Currency"
-  BaseType "Scroll of Wisdom" "Shard"
-
-#------------------------------------------------------------------------------
-# Salvagable Items
-#------------------------------------------------------------------------------
-
-Show
-  Sockets > 0
-  Rarity Normal
-  SetBorderColor 200 200 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
-
-
-Show
-  Quality > 0
-  Rarity Normal
-  SetBorderColor 200 200 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
-
-
-Show
-  Sockets > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
-
-
-Show
-  Quality > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
-
-
-#------------------------------------------------------------------------------
-# Gold
-#------------------------------------------------------------------------------
-
-Show
-  AreaLevel >= 70
-  StackSize >= 1000
-  BaseType == "Gold"
-  PlayEffect Orange Temp
-  MinimapIcon 2 White Cross
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-
-Show
-  AreaLevel < 70
-  StackSize >= 500
-  BaseType == "Gold"
-  PlayEffect Orange Temp
-  MinimapIcon 2 White Cross
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
-
-Show
-  BaseType == "Gold"
-  SetTextColor 180 180 180
-  SetBorderColor 0 0 0 255
-  SetBackgroundColor 0 0 0 180
-  MinimapIcon 2 Grey Cross
-
 
 #------------------------------------------------------------------------------
 # Currency
@@ -272,6 +141,125 @@ Show
   MinimapIcon 1 White Circle
 
 #------------------------------------------------------------------------------
+# Uncut Gems
+#------------------------------------------------------------------------------
+# Skill Gems
+  
+Hide
+  ItemLevel >= 14 
+  ItemLevel <= 16
+  AreaLevel >= 70
+  AreaLevel <= 80
+  BaseType "Uncut Skill Gem"
+  Continue
+
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+# Always make Spirit gems pop
+Show
+  BaseType "Uncut Spirit Gem" "Uncut Spirit Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 37
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  SetFontSize 35
+
+# Level 19 gems and up in maps get a special highlight
+Show
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 300
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 40
+
+#------------------------------------------------------------------------------
+# Scroll of Wisdom
+#------------------------------------------------------------------------------
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
+
+
+#------------------------------------------------------------------------------
+# Salvagable Items
+#------------------------------------------------------------------------------
+
+Show
+  Sockets > 0
+  Rarity Normal Magic
+  SetBorderColor 200 200 200
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
+
+
+Show
+  Quality > 0
+  Rarity Normal Magic
+  SetBorderColor 200 200 200
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
+
+
+
+
+#------------------------------------------------------------------------------
+# Gold
+#------------------------------------------------------------------------------
+
+Hide
+  StackSize <= 100
+  AreaLevel >= 70
+  BaseType == "Gold"
+  Continue
+
+Show
+  AreaLevel >= 70
+  StackSize >= 1000
+  BaseType == "Gold"
+  PlayEffect Orange Temp
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+
+Show
+  AreaLevel < 70
+  StackSize >= 500
+  BaseType == "Gold"
+  PlayEffect Orange Temp
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+
+Show
+  BaseType == "Gold"
+  SetTextColor 180 180 180
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 0 0 0 180
+  MinimapIcon 2 Grey Cross
+
+#------------------------------------------------------------------------------
 # Amulets
 #------------------------------------------------------------------------------
 
@@ -302,17 +290,18 @@ Show
 #------------------------------------------------------------------------------
 # Belts
 #------------------------------------------------------------------------------
+
+Hide
+  Quality = 0
+  Rarity <= Magic
+  Class "Belts"
+  Continue
+
 Show
   Class "Belts"
   Rarity Normal
   SetFontSize 35
-  Continue
   
-Show
-  Class "Belts"
-  Rarity Magic
-  SetFontSize 35
-
 Show
   Class "Belts"
   Rarity Rare
@@ -329,89 +318,6 @@ Show
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
 
-Show
-  Rarity Normal
-  Class "Belts"
-  AreaLevel < 65
-  SetFontSize 35
-
-
-
-#------------------------------------------------------------------------------
-# Uncut Gems
-#------------------------------------------------------------------------------
-# Skill Gems
-Hide
-  ItemLevel = 14
-  BaseType "Uncut Skill Gem"
-
-# Level 20 gems go tink
-Show
-  ItemLevel = 20
-  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
-  SetFontSize 45
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
-  PlayEffect Red
-  MinimapIcon 0 Red Star
-
-# Always make Spirit gems pop
-Show
-  BaseType "Uncut Spirit Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  PlayAlertSound 2 300
-  PlayEffect Cyan
-  MinimapIcon 1 Cyan Triangle
-  SetFontSize 40
-
-# Make support gems pop during campaign
-Show
-  AreaLevel < 68
-  BaseType "Uncut Support Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  PlayAlertSound 2 300
-  PlayEffect Cyan
-  MinimapIcon 1 Cyan Triangle
-  SetFontSize 40
-
-# Make skill gems pop during campaign
-Show
-  AreaLevel < 65
-  BaseType "Uncut Skill Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  PlayAlertSound 2 300
-  PlayEffect Cyan
-  MinimapIcon 1 Cyan Triangle
-  SetFontSize 40
-
-# Gems up to level 18 in maps don't get a special highlight
-Show
-  ItemLevel <= 18
-  BaseType "Uncut Skill Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  SetFontSize 35
-
-Show
-  BaseType "Uncut Support Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  SetFontSize 35
-
-# Level 19 gems and up in maps get a special highlight
-Show
-  BaseType "Uncut Skill Gem"
-  SetTextColor 20 240 240
-  SetBorderColor 20 240 240
-  PlayAlertSound 2 300
-  PlayEffect Cyan
-  MinimapIcon 1 Cyan Triangle
-  SetFontSize 40
 
 #------------------------------------------------------------------------------
 # Jewel
@@ -500,13 +406,7 @@ Show
 #------------------------------------------------------------------------------
 Show
   Class "Rings"
-  Rarity Normal
-  SetFontSize 35
-  Continue
-
-Show
-  Class "Rings"
-  Rarity Magic
+  Rarity Normal Magic
   SetFontSize 35
   Continue
 
@@ -531,7 +431,7 @@ Show
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 2 300
+  PlayAlertSound 9 300
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
 
 Show 
@@ -546,10 +446,12 @@ Show
 # Chancing bases
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring"
-  SetBorderColor 0 240 190
+  BaseType == "Sapphire Ring" "Amethyst Ring"
+  SetBorderColor 242 255 100
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
+  PlayAlertSound 9 300
+  PlayEffect Cyan
 
 #------------------------------------------------------------------------------
 # Rune and Charms
@@ -608,76 +510,83 @@ Show
 
 
 Hide
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 65
-  Rarity <= Magic
-  Continue
-
-#------------------------------------------------------------------------------
-# Hide Magic Rarity
-#------------------------------------------------------------------------------
-Hide
-  Rarity <= Magic
-  Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  Continue
-
-Hide
-  AreaLevel >= 78
-  Rarity <= Magic
-  Class "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Body Armours" "Wands" "Sceptres" "Staves" "Quivers"
-
-Hide
-  AreaLevel >= 78
-  Rarity <= Magic
-  DropLevel < 65
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-
-Hide
-  AreaLevel > 75
-  Rarity <= Magic
-  DropLevel < 64
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-
-Hide
-  AreaLevel > 73
-  Rarity <= Magic
-  DropLevel < 60
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-
-Hide
-  AreaLevel > 72
-  Rarity <= Magic
-  DropLevel < 55
-  Class "Body Armours" "Helmets" "Boots" "Gloves" "Shields" "Foci" "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows"
-
-# Quivers have some relevant bases at 50+ so we treat them different
-Hide
-  AreaLevel > 74
-  Rarity <= Magic
-  DropLevel < 50
-  Class "Quivers"
-
-Hide
-  Quality = 0
-  AreaLevel > 70
-  Rarity <= Magic
-  Class "Flasks"
-
-Hide
-  Class "Flasks"
-  Rarity <= Magic
+    Quality = 0
+    AreaLevel > 70
+    Rarity <= Magic
+    Class "Flasks"
   
+
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
 Hide
-  Class "Charms"
   Rarity <= Magic
+  Sockets == 0
   Quality == 0
-  
-
-
-# Skill Gems
-Hide
-  ItemLevel = 14
-  BaseType "Uncut Skill Gem"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   Continue
+
+
+Show
+  Rarity >= Magic
+  Sockets > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 35
+
+
+Show
+  Rarity >= Magic
+  Quality > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 35
+
+
+
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetBackgroundColor 34 34 34 208
+  SetTextColor 255 231 72
+  SetBorderColor 34 34 34 208
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
+
+
+#------------------------------------------------------------------------------
+# Unique Items group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+  Continue
+
+Show
+  Rarity Unique
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+
+
 
 
