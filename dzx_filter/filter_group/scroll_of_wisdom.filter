@@ -1,7 +1,7 @@
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-
-Show
-  Class "Currency"
-  BaseType "Scroll of Wisdom" "Shard"
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic

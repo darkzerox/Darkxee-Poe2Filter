@@ -5,7 +5,7 @@
 
 Show
   Class "Currency"
-  SetFontSize 40
+  SetFontSize 35
   CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
   Continue
 
@@ -54,11 +54,12 @@ Show
 Show
   Class "Currency"
   BaseType "Exotic Coinage" "Exalted Orb"
-  SetTextColor 255 207 92
-  SetBorderColor 255 207 92
-  SetBackgroundColor 76 51 12
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Circle
+  SetTextColor 218 145 255
+  SetFontSize 40
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"

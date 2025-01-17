@@ -23,5 +23,7 @@ Show
   SetBorderColor 255 220 23
   SetTextColor 233 75 75
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 300
+  PlayEffect Red
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200

@@ -42,16 +42,16 @@ def filter_to_html_table(filter_path):
         
         # Map for minimap icons to ASCII
         icon_map = {
-            'Circle': '○',
-            'Diamond': '◇',
-            'Hexagon': '⬡',
-            'Square': '□',
+            'Circle': '●',
+            'Diamond': '◆',
+            'Hexagon': '⬢',
+            'Square': '■',
             'Star': '★',
-            'Triangle': '△',
-            'Cross': '✗',
+            'Triangle': '▲',
+            'Cross': '✕',
             'Moon': '☾',
             'Raindrop': '❧',
-            'Pentagon': '⬠',
+            'Pentagon': '⬟',
         }
         
         for rule in rules:
@@ -100,7 +100,14 @@ def filter_to_html_table(filter_path):
                     icon_shape = parts[3]
                     block_data['minimap_icon'] = icon_map.get(icon_shape, '●')
                     if len(parts) >= 3:  # Get color if specified
-                        block_data['minimap_color'] = f'rgb({parts[2]})'
+                        color_part = parts[2]
+                        # If it's a named color, use it as a class
+                        if color_part.title() in ['Red', 'Green', 'Blue', 'Brown', 'White', 
+                                                'Yellow', 'Cyan', 'Grey', 'Orange', 'Pink', 'Purple']:
+                            block_data['minimap_color'] = color_part.lower()
+                        else:
+                            # For RGB values, use inline style
+                            block_data['minimap_color'] = f'rgb({color_part})'
         
             elif parts[0] == 'AreaLevel':
                 block_data['conditions']['AreaLevel'] = ' '.join(parts[1:])
@@ -154,8 +161,19 @@ def filter_to_html_table(filter_path):
         condition_text = ', '.join(conditions) if conditions else 'Any'
         html_output.append(f'  <td>{condition_text}</td>')
         # Icon column with color
-        icon_style = f'color: {block_data["minimap_color"]}' if block_data["minimap_color"] else ''
-        html_output.append(f'  <td><span style="{icon_style}">{block_data["minimap_icon"] or "-"}</span></td>')
+        if block_data["minimap_icon"]:
+            icon_class = f'minimap-icon-{block_data["minimap_icon"]}'
+            if block_data["minimap_color"]:
+                if block_data["minimap_color"].startswith('rgb'):
+                    # RGB value - use inline style
+                    html_output.append(f'  <td><span class="{icon_class}" style="color: {block_data["minimap_color"]}">{block_data["minimap_icon"]}</span></td>')
+                else:
+                    # Named color - use color class
+                    html_output.append(f'  <td><span class="{icon_class} minimap-icon-{block_data["minimap_color"]}">{block_data["minimap_icon"]}</span></td>')
+            else:
+                html_output.append(f'  <td><span class="{icon_class}">{block_data["minimap_icon"]}</span></td>')
+        else:
+            html_output.append(f'  <td>-</td>')
         # Preview column - use first non-empty value or "ALL"
         preview_text = block_data['classes'][0] if block_data['classes'] else \
                       block_data['base_types'][0] if block_data['base_types'] else "ALL"
@@ -243,6 +261,30 @@ def generate_html_content(filter_array):
             background-color: #1a1a1a;
             color: #ffffff;
         }}
+        a {{
+            color: #f17d40;
+            text-decoration: none;
+        }}
+        a:hover {{
+            color: #ff4a4a;
+            text-decoration: underline;
+        }}
+        .download-button {{
+            border: solid 1px #f17d40;
+            padding: 10px 20px;
+            background: #f17d40;
+            color: #fff;
+            border-radius: 10px;
+            text-decoration: none;
+            margin: 30px;
+            display: inline-block;
+        }}
+        .download-button:hover {{
+            background: #ff4a4a;
+            border: solid 1px #ff4a4a;
+            text-decoration: none;
+            color: #fff;
+        }}
         .filter-table {{
             width: 100%;
             border-collapse: collapse;
@@ -251,8 +293,11 @@ def generate_html_content(filter_array):
         }}
         .filter-table th, .filter-table td {{
             padding: 8px;
-            text-align: left;
+            text-align: center;
             border: 1px solid #666;
+        }}
+        .filter-table tr td:nth-child(2) {{
+            text-align: left;
         }}
         .filter-table th {{
             background-color: #4a9eff;
@@ -311,16 +356,7 @@ def generate_html_content(filter_array):
         <li><img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="GitHub Actions Workflow Status"></li>
     </ul>
 
-    <h2><a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" style="
-    border: solid 1px #ddd;
-    padding: 10px 20px;
-    background: blueviolet;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-    margin: 30px;
-    display: inline-block;
-    ">🔗 Download</a></h2>
+    <h2><a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">🔗 Download</a></h2>
 
     <h2>Installation</h2>
     <p>แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่</p>
@@ -331,21 +367,12 @@ def generate_html_content(filter_array):
     <h4>Linux:</h4>
     <pre><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></pre>
 
-    <h2>How to work</h2>
-
-    <h4>filter จะมี 3 ประเภท ให้เลือกใช้ตามช่วงเวลาที่เล่น</h4>
-    <ul>
-        <li><strong>dzx.filter</strong> จะแสดงไอเท็มทั้งหมด</li>
-        <li><strong>dzx-hide-white.filter</strong> จะซ่อนของสีขาว แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้</li>
-        <li><strong>dzx-hide-white-blue.filter</strong> จะซ่อนของสีขาว และสีฟ้า แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้</li>
-    </ul>
-
     <h3>For Dev</h3>
     <ul>
         <li>สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย</li>
         <li>ไฟล์หลักจะอยู่ใน Folder <strong>filter_group</strong> ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข</li>
         <li>ไฟล์เสียงจะอยู่ใน Folder <strong>dzx_filter/soundeffect</strong></li>
-        <li>เมื่อแก้ไฟล์เสร็จแล้วให้ run ไฟล์ <strong>run_script.py</strong> เพื่อทำการรวมไฟล์ใหม่อีกครั้ง</li>
+        <li>เมื่อแก้ไฟล์เสร็จแล้วให้ run ไฟล์ <strong>/script/run_script.py</strong> เพื่อทำการรวมไฟล์ใหม่อีกครั้ง</li>
         <li>ใช้ภาษา python นะ</li>
     </ul>
 
@@ -391,7 +418,5 @@ def write_html_to_file(array_path, output_file_name="index.html"):
 if __name__ == "__main__":
     demo_array = [
         "rarity_rare.filter",
-        "salvage.filter",
-        "hide_rarity_rare.filter"
     ]
     write_html_to_file(demo_array, "index.html")

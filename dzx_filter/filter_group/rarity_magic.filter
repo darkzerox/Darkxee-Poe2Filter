@@ -2,12 +2,26 @@
 # Magic Items Group
 #------------------------------------------------------------------------------
 
-Show
+Hide
   Rarity <= Magic
-  Class "Flasks" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
-  AreaLevel >= 65
-  DropLevel <= 50
+  Sockets == 0
+  Quality == 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  Continue
+
+
+Show
+  Rarity >= Magic
+  Sockets > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetBackgroundColor 0 0 0 125
   SetFontSize 35
-  Continue
+
+
+Show
+  Rarity >= Magic
+  Quality > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 35
 

@@ -1,0 +1,51 @@
+#------------------------------------------------------------------------------
+# Uncut Gems
+#------------------------------------------------------------------------------
+# Skill Gems
+  
+Hide
+  ItemLevel >= 14 
+  ItemLevel <= 16
+  AreaLevel >= 65
+  AreaLevel <= 80
+  BaseType "Uncut Skill Gem"
+
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+# Always make Spirit gems pop
+Show
+  BaseType "Uncut Spirit Gem" "Uncut Spirit Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 37
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  SetFontSize 35
+
+# Level 19 gems and up in maps get a special highlight
+Show
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 300
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 40

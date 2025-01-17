@@ -1,17 +1,18 @@
 #------------------------------------------------------------------------------
 # Belts
 #------------------------------------------------------------------------------
+
+Hide
+  Quality = 0
+  Rarity <= Magic
+  Class "Belts"
+  Continue
+
 Show
   Class "Belts"
   Rarity Normal
   SetFontSize 35
-  Continue
   
-Show
-  Class "Belts"
-  Rarity Magic
-  SetFontSize 35
-
 Show
   Class "Belts"
   Rarity Rare
@@ -27,10 +28,3 @@ Show
   SetBorderColor 0 240 190
   SetFontSize 40
   MinimapIcon 2 Cyan Diamond
-
-Show
-  Rarity Normal
-  Class "Belts"
-  AreaLevel < 65
-  SetFontSize 35
-

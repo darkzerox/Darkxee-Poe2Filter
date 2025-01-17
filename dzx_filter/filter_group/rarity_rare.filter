@@ -1,11 +1,12 @@
 #------------------------------------------------------------------------------
 # Rare Items Group
 #------------------------------------------------------------------------------
+
 Show
   Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetBackgroundColor 34 34 34 208
   SetTextColor 255 231 72
   SetBorderColor 34 34 34 208
   SetFontSize 35
   CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
-  Continue

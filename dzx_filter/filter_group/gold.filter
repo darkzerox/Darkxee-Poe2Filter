@@ -2,6 +2,12 @@
 # Gold
 #------------------------------------------------------------------------------
 
+Hide
+  StackSize <= 100
+  AreaLevel >= 70
+  BaseType == "Gold"
+  Continue
+
 Show
   AreaLevel >= 70
   StackSize >= 1000

@@ -4,7 +4,7 @@
 
 Show
   Sockets > 0
-  Rarity Normal
+  Rarity Normal Magic
   SetBorderColor 200 200 200
   SetFontSize 35
   CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
@@ -12,23 +12,9 @@ Show
 
 Show
   Quality > 0
-  Rarity Normal
+  Rarity Normal Magic
   SetBorderColor 200 200 200
   SetFontSize 35
   CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
 
 
-Show
-  Sockets > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
-
-
-Show
-  Quality > 0
-  Rarity Magic
-  SetBorderColor 0 0 200
-  SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100

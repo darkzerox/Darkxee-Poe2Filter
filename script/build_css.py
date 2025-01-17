@@ -10,6 +10,55 @@ filter_group_path = os.path.join(project_path, "dzx_filter", "filter_group")
 def filter_to_css(filter_paths, output_file_name):
     css_output = []
     
+    # Color name mapping
+    color_map = {
+        'Red': '255 0 0',
+        'Green': '0 255 0',
+        'Blue': '0 0 255',
+        'Brown': '160 110 60',
+        'White': '255 255 255',
+        'Yellow': '255 255 0',
+        'Cyan': '0 255 255',
+        'Grey': '150 150 150',
+        'Orange': '255 150 0',
+        'Pink': '255 192 203',
+        'Purple': '128 0 128'
+    }
+    
+    # Add base styles for minimap icons
+    base_styles = """
+/* Base styles for minimap icons */
+[class^="minimap-icon-"] {
+    display: inline-block;
+    text-align: center;
+    min-width: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+
+/* Default colors for specific icon types */
+.minimap-icon-● { color: rgb(255 255 255); }  /* White */
+.minimap-icon-◆ { color: rgb(255 150 0); }    /* Orange */
+.minimap-icon-⬢ { color: rgb(255 0 0); }      /* Red */
+.minimap-icon-■ { color: rgb(0 255 0); }      /* Green */
+.minimap-icon-★ { color: rgb(0 255 255); }    /* Cyan */
+.minimap-icon-▲ { color: rgb(160 110 60); }   /* Brown */
+.minimap-icon-✕ { color: rgb(150 150 150); }  /* Grey */
+.minimap-icon-☾ { color: rgb(150 200 255); }  /* Light Blue */
+.minimap-icon-❧ { color: rgb(50 230 100); }   /* Light Green */
+.minimap-icon-⬟ { color: rgb(255 150 0); }    /* Orange */
+
+/* Color-based classes */"""
+
+    # Add color-based classes
+    for color_name, rgb_value in color_map.items():
+        base_styles += f"""
+.minimap-icon-{color_name.lower()} {{
+    color: rgb({rgb_value});
+}}"""
+
+    css_output.append(base_styles)
+    
     # Helper function to process a block of filter rules
     def process_block(rules):
         if not rules:
@@ -17,6 +66,21 @@ def filter_to_css(filter_paths, output_file_name):
             
         selectors = []
         properties = {}
+        minimap_styles = []
+        
+        # Map for minimap icons to ASCII
+        icon_map = {
+            'Circle': '●',
+            'Diamond': '◆',
+            'Hexagon': '⬢',
+            'Square': '■',
+            'Star': '★',
+            'Triangle': '▲',
+            'Cross': '✕',
+            'Moon': '☾',
+            'Raindrop': '❧',
+            'Pentagon': '⬟',
+        }
         
         for rule in rules:
             rule = rule.strip()
@@ -47,14 +111,35 @@ def filter_to_css(filter_paths, output_file_name):
                 properties['background-color'] = f'rgb({parts[1]} {parts[2]} {parts[3]})'
             elif parts[0] == 'SetFontSize':
                 properties['font-size'] = f'{parts[1]}px'
-                
+            
+            elif parts[0] == 'MinimapIcon':
+                if len(parts) >= 4:
+                    icon_shape = parts[3]
+                    if len(parts) >= 3:  # Get color if specified
+                        # Check if color is a name or RGB values
+                        color_part = parts[2]
+                        if color_part in color_map:
+                            icon_color = f'rgb({color_map[color_part]})'
+                        else:
+                            # Assume it's RGB values
+                            icon_color = f'rgb({color_part})'
+                        minimap_styles.append(f"""
+.minimap-icon-{icon_shape.lower()} {{
+    color: {icon_color};
+}}""")
+        
+        # Generate regular CSS rules
         if selectors and properties:
-            # Combine selectors and create CSS rule
             selector_str = ', '.join(selectors)
             properties_str = ';\n    '.join([f'{k}: {v}' for k, v in properties.items()])
-            return f'{selector_str} {{\n    {properties_str};\n}}'
+            css_rules = [f'{selector_str} {{\n    {properties_str};\n}}']
+        else:
+            css_rules = []
         
-        return None
+        # Add minimap icon styles
+        css_rules.extend(minimap_styles)
+        
+        return '\n'.join(css_rules) if css_rules else None
 
     # Process each filter file
     for filter_path in filter_paths:
@@ -124,7 +209,8 @@ if __name__ == "__main__":
     filter_files = [
         "rarity_magic.filter",
         "rarity_rare.filter",
-        "amulets.filter"
+        "amulets.filter",
+        "currency.filter",
         # Add more filter files as needed
     ]
     
