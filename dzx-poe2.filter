@@ -141,7 +141,9 @@ Show
   SetBorderColor 255 220 23
   SetTextColor 233 75 75
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 300
+  PlayEffect Red
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 #------------------------------------------------------------------------------
@@ -296,7 +298,7 @@ Show
   BaseType == "Breach Ring"
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
-  SetFontSize 35
+  SetFontSize 40
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
@@ -304,11 +306,16 @@ Show
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring"
-  SetBorderColor 242 255 100
+  SetBorderColor 255 220 23
+  SetTextColor 233 75 75
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
+  MinimapIcon 2 Red Diamond
   PlayAlertSound 9 300
-  PlayEffect Cyan
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+
+
 
 #------------------------------------------------------------------------------
 # Rune and Charms
@@ -367,10 +374,10 @@ Show
 
 
 Hide
-  Quality = 0
-  AreaLevel > 65
-  Rarity <= Magic
-  Class "Flasks"
+    Quality = 0
+    AreaLevel > 65
+    Rarity <= Magic
+    Class "Flasks"
   
 
 

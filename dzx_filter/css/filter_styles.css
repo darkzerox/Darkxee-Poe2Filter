@@ -141,7 +141,7 @@
 }
 
 .minimap-icon-diamond {
-    color: rgb(0 255 255);
+    color: rgb(255 0 0);
 }
 
 .belts {
@@ -269,7 +269,7 @@
 [data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
     color: rgb(156 106 255);
     border-color: rgb(156 106 255);
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .minimap-icon-diamond {
@@ -277,12 +277,13 @@
 }
 
 [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"] {
-    border-color: rgb(242 255 100);
+    border-color: rgb(255 220 23);
+    color: rgb(233 75 75);
     font-size: 40px;
 }
 
 .minimap-icon-diamond {
-    color: rgb(0 255 255);
+    color: rgb(255 0 0);
 }
 
 [data-basetype="Rune"], [data-basetype="Charm"] {
