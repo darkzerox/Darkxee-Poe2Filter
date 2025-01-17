@@ -6,10 +6,9 @@
 Hide
   ItemLevel >= 14 
   ItemLevel <= 16
-  AreaLevel >= 70
+  AreaLevel >= 65
   AreaLevel <= 80
   BaseType "Uncut Skill Gem"
-  Continue
 
 # Level 20 gems go tink
 Show
