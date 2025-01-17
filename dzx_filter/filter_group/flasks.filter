@@ -1,6 +1,6 @@
 Hide
     Quality = 0
-    AreaLevel > 65
+    AreaLevel >= 65
     Rarity <= Magic
     Class "Flasks"
   
