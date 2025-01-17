@@ -55,126 +55,32 @@
     color: rgb(128 0 128);
 }
 
-.currency {
-    font-size: 40px;
-}
-
-.currency, [data-basetype="Mirror"], [data-basetype="Divine"] {
-    color: rgb(255 0 0);
-    border-color: rgb(255 0 0);
-    background-color: rgb(255 255 255);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Isolation"], [data-basetype="Distilled"], [data-basetype="Suffering"] {
-    color: rgb(255 0 0);
-    border-color: rgb(255 0 0);
-    background-color: rgb(255 255 255);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.currency, [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
+[data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
-    background-color: rgb(240 90 35);
 }
 
-.minimap-icon-circle {
-    color: rgb(255 255 0);
-}
-
-.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"] {
-    color: rgb(255 207 92);
-    border-color: rgb(255 207 92);
-    background-color: rgb(76 51 12);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 0);
-}
-
-[data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"], [data-basetype="Bronze"], [data-basetype="Key"] {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
-}
-
-.minimap-icon-circle {
+.minimap-icon-cross {
     color: rgb(255 255 255);
 }
 
-.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"], [data-basetype="Chance"], [data-basetype="Shard"] {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
+[data-basetype="=="], [data-basetype="Gold"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
 }
 
-.minimap-icon-circle {
+.minimap-icon-cross {
     color: rgb(255 255 255);
 }
 
-.currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
-    font-size: 35px;
+[data-basetype="=="], [data-basetype="Gold"] {
+    color: rgb(180 180 180);
+    border-color: rgb(0 0 0);
+    background-color: rgb(0 0 0);
 }
 
-.minimap-icon-kite {
-    color: rgb(255 255 255);
-}
-
-.currency, [data-basetype="Distilled"], [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(220 190 132);
-    font-size: 35px;
-}
-
-.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(220 190 132);
-    font-size: 35px;
-}
-
-.minimap-icon-circle {
+.minimap-icon-cross {
     color: rgb(150 150 150);
-}
-
-.omen, [data-basetype="Omen"], [data-basetype="of"] {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
-    font-size: 40px;
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-.currency {
-    color: rgb(255 207 132);
-    border-color: rgb(255 207 132);
-    background-color: rgb(76 51 12);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
 }
 
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
@@ -212,34 +118,6 @@
 
 .minimap-icon-triangle {
     color: rgb(160 110 60);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(180 180 180);
-    border-color: rgb(0 0 0);
-    background-color: rgb(0 0 0);
-}
-
-.minimap-icon-cross {
-    color: rgb(150 150 150);
 }
 
 .amulets {
@@ -440,6 +318,128 @@
 }
 
 .minimap-icon-square {
+    color: rgb(255 255 255);
+}
+
+.currency {
+    font-size: 40px;
+}
+
+.currency, [data-basetype="Mirror"], [data-basetype="Divine"] {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(255 255 255);
+    font-size: 45px;
+}
+
+.minimap-icon-star {
+    color: rgb(255 0 0);
+}
+
+.currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Isolation"], [data-basetype="Distilled"], [data-basetype="Suffering"] {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(255 255 255);
+    font-size: 45px;
+}
+
+.minimap-icon-star {
+    color: rgb(255 0 0);
+}
+
+.currency, [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
+    color: rgb(255 255 255);
+    border-color: rgb(255 255 255);
+    background-color: rgb(240 90 35);
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 0);
+}
+
+.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"] {
+    color: rgb(255 207 92);
+    border-color: rgb(255 207 92);
+    background-color: rgb(76 51 12);
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 0);
+}
+
+[data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"], [data-basetype="Bronze"], [data-basetype="Key"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 255);
+}
+
+.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"], [data-basetype="Chance"], [data-basetype="Shard"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 255);
+}
+
+.currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+    font-size: 35px;
+}
+
+.minimap-icon-kite {
+    color: rgb(255 255 255);
+}
+
+.currency, [data-basetype="Distilled"], [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 255);
+}
+
+.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+    color: rgb(220 190 132);
+    font-size: 35px;
+}
+
+.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+    color: rgb(220 190 132);
+    font-size: 35px;
+}
+
+.minimap-icon-circle {
+    color: rgb(150 150 150);
+}
+
+.omen, [data-basetype="Omen"], [data-basetype="of"] {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+    font-size: 40px;
+}
+
+.minimap-icon-circle {
+    color: rgb(255 255 255);
+}
+
+.currency {
+    color: rgb(255 207 132);
+    border-color: rgb(255 207 132);
+    background-color: rgb(76 51 12);
+}
+
+.minimap-icon-circle {
     color: rgb(255 255 255);
 }
 
