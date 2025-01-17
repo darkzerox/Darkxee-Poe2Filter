@@ -5,8 +5,7 @@
 
 Show
   Class "Currency"
-  SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
+  SetFontSize 35
   Continue
 
 Show
@@ -130,7 +129,7 @@ Show
   PlayAlertSound 2 0
 
 
-# Unknown currency
+# # Unknown currency
 Show
   Class "Currency"
   SetTextColor 255 207 132

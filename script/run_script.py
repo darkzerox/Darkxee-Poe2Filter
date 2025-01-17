@@ -3,12 +3,10 @@ from build_css import filter_to_css
 from build_html import write_html_to_file
 
 mainGroup= [
-
-    "currency.filter",
+    "gold.filter",
     "uncut_gems.filter",
     "scroll_of_wisdom.filter",
     "salvage.filter",
-    "gold.filter",
     "amulets.filter",
     "belts.filter",
     "jewel.filter",
@@ -19,6 +17,12 @@ mainGroup= [
     "soul_core.filter",
     "waystones.filter",
     "flasks.filter",
+
+    #----------------------
+    # Currency group
+    #---------------------- 
+    
+    "currency.filter",
 
     #----------------------
     # Rarity group
