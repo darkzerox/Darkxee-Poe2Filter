@@ -340,6 +340,10 @@ Show
 #------------------------------------------------------------------------------
 # Uncut Gems
 #------------------------------------------------------------------------------
+# Skill Gems
+Hide
+  ItemLevel = 14
+  BaseType "Uncut Skill Gem"
 
 # Level 20 gems go tink
 Show
@@ -640,6 +644,7 @@ Hide
   Continue
 
 
+
 #------------------------------------------------------------------------------
 # Hide Rare Rarity
 #------------------------------------------------------------------------------
@@ -720,5 +725,12 @@ Hide
   Rarity <= Magic
   Quality == 0
   
+
+
+# Skill Gems
+Hide
+  ItemLevel = 14
+  BaseType "Uncut Skill Gem"
+  Continue
 
 
