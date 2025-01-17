@@ -359,13 +359,14 @@
 }
 
 .currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"] {
-    color: rgb(255 207 92);
-    border-color: rgb(255 207 92);
-    background-color: rgb(76 51 12);
+    color: rgb(218 145 255);
+    font-size: 40px;
+    border-color: rgb(0 0 0);
+    background-color: rgb(0 0 0);
 }
 
 .minimap-icon-circle {
-    color: rgb(255 255 0);
+    color: rgb(128 0 128);
 }
 
 [data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"], [data-basetype="Bronze"], [data-basetype="Key"] {
