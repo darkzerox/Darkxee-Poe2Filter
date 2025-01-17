@@ -367,10 +367,10 @@ Show
 
 
 Hide
-    Quality = 0
-    AreaLevel > 70
-    Rarity <= Magic
-    Class "Flasks"
+  Quality = 0
+  AreaLevel > 65
+  Rarity <= Magic
+  Class "Flasks"
   
 
 
