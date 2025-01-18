@@ -1,25 +1,29 @@
-Show 
-  Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Attuned Wand" "Siphoning Wand" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
-  SetBorderColor 233 75 75
-  SetTextColor 233 75 75
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 40
-  MinimapIcon 2 Red Diamond
-  PlayAlertSound 16 300
-  PlayEffect Red
-
+#--------------------------------
+# Gacha group
+#--------------------------------
 
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet"
   SetBorderColor 233 75 75
-  SetBackgroundColor 22 64 77
+  SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 300
   PlayEffect Red
+
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Attuned Wand" "Siphoning Wand" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  SetTextColor 248 160 66
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+
+
+
 
 #------------------------------------------------------------------------------
 # Gold
@@ -342,36 +346,32 @@ Show
 #------------------------------------------------------------------------------
 # Waystones
 #------------------------------------------------------------------------------
-
-Hide
-  AreaLevel >= 70
-  WaystoneTier < 3
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 10
   BaseType "Waystone"
+  SetTextColor 171 74 103
+  SetBorderColor 135 67 86
+  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+
 
 Show
-  WaystoneTier < 10
-  AreaLevel > 77
+  WaystoneTier >= 11
+  WaystoneTier <= 14
   BaseType "Waystone"
-  Rarity <= Rare
   SetTextColor 200 144 167
   SetBorderColor 200 144 167
   SetBackgroundColor 33 33 33
   SetFontSize 35
+  PlayAlertSound 4 300
 
-
-Show
-  WaystoneTier < 5
-  AreaLevel > 74
-  BaseType "Waystone"
-  Rarity <= Rare
-  SetTextColor 200 144 167
-  SetBorderColor 200 144 167
-  SetBackgroundColor 33 33 33
-  SetFontSize 35
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
+  WaystoneTier >= 15
   SetTextColor 171 74 103
   SetBorderColor 135 67 86
   SetBackgroundColor 10 10 10
@@ -542,6 +542,8 @@ Hide
   Rarity <= Magic
   Sockets == 0
   Quality == 0
+  AreaLevel >= 40
+  SetTextColor 30 32 133
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   Continue
 
@@ -550,6 +552,7 @@ Show
   Rarity >= Magic
   Sockets > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 30 32 133
   SetBackgroundColor 0 0 0 125
   SetFontSize 35
 
@@ -558,6 +561,7 @@ Show
   Rarity >= Magic
   Quality > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 30 32 133
   SetBackgroundColor 0 0 0 125
   SetFontSize 35
 
@@ -571,8 +575,8 @@ Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
   SetBackgroundColor 34 34 34 208
-  SetTextColor 255 230 169
-  SetBorderColor 240 184 106
+  SetTextColor 255 209 94
+  SetBorderColor 255 209 94
   SetFontSize 35
 
 
@@ -591,6 +595,7 @@ Show
   PlayAlertSound 3 0
   Continue
 
+# Very Unique
 Show
   Rarity Unique
   BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"

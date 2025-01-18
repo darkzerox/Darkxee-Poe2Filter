@@ -133,26 +133,25 @@
     color: rgb(128 0 128);
 }
 
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
-    border-color: rgb(233 75 75);
-    color: rgb(233 75 75);
-    background-color: rgb(10 10 10);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
-}
-
 [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
     border-color: rgb(233 75 75);
-    background-color: rgb(22 64 77);
+    background-color: rgb(10 10 10);
     color: rgb(233 75 75);
     font-size: 40px;
 }
 
 .minimap-icon-diamond {
     color: rgb(255 0 0);
+}
+
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
+    color: rgb(248 160 66);
+    background-color: rgb(10 10 10);
+    font-size: 37px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 150 0);
 }
 
 [data-basetype="=="], [data-basetype="Gold"] {
@@ -382,9 +381,9 @@
 }
 
 [data-basetype="Waystone"] {
-    color: rgb(200 144 167);
-    border-color: rgb(200 144 167);
-    background-color: rgb(33 33 33);
+    color: rgb(171 74 103);
+    border-color: rgb(135 67 86);
+    background-color: rgb(10 10 10);
     font-size: 35px;
 }
 
@@ -536,19 +535,25 @@
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+    color: rgb(30 32 133);
+}
+
+.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+    color: rgb(30 32 133);
     background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+    color: rgb(30 32 133);
     background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     background-color: rgb(34 34 34);
-    color: rgb(255 230 169);
-    border-color: rgb(240 184 106);
+    color: rgb(255 209 94);
+    border-color: rgb(255 209 94);
     font-size: 35px;
 }
 
@@ -648,19 +653,19 @@
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
 <tr>
   <td>ALL</td>
-  <td>Sapphire Ring Amethyst Ring Attuned Wand Siphoning Wand Heavy Belt Breach Ring Gold Ring Gold Amulet</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px">Sapphire R...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
   <td>Stellar Amulet</td>
   <td>Normal</td>
   <td>Any</td>
   <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(22 64 77); font-size: 20px">Stellar Am...</div></td>
+  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px">Stellar Am...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Sapphire Ring Amethyst Ring Attuned Wand Siphoning Wand Heavy Belt Breach Ring Gold Ring Gold Amulet</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
+  <td><div class="style-box" style="color: rgb(248 160 66); background-color: rgb(10 10 10); font-size: 18px">Sapphire R...</div></td>
 </tr>
 </table> <h3>gold.filter</h3>
 <table class="filter-table">
@@ -953,23 +958,15 @@
   <td>ALL</td>
   <td>Waystone</td>
   <td>Any</td>
-  <td>Area: >= 70</td>
+  <td>Any</td>
   <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Waystone</div></td>
+  <td><div class="style-box" style="color: rgb(171 74 103); border-color: rgb(135 67 86); background-color: rgb(10 10 10); font-size: 17px">Waystone</div></td>
 </tr>
 <tr>
   <td>ALL</td>
   <td>Waystone</td>
-  <td>Rare</td>
-  <td>Area: > 77</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(200 144 167); border-color: rgb(200 144 167); background-color: rgb(33 33 33); font-size: 17px">Waystone</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Rare</td>
-  <td>Area: > 74</td>
+  <td>Any</td>
+  <td>Any</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(200 144 167); border-color: rgb(200 144 167); background-color: rgb(33 33 33); font-size: 17px">Waystone</div></td>
 </tr>
@@ -1122,9 +1119,9 @@
   <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
   <td>ALL</td>
   <td>Magic</td>
-  <td>Sock: == 0, Qual: == 0</td>
+  <td>Area: >= 40, Sock: == 0, Qual: == 0</td>
   <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Body Armou...</div></td>
+  <td><div class="style-box" style="color: rgb(30 32 133); text-decoration: line-through">Body Armou...</div></td>
 </tr>
 <tr>
   <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
@@ -1132,7 +1129,7 @@
   <td>Magic</td>
   <td>Sock: > 0</td>
   <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
+  <td><div class="style-box" style="color: rgb(30 32 133); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
 </tr>
 <tr>
   <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
@@ -1140,7 +1137,7 @@
   <td>Magic</td>
   <td>Qual: > 0</td>
   <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
+  <td><div class="style-box" style="color: rgb(30 32 133); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
 </tr>
 </table> <h3>rarity_rare.filter</h3>
 <table class="filter-table">
@@ -1151,7 +1148,7 @@
   <td>Rare</td>
   <td>Any</td>
   <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 230 169); border-color: rgb(240 184 106); background-color: rgb(34 34 34); font-size: 17px">Body Armou...</div></td>
+  <td><div class="style-box" style="color: rgb(255 209 94); border-color: rgb(255 209 94); background-color: rgb(34 34 34); font-size: 17px">Body Armou...</div></td>
 </tr>
 </table> <h3>rarity_unique.filter</h3>
 <table class="filter-table">
