@@ -1,7 +1,7 @@
-![Darkxee Poe2 Filter](https://poe2filter.com/logo-filter.png)
+![Darkxee Poe2 Filter](https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png)
 
 
-# Darkxee Poe2 Filter
+# DZX Poe2 Filter
 
 เป็นโปรเจคที่ทำขึ้นสำหรับกรอง Item จากเกม ซึ่งตอนนี้ poe2 ยังไม่รองรับ Function Import ดังนั้นจึงต้องใช้วิธีการรวมไฟล์โดยใช้ Python เข้ามาช่วย 
 
@@ -24,18 +24,12 @@
 ```bash
 steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2
 ```
-## How to work
-
-#### filter จะมี 3 ประเภท ให้เลือกใช้ตามช่วงเวลาที่เล่น
-- **dzx.filter** จะแสดงไอเท็มทั้งหมด 
-- **dzx-hide-white.filter** จะซ่อนของสีขาว แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้
-- **dzx-hide-white-blue.filter** จะซ่อนของสีขาว และสีฟ้า แต่จะยังคงแสดงของที่มีรู และของที่ย่อยได้
 
 ### For Dev
 - สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย
 - ไฟล์หลักจะอยู่ใน Folder **filter_group** ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข
 - ไฟล์เสียงจะอยู่ใน Folder **dzx_filter/soundeffect**
-- เมื่อแก้ไขไฟล์เสร็จแล้วให้ run ไฟล์ **run_script.py** เพื่อทำการรวมไฟล์ใหม่อีกครั้ง 
+- เมื่อแก้ไขไฟล์เสร็จแล้วให้ run ไฟล์ **script/run_script.py** เพื่อทำการรวมไฟล์ใหม่อีกครั้ง 
 - ใช้ภาษา python นะ
 
 
@@ -44,4 +38,4 @@ steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/P
 ## credit
 Thankyou for Original filter from NeverSink's Indepth Loot Filter https://github.com/NeverSinkDev/NeverSink-PoE2litefilter
 
-Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย
+Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย อาจจะมีปรับปรุงเพิ่มเติมเล็กน้อย
