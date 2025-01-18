@@ -55,6 +55,28 @@
     color: rgb(128 0 128);
 }
 
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
+    border-color: rgb(255 220 23);
+    color: rgb(233 75 75);
+    background-color: rgb(10 10 10);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 0 0);
+}
+
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
+    border-color: rgb(221 168 83);
+    background-color: rgb(22 64 77);
+    color: rgb(233 75 75);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 0 0);
+}
+
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
@@ -133,17 +155,6 @@
 
 .minimap-icon-diamond {
     color: rgb(255 255 0);
-}
-
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
-    border-color: rgb(221 168 83);
-    background-color: rgb(22 64 77);
-    color: rgb(233 75 75);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
 }
 
 .belts {
@@ -278,16 +289,6 @@
     color: rgb(0 255 255);
 }
 
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"] {
-    border-color: rgb(255 220 23);
-    color: rgb(233 75 75);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
-}
-
 [data-basetype="Rune"], [data-basetype="Charm"] {
     color: rgb(30 233 148);
 }
@@ -317,9 +318,9 @@
 }
 
 [data-basetype="Waystone"] {
-    color: rgb(135 67 86);
+    color: rgb(171 74 103);
     border-color: rgb(135 67 86);
-    background-color: rgb(246 231 216);
+    background-color: rgb(10 10 10);
     font-size: 40px;
 }
 

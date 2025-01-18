@@ -133,6 +133,28 @@
     color: rgb(128 0 128);
 }
 
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
+    border-color: rgb(255 220 23);
+    color: rgb(233 75 75);
+    background-color: rgb(10 10 10);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 0 0);
+}
+
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
+    border-color: rgb(221 168 83);
+    background-color: rgb(22 64 77);
+    color: rgb(233 75 75);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 0 0);
+}
+
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
@@ -211,17 +233,6 @@
 
 .minimap-icon-diamond {
     color: rgb(255 255 0);
-}
-
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
-    border-color: rgb(221 168 83);
-    background-color: rgb(22 64 77);
-    color: rgb(233 75 75);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
 }
 
 .belts {
@@ -356,16 +367,6 @@
     color: rgb(0 255 255);
 }
 
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"] {
-    border-color: rgb(255 220 23);
-    color: rgb(233 75 75);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
-}
-
 [data-basetype="Rune"], [data-basetype="Charm"] {
     color: rgb(30 233 148);
 }
@@ -395,9 +396,9 @@
 }
 
 [data-basetype="Waystone"] {
-    color: rgb(135 67 86);
+    color: rgb(171 74 103);
     border-color: rgb(135 67 86);
-    background-color: rgb(246 231 216);
+    background-color: rgb(10 10 10);
     font-size: 40px;
 }
 
@@ -642,7 +643,26 @@
     <hr/>
 
      <h2>Filter Group Preview</h2>
-    <h3>gold.filter</h3>
+    <h3>gacha.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Sapphire Ring Amethyst Ring Attuned Wand Siphoning Wand Heavy Belt Breach Ring Gold Ring Gold Amulet</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
+  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(255 220 23); background-color: rgb(10 10 10); font-size: 20px">Sapphire R...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Stellar Amulet</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
+  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(221 168 83); background-color: rgb(22 64 77); font-size: 20px">Stellar Am...</div></td>
+</tr>
+</table> <h3>gold.filter</h3>
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
 <tr>
@@ -769,14 +789,6 @@
   <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
   <td><div class="style-box" style="color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px">Amulets</div></td>
 </tr>
-<tr>
-  <td>ALL</td>
-  <td>Stellar Amulet</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(221 168 83); background-color: rgb(22 64 77); font-size: 20px">Stellar Am...</div></td>
-</tr>
 </table> <h3>belts.filter</h3>
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
@@ -784,7 +796,7 @@
   <td>Belts</td>
   <td>ALL</td>
   <td>Magic</td>
-  <td>Qual: = 0</td>
+  <td>Qual: == 0</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Belts</div></td>
 </tr>
@@ -912,14 +924,6 @@
   <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
   <td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Breach Rin...</div></td>
 </tr>
-<tr>
-  <td>ALL</td>
-  <td>Sapphire Ring Amethyst Ring</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(255 220 23); font-size: 20px">Sapphire R...</div></td>
-</tr>
 </table> <h3>rune_charms.filter</h3>
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
@@ -975,7 +979,7 @@
   <td>Rare</td>
   <td>Any</td>
   <td><span class="minimap-icon-■ minimap-icon-white">■</span></td>
-  <td><div class="style-box" style="color: rgb(135 67 86); border-color: rgb(135 67 86); background-color: rgb(246 231 216); font-size: 20px">Waystone</div></td>
+  <td><div class="style-box" style="color: rgb(171 74 103); border-color: rgb(135 67 86); background-color: rgb(10 10 10); font-size: 20px">Waystone</div></td>
 </tr>
 </table> <h3>flasks.filter</h3>
 <table class="filter-table">
@@ -984,7 +988,7 @@
   <td>Flasks</td>
   <td>ALL</td>
   <td>Magic</td>
-  <td>Area: >= 65, Qual: = 0</td>
+  <td>Area: >= 65, Qual: == 0</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Flasks</div></td>
 </tr>
@@ -992,7 +996,7 @@
   <td>Flasks</td>
   <td>ALL</td>
   <td>Magic</td>
-  <td>Any</td>
+  <td>Qual: >= 1</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 17px">Flasks</div></td>
 </tr>

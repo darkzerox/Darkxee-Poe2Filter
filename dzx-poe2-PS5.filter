@@ -1,3 +1,26 @@
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Attuned Wand" "Siphoning Wand" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  SetBorderColor 255 220 23
+  SetTextColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 16 300
+  PlayEffect Red
+
+
+Show 
+  Rarity Normal
+  BaseType == "Stellar Amulet"
+  SetBorderColor 221 168 83
+  SetBackgroundColor 22 64 77
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 300
+  PlayEffect Red
+
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
@@ -134,16 +157,7 @@ Show
   PlayEffect Orange
   MinimapIcon 1 Yellow Diamond
   
-Show 
-  Rarity Normal
-  BaseType == "Stellar Amulet"
-  SetBorderColor 221 168 83
-  SetBackgroundColor 22 64 77
-  SetTextColor 233 75 75
-  SetFontSize 40
-  MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
-  PlayEffect Red
+
 
 #------------------------------------------------------------------------------
 # Belts
@@ -299,16 +313,6 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
-# Chancing bases
-Show 
-  Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring"
-  SetBorderColor 255 220 23
-  SetTextColor 233 75 75
-  SetFontSize 40
-  MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
-  PlayEffect Red
 
 
 
@@ -368,9 +372,9 @@ Show
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 135 67 86
+  SetTextColor 171 74 103
   SetBorderColor 135 67 86
-  SetBackgroundColor 246 231 216
+  SetBackgroundColor 10 10 10
   PlayAlertSound 4 300
   PlayEffect White
   MinimapIcon 1 White Square
@@ -378,18 +382,18 @@ Show
 
 
 Hide
-    Quality == 0
-    AreaLevel >= 65
-    Rarity <= Magic
-    Class "Flasks"
-    Continue
-Show
+  Quality == 0
+  AreaLevel >= 65
+  Rarity <= Magic
   Class "Flasks"
-  Rarity Magic
-  SetFontSize 35
-  SetTextColor 62 88 121
-  SetBorderColor 62 88 121
-
+  
+Show
+Class "Flasks"
+Rarity Magic
+Quality >= 1
+SetFontSize 35
+SetTextColor 62 88 121
+SetBorderColor 62 88 121
 
 
 
