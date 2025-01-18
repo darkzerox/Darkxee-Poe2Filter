@@ -3,4 +3,11 @@ Hide
     AreaLevel >= 65
     Rarity <= Magic
     Class "Flasks"
-  
+    Continue
+Show
+  Class "Flasks"
+  Rarity Magic
+  SetFontSize 35
+  SetTextColor 62 88 121
+  SetBorderColor 62 88 121
+

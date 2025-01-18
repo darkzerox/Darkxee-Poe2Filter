@@ -12,24 +12,28 @@ Show
   AreaLevel > 77
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
+  SetTextColor 200 144 167
+  SetBorderColor 200 144 167
+  SetBackgroundColor 33 33 33
   SetFontSize 35
+
 
 Show
   WaystoneTier < 5
   AreaLevel > 74
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
+  SetTextColor 200 144 167
+  SetBorderColor 200 144 167
+  SetBackgroundColor 33 33 33
   SetFontSize 35
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 255 255 255
-  SetBorderColor 255 255 255
+  SetTextColor 135 67 86
+  SetBorderColor 135 67 86
+  SetBackgroundColor 246 231 216
   PlayAlertSound 4 300
   PlayEffect White
   MinimapIcon 1 White Square

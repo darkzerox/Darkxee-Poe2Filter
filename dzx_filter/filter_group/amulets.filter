@@ -12,15 +12,17 @@ Show
   Class "Amulets"
   Rarity Rare
   SetFontSize 32
-  SetTextColor 233 206 75
-  SetBorderColor 233 206 75
-  PlayEffect Yellow
+  SetTextColor 221 168 83
+  SetBorderColor 22 64 77
+  SetBackgroundColor 22 64 77
+  PlayEffect Orange
   MinimapIcon 1 Yellow Diamond
   
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet"
-  SetBorderColor 255 220 23
+  SetBorderColor 221 168 83
+  SetBackgroundColor 22 64 77
   SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Red Diamond

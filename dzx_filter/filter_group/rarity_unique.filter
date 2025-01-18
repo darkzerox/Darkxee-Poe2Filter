@@ -18,12 +18,10 @@ Show
   Rarity Unique
   BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
   SetFontSize 45
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
   PlayAlertSound 6 300
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-
-

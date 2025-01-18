@@ -12,9 +12,9 @@ Show
 Show
   Class "Currency"
   BaseType "Mirror" "Divine"
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
@@ -24,9 +24,9 @@ Show
 Show
   Class "Currency"
   BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
-  SetTextColor 255 0 0 255
-  SetBorderColor 255 0 0 255
-  SetBackgroundColor 255 255 255 255
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
@@ -44,7 +44,7 @@ Show
   Class "Currency"
   BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 255 255 255
-  SetBorderColor 255 255 255 255
+  SetBorderColor  240 90 35
   SetBackgroundColor 240 90 35
   PlayEffect White
   MinimapIcon 1 Yellow Circle
@@ -63,9 +63,9 @@ Show
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -74,18 +74,18 @@ Show
 Show
   Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayEffect White
   MinimapIcon 2 White Circle
   
 Show
   Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
@@ -94,9 +94,9 @@ Show
 Show
   Class "Currency"
   BaseType "Distilled" "Catalyst" "Essence of"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -106,7 +106,7 @@ Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 220 190 132
+  SetTextColor 244 215 147
   SetFontSize 35
   DisableDropSound
 
@@ -114,16 +114,16 @@ Show
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 220 190 132
+  SetTextColor 244 215 147
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 
 Show
   Class "Omen"
   BaseType "Omen of"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
@@ -134,9 +134,9 @@ Show
 # Unknown currency
 Show
   Class "Currency"
-  SetTextColor 255 207 132
-  SetBorderColor 255 207 132
-  SetBackgroundColor 76 51 12
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
   PlayAlertSound 2 300
   PlayEffect Pink
   MinimapIcon 1 White Circle
