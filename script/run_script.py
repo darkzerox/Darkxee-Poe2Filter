@@ -3,6 +3,16 @@ from build_css import filter_to_css
 from build_html import write_html_to_file
 
 mainGroup= [
+    #----------------------
+    # Gacha group
+    #---------------------- 
+
+    "gacha.filter",
+
+    #----------------------
+    # Item group
+    #---------------------- 
+
     "gold.filter",
     "uncut_gems.filter",
     "scroll_of_wisdom.filter",

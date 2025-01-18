@@ -1,0 +1,24 @@
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Attuned Wand" "Siphoning Wand" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  SetBorderColor 255 220 23
+  SetTextColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 16 300
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+
+Show 
+  Rarity Normal
+  BaseType == "Stellar Amulet"
+  SetBorderColor 221 168 83
+  SetBackgroundColor 22 64 77
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 300
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200

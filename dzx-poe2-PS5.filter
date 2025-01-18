@@ -150,7 +150,7 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  Quality = 0
+  Quality == 0
   Rarity <= Magic
   Class "Belts"
   Continue
@@ -378,7 +378,7 @@ Show
 
 
 Hide
-    Quality = 0
+    Quality == 0
     AreaLevel >= 65
     Rarity <= Magic
     Class "Flasks"

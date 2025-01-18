@@ -18,14 +18,3 @@ Show
   PlayEffect Orange
   MinimapIcon 1 Yellow Diamond
   
-Show 
-  Rarity Normal
-  BaseType == "Stellar Amulet"
-  SetBorderColor 221 168 83
-  SetBackgroundColor 22 64 77
-  SetTextColor 233 75 75
-  SetFontSize 40
-  MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
-  PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200

@@ -153,7 +153,7 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  Quality = 0
+  Quality == 0
   Rarity <= Magic
   Class "Belts"
   Continue
@@ -374,25 +374,27 @@ Show
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 135 67 86
+  SetTextColor 171 74 103
   SetBorderColor 135 67 86
-  SetBackgroundColor 246 231 216
+  SetBackgroundColor 10 10 10
+
   PlayAlertSound 4 300
   PlayEffect White
   MinimapIcon 1 White Square
-  SetFontSize 40
+  SetFontSize 38
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
 
 Hide
-    Quality = 0
+    Quality == 0
     AreaLevel >= 65
     Rarity <= Magic
     Class "Flasks"
-    Continue
+    
 Show
   Class "Flasks"
   Rarity Magic
+  Quality >= 1
   SetFontSize 35
   SetTextColor 62 88 121
   SetBorderColor 62 88 121

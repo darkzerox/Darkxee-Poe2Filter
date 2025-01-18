@@ -31,9 +31,9 @@ Show
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  SetTextColor 135 67 86
+  SetTextColor 171 74 103
   SetBorderColor 135 67 86
-  SetBackgroundColor 246 231 216
+  SetBackgroundColor 10 10 10
   PlayAlertSound 4 300
   PlayEffect White
   MinimapIcon 1 White Square

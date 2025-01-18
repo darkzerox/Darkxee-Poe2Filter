@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 
 Hide
-  Quality = 0
+  Quality == 0
   Rarity <= Magic
   Class "Belts"
   Continue
