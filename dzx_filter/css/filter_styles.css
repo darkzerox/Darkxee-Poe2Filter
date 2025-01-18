@@ -56,7 +56,7 @@
 }
 
 [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
-    border-color: rgb(255 220 23);
+    border-color: rgb(233 75 75);
     color: rgb(233 75 75);
     background-color: rgb(10 10 10);
     font-size: 40px;
@@ -67,7 +67,7 @@
 }
 
 [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
-    border-color: rgb(221 168 83);
+    border-color: rgb(233 75 75);
     background-color: rgb(22 64 77);
     color: rgb(233 75 75);
     font-size: 40px;
