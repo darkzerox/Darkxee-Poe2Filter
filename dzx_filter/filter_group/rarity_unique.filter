@@ -14,6 +14,7 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
   Continue
 
+# Very Unique
 Show
   Rarity Unique
   BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"

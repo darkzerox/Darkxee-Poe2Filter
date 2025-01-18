@@ -1,36 +1,33 @@
 #------------------------------------------------------------------------------
 # Waystones
 #------------------------------------------------------------------------------
-
-Hide
-  AreaLevel >= 70
-  WaystoneTier < 3
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 10
   BaseType "Waystone"
+  SetTextColor 171 74 103
+  SetBorderColor 135 67 86
+  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+
 
 Show
-  WaystoneTier < 10
-  AreaLevel > 77
+  WaystoneTier >= 11
+  WaystoneTier <= 14
   BaseType "Waystone"
-  Rarity <= Rare
   SetTextColor 200 144 167
   SetBorderColor 200 144 167
   SetBackgroundColor 33 33 33
   SetFontSize 35
+  PlayAlertSound 4 300
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
-
-Show
-  WaystoneTier < 5
-  AreaLevel > 74
-  BaseType "Waystone"
-  Rarity <= Rare
-  SetTextColor 200 144 167
-  SetBorderColor 200 144 167
-  SetBackgroundColor 33 33 33
-  SetFontSize 35
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
+  WaystoneTier >= 15
   SetTextColor 171 74 103
   SetBorderColor 135 67 86
   SetBackgroundColor 10 10 10
