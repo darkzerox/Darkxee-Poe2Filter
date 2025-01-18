@@ -16,8 +16,8 @@ Show
   Rarity >= Magic
   Sockets > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
-  SetTextColor 30 32 133
-  SetBackgroundColor 0 0 0 125
+  SetTextColor 62 140 242
+  SetBackgroundColor 0 0 0
   SetFontSize 35
 
 

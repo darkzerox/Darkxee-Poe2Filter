@@ -16,7 +16,7 @@ Show
 
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Attuned Wand" "Siphoning Wand" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
@@ -25,3 +25,13 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 
+Show
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
