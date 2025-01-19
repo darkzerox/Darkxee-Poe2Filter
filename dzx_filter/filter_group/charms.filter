@@ -1,0 +1,18 @@
+Hide
+  Class == "Charms"
+  ItemLevel < 82
+  AreaLevel >= 65
+  Continue
+
+Show
+  Class == "Charms"
+  Quality >= 18
+  ItemLevel >= 82
+  AreaLevel >= 65
+  SetFontSize 35
+  SetTextColor 133 159 61
+  SetBorderColor 133 159 61
+  SetBackgroundColor 49 81 30
+  PlayAlertSound 3 300
+  PlayEffect Grey
+  MinimapIcon 1 Green Star
