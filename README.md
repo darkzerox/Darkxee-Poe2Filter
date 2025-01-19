@@ -10,7 +10,8 @@
 - ![GitHub Release](https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter) 
 - ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml)
  
-## 🔗 [Download](https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest)
+## 🔗 [Download For PC](https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest)
+## 🔗 [Download For PS5](https://www.pathofexile.com/item-filter/jnzlYmtJ)
 ## Installation
 
 แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่
