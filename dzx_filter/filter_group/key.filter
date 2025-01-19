@@ -41,3 +41,23 @@ Show
   PlayEffect Grey
   MinimapIcon 1 Grey Square
   SetFontSize 35
+
+Show
+  BaseType == "Bronze Key" "Gold Key" "Silver Key"
+  SetTextColor 125 241 37
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+Show
+  Class == "Fishing Rods"
+  SetTextColor 125 241 37
+  SetBorderColor 125 241 37
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
