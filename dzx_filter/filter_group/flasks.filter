@@ -1,3 +1,15 @@
+
+Show
+  BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  AreaLevel >= 65
+  ItemLevel >= 83
+  SetFontSize 35
+  SetTextColor 143 106 206
+  SetBorderColor 62 88 121
+  SetBackgroundColor 10 10 10 200
+
+
+
 Hide
   Quality == 0
   AreaLevel >= 65
