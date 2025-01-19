@@ -27,6 +27,7 @@ mainGroup= [
     "soul_core.filter",
     "waystones.filter",
     "flasks.filter",
+    "charms.filter",
 
     #----------------------
     # Currency group
