@@ -271,6 +271,27 @@ Show
   MinimapIcon 1 Grey Square
   SetFontSize 35
 
+Show
+  BaseType == "Bronze Key" "Gold Key" "Silver Key"
+  SetTextColor 125 241 37
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+Show
+  Class == "Fishing Rods"
+  SetTextColor 125 241 37
+  SetBorderColor 125 241 37
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+
 #------------------------------------------------------------------------------
 # Relic
 #------------------------------------------------------------------------------
@@ -390,6 +411,18 @@ Show
   SetFontSize 40
 
 
+
+Show
+  BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  AreaLevel >= 65
+  ItemLevel >= 83
+  SetFontSize 35
+  SetTextColor 143 106 206
+  SetBorderColor 62 88 121
+  SetBackgroundColor 10 10 10 200
+
+
+
 Hide
   Quality == 0
   AreaLevel >= 65
@@ -404,6 +437,25 @@ SetFontSize 35
 SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
+
+Hide
+  Class == "Charms"
+  ItemLevel < 82
+  AreaLevel >= 65
+  Continue
+
+Show
+  Class == "Charms"
+  Quality >= 18
+  ItemLevel >= 82
+  AreaLevel >= 65
+  SetFontSize 35
+  SetTextColor 133 159 61
+  SetBorderColor 133 159 61
+  SetBackgroundColor 49 81 30
+  PlayAlertSound 3 300
+  PlayEffect Grey
+  MinimapIcon 1 Green Star
 
 
 #------------------------------------------------------------------------------

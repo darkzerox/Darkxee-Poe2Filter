@@ -331,6 +331,28 @@
     color: rgb(150 150 150);
 }
 
+[data-basetype="=="], [data-basetype="Bronze"], [data-basetype="Key"], [data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"] {
+    color: rgb(125 241 37);
+    border-color: rgb(177 90 18);
+    background-color: rgb(24 39 71);
+    font-size: 40px;
+}
+
+.minimap-icon-pentagon {
+    color: rgb(255 255 0);
+}
+
+.==, .fishing, .rods {
+    color: rgb(125 241 37);
+    border-color: rgb(125 241 37);
+    background-color: rgb(24 39 71);
+    font-size: 40px;
+}
+
+.minimap-icon-pentagon {
+    color: rgb(255 255 0);
+}
+
 .relic {
     color: rgb(30 233 148);
     border-color: rgb(30 233 148);
@@ -415,10 +437,28 @@
     color: rgb(255 255 255);
 }
 
+[data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"] {
+    font-size: 35px;
+    color: rgb(143 106 206);
+    border-color: rgb(62 88 121);
+    background-color: rgb(10 10 10);
+}
+
 .flasks {
     font-size: 35px;
     color: rgb(62 88 121);
     border-color: rgb(62 88 121);
+}
+
+.==, .charms {
+    font-size: 35px;
+    color: rgb(133 159 61);
+    border-color: rgb(133 159 61);
+    background-color: rgb(49 81 30);
+}
+
+.minimap-icon-star {
+    color: rgb(0 255 0);
 }
 
 .currency {
@@ -901,6 +941,22 @@
   <td><span class="minimap-icon-■ minimap-icon-grey">■</span></td>
   <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 17px">Barya Ulti...</div></td>
 </tr>
+<tr>
+  <td>ALL</td>
+  <td>Bronze Key Gold Key Silver Key</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-⬟ minimap-icon-yellow">⬟</span></td>
+  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Bronze Key...</div></td>
+</tr>
+<tr>
+  <td>Fishing Rods</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-⬟ minimap-icon-yellow">⬟</span></td>
+  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(125 241 37); background-color: rgb(24 39 71); font-size: 20px">Fishing Ro...</div></td>
+</tr>
 </table> <h3>relics.filter</h3>
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
@@ -1000,6 +1056,14 @@
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
 <tr>
+  <td>ALL</td>
+  <td>Ultimate Life Flask Ultimate Mana Flask</td>
+  <td>Any</td>
+  <td>Area: >= 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 17px">Ultimate L...</div></td>
+</tr>
+<tr>
   <td>Flasks</td>
   <td>ALL</td>
   <td>Magic</td>
@@ -1014,6 +1078,25 @@
   <td>Qual: >= 1</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 17px">Flasks</div></td>
+</tr>
+</table> <h3>charms.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Charms</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Area: >= 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Charms</div></td>
+</tr>
+<tr>
+  <td>Charms</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Area: >= 65, Qual: >= 18</td>
+  <td><span class="minimap-icon-★ minimap-icon-green">★</span></td>
+  <td><div class="style-box" style="color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 17px">Charms</div></td>
 </tr>
 </table> <h3>currency.filter</h3>
 <table class="filter-table">
