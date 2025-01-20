@@ -30,6 +30,7 @@ Show
 Show
   Class "Rings"
   Rarity Normal Magic
+  AreaLevel < 81
   SetFontSize 35
   Continue
 
