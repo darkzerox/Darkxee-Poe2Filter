@@ -464,6 +464,7 @@ Show
 
 
 
+
 Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
   AreaLevel >= 65
@@ -508,7 +509,6 @@ Show
   PlayAlertSound 3 300
   PlayEffect Grey
   MinimapIcon 1 Green Star
-
 
 #------------------------------------------------------------------------------
 # Currency
