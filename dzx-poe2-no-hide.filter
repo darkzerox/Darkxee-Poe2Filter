@@ -1,0 +1,716 @@
+#--------------------------------
+# Gacha group
+#--------------------------------
+
+Show 
+  Rarity Normal
+  BaseType == "Stellar Amulet"
+  SetBorderColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 300
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+Show
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Breach Ring"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+
+
+  Rarity Normal
+  Class "Charms"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 300
+
+  Rarity Normal
+  Class "Belts" "Rings" "Amulets"
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 300
+
+#------------------------------------------------------------------------------
+# Gold
+#------------------------------------------------------------------------------
+
+  StackSize <= 100
+  AreaLevel >= 70
+  BaseType == "Gold"
+  Continue
+
+Show
+  AreaLevel >= 70
+  StackSize >= 1000
+  BaseType == "Gold"
+  PlayEffect White Temp
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+
+Show
+  AreaLevel < 70
+  StackSize >= 500
+  BaseType == "Gold"
+  PlayEffect White Temp
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+
+Show
+  BaseType == "Gold"
+  SetTextColor 180 180 180
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 0 0 0 180
+  MinimapIcon 2 Grey Cross
+
+#------------------------------------------------------------------------------
+# Uncut Gems
+#------------------------------------------------------------------------------
+# Skill Gems
+  
+  ItemLevel >= 14 
+  ItemLevel <= 16
+  AreaLevel >= 65
+  AreaLevel <= 80
+  BaseType "Uncut Skill Gem"
+
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+# Always make Spirit gems pop
+Show
+  BaseType "Uncut Spirit Gem" "Uncut Spirit Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 37
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  SetFontSize 35
+
+# Level 19 gems and up in maps get a special highlight
+Show
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 300
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 40
+
+#------------------------------------------------------------------------------
+# Scroll of Wisdom
+#------------------------------------------------------------------------------
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
+
+
+#------------------------------------------------------------------------------
+# Salvagable Items
+#------------------------------------------------------------------------------
+
+
+  Sockets > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+
+  Quality > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+
+Show
+  Sockets > 0
+  Rarity Normal Magic
+  SetBorderColor 72 72 72
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
+
+
+Show
+  Quality > 0
+  Rarity Normal Magic
+  SetBorderColor 72 72 72
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/salvage.mp3" 100
+
+
+
+
+#------------------------------------------------------------------------------
+# Amulets
+#------------------------------------------------------------------------------
+
+Show
+  Class "Amulets"
+  Rarity <= Magic
+  SetFontSize 35
+  Continue
+
+Show
+  Class "Amulets"
+  Rarity Rare
+  SetFontSize 32
+  SetTextColor 221 168 83
+  SetBorderColor 22 64 77
+  SetBackgroundColor 22 64 77
+  PlayEffect Orange
+  MinimapIcon 1 Yellow Diamond
+  
+
+
+#------------------------------------------------------------------------------
+# Belts
+#------------------------------------------------------------------------------
+
+  Quality == 0
+  Rarity <= Magic
+  Class "Belts"
+  Continue
+
+Show
+  Class "Belts"
+  Rarity Normal
+  SetFontSize 35
+  
+Show
+  Class "Belts"
+  Rarity Rare
+  SetFontSize 35
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+
+
+
+
+#------------------------------------------------------------------------------
+# Jewel
+#------------------------------------------------------------------------------
+
+Show
+  Class "Jewel"
+  Rarity <= Rare
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 35
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 300
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 200
+
+Show 
+  BaseType "Timeless"
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Key
+#------------------------------------------------------------------------------
+
+Show
+  Class "Pinnacle Keys"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Square
+  SetFontSize 40
+
+Show
+  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 40
+
+Show
+  Class "Tablet"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 40
+
+Show
+  BaseType "Barya" "Ultimatum"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 12 200
+  PlayEffect Grey
+  MinimapIcon 1 Grey Square
+  SetFontSize 35
+
+Show
+  BaseType == "Bronze Key" "Gold Key" "Silver Key"
+  SetTextColor 125 241 37
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+Show
+  Class == "Fishing Rods"
+  SetTextColor 125 241 37
+  SetBorderColor 125 241 37
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+
+#------------------------------------------------------------------------------
+# Relic
+#------------------------------------------------------------------------------
+
+Show 
+  Class "Relic"
+  SetTextColor 30 233 148
+  SetBorderColor 30 233 148
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+
+
+#------------------------------------------------------------------------------
+# Rings
+#------------------------------------------------------------------------------
+
+
+
+# Special Highlight - Breach Rings
+Show 
+  Rarity Rare
+  BaseType == "Breach Ring"
+  SetTextColor 255 188 17
+  SetBorderColor 156 106 255
+  SetBackgroundColor 88 57 150
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 9 300
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+
+Show 
+  Rarity <= Magic
+  BaseType == "Breach Ring"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
+
+Show
+  Class "Rings"
+  Rarity Normal Magic
+  SetFontSize 35
+  Continue
+
+Show
+  Class "Rings"
+  Rarity Rare
+  SetFontSize 35
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+  Continue
+
+Show 
+  Rarity Normal
+  Class "Rings"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
+
+
+#------------------------------------------------------------------------------
+# Rune and Charms
+#------------------------------------------------------------------------------
+
+Show 
+  BaseType " Rune" " Charm"
+  SetTextColor 30 233 148
+  PlayEffect Cyan Temp
+
+#------------------------------------------------------------------------------
+# Soul Core
+#------------------------------------------------------------------------------
+
+Show 
+  BaseType "Soul Core"
+  SetTextColor 128 136 54
+  SetBorderColor 128 136 54
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 300
+  PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Waystones
+#------------------------------------------------------------------------------
+
+  WaystoneTier <= 12
+  AreaLevel >= 80
+  BaseType "Waystone"
+
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 10
+  BaseType "Waystone"
+  SetTextColor 171 74 103
+  SetBorderColor 135 67 86
+  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+
+
+Show
+  WaystoneTier >= 11
+  WaystoneTier <= 14
+  BaseType "Waystone"
+  SetTextColor 200 144 167
+  SetBorderColor 200 144 167
+  SetBackgroundColor 33 33 33
+  SetFontSize 35
+  PlayAlertSound 4 300
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+
+
+Show
+  BaseType "Waystone"
+  Rarity <= Rare
+  WaystoneTier >= 15
+  SetTextColor 171 74 103
+  SetBorderColor 135 67 86
+  SetBackgroundColor 10 10 10
+  PlayAlertSound 4 300
+  PlayEffect White
+  MinimapIcon 1 White Square
+  SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+
+
+
+Show
+  BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  AreaLevel >= 65
+  ItemLevel >= 83
+  SetFontSize 35
+  SetTextColor 143 106 206
+  SetBorderColor 62 88 121
+  SetBackgroundColor 10 10 10 200
+
+
+
+  Quality == 0
+  AreaLevel >= 65
+  Rarity <= Magic
+  Class "Flasks"
+  
+Show
+Class "Flasks"
+Rarity Magic
+Quality >= 1
+SetFontSize 35
+SetTextColor 62 88 121
+SetBorderColor 62 88 121
+
+
+  Class == "Charms"
+  ItemLevel < 82
+  AreaLevel >= 65
+  Continue
+
+Show
+  Class == "Charms"
+  Quality >= 18
+  ItemLevel >= 82
+  AreaLevel >= 65
+  SetFontSize 35
+  SetTextColor 133 159 61
+  SetBorderColor 133 159 61
+  SetBackgroundColor 49 81 30
+  PlayAlertSound 3 300
+  PlayEffect Grey
+  MinimapIcon 1 Green Star
+
+
+#------------------------------------------------------------------------------
+# Currency
+#------------------------------------------------------------------------------
+
+Show
+  Class "Currency"
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
+  Continue
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/mirror.mp3" 200
+  
+ 
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  
+
+Show
+  Class "Currency"
+  BaseType == "Distilled Isolation" "Distilled Suffering"
+  PlayAlertSound 6 300
+
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+  Class "Currency"
+  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  SetTextColor 255 255 255 255
+  SetBorderColor  240 90 35
+  SetBackgroundColor 240 90 35
+  PlayEffect White
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
+
+# Currency Tier B: Exalt
+Show
+  Class "Currency"
+  BaseType "Exotic Coinage" "Exalted Orb"
+  SetTextColor 218 145 255
+  SetFontSize 40
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+
+Show
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+# Currency Tier B: Regal, Vaal ...
+Show
+  Class "Currency"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  
+Show
+  Class "Currency"
+  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayEffect White Temp
+  MinimapIcon 1 White Kite
+  SetFontSize 35
+  
+
+Show
+  Class "Currency"
+  BaseType "Distilled" "Catalyst" "Essence of"
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  AreaLevel >= 70
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 244 215 147
+  SetFontSize 35
+  DisableDropSound
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 244 215 147
+  MinimapIcon 2 Grey Circle
+  SetFontSize 35
+
+Show
+  Class "Omen"
+  BaseType "Omen of"
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/currency.mp3" 100
+  PlayAlertSound 2 0
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 244 215 147
+  SetBorderColor 244 215 147
+  SetBackgroundColor 139 97 0 62
+  PlayAlertSound 2 300
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
+
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
+  Rarity <= Magic
+  Sockets == 0
+  Quality == 0
+  AreaLevel >= 40
+  SetTextColor 30 32 133
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  Continue
+
+
+Show
+  Rarity >= Magic
+  Sockets > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 62 140 242
+  SetBackgroundColor 0 0 0
+  SetFontSize 35
+
+
+Show
+  Rarity >= Magic
+  Quality > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 30 32 133
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 35
+
+
+
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  SetBackgroundColor 34 34 34 208
+  SetTextColor 255 209 94
+  SetBorderColor 255 209 94
+  SetFontSize 35
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
+
+
+#------------------------------------------------------------------------------
+# Unique Items group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+  Continue
+
+# Very Unique
+Show
+  Rarity Unique
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+
+

@@ -53,10 +53,27 @@ merge_file.merge_files_from_array(mainGroup, output_file_name)
 
 
 #----------------------
-# merge all filter
+# merge all filter - Show all items
+#----------------------
+output_file_name = 'dzx-poe2-no-hide'
+merge_file.merge_files_from_array(mainGroup, output_file_name, False, True)
+
+
+#----------------------
+# merge all filter for PS5
 #----------------------
 output_file_name = 'dzx-poe2-PS5'
 merge_file.merge_files_from_array(mainGroup, output_file_name , True)
+
+
+#----------------------
+# merge all filter for PS5 - Show all items
+#----------------------
+output_file_name = 'dzx-poe2-PS5-no-hide'
+merge_file.merge_files_from_array(mainGroup, output_file_name , True, True)
+
+
+
 
 
 #----------------------
