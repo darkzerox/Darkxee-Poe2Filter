@@ -356,7 +356,9 @@ def generate_html_content(filter_array):
         <li><img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="GitHub Actions Workflow Status"></li>
     </ul>
 
-    <h2><a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">🔗 Download</a></h2>
+    <h2><a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">🔗 Download For PC</a></h2>
+
+    <h2><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button">🔗 Download For PS5</a></h2>
 
     <h2>Installation</h2>
     <p>แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่</p>
