@@ -38,6 +38,14 @@ Show
 
 
 
+  Rarity Normal
+  Class "Charms"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 300
 
   Rarity Normal
   Class "Belts" "Rings" "Amulets"
