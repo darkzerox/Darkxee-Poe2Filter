@@ -157,6 +157,7 @@ Hide
 
 Show
   Sockets > 0
+  AreaLevel <= 75
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 35
@@ -165,6 +166,7 @@ Show
 
 Show
   Quality > 0
+  AreaLevel <= 75
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 35
