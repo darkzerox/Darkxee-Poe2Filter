@@ -590,7 +590,7 @@ Show
   SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
-  
+ 
 Show
   Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
@@ -599,7 +599,6 @@ Show
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
-  
 
 Show
   Class "Currency"
@@ -609,7 +608,6 @@ Show
   SetBackgroundColor 0 0 0
   PlayEffect White
   MinimapIcon 2 White Circle
-
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
