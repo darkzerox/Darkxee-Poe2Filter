@@ -184,7 +184,7 @@ Show
 
 Show
   Class "Amulets"
-  Rarity <= Magic
+  Rarity Normal
   SetFontSize 35
   Continue
 
