@@ -421,38 +421,44 @@ Hide
   BaseType "Waystone"
 
 Show
-  WaystoneTier >= 5
-  WaystoneTier <= 10
   BaseType "Waystone"
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+  Continue
+
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 9
+  BaseType "Waystone"
+  SetTextColor 201 218 191
+  SetBorderColor 201 218 191
+  SetBackgroundColor 33 33 33
   SetFontSize 35
   PlayAlertSound 4 300
 
 
 Show
-  WaystoneTier >= 11
-  WaystoneTier <= 14
+  WaystoneTier >= 10
+  WaystoneTier <= 12
   BaseType "Waystone"
-  SetTextColor 200 144 167
-  SetBorderColor 200 144 167
-  SetBackgroundColor 33 33 33
+  SetTextColor 156 169 134
+  SetBorderColor 156 169 134
+  SetBackgroundColor 10 10 10
   SetFontSize 35
   PlayAlertSound 4 300
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  WaystoneTier >= 15
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
-  PlayAlertSound 4 300
-  PlayEffect White
+  WaystoneTier >= 13
+  WaystoneTier <= 15
+  SetTextColor 135 35 65
+  SetBorderColor 4 10 29
+  SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
+  PlayEffect Red
+  PlayAlertSound 4 300
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
@@ -550,7 +556,7 @@ Show
   BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 255 255 255
   SetBorderColor  240 90 35
-  SetBackgroundColor 240 90 35
+  SetBackgroundColor 101 146 135
   PlayEffect White
   MinimapIcon 1 Yellow Circle
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
@@ -568,9 +574,9 @@ Show
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -579,18 +585,18 @@ Show
 Show
   Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
   
 Show
   Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
@@ -599,9 +605,9 @@ Show
 Show
   Class "Currency"
   BaseType "Distilled" "Catalyst" "Essence of"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -611,24 +617,28 @@ Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 244 215 147
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   SetFontSize 35
-  DisableDropSound
+  
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 244 215 147
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 
 Show
   Class "Omen"
   BaseType "Omen of"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
@@ -639,9 +649,9 @@ Show
 # Unknown currency
 Show
   Class "Currency"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayAlertSound 2 300
   PlayEffect Pink
   MinimapIcon 1 White Circle

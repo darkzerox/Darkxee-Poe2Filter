@@ -8,37 +8,44 @@ Hide
   BaseType "Waystone"
 
 Show
-  WaystoneTier >= 5
-  WaystoneTier <= 10
   BaseType "Waystone"
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+  Continue
+
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 9
+  BaseType "Waystone"
+  SetTextColor 201 218 191
+  SetBorderColor 201 218 191
+  SetBackgroundColor 33 33 33
   SetFontSize 35
   PlayAlertSound 4 300
 
 
 Show
-  WaystoneTier >= 11
-  WaystoneTier <= 14
+  WaystoneTier >= 10
+  WaystoneTier <= 12
   BaseType "Waystone"
-  SetTextColor 200 144 167
-  SetBorderColor 200 144 167
-  SetBackgroundColor 33 33 33
+  SetTextColor 156 169 134
+  SetBorderColor 156 169 134
+  SetBackgroundColor 10 10 10
   SetFontSize 35
   PlayAlertSound 4 300
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  WaystoneTier >= 15
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
-  PlayAlertSound 4 300
-  PlayEffect White
+  WaystoneTier >= 13
+  WaystoneTier <= 15
+  SetTextColor 135 35 65
+  SetBorderColor 4 10 29
+  SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
+  PlayEffect Red
+  PlayAlertSound 4 300
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+
