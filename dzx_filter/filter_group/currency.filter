@@ -43,8 +43,8 @@ Show
   Class "Currency"
   BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 255 255 255
-  SetBorderColor  240 90 35
-  SetBackgroundColor 101 146 135
+  SetBorderColor  30 58 51
+  SetBackgroundColor 30 58 51
   PlayEffect White
   MinimapIcon 1 Yellow Circle
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
@@ -82,8 +82,8 @@ Show
 Show
   Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 68 17 209
-  SetBackgroundColor 197 159 250
+  SetTextColor 201 184 224
+  SetBackgroundColor 23 7 69
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
