@@ -366,6 +366,7 @@ Show
 Show
   Class "Rings"
   Rarity Normal Magic
+  AreaLevel < 81
   SetFontSize 35
   Continue
 
@@ -680,7 +681,6 @@ Show
   SetFontSize 40
   PlayAlertSound 3 0
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-
 
 #------------------------------------------------------------------------------
 # Rare Items Group

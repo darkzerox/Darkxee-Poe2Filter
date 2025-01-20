@@ -522,11 +522,6 @@
     color: rgb(255 255 255);
 }
 
-
-.minimap-icon-star {
-    color: rgb(160 110 60);
-}
-
 [data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Incense"], [data-basetype="Relic"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Vase"], [data-basetype="Relic"] {
     font-size: 45px;
     color: rgb(238 238 238);
@@ -536,6 +531,11 @@
 
 .minimap-icon-star {
     color: rgb(255 0 0);
+}
+
+
+.minimap-icon-star {
+    color: rgb(160 110 60);
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
