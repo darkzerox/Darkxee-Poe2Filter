@@ -14,6 +14,18 @@ Show
   PlayEffect Red
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
+Show
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Breach Ring"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+
+
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
@@ -25,13 +37,12 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 
-Show
+
+
   Rarity Normal
-  BaseType == "Attuned Wand" "Siphoning Wand"
-  ItemLevel >= 81
+  Class "Belts" "Rings" "Amulets"
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
-  MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 300

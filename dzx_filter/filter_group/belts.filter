@@ -22,9 +22,4 @@ Show
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
 
-Show 
-  Rarity Normal
-  BaseType == "Heavy Belt"
-  SetBorderColor 0 240 190
-  SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
+

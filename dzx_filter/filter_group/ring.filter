@@ -2,21 +2,7 @@
 #------------------------------------------------------------------------------
 # Rings
 #------------------------------------------------------------------------------
-Show
-  Class "Rings"
-  Rarity Normal Magic
-  SetFontSize 35
-  Continue
 
-Show
-  Class "Rings"
-  Rarity Rare
-  SetFontSize 35
-  SetTextColor 233 206 75
-  SetBorderColor 233 206 75
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Diamond
-  Continue
 
 
 # Special Highlight - Breach Rings
@@ -41,5 +27,27 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Show
+  Class "Rings"
+  Rarity Normal Magic
+  SetFontSize 35
+  Continue
 
+Show
+  Class "Rings"
+  Rarity Rare
+  SetFontSize 35
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+  Continue
 
+Show 
+  Rarity Normal
+  Class "Rings"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
