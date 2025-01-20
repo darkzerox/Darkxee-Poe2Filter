@@ -66,7 +66,7 @@
     color: rgb(255 0 0);
 }
 
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
+[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Expert"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Breach"], [data-basetype="Ring"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
@@ -76,7 +76,7 @@
     color: rgb(255 150 0);
 }
 
-[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"] {
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], .belts, .rings, .amulets {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
@@ -84,6 +84,10 @@
 
 .minimap-icon-diamond {
     color: rgb(255 150 0);
+}
+
+.minimap-icon-diamond {
+    color: rgb(0 255 0);
 }
 
 [data-basetype="=="], [data-basetype="Gold"] {
@@ -178,15 +182,6 @@
 
 .minimap-icon-diamond {
     color: rgb(255 255 0);
-}
-
-[data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"] {
-    border-color: rgb(0 240 190);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
 }
 
 .jewel {
@@ -285,6 +280,27 @@
     color: rgb(0 255 255);
 }
 
+[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
+    color: rgb(255 188 17);
+    border-color: rgb(156 106 255);
+    background-color: rgb(88 57 150);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(0 255 255);
+}
+
+[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
+    color: rgb(156 106 255);
+    border-color: rgb(156 106 255);
+    font-size: 40px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(0 255 255);
+}
+
 .rings {
     font-size: 35px;
 }
@@ -299,18 +315,7 @@
     color: rgb(255 255 0);
 }
 
-[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
-    color: rgb(255 188 17);
-    border-color: rgb(156 106 255);
-    background-color: rgb(88 57 150);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
+.rings {
     color: rgb(156 106 255);
     border-color: rgb(156 106 255);
     font-size: 40px;

@@ -13,6 +13,17 @@ Show
   PlayAlertSound 9 300
   PlayEffect Red
 
+Show
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Breach Ring"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 300
+
+
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
@@ -23,16 +34,15 @@ Show
   PlayAlertSound 16 300
 
 
-Show
+
+
   Rarity Normal
-  BaseType == "Attuned Wand" "Siphoning Wand"
-  ItemLevel >= 81
+  Class "Belts" "Rings" "Amulets"
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
-  MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 300
 
 #------------------------------------------------------------------------------
 # Gold
@@ -196,12 +206,7 @@ Show
   PlayEffect Yellow
   MinimapIcon 1 Yellow Diamond
 
-Show 
-  Rarity Normal
-  BaseType == "Heavy Belt"
-  SetBorderColor 0 240 190
-  SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
+
 
 
 #------------------------------------------------------------------------------
@@ -309,21 +314,7 @@ Show
 #------------------------------------------------------------------------------
 # Rings
 #------------------------------------------------------------------------------
-Show
-  Class "Rings"
-  Rarity Normal Magic
-  SetFontSize 35
-  Continue
 
-Show
-  Class "Rings"
-  Rarity Rare
-  SetFontSize 35
-  SetTextColor 233 206 75
-  SetBorderColor 233 206 75
-  PlayEffect Yellow
-  MinimapIcon 1 Yellow Diamond
-  Continue
 
 
 # Special Highlight - Breach Rings
@@ -347,8 +338,30 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Show
+  Class "Rings"
+  Rarity Normal Magic
+  SetFontSize 35
+  Continue
 
+Show
+  Class "Rings"
+  Rarity Rare
+  SetFontSize 35
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+  Continue
 
+Show 
+  Rarity Normal
+  Class "Rings"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
 
 
 #------------------------------------------------------------------------------
