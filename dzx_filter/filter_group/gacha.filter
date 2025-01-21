@@ -15,7 +15,8 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 Show
-  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Breach Ring"
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff"
   ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
