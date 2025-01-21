@@ -187,6 +187,11 @@ Show
 # Amulets
 #------------------------------------------------------------------------------
 
+Hide
+  Class "Amulets"
+  Rarity Magic
+  AreaLevel >= 70 
+
 Show
   Class "Amulets"
   Rarity Normal
@@ -363,9 +368,14 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Hide
+  Class "Rings"
+  Rarity Magic
+  AreaLevel >= 70 
+
 Show
   Class "Rings"
-  Rarity Normal Magic
+  Rarity Normal
   AreaLevel < 81
   SetFontSize 35
   Continue
