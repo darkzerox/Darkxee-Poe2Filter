@@ -2,6 +2,11 @@
 # Amulets
 #------------------------------------------------------------------------------
 
+Hide
+  Class "Amulets"
+  Rarity Magic
+  AreaLevel >= 70 
+
 Show
   Class "Amulets"
   Rarity Normal
