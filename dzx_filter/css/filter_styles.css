@@ -171,6 +171,10 @@
     color: rgb(160 110 60);
 }
 
+[data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
+    font-size: 35px;
+}
+
 .amulets {
     font-size: 35px;
 }

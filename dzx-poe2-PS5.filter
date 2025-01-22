@@ -149,6 +149,10 @@ Hide
   AreaLevel >= 65
   Rarity <= Magic
 
+Show
+  BaseType "Scroll of Wisdom"
+  SetFontSize 35
+  AreaLevel < 65
 
 #------------------------------------------------------------------------------
 # Salvagable Items
