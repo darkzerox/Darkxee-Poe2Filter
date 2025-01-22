@@ -182,6 +182,11 @@ Show
   Rarity Magic
   AreaLevel >= 70 
 
+  Class "Amulets"
+  Rarity Normal
+  ItemLevel < 80
+  AreaLevel >= 70 
+
 Show
   Class "Amulets"
   Rarity Normal
@@ -419,7 +424,6 @@ Show
 Show
   BaseType "Waystone"
   SetFontSize 35
-  PlayAlertSound 4 300
   Continue
 
 Show
@@ -430,7 +434,7 @@ Show
   SetBorderColor 201 218 191
   SetBackgroundColor 33 33 33
   SetFontSize 35
-  PlayAlertSound 4 300
+  PlayAlertSound 4 100
 
 
 Show
@@ -441,7 +445,6 @@ Show
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
   SetFontSize 35
-  PlayAlertSound 4 300
 
 
 Show
@@ -454,7 +457,7 @@ Show
   SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
   PlayEffect Red
-  PlayAlertSound 4 300
+  PlayAlertSound 14 300
   SetFontSize 40
 
 
@@ -486,7 +489,8 @@ SetBorderColor 62 88 121
 
 
   Class == "Charms"
-  ItemLevel < 82
+  Rarity Normal Magic
+  ItemLevel < 80
   AreaLevel >= 65
   Continue
 
