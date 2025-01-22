@@ -422,7 +422,7 @@ Show
 
 Hide
   WaystoneTier <= 12
-  AreaLevel >= 80
+  AreaLevel >= 78
   BaseType "Waystone"
 
 Show
