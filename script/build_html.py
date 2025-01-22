@@ -343,51 +343,95 @@ def generate_html_content(filter_array):
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;"><img src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" alt="DZX Poe2 Filter">
-    <h1>DZX Poe2 Filter </h1>
-    </div>
-   
+    <div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
+    <img alt="Darkxee Poe2 Filter" src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" width="800" style="max-width: 100%">
+  </picture>
 
-    <p>เป็นโปรเจคที่ทำขึ้นสำหรับกรอง Item จากเกม ซึ่งตอนนี้ poe2 ยังไม่รองรับ Function Import ดังนั้นจึงต้องใช้วิธีการรวมไฟล์โดยใช้ Python เข้ามาช่วย</p>
+  <h1 align="center">DZX Poe2 Filter</h1>
+  
+  <p>
+    เป็นโปรเจคที่ทำขึ้นสำหรับกรอง Item จากเกม ซึ่งตอนนี้ poe2 ยังไม่รองรับ Function Import<br/>
+    ดังนั้นจึงต้องใช้วิธีการรวมไฟล์โดยใช้ Python เข้ามาช่วย
+  </p>
 
-    <h2>Badges</h2>
-    <ul>
-        <li><img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" alt="GitHub Release"></li>
-        <li><img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="GitHub Actions Workflow Status"></li>
-    </ul>
+  <div class="badges">
+    <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases">
+      <img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" alt="GitHub Release">
+    </a>
+    <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/actions">
+      <img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="Build Status">
+    </a>
+  </div>
+</div>
 
-    <h2><a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">🔗 Download For PC</a></h2>
+<h2 align="center">📥 ดาวน์โหลด</h2>
 
-    <h2><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button">🔗 Download For PS5</a></h2>
+<div align="center">
+  <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest">
+    <img src="https://img.shields.io/badge/💻_Download-PC-blue?style=for-the-badge&logo=windows" alt="Download PC">
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">
+    <img src="https://img.shields.io/badge/🎮_Download-PS5-blue?style=for-the-badge&logo=playstation" alt="Download PS5">
+  </a>
+</div>
 
-    <h2>Installation</h2>
-    <p>แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่</p>
+<h2>🔧 วิธีติดตั้ง</h2>
 
-    <h4>Windows:</h4>
-    <pre><code>%userprofile%\Documents\My Games\Path of Exile 2</code></pre>
+<p>แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่:</p>
 
-    <h4>Linux:</h4>
-    <pre><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></pre>
+  <summary>
+    <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows" alt="Windows">
+  </summary>
+  <pre><code>%userprofile%\Documents\My Games\Path of Exile 2</code></pre>
 
-    <h3>For Dev</h3>
-    <ul>
-        <li>สำหรับท่านที่ต้องการแก้ไข Filter นี้ สามารถ Clone ไปแก้ไขได้เลย</li>
-        <li>ไฟล์หลักจะอยู่ใน Folder <strong>filter_group</strong> ซึ่งได้แบ่งเป็นหมวดหมู่ต่างๆเอาไว้แล้ว เพื่อง่ายต่อการแก้ไข</li>
-        <li>ไฟล์เสียงจะอยู่ใน Folder <strong>dzx_filter/soundeffect</strong></li>
-        <li>เมื่อแก้ไฟล์เสร็จแล้วให้ run ไฟล์ <strong>/script/run_script.py</strong> เพื่อทำการรวมไฟล์ใหม่อีกครั้ง</li>
-        <li>ใช้ภาษา python นะ</li>
-    </ul>
+  <summary>
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="Linux">
+  </summary>
+  <pre><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></pre>
+
+    <h2>👨‍💻 สำหรับนักพัฒนา</h2>
+
+    <p>สามารถ Clone โปรเจคไปแก้ไขได้เลย</p>
+
+    <h3>📂 โครงสร้างโปรเจค</h3>
+
+    <table>
+    <tr>
+        <th>โฟลเดอร์/ไฟล์</th>
+        <th>รายละเอียด</th>
+    </tr>
+    <tr>
+        <td>📁 <code>filter_group/</code></td>
+        <td>ไฟล์ filter หลักแยกตามหมวดหมู่</td>
+    </tr>
+    <tr>
+        <td>📁 <code>dzx_filter/soundeffect/</code></td>
+        <td>ไฟล์เสียงทั้งหมด</td>
+    </tr>
+    <tr>
+        <td>📄 <code>script/start_build.py</code></td>
+        <td>สคริปต์สำหรับรวมไฟล์ filter</td>
+    </tr>
+    </table>
 
     <blockquote>
-        <p>filter นี้จะพยายามอัพเดตอยู่ตลอด ดังนั้นแล้วให้เข้ามาดูบ่อยๆนะ</p>
+    <p>💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตอยู่เสมอ</p>
     </blockquote>
 
-    <h2>Github Repo</h2>
-    <a href="https://github.com/darkzerox/Darkxee-Poe2Filter">https://github.com/darkzerox/Darkxee-Poe2Filter</a>
+    <h2>🙏 เครดิต</h2>
 
-    <h2>credit</h2>
-    <p>Thank you for Original filter from NeverSink's Indepth Loot Filter <a href="https://github.com/NeverSinkDev/NeverSink-PoE2litefilter">https://github.com/NeverSinkDev/NeverSink-PoE2litefilter</a></p>
-    <p>Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย</p>
+    <div>
+    <a href="https://github.com/NeverSinkDev/NeverSink-PoE2litefilter">
+        <img src="https://img.shields.io/badge/Original_Filter-NeverSink's_Indepth_Loot_Filter-orange?style=for-the-badge" alt="NeverSink's Filter">
+    </a>
+    </div>
+
+    <p>Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย อาจจะมีปรับปรุงเพิ่มเติมเล็กน้อย</p>
+
+
     <hr/>
 
      <h2>Filter Group Preview</h2>
