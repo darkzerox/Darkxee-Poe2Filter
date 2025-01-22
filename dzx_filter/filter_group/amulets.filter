@@ -7,6 +7,12 @@ Hide
   Rarity Magic
   AreaLevel >= 70 
 
+Hide
+  Class "Amulets"
+  Rarity Normal
+  ItemLevel < 80
+  AreaLevel >= 70 
+
 Show
   Class "Amulets"
   Rarity Normal
