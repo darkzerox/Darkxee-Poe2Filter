@@ -38,11 +38,10 @@ mainGroup= [
     #----------------------
     # Rarity group
     #----------------------
-
-    "rarity_magic.filter",
-    "rarity_rare.filter",
+    
     "rarity_unique.filter",
-
+    "rarity_rare.filter",
+    "rarity_magic.filter",
 ]
 
 #----------------------

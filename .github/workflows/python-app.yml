@@ -30,7 +30,7 @@ jobs:
 
       - name: execute py script
         run: |
-          python script/run_script.py
+          python script/start_build.py
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
