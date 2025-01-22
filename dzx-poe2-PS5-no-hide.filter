@@ -58,6 +58,7 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
+Show
   StackSize <= 100
   AreaLevel >= 70
   BaseType == "Gold"
@@ -93,6 +94,7 @@ Show
 #------------------------------------------------------------------------------
 # Skill Gems
   
+Show
   ItemLevel >= 14 
   ItemLevel <= 16
   AreaLevel >= 65
@@ -142,6 +144,7 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
+Show
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
@@ -152,10 +155,12 @@ Show
 #------------------------------------------------------------------------------
 
 
+Show
   Sockets > 0
   AreaLevel >= 75
   Rarity Normal Magic
 
+Show
   Quality > 0
   AreaLevel >= 75
   Rarity Normal Magic
@@ -180,10 +185,12 @@ Show
 # Amulets
 #------------------------------------------------------------------------------
 
+Show
   Class "Amulets"
   Rarity Magic
   AreaLevel >= 70 
 
+Show
   Class "Amulets"
   Rarity Normal
   ItemLevel < 80
@@ -211,6 +218,7 @@ Show
 # Belts
 #------------------------------------------------------------------------------
 
+Show
   Quality == 0
   Rarity <= Magic
   ItemLevel < 80
@@ -364,6 +372,7 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Show
   Class "Rings"
   Rarity Magic
   AreaLevel >= 70 
@@ -421,6 +430,7 @@ Show
 # Waystones
 #------------------------------------------------------------------------------
 
+Show
   WaystoneTier <= 12
   AreaLevel >= 78
   BaseType "Waystone"
@@ -478,6 +488,7 @@ Show
 
 
 
+Show
   Quality == 0
   AreaLevel >= 65
   Rarity <= Magic
@@ -492,6 +503,7 @@ SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
 
+Show
   Class == "Charms"
   Rarity Normal Magic
   ItemLevel < 80
@@ -692,6 +704,7 @@ Show
 # Magic Items Group
 #------------------------------------------------------------------------------
 
+Show
   Rarity <= Magic
   Sockets == 0
   Quality == 0
