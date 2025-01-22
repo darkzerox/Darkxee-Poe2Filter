@@ -15,7 +15,8 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 Show
-  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Breach Ring"
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff"
   ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
@@ -186,6 +187,11 @@ Show
 #------------------------------------------------------------------------------
 # Amulets
 #------------------------------------------------------------------------------
+
+Hide
+  Class "Amulets"
+  Rarity Magic
+  AreaLevel >= 70 
 
 Show
   Class "Amulets"
@@ -363,9 +369,15 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Hide
+  Class "Rings"
+  Rarity Magic
+  AreaLevel >= 70 
+
 Show
   Class "Rings"
-  Rarity Normal Magic
+  Rarity Normal
+  AreaLevel < 81
   SetFontSize 35
   Continue
 
@@ -421,40 +433,47 @@ Hide
   BaseType "Waystone"
 
 Show
-  WaystoneTier >= 5
-  WaystoneTier <= 10
   BaseType "Waystone"
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
+  SetFontSize 35
+  PlayAlertSound 4 300
+  Continue
+
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 9
+  BaseType "Waystone"
+  SetTextColor 201 218 191
+  SetBorderColor 201 218 191
+  SetBackgroundColor 33 33 33
   SetFontSize 35
   PlayAlertSound 4 300
 
 
 Show
-  WaystoneTier >= 11
-  WaystoneTier <= 14
+  WaystoneTier >= 10
+  WaystoneTier <= 12
   BaseType "Waystone"
-  SetTextColor 200 144 167
-  SetBorderColor 200 144 167
-  SetBackgroundColor 33 33 33
+  SetTextColor 156 169 134
+  SetBorderColor 156 169 134
+  SetBackgroundColor 10 10 10
   SetFontSize 35
   PlayAlertSound 4 300
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
 
 
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  WaystoneTier >= 15
-  SetTextColor 171 74 103
-  SetBorderColor 135 67 86
-  SetBackgroundColor 10 10 10
-  PlayAlertSound 4 300
-  PlayEffect White
+  WaystoneTier >= 13
+  WaystoneTier <= 15
+  SetTextColor 135 35 65
+  SetBorderColor 4 10 29
+  SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
+  PlayEffect Red
+  PlayAlertSound 4 300
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+
 
 
 
@@ -503,7 +522,6 @@ Show
   PlayEffect Grey
   MinimapIcon 1 Green Star
 
-
 #------------------------------------------------------------------------------
 # Currency
 #------------------------------------------------------------------------------
@@ -549,8 +567,8 @@ Show
   Class "Currency"
   BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 255 255 255
-  SetBorderColor  240 90 35
-  SetBackgroundColor 240 90 35
+  SetBorderColor  30 58 51
+  SetBackgroundColor 30 58 51
   PlayEffect White
   MinimapIcon 1 Yellow Circle
   CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
@@ -568,9 +586,9 @@ Show
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -579,56 +597,57 @@ Show
 Show
   Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
-  
+ 
 Show
   Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 201 184 224
+  SetBackgroundColor 23 7 69
   PlayEffect White Temp
   MinimapIcon 1 White Kite
   SetFontSize 35
-  
 
 Show
   Class "Currency"
   BaseType "Distilled" "Catalyst" "Essence of"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
   PlayEffect White
   MinimapIcon 2 White Circle
-
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 244 215 147
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   SetFontSize 35
-  DisableDropSound
+  
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 244 215 147
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 
 Show
   Class "Omen"
   BaseType "Omen of"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
@@ -639,9 +658,9 @@ Show
 # Unknown currency
 Show
   Class "Currency"
-  SetTextColor 244 215 147
-  SetBorderColor 244 215 147
-  SetBackgroundColor 139 97 0 62
+  SetTextColor 214 217 17
+  SetBorderColor 7 46 35
+  SetBackgroundColor 7 46 35
   PlayAlertSound 2 300
   PlayEffect Pink
   MinimapIcon 1 White Circle
@@ -649,18 +668,6 @@ Show
 #------------------------------------------------------------------------------
 # Unique Items group
 #------------------------------------------------------------------------------
-
-Show
-  Rarity Unique
-  SetTextColor 175 96 37 255
-  SetBorderColor 175 96 37 255
-  SetBackgroundColor 53 13 13 255
-  PlayEffect Brown
-  MinimapIcon 1 Brown Star
-  SetFontSize 40
-  PlayAlertSound 3 0
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
-  Continue
 
 # Very Unique
 Show
@@ -675,6 +682,16 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 #------------------------------------------------------------------------------
 # Rare Items Group
