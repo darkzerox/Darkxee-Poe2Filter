@@ -5,12 +5,14 @@
 Hide
   Quality == 0
   Rarity <= Magic
+  ItemLevel < 80
   Class "Belts"
   Continue
 
 Show
   Class "Belts"
   Rarity Normal
+  ItemLevel >= 80
   SetFontSize 35
   
 Show

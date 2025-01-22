@@ -37,7 +37,7 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
 
 
-
+Show 
   Rarity Normal
   Class "Charms"
   ItemLevel >= 81
@@ -47,6 +47,8 @@ Show
   MinimapIcon 2 Green Diamond
   PlayAlertSound 14 300
 
+
+Show 
   Rarity Normal
   Class "Belts" "Rings" "Amulets"
   SetTextColor 160 255 71
