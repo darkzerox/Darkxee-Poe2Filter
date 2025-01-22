@@ -26,8 +26,8 @@ def merge_files_from_array(file_paths, output_file_name , removeSoundEffect = Fa
                             content = '\n'.join(line for line in content.split('\n') 
                                               if 'CustomAlertSound' not in line)
                         if hideItem:
-                            content = '\n'.join(line for line in content.split('\n') 
-                                              if 'Hide' not in line)
+                            content = '\n'.join(line.replace('Hide', 'Show') if line.strip() == 'Hide' 
+                                              else line for line in content.split('\n'))
                         outfile.write(content)
                         outfile.write('\n\n')  # Add separator between files
                 else:

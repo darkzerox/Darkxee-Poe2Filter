@@ -61,6 +61,7 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
+Hide
   StackSize <= 100
   AreaLevel >= 70
   BaseType == "Gold"
@@ -95,7 +96,7 @@ Show
 # Uncut Gems
 #------------------------------------------------------------------------------
 # Skill Gems
-  
+Hide
   ItemLevel >= 14 
   ItemLevel <= 16
   AreaLevel >= 65
