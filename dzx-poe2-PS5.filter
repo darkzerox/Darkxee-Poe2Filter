@@ -225,7 +225,6 @@ Show
 Hide
   Quality == 0
   Rarity <= Magic
-  ItemLevel < 80
   Class "Belts"
   Continue
 
