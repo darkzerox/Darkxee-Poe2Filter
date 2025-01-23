@@ -45,7 +45,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
 
 
 Show 
@@ -55,7 +55,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
 
 #------------------------------------------------------------------------------
 # Gold
@@ -112,7 +112,7 @@ Show
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
 
@@ -236,7 +236,7 @@ Hide
 Show
   Class "Belts"
   Rarity Normal
-  ItemLevel >= 80
+  ItemLevel >= 81
   SetFontSize 35
   
 Show
@@ -481,7 +481,7 @@ Show
   SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
   PlayEffect Red
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 100
 
@@ -518,8 +518,7 @@ Hide
   Class == "Charms"
   Rarity Normal Magic
   ItemLevel < 80
-  AreaLevel >= 65
-  Continue
+  AreaLevel >= 60
 
 Show
   Class == "Charms"
@@ -571,7 +570,7 @@ Show
 Show
   Class "Currency"
   BaseType == "Distilled Isolation" "Distilled Suffering"
-  PlayAlertSound 6 300
+  PlayAlertSound 8 200
 
 
 # Currency Tier A: Gemcutter, Annullment
@@ -689,7 +688,7 @@ Show
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
   SetBackgroundColor 216 64 64
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
