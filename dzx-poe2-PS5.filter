@@ -713,7 +713,8 @@ Hide
   Sockets == 0
   Quality == 0
   AreaLevel >= 40
-  SetTextColor 30 32 133
+  SetTextColor 101 103 222
+  SetBackgroundColor 0 0 0 125
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   Continue
 
@@ -731,7 +732,7 @@ Show
   Rarity >= Magic
   Quality > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
-  SetTextColor 30 32 133
+  SetTextColor 101 103 222
   SetBackgroundColor 0 0 0 125
   SetFontSize 35
 
