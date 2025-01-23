@@ -392,9 +392,14 @@ def generate_html_content(filter_array):
   </summary>
   <pre><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></pre>
 
+  <summary>
+    <img src="https://img.shields.io/badge/🎮_-PS5-blue?style=flat&logo=playstation&logoColor=white" alt="Ps5 Xbox">
+  </summary>
+  <pre><code><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">PS5 XBox กดเข้าลิ๊งนี้</a> แล้วกด Follow ทั้งสองอันได้เลย</code></pre>
+
     <h2>👨‍💻 สำหรับนักพัฒนา</h2>
 
-    <p>สามารถ Clone โปรเจคไปแก้ไขได้เลย</p>
+    <p>สามารถ <a href="https://github.com/darkzerox/Darkxee-Poe2Filter">Clone โปรเจค</a> ไปแก้ไขได้เลย</p>
 
     <h3>📂 โครงสร้างโปรเจค</h3>
 
