@@ -5,7 +5,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 # Get project root (parent directory of script)
 project_path = os.path.dirname(script_dir)
 
-def filter_to_html_table(filter_path):
+def filter_to_html_table(filter_path, preview_tags):
     try:
         with open(filter_path, 'r') as f:
             filter_content = f.read()
@@ -136,7 +136,7 @@ def filter_to_html_table(filter_path):
     html_output.append('<table class="filter-table">')
     html_output.append('<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>')
     
-    # Modified row generation
+    # Modified row generation to collect preview tags
     def generate_row(block_data, style_str):
         html_output.append(f'<tr>')
         # Class column - show "ALL" if empty
@@ -180,6 +180,9 @@ def filter_to_html_table(filter_path):
         truncated_name = preview_text[:10] + '...' if len(preview_text) > 10 else preview_text
         html_output.append(f'  <td><div class="style-box" style="{style_str}">{truncated_name}</div></td>')
         html_output.append(f'</tr>')
+        
+        # Add to preview tags set
+        preview_tags.add((preview_text, style_str))
 
     # Process blocks
     for line in filter_content.split('\n'):
@@ -225,13 +228,87 @@ def generate_html_content(filter_array):
         print(f"Error reading CSS file: {str(e)}")
         return None
 
+    # Create set for preview tags
+    preview_tags = set()
+
     # Generate tables for each filter file
     tables_html = []
     for filter_name in filter_array:
         filter_path = os.path.join(project_path, 'dzx_filter', 'filter_group', filter_name)
-        table_html = filter_to_html_table(filter_path)
+        table_html = filter_to_html_table(filter_path, preview_tags)
         if table_html:
             tables_html.append(table_html)
+
+    # Generate tag cloud HTML with floating animations
+    tag_cloud_html = """
+    <style>
+        @keyframes fadeInScale {
+            0% {
+                opacity: 0;
+                transform: scale(0.5) translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        .tag-cloud .tag {
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            animation: 
+                fadeInScale 0.5s ease backwards,
+                float 3s ease-in-out infinite;
+            cursor: pointer;
+            position: relative;
+        }
+        
+        .tag-cloud .tag:hover {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation-play-state: paused;
+        }
+    </style>
+    <h2>Preview Items</h2>
+    <div class="tag-cloud">
+    """
+    
+    # Add each unique preview tag with staggered animation and different float durations
+    for index, (tag_text, style) in enumerate(preview_tags):
+        # Clean up the tag text
+        clean_tag = tag_text[:20]  # Limit length
+        if len(tag_text) > 20:
+            clean_tag += '...'
+            
+        # Calculate staggered delay and randomized float duration
+        delay = index * 0.05  # 50ms delay between each tag
+        float_duration = 3 + (index % 3)  # Varies between 3-5s
+        float_offset = (index * 33) % 100  # Offset float animation start
+            
+        # Add the tag with animation delay and original style
+        tag_cloud_html += f"""
+        <span class="tag" style="
+            {style};
+            animation: 
+                fadeInScale 0.5s ease backwards {delay}s,
+                float {float_duration}s ease-in-out infinite {float_offset}%;
+        ">{clean_tag}</span>
+        """
+    
+    tag_cloud_html += "</div>"
 
     # Create HTML content
     html_content = f"""<!DOCTYPE html>
@@ -312,7 +389,42 @@ def generate_html_content(filter_array):
         h1,h2,h3,h4{{
             color: #4a9eff;
         }}
+        .tag-cloud .tag {{
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            animation: 
+                fadeInScale 0.5s ease backwards,
+                float 3s ease-in-out infinite;
+            cursor: pointer;
+            position: relative;
+            color: rgb(255 209 94); border-color: rgb(255 209 94); background-color: rgb(34 34 34); font-size: 17px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.0s,
+                float 3s ease-in-out infinite 0%;
+        }}
+        
+        .tag-cloud .tag:hover {{
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation-play-state: paused;
+        }}
+        .tag-cloud{{
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #2d2d2d;
+            border-radius: 10px;
+            min-height: 200px;
+        }}
+        .dev-table{{
+            background: #2e2e2e; padding: 5px; border-spacing: 15px;
+        }}
         {css_content}
+
     </style>
 
     <!-- Google Tag Manager -->
@@ -403,21 +515,21 @@ def generate_html_content(filter_array):
 
     <h3>📂 โครงสร้างโปรเจค</h3>
 
-    <table>
+    <table class="dev-table">
     <tr>
         <th>โฟลเดอร์/ไฟล์</th>
         <th>รายละเอียด</th>
     </tr>
     <tr>
-        <td>📁 <code>filter_group/</code></td>
+        <td>📁 filter_group/</td>
         <td>ไฟล์ filter หลักแยกตามหมวดหมู่</td>
     </tr>
     <tr>
-        <td>📁 <code>dzx_filter/soundeffect/</code></td>
+        <td>📁  dzx_filter/soundeffect/</td>
         <td>ไฟล์เสียงทั้งหมด</td>
     </tr>
     <tr>
-        <td>📄 <code>script/start_build.py</code></td>
+        <td>📄 script/start_build.py</td>
         <td>สคริปต์สำหรับรวมไฟล์ filter</td>
     </tr>
     </table>
@@ -439,7 +551,9 @@ def generate_html_content(filter_array):
 
     <hr/>
 
-     <h2>Filter Group Preview</h2>
+    {tag_cloud_html}
+
+    <h2>Filter Group Preview</h2>
     {' '.join(tables_html)}
 </body>
 </html>"""
