@@ -781,7 +781,605 @@
     <hr/>
 
      <h2>Filter Group Preview</h2>
-    <h3>rarity_rare.filter</h3>
+    <h3>gacha.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Stellar Amulet</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
+  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px">Stellar Am...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Attuned Wand Siphoning Wand Expert Dualstring Bow Chiming Staff</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
+  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Attuned Wa...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Sapphire Ring Amethyst Ring Heavy Belt Breach Ring Gold Ring Gold Amulet</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
+  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Sapphire R...</div></td>
+</tr>
+<tr>
+  <td>Charms</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-green">◆</span></td>
+  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Charms</div></td>
+</tr>
+<tr>
+  <td>Belts Rings Amulets</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-green">◆</span></td>
+  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Belts Ring...</div></td>
+</tr>
+</table> <h3>gold.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Gold</td>
+  <td>Any</td>
+  <td>Area: >= 70</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Gold</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Gold</td>
+  <td>Any</td>
+  <td>Area: >= 70</td>
+  <td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td>
+  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255)">Gold</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Gold</td>
+  <td>Any</td>
+  <td>Area: < 70</td>
+  <td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td>
+  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255)">Gold</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Gold</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-✕ minimap-icon-grey">✕</span></td>
+  <td><div class="style-box" style="color: rgb(180 180 180); border-color: rgb(0 0 0); background-color: rgb(0 0 0)">Gold</div></td>
+</tr>
+</table> <h3>uncut_gems.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Uncut Skill Gem</td>
+  <td>Any</td>
+  <td>Area: <= 80</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Uncut Skil...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Uncut Skill Gem Uncut Spirit Gem</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
+  <td><div class="style-box" style="color: rgb(255 0 0); border-color: rgb(255 0 0); background-color: rgb(255 255 255); font-size: 22px">Uncut Skil...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Uncut Spirit Gem Uncut Spirit Gem</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td>
+  <td><div class="style-box" style="color: rgb(159 131 131); border-color: rgb(159 131 131); font-size: 18px">Uncut Spir...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Uncut Skill Gem</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(159 131 131); border-color: rgb(159 131 131); font-size: 17px">Uncut Skil...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Uncut Skill Gem</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td>
+  <td><div class="style-box" style="color: rgb(159 131 131); border-color: rgb(159 131 131); font-size: 20px">Uncut Skil...</div></td>
+</tr>
+</table> <h3>scroll_of_wisdom.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Scroll of Wisdom</td>
+  <td>Magic</td>
+  <td>Area: >= 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Scroll of ...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Scroll of Wisdom</td>
+  <td>Any</td>
+  <td>Area: < 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Scroll of ...</div></td>
+</tr>
+</table> <h3>salvage.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>ALL</td>
+  <td>Normal Magic</td>
+  <td>Sock: > 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(72 72 72); font-size: 17px">ALL</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>ALL</td>
+  <td>Normal Magic</td>
+  <td>Qual: > 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(72 72 72); font-size: 17px">ALL</div></td>
+</tr>
+</table> <h3>amulets.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Amulets</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Area: >= 70</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Amulets</div></td>
+</tr>
+<tr>
+  <td>Amulets</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Area: >= 70</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Amulets</div></td>
+</tr>
+<tr>
+  <td>Amulets</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Amulets</div></td>
+</tr>
+<tr>
+  <td>Amulets</td>
+  <td>ALL</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
+  <td><div class="style-box" style="color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px">Amulets</div></td>
+</tr>
+</table> <h3>belts.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Belts</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Qual: == 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Belts</div></td>
+</tr>
+<tr>
+  <td>Belts</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Belts</div></td>
+</tr>
+<tr>
+  <td>Belts</td>
+  <td>ALL</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
+  <td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 17px">Belts</div></td>
+</tr>
+</table> <h3>jewel.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Jewel</td>
+  <td>ALL</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 17px">Jewel</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Timeless</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 22px">Timeless</div></td>
+</tr>
+</table> <h3>key.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Pinnacle Keys</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-■ minimap-icon-yellow">■</span></td>
+  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Pinnacle K...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Simulacrum Breachstone Cowardly Fate Deadly Fate Victorious Fate Expedition Logbook Test of</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-■ minimap-icon-purple">■</span></td>
+  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Simulacrum...</div></td>
+</tr>
+<tr>
+  <td>Tablet</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-■ minimap-icon-purple">■</span></td>
+  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Tablet</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Barya Ultimatum</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-■ minimap-icon-grey">■</span></td>
+  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 17px">Barya Ulti...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Bronze Key Gold Key Silver Key</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-⬟ minimap-icon-yellow">⬟</span></td>
+  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Bronze Key...</div></td>
+</tr>
+<tr>
+  <td>Fishing Rods</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-⬟ minimap-icon-yellow">⬟</span></td>
+  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(125 241 37); background-color: rgb(24 39 71); font-size: 20px">Fishing Ro...</div></td>
+</tr>
+</table> <h3>relics.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Relic</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(30 233 148); border-color: rgb(30 233 148); font-size: 20px">Relic</div></td>
+</tr>
+</table> <h3>ring.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Breach Ring</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(255 188 17); border-color: rgb(156 106 255); background-color: rgb(88 57 150); font-size: 20px">Breach Rin...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Breach Ring</td>
+  <td>Magic</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Breach Rin...</div></td>
+</tr>
+<tr>
+  <td>Rings</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Area: >= 70</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Rings</div></td>
+</tr>
+<tr>
+  <td>Rings</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Area: < 81</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Rings</div></td>
+</tr>
+<tr>
+  <td>Rings</td>
+  <td>ALL</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
+  <td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 17px">Rings</div></td>
+</tr>
+<tr>
+  <td>Rings</td>
+  <td>ALL</td>
+  <td>Normal</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Rings</div></td>
+</tr>
+</table> <h3>rune_charms.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Rune  Charm</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(30 233 148)">Rune  Char...</div></td>
+</tr>
+</table> <h3>soul_core.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Soul Core</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
+  <td><div class="style-box" style="color: rgb(128 136 54); border-color: rgb(128 136 54); font-size: 22px">Soul Core</div></td>
+</tr>
+</table> <h3>waystones.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Waystone</td>
+  <td>Any</td>
+  <td>Area: >= 78</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Waystone</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Waystone</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Waystone</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Waystone</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(201 218 191); border-color: rgb(201 218 191); background-color: rgb(33 33 33); font-size: 17px">Waystone</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Waystone</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(156 169 134); border-color: rgb(156 169 134); background-color: rgb(10 10 10); font-size: 17px">Waystone</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Waystone</td>
+  <td>Rare</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-■ minimap-icon-white">■</span></td>
+  <td><div class="style-box" style="color: rgb(135 35 65); border-color: rgb(4 10 29); background-color: rgb(4 10 29); font-size: 20px">Waystone</div></td>
+</tr>
+</table> <h3>flasks.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Ultimate Life Flask Ultimate Mana Flask</td>
+  <td>Any</td>
+  <td>Area: >= 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 17px">Ultimate L...</div></td>
+</tr>
+<tr>
+  <td>Flasks</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Area: >= 65, Qual: == 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Flasks</div></td>
+</tr>
+<tr>
+  <td>Flasks</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Qual: >= 1</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 17px">Flasks</div></td>
+</tr>
+</table> <h3>charms.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Charms</td>
+  <td>ALL</td>
+  <td>Normal Magic</td>
+  <td>Area: >= 65</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Charms</div></td>
+</tr>
+<tr>
+  <td>Charms</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Area: >= 65, Qual: >= 18</td>
+  <td><span class="minimap-icon-★ minimap-icon-green">★</span></td>
+  <td><div class="style-box" style="color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 17px">Charms</div></td>
+</tr>
+</table> <h3>currency.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Currency</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Mirror Divine</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
+  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Mirror Divine Perfect Jeweller's Orb Distilled Isolation Distilled Suffering</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
+  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Distilled Isolation Distilled Suffering</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(255 255 255)">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Orb of Annulment Orb of Chance Greater Jeweller's Orb Distilled Fear Distilled Despair</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-yellow">●</span></td>
+  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(30 58 51); background-color: rgb(30 58 51)">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Exotic Coinage Exalted Orb</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-purple">●</span></td>
+  <td><div class="style-box" style="color: rgb(218 145 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px">Currency</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>Gold Key Silver Key Bronze Key</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35)">Gold Key S...</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Gemcutter's Prism Vaal Orb Chaos Orb Lesser Jeweller's Orb Regal Orb Artificer's Orb Glassblower's Bauble Orb of Alchemy Chance Shard</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35)">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Simulacrum Splinter Breach Splinter  Artifact</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(201 184 224); background-color: rgb(23 7 69); font-size: 17px">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Distilled Catalyst Essence of</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0)">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td>
+  <td>Any</td>
+  <td>Area: >= 70</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35); font-size: 17px">Currency</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-grey">●</span></td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35); font-size: 17px">Currency</div></td>
+</tr>
+<tr>
+  <td>Omen</td>
+  <td>Omen of</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35); font-size: 20px">Omen</div></td>
+</tr>
+<tr>
+  <td>Currency</td>
+  <td>ALL</td>
+  <td>Any</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
+  <td><div class="style-box" style="color: rgb(214 217 17); border-color: rgb(7 46 35); background-color: rgb(7 46 35)">Currency</div></td>
+</tr>
+</table> <h3>rarity_unique.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>ALL</td>
+  <td>Armoured Cap Emerald Furtive Wraps Incense Relic Ornate Belt Ring Ruby Sapphire Smuggler Coat Stone Tower Shield Time-Lost Diamond Timeless Jewel Ultimate Life Flask Ultimate Mana Flask Utility Belt Vase Relic</td>
+  <td>Unique</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
+  <td><div class="style-box" style="color: rgb(238 238 238); border-color: rgb(53 13 13); background-color: rgb(216 64 64); font-size: 22px">Armoured C...</div></td>
+</tr>
+<tr>
+  <td>ALL</td>
+  <td>ALL</td>
+  <td>Unique</td>
+  <td>Any</td>
+  <td><span class="minimap-icon-★ minimap-icon-brown">★</span></td>
+  <td><div class="style-box" style="color: rgb(175 96 37); border-color: rgb(175 96 37); background-color: rgb(53 13 13); font-size: 20px">ALL</div></td>
+</tr>
+</table> <h3>rarity_rare.filter</h3>
 <table class="filter-table">
 <tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
 <tr>
@@ -791,6 +1389,33 @@
   <td>Any</td>
   <td>-</td>
   <td><div class="style-box" style="color: rgb(255 209 94); border-color: rgb(255 209 94); background-color: rgb(34 34 34); font-size: 17px">Body Armou...</div></td>
+</tr>
+</table> <h3>rarity_magic.filter</h3>
+<table class="filter-table">
+<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
+<tr>
+  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Area: >= 40, Sock: == 0, Qual: == 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(30 32 133); text-decoration: line-through">Body Armou...</div></td>
+</tr>
+<tr>
+  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Sock: > 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
+</tr>
+<tr>
+  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands</td>
+  <td>ALL</td>
+  <td>Magic</td>
+  <td>Qual: > 0</td>
+  <td>-</td>
+  <td><div class="style-box" style="color: rgb(30 32 133); background-color: rgb(0 0 0); font-size: 17px">Body Armou...</div></td>
 </tr>
 </table>
 </body>
