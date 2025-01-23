@@ -157,6 +157,8 @@ def filter_to_html_table(filter_path, preview_tags):
             conditions.append(f"Sock: {block_data['conditions']['Sockets']}")
         if block_data['conditions']['Quality']:
             conditions.append(f"Qual: {block_data['conditions']['Quality']}")
+        if block_data['conditions']['ItemLevel']:
+            conditions.append(f"iLvl: {block_data['conditions']['ItemLevel']}")
         
         condition_text = ', '.join(conditions) if conditions else 'Any'
         html_output.append(f'  <td>{condition_text}</td>')
@@ -175,8 +177,8 @@ def filter_to_html_table(filter_path, preview_tags):
         else:
             html_output.append(f'  <td>-</td>')
         # Preview column - use first non-empty value or "ALL"
-        preview_text = block_data['classes'][0] if block_data['classes'] else \
-                      block_data['base_types'][0] if block_data['base_types'] else "ALL"
+        preview_text = block_data['base_types'][0] if block_data['base_types'] else \
+                      block_data['classes'][0] if block_data['classes'] else "ALL"
         truncated_name = preview_text[:10] + '...' if len(preview_text) > 10 else preview_text
         html_output.append(f'  <td><div class="style-box" style="{style_str}">{truncated_name}</div></td>')
         html_output.append(f'</tr>')
