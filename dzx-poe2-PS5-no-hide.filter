@@ -34,7 +34,7 @@ Show
   PlayAlertSound 16 300
 
 
-
+Show 
   Rarity Normal
   Class "Charms"
   ItemLevel >= 81
@@ -44,6 +44,8 @@ Show
   MinimapIcon 2 Green Diamond
   PlayAlertSound 14 300
 
+
+Show 
   Rarity Normal
   Class "Belts" "Rings" "Amulets"
   SetTextColor 160 255 71
@@ -56,6 +58,7 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
+Show
   StackSize <= 100
   AreaLevel >= 70
   BaseType == "Gold"
@@ -91,6 +94,7 @@ Show
 #------------------------------------------------------------------------------
 # Skill Gems
   
+Show
   ItemLevel >= 14 
   ItemLevel <= 16
   AreaLevel >= 65
@@ -140,20 +144,27 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
+Show
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
 
+Show
+  BaseType "Scroll of Wisdom"
+  SetFontSize 35
+  AreaLevel < 65
 
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
 
 
+Show
   Sockets > 0
   AreaLevel >= 75
   Rarity Normal Magic
 
+Show
   Quality > 0
   AreaLevel >= 75
   Rarity Normal Magic
@@ -178,8 +189,15 @@ Show
 # Amulets
 #------------------------------------------------------------------------------
 
+Show
   Class "Amulets"
   Rarity Magic
+  AreaLevel >= 70 
+
+Show
+  Class "Amulets"
+  Rarity Normal
+  ItemLevel < 80
   AreaLevel >= 70 
 
 Show
@@ -204,14 +222,17 @@ Show
 # Belts
 #------------------------------------------------------------------------------
 
+Show
   Quality == 0
   Rarity <= Magic
+  ItemLevel < 80
   Class "Belts"
   Continue
 
 Show
   Class "Belts"
   Rarity Normal
+  ItemLevel >= 80
   SetFontSize 35
   
 Show
@@ -355,6 +376,7 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
+Show
   Class "Rings"
   Rarity Magic
   AreaLevel >= 70 
@@ -412,14 +434,14 @@ Show
 # Waystones
 #------------------------------------------------------------------------------
 
+Show
   WaystoneTier <= 12
-  AreaLevel >= 80
+  AreaLevel >= 78
   BaseType "Waystone"
 
 Show
   BaseType "Waystone"
   SetFontSize 35
-  PlayAlertSound 4 300
   Continue
 
 Show
@@ -430,7 +452,7 @@ Show
   SetBorderColor 201 218 191
   SetBackgroundColor 33 33 33
   SetFontSize 35
-  PlayAlertSound 4 300
+  PlayAlertSound 4 100
 
 
 Show
@@ -441,7 +463,6 @@ Show
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
   SetFontSize 35
-  PlayAlertSound 4 300
 
 
 Show
@@ -454,7 +475,7 @@ Show
   SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
   PlayEffect Red
-  PlayAlertSound 4 300
+  PlayAlertSound 14 300
   SetFontSize 40
 
 
@@ -471,6 +492,7 @@ Show
 
 
 
+Show
   Quality == 0
   AreaLevel >= 65
   Rarity <= Magic
@@ -485,8 +507,10 @@ SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
 
+Show
   Class == "Charms"
-  ItemLevel < 82
+  Rarity Normal Magic
+  ItemLevel < 80
   AreaLevel >= 65
   Continue
 
@@ -684,6 +708,7 @@ Show
 # Magic Items Group
 #------------------------------------------------------------------------------
 
+Show
   Rarity <= Magic
   Sockets == 0
   Quality == 0

@@ -76,7 +76,7 @@
     color: rgb(255 150 0);
 }
 
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], .charms, .belts, .rings, .amulets {
+[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
@@ -86,8 +86,20 @@
     color: rgb(255 150 0);
 }
 
+.charms {
+    color: rgb(160 255 71);
+    background-color: rgb(10 10 10);
+    font-size: 37px;
+}
+
 .minimap-icon-diamond {
     color: rgb(0 255 0);
+}
+
+.belts, .rings, .amulets {
+    color: rgb(160 255 71);
+    background-color: rgb(10 10 10);
+    font-size: 37px;
 }
 
 .minimap-icon-diamond {
@@ -157,6 +169,10 @@
 
 .minimap-icon-triangle {
     color: rgb(160 110 60);
+}
+
+[data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
+    font-size: 35px;
 }
 
 .amulets {

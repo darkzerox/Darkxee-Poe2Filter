@@ -1,6 +1,7 @@
 Hide
   Class == "Charms"
-  ItemLevel < 82
+  Rarity Normal Magic
+  ItemLevel < 80
   AreaLevel >= 65
   Continue
 
