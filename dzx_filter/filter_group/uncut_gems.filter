@@ -18,7 +18,7 @@ Show
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
 
@@ -45,7 +45,7 @@ Show
   BaseType "Uncut Skill Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Brown Triangle
   SetFontSize 40

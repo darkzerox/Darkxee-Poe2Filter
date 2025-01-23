@@ -11,7 +11,7 @@ Hide
 Show
   Class "Belts"
   Rarity Normal
-  ItemLevel >= 80
+  ItemLevel >= 81
   SetFontSize 35
   
 Show

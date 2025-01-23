@@ -43,7 +43,7 @@ Show
   SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
   PlayEffect Red
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 100
 

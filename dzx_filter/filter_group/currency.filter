@@ -17,7 +17,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/mirror.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/mirror.mp3" 100
   
  
 Show
@@ -29,13 +29,13 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
   
 
 Show
   Class "Currency"
   BaseType == "Distilled Isolation" "Distilled Suffering"
-  PlayAlertSound 6 300
+  PlayAlertSound 8 200
 
 
 # Currency Tier A: Gemcutter, Annullment
@@ -137,6 +137,6 @@ Show
   SetTextColor 214 217 17
   SetBorderColor 7 46 35
   SetBackgroundColor 7 46 35
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle

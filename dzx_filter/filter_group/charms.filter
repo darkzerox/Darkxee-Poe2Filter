@@ -2,8 +2,7 @@ Hide
   Class == "Charms"
   Rarity Normal Magic
   ItemLevel < 80
-  AreaLevel >= 65
-  Continue
+  AreaLevel >= 60
 
 Show
   Class == "Charms"
@@ -14,6 +13,6 @@ Show
   SetTextColor 133 159 61
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
-  PlayAlertSound 3 300
+  PlayAlertSound 3 200
   PlayEffect Grey
   MinimapIcon 1 Green Star

@@ -10,9 +10,9 @@ Show
   SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
+  PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 Show
   Rarity Normal
@@ -22,8 +22,8 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 
 Show 
@@ -33,8 +33,8 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 
 Show 
@@ -139,7 +139,7 @@ Show
   BaseType "Uncut Skill Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Brown Triangle
   SetFontSize 40
@@ -263,8 +263,8 @@ Show
   SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 2 300
-  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 200
+  PlayAlertSound 2 200
+  CustomAlertSound "dzx_filter/soundeffect/jewel.mp3" 100
 
 Show 
   BaseType "Timeless"
@@ -272,7 +272,7 @@ Show
   SetBorderColor 121 215 190
   SetFontSize 45
   MinimapIcon 0 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 #------------------------------------------------------------------------------
@@ -350,7 +350,7 @@ Show
   SetBorderColor 30 233 148
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 
@@ -370,8 +370,8 @@ Show
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 9 300
-  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  PlayAlertSound 9 200
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
 
 Show 
   Rarity <= Magic
@@ -433,7 +433,7 @@ Show
   SetBorderColor 128 136 54
   SetFontSize 45
   MinimapIcon 0 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 #------------------------------------------------------------------------------
@@ -483,7 +483,7 @@ Show
   PlayEffect Red
   PlayAlertSound 14 300
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 100
 
 
 
@@ -530,7 +530,7 @@ Show
   SetTextColor 133 159 61
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
-  PlayAlertSound 3 300
+  PlayAlertSound 3 200
   PlayEffect Grey
   MinimapIcon 1 Green Star
 
@@ -553,7 +553,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/mirror.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/mirror.mp3" 100
   
  
 Show
@@ -565,7 +565,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
   
 
 Show
@@ -673,7 +673,7 @@ Show
   SetTextColor 214 217 17
   SetBorderColor 7 46 35
   SetBackgroundColor 7 46 35
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle
 
@@ -716,7 +716,7 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 100
 
 
 #------------------------------------------------------------------------------
