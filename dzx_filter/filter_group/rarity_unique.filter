@@ -10,7 +10,7 @@ Show
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
   SetBackgroundColor 216 64 64
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100

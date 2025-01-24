@@ -9,4 +9,4 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 100

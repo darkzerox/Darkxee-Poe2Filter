@@ -10,9 +10,9 @@ Show
   SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
+  PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 Show
   Rarity Normal
@@ -22,8 +22,8 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 
 Show 
@@ -33,8 +33,8 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 200
+  PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
 
 
 Show 
@@ -45,7 +45,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
 
 
 Show 
@@ -55,4 +55,4 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200

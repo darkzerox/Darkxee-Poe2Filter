@@ -10,7 +10,7 @@ Show
   SetTextColor 233 75 75
   SetFontSize 40
   MinimapIcon 2 Red Diamond
-  PlayAlertSound 9 300
+  PlayAlertSound 9 200
   PlayEffect Red
 
 Show
@@ -21,7 +21,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
+  PlayAlertSound 16 200
 
 
 Show 
@@ -31,7 +31,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 300
+  PlayAlertSound 16 200
 
 
 Show 
@@ -42,7 +42,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
 
 
 Show 
@@ -52,7 +52,7 @@ Show
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
 
 #------------------------------------------------------------------------------
 # Gold
@@ -109,7 +109,7 @@ Show
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 255 255 255 255
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
 
@@ -136,7 +136,7 @@ Show
   BaseType "Uncut Skill Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Brown Triangle
   SetFontSize 40
@@ -225,14 +225,13 @@ Show
 Show
   Quality == 0
   Rarity <= Magic
-  ItemLevel < 80
   Class "Belts"
   Continue
 
 Show
   Class "Belts"
   Rarity Normal
-  ItemLevel >= 80
+  ItemLevel >= 81
   SetFontSize 35
   
 Show
@@ -259,7 +258,7 @@ Show
   SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
 
 Show 
   BaseType "Timeless"
@@ -267,7 +266,7 @@ Show
   SetBorderColor 121 215 190
   SetFontSize 45
   MinimapIcon 0 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 #------------------------------------------------------------------------------
@@ -345,7 +344,7 @@ Show
   SetBorderColor 30 233 148
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 
@@ -365,7 +364,7 @@ Show
   SetFontSize 40
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
-  PlayAlertSound 9 300
+  PlayAlertSound 9 200
 
 Show 
   Rarity <= Magic
@@ -427,7 +426,7 @@ Show
   SetBorderColor 128 136 54
   SetFontSize 45
   MinimapIcon 0 Cyan Diamond
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Cyan
 
 #------------------------------------------------------------------------------
@@ -475,7 +474,7 @@ Show
   SetBackgroundColor 4 10 29
   MinimapIcon 1 White Square
   PlayEffect Red
-  PlayAlertSound 14 300
+  PlayAlertSound 14 200
   SetFontSize 40
 
 
@@ -511,8 +510,7 @@ Show
   Class == "Charms"
   Rarity Normal Magic
   ItemLevel < 80
-  AreaLevel >= 65
-  Continue
+  AreaLevel >= 60
 
 Show
   Class == "Charms"
@@ -523,7 +521,7 @@ Show
   SetTextColor 133 159 61
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
-  PlayAlertSound 3 300
+  PlayAlertSound 3 200
   PlayEffect Grey
   MinimapIcon 1 Green Star
 
@@ -561,7 +559,7 @@ Show
 Show
   Class "Currency"
   BaseType == "Distilled Isolation" "Distilled Suffering"
-  PlayAlertSound 6 300
+  PlayAlertSound 8 200
 
 
 # Currency Tier A: Gemcutter, Annullment
@@ -661,7 +659,7 @@ Show
   SetTextColor 214 217 17
   SetBorderColor 7 46 35
   SetBackgroundColor 7 46 35
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle
 
@@ -677,7 +675,7 @@ Show
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
   SetBackgroundColor 216 64 64
-  PlayAlertSound 6 300
+  PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
 
