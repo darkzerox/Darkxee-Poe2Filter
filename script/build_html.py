@@ -30,7 +30,8 @@ def filter_to_html_table(filter_path, preview_tags):
                 'AreaLevel': None,
                 'DropLevel': None,
                 'Sockets': None,
-                'Quality': None
+                'Quality': None,
+                'ItemLevel': None
             },
             'styles': {
                 'color': 'rgb(255 255 255)',  # Default white text color
@@ -117,6 +118,8 @@ def filter_to_html_table(filter_path, preview_tags):
                 block_data['conditions']['Sockets'] = ' '.join(parts[1:])
             elif parts[0] == 'Quality':
                 block_data['conditions']['Quality'] = ' '.join(parts[1:])
+            elif parts[0] == 'ItemLevel':
+                block_data['conditions']['ItemLevel'] = ' '.join(parts[1:])
 
         # If we have any styles or rules, return the block
         if block_data['styles']['border-color'] is not None or \
@@ -560,7 +563,8 @@ def generate_html_content(filter_array):
 </body>
 </html>"""
 
-    return html_content
+    # Fix escape sequence warning by using raw string for HTML content
+    return html_content.replace('\\', r'\\')
 
 def write_html_to_file(array_path, output_file_name="index.html"):
     html_content = generate_html_content(array_path)
