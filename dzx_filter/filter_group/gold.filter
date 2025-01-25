@@ -2,12 +2,6 @@
 # Gold
 #------------------------------------------------------------------------------
 
-Hide
-  StackSize <= 100
-  AreaLevel >= 70
-  BaseType == "Gold"
-  Continue
-
 Show
   AreaLevel >= 70
   StackSize >= 1000
@@ -31,4 +25,3 @@ Show
   SetTextColor 180 180 180
   SetBorderColor 0 0 0 255
   SetBackgroundColor 0 0 0 180
-  MinimapIcon 2 Grey Cross
