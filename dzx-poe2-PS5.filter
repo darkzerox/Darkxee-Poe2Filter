@@ -58,12 +58,6 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
-Hide
-  StackSize <= 100
-  AreaLevel >= 70
-  BaseType == "Gold"
-  Continue
-
 Show
   AreaLevel >= 70
   StackSize >= 1000
@@ -87,7 +81,6 @@ Show
   SetTextColor 180 180 180
   SetBorderColor 0 0 0 255
   SetBackgroundColor 0 0 0 180
-  MinimapIcon 2 Grey Cross
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -434,8 +427,8 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  WaystoneTier <= 12
-  AreaLevel >= 78
+  WaystoneTier <= 18
+  AreaLevel >= 75
   BaseType "Waystone"
 
 Show
@@ -456,7 +449,7 @@ Show
 
 Show
   WaystoneTier >= 10
-  WaystoneTier <= 12
+  WaystoneTier <= 13
   BaseType "Waystone"
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
@@ -467,13 +460,12 @@ Show
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  WaystoneTier >= 13
-  WaystoneTier <= 15
-  SetTextColor 135 35 65
+  WaystoneTier >= 14
+  SetTextColor 184 31 77
   SetBorderColor 4 10 29
-  SetBackgroundColor 4 10 29
+  SetBackgroundColor 6 15 43
   MinimapIcon 1 White Square
-  PlayEffect Red
+  PlayEffect Pink
   PlayAlertSound 14 200
   SetFontSize 40
 
@@ -585,9 +577,9 @@ Show
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -596,9 +588,9 @@ Show
 Show
   Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
  
@@ -625,9 +617,9 @@ Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   SetFontSize 35
   
 
@@ -635,18 +627,18 @@ Show
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 
 Show
   Class "Omen"
   BaseType "Omen of"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
@@ -656,9 +648,9 @@ Show
 # Unknown currency
 Show
   Class "Currency"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle

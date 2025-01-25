@@ -62,9 +62,9 @@ Show
 
 Show
   BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
 
@@ -73,9 +73,9 @@ Show
 Show
   Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
  
@@ -102,9 +102,9 @@ Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   SetFontSize 35
   
 
@@ -112,18 +112,18 @@ Show
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 
 Show
   Class "Omen"
   BaseType "Omen of"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
@@ -134,9 +134,9 @@ Show
 # Unknown currency
 Show
   Class "Currency"
-  SetTextColor 214 217 17
-  SetBorderColor 7 46 35
-  SetBackgroundColor 7 46 35
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
   PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle

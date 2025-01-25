@@ -3,8 +3,8 @@
 #------------------------------------------------------------------------------
 
 Hide
-  WaystoneTier <= 12
-  AreaLevel >= 78
+  WaystoneTier <= 18
+  AreaLevel >= 75
   BaseType "Waystone"
 
 Show
@@ -25,7 +25,7 @@ Show
 
 Show
   WaystoneTier >= 10
-  WaystoneTier <= 12
+  WaystoneTier <= 13
   BaseType "Waystone"
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
@@ -36,13 +36,12 @@ Show
 Show
   BaseType "Waystone"
   Rarity <= Rare
-  WaystoneTier >= 13
-  WaystoneTier <= 15
-  SetTextColor 135 35 65
+  WaystoneTier >= 14
+  SetTextColor 184 31 77
   SetBorderColor 4 10 29
-  SetBackgroundColor 4 10 29
+  SetBackgroundColor 6 15 43
   MinimapIcon 1 White Square
-  PlayEffect Red
+  PlayEffect Pink
   PlayAlertSound 14 200
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 100
