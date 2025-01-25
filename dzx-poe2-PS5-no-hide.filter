@@ -89,10 +89,13 @@ Show
   
 Show
   ItemLevel >= 14 
-  ItemLevel <= 16
-  AreaLevel >= 65
-  AreaLevel <= 80
-  BaseType "Uncut Skill Gem"
+  ItemLevel <= 18
+  AreaLevel >= 78
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+
+Show
+  BaseType "Uncut Support Gem"
+  AreaLevel >= 78
 
 # Level 20 gems go tink
 Show
@@ -126,7 +129,7 @@ Show
 
 # Level 19 gems and up in maps get a special highlight
 Show
-  BaseType "Uncut Skill Gem"
+  BaseType "Uncut Skill Gem" "Uncut Support Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
@@ -427,9 +430,10 @@ Show
 #------------------------------------------------------------------------------
 
 Show
-  WaystoneTier <= 18
-  AreaLevel >= 75
+  WaystoneTier <= 13
+  AreaLevel >= 78
   BaseType "Waystone"
+
 
 Show
   BaseType "Waystone"

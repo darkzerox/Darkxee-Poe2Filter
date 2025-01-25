@@ -157,7 +157,7 @@
     font-size: 35px;
 }
 
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
     color: rgb(159 131 131);
     border-color: rgb(159 131 131);
     font-size: 40px;
