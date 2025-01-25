@@ -3,9 +3,10 @@
 #------------------------------------------------------------------------------
 
 Hide
-  WaystoneTier <= 18
-  AreaLevel >= 75
+  WaystoneTier <= 13
+  AreaLevel >= 78
   BaseType "Waystone"
+
 
 Show
   BaseType "Waystone"
