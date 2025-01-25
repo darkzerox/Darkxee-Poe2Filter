@@ -441,8 +441,8 @@ Show
 #------------------------------------------------------------------------------
 
 Show
-  WaystoneTier <= 12
-  AreaLevel >= 78
+  WaystoneTier <= 18
+  AreaLevel >= 75
   BaseType "Waystone"
 
 Show
