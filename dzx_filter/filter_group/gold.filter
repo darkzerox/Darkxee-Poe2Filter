@@ -10,6 +10,8 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
+  SetFontSize 30
+
 
 Show
   AreaLevel < 70
@@ -18,10 +20,11 @@ Show
   PlayEffect White Temp
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
-  SetBorderColor 255 255 255
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 30
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
-  SetBorderColor 0 0 0 255
-  SetBackgroundColor 0 0 0 180
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 30

@@ -66,6 +66,8 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
+  SetFontSize 30
+
 
 Show
   AreaLevel < 70
@@ -74,13 +76,14 @@ Show
   PlayEffect White Temp
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
-  SetBorderColor 255 255 255
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 30
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
-  SetBorderColor 0 0 0 255
-  SetBackgroundColor 0 0 0 180
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 30
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -89,10 +92,13 @@ Show
   
 Hide
   ItemLevel >= 14 
-  ItemLevel <= 16
-  AreaLevel >= 65
-  AreaLevel <= 80
-  BaseType "Uncut Skill Gem"
+  ItemLevel <= 18
+  AreaLevel >= 75
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+
+Hide
+  BaseType "Uncut Support Gem"
+  AreaLevel >= 75
 
 # Level 20 gems go tink
 Show
@@ -126,7 +132,7 @@ Show
 
 # Level 19 gems and up in maps get a special highlight
 Show
-  BaseType "Uncut Skill Gem"
+  BaseType "Uncut Skill Gem" "Uncut Support Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
@@ -427,9 +433,10 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  WaystoneTier <= 18
+  WaystoneTier <= 13
   AreaLevel >= 75
   BaseType "Waystone"
+
 
 Show
   BaseType "Waystone"
@@ -558,7 +565,7 @@ Show
 Show
   Class "Currency"
   BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
-  SetTextColor 255 255 255 255
+  SetTextColor 255 193 48
   SetBorderColor  30 58 51
   SetBackgroundColor 30 58 51
   PlayEffect White
@@ -582,6 +589,18 @@ Show
   SetBackgroundColor 47 10 61
   PlayEffect White
   MinimapIcon 2 White Circle
+
+Show
+  Class "Omen"
+  BaseType "Omen of"
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  PlayAlertSound 2 0
+
 
 
 # Currency Tier B: Regal, Vaal ...
@@ -612,14 +631,17 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
 
+
+#--- Low Tier Currency ---
+
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
+  SetTextColor 208 102 235
+  SetBorderColor 208 102 235 0
+  SetBackgroundColor 255 255 255 0
   SetFontSize 35
   
 
@@ -627,22 +649,11 @@ Show
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
+  SetTextColor 208 102 235
+  SetBorderColor 208 102 235 0
+  SetBackgroundColor 255 255 255 0
   MinimapIcon 2 Grey Circle
   SetFontSize 35
-
-Show
-  Class "Omen"
-  BaseType "Omen of"
-  SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
-  PlayEffect White
-  MinimapIcon 2 White Circle
-  SetFontSize 40
-  PlayAlertSound 2 0
 
 
 # Unknown currency
