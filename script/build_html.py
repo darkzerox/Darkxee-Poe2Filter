@@ -543,17 +543,6 @@ def generate_html_content(filter_array):
     <p>💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตด้วยนะ</p>
     </blockquote>
 
-    <h2>🙏 เครดิต</h2>
-
-    <div>
-    <a href="https://github.com/NeverSinkDev/NeverSink-PoE2litefilter">
-        <img src="https://img.shields.io/badge/Original_Filter-NeverSink's_Indepth_Loot_Filter-orange?style=for-the-badge" alt="NeverSink's Filter">
-    </a>
-    </div>
-
-    <p>Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย อาจจะมีปรับปรุงเพิ่มเติมเล็กน้อย</p>
-
-
     <hr/>
 
     {tag_cloud_html}
