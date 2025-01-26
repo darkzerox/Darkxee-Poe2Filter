@@ -652,9 +652,8 @@ Show
   AreaLevel >= 70
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 208 102 235
-  SetBorderColor 208 102 235 0
-  SetBackgroundColor 255 255 255 0
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
   SetFontSize 35
   
 
@@ -662,9 +661,8 @@ Show
 Show
   Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
-  SetTextColor 208 102 235
-  SetBorderColor 208 102 235 0
-  SetBackgroundColor 255 255 255 0
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
   MinimapIcon 2 Grey Circle
   SetFontSize 35
 

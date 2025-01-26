@@ -509,16 +509,14 @@
 }
 
 .currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(208 102 235);
-    border-color: rgb(208 102 235);
-    background-color: rgb(255 255 255);
+    color: rgb(255 255 255);
+    background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
 .currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(208 102 235);
-    border-color: rgb(208 102 235);
-    background-color: rgb(255 255 255);
+    color: rgb(255 255 255);
+    background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
