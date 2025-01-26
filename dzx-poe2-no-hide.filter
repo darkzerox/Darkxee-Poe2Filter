@@ -93,12 +93,12 @@ Show
 Show
   ItemLevel >= 14 
   ItemLevel <= 18
-  AreaLevel >= 78
+  AreaLevel >= 75
   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
 
 Show
   BaseType "Uncut Support Gem"
-  AreaLevel >= 78
+  AreaLevel >= 75
 
 # Level 20 gems go tink
 Show
@@ -438,7 +438,7 @@ Show
 
 Show
   WaystoneTier <= 13
-  AreaLevel >= 78
+  AreaLevel >= 75
   BaseType "Waystone"
 
 
