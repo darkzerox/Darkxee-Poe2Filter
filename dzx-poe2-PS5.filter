@@ -642,7 +642,8 @@ Show
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   SetFontSize 35
-  
+  PlayAlertSound 1 20
+  DisableDropSound
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
@@ -652,6 +653,8 @@ Show
   SetBackgroundColor 0 0 0
   MinimapIcon 2 Grey Circle
   SetFontSize 35
+  PlayAlertSound 1 20
+  DisableDropSound
 
 
 # Unknown currency
