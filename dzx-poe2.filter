@@ -69,7 +69,7 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
-  SetFontSize 30
+  SetFontSize 35
 
 
 Show
@@ -80,13 +80,13 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBackgroundColor 255 255 255 0
-  SetFontSize 30
+  SetFontSize 35
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
   SetBackgroundColor 255 255 255 0
-  SetFontSize 30
+  SetFontSize 35
 
 #------------------------------------------------------------------------------
 # Uncut Gems

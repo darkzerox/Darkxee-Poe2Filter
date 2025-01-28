@@ -7,9 +7,10 @@ Hide
   Sockets == 0
   Quality == 0
   AreaLevel >= 40
-  SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  SetFontSize 35
   Continue
 
 
