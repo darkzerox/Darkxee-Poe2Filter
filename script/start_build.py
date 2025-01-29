@@ -2,6 +2,8 @@ import merge_file as merge_file
 from build_css import filter_to_css
 from build_html import write_html_to_file
 
+soundEffectType = ['type-01', 'type-02']
+
 mainGroup= [
     #----------------------
     # Gacha group
@@ -47,29 +49,36 @@ mainGroup= [
 #----------------------
 # merge all filter
 #----------------------
-output_file_name = 'dzx-poe2'
-merge_file.merge_files_from_array(mainGroup, output_file_name)
+for sound_type in soundEffectType:
+    if sound_type == 'type-01': 
+        output_file_name = f'dzx-poe2'
+    else:
+        output_file_name = f'dzx-poe2-{sound_type}'
+    merge_file.merge_files_from_array(mainGroup, output_file_name ,sound_type)
 
 
 #----------------------
 # merge all filter - Show all items
 #----------------------
-output_file_name = 'dzx-poe2-no-hide'
-merge_file.merge_files_from_array(mainGroup, output_file_name, False, True)
+for sound_type in soundEffectType:
+    if sound_type == 'type-01': 
+        output_file_name = 'dzx-poe2-no-hide'
+    else:
+        output_file_name = f'dzx-poe2-{sound_type}-no-hide'
+    merge_file.merge_files_from_array(mainGroup, output_file_name,'type-01',False, True)
 
 
 #----------------------
 # merge all filter for PS5
 #----------------------
 output_file_name = 'dzx-poe2-PS5'
-merge_file.merge_files_from_array(mainGroup, output_file_name , True)
-
+merge_file.merge_files_from_array(mainGroup, output_file_name ,'type-01', True)
 
 #----------------------
 # merge all filter for PS5 - Show all items
 #----------------------
 output_file_name = 'dzx-poe2-PS5-no-hide'
-merge_file.merge_files_from_array(mainGroup, output_file_name , True, True)
+merge_file.merge_files_from_array(mainGroup, output_file_name ,'type-01', True, True)
 
 
 

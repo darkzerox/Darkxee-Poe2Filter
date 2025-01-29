@@ -7,7 +7,7 @@ project_path = os.path.dirname(script_dir)
 # Path to filter_group directory using os.path.join
 filter_group_path = os.path.join(project_path,"dzx_filter","filter_group")
 
-def merge_files_from_array(file_paths, output_file_name , removeSoundEffect = False, hideItem = False):
+def merge_files_from_array(file_paths, output_file_name ,effect_type = 'type-01', removeSoundEffect = False, hideItem = False):
     # Create output path using os.path.join
     output_file = os.path.join(project_path, f"{output_file_name}.filter")
     
@@ -28,6 +28,13 @@ def merge_files_from_array(file_paths, output_file_name , removeSoundEffect = Fa
                         if hideItem:
                             content = '\n'.join(line.replace('Hide', 'Show') if line.strip() == 'Hide' 
                                               else line for line in content.split('\n'))
+                            
+                        content = '\n'.join(
+                            line.replace('dzx_filter/soundeffect/type-01/', f'dzx_filter/soundeffect/{effect_type}/') 
+                            if 'CustomAlertSound' in line and 'dzx_filter/soundeffect/type-01/' in line
+                            else line 
+                            for line in content.split('\n')
+                        )
                         outfile.write(content)
                         outfile.write('\n\n')  # Add separator between files
                 else:

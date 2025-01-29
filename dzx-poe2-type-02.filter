@@ -12,7 +12,7 @@ Show
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/unique.mp3" 100
 
 Show
   Rarity Normal
@@ -23,7 +23,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/unique.mp3" 100
 
 
 Show 
@@ -34,7 +34,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/unique.mp3" 100
 
 
 Show 
@@ -93,13 +93,13 @@ Show
 #------------------------------------------------------------------------------
 # Skill Gems
   
-Show
+Hide
   ItemLevel >= 14 
   ItemLevel <= 18
   AreaLevel >= 75
   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
 
-Show
+Hide
   BaseType "Uncut Support Gem"
   AreaLevel >= 75
 
@@ -146,7 +146,7 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-Show
+Hide
   BaseType "Scroll of Wisdom"
   AreaLevel >= 65
   Rarity <= Magic
@@ -161,12 +161,12 @@ Show
 #------------------------------------------------------------------------------
 
 
-Show
+Hide
   Sockets > 0
   AreaLevel >= 75
   Rarity Normal Magic
 
-Show
+Hide
   Quality > 0
   AreaLevel >= 75
   Rarity Normal Magic
@@ -176,7 +176,7 @@ Show
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/salvage.mp3" 100
 
 
 Show
@@ -184,7 +184,7 @@ Show
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/salvage.mp3" 100
 
 
 
@@ -193,12 +193,12 @@ Show
 # Amulets
 #------------------------------------------------------------------------------
 
-Show
+Hide
   Class "Amulets"
   Rarity Magic
   AreaLevel >= 70 
 
-Show
+Hide
   Class "Amulets"
   Rarity Normal
   ItemLevel < 80
@@ -226,7 +226,7 @@ Show
 # Belts
 #------------------------------------------------------------------------------
 
-Show
+Hide
   Quality == 0
   Rarity <= Magic
   Class "Belts"
@@ -263,7 +263,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/jewel.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/jewel.mp3" 100
 
 Show 
   BaseType "Timeless"
@@ -370,7 +370,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 9 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/special_currency.mp3" 100
 
 Show 
   Rarity <= Magic
@@ -381,7 +381,7 @@ Show
   MinimapIcon 2 Cyan Diamond
   PlayEffect Cyan Temp
 
-Show
+Hide
   Class "Rings"
   Rarity Magic
   AreaLevel >= 70 
@@ -439,7 +439,7 @@ Show
 # Waystones
 #------------------------------------------------------------------------------
 
-Show
+Hide
   WaystoneTier <= 13
   AreaLevel >= 75
   BaseType "Waystone"
@@ -482,7 +482,7 @@ Show
   PlayEffect Pink
   PlayAlertSound 14 200
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/type-01/waystone.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/waystone.mp3" 100
 
 
 
@@ -498,7 +498,7 @@ Show
 
 
 
-Show
+Hide
   Quality == 0
   AreaLevel >= 65
   Rarity <= Magic
@@ -513,7 +513,7 @@ SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
 
-Show
+Hide
   Class == "Charms"
   Rarity Normal Magic
   ItemLevel < 80
@@ -539,7 +539,7 @@ Show
 Show
   Class "Currency"
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/currency.mp3" 100
   Continue
 
 Show
@@ -551,7 +551,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/mirror.mp3" 100
   
  
 Show
@@ -563,7 +563,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/special_currency.mp3" 100
   
 
 Show
@@ -581,7 +581,7 @@ Show
   SetBackgroundColor 30 58 51
   PlayEffect White
   MinimapIcon 1 Yellow Circle
-  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/special_currency.mp3" 100
 
 # Currency Tier B: Exalt
 Show
@@ -611,7 +611,7 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/currency.mp3" 100
   PlayAlertSound 2 0
 
 
@@ -695,7 +695,7 @@ Show
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/unique.mp3" 100
 
 Show
   Rarity Unique
@@ -706,7 +706,7 @@ Show
   MinimapIcon 1 Brown Star
   SetFontSize 40
   PlayAlertSound 3 0
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/unique.mp3" 100
 
 #------------------------------------------------------------------------------
 # Rare Items Group
@@ -719,14 +719,14 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-02/rare.mp3" 100
 
 
 #------------------------------------------------------------------------------
 # Magic Items Group
 #------------------------------------------------------------------------------
 
-Show
+Hide
   Rarity <= Magic
   Sockets == 0
   Quality == 0
