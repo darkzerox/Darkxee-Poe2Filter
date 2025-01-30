@@ -719,6 +719,7 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
+  MinimapIcon 2 White Pentagon
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 
@@ -730,7 +731,7 @@ Hide
   Rarity <= Magic
   Sockets == 0
   Quality == 0
-  AreaLevel >= 40
+  AreaLevel >= 10
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0

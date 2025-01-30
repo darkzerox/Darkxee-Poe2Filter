@@ -29,6 +29,7 @@ Show
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
@@ -41,16 +42,6 @@ Show
   Rarity Normal
   Class "Charms"
   ItemLevel >= 81
-  SetTextColor 160 255 71
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 37
-  MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 200
-
-
-Show 
-  Rarity Normal
-  Class "Belts" "Rings" "Amulets"
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37

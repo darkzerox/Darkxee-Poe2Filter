@@ -6,7 +6,7 @@ Hide
   Rarity <= Magic
   Sockets == 0
   Quality == 0
-  AreaLevel >= 40
+  AreaLevel >= 10
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
