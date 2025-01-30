@@ -96,16 +96,6 @@
     color: rgb(0 255 0);
 }
 
-.belts, .rings, .amulets {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 0);
-}
-
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
@@ -555,6 +545,10 @@
     color: rgb(255 209 94);
     border-color: rgb(255 209 94);
     font-size: 35px;
+}
+
+.minimap-icon-pentagon {
+    color: rgb(255 255 255);
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {

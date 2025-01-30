@@ -29,6 +29,7 @@ Show
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
@@ -47,15 +48,6 @@ Show
   MinimapIcon 2 Green Diamond
   PlayAlertSound 14 200
 
-
-Show 
-  Rarity Normal
-  Class "Belts" "Rings" "Amulets"
-  SetTextColor 160 255 71
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 37
-  MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 200
 
 #------------------------------------------------------------------------------
 # Gold
@@ -719,7 +711,7 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
-  MinimapIcon 2 White Pentagon
+  MinimapIcon 0 White Pentagon
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 
