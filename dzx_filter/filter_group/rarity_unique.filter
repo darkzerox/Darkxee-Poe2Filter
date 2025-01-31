@@ -13,7 +13,7 @@ Show
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 Show
   Rarity Unique
@@ -24,4 +24,4 @@ Show
   MinimapIcon 1 Brown Star
   SetFontSize 40
   PlayAlertSound 3 0
-  CustomAlertSound "dzx_filter/soundeffect/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100

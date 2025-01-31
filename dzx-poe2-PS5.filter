@@ -27,6 +27,7 @@ Show
 Show 
   Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
@@ -45,15 +46,6 @@ Show
   PlayAlertSound 14 200
 
 
-Show 
-  Rarity Normal
-  Class "Belts" "Rings" "Amulets"
-  SetTextColor 160 255 71
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 37
-  MinimapIcon 2 Green Diamond
-  PlayAlertSound 14 200
-
 #------------------------------------------------------------------------------
 # Gold
 #------------------------------------------------------------------------------
@@ -66,7 +58,7 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
-  SetFontSize 30
+  SetFontSize 35
 
 
 Show
@@ -77,13 +69,13 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBackgroundColor 255 255 255 0
-  SetFontSize 30
+  SetFontSize 35
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
   SetBackgroundColor 255 255 255 0
-  SetFontSize 30
+  SetFontSize 35
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -642,7 +634,8 @@ Show
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   SetFontSize 35
-  
+  PlayAlertSound 1 20
+  DisableDropSound
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
@@ -652,6 +645,8 @@ Show
   SetBackgroundColor 0 0 0
   MinimapIcon 2 Grey Circle
   SetFontSize 35
+  PlayAlertSound 1 20
+  DisableDropSound
 
 
 # Unknown currency
@@ -701,6 +696,7 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
+  MinimapIcon 0 White Pentagon
 
 
 #------------------------------------------------------------------------------
@@ -711,10 +707,11 @@ Hide
   Rarity <= Magic
   Sockets == 0
   Quality == 0
-  AreaLevel >= 40
-  SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  AreaLevel >= 10
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  SetFontSize 35
   Continue
 
 

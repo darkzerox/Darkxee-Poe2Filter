@@ -96,20 +96,10 @@
     color: rgb(0 255 0);
 }
 
-.belts, .rings, .amulets {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 0);
-}
-
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .minimap-icon-cross {
@@ -119,7 +109,7 @@
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     background-color: rgb(255 255 255);
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .minimap-icon-cross {
@@ -129,7 +119,7 @@
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(180 180 180);
     background-color: rgb(255 255 255);
-    font-size: 30px;
+    font-size: 35px;
 }
 
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
@@ -557,9 +547,14 @@
     font-size: 35px;
 }
 
+.minimap-icon-pentagon {
+    color: rgb(255 255 255);
+}
+
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
-    color: rgb(101 103 222);
+    color: rgb(255 255 255);
     background-color: rgb(0 0 0);
+    font-size: 35px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {

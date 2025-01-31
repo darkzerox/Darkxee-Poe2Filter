@@ -16,7 +16,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 9 200
-  CustomAlertSound "dzx_filter/soundeffect/special_currency.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 Show 
   Rarity <= Magic

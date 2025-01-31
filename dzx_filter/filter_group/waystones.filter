@@ -45,5 +45,5 @@ Show
   PlayEffect Pink
   PlayAlertSound 14 200
   SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/waystone.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/waystone.mp3" 100
 

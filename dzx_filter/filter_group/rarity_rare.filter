@@ -9,4 +9,5 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 35
-  CustomAlertSound "dzx_filter/soundeffect/rare.mp3" 100
+  MinimapIcon 0 White Pentagon
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100

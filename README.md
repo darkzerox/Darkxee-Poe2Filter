@@ -63,7 +63,7 @@
     <td>ไฟล์ filter หลักแยกตามหมวดหมู่</td>
   </tr>
   <tr>
-    <td>📁 <code>dzx_filter/soundeffect/</code></td>
+    <td>📁 <code>dzx_filter/soundeffect/type-01/</code></td>
     <td>ไฟล์เสียงทั้งหมด</td>
   </tr>
   <tr>
