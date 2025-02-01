@@ -3,7 +3,7 @@
 #------------------------------------------------------------------------------
 
 Hide
-  WaystoneTier <= 13
+  WaystoneTier <= 10
   AreaLevel >= 75
   BaseType "Waystone"
 
@@ -15,7 +15,7 @@ Show
 
 Show
   WaystoneTier >= 5
-  WaystoneTier <= 9
+  WaystoneTier <= 10
   BaseType "Waystone"
   SetTextColor 201 218 191
   SetBorderColor 201 218 191
