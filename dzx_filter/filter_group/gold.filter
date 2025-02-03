@@ -2,6 +2,14 @@
 # Gold
 #------------------------------------------------------------------------------
 
+Hide
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+  PlayEffect White Temp
+  SetTextColor 255 255 255
+  SetFontSize 32
+
 Show
   AreaLevel >= 70
   StackSize >= 1000

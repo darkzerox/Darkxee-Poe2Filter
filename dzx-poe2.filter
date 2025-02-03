@@ -53,12 +53,18 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
+Hide
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+
 Show
   AreaLevel >= 70
   StackSize >= 1000
   BaseType == "Gold"
   PlayEffect White Temp
   MinimapIcon 2 White Cross
+
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
   SetFontSize 32
@@ -299,6 +305,14 @@ Show
   PlayEffect Purple
   MinimapIcon 1 Purple Square
   SetFontSize 40
+
+Hide
+  BaseType "Barya" "Ultimatum"
+  AreaLevel >= 75
+  ItemLevel < 80
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
 
 Show
   BaseType "Barya" "Ultimatum"
@@ -708,11 +722,9 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  SetBackgroundColor 34 34 34 208
+  SetBackgroundColor 34 34 34 0
   SetTextColor 255 209 94
-  SetBorderColor 255 209 94
   SetFontSize 32
-  MinimapIcon 2 White Pentagon
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 

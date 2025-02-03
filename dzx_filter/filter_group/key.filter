@@ -32,6 +32,11 @@ Show
   MinimapIcon 1 Purple Square
   SetFontSize 40
 
+Hide
+  BaseType "Barya" "Ultimatum"
+  AreaLevel >= 75
+  ItemLevel < 80
+
 Show
   BaseType "Barya" "Ultimatum"
   SetTextColor 177 90 18
