@@ -152,12 +152,12 @@ Show
 
 Hide
   Sockets > 0
-  AreaLevel >= 75
+  AreaLevel >= 60
   Rarity Normal Magic
 
 Hide
   Quality > 0
-  AreaLevel >= 75
+  AreaLevel >= 60
   Rarity Normal Magic
 
 Show
@@ -369,7 +369,7 @@ Show
 Hide
   Class "Rings"
   Rarity Magic
-  AreaLevel >= 70 
+  AreaLevel >= 60
 
 Show
   Class "Rings"
@@ -426,7 +426,7 @@ Show
 
 Hide
   WaystoneTier <= 10
-  AreaLevel >= 75
+  AreaLevel >= 70
   BaseType "Waystone"
 
 
@@ -500,7 +500,7 @@ SetBorderColor 62 88 121
 Hide
   Class == "Charms"
   Rarity Normal Magic
-  ItemLevel < 80
+  ItemLevel <= 80
   AreaLevel >= 60
 
 Show
@@ -658,6 +658,7 @@ Show
   PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle
+  SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Unique Items group

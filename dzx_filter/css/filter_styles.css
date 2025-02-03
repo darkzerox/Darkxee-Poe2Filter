@@ -99,7 +99,7 @@
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-cross {
@@ -109,7 +109,7 @@
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(255 255 255);
     background-color: rgb(255 255 255);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-cross {
@@ -119,7 +119,7 @@
 [data-basetype="=="], [data-basetype="Gold"] {
     color: rgb(180 180 180);
     background-color: rgb(255 255 255);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
@@ -146,7 +146,7 @@
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
     color: rgb(159 131 131);
     border-color: rgb(159 131 131);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
@@ -160,11 +160,11 @@
 }
 
 [data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .amulets {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .amulets {
@@ -179,11 +179,11 @@
 }
 
 .belts {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .belts {
-    font-size: 35px;
+    font-size: 32px;
     color: rgb(233 206 75);
     border-color: rgb(233 206 75);
 }
@@ -195,7 +195,7 @@
 .jewel {
     color: rgb(121 215 190);
     border-color: rgb(121 215 190);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-diamond {
@@ -249,7 +249,7 @@
     color: rgb(177 90 18);
     border-color: rgb(177 90 18);
     background-color: rgb(24 39 71);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-square {
@@ -310,11 +310,11 @@
 }
 
 .rings {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .rings {
-    font-size: 35px;
+    font-size: 32px;
     color: rgb(233 206 75);
     border-color: rgb(233 206 75);
 }
@@ -348,21 +348,21 @@
 }
 
 [data-basetype="Waystone"] {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 [data-basetype="Waystone"] {
     color: rgb(201 218 191);
     border-color: rgb(201 218 191);
     background-color: rgb(33 33 33);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 [data-basetype="Waystone"] {
     color: rgb(156 169 134);
     border-color: rgb(156 169 134);
     background-color: rgb(10 10 10);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 [data-basetype="Waystone"] {
@@ -377,20 +377,20 @@
 }
 
 [data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"] {
-    font-size: 35px;
+    font-size: 32px;
     color: rgb(143 106 206);
     border-color: rgb(62 88 121);
     background-color: rgb(10 10 10);
 }
 
 .flasks {
-    font-size: 35px;
+    font-size: 32px;
     color: rgb(62 88 121);
     border-color: rgb(62 88 121);
 }
 
 .==, .charms {
-    font-size: 35px;
+    font-size: 32px;
     color: rgb(133 159 61);
     border-color: rgb(133 159 61);
     background-color: rgb(49 81 30);
@@ -401,7 +401,7 @@
 }
 
 .currency {
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .currency, [data-basetype="Mirror"], [data-basetype="Divine"] {
@@ -481,7 +481,7 @@
 .currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
     color: rgb(201 184 224);
     background-color: rgb(23 7 69);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-kite {
@@ -501,13 +501,13 @@
 .currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-circle {
@@ -518,6 +518,7 @@
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
+    font-size: 32px;
 }
 
 .minimap-icon-circle {
@@ -544,7 +545,7 @@
     background-color: rgb(34 34 34);
     color: rgb(255 209 94);
     border-color: rgb(255 209 94);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .minimap-icon-pentagon {
@@ -554,17 +555,17 @@
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     color: rgb(62 140 242);
     background-color: rgb(0 0 0);
-    font-size: 35px;
+    font-size: 32px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     color: rgb(101 103 222);
     background-color: rgb(0 0 0);
-    font-size: 35px;
+    font-size: 32px;
 }
