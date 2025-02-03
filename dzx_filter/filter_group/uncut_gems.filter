@@ -41,7 +41,7 @@ Show
   BaseType "Uncut Skill Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
-  SetFontSize 35
+  SetFontSize 32
 
 # Level 19 gems and up in maps get a special highlight
 Show

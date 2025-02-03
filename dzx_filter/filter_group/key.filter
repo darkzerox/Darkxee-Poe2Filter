@@ -40,7 +40,7 @@ Show
   PlayAlertSound 12 200
   PlayEffect Grey
   MinimapIcon 1 Grey Square
-  SetFontSize 35
+  SetFontSize 32
 
 Show
   BaseType == "Bronze Key" "Gold Key" "Silver Key"

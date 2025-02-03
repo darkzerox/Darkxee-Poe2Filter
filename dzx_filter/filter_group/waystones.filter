@@ -4,13 +4,13 @@
 
 Hide
   WaystoneTier <= 10
-  AreaLevel >= 75
+  AreaLevel >= 70
   BaseType "Waystone"
 
 
 Show
   BaseType "Waystone"
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 Show
@@ -20,7 +20,7 @@ Show
   SetTextColor 201 218 191
   SetBorderColor 201 218 191
   SetBackgroundColor 33 33 33
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 4 100
 
 
@@ -31,7 +31,7 @@ Show
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
-  SetFontSize 35
+  SetFontSize 32
 
 
 Show

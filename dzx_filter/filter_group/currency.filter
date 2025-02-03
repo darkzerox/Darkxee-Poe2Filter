@@ -4,7 +4,7 @@
 
 Show
   Class "Currency"
-  SetFontSize 35
+  SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   Continue
 
@@ -99,7 +99,7 @@ Show
   SetBackgroundColor 23 7 69
   PlayEffect White Temp
   MinimapIcon 1 White Kite
-  SetFontSize 35
+  SetFontSize 32
 
 Show
   Class "Currency"
@@ -120,7 +120,7 @@ Show
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 1 20
   DisableDropSound
 
@@ -131,7 +131,7 @@ Show
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   MinimapIcon 2 Grey Circle
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 1 20
   DisableDropSound
 
@@ -145,3 +145,4 @@ Show
   PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle
+  SetFontSize 32
