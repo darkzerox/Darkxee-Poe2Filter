@@ -54,6 +54,14 @@ Show
 #------------------------------------------------------------------------------
 
 Show
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+  PlayEffect White Temp
+  SetTextColor 255 255 255
+  SetFontSize 32
+
+Show
   AreaLevel >= 70
   StackSize >= 1000
   BaseType == "Gold"
@@ -299,6 +307,11 @@ Show
   PlayEffect Purple
   MinimapIcon 1 Purple Square
   SetFontSize 40
+
+Show
+  BaseType "Barya" "Ultimatum"
+  AreaLevel >= 75
+  ItemLevel < 80
 
 Show
   BaseType "Barya" "Ultimatum"
@@ -712,7 +725,6 @@ Show
   SetTextColor 255 209 94
   SetBorderColor 255 209 94
   SetFontSize 32
-  MinimapIcon 2 White Pentagon
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 
