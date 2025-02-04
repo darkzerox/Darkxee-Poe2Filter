@@ -46,6 +46,42 @@ mainGroup= [
     "rarity_magic.filter",
 ]
 
+breachGroup= [
+
+    "gacha.filter",
+    "amulets.filter",
+    "jewel.filter",
+    "ring.filter",
+
+    "map_breach.filter",
+
+    "uncut_gems.filter",
+    "scroll_of_wisdom.filter",
+    "salvage.filter",
+    "belts.filter",
+    "key.filter",
+    "relics.filter",
+    "rune_charms.filter",
+    "soul_core.filter",
+    "waystones.filter",
+    "flasks.filter",
+    "charms.filter",
+
+    #----------------------
+    # Currency group
+    #---------------------- 
+    
+    "currency.filter",
+
+    #----------------------
+    # Rarity group
+    #----------------------
+    
+    "rarity_unique.filter",
+    "rarity_rare.filter",
+    "rarity_magic.filter",
+]
+
 #----------------------
 # merge all filter
 #----------------------
@@ -67,12 +103,19 @@ for sound_type in soundEffectType:
         output_file_name = f'dzx-poe2-{sound_type}-no-hide'
     merge_file.merge_files_from_array(mainGroup, output_file_name,'type-01',False, True)
 
+#----------------------
+# For breach map
+#----------------------
+output_file_name = 'dzx-poe2-breach'
+merge_file.merge_files_from_array(breachGroup, output_file_name ,'type-01', True)
+
 
 #----------------------
 # merge all filter for PS5
 #----------------------
 output_file_name = 'dzx-poe2-PS5'
 merge_file.merge_files_from_array(mainGroup, output_file_name ,'type-01', True)
+
 
 #----------------------
 # merge all filter for PS5 - Show all items
