@@ -124,6 +124,14 @@ output_file_name = 'dzx-poe2-PS5-no-hide'
 merge_file.merge_files_from_array(mainGroup, output_file_name ,'type-01', True, True)
 
 
+#----------------------
+# merge all filter for PS5 -Breach
+#----------------------
+output_file_name = 'dzx-poe2-PS5-breach'
+merge_file.merge_files_from_array(breachGroup, output_file_name ,'type-01', True)
+
+
+
 
 
 
