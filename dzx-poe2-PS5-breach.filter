@@ -1,0 +1,720 @@
+#--------------------------------
+# Gacha group
+#--------------------------------
+
+Show 
+  Rarity Normal
+  BaseType == "Stellar Amulet"
+  SetBorderColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+
+Show
+  Rarity Normal
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 200
+
+
+Show 
+  Rarity Normal
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Orange Diamond
+  PlayAlertSound 16 200
+
+
+Show 
+  Rarity Normal
+  Class "Charms"
+  ItemLevel >= 81
+  SetTextColor 160 255 71
+  SetBackgroundColor 10 10 10 200
+  SetFontSize 37
+  MinimapIcon 2 Green Diamond
+  PlayAlertSound 14 200
+
+
+#------------------------------------------------------------------------------
+# Amulets
+#------------------------------------------------------------------------------
+
+Hide
+  Class "Amulets"
+  Rarity Magic
+  AreaLevel >= 70 
+
+Hide
+  Class "Amulets"
+  Rarity Normal
+  ItemLevel < 80
+  AreaLevel >= 70 
+
+Show
+  Class "Amulets"
+  Rarity Normal
+  SetFontSize 32
+  Continue
+
+Show
+  Class "Amulets"
+  Rarity Rare
+  SetFontSize 32
+  SetTextColor 221 168 83
+  SetBorderColor 22 64 77
+  SetBackgroundColor 22 64 77
+  PlayEffect Orange
+  MinimapIcon 1 Yellow Diamond
+  
+
+
+#------------------------------------------------------------------------------
+# Jewel
+#------------------------------------------------------------------------------
+
+Show
+  Class "Jewel"
+  Rarity <= Rare
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 32
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 200
+
+Show 
+  BaseType "Timeless"
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 200
+  PlayEffect Cyan
+
+
+#------------------------------------------------------------------------------
+# Rings
+#------------------------------------------------------------------------------
+
+
+
+# Special Highlight - Breach Rings
+Show 
+  Rarity Rare
+  BaseType == "Breach Ring"
+  SetTextColor 255 188 17
+  SetBorderColor 156 106 255
+  SetBackgroundColor 88 57 150
+  SetFontSize 40
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 9 200
+
+Show 
+  Rarity <= Magic
+  BaseType == "Breach Ring"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
+
+Hide
+  Class "Rings"
+  Rarity Magic
+  AreaLevel >= 60
+
+Show
+  Class "Rings"
+  Rarity Normal
+  AreaLevel < 81
+  SetFontSize 32
+  Continue
+
+Show
+  Class "Rings"
+  Rarity Rare
+  SetFontSize 32
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+  Continue
+
+Show 
+  Rarity Normal
+  Class "Rings"
+  SetTextColor 156 106 255
+  SetBorderColor 156 106 255
+  SetFontSize 40
+  MinimapIcon 2 Cyan Diamond
+  PlayEffect Cyan Temp
+
+
+Hide
+  Rarity Rare
+  AreaLevel > 70
+
+Hide # Hides gold but can be found on the ground when walking past.
+   BaseType "Gold"
+
+Hide 
+  BaseType " Rune" " Charm"
+
+#------------------------------------------------------------------------------
+# Uncut Gems
+#------------------------------------------------------------------------------
+# Skill Gems
+  
+Hide
+  ItemLevel >= 14 
+  ItemLevel <= 18
+  AreaLevel >= 75
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+
+Hide
+  BaseType "Uncut Support Gem"
+  AreaLevel >= 75
+
+# Level 20 gems go tink
+Show
+  ItemLevel = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+# Always make Spirit gems pop
+Show
+  BaseType "Uncut Spirit Gem" "Uncut Spirit Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 37
+
+# Gems up to level 18 in maps don't get a special highlight
+Show
+  ItemLevel <= 18
+  BaseType "Uncut Skill Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  SetFontSize 32
+
+# Level 19 gems and up in maps get a special highlight
+Show
+  BaseType "Uncut Skill Gem" "Uncut Support Gem"
+  SetTextColor 159 131 131
+  SetBorderColor 159 131 131
+  PlayAlertSound 2 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 40
+
+#------------------------------------------------------------------------------
+# Scroll of Wisdom
+#------------------------------------------------------------------------------
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 65
+  Rarity <= Magic
+
+Show
+  BaseType "Scroll of Wisdom"
+  SetFontSize 32
+  AreaLevel < 65
+
+#------------------------------------------------------------------------------
+# Salvagable Items
+#------------------------------------------------------------------------------
+
+
+Hide
+  Sockets > 0
+  AreaLevel >= 60
+  Rarity Normal Magic
+
+Hide
+  Quality > 0
+  AreaLevel >= 60
+  Rarity Normal Magic
+
+Show
+  Sockets > 0
+  Rarity Normal Magic
+  SetBorderColor 72 72 72
+  SetFontSize 32
+
+
+Show
+  Quality > 0
+  Rarity Normal Magic
+  SetBorderColor 72 72 72
+  SetFontSize 32
+
+
+
+
+#------------------------------------------------------------------------------
+# Belts
+#------------------------------------------------------------------------------
+
+Hide
+  Quality == 0
+  Rarity <= Magic
+  Class "Belts"
+  Continue
+
+Show
+  Class "Belts"
+  Rarity Normal
+  ItemLevel >= 81
+  SetFontSize 32
+  
+Show
+  Class "Belts"
+  Rarity Rare
+  SetFontSize 32
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Diamond
+
+
+
+
+#------------------------------------------------------------------------------
+# Key
+#------------------------------------------------------------------------------
+
+Show
+  Class "Pinnacle Keys"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Square
+  SetFontSize 40
+
+Show
+  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 40
+
+Show
+  Class "Tablet"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect Purple
+  MinimapIcon 1 Purple Square
+  SetFontSize 40
+
+Hide
+  BaseType "Barya" "Ultimatum"
+  AreaLevel >= 75
+  ItemLevel < 80
+
+Show
+  BaseType "Barya" "Ultimatum"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 12 200
+  PlayEffect Grey
+  MinimapIcon 1 Grey Square
+  SetFontSize 32
+
+Show
+  BaseType == "Bronze Key" "Gold Key" "Silver Key"
+  SetTextColor 125 241 37
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+Show
+  Class == "Fishing Rods"
+  SetTextColor 125 241 37
+  SetBorderColor 125 241 37
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 2 200
+  PlayEffect White
+  MinimapIcon 1 Yellow Pentagon
+  SetFontSize 40
+
+
+#------------------------------------------------------------------------------
+# Relic
+#------------------------------------------------------------------------------
+
+Show 
+  Class "Relic"
+  SetTextColor 30 233 148
+  SetBorderColor 30 233 148
+  SetFontSize 35
+  MinimapIcon 1 Cyan Diamond
+  PlayAlertSound 2 200
+  PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Rune and Charms
+#------------------------------------------------------------------------------
+
+Show 
+  BaseType " Rune" " Charm"
+  SetTextColor 30 233 148
+  PlayEffect Cyan Temp
+  SetFontSize 32
+
+#------------------------------------------------------------------------------
+# Soul Core
+#------------------------------------------------------------------------------
+
+Show 
+  BaseType "Soul Core"
+  SetTextColor 128 136 54
+  SetBorderColor 128 136 54
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 200
+  PlayEffect Cyan
+
+#------------------------------------------------------------------------------
+# Waystones
+#------------------------------------------------------------------------------
+
+Hide
+  WaystoneTier <= 10
+  AreaLevel >= 70
+  BaseType "Waystone"
+
+
+Show
+  BaseType "Waystone"
+  SetFontSize 32
+  Continue
+
+Show
+  WaystoneTier >= 5
+  WaystoneTier <= 10
+  BaseType "Waystone"
+  SetTextColor 201 218 191
+  SetBorderColor 201 218 191
+  SetBackgroundColor 33 33 33
+  SetFontSize 32
+  PlayAlertSound 4 100
+
+
+Show
+  WaystoneTier >= 10
+  WaystoneTier <= 13
+  BaseType "Waystone"
+  SetTextColor 156 169 134
+  SetBorderColor 156 169 134
+  SetBackgroundColor 10 10 10
+  SetFontSize 32
+
+
+Show
+  BaseType "Waystone"
+  Rarity <= Rare
+  WaystoneTier >= 14
+  SetTextColor 184 31 77
+  SetBorderColor 4 10 29
+  SetBackgroundColor 6 15 43
+  MinimapIcon 1 White Square
+  PlayEffect Pink
+  PlayAlertSound 14 200
+  SetFontSize 40
+
+
+
+
+Show
+  BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  AreaLevel >= 65
+  ItemLevel >= 83
+  SetFontSize 32
+  SetTextColor 143 106 206
+  SetBorderColor 62 88 121
+  SetBackgroundColor 10 10 10 200
+
+
+
+Hide
+  Quality == 0
+  AreaLevel >= 65
+  Rarity <= Magic
+  Class "Flasks"
+  
+Show
+Class "Flasks"
+Rarity Magic
+Quality >= 1
+SetFontSize 32
+SetTextColor 62 88 121
+SetBorderColor 62 88 121
+
+
+Hide
+  Class == "Charms"
+  Rarity Normal Magic
+  ItemLevel <= 80
+  AreaLevel >= 60
+
+Show
+  Class == "Charms"
+  Quality >= 18
+  ItemLevel >= 82
+  AreaLevel >= 65
+  SetFontSize 32
+  SetTextColor 133 159 61
+  SetBorderColor 133 159 61
+  SetBackgroundColor 49 81 30
+  PlayAlertSound 3 200
+  PlayEffect Grey
+  MinimapIcon 1 Green Star
+
+#------------------------------------------------------------------------------
+# Currency
+#------------------------------------------------------------------------------
+
+Show
+  Class "Currency"
+  SetFontSize 32
+  Continue
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  
+ 
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  
+
+Show
+  Class "Currency"
+  BaseType == "Distilled Isolation" "Distilled Suffering"
+  PlayAlertSound 8 200
+
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+  Class "Currency"
+  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  SetTextColor 255 193 48
+  SetBorderColor  30 58 51
+  SetBackgroundColor 30 58 51
+  PlayEffect White
+  MinimapIcon 1 Yellow Circle
+
+# Currency Tier B: Exalt
+Show
+  Class "Currency"
+  BaseType "Exotic Coinage" "Exalted Orb"
+  SetTextColor 218 145 255
+  SetFontSize 40
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+
+Show
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+Show
+  Class "Omen"
+  BaseType "Omen of"
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 40
+  PlayAlertSound 2 0
+
+
+
+# Currency Tier B: Regal, Vaal ...
+Show
+  Class "Currency"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
+  PlayEffect White
+  MinimapIcon 2 White Circle
+ 
+Show
+  Class "Currency"
+  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
+  SetTextColor 201 184 224
+  SetBackgroundColor 23 7 69
+  PlayEffect White Temp
+  MinimapIcon 1 White Kite
+  SetFontSize 32
+
+Show
+  Class "Currency"
+  BaseType "Distilled" "Catalyst" "Essence of"
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+
+#--- Low Tier Currency ---
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  AreaLevel >= 70
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+  PlayAlertSound 1 20
+  DisableDropSound
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Show
+  Class "Currency"
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  MinimapIcon 2 Grey Circle
+  SetFontSize 32
+  PlayAlertSound 1 20
+  DisableDropSound
+
+
+# Unknown currency
+Show
+  Class "Currency"
+  SetTextColor 255 255 255
+  SetBorderColor  255 255 255
+  SetBackgroundColor 47 10 61
+  PlayAlertSound 2 200
+  PlayEffect Pink
+  MinimapIcon 1 White Circle
+  SetFontSize 32
+
+#------------------------------------------------------------------------------
+# Unique Items group
+#------------------------------------------------------------------------------
+
+# Very Unique
+Show
+  Rarity Unique
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+Show
+  Rarity Unique
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  PlayAlertSound 3 0
+
+#------------------------------------------------------------------------------
+# Rare Items Group
+#------------------------------------------------------------------------------
+
+Show
+  Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  SetBackgroundColor 34 34 34 0
+  SetTextColor 255 209 94
+  SetFontSize 32
+
+
+#------------------------------------------------------------------------------
+# Magic Items Group
+#------------------------------------------------------------------------------
+
+Hide
+  Rarity <= Magic
+  Sockets == 0
+  Quality == 0
+  AreaLevel >= 10
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 255 255 255
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+  Continue
+
+
+Show
+  Rarity >= Magic
+  Sockets > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 62 140 242
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
+
+Show
+  Rarity >= Magic
+  Quality > 0
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
+  SetTextColor 101 103 222
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 32
+
+
+
