@@ -286,7 +286,7 @@
 .relic {
     color: rgb(30 233 148);
     border-color: rgb(30 233 148);
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .minimap-icon-diamond {
@@ -340,6 +340,7 @@
 
 [data-basetype="Rune"], [data-basetype="Charm"] {
     color: rgb(30 233 148);
+    font-size: 32px;
 }
 
 [data-basetype="Soul"], [data-basetype="Core"] {
@@ -549,7 +550,6 @@
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     background-color: rgb(34 34 34);
     color: rgb(255 209 94);
-    border-color: rgb(255 209 94);
     font-size: 32px;
 }
 

@@ -346,7 +346,7 @@ Show
   Class "Relic"
   SetTextColor 30 233 148
   SetBorderColor 30 233 148
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayAlertSound 2 200
   PlayEffect Cyan
@@ -419,6 +419,7 @@ Show
   BaseType " Rune" " Charm"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
+  SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Soul Core
@@ -706,9 +707,8 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  SetBackgroundColor 34 34 34 208
+  SetBackgroundColor 34 34 34 0
   SetTextColor 255 209 94
-  SetBorderColor 255 209 94
   SetFontSize 32
 
 
