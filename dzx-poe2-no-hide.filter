@@ -54,6 +54,14 @@ Show
 #------------------------------------------------------------------------------
 
 Show
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+  PlayEffect White Temp
+  SetTextColor 255 255 255
+  SetFontSize 32
+
+Show
   AreaLevel >= 70
   StackSize >= 1000
   BaseType == "Gold"
@@ -61,7 +69,7 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBorderColor 255 255 255
-  SetFontSize 35
+  SetFontSize 32
 
 
 Show
@@ -72,13 +80,13 @@ Show
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBackgroundColor 255 255 255 0
-  SetFontSize 35
+  SetFontSize 32
 
 Show
   BaseType == "Gold"
   SetTextColor 180 180 180
   SetBackgroundColor 255 255 255 0
-  SetFontSize 35
+  SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -123,7 +131,7 @@ Show
   BaseType "Uncut Skill Gem"
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
-  SetFontSize 35
+  SetFontSize 32
 
 # Level 19 gems and up in maps get a special highlight
 Show
@@ -145,7 +153,7 @@ Show
 
 Show
   BaseType "Scroll of Wisdom"
-  SetFontSize 35
+  SetFontSize 32
   AreaLevel < 65
 
 #------------------------------------------------------------------------------
@@ -155,19 +163,19 @@ Show
 
 Show
   Sockets > 0
-  AreaLevel >= 75
+  AreaLevel >= 60
   Rarity Normal Magic
 
 Show
   Quality > 0
-  AreaLevel >= 75
+  AreaLevel >= 60
   Rarity Normal Magic
 
 Show
   Sockets > 0
   Rarity Normal Magic
   SetBorderColor 72 72 72
-  SetFontSize 35
+  SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 
 
@@ -175,7 +183,7 @@ Show
   Quality > 0
   Rarity Normal Magic
   SetBorderColor 72 72 72
-  SetFontSize 35
+  SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 
 
@@ -199,7 +207,7 @@ Show
 Show
   Class "Amulets"
   Rarity Normal
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 Show
@@ -228,12 +236,12 @@ Show
   Class "Belts"
   Rarity Normal
   ItemLevel >= 81
-  SetFontSize 35
+  SetFontSize 32
   
 Show
   Class "Belts"
   Rarity Rare
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
@@ -251,7 +259,7 @@ Show
   Rarity <= Rare
   SetTextColor 121 215 190
   SetBorderColor 121 215 190
-  SetFontSize 35
+  SetFontSize 32
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 200
@@ -302,13 +310,18 @@ Show
 
 Show
   BaseType "Barya" "Ultimatum"
+  AreaLevel >= 75
+  ItemLevel < 80
+
+Show
+  BaseType "Barya" "Ultimatum"
   SetTextColor 177 90 18
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 12 200
   PlayEffect Grey
   MinimapIcon 1 Grey Square
-  SetFontSize 35
+  SetFontSize 32
 
 Show
   BaseType == "Bronze Key" "Gold Key" "Silver Key"
@@ -339,7 +352,7 @@ Show
   Class "Relic"
   SetTextColor 30 233 148
   SetBorderColor 30 233 148
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayAlertSound 2 200
   PlayEffect Cyan
@@ -376,19 +389,19 @@ Show
 Show
   Class "Rings"
   Rarity Magic
-  AreaLevel >= 70 
+  AreaLevel >= 60
 
 Show
   Class "Rings"
   Rarity Normal
   AreaLevel < 81
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 Show
   Class "Rings"
   Rarity Rare
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
@@ -413,6 +426,7 @@ Show
   BaseType " Rune" " Charm"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
+  SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Soul Core
@@ -432,24 +446,24 @@ Show
 #------------------------------------------------------------------------------
 
 Show
-  WaystoneTier <= 13
-  AreaLevel >= 75
+  WaystoneTier <= 10
+  AreaLevel >= 70
   BaseType "Waystone"
 
 
 Show
   BaseType "Waystone"
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 Show
   WaystoneTier >= 5
-  WaystoneTier <= 9
+  WaystoneTier <= 10
   BaseType "Waystone"
   SetTextColor 201 218 191
   SetBorderColor 201 218 191
   SetBackgroundColor 33 33 33
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 4 100
 
 
@@ -460,7 +474,7 @@ Show
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
-  SetFontSize 35
+  SetFontSize 32
 
 
 Show
@@ -483,7 +497,7 @@ Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
   AreaLevel >= 65
   ItemLevel >= 83
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 143 106 206
   SetBorderColor 62 88 121
   SetBackgroundColor 10 10 10 200
@@ -500,7 +514,7 @@ Show
 Class "Flasks"
 Rarity Magic
 Quality >= 1
-SetFontSize 35
+SetFontSize 32
 SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
@@ -508,7 +522,7 @@ SetBorderColor 62 88 121
 Show
   Class == "Charms"
   Rarity Normal Magic
-  ItemLevel < 80
+  ItemLevel <= 80
   AreaLevel >= 60
 
 Show
@@ -516,7 +530,7 @@ Show
   Quality >= 18
   ItemLevel >= 82
   AreaLevel >= 65
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 133 159 61
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
@@ -530,7 +544,7 @@ Show
 
 Show
   Class "Currency"
-  SetFontSize 35
+  SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   Continue
 
@@ -625,7 +639,7 @@ Show
   SetBackgroundColor 23 7 69
   PlayEffect White Temp
   MinimapIcon 1 White Kite
-  SetFontSize 35
+  SetFontSize 32
 
 Show
   Class "Currency"
@@ -646,7 +660,7 @@ Show
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 1 20
   DisableDropSound
 
@@ -657,7 +671,7 @@ Show
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   MinimapIcon 2 Grey Circle
-  SetFontSize 35
+  SetFontSize 32
   PlayAlertSound 1 20
   DisableDropSound
 
@@ -671,6 +685,7 @@ Show
   PlayAlertSound 2 200
   PlayEffect Pink
   MinimapIcon 1 White Circle
+  SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Unique Items group
@@ -707,11 +722,9 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  SetBackgroundColor 34 34 34 208
+  SetBackgroundColor 34 34 34 0
   SetTextColor 255 209 94
-  SetBorderColor 255 209 94
-  SetFontSize 35
-  MinimapIcon 0 White Pentagon
+  SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 
@@ -727,7 +740,7 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 
@@ -737,7 +750,7 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
 
 
 Show
@@ -746,7 +759,7 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0 125
-  SetFontSize 35
+  SetFontSize 32
 
 
 

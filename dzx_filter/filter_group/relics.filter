@@ -6,7 +6,7 @@ Show
   Class "Relic"
   SetTextColor 30 233 148
   SetBorderColor 30 233 148
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 1 Cyan Diamond
   PlayAlertSound 2 200
   PlayEffect Cyan

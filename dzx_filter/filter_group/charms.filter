@@ -1,7 +1,7 @@
 Hide
   Class == "Charms"
   Rarity Normal Magic
-  ItemLevel < 80
+  ItemLevel <= 80
   AreaLevel >= 60
 
 Show
@@ -9,7 +9,7 @@ Show
   Quality >= 18
   ItemLevel >= 82
   AreaLevel >= 65
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 133 159 61
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30

@@ -6,3 +6,4 @@ Show
   BaseType " Rune" " Charm"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
+  SetFontSize 32

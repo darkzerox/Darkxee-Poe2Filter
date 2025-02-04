@@ -8,5 +8,5 @@ Hide
 
 Show
   BaseType "Scroll of Wisdom"
-  SetFontSize 35
+  SetFontSize 32
   AreaLevel < 65

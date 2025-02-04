@@ -12,12 +12,12 @@ Show
   Class "Belts"
   Rarity Normal
   ItemLevel >= 81
-  SetFontSize 35
+  SetFontSize 32
   
 Show
   Class "Belts"
   Rarity Rare
-  SetFontSize 35
+  SetFontSize 32
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow

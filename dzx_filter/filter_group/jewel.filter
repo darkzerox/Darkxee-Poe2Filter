@@ -7,7 +7,7 @@ Show
   Rarity <= Rare
   SetTextColor 121 215 190
   SetBorderColor 121 215 190
-  SetFontSize 35
+  SetFontSize 32
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 200

@@ -10,7 +10,7 @@ Hide
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
   Continue
 
 
@@ -20,7 +20,7 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0
-  SetFontSize 35
+  SetFontSize 32
 
 
 Show
@@ -29,5 +29,5 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" 
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0 125
-  SetFontSize 35
+  SetFontSize 32
 
