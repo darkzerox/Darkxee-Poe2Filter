@@ -1,8 +1,14 @@
+Show
+  SetFontSize 32
+  Continue
+
 #--------------------------------
 # Gacha group
 #--------------------------------
 
 Show 
+
+
   Rarity Normal
   BaseType == "Stellar Amulet"
   SetBorderColor 233 75 75
