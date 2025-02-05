@@ -395,6 +395,10 @@
     border-color: rgb(62 88 121);
 }
 
+.flasks {
+    font-size: 32px;
+}
+
 .==, .charms {
     font-size: 32px;
     color: rgb(133 159 61);
