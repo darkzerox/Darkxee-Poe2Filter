@@ -225,7 +225,7 @@
 }
 
 .minimap-icon-square {
-    color: rgb(255 255 0);
+    color: rgb(160 110 60);
 }
 
 [data-basetype="Simulacrum"], [data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
@@ -236,7 +236,7 @@
 }
 
 .minimap-icon-square {
-    color: rgb(128 0 128);
+    color: rgb(160 110 60);
 }
 
 .tablet {
@@ -247,7 +247,7 @@
 }
 
 .minimap-icon-square {
-    color: rgb(128 0 128);
+    color: rgb(255 255 0);
 }
 
 [data-basetype="Barya"], [data-basetype="Ultimatum"] {
@@ -258,7 +258,7 @@
 }
 
 .minimap-icon-square {
-    color: rgb(150 150 150);
+    color: rgb(160 110 60);
 }
 
 [data-basetype="=="], [data-basetype="Bronze"], [data-basetype="Key"], [data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"] {
@@ -269,18 +269,18 @@
 }
 
 .minimap-icon-pentagon {
-    color: rgb(255 255 0);
+    color: rgb(0 255 0);
 }
 
 .==, .fishing, .rods {
     color: rgb(125 241 37);
-    border-color: rgb(125 241 37);
+    border-color: rgb(177 90 18);
     background-color: rgb(24 39 71);
     font-size: 40px;
 }
 
 .minimap-icon-pentagon {
-    color: rgb(255 255 0);
+    color: rgb(160 110 60);
 }
 
 .relic {
@@ -301,7 +301,7 @@
 }
 
 .minimap-icon-diamond {
-    color: rgb(0 255 255);
+    color: rgb(128 0 128);
 }
 
 [data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
@@ -311,7 +311,7 @@
 }
 
 .minimap-icon-diamond {
-    color: rgb(0 255 255);
+    color: rgb(128 0 128);
 }
 
 .rings {
@@ -335,7 +335,7 @@
 }
 
 .minimap-icon-diamond {
-    color: rgb(0 255 255);
+    color: rgb(128 0 128);
 }
 
 [data-basetype="Rune"], [data-basetype="Charm"] {
@@ -379,7 +379,7 @@
 }
 
 .minimap-icon-square {
-    color: rgb(255 255 255);
+    color: rgb(0 0 255);
 }
 
 [data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"] {
@@ -495,7 +495,7 @@
 }
 
 .minimap-icon-kite {
-    color: rgb(255 255 255);
+    color: rgb(128 0 128);
 }
 
 .currency, [data-basetype="Distilled"], [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
@@ -505,7 +505,7 @@
 }
 
 .minimap-icon-circle {
-    color: rgb(255 255 255);
+    color: rgb(128 0 128);
 }
 
 .currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
