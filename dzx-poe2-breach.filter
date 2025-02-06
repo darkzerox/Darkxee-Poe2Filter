@@ -12,6 +12,7 @@ Show
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 Show
   Rarity Normal
@@ -22,6 +23,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 
 Show 
@@ -33,6 +35,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 
 Show 
@@ -92,6 +95,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 200
+  CustomAlertSound "dzx_filter/soundeffect/type-01/jewel.mp3" 100
 
 Show 
   BaseType "Timeless"
@@ -120,6 +124,7 @@ Show
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 9 200
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 Show 
   Rarity <= Magic
@@ -260,6 +265,7 @@ Show
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 32
+  CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 
 
 Show
@@ -267,6 +273,7 @@ Show
   Rarity Normal Magic
   SetBorderColor 72 72 72
   SetFontSize 32
+  CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 
 
 
@@ -452,6 +459,7 @@ Show
   PlayEffect Pink
   PlayAlertSound 14 200
   SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/type-01/waystone.mp3" 100
 
 
 
@@ -513,6 +521,7 @@ Show
 Show
   Class "Currency"
   SetFontSize 32
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   Continue
 
 Show
@@ -524,6 +533,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
   
  
 Show
@@ -535,6 +545,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
   
 
 Show
@@ -552,6 +563,7 @@ Show
   SetBackgroundColor 30 58 51
   PlayEffect White
   MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 # Currency Tier B: Exalt
 Show
@@ -581,6 +593,7 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
   SetFontSize 40
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   PlayAlertSound 2 0
 
 
@@ -665,6 +678,7 @@ Show
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 Show
   Rarity Unique
@@ -675,6 +689,7 @@ Show
   MinimapIcon 1 Brown Star
   SetFontSize 40
   PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 #------------------------------------------------------------------------------
 # Rare Items Group
@@ -686,6 +701,7 @@ Show
   SetBackgroundColor 34 34 34 0
   SetTextColor 255 209 94
   SetFontSize 32
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
 
 #------------------------------------------------------------------------------
