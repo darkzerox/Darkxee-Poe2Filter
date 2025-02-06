@@ -3,15 +3,16 @@
 #------------------------------------------------------------------------------
 # Skill Gems
   
-Hide
-  ItemLevel >= 14 
-  ItemLevel <= 18
-  AreaLevel >= 75
-  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+# Hide
+#   ItemLevel >= 14 
+#   ItemLevel <= 18
+#   AreaLevel >= 75
+#   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
 
-Hide
-  BaseType "Uncut Support Gem"
-  AreaLevel >= 75
+# Hide
+#   BaseType "Uncut Support Gem"
+#   ItemLevel < 3
+#   AreaLevel >= 75
 
 # Level 20 gems go tink
 Show
@@ -31,7 +32,7 @@ Show
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
-  PlayEffect Brown
+  PlayEffect Brown Temp
   MinimapIcon 1 Brown Triangle
   SetFontSize 37
 

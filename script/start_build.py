@@ -107,7 +107,9 @@ for sound_type in soundEffectType:
 # For breach map
 #----------------------
 output_file_name = 'dzx-poe2-breach'
-merge_file.merge_files_from_array(breachGroup, output_file_name ,'type-01', True)
+merge_file.merge_files_from_array(breachGroup, output_file_name ,'type-01')
+
+
 
 
 #----------------------

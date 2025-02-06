@@ -13,8 +13,8 @@ Show
   SetBorderColor 156 106 255
   SetBackgroundColor 88 57 150
   SetFontSize 40
-  MinimapIcon 1 Cyan Diamond
-  PlayEffect Cyan
+  MinimapIcon 1 Purple Diamond
+  PlayEffect Purple
   PlayAlertSound 9 200
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
@@ -24,8 +24,8 @@ Show
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
-  PlayEffect Cyan Temp
+  MinimapIcon 2 Purple Diamond
+  PlayEffect Purple Temp
 
 Hide
   Class "Rings"
@@ -55,5 +55,5 @@ Show
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
-  PlayEffect Cyan Temp
+  MinimapIcon 2 Purple Diamond
+  PlayEffect Purple Temp

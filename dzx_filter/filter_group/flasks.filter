@@ -23,3 +23,8 @@ Quality >= 1
 SetFontSize 32
 SetTextColor 62 88 121
 SetBorderColor 62 88 121
+
+Show
+Class "Flasks"
+Rarity Normal
+SetFontSize 32

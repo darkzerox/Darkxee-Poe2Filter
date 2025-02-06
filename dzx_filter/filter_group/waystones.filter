@@ -41,8 +41,8 @@ Show
   SetTextColor 184 31 77
   SetBorderColor 4 10 29
   SetBackgroundColor 6 15 43
-  MinimapIcon 1 White Square
-  PlayEffect Pink
+  MinimapIcon 1 Blue Square
+  PlayEffect Blue Temp
   PlayAlertSound 14 200
   SetFontSize 40
   CustomAlertSound "dzx_filter/soundeffect/type-01/waystone.mp3" 100

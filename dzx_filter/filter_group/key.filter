@@ -8,8 +8,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-  PlayEffect White
-  MinimapIcon 1 Yellow Square
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
   SetFontSize 40
 
 Show
@@ -18,8 +18,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-  PlayEffect Purple
-  MinimapIcon 1 Purple Square
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
   SetFontSize 40
 
 Show
@@ -28,8 +28,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-  PlayEffect Purple
-  MinimapIcon 1 Purple Square
+  PlayEffect Brown
+  MinimapIcon 1 Yellow Square
   SetFontSize 40
 
 Hide
@@ -43,8 +43,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 12 200
-  PlayEffect Grey
-  MinimapIcon 1 Grey Square
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
   SetFontSize 32
 
 Show
@@ -53,16 +53,16 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-  PlayEffect White
-  MinimapIcon 1 Yellow Pentagon
+  PlayEffect Brown
+  MinimapIcon 1 Green Pentagon
   SetFontSize 40
 
 Show
   Class == "Fishing Rods"
   SetTextColor 125 241 37
-  SetBorderColor 125 241 37
+  SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-  PlayEffect White
-  MinimapIcon 1 Yellow Pentagon
+  PlayEffect Brown
+  MinimapIcon 1 Brown Pentagon
   SetFontSize 40
