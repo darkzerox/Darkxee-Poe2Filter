@@ -117,13 +117,8 @@ Show
   SetBorderColor 156 106 255
   SetBackgroundColor 88 57 150
   SetFontSize 40
-<<<<<<< HEAD
-  MinimapIcon 1 Cyan Diamond
-  PlayEffect Cyan
-=======
   MinimapIcon 1 Purple Diamond
   PlayEffect Purple
->>>>>>> develop
   PlayAlertSound 9 200
 
 Show 
@@ -132,13 +127,8 @@ Show
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
   SetFontSize 40
-<<<<<<< HEAD
-  MinimapIcon 2 Cyan Diamond
-  PlayEffect Cyan Temp
-=======
   MinimapIcon 2 Purple Diamond
   PlayEffect Purple Temp
->>>>>>> develop
 
 Hide
   Class "Rings"
@@ -168,13 +158,8 @@ Show
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
   SetFontSize 40
-<<<<<<< HEAD
-  MinimapIcon 2 Cyan Diamond
-  PlayEffect Cyan Temp
-=======
   MinimapIcon 2 Purple Diamond
   PlayEffect Purple Temp
->>>>>>> develop
 
 
 Hide
@@ -192,19 +177,16 @@ Hide
 #------------------------------------------------------------------------------
 # Skill Gems
   
-Hide
-  ItemLevel >= 14 
-  ItemLevel <= 18
-  AreaLevel >= 75
-  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+# Hide
+#   ItemLevel >= 14 
+#   ItemLevel <= 18
+#   AreaLevel >= 75
+#   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
 
-Hide
-  BaseType "Uncut Support Gem"
-<<<<<<< HEAD
-=======
-  ItemLevel < 3
->>>>>>> develop
-  AreaLevel >= 75
+# Hide
+#   BaseType "Uncut Support Gem"
+#   ItemLevel < 3
+#   AreaLevel >= 75
 
 # Level 20 gems go tink
 Show
@@ -224,11 +206,7 @@ Show
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect Brown
-=======
   PlayEffect Brown Temp
->>>>>>> develop
   MinimapIcon 1 Brown Triangle
   SetFontSize 37
 
@@ -332,13 +310,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect White
-  MinimapIcon 1 Yellow Square
-=======
   PlayEffect Brown
   MinimapIcon 1 Brown Square
->>>>>>> develop
   SetFontSize 40
 
 Show
@@ -347,13 +320,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect Purple
-  MinimapIcon 1 Purple Square
-=======
   PlayEffect Brown
   MinimapIcon 1 Brown Square
->>>>>>> develop
   SetFontSize 40
 
 Show
@@ -362,13 +330,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect Purple
-  MinimapIcon 1 Purple Square
-=======
   PlayEffect Brown
   MinimapIcon 1 Yellow Square
->>>>>>> develop
   SetFontSize 40
 
 Hide
@@ -382,13 +345,8 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 12 200
-<<<<<<< HEAD
-  PlayEffect Grey
-  MinimapIcon 1 Grey Square
-=======
   PlayEffect Brown
   MinimapIcon 1 Brown Square
->>>>>>> develop
   SetFontSize 32
 
 Show
@@ -397,31 +355,18 @@ Show
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect White
-  MinimapIcon 1 Yellow Pentagon
-=======
   PlayEffect Brown
   MinimapIcon 1 Green Pentagon
->>>>>>> develop
   SetFontSize 40
 
 Show
   Class == "Fishing Rods"
   SetTextColor 125 241 37
-<<<<<<< HEAD
-  SetBorderColor 125 241 37
-  SetBackgroundColor 24 39 71
-  PlayAlertSound 2 200
-  PlayEffect White
-  MinimapIcon 1 Yellow Pentagon
-=======
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
   PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Brown Pentagon
->>>>>>> develop
   SetFontSize 40
 
 
@@ -504,13 +449,8 @@ Show
   SetTextColor 184 31 77
   SetBorderColor 4 10 29
   SetBackgroundColor 6 15 43
-<<<<<<< HEAD
-  MinimapIcon 1 White Square
-  PlayEffect Pink
-=======
   MinimapIcon 1 Blue Square
   PlayEffect Blue Temp
->>>>>>> develop
   PlayAlertSound 14 200
   SetFontSize 40
 
@@ -542,14 +482,11 @@ SetFontSize 32
 SetTextColor 62 88 121
 SetBorderColor 62 88 121
 
-<<<<<<< HEAD
-=======
 Show
 Class "Flasks"
 Rarity Normal
 SetFontSize 32
 
->>>>>>> develop
 
 Hide
   Class == "Charms"
@@ -567,11 +504,7 @@ Show
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
   PlayAlertSound 3 200
-<<<<<<< HEAD
-  PlayEffect Grey
-=======
   PlayEffect Green
->>>>>>> develop
   MinimapIcon 1 Green Star
 
 #------------------------------------------------------------------------------
@@ -618,11 +551,7 @@ Show
   SetTextColor 255 193 48
   SetBorderColor  30 58 51
   SetBackgroundColor 30 58 51
-<<<<<<< HEAD
-  PlayEffect White
-=======
   PlayEffect Yellow
->>>>>>> develop
   MinimapIcon 1 Yellow Circle
 
 # Currency Tier B: Exalt
@@ -664,10 +593,6 @@ Show
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
-<<<<<<< HEAD
-  PlayEffect White
-=======
->>>>>>> develop
   MinimapIcon 2 White Circle
  
 Show
@@ -675,13 +600,8 @@ Show
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
   SetTextColor 201 184 224
   SetBackgroundColor 23 7 69
-<<<<<<< HEAD
-  PlayEffect White Temp
-  MinimapIcon 1 White Kite
-=======
   PlayEffect Purple Temp
   MinimapIcon 1 Purple Kite
->>>>>>> develop
   SetFontSize 32
 
 Show
@@ -690,13 +610,8 @@ Show
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
   SetBackgroundColor 0 0 0
-<<<<<<< HEAD
-  PlayEffect White
-  MinimapIcon 2 White Circle
-=======
   PlayEffect Purple
   MinimapIcon 2 Purple Circle
->>>>>>> develop
 
 
 #--- Low Tier Currency ---
@@ -731,10 +646,6 @@ Show
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
   PlayAlertSound 2 200
-<<<<<<< HEAD
-  PlayEffect Pink
-=======
->>>>>>> develop
   MinimapIcon 1 White Circle
   SetFontSize 32
 
@@ -759,11 +670,7 @@ Show
   SetTextColor 175 96 37 255
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
-<<<<<<< HEAD
-  PlayEffect Brown
-=======
   PlayEffect Brown Temp
->>>>>>> develop
   MinimapIcon 1 Brown Star
   SetFontSize 40
   PlayAlertSound 3 0
