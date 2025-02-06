@@ -13,7 +13,6 @@ Hide
   BaseType == "Gold"
   AreaLevel >= 70
   StackSize <= 500
-  PlayEffect White Temp
   SetTextColor 255 255 255
   SetFontSize 32
 
@@ -32,7 +31,6 @@ Show
   AreaLevel < 70
   StackSize >= 500
   BaseType == "Gold"
-  PlayEffect White Temp
   MinimapIcon 2 White Cross
   SetTextColor 255 255 255
   SetBackgroundColor 255 255 255 0

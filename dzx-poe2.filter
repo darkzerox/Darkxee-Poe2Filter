@@ -421,8 +421,8 @@ Show
   SetTextColor 156 106 255
   SetBorderColor 156 106 255
   SetFontSize 40
-  MinimapIcon 2 Cyan Diamond
-  PlayEffect Cyan Temp
+  MinimapIcon  2 Purple Diamond 
+  PlayEffect Purple Temp
 
 
 #------------------------------------------------------------------------------

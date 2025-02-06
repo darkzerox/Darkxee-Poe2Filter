@@ -14,5 +14,5 @@ Show
   SetBorderColor 133 159 61
   SetBackgroundColor 49 81 30
   PlayAlertSound 3 200
-  PlayEffect Grey
+  PlayEffect Green
   MinimapIcon 1 Green Star

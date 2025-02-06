@@ -11,6 +11,7 @@ Hide
 
 Hide
   BaseType "Uncut Support Gem"
+  ItemLevel < 3
   AreaLevel >= 75
 
 # Level 20 gems go tink
@@ -31,7 +32,7 @@ Show
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
-  PlayEffect Brown
+  PlayEffect Brown Temp
   MinimapIcon 1 Brown Triangle
   SetFontSize 37
 
