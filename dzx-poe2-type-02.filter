@@ -302,7 +302,6 @@ Show
   PlayAlertSound 3 200
   PlayEffect Brown
   MinimapIcon 1 Brown Square
-
   SetFontSize 40
 
 Show
