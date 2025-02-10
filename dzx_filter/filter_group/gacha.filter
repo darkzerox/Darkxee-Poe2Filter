@@ -16,7 +16,7 @@ Show
 
 Show
   Rarity Normal
-  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff"
+  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
   ItemLevel >= 81
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
@@ -28,8 +28,8 @@ Show
 
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
-  ItemLevel >= 81
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
+  ItemLevel >= 78
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
