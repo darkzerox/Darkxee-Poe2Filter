@@ -1,6 +1,7 @@
 Hide
   Rarity Rare
   AreaLevel > 70
+  ItemLevel < 82
 
 Hide # Hides gold but can be found on the ground when walking past.
    BaseType "Gold"

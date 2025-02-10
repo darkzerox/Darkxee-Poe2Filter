@@ -4,7 +4,7 @@
 
 Show
   Class "Jewel"
-  Rarity <= Rare
+  Rarity Normal Magic Rare
   SetTextColor 121 215 190
   SetBorderColor 121 215 190
   SetFontSize 32
@@ -12,6 +12,18 @@ Show
   PlayEffect Cyan
   PlayAlertSound 2 200
   CustomAlertSound "dzx_filter/soundeffect/type-01/jewel.mp3" 100
+
+Show 
+	Rarity Normal Magic Rare
+	Class "Jewel"
+	BaseType == "Time-Lost Emerald" "Time-Lost Ruby" "Time-Lost Sapphire"
+	SetFontSize 42
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
 
 Show 
   BaseType "Timeless"
