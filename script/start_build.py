@@ -48,7 +48,9 @@ mainGroup= [
 ]
 
 breachGroup= [
+
     "gacha.filter",
+    "crafting.filter",
     "amulets.filter",
     "jewel.filter",
     "ring.filter",
