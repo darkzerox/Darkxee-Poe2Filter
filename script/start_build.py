@@ -2,7 +2,7 @@ import merge_file as merge_file
 from build_css import filter_to_css
 from build_html import write_html_to_file
 
-soundEffectType = ['type-01','type-02']
+soundEffectType = ['type-01']
 
 mainGroup= [
     #----------------------
