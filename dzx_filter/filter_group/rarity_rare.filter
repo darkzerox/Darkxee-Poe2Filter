@@ -5,7 +5,7 @@
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  SetBackgroundColor 34 34 34 0
+  SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
