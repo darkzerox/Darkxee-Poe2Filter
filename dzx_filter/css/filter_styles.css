@@ -487,7 +487,7 @@
     color: rgb(255 255 0);
 }
 
-.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"] {
+.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"] {
     color: rgb(218 145 255);
     font-size: 40px;
     border-color: rgb(0 0 0);

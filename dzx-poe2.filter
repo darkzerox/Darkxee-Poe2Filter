@@ -709,7 +709,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
   Class "Currency"
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
