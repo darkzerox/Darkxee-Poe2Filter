@@ -14,17 +14,6 @@ Show
   PlayEffect Red
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
-Show
-  Rarity Normal
-  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
-  ItemLevel >= 81
-  SetTextColor 160 255 71
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 37
-  MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
-
 
 Show 
   Rarity Normal
@@ -36,7 +25,6 @@ Show
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
-
 
 Show 
   Rarity Normal
