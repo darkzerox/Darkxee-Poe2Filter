@@ -255,8 +255,6 @@ Hide
   Rarity Rare
   AreaLevel > 70
 
-Hide # Hides gold but can be found on the ground when walking past.
-   BaseType "Gold"
 
 Hide 
   BaseType " Rune" " Charm"

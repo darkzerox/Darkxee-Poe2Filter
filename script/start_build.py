@@ -51,6 +51,7 @@ breachGroup= [
 
     "gacha.filter",
     "crafting.filter",
+    "gold.filter",
     "amulets.filter",
     "jewel.filter",
     "ring.filter",
