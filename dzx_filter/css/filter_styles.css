@@ -593,7 +593,7 @@
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
-    background-color: rgb(34 34 34);
+    background-color: rgb(0 0 0);
     color: rgb(255 209 94);
     font-size: 32px;
 }
