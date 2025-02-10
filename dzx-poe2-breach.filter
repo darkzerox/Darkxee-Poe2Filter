@@ -122,6 +122,50 @@ Show # %D5 $type->endgame->jewellery $tier->beltst2ideallevel
 
 
 #------------------------------------------------------------------------------
+# init
+#------------------------------------------------------------------------------
+Show
+  SetFontSize 32
+  Continue
+
+#------------------------------------------------------------------------------
+# Gold
+#------------------------------------------------------------------------------
+
+Hide
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+  SetTextColor 255 255 255
+  SetFontSize 32
+
+Show
+  AreaLevel >= 70
+  StackSize >= 1000
+  BaseType == "Gold"
+  PlayEffect White Temp
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBorderColor 255 255 255
+  SetFontSize 32
+
+
+Show
+  AreaLevel < 70
+  StackSize >= 500
+  BaseType == "Gold"
+  MinimapIcon 2 White Cross
+  SetTextColor 255 255 255
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 32
+
+Show
+  BaseType == "Gold"
+  SetTextColor 180 180 180
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 32
+
+#------------------------------------------------------------------------------
 # Amulets
 #------------------------------------------------------------------------------
 
@@ -255,6 +299,8 @@ Hide
   Rarity Rare
   AreaLevel > 70
 
+Hide # Hides gold but can be found on the ground when walking past.
+   BaseType "Gold"
 
 Hide 
   BaseType " Rune" " Charm"
