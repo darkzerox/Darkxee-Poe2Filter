@@ -35,7 +35,7 @@ Show
 Hide
   BaseType "Barya" "Ultimatum"
   AreaLevel >= 75
-  ItemLevel < 80
+  ItemLevel < 79
 
 Show
   BaseType "Barya" "Ultimatum"
