@@ -1,0 +1,77 @@
+
+Show
+	Rarity Normal
+	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
+	ItemLevel >= 81
+	SetTextColor 160 255 71
+	SetBackgroundColor 10 10 10 200
+	SetFontSize 37
+	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 16 200
+	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  
+  
+
+Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->ringamut2ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amber Amulet" "Azure Amulet" "Bloodstone Amulet" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lunar Amulet" "Pearl Ring" "Ruby Ring" "Sapphire Ring" "Stellar Amulet" "Topaz Ring" "Unset Ring"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D3 $type->endgame->jewellery $tier->ringamut3ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Crimson Amulet" "Emerald Ring" "Iron Ring"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->ringamut1
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->beltst1ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Belts"
+	BaseType == "Plate Belt" "Utility Belt"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->beltst2ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Belts"
+	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBorderColor 139 191 226
+
+

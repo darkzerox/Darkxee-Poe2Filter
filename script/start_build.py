@@ -10,6 +10,7 @@ mainGroup= [
     #---------------------- 
 
     "gacha.filter",
+    "crafting.filter",
 
     #----------------------
     # Item group
@@ -49,6 +50,8 @@ mainGroup= [
 breachGroup= [
 
     "gacha.filter",
+    "crafting.filter",
+    "gold.filter",
     "amulets.filter",
     "jewel.filter",
     "ring.filter",

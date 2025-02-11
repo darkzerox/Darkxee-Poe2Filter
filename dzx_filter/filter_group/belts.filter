@@ -7,12 +7,6 @@ Hide
   Rarity <= Magic
   Class "Belts"
   Continue
-
-Show
-  Class "Belts"
-  Rarity Normal
-  ItemLevel >= 81
-  SetFontSize 32
   
 Show
   Class "Belts"

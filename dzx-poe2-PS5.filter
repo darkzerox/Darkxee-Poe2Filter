@@ -13,27 +13,16 @@ Show
   PlayAlertSound 9 200
   PlayEffect Red
 
-Show
-  Rarity Normal
-  BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff"
-  ItemLevel >= 81
-  SetTextColor 160 255 71
-  SetBackgroundColor 10 10 10 200
-  SetFontSize 37
-  MinimapIcon 2 Orange Diamond
-  PlayAlertSound 16 200
-
 
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet"
-  ItemLevel >= 81
+  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
+  ItemLevel >= 78
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-
 
 Show 
   Rarity Normal
@@ -44,6 +33,84 @@ Show
   SetFontSize 37
   MinimapIcon 2 Green Diamond
   PlayAlertSound 14 200
+
+
+
+Show
+	Rarity Normal
+	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
+	ItemLevel >= 81
+	SetTextColor 160 255 71
+	SetBackgroundColor 10 10 10 200
+	SetFontSize 37
+	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 16 200
+  
+  
+
+Show # %D6 $type->endgame->jewellery $tier->ringamut1ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->ringamut2ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amber Amulet" "Azure Amulet" "Bloodstone Amulet" "Gold Amulet" "Gold Ring" "Jade Amulet" "Lapis Amulet" "Lazuli Ring" "Lunar Amulet" "Pearl Ring" "Ruby Ring" "Sapphire Ring" "Stellar Amulet" "Topaz Ring" "Unset Ring"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D3 $type->endgame->jewellery $tier->ringamut3ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Crimson Amulet" "Emerald Ring" "Iron Ring"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->ringamut1
+	Rarity Normal Magic
+	Class == "Amulets" "Rings"
+	BaseType == "Amethyst Ring" "Breach Ring" "Prismatic Ring" "Solar Amulet"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->beltst1ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Belts"
+	BaseType == "Plate Belt" "Utility Belt"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBackgroundColor 30 0 70 255
+	SetBorderColor 139 191 226
+
+
+Show # %D5 $type->endgame->jewellery $tier->beltst2ideallevel
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Belts"
+	BaseType == "Double Belt" "Fine Belt" "Heavy Belt" "Linen Belt" "Long Belt" "Mail Belt" "Ornate Belt" "Rawhide Belt" "Wide Belt"
+	AreaLevel >= 65
+	SetFontSize 36
+	SetBorderColor 139 191 226
+
+
 
 
 #------------------------------------------------------------------------------
@@ -232,12 +299,6 @@ Hide
   Rarity <= Magic
   Class "Belts"
   Continue
-
-Show
-  Class "Belts"
-  Rarity Normal
-  ItemLevel >= 81
-  SetFontSize 32
   
 Show
   Class "Belts"
@@ -257,13 +318,25 @@ Show
 
 Show
   Class "Jewel"
-  Rarity <= Rare
+  Rarity Normal Magic Rare
   SetTextColor 121 215 190
   SetBorderColor 121 215 190
   SetFontSize 32
   MinimapIcon 1 Cyan Diamond
   PlayEffect Cyan
   PlayAlertSound 2 200
+
+Show 
+	Rarity Normal Magic Rare
+	Class "Jewel"
+	BaseType == "Time-Lost Emerald" "Time-Lost Ruby" "Time-Lost Sapphire"
+	SetFontSize 42
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
 
 Show 
   BaseType "Timeless"
@@ -293,7 +366,7 @@ Show
   SetTextColor 177 90 18
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
-  PlayAlertSound 2 200
+  PlayAlertSound 3 200
   PlayEffect Brown
   MinimapIcon 1 Brown Square
   SetFontSize 40
@@ -311,7 +384,7 @@ Show
 Hide
   BaseType "Barya" "Ultimatum"
   AreaLevel >= 75
-  ItemLevel < 80
+  ItemLevel < 79
 
 Show
   BaseType "Barya" "Ultimatum"
@@ -591,7 +664,7 @@ Show
 # Currency Tier B: Exalt
 Show
   Class "Currency"
-  BaseType "Exotic Coinage" "Exalted Orb"
+  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0
@@ -716,7 +789,7 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  SetBackgroundColor 34 34 34 0
+  SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
 
