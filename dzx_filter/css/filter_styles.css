@@ -598,6 +598,10 @@
     font-size: 32px;
 }
 
+.minimap-icon-cross {
+    color: rgb(255 255 0);
+}
+
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);

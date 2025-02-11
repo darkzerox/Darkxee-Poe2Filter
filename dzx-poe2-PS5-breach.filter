@@ -802,6 +802,7 @@ Show
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
+  MinimapIcon 2 Yellow Cross
 
 
 #------------------------------------------------------------------------------
