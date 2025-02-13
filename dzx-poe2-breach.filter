@@ -300,6 +300,11 @@ Hide # Hides gold but can be found on the ground when walking past.
 Hide 
   BaseType " Rune" " Charm"
 
+Hide
+  BaseType "Orb of Augmentation" "Orb of Transmutation"
+
+
+
 #------------------------------------------------------------------------------
 # Uncut Gems
 #------------------------------------------------------------------------------
