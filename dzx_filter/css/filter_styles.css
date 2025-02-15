@@ -324,6 +324,17 @@
     color: rgb(160 110 60);
 }
 
+[data-basetype="=="], [data-basetype="Amphora"], [data-basetype="Relic"], [data-basetype="Coffer"], [data-basetype="Relic"], [data-basetype="Vase"], [data-basetype="Relic"], [data-basetype="Seal"], [data-basetype="Relic"], [data-basetype="Tapestry"], [data-basetype="Relic"], [data-basetype="Incense"], [data-basetype="Relic"] {
+    font-size: 45px;
+    color: rgb(213 77 77);
+    border-color: rgb(216 64 64);
+    background-color: rgb(149 255 211);
+}
+
+.minimap-icon-star {
+    color: rgb(255 0 0);
+}
+
 .relic {
     color: rgb(30 233 148);
     border-color: rgb(30 233 148);
@@ -576,7 +587,7 @@
     color: rgb(255 255 255);
 }
 
-[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Incense"], [data-basetype="Relic"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Vase"], [data-basetype="Relic"] {
+[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Diamond"], [data-basetype="Silk"], [data-basetype="Robe"], [data-basetype="Chain"], [data-basetype="Tiara"], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Grand"], [data-basetype="Regalia"] {
     font-size: 45px;
     color: rgb(238 238 238);
     border-color: rgb(53 13 13);
