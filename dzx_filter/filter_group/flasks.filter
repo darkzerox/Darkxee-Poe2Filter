@@ -3,6 +3,7 @@ Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
   AreaLevel >= 65
   ItemLevel >= 83
+  Rarity <= Rare
   SetFontSize 32
   SetTextColor 143 106 206
   SetBorderColor 62 88 121

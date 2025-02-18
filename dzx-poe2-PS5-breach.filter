@@ -295,6 +295,11 @@ Hide # Hides gold but can be found on the ground when walking past.
 Hide 
   BaseType " Rune" " Charm"
 
+Hide
+  BaseType "Orb of Augmentation" "Orb of Transmutation"
+
+
+
 #------------------------------------------------------------------------------
 # Uncut Gems
 #------------------------------------------------------------------------------
@@ -491,6 +496,19 @@ Show
 # Relic
 #------------------------------------------------------------------------------
 
+
+Show
+  Rarity Unique
+  BaseType == "Amphora Relic" "Coffer Relic" "Vase Relic" "Seal Relic" "Tapestry Relic" "Incense Relic" 
+  SetFontSize 45
+  SetTextColor 213 77 77
+  SetBorderColor  216 64 64
+  SetBackgroundColor 149 255 211
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  
+ 
 Show 
   Class "Relic"
   SetTextColor 30 233 148
@@ -578,6 +596,7 @@ Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
   AreaLevel >= 65
   ItemLevel >= 83
+  Rarity <= Rare
   SetFontSize 32
   SetTextColor 143 106 206
   SetBorderColor 62 88 121
@@ -773,7 +792,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Incense Relic" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Vase Relic"
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255

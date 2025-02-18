@@ -2,6 +2,20 @@
 # Relic
 #------------------------------------------------------------------------------
 
+
+Show
+  Rarity Unique
+  BaseType == "Amphora Relic" "Coffer Relic" "Vase Relic" "Seal Relic" "Tapestry Relic" "Incense Relic" 
+  SetFontSize 45
+  SetTextColor 213 77 77
+  SetBorderColor  216 64 64
+  SetBackgroundColor 149 255 211
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  
+ 
 Show 
   Class "Relic"
   SetTextColor 30 233 148
