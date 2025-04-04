@@ -86,7 +86,7 @@
     color: rgb(0 255 0);
 }
 
-[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Expert"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"] {
+[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
