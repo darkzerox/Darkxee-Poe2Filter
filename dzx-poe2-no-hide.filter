@@ -40,7 +40,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Expert Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
 	ItemLevel >= 81
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
