@@ -603,7 +603,7 @@
     color: rgb(160 110 60);
 }
 
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     background-color: rgb(0 0 0);
     color: rgb(255 209 94);
     font-size: 32px;
@@ -613,19 +613,19 @@
     color: rgb(255 255 0);
 }
 
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
     font-size: 32px;
 }
 
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     color: rgb(62 140 242);
     background-color: rgb(0 0 0);
     font-size: 32px;
 }
 
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands {
+.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     color: rgb(101 103 222);
     background-color: rgb(0 0 0);
     font-size: 32px;
