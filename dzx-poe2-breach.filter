@@ -846,7 +846,7 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  Rarity <= Magic
+  Rarity < Magic
   Sockets == 0
   Quality == 0
   AreaLevel >= 10

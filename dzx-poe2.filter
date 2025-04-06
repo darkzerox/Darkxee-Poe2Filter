@@ -130,7 +130,7 @@ Show
 Hide
   BaseType == "Gold"
   AreaLevel >= 70
-  StackSize <= 100
+  StackSize <= 500
   SetTextColor 255 255 255
   SetFontSize 32
 
@@ -831,7 +831,7 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  Rarity = Magic
+  Rarity < Magic
   Sockets == 0
   Quality == 0
   AreaLevel >= 10
