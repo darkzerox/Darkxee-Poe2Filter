@@ -8,18 +8,13 @@ project_path = os.path.dirname(script_dir)
 
 def get_git_version():
     try:
-        # Get the latest git tag with commit hash
-        result = subprocess.run(['git', 'describe', '--tags', '--always'], 
+        # Get the latest git tag
+        result = subprocess.run(['git', 'describe', '--tags', '--abbrev=0'], 
                               cwd=project_path,
                               capture_output=True,
                               text=True)
         if result.returncode == 0:
-            version = result.stdout.strip()
-            # If there are commits after the tag, add the commit hash
-            if '-' in version:
-                tag, commits, hash = version.split('-')
-                return f"{tag}"
-            return version
+            return result.stdout.strip()
         return "v1.0.0"  # Default version if git command fails
     except Exception:
         return "v1.0.0"  # Default version if any error occurs
