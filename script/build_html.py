@@ -18,7 +18,7 @@ def get_git_version():
             # If there are commits after the tag, add the commit hash
             if '-' in version:
                 tag, commits, hash = version.split('-')
-                return f"{tag}+{hash[:7]}"
+                return f"{tag}"
             return version
         return "v1.0.0"  # Default version if git command fails
     except Exception:
