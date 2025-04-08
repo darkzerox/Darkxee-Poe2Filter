@@ -8,13 +8,18 @@ project_path = os.path.dirname(script_dir)
 
 def get_git_version():
     try:
-        # Get the latest git tag
-        result = subprocess.run(['git', 'describe', '--tags', '--abbrev=0'], 
+        # Get the latest git tag with commit hash
+        result = subprocess.run(['git', 'describe', '--tags', '--always'], 
                               cwd=project_path,
                               capture_output=True,
                               text=True)
         if result.returncode == 0:
-            return result.stdout.strip()
+            version = result.stdout.strip()
+            # If there are commits after the tag, add the commit hash
+            if '-' in version:
+                tag, commits, hash = version.split('-')
+                return f"{tag}+{hash[:7]}"
+            return version
         return "v1.0.0"  # Default version if git command fails
     except Exception:
         return "v1.0.0"  # Default version if any error occurs
@@ -238,8 +243,8 @@ def filter_to_html_table(filter_path, preview_tags):
     return '\n'.join(html_output)
 
 def generate_html_content(filter_array):
-    # Get current git version
-    version = get_git_version()
+    # Get current git version for HTML display only
+    html_version = get_git_version()
     
     # Read CSS file
     css_path = os.path.join(project_path, 'dzx_filter', 'css', 'filter_styles.css')
@@ -338,10 +343,10 @@ def generate_html_content(filter_array):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter</title>
+    <title>DZX Filter for POE2 - {html_version} | Path of Exile 2 Item Filter</title>
     
     <!-- Primary Meta Tags -->
-    <meta name="title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta name="title" content="DZX Filter for POE2 - {html_version} | Path of Exile 2 Item Filter">
     <meta name="description" content="DZX Poe2 Filter - Professional item filter for Path of Exile 2. Enhance your gameplay with our comprehensive item filtering system. Download now for PC and PS5.">
     <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, POE2 Filter, Game Filter, Loot Filter, POE2 Loot">
     <meta name="author" content="Darkxee">
@@ -350,7 +355,7 @@ def generate_html_content(filter_array):
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
-    <meta property="og:title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta property="og:title" content="DZX Filter for POE2 - {html_version} | Path of Exile 2 Item Filter">
     <meta property="og:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
     <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
     <meta property="og:site_name" content="DZX Poe2 Filter">
@@ -359,7 +364,7 @@ def generate_html_content(filter_array):
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
-    <meta property="twitter:title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta property="twitter:title" content="DZX Filter for POE2 - {html_version} | Path of Exile 2 Item Filter">
     <meta property="twitter:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
     <meta property="twitter:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
     
@@ -502,7 +507,30 @@ def generate_html_content(filter_array):
     <img alt="Darkxee Poe2 Filter" src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" width="800" style="max-width: 100%">
   </picture>
 
-  <h1 align="center">DZX Poe2 Filter</h1>
+  <h1 align="center">DZX Poe2 Filter <span id="repo-version">Loading version...</span></h1>
+
+  <script>
+    async function fetchLatestTag() {{
+        try {{
+            const response = await fetch('https://api.github.com/repos/darkzerox/Darkxee-Poe2Filter/tags');
+            if (!response.ok) throw new Error('Network response was not ok');
+            const tags = await response.json();
+            const latestTag = tags[0]?.name || 'No tags available';
+            document.getElementById('repo-version').innerText = latestTag;
+            // Update meta tags with latest version
+            document.title = `DZX Filter for POE2 - ${{latestTag}} | Path of Exile 2 Item Filter`;
+            document.querySelector('meta[name="title"]').content = `DZX Filter for POE2 - ${{latestTag}} | Path of Exile 2 Item Filter`;
+            document.querySelector('meta[property="og:title"]').content = `DZX Filter for POE2 - ${{latestTag}} | Path of Exile 2 Item Filter`;
+            document.querySelector('meta[property="twitter:title"]').content = `DZX Filter for POE2 - ${{latestTag}} | Path of Exile 2 Item Filter`;
+        }} catch (error) {{
+            console.error('Error fetching latest tag:', error);
+            document.getElementById('repo-version').innerText = 'Error loading version';
+        }}
+    }}
+
+    // Fetch version on page load
+    document.addEventListener('DOMContentLoaded', fetchLatestTag);
+  </script>
   
   <p>
     เป็นโปรเจคที่ทำขึ้นสำหรับกรอง Item จากเกม ซึ่งตอนนี้ poe2 ยังไม่รองรับ Function Import<br/>
