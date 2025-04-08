@@ -1,9 +1,23 @@
 import os
+import subprocess
 
 # Get directory of current script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 # Get project root (parent directory of script)
 project_path = os.path.dirname(script_dir)
+
+def get_git_version():
+    try:
+        # Get the latest git tag
+        result = subprocess.run(['git', 'describe', '--tags', '--abbrev=0'], 
+                              cwd=project_path,
+                              capture_output=True,
+                              text=True)
+        if result.returncode == 0:
+            return result.stdout.strip()
+        return "v1.0.0"  # Default version if git command fails
+    except Exception:
+        return "v1.0.0"  # Default version if any error occurs
 
 def filter_to_html_table(filter_path, preview_tags):
     try:
@@ -224,6 +238,9 @@ def filter_to_html_table(filter_path, preview_tags):
     return '\n'.join(html_output)
 
 def generate_html_content(filter_array):
+    # Get current git version
+    version = get_git_version()
+    
     # Read CSS file
     css_path = os.path.join(project_path, 'dzx_filter', 'css', 'filter_styles.css')
     try:
@@ -321,15 +338,34 @@ def generate_html_content(filter_array):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZX Poe2 Filter</title>
-    <meta name="description" content="DZX Poe2 Filter สำหรับกรอง Item จากเกม Path of Exile 2">
-    <meta property="og:title" content="DZX Poe2 Filter">
-    <meta property="og:description" content="DZX Poe2 Filter สำหรับกรอง Item จากเกม Path of Exile 2">
-    <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
-    <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    <title>DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta name="description" content="DZX Poe2 Filter - Professional item filter for Path of Exile 2. Enhance your gameplay with our comprehensive item filtering system. Download now for PC and PS5.">
+    <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, POE2 Filter, Game Filter, Loot Filter, POE2 Loot">
+    <meta name="author" content="Darkxee">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    <meta property="og:title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta property="og:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
     <meta property="og:site_name" content="DZX Poe2 Filter">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    <meta property="twitter:title" content="DZX Filter for POE2 - {version} | Path of Exile 2 Item Filter">
+    <meta property="twitter:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    
     <style>
         @font-face {{   
             font-family: 'Fontin';

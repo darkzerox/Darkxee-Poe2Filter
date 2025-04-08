@@ -12,3 +12,6 @@ OnlineFilters
 
 .venv
 *.Identifier
+
+
+test*
