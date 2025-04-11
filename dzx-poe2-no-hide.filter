@@ -831,20 +831,20 @@ Show
 #------------------------------------------------------------------------------
 
 Show
-  Rarity < Magic
+  Rarity == Normal
   Sockets == 0
   Quality == 0
-  AreaLevel >= 10
+  AreaLevel >= 50
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   SetFontSize 32
-  Continue
-
 
 Show
-  Rarity >= Magic
-  Sockets > 0
+  Rarity == Magic
+  Sockets == 0
+  Quality == 0
+  AreaLevel >= 50
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0

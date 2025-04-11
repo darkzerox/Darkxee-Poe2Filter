@@ -829,6 +829,7 @@ Show
 #------------------------------------------------------------------------------
 # Magic Items Group
 #------------------------------------------------------------------------------
+
 Hide
   Rarity == Normal
   Sockets == 0
@@ -844,15 +845,6 @@ Hide
   Sockets == 0
   Quality == 0
   AreaLevel >= 50
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
-  SetTextColor 62 140 242
-  SetBackgroundColor 0 0 0
-  SetFontSize 32
-
-
-Show
-  Rarity >= Magic
-  Sockets > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0
