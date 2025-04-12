@@ -130,8 +130,10 @@ Show
 Hide
   BaseType == "Gold"
   AreaLevel >= 70
-  StackSize <= 500
-  SetTextColor 255 255 255
+  StackSize <= 100
+  SetTextColor 180 180 180
+  SetBackgroundColor 255 255 255 0
+
   SetFontSize 32
 
 Show
@@ -140,7 +142,7 @@ Show
   BaseType == "Gold"
   PlayEffect White Temp
   MinimapIcon 2 White Cross
-  SetTextColor 255 255 255
+  SetTextColor 180 180 180
   SetBorderColor 255 255 255
   SetFontSize 32
 
@@ -150,7 +152,7 @@ Show
   StackSize >= 500
   BaseType == "Gold"
   MinimapIcon 2 White Cross
-  SetTextColor 255 255 255
+  SetTextColor 180 180 180
   SetBackgroundColor 255 255 255 0
   SetFontSize 32
 
@@ -360,6 +362,7 @@ Show
   PlayEffect Brown
   MinimapIcon 1 Brown Triangle
   SetFontSize 40
+
 
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
@@ -846,20 +849,20 @@ Show
 #------------------------------------------------------------------------------
 
 Hide
-  Rarity < Magic
+  Rarity == Normal
   Sockets == 0
   Quality == 0
-  AreaLevel >= 10
+  AreaLevel >= 50
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   SetFontSize 32
-  Continue
 
-
-Show
-  Rarity >= Magic
-  Sockets > 0
+Hide
+  Rarity == Magic
+  Sockets == 0
+  Quality == 0
+  AreaLevel >= 50
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0
