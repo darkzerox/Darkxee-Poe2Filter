@@ -131,12 +131,13 @@
 }
 
 [data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(255 255 255);
+    color: rgb(180 180 180);
+    background-color: rgb(255 255 255);
     font-size: 32px;
 }
 
 [data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(255 255 255);
+    color: rgb(180 180 180);
     border-color: rgb(255 255 255);
     font-size: 32px;
 }
@@ -146,7 +147,7 @@
 }
 
 [data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(255 255 255);
+    color: rgb(180 180 180);
     background-color: rgb(255 255 255);
     font-size: 32px;
 }
