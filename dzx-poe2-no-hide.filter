@@ -234,22 +234,12 @@ Show
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
-
-
-Show
-  Sockets > 0
-  AreaLevel >= 60
-  Rarity Normal Magic
-
-Show
-  Quality > 0
-  AreaLevel >= 60
-  Rarity Normal Magic
-
 Show
   Sockets > 0
   Rarity Normal Magic
-  SetBorderColor 72 72 72
+  SetFontSize 32
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
   SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 
@@ -257,7 +247,8 @@ Show
 Show
   Quality > 0
   Rarity Normal Magic
-  SetBorderColor 72 72 72
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
   SetFontSize 32
   CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
 

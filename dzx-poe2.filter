@@ -234,18 +234,6 @@ Show
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
-
-
-# Hide
-#   Sockets > 0
-#   AreaLevel >= 60
-#   Rarity Normal Magic
-
-# Hide
-#   Quality > 0
-#   AreaLevel >= 60
-#   Rarity Normal Magic
-
 Show
   Sockets > 0
   Rarity Normal Magic
