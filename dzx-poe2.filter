@@ -127,6 +127,17 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+# Hide
+#   BaseType == "Gold"
+#   AreaLevel >= 70
+#   StackSize <= 100
+#   SetTextColor 180 180 180
+#   SetBackgroundColor 255 255 255 0
+#   SetFontSize 32
+
+>>>>>>> df0d01083c6cf0131b326c3905d38e769a85ea9f
 Show
   AreaLevel >= 70
   StackSize >= 1000
