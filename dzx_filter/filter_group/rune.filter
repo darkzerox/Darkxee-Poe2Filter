@@ -1,9 +1,9 @@
 #------------------------------------------------------------------------------
-# Rune and Charms
+# Rune
 #------------------------------------------------------------------------------
 
 Show 
-  BaseType " Rune" " Charm"
+  BaseType " Rune"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
   SetFontSize 32

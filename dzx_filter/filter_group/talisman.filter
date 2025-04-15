@@ -1,0 +1,5 @@
+Show
+    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Wolf Talisman" "Stag Talisman" "Boar Talisman" "Bear Talisman" "Ox Talisman" "Rabbit Talisman" "Fox Talisman"
+    SetTextColor 30 233 148
+    PlayEffect Cyan Temp
+    SetFontSize 32
