@@ -2,11 +2,6 @@
 # Waystones
 #------------------------------------------------------------------------------
 
-Hide
-  WaystoneTier <= 10
-  AreaLevel >= 70
-  BaseType "Waystone"
-
 
 Show
   BaseType "Waystone"

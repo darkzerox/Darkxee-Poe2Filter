@@ -124,14 +124,13 @@ Show
 # Gold
 #------------------------------------------------------------------------------
 
-Show
-  BaseType == "Gold"
-  AreaLevel >= 70
-  StackSize <= 100
-  SetTextColor 180 180 180
-  SetBackgroundColor 255 255 255 0
-
-  SetFontSize 32
+# Hide
+#   BaseType == "Gold"
+#   AreaLevel >= 70
+#   StackSize <= 100
+#   SetTextColor 180 180 180
+#   SetBackgroundColor 255 255 255 0
+#   SetFontSize 32
 
 Show
   AreaLevel >= 70
@@ -532,11 +531,6 @@ Show
 #------------------------------------------------------------------------------
 # Waystones
 #------------------------------------------------------------------------------
-
-Show
-  WaystoneTier <= 10
-  AreaLevel >= 70
-  BaseType "Waystone"
 
 
 Show
