@@ -4,7 +4,7 @@
 
 Show 
   Rarity Normal
-  BaseType == "Stellar Amulet"
+  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring"
   SetBorderColor 233 75 75
   SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
@@ -35,11 +35,21 @@ Show
   PlayAlertSound 14 200
 
 
+ 
+Show
+	Rarity Normal
+	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear" "Grand spear" "Striking Spear" "Spiked Spear" "Massive Spear" "Helix spear"
+	ItemLevel >= 81
+	SetTextColor 160 255 71
+	SetBackgroundColor 10 10 10 200
+	SetFontSize 37
+	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 16 200
 
 Show
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
-	ItemLevel >= 81
+	BaseType == "Seaglass Spear" "Grand spear"
+	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
 	SetFontSize 37
@@ -374,29 +384,20 @@ Show
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
-
-
-Hide
-  Sockets > 0
-  AreaLevel >= 60
-  Rarity Normal Magic
-
-Hide
-  Quality > 0
-  AreaLevel >= 60
-  Rarity Normal Magic
-
 Show
   Sockets > 0
   Rarity Normal Magic
-  SetBorderColor 72 72 72
+  SetFontSize 32
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
   SetFontSize 32
 
 
 Show
   Quality > 0
   Rarity Normal Magic
-  SetBorderColor 72 72 72
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
   SetFontSize 32
 
 
@@ -521,14 +522,20 @@ Show
   PlayEffect Cyan
 
 #------------------------------------------------------------------------------
-# Rune and Charms
+# Rune
 #------------------------------------------------------------------------------
 
 Show 
-  BaseType " Rune" " Charm"
+  BaseType " Rune"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
   SetFontSize 32
+
+Show
+    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Wolf Talisman" "Stag Talisman" "Boar Talisman" "Bear Talisman" "Ox Talisman" "Rabbit Talisman" "Fox Talisman"
+    SetTextColor 30 233 148
+    PlayEffect Cyan Temp
+    SetFontSize 32
 
 #------------------------------------------------------------------------------
 # Soul Core
