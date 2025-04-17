@@ -55,7 +55,7 @@
     color: rgb(128 0 128);
 }
 
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"] {
     border-color: rgb(233 75 75);
     background-color: rgb(10 10 10);
     color: rgb(233 75 75);
@@ -86,7 +86,17 @@
     color: rgb(0 255 0);
 }
 
-[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"] {
+[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"], [data-basetype="Striking"], [data-basetype="Spear"], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Massive"], [data-basetype="Spear"], [data-basetype="Helix"], [data-basetype="spear"] {
+    color: rgb(160 255 71);
+    background-color: rgb(10 10 10);
+    font-size: 37px;
+}
+
+.minimap-icon-diamond {
+    color: rgb(255 150 0);
+}
+
+[data-basetype="=="], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
