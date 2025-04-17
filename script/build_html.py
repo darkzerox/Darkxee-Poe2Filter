@@ -561,17 +561,17 @@ def generate_html_content(filter_array):
   <summary>
     <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows" alt="Windows">
   </summary>
-  <pre><code>%userprofile%\Documents\My Games\Path of Exile 2</code></pre>
+  <p><code>%userprofile%\Documents\My Games\Path of Exile 2</code></p>
 
   <summary>
     <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="Linux">
   </summary>
-  <pre><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></pre>
+  <p><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></p>
 
   <summary>
     <img src="https://img.shields.io/badge/🎮_-PS5-blue?style=flat&logo=playstation&logoColor=white" alt="Ps5 Xbox">
   </summary>
-  <pre><code><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">PS5 XBox กดเข้าลิ๊งนี้</a> แล้วกด Follow ทั้งสองอันได้เลย</code></pre>
+  <p><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">PS5 XBox กดเข้าลิ๊งนี้</a> แล้วกด Follow ทั้งสองอันได้เลย</p>
 
     <h2>👨‍💻 สำหรับนักพัฒนา</h2>
 
