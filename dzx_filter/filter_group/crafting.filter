@@ -1,8 +1,19 @@
+ 
+Show
+	Rarity Normal
+	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear" "Grand spear" "Striking Spear" "Spiked Spear" "Massive Spear" "Helix spear"
+	ItemLevel >= 81
+	SetTextColor 160 255 71
+	SetBackgroundColor 10 10 10 200
+	SetFontSize 37
+	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 16 200
+	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100 
 
 Show
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre"
-	ItemLevel >= 81
+	BaseType == "Seaglass Spear" "Grand spear"
+	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
 	SetFontSize 37
