@@ -8,7 +8,7 @@ Show
 	SetFontSize 37
 	MinimapIcon 2 Orange Diamond
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100 
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100 
 
 Show
 	Rarity Normal
@@ -19,7 +19,7 @@ Show
 	SetFontSize 37
 	MinimapIcon 2 Orange Diamond
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
   
   
 

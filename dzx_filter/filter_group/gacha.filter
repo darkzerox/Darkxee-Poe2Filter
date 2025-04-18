@@ -12,7 +12,7 @@ Show
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
 
 
 Show 
@@ -24,7 +24,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
 
 Show 
   Rarity Normal
