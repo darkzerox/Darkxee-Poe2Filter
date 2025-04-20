@@ -1,8 +1,26 @@
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
+Hide
+  Sockets > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetFontSize 32
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
+Hide
+  Quality > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
 Show
   Sockets > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetFontSize 32
   SetTextColor 135 135 135
@@ -13,6 +31,7 @@ Show
 
 Show
   Quality > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetTextColor 135 135 135
   SetBackgroundColor 0 0 0
