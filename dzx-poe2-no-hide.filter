@@ -12,7 +12,7 @@ Show
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
 
 
 Show 
@@ -24,7 +24,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
 
 Show 
   Rarity Normal
@@ -37,7 +37,10 @@ Show
   PlayAlertSound 14 200
 
 
- 
+# --------------------------------
+# Crafting
+# --------------------------------
+
 Show
 	Rarity Normal
 	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear" "Grand spear" "Striking Spear" "Spiked Spear" "Massive Spear" "Helix spear"
@@ -47,7 +50,7 @@ Show
 	SetFontSize 37
 	MinimapIcon 2 Orange Diamond
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100 
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200 
 
 Show
 	Rarity Normal
@@ -58,7 +61,7 @@ Show
 	SetFontSize 37
 	MinimapIcon 2 Orange Diamond
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
   
   
 
@@ -247,6 +250,24 @@ Show
 #------------------------------------------------------------------------------
 Show
   Sockets > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetFontSize 32
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
+Show
+  Quality > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
+Show
+  Sockets > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetFontSize 32
   SetTextColor 135 135 135
@@ -257,6 +278,7 @@ Show
 
 Show
   Quality > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetTextColor 135 135 135
   SetBackgroundColor 0 0 0
@@ -696,7 +718,7 @@ Show
 # Currency Tier B: Exalt
 Show
   Class "Currency"
-  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb"
+  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0
