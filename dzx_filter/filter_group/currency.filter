@@ -52,7 +52,7 @@ Show
 # Currency Tier B: Exalt
 Show
   Class "Currency"
-  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb"
+  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0

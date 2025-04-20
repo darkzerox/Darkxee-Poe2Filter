@@ -12,7 +12,7 @@ Show
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
-  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
 
 
 Show 
@@ -24,7 +24,7 @@ Show
   SetFontSize 37
   MinimapIcon 2 Orange Diamond
   PlayAlertSound 16 200
-  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
 
 Show 
   Rarity Normal
@@ -245,8 +245,27 @@ Show
 #------------------------------------------------------------------------------
 # Salvagable Items
 #------------------------------------------------------------------------------
+
+Hide
+  Sockets > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetFontSize 32
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
+Hide
+  Quality > 0
+  AreaLevel >= 75
+  Rarity Normal Magic
+  SetTextColor 135 135 135
+  SetBackgroundColor 0 0 0
+  SetFontSize 32
+
 Show
   Sockets > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetFontSize 32
   SetTextColor 135 135 135
@@ -257,6 +276,7 @@ Show
 
 Show
   Quality > 0
+  AreaLevel < 79
   Rarity Normal Magic
   SetTextColor 135 135 135
   SetBackgroundColor 0 0 0
