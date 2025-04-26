@@ -51,7 +51,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Seaglass Spear" "Grand spear"
+	BaseType == "Seaglass Spear" "Grand spear" "Sacred Focus"
 	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200

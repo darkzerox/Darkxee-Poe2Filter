@@ -96,7 +96,7 @@
     color: rgb(255 150 0);
 }
 
-[data-basetype="=="], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"] {
+[data-basetype="=="], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"], [data-basetype="Sacred"], [data-basetype="Focus"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;

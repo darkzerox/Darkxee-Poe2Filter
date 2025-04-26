@@ -54,7 +54,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Seaglass Spear" "Grand spear"
+	BaseType == "Seaglass Spear" "Grand spear" "Sacred Focus"
 	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
@@ -315,7 +315,13 @@ Hide
 Hide
   BaseType "Orb of Augmentation" "Orb of Transmutation"
 
+Hide
+  Sockets > 0
+  Rarity Normal Magic
 
+Hide
+  Quality > 0
+  Rarity Normal Magic
 
 #------------------------------------------------------------------------------
 # Uncut Gems
@@ -392,6 +398,7 @@ Show
 #------------------------------------------------------------------------------
 Hide
   Sockets > 0
+  AreaLevel >= 75
   Rarity Normal Magic
   SetFontSize 32
   SetTextColor 135 135 135
@@ -400,6 +407,7 @@ Hide
 
 Hide
   Quality > 0
+  AreaLevel >= 75
   Rarity Normal Magic
   SetTextColor 135 135 135
   SetBackgroundColor 0 0 0
