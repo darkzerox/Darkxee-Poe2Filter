@@ -177,26 +177,30 @@
     color: rgb(255 0 0);
 }
 
-[data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
     color: rgb(159 131 131);
     border-color: rgb(159 131 131);
-    font-size: 37px;
+    font-size: 35px;
 }
 
 .minimap-icon-triangle {
     color: rgb(160 110 60);
 }
 
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
-    color: rgb(159 131 131);
-    border-color: rgb(159 131 131);
-    font-size: 32px;
+[data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
+    color: rgb(164 119 35);
+    border-color: rgb(164 119 35);
+    font-size: 35px;
 }
 
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
-    color: rgb(159 131 131);
-    border-color: rgb(159 131 131);
-    font-size: 40px;
+.minimap-icon-triangle {
+    color: rgb(160 110 60);
+}
+
+[data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
+    color: rgb(98 106 11);
+    border-color: rgb(98 106 11);
+    font-size: 35px;
 }
 
 .minimap-icon-triangle {
