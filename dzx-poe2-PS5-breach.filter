@@ -364,8 +364,8 @@ Show
 
 Show
   BaseType  "Uncut Support Gem"
-  SetTextColor 98 106 11
-  SetBorderColor 98 106 11
+  SetTextColor 168 179 49
+  SetBorderColor 168 179 49
   PlayAlertSound 2 200
   MinimapIcon 1 Brown Triangle
   SetFontSize 35

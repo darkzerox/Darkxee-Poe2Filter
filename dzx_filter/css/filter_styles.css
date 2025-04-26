@@ -198,8 +198,8 @@
 }
 
 [data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
-    color: rgb(98 106 11);
-    border-color: rgb(98 106 11);
+    color: rgb(168 179 49);
+    border-color: rgb(168 179 49);
     font-size: 35px;
 }
 
