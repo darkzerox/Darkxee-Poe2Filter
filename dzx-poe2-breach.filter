@@ -307,10 +307,7 @@ Show
 
 Hide
   Rarity Rare
-  AreaLevel > 70
-
-Hide # Hides gold but can be found on the ground when walking past.
-   BaseType "Gold"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
 
 Hide 
   BaseType " Rune" " Charm"
@@ -395,7 +392,6 @@ Show
 #------------------------------------------------------------------------------
 Hide
   Sockets > 0
-  AreaLevel >= 75
   Rarity Normal Magic
   SetFontSize 32
   SetTextColor 135 135 135
@@ -404,7 +400,6 @@ Hide
 
 Hide
   Quality > 0
-  AreaLevel >= 75
   Rarity Normal Magic
   SetTextColor 135 135 135
   SetBackgroundColor 0 0 0

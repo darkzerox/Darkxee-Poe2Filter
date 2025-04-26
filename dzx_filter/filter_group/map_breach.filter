@@ -1,9 +1,6 @@
 Hide
   Rarity Rare
-  AreaLevel > 70
-
-Hide # Hides gold but can be found on the ground when walking past.
-   BaseType "Gold"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
 
 Hide 
   BaseType " Rune" " Charm"
@@ -11,3 +8,10 @@ Hide
 Hide
   BaseType "Orb of Augmentation" "Orb of Transmutation"
 
+Hide
+  Sockets > 0
+  Rarity Normal Magic
+
+Hide
+  Quality > 0
+  Rarity Normal Magic
