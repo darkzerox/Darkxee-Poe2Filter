@@ -502,7 +502,7 @@
     color: rgb(255 0 0);
 }
 
-.currency, [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
+.currency, [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
     color: rgb(255 193 48);
     border-color: rgb(30 58 51);
     background-color: rgb(30 58 51);
@@ -512,7 +512,7 @@
     color: rgb(255 255 0);
 }
 
-.currency, [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Fracturing"], [data-basetype="Orb"] {
+[data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Fracturing"], [data-basetype="Orb"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Reaver"], [data-basetype="Catalyst"], [data-basetype="Esh's"], [data-basetype="Catalyst"], [data-basetype="Chance"], [data-basetype="Shard"] {
     color: rgb(218 145 255);
     font-size: 40px;
     border-color: rgb(0 0 0);
@@ -544,7 +544,7 @@
     color: rgb(255 255 255);
 }
 
-.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"], [data-basetype="Chance"], [data-basetype="Shard"] {
+.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);

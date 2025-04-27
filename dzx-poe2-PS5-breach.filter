@@ -708,7 +708,7 @@ Show
 # Currency Tier A: Gemcutter, Annullment
 Show
   Class "Currency"
-  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  BaseType  "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 193 48
   SetBorderColor  30 58 51
   SetBackgroundColor 30 58 51
@@ -717,8 +717,7 @@ Show
 
 # Currency Tier B: Exalt
 Show
-  Class "Currency"
-  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb"
+  BaseType "Orb of Annulment" "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb" "Orb of Chance" "Reaver Catalyst" "Esh's Catalyst"  "Chance Shard"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0
@@ -750,7 +749,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
   Class "Currency"
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
