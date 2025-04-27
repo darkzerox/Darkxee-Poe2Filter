@@ -51,7 +51,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Seaglass Spear" "Grand spear"
+	BaseType == "Seaglass Spear" "Grand spear" "Sacred Focus"
 	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
@@ -198,35 +198,31 @@ Show
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
+ 
 
-# Always make Spirit gems pop
 Show
-  BaseType "Uncut Spirit Gem" "Uncut Spirit Gem"
+  BaseType "Uncut Skill Gem" 
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
   PlayAlertSound 2 200
-  PlayEffect Brown Temp
   MinimapIcon 1 Brown Triangle
-  SetFontSize 37
+  SetFontSize 35
 
-# Gems up to level 18 in maps don't get a special highlight
 Show
-  ItemLevel <= 18
-  BaseType "Uncut Skill Gem"
-  SetTextColor 159 131 131
-  SetBorderColor 159 131 131
-  SetFontSize 32
-
-# Level 19 gems and up in maps get a special highlight
-Show
-  BaseType "Uncut Skill Gem" "Uncut Support Gem"
-  SetTextColor 159 131 131
-  SetBorderColor 159 131 131
+  BaseType "Uncut Spirit Gem"  
+  SetTextColor 164 119 35
+  SetBorderColor 164 119 35
   PlayAlertSound 2 200
-  PlayEffect Brown
   MinimapIcon 1 Brown Triangle
-  SetFontSize 40
+  SetFontSize 35
 
+Show
+  BaseType  "Uncut Support Gem"
+  SetTextColor 168 179 49
+  SetBorderColor 168 179 49
+  PlayAlertSound 2 200
+  MinimapIcon 1 Brown Triangle
+  SetFontSize 35
 
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
@@ -694,7 +690,7 @@ Show
 # Currency Tier A: Gemcutter, Annullment
 Show
   Class "Currency"
-  BaseType "Orb of Annulment" "Orb of Chance" "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  BaseType  "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
   SetTextColor 255 193 48
   SetBorderColor  30 58 51
   SetBackgroundColor 30 58 51
@@ -703,8 +699,7 @@ Show
 
 # Currency Tier B: Exalt
 Show
-  Class "Currency"
-  BaseType "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb"
+  BaseType "Orb of Annulment" "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb" "Orb of Chance" "Reaver Catalyst" "Esh's Catalyst"  "Chance Shard"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0
@@ -736,7 +731,7 @@ Show
 # Currency Tier B: Regal, Vaal ...
 Show
   Class "Currency"
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Chance Shard"
+  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
