@@ -66,3 +66,14 @@ Show
   PlayEffect Brown
   MinimapIcon 1 Brown Pentagon
   SetFontSize 40
+
+
+Show
+  Class ==  "Vault Keys"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 3 200
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
+  SetFontSize 40
