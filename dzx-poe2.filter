@@ -210,8 +210,8 @@ Show
   SetTextColor 211 82 35
   SetBorderColor 211 82 35
   PlayAlertSound 6 200
-
   PlayEffect Orange
+
  
 
 Show
