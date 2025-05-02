@@ -177,6 +177,12 @@
     color: rgb(255 0 0);
 }
 
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
+    font-size: 40px;
+    color: rgb(211 82 35);
+    border-color: rgb(211 82 35);
+}
+
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
     color: rgb(159 131 131);
     border-color: rgb(159 131 131);
@@ -188,8 +194,9 @@
 }
 
 [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
-    color: rgb(164 119 35);
-    border-color: rgb(164 119 35);
+    color: rgb(218 139 35);
+    border-color: rgb(218 139 35);
+    background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
@@ -200,6 +207,7 @@
 [data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
     color: rgb(168 179 49);
     border-color: rgb(168 179 49);
+    background-color: rgb(0 0 0);
     font-size: 35px;
 }
 
