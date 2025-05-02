@@ -212,7 +212,14 @@ Show
   PlayAlertSound 6 200
 
   PlayEffect Orange
- 
+
+Show
+  BaseType "Uncut Skill Gem" 
+  AreaLevel >= 75
+  ItemLevel >= 16
+  ItemLevel <= 18
+  SetTextColor 255 255 255 163
+  SetBorderColor 104 104 104
 
 Show
   BaseType "Uncut Skill Gem" 
