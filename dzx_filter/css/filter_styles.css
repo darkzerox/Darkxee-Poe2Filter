@@ -184,6 +184,11 @@
 }
 
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
+    color: rgb(255 255 255);
+    border-color: rgb(104 104 104);
+}
+
+[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
     color: rgb(159 131 131);
     border-color: rgb(159 131 131);
     font-size: 35px;

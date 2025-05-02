@@ -219,6 +219,7 @@ Show
   ItemLevel <= 18
   SetTextColor 255 255 255 163
   SetBorderColor 104 104 104
+ 
 
 Show
   BaseType "Uncut Skill Gem" 
