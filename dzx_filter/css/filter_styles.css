@@ -333,6 +333,17 @@
     color: rgb(160 110 60);
 }
 
+.==, .vault, .keys {
+    color: rgb(177 90 18);
+    border-color: rgb(177 90 18);
+    background-color: rgb(24 39 71);
+    font-size: 40px;
+}
+
+.minimap-icon-square {
+    color: rgb(160 110 60);
+}
+
 [data-basetype="=="], [data-basetype="Amphora"], [data-basetype="Relic"], [data-basetype="Coffer"], [data-basetype="Relic"], [data-basetype="Vase"], [data-basetype="Relic"], [data-basetype="Seal"], [data-basetype="Relic"], [data-basetype="Tapestry"], [data-basetype="Relic"], [data-basetype="Incense"], [data-basetype="Relic"] {
     font-size: 45px;
     color: rgb(213 77 77);
