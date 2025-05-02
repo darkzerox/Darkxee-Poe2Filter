@@ -25,20 +25,32 @@ Show
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
+
+Show
+  ItemLevel = 19
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 40
+  SetTextColor 211 82 35
+  SetBorderColor 211 82 35
+  PlayAlertSound 6 200
+  PlayEffect Orange
+
  
 
 Show
   BaseType "Uncut Skill Gem" 
   SetTextColor 159 131 131
   SetBorderColor 159 131 131
+
   PlayAlertSound 2 200
   MinimapIcon 1 Brown Triangle
   SetFontSize 35
 
 Show
   BaseType "Uncut Spirit Gem"  
-  SetTextColor 164 119 35
-  SetBorderColor 164 119 35
+  SetTextColor 218 139 35
+  SetBorderColor 218 139 35
+  SetBackgroundColor 0 0 0 255
   PlayAlertSound 2 200
   MinimapIcon 1 Brown Triangle
   SetFontSize 35
@@ -47,6 +59,7 @@ Show
   BaseType  "Uncut Support Gem"
   SetTextColor 168 179 49
   SetBorderColor 168 179 49
+  SetBackgroundColor 0 0 0 255
   PlayAlertSound 2 200
   MinimapIcon 1 Brown Triangle
   SetFontSize 35
