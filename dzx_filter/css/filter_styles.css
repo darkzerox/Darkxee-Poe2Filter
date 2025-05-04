@@ -86,7 +86,7 @@
     color: rgb(0 255 0);
 }
 
-[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"], [data-basetype="Striking"], [data-basetype="Spear"], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Massive"], [data-basetype="Spear"], [data-basetype="Helix"], [data-basetype="spear"] {
+[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Grand"], [data-basetype="spear"], [data-basetype="Striking"], [data-basetype="Spear"], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Massive"], [data-basetype="Spear"], [data-basetype="Helix"], [data-basetype="spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Vaal"], [data-basetype="Gloves"], [data-basetype="Vile"], [data-basetype="robe"], [data-basetype="SLeek"], [data-basetype="jacket"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
