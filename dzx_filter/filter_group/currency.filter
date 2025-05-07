@@ -22,7 +22,7 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  BaseType  "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
