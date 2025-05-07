@@ -625,6 +625,7 @@ Show
   SetBackgroundColor 6 15 43
   SetFontSize 35
 
+
 Show
   WaystoneTier >= 5
   WaystoneTier <= 10
@@ -638,12 +639,13 @@ Show
 
 Show
   WaystoneTier >= 10
-  WaystoneTier <= 13
+  WaystoneTier <= 12
   BaseType "Waystone"
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
   SetFontSize 32
+
 
 
 Show
