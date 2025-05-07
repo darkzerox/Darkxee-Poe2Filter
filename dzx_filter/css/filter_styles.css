@@ -448,6 +448,13 @@
 }
 
 [data-basetype="Waystone"] {
+    color: rgb(184 31 77);
+    border-color: rgb(4 10 29);
+    background-color: rgb(6 15 43);
+    font-size: 35px;
+}
+
+[data-basetype="Waystone"] {
     color: rgb(201 218 191);
     border-color: rgb(201 218 191);
     background-color: rgb(33 33 33);
