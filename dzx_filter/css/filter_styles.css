@@ -669,7 +669,7 @@
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     background-color: rgb(0 0 0);
     color: rgb(255 209 94);
-    font-size: 38px;
+    font-size: 40px;
 }
 
 .minimap-icon-cross {
@@ -689,7 +689,7 @@
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
     color: rgb(101 103 222);
     background-color: rgb(0 0 0);
-    font-size: 38px;
+    font-size: 40px;
 }
 
 .body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
