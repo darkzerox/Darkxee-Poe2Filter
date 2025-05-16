@@ -41,7 +41,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear" "Grand spear" "Striking Spear" "Spiked Spear" "Massive Spear" "Helix spear"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear"  "Striking Spear" "Spiked Spear" "Massive Spear" "Falconer's Jacket" "Vaal Gloves" "Vile robe" "SLeek jacket"
 	ItemLevel >= 81
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
@@ -51,7 +51,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Seaglass Spear" "Grand spear" "Sacred Focus"
+	BaseType == "Seaglass Spear" "Sacred Focus"
 	ItemLevel >= 79
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
@@ -564,11 +564,35 @@ Show
   PlayEffect Cyan Temp
   SetFontSize 32
 
+# --------------------------------
+# Talisman
+# --------------------------------
+
+
 Show
-    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Wolf Talisman" "Stag Talisman" "Boar Talisman" "Bear Talisman" "Ox Talisman" "Rabbit Talisman" "Fox Talisman"
+    BaseType "Rabbit Talisman" "Fox Talisman"
+    SetTextColor 232 231 171
+    SetBorderColor 232 37 97
+    SetBackgroundColor 232 37 97
+    SetFontSize 45
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+Show
+    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Boar Talisman" "Bear Talisman" 
     SetTextColor 30 233 148
     PlayEffect Cyan Temp
     SetFontSize 32
+
+Show
+    BaseType == "Stag Talisman" "Ox Talisman" "Wolf Talisman" 
+    SetTextColor 170 70 201
+    SetBorderColor 0 0 0
+    SetBackgroundColor 0 0 0
+    PlayEffect Cyan Temp
+    PlayAlertSound 1 20
+    SetFontSize 40
+
 
 #------------------------------------------------------------------------------
 # Soul Core
@@ -594,6 +618,15 @@ Show
   Continue
 
 Show
+  WaystoneTier == 13
+  BaseType "Waystone"
+  SetTextColor 184 31 77
+  SetBorderColor 4 10 29
+  SetBackgroundColor 6 15 43
+  SetFontSize 35
+
+
+Show
   WaystoneTier >= 5
   WaystoneTier <= 10
   BaseType "Waystone"
@@ -606,12 +639,13 @@ Show
 
 Show
   WaystoneTier >= 10
-  WaystoneTier <= 13
+  WaystoneTier <= 12
   BaseType "Waystone"
   SetTextColor 156 169 134
   SetBorderColor 156 169 134
   SetBackgroundColor 10 10 10
   SetFontSize 32
+
 
 
 Show
@@ -702,7 +736,7 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  BaseType  "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -828,7 +862,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia"
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia" "Golden Charm"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
@@ -854,6 +888,15 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  UnidentifiedItemTier >= 4
+  SetBackgroundColor 0 0 0 203
+  SetTextColor 255 209 94
+  SetFontSize 40
+  MinimapIcon 2 Yellow Cross
+
+Show
+  Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
@@ -863,6 +906,16 @@ Show
 #------------------------------------------------------------------------------
 # Magic Items Group
 #------------------------------------------------------------------------------
+
+
+Show
+  Rarity >= Magic
+  UnidentifiedItemTier >= 4
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  SetTextColor 101 103 222
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 40
+
 
 Show
   Rarity == Normal
