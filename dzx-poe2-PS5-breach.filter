@@ -903,14 +903,13 @@ Show
 # Rare Items Group
 #------------------------------------------------------------------------------
 
-Hide
+Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
-  UnidentifiedItemTier < 4
-  AreaLevel >= 80 
-  SetBackgroundColor 0 0 0 255
+  UnidentifiedItemTier >= 4
+  SetBackgroundColor 0 0 0 203
   SetTextColor 255 209 94
-  SetFontSize 32
+  SetFontSize 38
   MinimapIcon 2 Yellow Cross
 
 Show
@@ -925,6 +924,16 @@ Show
 #------------------------------------------------------------------------------
 # Magic Items Group
 #------------------------------------------------------------------------------
+
+
+Show
+  Rarity >= Magic
+  UnidentifiedItemTier >= 4
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  SetTextColor 101 103 222
+  SetBackgroundColor 0 0 0 125
+  SetFontSize 38
+
 
 Hide
   Rarity == Normal
