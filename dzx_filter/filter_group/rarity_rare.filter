@@ -8,7 +8,7 @@ Show
   UnidentifiedItemTier >= 4
   SetBackgroundColor 0 0 0 203
   SetTextColor 255 209 94
-  SetFontSize 38
+  SetFontSize 40
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 

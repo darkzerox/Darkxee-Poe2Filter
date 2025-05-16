@@ -9,7 +9,7 @@ Show
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0 125
-  SetFontSize 38
+  SetFontSize 40
 
 
 Hide
