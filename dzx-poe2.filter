@@ -410,11 +410,21 @@ Show
   SetFontSize 40
 
 Show
-  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  BaseType "Simulacrum" 
   SetTextColor 177 90 18
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
-  PlayAlertSound 3 200
+  PlayAlertSound 12 100
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
+  SetFontSize 38
+
+Show
+  BaseType  "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 3 100
   PlayEffect Brown
   MinimapIcon 1 Brown Square
   SetFontSize 40
@@ -933,7 +943,7 @@ Show
   UnidentifiedItemTier >= 4
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0
   SetFontSize 40
 
 
@@ -963,7 +973,7 @@ Show
   Quality > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0 204
   SetFontSize 32
 
 

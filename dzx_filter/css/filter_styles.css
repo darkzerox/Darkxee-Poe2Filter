@@ -55,7 +55,7 @@
     color: rgb(128 0 128);
 }
 
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"] {
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"] {
     border-color: rgb(233 75 75);
     background-color: rgb(10 10 10);
     color: rgb(233 75 75);
@@ -291,7 +291,18 @@
     color: rgb(160 110 60);
 }
 
-[data-basetype="Simulacrum"], [data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
+[data-basetype="Simulacrum"] {
+    color: rgb(177 90 18);
+    border-color: rgb(177 90 18);
+    background-color: rgb(24 39 71);
+    font-size: 38px;
+}
+
+.minimap-icon-square {
+    color: rgb(160 110 60);
+}
+
+[data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
     color: rgb(177 90 18);
     border-color: rgb(177 90 18);
     background-color: rgb(24 39 71);
