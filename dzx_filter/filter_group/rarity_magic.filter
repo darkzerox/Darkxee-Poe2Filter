@@ -8,7 +8,7 @@ Show
   UnidentifiedItemTier >= 4
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0
   SetFontSize 40
 
 
@@ -38,6 +38,6 @@ Show
   Quality > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0 204
   SetFontSize 32
 
