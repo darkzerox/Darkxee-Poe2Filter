@@ -832,9 +832,9 @@ Show
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
   SetTextColor 201 184 224
   SetBackgroundColor 23 7 69
-  PlayEffect Purple Temp
+  PlayEffect Purple
   MinimapIcon 1 Purple Kite
-  SetFontSize 32
+  SetFontSize 35
 
 Show
   Class "Currency"
