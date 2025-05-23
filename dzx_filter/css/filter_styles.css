@@ -280,6 +280,17 @@
     color: rgb(0 255 255);
 }
 
+[data-basetype="Precursor"], [data-basetype="Tablet"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
+
+.minimap-icon-star {
+    color: rgb(255 0 0);
+}
+
 .pinnacle, .keys {
     color: rgb(177 90 18);
     border-color: rgb(177 90 18);

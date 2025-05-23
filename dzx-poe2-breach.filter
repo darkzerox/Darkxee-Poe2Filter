@@ -478,6 +478,17 @@ Show
 # Key
 #------------------------------------------------------------------------------
 
+Show 
+  BaseType "Precursor Tablet"
+  Rarity Unique
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
 Show
   Class "Pinnacle Keys"
   SetTextColor 177 90 18
