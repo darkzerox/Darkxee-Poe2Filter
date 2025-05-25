@@ -251,15 +251,17 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-Show
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 65
-  Rarity <= Magic
+# Hide
+#   BaseType "Scroll of Wisdom"
+#   AreaLevel >= 65
+#   Rarity <= Magic
 
 Show
   BaseType "Scroll of Wisdom"
-  SetFontSize 32
-  AreaLevel < 65
+  SetBackgroundColor 0 0 0 68
+  SetTextColor 255 255 255
+  SetBorderColor 0 0 0 68
+  SetFontSize 30
 
 #------------------------------------------------------------------------------
 # Salvagable Items

@@ -221,7 +221,10 @@
 }
 
 [data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
-    font-size: 32px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    border-color: rgb(0 0 0);
+    font-size: 30px;
 }
 
 .amulets {
