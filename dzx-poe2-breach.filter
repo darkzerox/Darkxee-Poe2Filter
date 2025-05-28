@@ -4,7 +4,7 @@
 
 Show 
   Rarity Normal
-  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet"
+  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
   SetBorderColor 233 75 75
   SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
