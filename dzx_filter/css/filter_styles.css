@@ -55,7 +55,7 @@
     color: rgb(128 0 128);
 }
 
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"] {
+[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     border-color: rgb(233 75 75);
     background-color: rgb(10 10 10);
     color: rgb(233 75 75);
@@ -221,7 +221,10 @@
 }
 
 [data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
-    font-size: 32px;
+    background-color: rgb(0 0 0);
+    color: rgb(255 255 255);
+    border-color: rgb(0 0 0);
+    font-size: 30px;
 }
 
 .amulets {
@@ -280,6 +283,17 @@
     color: rgb(0 255 255);
 }
 
+[data-basetype="Precursor"], [data-basetype="Tablet"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
+
+.minimap-icon-star {
+    color: rgb(255 0 0);
+}
+
 .pinnacle, .keys {
     color: rgb(177 90 18);
     border-color: rgb(177 90 18);
@@ -291,7 +305,18 @@
     color: rgb(160 110 60);
 }
 
-[data-basetype="Simulacrum"], [data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
+[data-basetype="Simulacrum"] {
+    color: rgb(177 90 18);
+    border-color: rgb(177 90 18);
+    background-color: rgb(24 39 71);
+    font-size: 38px;
+}
+
+.minimap-icon-square {
+    color: rgb(160 110 60);
+}
+
+[data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
     color: rgb(177 90 18);
     border-color: rgb(177 90 18);
     background-color: rgb(24 39 71);
@@ -421,6 +446,18 @@
 
 .minimap-icon-diamond {
     color: rgb(128 0 128);
+}
+
+[data-basetype="=="], [data-basetype="Atmohua's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Retreat"], [data-basetype="Cholotl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="War"], [data-basetype="Citaqualotl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Foulness"], [data-basetype="Courtesan"], [data-basetype="Mannan's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Cruelty"], [data-basetype="Craiceann's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Recovery"], [data-basetype="Craiceann's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Warding"], [data-basetype="Estazunti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Convalescence"], [data-basetype="Farrul's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Grace"], [data-basetype="Farrul's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="the"], [data-basetype="Hunt"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Agony"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Draining"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Spinning"], [data-basetype="Guatelitzi's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Endurance"], [data-basetype="Hayoxi's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Heatproofing"], [data-basetype="Lady"], [data-basetype="Hestra's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Winter"], [data-basetype="Opiloti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Assault"], [data-basetype="Ox"], [data-basetype="Talisman"], [data-basetype="Quipolatl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Flow"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Erosion"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Memory"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="the"], [data-basetype="Sky"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Atmohua"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Citaqualotl"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Opiloti"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Quipolatl"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Tacati"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Xopec"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Zantipi"], [data-basetype="Tacati's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Affliction"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Eeshta"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Egrin"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Grold"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Maxarius"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Sirrius"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Thruldana"], [data-basetype="Thane"], [data-basetype="Girt's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Wildness"], [data-basetype="Thane"], [data-basetype="Grannell's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Mastery"], [data-basetype="Thane"], [data-basetype="Leld's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Spring"], [data-basetype="Thane"], [data-basetype="Myrk's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Summer"], [data-basetype="The"], [data-basetype="Greatwolf's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Claws"], [data-basetype="The"], [data-basetype="Greatwolf's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Willpower"], [data-basetype="Topotante's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Dampening"], [data-basetype="Tzamoto's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Ferocity"], [data-basetype="Uromoti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Attenuation"], [data-basetype="Xipocado's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Dominion"], [data-basetype="Xopec's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Power"], [data-basetype="Zalatl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Insulation"] {
+    color: rgb(13 228 217);
+    border-color: rgb(5 55 101);
+    background-color: rgb(5 46 84);
+    font-size: 38px;
+}
+
+[data-basetype="=="], [data-basetype="Greater"], [data-basetype="Desert"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Glacial"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Iron"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Alacrity"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Leadership"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Nobility"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Tithing"], [data-basetype="Greater"], [data-basetype="Storm"], [data-basetype="Rune"] {
+    color: rgb(30 233 148);
+    font-size: 34px;
 }
 
 [data-basetype="Rune"] {
@@ -606,7 +643,7 @@
 .currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
     color: rgb(201 184 224);
     background-color: rgb(23 7 69);
-    font-size: 32px;
+    font-size: 35px;
 }
 
 .minimap-icon-kite {
@@ -650,7 +687,7 @@
     color: rgb(255 255 255);
 }
 
-[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Diamond"], [data-basetype="Silk"], [data-basetype="Robe"], [data-basetype="Chain"], [data-basetype="Tiara"], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Grand"], [data-basetype="Regalia"], [data-basetype="Golden"], [data-basetype="Charm"] {
+[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Diamond"], [data-basetype="Silk"], [data-basetype="Robe"], [data-basetype="Chain"], [data-basetype="Tiara"], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Grand"], [data-basetype="Regalia"], [data-basetype="Incense"], [data-basetype="Relic"], [data-basetype="Vase"], [data-basetype="Relic"], [data-basetype="Ritual"], [data-basetype="Precursor"], [data-basetype="Tablet"], [data-basetype="Stone"], [data-basetype="Charm"], [data-basetype="Thawing"], [data-basetype="Charm"], [data-basetype="Golden"], [data-basetype="Charm"], [data-basetype="Silver"], [data-basetype="Charm"], [data-basetype="Garment"], [data-basetype="Blacksteel"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Tribal"], [data-basetype="Mask"], [data-basetype="Ornate"], [data-basetype="Gauntlets"] {
     font-size: 45px;
     color: rgb(238 238 238);
     border-color: rgb(53 13 13);

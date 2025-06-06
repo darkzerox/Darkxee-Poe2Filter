@@ -4,7 +4,7 @@
 
 Show 
   Rarity Normal
-  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring"
+  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
   SetBorderColor 233 75 75
   SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
@@ -251,15 +251,17 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-Hide
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 65
-  Rarity <= Magic
+# Hide
+#   BaseType "Scroll of Wisdom"
+#   AreaLevel >= 65
+#   Rarity <= Magic
 
 Show
   BaseType "Scroll of Wisdom"
-  SetFontSize 32
-  AreaLevel < 65
+  SetBackgroundColor 0 0 0 68
+  SetTextColor 255 255 255
+  SetBorderColor 0 0 0 68
+  SetFontSize 30
 
 #------------------------------------------------------------------------------
 # Salvagable Items
@@ -399,6 +401,17 @@ Show
 # Key
 #------------------------------------------------------------------------------
 
+Show 
+  BaseType "Precursor Tablet"
+  Rarity Unique
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
 Show
   Class "Pinnacle Keys"
   SetTextColor 177 90 18
@@ -410,11 +423,21 @@ Show
   SetFontSize 40
 
 Show
-  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  BaseType "Simulacrum" 
   SetTextColor 177 90 18
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
-  PlayAlertSound 3 200
+  PlayAlertSound 12 100
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
+  SetFontSize 38
+
+Show
+  BaseType  "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 3 100
   PlayEffect Brown
   MinimapIcon 1 Brown Square
   SetFontSize 40
@@ -566,6 +589,20 @@ Show
 #------------------------------------------------------------------------------
 # Rune
 #------------------------------------------------------------------------------
+Show
+  BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Talisman" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Sirrius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
+  SetTextColor 13 228 217
+  SetBorderColor 5 55 101
+  SetBackgroundColor 5 46 84
+  PlayEffect Green
+  SetFontSize 38
+
+
+Show
+  BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Iron Rune" "Greater Rune of Alacrity" "Greater Rune of Leadership" "Greater Rune of Nobility" "Greater Rune of Tithing" "Greater Storm Rune"
+  SetTextColor 30 233 148
+  PlayEffect Green
+  SetFontSize 34
 
 Show 
   BaseType " Rune"
@@ -822,9 +859,9 @@ Show
   BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
   SetTextColor 201 184 224
   SetBackgroundColor 23 7 69
-  PlayEffect Purple Temp
+  PlayEffect Purple
   MinimapIcon 1 Purple Kite
-  SetFontSize 32
+  SetFontSize 35
 
 Show
   Class "Currency"
@@ -878,7 +915,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia" "Golden Charm"
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia"  "Incense Relic" "Vase Relic" "Ritual Precursor Tablet" "Stone Charm" "Thawing Charm" "Golden Charm" "Silver Charm" "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
@@ -906,7 +943,7 @@ Show
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
-  UnidentifiedItemTier >= 4
+  UnidentifiedItemTier >= 5
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
   SetFontSize 40
@@ -933,7 +970,7 @@ Show
   UnidentifiedItemTier >= 4
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0
   SetFontSize 40
 
 
@@ -963,7 +1000,7 @@ Show
   Quality > 0
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
   SetTextColor 101 103 222
-  SetBackgroundColor 0 0 0 125
+  SetBackgroundColor 0 0 0 204
   SetFontSize 32
 
 

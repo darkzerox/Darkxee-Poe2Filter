@@ -5,7 +5,7 @@
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
-  UnidentifiedItemTier >= 4
+  UnidentifiedItemTier >= 5
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
   SetFontSize 40

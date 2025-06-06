@@ -2,6 +2,17 @@
 # Key
 #------------------------------------------------------------------------------
 
+Show 
+  BaseType "Precursor Tablet"
+  Rarity Unique
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
 Show
   Class "Pinnacle Keys"
   SetTextColor 177 90 18
@@ -13,11 +24,21 @@ Show
   SetFontSize 40
 
 Show
-  BaseType "Simulacrum" "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  BaseType "Simulacrum" 
   SetTextColor 177 90 18
   SetBorderColor 177 90 18
   SetBackgroundColor 24 39 71
-  PlayAlertSound 3 200
+  PlayAlertSound 12 100
+  PlayEffect Brown
+  MinimapIcon 1 Brown Square
+  SetFontSize 38
+
+Show
+  BaseType  "Breachstone" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook" "Test of"
+  SetTextColor 177 90 18
+  SetBorderColor 177 90 18
+  SetBackgroundColor 24 39 71
+  PlayAlertSound 3 100
   PlayEffect Brown
   MinimapIcon 1 Brown Square
   SetFontSize 40
