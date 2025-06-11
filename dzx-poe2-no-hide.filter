@@ -915,7 +915,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Chain Tiara" "Shrine Sceptre" "Grand Regalia"  "Incense Relic" "Vase Relic" "Ritual Precursor Tablet" "Stone Charm" "Thawing Charm" "Golden Charm" "Silver Charm" "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets"
+  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic" "Vase Relic" "Ritual Precursor Tablet" "Stone Charm" "Thawing Charm" "Golden Charm" "Silver Charm" "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
