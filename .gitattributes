@@ -4,7 +4,7 @@
 # Ignore everything except latest release
 * export-ignore
 
-releases/* export-ignore
+!releases export-ignore
 
 # Keep essential files for release
 !config/
