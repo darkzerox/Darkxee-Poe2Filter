@@ -1,6 +1,6 @@
 {
   "github_repo": "your-username/dzx-filter-poe2",
-  "current_version": "1.0.14",
+  "current_version": "1.0.15",
   "auto_update": true,
   "backup_enabled": true,
   "poe2_paths": [

@@ -4,11 +4,7 @@
 # Ignore everything except latest release
 * export-ignore
 
-# Keep only the latest release folder (dynamic)
-!releases/
 releases/* export-ignore
-!releases/v*/
-!releases/v*/**/*
 
 # Keep essential files for release
 !config/
