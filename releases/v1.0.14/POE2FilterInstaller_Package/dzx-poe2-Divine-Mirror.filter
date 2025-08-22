@@ -1,0 +1,32 @@
+Show
+    Class "Currency"
+    BaseType "Mirror"
+    SetTextColor 255 0 0
+    SetBorderColor 255 0 0
+    SetBackgroundColor 255 0 0
+    SetFontSize 45
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+Show
+    Class "Currency"
+    BaseType  "Divine"
+    SetTextColor 232 37 97
+    SetBorderColor 232 37 97
+    SetBackgroundColor 232 37 97
+    SetFontSize 45
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+
+Show
+    BaseType "Orb of Annulment" "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb" "Orb of Chance" "Reaver Catalyst" "Esh's Catalyst"  "Chance Shard"
+    SetTextColor 218 145 255
+    SetFontSize 40
+    SetBorderColor 218 145 255
+    SetBackgroundColor 218 145 255
+    PlayEffect Purple
+    MinimapIcon 1 Purple Circle
+
+Hide
+    Rarity Normal Magic Rare Unique
