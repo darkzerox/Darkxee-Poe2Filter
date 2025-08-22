@@ -11,6 +11,7 @@ import re
 import subprocess
 import shutil
 import zipfile
+import requests
 from pathlib import Path
 from datetime import datetime
 
@@ -37,6 +38,10 @@ class VersionUpdater:
 - 🚀 Performance optimizations
 
 """
+        
+        # GitHub configuration
+        self.github_token = os.getenv('GITHUB_TOKEN')
+        self.github_repo = self.get_github_repo()
     
     def get_current_version(self):
         """Get current version from config"""
@@ -324,6 +329,136 @@ class VersionUpdater:
         
         return all_consistent
     
+    def get_github_repo(self):
+        """Get GitHub repository from git remote"""
+        try:
+            result = subprocess.run(["git", "remote", "get-url", "origin"], 
+                                 capture_output=True, text=True)
+            if result.returncode == 0:
+                remote_url = result.stdout.strip()
+                # Extract repo from git@github.com:username/repo.git or https://github.com/username/repo.git
+                if 'github.com' in remote_url:
+                    if remote_url.startswith('git@'):
+                        repo = remote_url.split(':')[1].replace('.git', '')
+                    else:
+                        repo = remote_url.split('github.com/')[1].replace('.git', '')
+                    return repo
+            return None
+        except Exception:
+            return None
+    
+    def create_github_release(self, new_version, release_notes):
+        """Create GitHub release"""
+        if not self.github_token:
+            print("⚠️  GITHUB_TOKEN not set. Skipping GitHub release creation.")
+            return False
+        
+        if not self.github_repo:
+            print("⚠️  Could not determine GitHub repository. Skipping GitHub release creation.")
+            return False
+        
+        try:
+            print("🌐 Creating GitHub release...")
+            
+            # GitHub API endpoint
+            api_url = f"https://api.github.com/repos/{self.github_repo}/releases"
+            
+            # Release data
+            release_data = {
+                "tag_name": f"v{new_version}",
+                "name": f"POE2 Filter Installer v{new_version}",
+                "body": release_notes,
+                "draft": False,
+                "prerelease": False
+            }
+            
+            # Create release
+            headers = {
+                "Authorization": f"token {self.github_token}",
+                "Accept": "application/vnd.github.v3+json"
+            }
+            
+            response = requests.post(api_url, json=release_data, headers=headers)
+            response.raise_for_status()
+            
+            release_info = response.json()
+            release_id = release_info["id"]
+            print(f"✅ GitHub release created: {release_info['html_url']}")
+            
+            # Upload assets
+            self.upload_release_assets(release_id, new_version)
+            
+            return True
+            
+        except requests.exceptions.RequestException as e:
+            print(f"❌ Error creating GitHub release: {e}")
+            return False
+        except Exception as e:
+            print(f"❌ Unexpected error: {e}")
+            return False
+    
+    def upload_release_assets(self, release_id, new_version):
+        """Upload release assets to GitHub"""
+        try:
+            print("📤 Uploading release assets...")
+            
+            # Path to release assets
+            release_dir = Path(f"releases/v{new_version}")
+            zip_file = release_dir / f"POE2FilterInstaller-v{new_version}.zip"
+            
+            if not zip_file.exists():
+                print("⚠️  Release zip file not found")
+                return False
+            
+            # GitHub API endpoint for assets
+            upload_url = f"https://uploads.github.com/repos/{self.github_repo}/releases/{release_id}/assets"
+            
+            # Upload zip file
+            with open(zip_file, 'rb') as f:
+                params = {"name": zip_file.name}
+                headers = {
+                    "Authorization": f"token {self.github_token}",
+                    "Content-Type": "application/zip"
+                }
+                
+                response = requests.post(upload_url, params=params, data=f, headers=headers)
+                response.raise_for_status()
+                
+                print(f"✅ Uploaded: {zip_file.name}")
+            
+            # Upload installer package folder as additional asset
+            installer_dir = release_dir / "POE2FilterInstaller_Package"
+            if installer_dir.exists():
+                # Create a tar.gz of the installer package
+                tar_file = release_dir / f"POE2FilterInstaller-v{new_version}-package.tar.gz"
+                
+                import tarfile
+                with tarfile.open(tar_file, "w:gz") as tar:
+                    tar.add(installer_dir, arcname=installer_dir.name)
+                
+                # Upload tar.gz file
+                with open(tar_file, 'rb') as f:
+                    params = {"name": tar_file.name}
+                    headers = {
+                        "Authorization": f"token {self.github_token}",
+                        "Content-Type": "application/gzip"
+                    }
+                    
+                    response = requests.post(upload_url, params=params, data=f, headers=headers)
+                    response.raise_for_status()
+                    
+                    print(f"✅ Uploaded: {tar_file.name}")
+                
+                # Clean up tar file
+                tar_file.unlink()
+            
+            print("✅ All assets uploaded successfully")
+            return True
+            
+        except Exception as e:
+            print(f"❌ Error uploading assets: {e}")
+            return False
+    
     def update_version(self, new_version):
         """Main version update process"""
         print(f"🚀 Starting version update to {new_version}")
@@ -368,12 +503,19 @@ class VersionUpdater:
         if not self.git_operations(new_version):
             print("⚠️  Git operations failed")
         
+        # 7. Create GitHub release
+        print("\n🌐 Step 7: Creating GitHub release...")
+        release_notes = self.create_release_notes(new_version)
+        if self.create_github_release(new_version, release_notes):
+            print("✅ GitHub release created successfully")
+        else:
+            print("⚠️  GitHub release creation failed")
+        
         print("\n🎉 Version update completed successfully!")
         print(f"📋 Next steps:")
-        print(f"   1. Upload zip file to GitHub releases")
-        print(f"   2. Copy release notes to GitHub")
-        print(f"   3. Test installer on different systems")
-        print(f"   4. Announce release to users")
+        print(f"   1. Test installer on different systems")
+        print(f"   2. Announce release to users")
+        print(f"   3. Monitor download statistics")
         
         return True
 
@@ -392,6 +534,19 @@ def main():
         sys.exit(1)
     
     updater = VersionUpdater()
+    
+    # Check GitHub configuration
+    if not updater.github_token:
+        print("⚠️  GITHUB_TOKEN not set")
+        print("📝 To enable automatic GitHub releases, set the environment variable:")
+        print("   export GITHUB_TOKEN=your_github_token_here")
+        print("   or add to your shell profile (.bashrc, .zshrc, etc.)")
+        print()
+    
+    if not updater.github_repo:
+        print("⚠️  Could not determine GitHub repository")
+        print("📝 Make sure you have a git remote 'origin' pointing to GitHub")
+        print()
     
     # Show current version
     current_version = updater.get_current_version()
