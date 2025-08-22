@@ -85,3 +85,230 @@
 </div>
 
 <p>Style ต่างๆจะใช้ของต้นฉบับจาก NeverSink's เพื่อความสะดวกและคุ้นเคย อาจจะมีปรับปรุงเพิ่มเติมเล็กน้อย</p>
+
+# POE2 Filter Installer
+
+Installer อัตโนมัติสำหรับ Path of Exile 2 filters ที่มีการเช็ค version และอัพเดทจาก GitHub
+
+## คุณสมบัติ
+
+- ✅ ติดตั้ง filter files และ dzx_filter folder อัตโนมัติ
+- ✅ เช็ค version ใหม่จาก GitHub
+- ✅ อัพเดทอัตโนมัติเมื่อมี version ใหม่
+- ✅ สร้าง backup ก่อนอัพเดท
+- ✅ GUI ที่ใช้งานง่าย
+- ✅ รองรับทั้ง Windows และ macOS
+- ✅ Rollback ได้หากเกิดปัญหา
+
+## การติดตั้ง
+
+### วิธีที่ 1: ใช้ Executable (แนะนำ)
+
+1. ดาวน์โหลดไฟล์ `POE2FilterInstaller.exe` จาก [Releases](https://github.com/your-username/dzx-filter-poe2/releases)
+2. รันไฟล์ `install.bat` หรือ `POE2FilterInstaller.exe --gui`
+3. เลือกโฟลเดอร์ Path of Exile 2
+4. กดปุ่ม "ติดตั้ง" หรือ "อัพเดท"
+
+### วิธีที่ 2: รันจาก Source Code
+
+1. Clone repository:
+```bash
+git clone https://github.com/your-username/dzx-filter-poe2.git
+cd dzx-filter-poe2
+```
+
+2. ติดตั้ง dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. รัน installer:
+```bash
+# GUI mode
+python run_installer.py --gui
+
+# CLI mode
+python run_installer.py
+```
+
+## การใช้งาน
+
+### GUI Mode
+- เปิดโปรแกรม installer
+- เลือกโฟลเดอร์ Path of Exile 2
+- กดปุ่ม "ตรวจสอบอัพเดท" เพื่อเช็ค version ใหม่
+- กดปุ่ม "ติดตั้ง" เพื่อติดตั้ง filter ปัจจุบัน
+- กดปุ่ม "อัพเดท" เพื่ออัพเดทเป็น version ใหม่
+
+### CLI Mode
+```bash
+# ติดตั้ง filter ปัจจุบัน
+python run_installer.py
+
+# เปิด GUI
+python run_installer.py --gui
+
+# เช็คอัพเดท
+python run_installer.py --check-updates
+```
+
+## โครงสร้างไฟล์
+
+```
+dzx-filter-poe2/
+├── src/                          # Source code
+│   ├── installer.py             # Main installer
+│   ├── github_updater.py        # GitHub API updater
+│   ├── filter_manager.py        # Filter management
+│   └── gui.py                   # GUI interface
+├── config/                       # Configuration
+│   └── settings.json            # Installer settings
+├── dzx_filter/                   # Filter assets
+├── *.filter                      # Filter files
+├── requirements.txt              # Python dependencies
+├── build_installer.py           # Build script
+└── run_installer.py             # Main runner
+```
+
+## การตั้งค่า
+
+แก้ไขไฟล์ `config/settings.json`:
+
+```json
+{
+  "github_repo": "your-username/dzx-filter-poe2",
+  "current_version": "1.0.0",
+  "auto_update": true,
+  "backup_enabled": true,
+  "backup_retention": 5
+}
+```
+
+## การ Build
+
+สร้าง executable file:
+
+```bash
+python build_installer.py
+```
+
+ไฟล์ installer จะอยู่ในโฟลเดอร์ `dist/POE2FilterInstaller/`
+
+## การพัฒนา
+
+### Dependencies
+- Python 3.8+
+- requests (สำหรับ GitHub API)
+- PyInstaller (สำหรับ build executable)
+- packaging (สำหรับ version comparison)
+
+### การทดสอบ
+```bash
+# ทดสอบ installer
+python -m pytest tests/
+
+# ทดสอบการติดตั้ง
+python test_installer.py
+```
+
+## การแก้ไขปัญหา
+
+### ไม่สามารถเชื่อมต่อ GitHub ได้
+- ตรวจสอบการเชื่อมต่ออินเทอร์เน็ต
+- ตรวจสอบ firewall settings
+- ลองใช้ VPN หากจำเป็น
+
+### ไม่พบโฟลเดอร์ POE2
+- ตรวจสอบว่าเกมติดตั้งแล้ว
+- เลือกโฟลเดอร์ด้วยตนเอง
+- สร้างโฟลเดอร์ใหม่หากจำเป็น
+
+### ข้อผิดพลาดในการติดตั้ง
+- ตรวจสอบสิทธิ์การเขียนไฟล์
+- รันโปรแกรมเป็น Administrator (Windows)
+- ตรวจสอบ log file: `installer.log`
+
+## การสนับสนุน
+
+หากพบปัญหา:
+1. ตรวจสอบ log file
+2. สร้าง issue บน GitHub
+3. ตรวจสอบ [Wiki](https://github.com/your-username/dzx-filter-poe2/wiki)
+
+## License
+
+MIT License - ดูรายละเอียดใน [LICENSE](LICENSE) file
+
+## การมีส่วนร่วม
+
+1. Fork repository
+2. สร้าง feature branch
+3. Commit changes
+4. Push to branch
+5. สร้าง Pull Request
+
+## Changelog
+
+
+
+
+
+
+
+
+### v1.0.16
+- 🎯 Version update: 1.0.16
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.0.16
+- 🎯 Version update: 1.0.16
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.0.15
+- 🎯 Version update: 1.0.15
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.0.14
+- 🎯 Version update: 1.0.14
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.0.14
+- 🎯 Version update: 1.0.14
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.0.13
+- 🎯 Version update: 1.0.13
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.1.1
+- 🎯 Version update: 1.1.1
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
+### v1.1.0
+- ปรับปรุง installer ให้ติดตั้งเฉพาะไฟล์ที่จำเป็น
+- ติดตั้งเฉพาะ dzx-poe2.filter และ dzx-poe2-*.filter
+- ติดตั้งเฉพาะ /dzx_filter/soundeffect/**/**
+- ปรับปรุง GUI ให้แสดง default paths และ browse ได้
+- เพิ่มการ validate โฟลเดอร์ที่เลือก
+- ลดขนาด package และเพิ่มความเร็วในการติดตั้ง
+
+### v1.0.0
+- Initial release
+- Basic installer functionality
+- GitHub update checker
+- GUI interface
+- Backup and rollback support
