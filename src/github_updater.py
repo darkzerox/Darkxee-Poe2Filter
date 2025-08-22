@@ -23,7 +23,7 @@ class GitHubUpdater:
             'Accept': 'application/vnd.github.v3+json'
         })
     
-    def get_latest_release(self) -> Optional[str]:
+    def get_latest_version(self) -> Optional[str]:
         """Get latest release version from GitHub"""
         try:
             url = f"{self.api_base}/repos/{self.repo}/releases/latest"
@@ -85,7 +85,7 @@ class GitHubUpdater:
     def download_latest_release(self) -> bool:
         """Download latest release zip file"""
         try:
-            latest_version = self.get_latest_release()
+            latest_version = self.get_latest_version()
             if not latest_version:
                 return False
             
