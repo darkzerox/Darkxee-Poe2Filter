@@ -420,6 +420,33 @@ class InstallerGUI:
         self.log_text.insert(tk.END, f"{message}\n")
         self.log_text.see(tk.END)
     
+    def check_installation_status(self):
+        """Check and display installation status"""
+        try:
+            poe2_path = self.poe2_path_var.get().strip()
+            if not poe2_path:
+                return
+            
+            status = self.installer.filter_manager.get_installation_status(poe2_path)
+            
+            # Display status in log
+            if status["essential_filters_installed"]:
+                self.log_message(f"✅ Essential filters: {status['essential_filters_count']} files")
+            else:
+                self.log_message("❌ Essential filters not installed")
+            
+            if status["soundeffect_installed"]:
+                size_mb = status["soundeffect_size"] / (1024 * 1024)
+                self.log_message(f"✅ Sound effects: {size_mb:.1f} MB")
+            else:
+                self.log_message("❌ Sound effects not installed")
+            
+            if status["last_modified"]:
+                self.log_message(f"📅 Last modified: {status['last_modified']}")
+                
+        except Exception as e:
+            self.log_message(f"⚠️  ไม่สามารถตรวจสอบสถานะได้: {e}")
+    
     def run(self):
         """Run the GUI"""
         try:

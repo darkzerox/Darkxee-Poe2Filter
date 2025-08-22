@@ -36,6 +36,7 @@ def build_executable():
             "--add-data=config:config",
             "--add-data=dzx_filter:dzx_filter",
             "--add-data=*.filter:.",
+            "--noconfirm",  # Don't ask for confirmation
             "src/installer.py"
         ]
         
@@ -80,20 +81,36 @@ def create_installer_package():
             shutil.copytree(config_src, dist_dir / "config", dirs_exist_ok=True)
             print("คัดลอก config folder")
         
-        # Copy filter files
+        # Copy only essential filter files
         filter_count = 0
-        for filter_file in Path(".").glob("*.filter"):
-            shutil.copy2(filter_file, dist_dir)
-            filter_count += 1
+        essential_filters = ["dzx-poe2.filter"]
+        
+        # Add dzx-poe2-*.filter files
+        import glob
+        additional_filters = glob.glob("dzx-poe2-*.filter")
+        essential_filters.extend(additional_filters)
+        
+        for filter_file in essential_filters:
+            if Path(filter_file).exists():
+                shutil.copy2(filter_file, dist_dir)
+                filter_count += 1
         
         if filter_count > 0:
-            print(f"คัดลอก filter files: {filter_count} ไฟล์")
+            print(f"คัดลอก essential filter files: {filter_count} ไฟล์")
         
-        # Copy dzx_filter folder
+        # Copy only essential parts of dzx_filter folder
         dzx_filter_src = Path("dzx_filter")
         if dzx_filter_src.exists():
-            shutil.copytree(dzx_filter_src, dist_dir / "dzx_filter", dirs_exist_ok=True)
-            print("คัดลอก dzx_filter folder")
+            dzx_filter_dest = dist_dir / "dzx_filter"
+            os.makedirs(dzx_filter_dest, exist_ok=True)
+            
+            # Copy only soundeffect folder
+            soundeffect_src = dzx_filter_src / "soundeffect"
+            if soundeffect_src.exists():
+                shutil.copytree(soundeffect_src, dzx_filter_dest / "soundeffect", dirs_exist_ok=True)
+                print("คัดลอก soundeffect folder")
+            else:
+                print("⚠️  ไม่พบ soundeffect folder")
         
         # Copy README and LICENSE
         for file in ["README.md", "LICENSE"]:

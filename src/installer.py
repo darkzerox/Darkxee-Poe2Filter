@@ -99,17 +99,15 @@ class POE2FilterInstaller:
             filters_dir = os.path.join(poe2_path, "User", "Filters")
             os.makedirs(filters_dir, exist_ok=True)
             
-            # Copy filter files
+            # Copy only essential filter files
             filter_files = [
-                "dzx-poe2.filter",
-                "dzx-poe2-breach.filter",
-                "dzx-poe2-Color-Only.filter",
-                "dzx-poe2-Divine-Mirror.filter",
-                "dzx-poe2-no-hide.filter",
-                "dzx-poe2-PS5-breach.filter",
-                "dzx-poe2-PS5-no-hide.filter",
-                "dzx-poe2-PS5.filter"
+                "dzx-poe2.filter",  # Main filter
             ]
+            
+            # Add dzx-poe2-*.filter files
+            import glob
+            additional_filters = glob.glob("dzx-poe2-*.filter")
+            filter_files.extend(additional_filters)
             
             for filter_file in filter_files:
                 if os.path.exists(filter_file):
@@ -119,15 +117,34 @@ class POE2FilterInstaller:
                 else:
                     self.logger.warning(f"Filter file not found: {filter_file}")
             
-            # Copy dzx_filter folder
+            # Copy only essential parts of dzx_filter folder
             dzx_filter_src = "dzx_filter"
             dzx_filter_dest = os.path.join(poe2_path, "User", "dzx_filter")
             
             if os.path.exists(dzx_filter_src):
                 if os.path.exists(dzx_filter_dest):
                     shutil.rmtree(dzx_filter_dest)
-                shutil.copytree(dzx_filter_src, dzx_filter_dest)
-                self.logger.info("Installed dzx_filter folder")
+                
+                # Create destination directory
+                os.makedirs(dzx_filter_dest, exist_ok=True)
+                
+                # Copy only soundeffect folder and its contents
+                soundeffect_src = os.path.join(dzx_filter_src, "soundeffect")
+                if os.path.exists(soundeffect_src):
+                    soundeffect_dest = os.path.join(dzx_filter_dest, "soundeffect")
+                    shutil.copytree(soundeffect_src, soundeffect_dest)
+                    self.logger.info("Installed soundeffect folder")
+                else:
+                    self.logger.warning("Soundeffect folder not found")
+                
+                # Copy only essential files (if any)
+                essential_files = []
+                for file in essential_files:
+                    file_src = os.path.join(dzx_filter_src, file)
+                    if os.path.exists(file_src):
+                        file_dest = os.path.join(dzx_filter_dest, file)
+                        shutil.copy2(file_src, file_dest)
+                        self.logger.info(f"Installed: {file}")
             
             return True
             

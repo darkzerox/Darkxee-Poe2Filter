@@ -34,29 +34,48 @@ class FilterManager:
             backup_name = f"filter_backup_{timestamp}"
             backup_path = os.path.join(self.backup_dir, backup_name)
             
-            # Backup filters directory
+            # Backup filters directory (only essential filters)
             filters_src = os.path.join(poe2_path, "User", "Filters")
             filters_backup = os.path.join(backup_path, "Filters")
             
             if os.path.exists(filters_src):
-                shutil.copytree(filters_src, filters_backup)
-                self.logger.info(f"Backed up filters to: {filters_backup}")
+                os.makedirs(filters_backup, exist_ok=True)
+                
+                # Backup only essential filter files
+                essential_filters = ["dzx-poe2.filter"]
+                import glob
+                additional_filters = glob.glob(os.path.join(filters_src, "dzx-poe2-*.filter"))
+                essential_filters.extend([os.path.basename(f) for f in additional_filters])
+                
+                for filter_file in essential_filters:
+                    filter_src = os.path.join(filters_src, filter_file)
+                    if os.path.exists(filter_src):
+                        filter_dest = os.path.join(filters_backup, filter_file)
+                        shutil.copy2(filter_src, filter_dest)
+                
+                self.logger.info(f"Backed up essential filters to: {filters_backup}")
             
-            # Backup dzx_filter directory
+            # Backup only essential parts of dzx_filter directory
             dzx_filter_src = os.path.join(poe2_path, "User", "dzx_filter")
             dzx_filter_backup = os.path.join(backup_path, "dzx_filter")
             
             if os.path.exists(dzx_filter_src):
-                shutil.copytree(dzx_filter_src, dzx_filter_backup)
-                self.logger.info(f"Backed up dzx_filter to: {dzx_filter_backup}")
+                os.makedirs(dzx_filter_backup, exist_ok=True)
+                
+                # Backup only soundeffect folder
+                soundeffect_src = os.path.join(dzx_filter_src, "soundeffect")
+                if os.path.exists(soundeffect_src):
+                    soundeffect_backup = os.path.join(dzx_filter_backup, "soundeffect")
+                    shutil.copytree(soundeffect_src, soundeffect_backup)
+                    self.logger.info(f"Backed up soundeffect to: {soundeffect_backup}")
             
             # Create backup info file
             backup_info = {
                 "timestamp": timestamp,
                 "poe2_path": poe2_path,
                 "backup_path": backup_path,
-                "filters_count": len(os.listdir(filters_src)) if os.path.exists(filters_src) else 0,
-                "dzx_filter_size": self.get_directory_size(dzx_filter_src) if os.path.exists(dzx_filter_src) else 0
+                "filters_count": len(essential_filters),
+                "soundeffect_backed_up": os.path.exists(soundeffect_src) if 'soundeffect_src' in locals() else False
             }
             
             info_file = os.path.join(backup_path, "backup_info.json")
@@ -73,25 +92,39 @@ class FilterManager:
     def restore_backup(self, backup_path: str, poe2_path: str) -> bool:
         """Restore filters from backup"""
         try:
-            # Restore filters
+            # Restore filters (only essential filters)
             filters_backup = os.path.join(backup_path, "Filters")
             filters_dest = os.path.join(poe2_path, "User", "Filters")
             
             if os.path.exists(filters_backup):
                 if os.path.exists(filters_dest):
                     shutil.rmtree(filters_dest)
-                shutil.copytree(filters_backup, filters_dest)
-                self.logger.info(f"Restored filters from: {filters_backup}")
+                os.makedirs(filters_dest, exist_ok=True)
+                
+                # Restore only essential filter files
+                for filter_file in os.listdir(filters_backup):
+                    if filter_file.startswith("dzx-poe2"):
+                        filter_src = os.path.join(filters_backup, filter_file)
+                        filter_dest_file = os.path.join(filters_dest, filter_file)
+                        shutil.copy2(filter_src, filter_dest_file)
+                
+                self.logger.info(f"Restored essential filters from: {filters_backup}")
             
-            # Restore dzx_filter
+            # Restore only essential parts of dzx_filter
             dzx_filter_backup = os.path.join(backup_path, "dzx_filter")
             dzx_filter_dest = os.path.join(poe2_path, "User", "dzx_filter")
             
             if os.path.exists(dzx_filter_backup):
                 if os.path.exists(dzx_filter_dest):
                     shutil.rmtree(dzx_filter_dest)
-                shutil.copytree(dzx_filter_backup, dzx_filter_dest)
-                self.logger.info(f"Restored dzx_filter from: {dzx_filter_backup}")
+                os.makedirs(dzx_filter_dest, exist_ok=True)
+                
+                # Restore only soundeffect folder
+                soundeffect_backup = os.path.join(dzx_filter_backup, "soundeffect")
+                if os.path.exists(soundeffect_backup):
+                    soundeffect_dest = os.path.join(dzx_filter_dest, "soundeffect")
+                    shutil.copytree(soundeffect_backup, soundeffect_dest)
+                    self.logger.info(f"Restored soundeffect from: {soundeffect_backup}")
             
             return True
             
@@ -197,29 +230,36 @@ class FilterManager:
     def get_installation_status(self, poe2_path: str) -> Dict:
         """Get current installation status"""
         status = {
-            "filters_installed": False,
-            "dzx_filter_installed": False,
-            "filters_count": 0,
-            "dzx_filter_size": 0,
+            "essential_filters_installed": False,
+            "soundeffect_installed": False,
+            "essential_filters_count": 0,
+            "soundeffect_size": 0,
             "last_modified": None
         }
         
         try:
-            # Check filters
+            # Check essential filters
             filters_dir = os.path.join(poe2_path, "User", "Filters")
             if os.path.exists(filters_dir):
-                status["filters_installed"] = True
-                status["filters_count"] = len(os.listdir(filters_dir))
+                # Count only essential filter files
+                essential_filters = []
+                for file in os.listdir(filters_dir):
+                    if file.startswith("dzx-poe2"):
+                        essential_filters.append(file)
                 
-                # Get last modified time
-                mtime = os.path.getmtime(filters_dir)
-                status["last_modified"] = datetime.fromtimestamp(mtime).isoformat()
+                if essential_filters:
+                    status["essential_filters_installed"] = True
+                    status["essential_filters_count"] = len(essential_filters)
+                    
+                    # Get last modified time
+                    mtime = os.path.getmtime(filters_dir)
+                    status["last_modified"] = datetime.fromtimestamp(mtime).isoformat()
             
-            # Check dzx_filter
-            dzx_filter_dir = os.path.join(poe2_path, "User", "dzx_filter")
-            if os.path.exists(dzx_filter_dir):
-                status["dzx_filter_installed"] = True
-                status["dzx_filter_size"] = self.get_directory_size(dzx_filter_dir)
+            # Check soundeffect folder
+            soundeffect_dir = os.path.join(poe2_path, "User", "dzx_filter", "soundeffect")
+            if os.path.exists(soundeffect_dir):
+                status["soundeffect_installed"] = True
+                status["soundeffect_size"] = self.get_directory_size(soundeffect_dir)
             
         except Exception as e:
             self.logger.error(f"Error getting installation status: {e}")
