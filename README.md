@@ -250,6 +250,13 @@ MIT License - ดูรายละเอียดใน [LICENSE](LICENSE) file
 ## Changelog
 
 
+
+### v1.0.13
+- 🎯 Version update: 1.0.13
+- 📅 Release date: 2025-08-22
+- 🔧 Bug fixes and improvements
+- 🚀 Performance optimizations
+
 ### v1.1.1
 - 🎯 Version update: 1.1.1
 - 📅 Release date: 2025-08-22
