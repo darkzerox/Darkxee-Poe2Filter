@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 POE2 Filter Installer - Version Update Script
-อัพเดท version ในทุกไฟล์ที่เกี่ยวข้อง พร้อมสร้าง release package
+อัพเดท version ในทุกไฟล์ที่เกี่ยวข้อง พร้อมสร้าง release package และ cleanup releases เก่า
 """
 
 import os
@@ -14,6 +14,9 @@ import zipfile
 import requests
 from pathlib import Path
 from datetime import datetime
+
+# Import cleanup functions
+from auto_cleanup import auto_cleanup_releases
 
 class VersionUpdater:
     """Version updater for POE2 Filter Installer"""
@@ -459,7 +462,18 @@ class VersionUpdater:
             print(f"❌ Error uploading assets: {e}")
             return False
     
-    def update_version(self, new_version):
+    def cleanup_old_releases(self, keep_count=1):
+        """Cleanup old releases after creating new one"""
+        try:
+            print("\n🧹 Step 8: Cleaning up old releases...")
+            auto_cleanup_releases(keep_count=keep_count, dry_run=False)
+            print("✅ Cleanup completed successfully")
+            return True
+        except Exception as e:
+            print(f"⚠️  Cleanup failed: {e}")
+            return False
+
+    def update_version(self, new_version, keep_releases=1, skip_cleanup=False):
         """Main version update process"""
         print(f"🚀 Starting version update to {new_version}")
         print("=" * 50)
@@ -511,6 +525,11 @@ class VersionUpdater:
         else:
             print("⚠️  GitHub release creation failed")
         
+        # 8. Cleanup old releases
+        print("\n🧹 Step 8: Cleaning up old releases...")
+        if not skip_cleanup:
+            self.cleanup_old_releases(keep_count=keep_releases)
+
         print("\n🎉 Version update completed successfully!")
         print(f"📋 Next steps:")
         print(f"   1. Test installer on different systems")
@@ -521,12 +540,19 @@ class VersionUpdater:
 
 def main():
     """Main entry point"""
-    if len(sys.argv) != 2:
-        print("Usage: python3 update_version.py <new_version>")
-        print("Example: python3 update_version.py 1.2.0")
-        sys.exit(1)
+    import argparse
     
-    new_version = sys.argv[1]
+    parser = argparse.ArgumentParser(description='POE2 Filter Installer Version Updater')
+    parser.add_argument('new_version', help='New version to update to (e.g., 1.2.0)')
+    parser.add_argument('--keep-releases', type=int, default=1, 
+                       help='Number of releases to keep after cleanup (default: 1)')
+    parser.add_argument('--no-cleanup', action='store_true',
+                       help='Skip cleanup of old releases')
+    parser.add_argument('--auto', action='store_true',
+                       help='Run automatically without confirmation prompts')
+    
+    args = parser.parse_args()
+    new_version = args.new_version
     
     # Validate version format
     if not re.match(r'^\d+\.\d+\.\d+$', new_version):
@@ -556,20 +582,28 @@ def main():
         
         if current_version == new_version:
             print("⚠️  Version is already {new_version}")
-            response = input("Continue anyway? (y/N): ")
-            if response.lower() != 'y':
-                print("❌ Update cancelled")
-                sys.exit(0)
+            if not args.auto:
+                response = input("Continue anyway? (y/N): ")
+                if response.lower() != 'y':
+                    print("❌ Update cancelled")
+                    sys.exit(0)
+    
+    # Show cleanup settings
+    if not args.no_cleanup:
+        print(f"🧹 Cleanup settings: Keep {args.keep_releases} latest release(s)")
+    else:
+        print("🧹 Cleanup: Disabled")
     
     # Confirm update
-    response = input(f"\nProceed with version update to {new_version}? (y/N): ")
-    if response.lower() != 'y':
-        print("❌ Update cancelled")
-        sys.exit(0)
+    if not args.auto:
+        response = input(f"\nProceed with version update to {new_version}? (y/N): ")
+        if response.lower() != 'y':
+            print("❌ Update cancelled")
+            sys.exit(0)
     
     # Perform update
     try:
-        success = updater.update_version(new_version)
+        success = updater.update_version(new_version, keep_releases=args.keep_releases, skip_cleanup=args.no_cleanup)
         if success:
             print("\n✅ Version update completed successfully!")
             sys.exit(0)
