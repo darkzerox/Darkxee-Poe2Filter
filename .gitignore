@@ -1,17 +1,72 @@
-__pycache__
-__pycache__/*
-poe2_production_Config.ini
-poe2_production
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-test.filter
-hideout
-PassiveKeywordSearch
+# PyInstaller
+*.manifest
+*.spec
 
-CNAME
-OnlineFilters
+# Installer specific
+backups/
+temp/
+installer.log
+*.exe
+*.msi
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment
+.env
 .venv
-*.Identifier
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-
-test*
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
