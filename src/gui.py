@@ -83,12 +83,42 @@ class InstallerGUI:
         self.poe2_path_entry = ttk.Entry(install_frame, textvariable=self.poe2_path_var, width=50)
         self.poe2_path_entry.grid(row=0, column=1, sticky=(tk.W, tk.E), padx=(10, 0))
         
+        # Bind path change event
+        self.poe2_path_var.trace('w', lambda *args: self.update_path_status())
+        
         browse_button = ttk.Button(install_frame, text="เลือก", command=self.browse_poe2_path)
         browse_button.grid(row=0, column=2, padx=(5, 0))
         
+        # Default paths info
+        default_paths_frame = ttk.Frame(install_frame)
+        default_paths_frame.grid(row=1, column=0, columnspan=3, sticky=(tk.W, tk.E), pady=(5, 0))
+        
+        ttk.Label(default_paths_frame, text="Default paths:", font=("Arial", 9, "bold")).grid(row=0, column=0, sticky=tk.W)
+        
+        # Show default paths
+        default_paths = self.installer.poe2_paths
+        for i, path in enumerate(default_paths):
+            path_label = ttk.Label(default_paths_frame, text=f"  {i+1}. {path}", font=("Arial", 8))
+            path_label.grid(row=i+1, column=0, sticky=tk.W, padx=(20, 0))
+            
+            # Add button to use this path
+            use_path_button = ttk.Button(default_paths_frame, text="ใช้", 
+                                       command=lambda p=path: self.use_default_path(p))
+            use_path_button.grid(row=i+1, column=1, padx=(10, 0))
+        
         # Auto-detect button
         detect_button = ttk.Button(install_frame, text="ตรวจหาอัตโนมัติ", command=self.auto_detect_poe2)
-        detect_button.grid(row=1, column=1, pady=(5, 0))
+        detect_button.grid(row=2, column=1, pady=(5, 0))
+        
+        # Path status
+        self.path_status_var = tk.StringVar(value="ยังไม่ได้เลือกโฟลเดอร์")
+        self.path_status_label = ttk.Label(install_frame, textvariable=self.path_status_var, 
+                                         foreground="orange", font=("Arial", 9))
+        self.path_status_label.grid(row=3, column=0, columnspan=3, sticky=tk.W, pady=(5, 0))
+        
+        # Validate path button
+        validate_button = ttk.Button(install_frame, text="ตรวจสอบโฟลเดอร์", command=self.validate_current_path)
+        validate_button.grid(row=4, column=1, pady=(5, 0))
         
         # Buttons section
         button_frame = ttk.Frame(main_frame)
@@ -149,16 +179,115 @@ class InstallerGUI:
         path = filedialog.askdirectory(title="เลือกโฟลเดอร์ Path of Exile 2")
         if path:
             self.poe2_path_var.set(path)
+            self.log_message(f"เลือกโฟลเดอร์: {path}")
+            
+            # Validate if this looks like a POE2 directory
+            if self.validate_poe2_directory(path):
+                self.log_message("✅ โฟลเดอร์นี้ดูเหมือนจะเป็น POE2 directory")
+            else:
+                self.log_message("⚠️  โฟลเดอร์นี้อาจไม่ใช่ POE2 directory")
+            
+            # Update status
+            self.update_path_status()
+    
+    def use_default_path(self, path):
+        """Use one of the default paths"""
+        self.poe2_path_var.set(path)
+        self.log_message(f"ใช้ default path: {path}")
+        
+        # Validate the path
+        if os.path.exists(path):
+            self.log_message("✅ โฟลเดอร์มีอยู่จริง")
+        else:
+            self.log_message("⚠️  โฟลเดอร์ไม่มีอยู่ จะสร้างให้อัตโนมัติ")
+        
+        # Update status
+        self.update_path_status()
+    
+    def validate_poe2_directory(self, path):
+        """Validate if the directory looks like a POE2 installation"""
+        try:
+            # Check if it contains common POE2 directories/files
+            poe2_indicators = [
+                "User",
+                "User/Filters",
+                "User/Config",
+                "User/Logs"
+            ]
+            
+            for indicator in poe2_indicators:
+                indicator_path = os.path.join(path, indicator)
+                if os.path.exists(indicator_path):
+                    return True
+            
+            # Check if it's a Documents/My Games directory
+            if "Documents" in path and "My Games" in path:
+                return True
+                
+            return False
+            
+        except Exception:
+            return False
+    
+    def validate_current_path(self):
+        """Validate the currently selected path"""
+        current_path = self.poe2_path_var.get().strip()
+        if not current_path:
+            self.path_status_var.set("❌ ยังไม่ได้เลือกโฟลเดอร์")
+            self.path_status_label.config(foreground="red")
+            return
+        
+        if not os.path.exists(current_path):
+            self.path_status_var.set("❌ โฟลเดอร์ไม่มีอยู่")
+            self.path_status_label.config(foreground="red")
+            return
+        
+        if self.validate_poe2_directory(current_path):
+            self.path_status_var.set("✅ โฟลเดอร์นี้เหมาะสำหรับ POE2")
+            self.path_status_label.config(foreground="green")
+        else:
+            self.path_status_var.set("⚠️  โฟลเดอร์นี้อาจไม่เหมาะสำหรับ POE2")
+            self.path_status_label.config(foreground="orange")
+    
+    def update_path_status(self):
+        """Update path status when path changes"""
+        current_path = self.poe2_path_var.get().strip()
+        if current_path:
+            if os.path.exists(current_path):
+                if self.validate_poe2_directory(current_path):
+                    self.path_status_var.set("✅ โฟลเดอร์พร้อมใช้งาน")
+                    self.path_status_label.config(foreground="green")
+                else:
+                    self.path_status_var.set("⚠️  โฟลเดอร์อาจไม่เหมาะ")
+                    self.path_status_label.config(foreground="orange")
+            else:
+                self.path_status_var.set("❌ โฟลเดอร์ไม่มีอยู่")
+                self.path_status_label.config(foreground="red")
+        else:
+            self.path_status_var.set("ยังไม่ได้เลือกโฟลเดอร์")
+            self.path_status_label.config(foreground="orange")
     
     def auto_detect_poe2(self):
         """Auto-detect POE2 installation directory"""
+        self.log_message("🔍 กำลังตรวจหาโฟลเดอร์ POE2...")
+        
         poe2_path = self.installer.find_poe2_directory()
         if poe2_path:
             self.poe2_path_var.set(poe2_path)
-            self.log_message(f"พบโฟลเดอร์ POE2: {poe2_path}")
+            self.log_message(f"✅ พบโฟลเดอร์ POE2: {poe2_path}")
+            
+            # Check if it's a newly created directory
+            if not os.path.exists(os.path.join(poe2_path, "User")):
+                self.log_message("📁 สร้างโฟลเดอร์ใหม่สำหรับ POE2")
+            else:
+                self.log_message("📁 โฟลเดอร์ POE2 มีอยู่แล้ว")
         else:
             self.poe2_path_var.set("")
-            self.log_message("ไม่พบโฟลเดอร์ POE2 กรุณาเลือกเอง")
+            self.log_message("❌ ไม่พบโฟลเดอร์ POE2 กรุณาเลือกเอง")
+            self.log_message("💡 ลองใช้ปุ่ม 'เลือก' เพื่อเลือกโฟลเดอร์ หรือใช้ default paths")
+        
+        # Update status
+        self.update_path_status()
     
     def check_updates(self):
         """Check for updates"""

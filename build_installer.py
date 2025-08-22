@@ -53,40 +53,62 @@ def create_installer_package():
     
     try:
         # Create dist directory
-        dist_dir = Path("dist/POE2FilterInstaller")
+        dist_dir = Path("dist/POE2FilterInstaller_Package")
+        
+        # Remove existing directory if it exists
+        if dist_dir.exists():
+            shutil.rmtree(dist_dir)
+            print("ลบโฟลเดอร์เก่าแล้ว")
+        
         dist_dir.mkdir(parents=True, exist_ok=True)
         
-        # Copy executable
+        # Copy executable (check for both .exe and macOS executable)
         exe_src = Path("dist/POE2FilterInstaller.exe")
-        if exe_src.exists():
+        if not exe_src.exists():
+            # Try macOS executable
+            exe_src = Path("dist/POE2FilterInstaller")
+        
+        if exe_src.exists() and exe_src.is_file():
             shutil.copy2(exe_src, dist_dir)
+            print(f"คัดลอก executable: {exe_src.name}")
+        else:
+            print("⚠️  ไม่พบ executable file")
         
         # Copy config
         config_src = Path("config")
         if config_src.exists():
             shutil.copytree(config_src, dist_dir / "config", dirs_exist_ok=True)
+            print("คัดลอก config folder")
         
         # Copy filter files
+        filter_count = 0
         for filter_file in Path(".").glob("*.filter"):
             shutil.copy2(filter_file, dist_dir)
+            filter_count += 1
+        
+        if filter_count > 0:
+            print(f"คัดลอก filter files: {filter_count} ไฟล์")
         
         # Copy dzx_filter folder
         dzx_filter_src = Path("dzx_filter")
         if dzx_filter_src.exists():
             shutil.copytree(dzx_filter_src, dist_dir / "dzx_filter", dirs_exist_ok=True)
+            print("คัดลอก dzx_filter folder")
         
         # Copy README and LICENSE
         for file in ["README.md", "LICENSE"]:
             if Path(file).exists():
                 shutil.copy2(file, dist_dir)
+                print(f"คัดลอก {file}")
         
-        # Create batch file for easy installation
+        # Create batch file for easy installation (Windows)
         batch_content = """@echo off
-echo POE2 Filter Installer
-echo ====================
+chcp 65001 >nul
+echo ========================================
+echo    POE2 Filter Installer
+echo ========================================
 echo.
-echo กำลังติดตั้ง filter สำหรับ Path of Exile 2...
-echo.
+echo กำลังเปิด installer...
 POE2FilterInstaller.exe --gui
 echo.
 echo กด Enter เพื่อปิด...
@@ -95,6 +117,24 @@ pause
         
         with open(dist_dir / "install.bat", "w", encoding="utf-8") as f:
             f.write(batch_content)
+        
+        # Create shell script for macOS/Linux
+        shell_content = """#!/bin/bash
+echo "========================================"
+echo "    POE2 Filter Installer"
+echo "========================================"
+echo.
+echo "กำลังเปิด installer..."
+./POE2FilterInstaller --gui
+echo.
+echo "การติดตั้งเสร็จสิ้น"
+"""
+        
+        with open(dist_dir / "install.sh", "w", encoding="utf-8") as f:
+            f.write(shell_content)
+        
+        # Make shell script executable
+        os.chmod(dist_dir / "install.sh", 0o755)
         
         print("สร้าง installer package สำเร็จ")
         return True

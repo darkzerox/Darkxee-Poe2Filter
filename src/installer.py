@@ -13,7 +13,6 @@ from pathlib import Path
 from typing import Optional, Dict, List
 from github_updater import GitHubUpdater
 from filter_manager import FilterManager
-from gui import InstallerGUI
 
 # Setup logging
 logging.basicConfig(
@@ -208,8 +207,19 @@ def main():
     
     # Check if running in GUI mode
     if len(sys.argv) > 1 and sys.argv[1] == "--gui":
-        gui = InstallerGUI(installer)
-        gui.run()
+        try:
+            from gui import InstallerGUI
+            gui = InstallerGUI(installer)
+            gui.run()
+        except ImportError as e:
+            print(f"GUI not available: {e}")
+            print("Running in CLI mode...")
+            success = installer.run()
+            if success:
+                print("Installation completed successfully!")
+            else:
+                print("Installation failed. Check installer.log for details.")
+                sys.exit(1)
     else:
         # CLI mode
         success = installer.run()
