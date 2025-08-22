@@ -2,6 +2,6 @@
 POE2 Filter Installer Package
 """
 
-__version__ = "1.0.15"
+__version__ = "1.0.16"
 __author__ = "DZX"
 __description__ = "Installer สำหรับ Path of Exile 2 filters"
