@@ -1,0 +1,30 @@
+# DZX Filter Build System Requirements
+# Python dependencies for building Path of Exile 2 filters
+
+# Core Python (3.6+ required)
+# All scripts use only standard library modules:
+# - os, sys, pathlib
+# - typing (for type hints)  
+# - argparse (for command line interfaces)
+# - subprocess (for git operations)
+# - logging (for improved logging)
+# - dataclasses (for structured data, Python 3.7+)
+# - re (for regex parsing)
+
+# No external dependencies required!
+# The build system is designed to work with Python standard library only.
+
+# Optional development tools (not required for building):
+# black>=22.0.0          # Code formatting
+# flake8>=4.0.0          # Linting  
+# mypy>=0.950            # Type checking
+# pytest>=7.0.0          # Testing framework
+
+# For Python < 3.7, you may need:
+# dataclasses>=0.6       # Backport of dataclasses
+
+# Installation:
+# pip install -r requirements.txt
+
+# Or for development:
+# pip install -r requirements.txt black flake8 mypy pytest
