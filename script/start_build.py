@@ -15,6 +15,7 @@ import sys
 import os
 import time
 import argparse
+import json
 from pathlib import Path
 from typing import List, Dict, Optional
 
@@ -34,109 +35,100 @@ except ImportError as e:
 # CONFIGURATION
 # ==============================================================================
 
-# Available sound effect types
-SOUND_EFFECT_TYPES = ['type-01']
+def load_config() -> Dict:
+    """Load configuration from config.json"""
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent
+    config_path = project_root / "config.json"
+    
+    try:
+        with open(config_path, 'r', encoding='utf-8') as f:
+            config = json.load(f)
+        print(f"✅ Configuration loaded from {config_path}")
+        return config
+    except FileNotFoundError:
+        print(f"⚠️ Config file not found at {config_path}, using default configuration")
+        return get_default_config()
+    except json.JSONDecodeError as e:
+        print(f"❌ Error parsing config.json: {e}")
+        print("Using default configuration")
+        return get_default_config()
 
-# Main filter group - core filters for regular gameplay
-MAIN_GROUP = [
-    # Gacha/Crafting Items
-    "gacha.filter",
-    "crafting.filter",
-    
-    # Essential Items
-    "gold.filter",
-    "uncut_gems.filter", 
-    "scroll_of_wisdom.filter",
-    "salvage.filter",
-    
-    # Equipment
-    "amulets.filter",
-    "belts.filter", 
-    "jewel.filter",
-    "ring.filter",
-    
-    # Special Items
-    "key.filter",
-    "relics.filter", 
-    "rune.filter",
-    "talisman.filter",
-    "soul_core.filter",
-    "waystones.filter",
-    "flasks.filter",
-    "charms.filter",
-    
-    # Currency
-    "currency.filter",
-    
-    # Rarity-based filters (order matters - most specific first)
-    "rarity_unique.filter", 
-    "rarity_rare.filter",
-    "rarity_magic.filter",
-]
+def get_default_config() -> Dict:
+    """Get default configuration if config.json is not available"""
+    return {
+        "sound_effects": {"available_types": ["type-01"], "default_type": "type-01"},
+        "filter_groups": {
+            "MAIN_GROUP": [
+                "gacha.filter", "crafting.filter", "gold.filter", "uncut_gems.filter", 
+                "scroll_of_wisdom.filter", "salvage.filter", "amulets.filter", "belts.filter", 
+                "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", 
+                "talisman.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
+                "charms.filter", "currency.filter", "rarity_unique.filter", 
+                "rarity_rare.filter", "rarity_magic.filter"
+            ],
+            "BREACH_GROUP": [
+                "gacha.filter", "crafting.filter", "gold.filter", "amulets.filter", 
+                "jewel.filter", "ring.filter", "map_breach.filter", "uncut_gems.filter", 
+                "scroll_of_wisdom.filter", "salvage.filter", "belts.filter", "key.filter", 
+                "relics.filter", "rune.filter", "talisman.filter", "soul_core.filter", 
+                "waystones.filter", "flasks.filter", "charms.filter", "currency.filter", 
+                "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
+            ]
+        },
+        "filter_variants": [
+            {"name": "dzx-poe2", "description": "Main filter", "group": "MAIN_GROUP", 
+             "platforms": ["pc"], "no_hide_variant": True},
+            {"name": "dzx-poe2-breach", "description": "Breach optimized", "group": "BREACH_GROUP", 
+             "platforms": ["pc", "ps5"], "no_hide_variant": False},
+            {"name": "dzx-poe2-PS5", "description": "PS5 version", "group": "MAIN_GROUP", 
+             "platforms": ["ps5"], "no_hide_variant": True}
+        ]
+    }
 
-# Breach-specific filter group - optimized for Breach league content
-BREACH_GROUP = [
-    # High priority items for Breach
-    "gacha.filter",
-    "crafting.filter", 
-    "gold.filter",
-    "amulets.filter",
-    "jewel.filter", 
-    "ring.filter",
-    
-    # Breach-specific content
-    "map_breach.filter",
-    
-    # Standard items (lower priority in Breach)
-    "uncut_gems.filter",
-    "scroll_of_wisdom.filter",
-    "salvage.filter",
-    "belts.filter",
-    "key.filter", 
-    "relics.filter",
-    "rune.filter",
-    "talisman.filter",
-    "soul_core.filter", 
-    "waystones.filter",
-    "flasks.filter",
-    "charms.filter",
-    
-    # Currency  
-    "currency.filter",
-    
-    # Rarity filters
-    "rarity_unique.filter",
-    "rarity_rare.filter", 
-    "rarity_magic.filter",
-]
+# Load configuration
+CONFIG = load_config()
 
-# Filter variants configuration
-FILTER_VARIANTS = [
-    {
-        'name': 'dzx-poe2',
-        'description': 'Main filter with all features',
-        'group': MAIN_GROUP,
-        'sound_type': 'type-01',
-        'platforms': ['pc'],
-        'no_hide_variant': True,
-    },
-    {
-        'name': 'dzx-poe2-breach', 
-        'description': 'Optimized for Breach league',
-        'group': BREACH_GROUP,
-        'sound_type': 'type-01',
-        'platforms': ['pc', 'ps5'],
-        'no_hide_variant': False,
-    },
-    {
-        'name': 'dzx-poe2-PS5',
-        'description': 'PS5 optimized version', 
-        'group': MAIN_GROUP,
-        'sound_type': 'type-01',
-        'platforms': ['ps5'],
-        'no_hide_variant': True,
-    },
-]
+# Extract values from config for backwards compatibility
+SOUND_EFFECT_TYPES = CONFIG.get("sound_effects", {}).get("available_types", ["type-01"])
+
+# Get filter groups from config
+MAIN_GROUP = CONFIG.get("filter_groups", {}).get("MAIN_GROUP", [])
+BREACH_GROUP = CONFIG.get("filter_groups", {}).get("BREACH_GROUP", [])
+
+# Get filter variants from config
+def get_filter_variants():
+    """Get filter variants from config, converting group names to actual groups"""
+    variants = []
+    for variant_config in CONFIG.get("filter_variants", []):
+        if not variant_config.get("enabled", True):
+            continue
+            
+        variant = variant_config.copy()
+        
+        # Convert group name to actual group
+        group_name = variant.get("group", "MAIN_GROUP")
+        if group_name == "MAIN_GROUP":
+            variant["group"] = MAIN_GROUP
+        elif group_name == "BREACH_GROUP":
+            variant["group"] = BREACH_GROUP
+        else:
+            # If it's already a list, keep it as is
+            if isinstance(group_name, list):
+                variant["group"] = group_name
+            else:
+                print(f"⚠️ Unknown group '{group_name}', using MAIN_GROUP")
+                variant["group"] = MAIN_GROUP
+        
+        # Set default sound type if not specified
+        if "sound_type" not in variant:
+            variant["sound_type"] = CONFIG.get("sound_effects", {}).get("default_type", "type-01")
+            
+        variants.append(variant)
+    
+    return variants
+
+FILTER_VARIANTS = get_filter_variants()
 
 # ==============================================================================
 # UTILITY FUNCTIONS
@@ -246,49 +238,57 @@ def build_filter_variant(variant: Dict, args: argparse.Namespace) -> bool:
     return success_count == total_builds
 
 def build_special_variants(args: argparse.Namespace) -> bool:
-    """Build special filter variants (color-only, divine-mirror)"""
+    """Build special filter variants from config"""
     print_step("Building Special Variants", "Creating specialized filters")
     
+    special_variants = CONFIG.get("special_variants", [])
+    if not special_variants:
+        print("   No special variants configured")
+        return True
+    
     success_count = 0
-    total_builds = 0
+    total_builds = len([v for v in special_variants if v.get("enabled", True)])
     
-    # Color-Only variant (PC only, no sounds)
-    print("   Building dzx-poe2-Color-Only.filter...")
-    total_builds += 1
-    try:
-        if merge_file.merge_files_from_array(
-            MAIN_GROUP, "dzx-poe2-Color-Only", 'type-01',
-            removeSoundEffect=True, hideItem=False
-        ):
-            success_count += 1
-            print("   ✅ dzx-poe2-Color-Only.filter created successfully")
+    for variant in special_variants:
+        if not variant.get("enabled", True):
+            continue
+            
+        name = variant.get("name", "unknown")
+        description = variant.get("description", "")
+        group_raw = variant.get("group", "MAIN_GROUP")
+        remove_sounds = variant.get("remove_sounds", False)
+        hide_items = variant.get("hide_items", False)
+        sound_type = variant.get("sound_type", CONFIG.get("sound_effects", {}).get("default_type", "type-01"))
+        
+        # Convert group name to actual group
+        if isinstance(group_raw, str):
+            if group_raw == "MAIN_GROUP":
+                group = MAIN_GROUP
+            elif group_raw == "BREACH_GROUP":
+                group = BREACH_GROUP
+            else:
+                print(f"      ⚠️ Unknown group '{group_raw}', using MAIN_GROUP")
+                group = MAIN_GROUP
+        elif isinstance(group_raw, list):
+            group = group_raw
         else:
-            print_error("Failed to create dzx-poe2-Color-Only.filter")
-    except Exception as e:
-        print_error(f"Error building Color-Only variant: {e}")
-    
-    # Divine-Mirror variant (high-value items only)
-    divine_mirror_group = [
-        "currency.filter",
-        "rarity_unique.filter",
-        "gacha.filter",
-        "key.filter",
-        "waystones.filter"
-    ]
-    
-    print("   Building dzx-poe2-Divine-Mirror.filter...")
-    total_builds += 1
-    try:
-        if merge_file.merge_files_from_array(
-            divine_mirror_group, "dzx-poe2-Divine-Mirror", 'type-01',
-            removeSoundEffect=False, hideItem=False
-        ):
-            success_count += 1
-            print("   ✅ dzx-poe2-Divine-Mirror.filter created successfully")
-        else:
-            print_error("Failed to create dzx-poe2-Divine-Mirror.filter")
-    except Exception as e:
-        print_error(f"Error building Divine-Mirror variant: {e}")
+            group = MAIN_GROUP
+        
+        print(f"   Building {name}.filter...")
+        print(f"      {description}")
+        
+        try:
+            if merge_file.merge_files_from_array(
+                group, name, sound_type,
+                removeSoundEffect=remove_sounds, 
+                hideItem=hide_items
+            ):
+                success_count += 1
+                print(f"   ✅ {name}.filter created successfully")
+            else:
+                print_error(f"Failed to create {name}.filter")
+        except Exception as e:
+            print_error(f"Error building {name} variant: {e}")
     
     return success_count == total_builds
 
