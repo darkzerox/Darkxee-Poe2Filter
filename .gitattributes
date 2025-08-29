@@ -20,6 +20,11 @@ dzx_filter/fonts export-ignore
 dzx_filter/images export-ignore'
 dzx_filter/index.html export-ignore
 index.html export-ignore
+AGENTS.md export-ignore
+config.json export-ignore
+index.html.backup export-ignore
+
+requirements.txt export-ignore
 
 dzx-poe2-PS5-no-hide.filter export-ignore
 dzx-poe2-PS5.filter export-ignore
