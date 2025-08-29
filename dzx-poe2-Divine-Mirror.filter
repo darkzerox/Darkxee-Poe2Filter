@@ -37,7 +37,7 @@ Show
  
 Show
   Class "Currency"
-  BaseType  "Perfect Jeweller's Orb" "Distilled Isolation" "Distilled Suffering"
+  BaseType  "Perfect Jeweller's Orb" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -46,17 +46,13 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
   
-
-Show
-  Class "Currency"
-  BaseType == "Distilled Isolation" "Distilled Suffering"
-  PlayAlertSound 8 200
+ 
 
 
 # Currency Tier A: Gemcutter, Annullment
 Show
   Class "Currency"
-  BaseType  "Greater Jeweller's Orb" "Distilled Fear" "Distilled Despair"
+  BaseType  "Greater Jeweller's Orb"  
   SetTextColor 255 193 48
   SetBorderColor  30 58 51
   SetBackgroundColor 30 58 51
@@ -116,7 +112,7 @@ Show
 
 Show
   Class "Currency"
-  BaseType "Distilled" "Catalyst" "Essence of"
+  BaseType   "Catalyst" "Essence of"
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
   SetBackgroundColor 0 0 0
