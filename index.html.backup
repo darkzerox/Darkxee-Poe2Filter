@@ -159,7 +159,7 @@
             color: white;
             padding: 5px 15px;
             border-radius: 15px;
-            font-size: 0.9rem;
+            font-size: 1.2rem;
             font-weight: 600;
         }
         

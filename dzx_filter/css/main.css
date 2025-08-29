@@ -143,31 +143,9 @@ h1 {
     color: white;
     padding: 5px 15px;
     border-radius: 15px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    max-width: fit-content;
+    margin: 0 auto;
 }
 
-@keyframes fadeInScale {
-    0% { opacity: 0; transform: scale(0.5) translateY(20px); }
-    100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.animation-card {
-    animation: fadeInScale 0.6s ease-out;
-    animation-fill-mode: both;
-}
-
-.animation-card:nth-child(1) { animation-delay: 0.1s; }
-.animation-card:nth-child(2) { animation-delay: 0.2s; }
-.animation-card:nth-child(3) { animation-delay: 0.3s; }
-.animation-card:nth-child(4) { animation-delay: 0.4s; }
-.animation-card:nth-child(5) { animation-delay: 0.5s; }
-.animation-card:nth-child(6) { animation-delay: 0.6s; }
-.animation-card:nth-child(7) { animation-delay: 0.7s; }
-
-.animation-card:hover {
-    transform: scale(1.15) translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-    animation-play-state: paused;
-    z-index: 10;
-}

@@ -329,7 +329,6 @@ class HTMLGenerator:
             transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
-            animation: fadeInScale 0.6s ease backwards, float 3s ease-in-out infinite;
             border: 2px solid rgba(255,255,255,0.2);
             backdrop-filter: blur(5px);
         }
@@ -354,9 +353,7 @@ class HTMLGenerator:
             tag_cloud_parts.append(f'''
             <span class="tag" style="
                 {style};
-                animation: 
-                    fadeInScale 0.6s ease backwards {delay}s,
-                    float {float_duration}s ease-in-out infinite {float_offset}%;
+               
                 ">{clean_tag}</span>''')
         
         tag_cloud_parts.append('</div>')
@@ -668,10 +665,10 @@ document.addEventListener('DOMContentLoaded', initApp);'''
             <picture>
                 <img alt="DZX Poe2 Filter" 
                      src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" 
-                     width="600" style="max-width: 100%; border-radius: 10px;">
+                     width="600" style="max-width: 100%; width: 100%; border-radius: 10px;">
             </picture>
 
-            <h1>DZX Poe2 Filter <span class="version-tag" id="repo-version">{version}</span></h1>
+            <h1>DZX Poe2 Filter <div class="version-tag" id="repo-version">{version}</div></h1>
 
             <p style="font-size: 1.2rem; color: #cccccc; margin: 20px 0;">
                 🎯 <strong>Advanced Item Filter for Path of Exile 2</strong><br>
