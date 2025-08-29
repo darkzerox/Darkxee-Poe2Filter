@@ -7,6 +7,7 @@
 .github export-ignore
 .editorconfig export-ignore
 .vscode export-ignore
+.planning export-ignore
 CONTRIBUTING.md export-ignore
 README.md export-ignore
 LICENSE export-ignore
