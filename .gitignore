@@ -71,4 +71,6 @@ coverage.xml
 *.py,cover
 .hypothesis/
 
+test*
+
 index.html

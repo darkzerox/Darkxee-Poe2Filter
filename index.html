@@ -3,1143 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DZX Filter for POE2 - v1.0.0 | Path of Exile 2 Item Filter</title>
+    <title>DZX Filter for POE2 - v1.0.16 | Path of Exile 2 Item Filter</title>
     
-    <!-- Primary Meta Tags -->
-    <meta name="title" content="DZX Filter for POE2 - v1.0.0 | Path of Exile 2 Item Filter">
-    <meta name="description" content="DZX Poe2 Filter - Professional item filter for Path of Exile 2. Enhance your gameplay with our comprehensive item filtering system. Download now for PC and PS5.">
-    <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, POE2 Filter, Game Filter, Loot Filter, POE2 Loot">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="DZX Poe2 Filter - Professional item filter for Path of Exile 2. Enhance your gameplay with comprehensive item filtering. Download for PC and PS5.">
+    <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, Loot Filter, Gaming">
     <meta name="author" content="Darkxee">
-    <meta name="robots" content="index, follow">
     
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
-    <meta property="og:title" content="DZX Filter for POE2 - v1.0.0 | Path of Exile 2 Item Filter">
-    <meta property="og:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="DZX Filter for POE2 - v1.0.16">
+    <meta property="og:description" content="Professional Path of Exile 2 item filter system">
     <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
-    <meta property="og:site_name" content="DZX Poe2 Filter">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
-    <meta property="twitter:title" content="DZX Filter for POE2 - v1.0.0 | Path of Exile 2 Item Filter">
-    <meta property="twitter:description" content="Enhance your Path of Exile 2 experience with DZX Filter. Professional item filtering system for better loot management and gameplay.">
-    <meta property="twitter:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://darkzerox.github.io/Darkxee-Poe2Filter/">
-    
-    <style>
-        @font-face {   
-            font-family: 'Fontin';
-            src: url('https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/fonts/Fontin-Regular.ttf') format('truetype');
-        }
-        body {
-            font-family: Fontin, Arial, sans-serif;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #1a1a1a;
-            color: #ffffff;
-        }
-        a {
-            color: #f17d40;
-            text-decoration: none;
-        }
-        a:hover {
-            color: #ff4a4a;
-            text-decoration: underline;
-        }
-        .download-button {
-            border: solid 1px #f17d40;
-            padding: 10px 20px;
-            background: #f17d40;
-            color: #fff;
-            border-radius: 10px;
-            text-decoration: none;
-            margin: 30px;
-            display: inline-block;
-        }
-        .download-button:hover {
-            background: #ff4a4a;
-            border: solid 1px #ff4a4a;
-            text-decoration: none;
-            color: #fff;
-        }
-        .filter-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            background-color: #2d2d2d;
-        }
-        .filter-table th, .filter-table td {
-            padding: 8px;
-            text-align: center;
-            border: 1px solid #666;
-        }
-        .filter-table tr td:nth-child(2) {
-            text-align: left;
-        }
-        .filter-table th {
-            background-color: #4a9eff;
-            color: white;
-        }
-        .style-box {
-            padding: 5px 10px;
-            display: inline-block;
-            border: 2px solid #666;
-            background-color: #333;
-        }
-        h1,h2,h3,h4{
-            color: #4a9eff;
-        }
-        .tag-cloud .tag {
-            display: inline-block;
-            padding: 5px 15px;
-            margin: 5px;
-            border-radius: 20px;
-            font-size: 14px;
-            transition: all 0.3s ease;
-            animation: 
-                fadeInScale 0.5s ease backwards,
-                float 3s ease-in-out infinite;
-            cursor: pointer;
-            position: relative;
-            color: rgb(255 209 94); border-color: rgb(255 209 94); background-color: rgb(34 34 34); font-size: 17px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.0s,
-                float 3s ease-in-out infinite 0%;
-        }
-        
-        .tag-cloud .tag:hover {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            animation-play-state: paused;
-        }
-        .tag-cloud{
-            text-align: center;
-            margin: 20px 0;
-            padding: 20px;
-            background: #2d2d2d;
-            border-radius: 10px;
-            min-height: 200px;
-        }
-        .dev-table{
-            background: #2e2e2e; padding: 5px; border-spacing: 15px;
-        }
-        
-/* Base styles for minimap icons */
-[class^="minimap-icon-"] {
-    display: inline-block;
-    text-align: center;
-    min-width: 20px;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
-}
-
-/* Default colors for specific icon types */
-.minimap-icon-● { color: rgb(255 255 255); }  /* White */
-.minimap-icon-◆ { color: rgb(255 150 0); }    /* Orange */
-.minimap-icon-⬢ { color: rgb(255 0 0); }      /* Red */
-.minimap-icon-■ { color: rgb(0 255 0); }      /* Green */
-.minimap-icon-★ { color: rgb(0 255 255); }    /* Cyan */
-.minimap-icon-▲ { color: rgb(160 110 60); }   /* Brown */
-.minimap-icon-✕ { color: rgb(150 150 150); }  /* Grey */
-.minimap-icon-☾ { color: rgb(150 200 255); }  /* Light Blue */
-.minimap-icon-❧ { color: rgb(50 230 100); }   /* Light Green */
-.minimap-icon-⬟ { color: rgb(255 150 0); }    /* Orange */
-
-/* Color-based classes */
-.minimap-icon-red {
-    color: rgb(255 0 0);
-}
-.minimap-icon-green {
-    color: rgb(0 255 0);
-}
-.minimap-icon-blue {
-    color: rgb(0 0 255);
-}
-.minimap-icon-brown {
-    color: rgb(160 110 60);
-}
-.minimap-icon-white {
-    color: rgb(255 255 255);
-}
-.minimap-icon-yellow {
-    color: rgb(255 255 0);
-}
-.minimap-icon-cyan {
-    color: rgb(0 255 255);
-}
-.minimap-icon-grey {
-    color: rgb(150 150 150);
-}
-.minimap-icon-orange {
-    color: rgb(255 150 0);
-}
-.minimap-icon-pink {
-    color: rgb(255 192 203);
-}
-.minimap-icon-purple {
-    color: rgb(128 0 128);
-}
-
-[data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
-    border-color: rgb(233 75 75);
-    background-color: rgb(10 10 10);
-    color: rgb(233 75 75);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 0 0);
-}
-
-[data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Unset"], [data-basetype="Ring"] {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 150 0);
-}
-
-.charms {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 0);
-}
-
-[data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Striking"], [data-basetype="Spear"], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Massive"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Vaal"], [data-basetype="Gloves"], [data-basetype="Vile"], [data-basetype="robe"], [data-basetype="SLeek"], [data-basetype="jacket"] {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 150 0);
-}
-
-[data-basetype="=="], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Sacred"], [data-basetype="Focus"] {
-    color: rgb(160 255 71);
-    background-color: rgb(10 10 10);
-    font-size: 37px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 150 0);
-}
-
-.==, .amulets, .rings, [data-basetype="=="], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"] {
-    font-size: 36px;
-    background-color: rgb(30 0 70);
-    border-color: rgb(139 191 226);
-}
-
-.==, .amulets, .rings, [data-basetype="=="], [data-basetype="Amber"], [data-basetype="Amulet"], [data-basetype="Azure"], [data-basetype="Amulet"], [data-basetype="Bloodstone"], [data-basetype="Amulet"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Lapis"], [data-basetype="Amulet"], [data-basetype="Lazuli"], [data-basetype="Ring"], [data-basetype="Lunar"], [data-basetype="Amulet"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Ring"], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Topaz"], [data-basetype="Ring"], [data-basetype="Unset"], [data-basetype="Ring"] {
-    font-size: 36px;
-    background-color: rgb(30 0 70);
-    border-color: rgb(139 191 226);
-}
-
-.==, .amulets, .rings, [data-basetype="=="], [data-basetype="Crimson"], [data-basetype="Amulet"], [data-basetype="Emerald"], [data-basetype="Ring"], [data-basetype="Iron"], [data-basetype="Ring"] {
-    font-size: 36px;
-    border-color: rgb(139 191 226);
-}
-
-.==, .amulets, .rings, [data-basetype="=="], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"] {
-    font-size: 36px;
-    background-color: rgb(30 0 70);
-    border-color: rgb(139 191 226);
-}
-
-.==, .belts, [data-basetype="=="], [data-basetype="Plate"], [data-basetype="Belt"], [data-basetype="Utility"], [data-basetype="Belt"] {
-    font-size: 36px;
-    background-color: rgb(30 0 70);
-    border-color: rgb(139 191 226);
-}
-
-.==, .belts, [data-basetype="=="], [data-basetype="Double"], [data-basetype="Belt"], [data-basetype="Fine"], [data-basetype="Belt"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Linen"], [data-basetype="Belt"], [data-basetype="Long"], [data-basetype="Belt"], [data-basetype="Mail"], [data-basetype="Belt"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Rawhide"], [data-basetype="Belt"], [data-basetype="Wide"], [data-basetype="Belt"] {
-    font-size: 36px;
-    border-color: rgb(139 191 226);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(180 180 180);
-    border-color: rgb(255 255 255);
-    font-size: 32px;
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(180 180 180);
-    background-color: rgb(255 255 255);
-    font-size: 32px;
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Gold"] {
-    color: rgb(180 180 180);
-    background-color: rgb(255 255 255);
-    font-size: 32px;
-}
-
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
-    font-size: 45px;
-    color: rgb(255 0 0);
-    border-color: rgb(255 0 0);
-    background-color: rgb(255 255 255);
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
-    font-size: 40px;
-    color: rgb(211 82 35);
-    border-color: rgb(211 82 35);
-}
-
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
-    color: rgb(255 255 255);
-    border-color: rgb(104 104 104);
-}
-
-[data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"] {
-    color: rgb(159 131 131);
-    border-color: rgb(159 131 131);
-    font-size: 35px;
-}
-
-.minimap-icon-triangle {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
-    color: rgb(218 139 35);
-    border-color: rgb(218 139 35);
-    background-color: rgb(0 0 0);
-    font-size: 35px;
-}
-
-.minimap-icon-triangle {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="Uncut"], [data-basetype="Support"], [data-basetype="Gem"] {
-    color: rgb(168 179 49);
-    border-color: rgb(168 179 49);
-    background-color: rgb(0 0 0);
-    font-size: 35px;
-}
-
-.minimap-icon-triangle {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
-    background-color: rgb(0 0 0);
-    color: rgb(255 255 255);
-    border-color: rgb(0 0 0);
-    font-size: 30px;
-}
-
-.amulets {
-    font-size: 32px;
-}
-
-.amulets {
-    font-size: 32px;
-    color: rgb(221 168 83);
-    border-color: rgb(22 64 77);
-    background-color: rgb(22 64 77);
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 255 0);
-}
-
-.belts {
-    font-size: 32px;
-    color: rgb(233 206 75);
-    border-color: rgb(233 206 75);
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 255 0);
-}
-
-.jewel {
-    color: rgb(121 215 190);
-    border-color: rgb(121 215 190);
-    font-size: 32px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
-}
-
-.jewel, [data-basetype="=="], [data-basetype="Time-Lost"], [data-basetype="Emerald"], [data-basetype="Time-Lost"], [data-basetype="Ruby"], [data-basetype="Time-Lost"], [data-basetype="Sapphire"] {
-    font-size: 42px;
-    color: rgb(121 215 190);
-    border-color: rgb(121 215 190);
-    background-color: rgb(0 75 30);
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 0 255);
-}
-
-[data-basetype="Timeless"] {
-    color: rgb(121 215 190);
-    border-color: rgb(121 215 190);
-    font-size: 45px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
-}
-
-[data-basetype="Precursor"], [data-basetype="Tablet"] {
-    color: rgb(232 231 171);
-    border-color: rgb(232 37 97);
-    background-color: rgb(232 37 97);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.pinnacle, .keys {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-square {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="Simulacrum"] {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 38px;
-}
-
-.minimap-icon-square {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="Breachstone"], [data-basetype="Cowardly"], [data-basetype="Fate"], [data-basetype="Deadly"], [data-basetype="Fate"], [data-basetype="Victorious"], [data-basetype="Fate"], [data-basetype="Expedition"], [data-basetype="Logbook"], [data-basetype="Test"], [data-basetype="of"] {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-square {
-    color: rgb(160 110 60);
-}
-
-.tablet {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-square {
-    color: rgb(255 255 0);
-}
-
-[data-basetype="Barya"], [data-basetype="Ultimatum"] {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 32px;
-}
-
-.minimap-icon-square {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="=="], [data-basetype="Bronze"], [data-basetype="Key"], [data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"] {
-    color: rgb(125 241 37);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-pentagon {
-    color: rgb(0 255 0);
-}
-
-.==, .fishing, .rods {
-    color: rgb(125 241 37);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-pentagon {
-    color: rgb(160 110 60);
-}
-
-.==, .vault, .keys {
-    color: rgb(177 90 18);
-    border-color: rgb(177 90 18);
-    background-color: rgb(24 39 71);
-    font-size: 40px;
-}
-
-.minimap-icon-square {
-    color: rgb(160 110 60);
-}
-
-[data-basetype="=="], [data-basetype="Amphora"], [data-basetype="Relic"], [data-basetype="Coffer"], [data-basetype="Relic"], [data-basetype="Vase"], [data-basetype="Relic"], [data-basetype="Seal"], [data-basetype="Relic"], [data-basetype="Tapestry"], [data-basetype="Relic"], [data-basetype="Incense"], [data-basetype="Relic"] {
-    font-size: 45px;
-    color: rgb(213 77 77);
-    border-color: rgb(216 64 64);
-    background-color: rgb(149 255 211);
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.relic {
-    color: rgb(30 233 148);
-    border-color: rgb(30 233 148);
-    font-size: 35px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
-    color: rgb(255 188 17);
-    border-color: rgb(156 106 255);
-    background-color: rgb(88 57 150);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(128 0 128);
-}
-
-[data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"] {
-    color: rgb(156 106 255);
-    border-color: rgb(156 106 255);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(128 0 128);
-}
-
-.rings {
-    font-size: 32px;
-}
-
-.rings {
-    font-size: 32px;
-    color: rgb(233 206 75);
-    border-color: rgb(233 206 75);
-}
-
-.minimap-icon-diamond {
-    color: rgb(255 255 0);
-}
-
-.rings {
-    color: rgb(156 106 255);
-    border-color: rgb(156 106 255);
-    font-size: 40px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(128 0 128);
-}
-
-[data-basetype="=="], [data-basetype="Atmohua's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Retreat"], [data-basetype="Cholotl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="War"], [data-basetype="Citaqualotl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Foulness"], [data-basetype="Courtesan"], [data-basetype="Mannan's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Cruelty"], [data-basetype="Craiceann's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Recovery"], [data-basetype="Craiceann's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Warding"], [data-basetype="Estazunti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Convalescence"], [data-basetype="Farrul's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Grace"], [data-basetype="Farrul's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="the"], [data-basetype="Hunt"], [data-basetype="Farrul's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="the"], [data-basetype="Chase"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Agony"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Draining"], [data-basetype="Fenumus'"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Spinning"], [data-basetype="Guatelitzi's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Endurance"], [data-basetype="Hayoxi's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Heatproofing"], [data-basetype="Lady"], [data-basetype="Hestra's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Winter"], [data-basetype="Opiloti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Assault"], [data-basetype="Ox"], [data-basetype="Talisman"], [data-basetype="Quipolatl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Flow"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Erosion"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Memory"], [data-basetype="Saqawal's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="the"], [data-basetype="Sky"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Atmohua"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Citaqualotl"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Opiloti"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Quipolatl"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Tacati"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Xopec"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Zantipi"], [data-basetype="Tacati's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Affliction"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Eeshta"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Egrin"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Grold"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Maxarius"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Sirrius"], [data-basetype="Talisman"], [data-basetype="of"], [data-basetype="Thruldana"], [data-basetype="Thane"], [data-basetype="Girt's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Wildness"], [data-basetype="Thane"], [data-basetype="Grannell's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Mastery"], [data-basetype="Thane"], [data-basetype="Leld's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Spring"], [data-basetype="Thane"], [data-basetype="Myrk's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Summer"], [data-basetype="The"], [data-basetype="Greatwolf's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Claws"], [data-basetype="The"], [data-basetype="Greatwolf's"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Willpower"], [data-basetype="Topotante's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Dampening"], [data-basetype="Tzamoto's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Ferocity"], [data-basetype="Uromoti's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Attenuation"], [data-basetype="Xipocado's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Dominion"], [data-basetype="Xopec's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Power"], [data-basetype="Zalatl's"], [data-basetype="Soul"], [data-basetype="Core"], [data-basetype="of"], [data-basetype="Insulation"] {
-    color: rgb(13 228 217);
-    border-color: rgb(5 55 101);
-    background-color: rgb(5 46 84);
-    font-size: 38px;
-}
-
-[data-basetype="=="], [data-basetype="Greater"], [data-basetype="Desert"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Glacial"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Iron"], [data-basetype="Rune"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Alacrity"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Leadership"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Nobility"], [data-basetype="Greater"], [data-basetype="Rune"], [data-basetype="of"], [data-basetype="Tithing"], [data-basetype="Greater"], [data-basetype="Storm"], [data-basetype="Rune"] {
-    color: rgb(30 233 148);
-    font-size: 34px;
-}
-
-[data-basetype="Rune"] {
-    color: rgb(30 233 148);
-    font-size: 32px;
-}
-
-[data-basetype="Rabbit"], [data-basetype="Talisman"], [data-basetype="Fox"], [data-basetype="Talisman"] {
-    color: rgb(232 231 171);
-    border-color: rgb(232 37 97);
-    background-color: rgb(232 37 97);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-[data-basetype="=="], [data-basetype="Serpent"], [data-basetype="Talisman"], [data-basetype="Primate"], [data-basetype="Talisman"], [data-basetype="Owl"], [data-basetype="Talisman"], [data-basetype="Cat"], [data-basetype="Talisman"], [data-basetype="Boar"], [data-basetype="Talisman"], [data-basetype="Bear"], [data-basetype="Talisman"] {
-    color: rgb(30 233 148);
-    font-size: 32px;
-}
-
-[data-basetype="=="], [data-basetype="Stag"], [data-basetype="Talisman"], [data-basetype="Ox"], [data-basetype="Talisman"], [data-basetype="Wolf"], [data-basetype="Talisman"] {
-    color: rgb(170 70 201);
-    border-color: rgb(0 0 0);
-    background-color: rgb(0 0 0);
-    font-size: 40px;
-}
-
-[data-basetype="Soul"], [data-basetype="Core"] {
-    color: rgb(128 136 54);
-    border-color: rgb(128 136 54);
-    font-size: 45px;
-}
-
-.minimap-icon-diamond {
-    color: rgb(0 255 255);
-}
-
-[data-basetype="Waystone"] {
-    font-size: 32px;
-}
-
-[data-basetype="Waystone"] {
-    color: rgb(184 31 77);
-    border-color: rgb(4 10 29);
-    background-color: rgb(6 15 43);
-    font-size: 35px;
-}
-
-[data-basetype="Waystone"] {
-    color: rgb(201 218 191);
-    border-color: rgb(201 218 191);
-    background-color: rgb(33 33 33);
-    font-size: 32px;
-}
-
-[data-basetype="Waystone"] {
-    color: rgb(156 169 134);
-    border-color: rgb(156 169 134);
-    background-color: rgb(10 10 10);
-    font-size: 32px;
-}
-
-[data-basetype="Waystone"] {
-    color: rgb(184 31 77);
-    border-color: rgb(4 10 29);
-    background-color: rgb(6 15 43);
-    font-size: 40px;
-}
-
-.minimap-icon-square {
-    color: rgb(0 0 255);
-}
-
-[data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"] {
-    font-size: 32px;
-    color: rgb(143 106 206);
-    border-color: rgb(62 88 121);
-    background-color: rgb(10 10 10);
-}
-
-.flasks {
-    font-size: 32px;
-    color: rgb(62 88 121);
-    border-color: rgb(62 88 121);
-}
-
-.flasks {
-    font-size: 32px;
-}
-
-.==, .charms {
-    font-size: 32px;
-    color: rgb(133 159 61);
-    border-color: rgb(133 159 61);
-    background-color: rgb(49 81 30);
-}
-
-.minimap-icon-star {
-    color: rgb(0 255 0);
-}
-
-.currency {
-    font-size: 32px;
-}
-
-.currency, [data-basetype="Mirror"], [data-basetype="Divine"] {
-    color: rgb(232 231 171);
-    border-color: rgb(232 37 97);
-    background-color: rgb(232 37 97);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.currency, [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Isolation"], [data-basetype="Distilled"], [data-basetype="Suffering"] {
-    color: rgb(232 231 171);
-    border-color: rgb(232 37 97);
-    background-color: rgb(232 37 97);
-    font-size: 45px;
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-.currency, [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Distilled"], [data-basetype="Fear"], [data-basetype="Distilled"], [data-basetype="Despair"] {
-    color: rgb(255 193 48);
-    border-color: rgb(30 58 51);
-    background-color: rgb(30 58 51);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 0);
-}
-
-[data-basetype="Orb"], [data-basetype="of"], [data-basetype="Annulment"], [data-basetype="Exotic"], [data-basetype="Coinage"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Fracturing"], [data-basetype="Orb"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Chance"], [data-basetype="Reaver"], [data-basetype="Catalyst"], [data-basetype="Esh's"], [data-basetype="Catalyst"], [data-basetype="Chance"], [data-basetype="Shard"] {
-    color: rgb(218 145 255);
-    font-size: 40px;
-    border-color: rgb(0 0 0);
-    background-color: rgb(0 0 0);
-}
-
-.minimap-icon-circle {
-    color: rgb(128 0 128);
-}
-
-[data-basetype="Gold"], [data-basetype="Key"], [data-basetype="Silver"], [data-basetype="Key"], [data-basetype="Bronze"], [data-basetype="Key"] {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-.omen, [data-basetype="Omen"], [data-basetype="of"] {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-    font-size: 40px;
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-.currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-.currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Artifact"] {
-    color: rgb(201 184 224);
-    background-color: rgb(23 7 69);
-    font-size: 35px;
-}
-
-.minimap-icon-kite {
-    color: rgb(128 0 128);
-}
-
-.currency, [data-basetype="Distilled"], [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
-    color: rgb(170 70 201);
-    border-color: rgb(0 0 0);
-    background-color: rgb(0 0 0);
-}
-
-.minimap-icon-circle {
-    color: rgb(128 0 128);
-}
-
-.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(255 255 255);
-    background-color: rgb(0 0 0);
-    font-size: 32px;
-}
-
-.currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
-    color: rgb(255 255 255);
-    background-color: rgb(0 0 0);
-    font-size: 32px;
-}
-
-.minimap-icon-circle {
-    color: rgb(150 150 150);
-}
-
-.currency {
-    color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-    font-size: 32px;
-}
-
-.minimap-icon-circle {
-    color: rgb(255 255 255);
-}
-
-[data-basetype="=="], [data-basetype="Armoured"], [data-basetype="Cap"], [data-basetype="Emerald"], [data-basetype="Furtive"], [data-basetype="Wraps"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Sapphire"], [data-basetype="Smuggler"], [data-basetype="Coat"], [data-basetype="Stone"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Time-Lost"], [data-basetype="Diamond"], [data-basetype="Timeless"], [data-basetype="Jewel"], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Diamond"], [data-basetype="Silk"], [data-basetype="Robe"], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Grand"], [data-basetype="Regalia"], [data-basetype="Incense"], [data-basetype="Relic"], [data-basetype="Garment"], [data-basetype="Blacksteel"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Tribal"], [data-basetype="Mask"], [data-basetype="Ornate"], [data-basetype="Gauntlets"] {
-    font-size: 45px;
-    color: rgb(238 238 238);
-    border-color: rgb(53 13 13);
-    background-color: rgb(216 64 64);
-}
-
-.minimap-icon-star {
-    color: rgb(255 0 0);
-}
-
-
-.minimap-icon-star {
-    color: rgb(160 110 60);
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    background-color: rgb(0 0 0);
-    color: rgb(248 147 5);
-    font-size: 40px;
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 0);
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    background-color: rgb(0 0 0);
-    color: rgb(255 209 94);
-    font-size: 32px;
-}
-
-.minimap-icon-cross {
-    color: rgb(255 255 0);
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    color: rgb(101 103 222);
-    background-color: rgb(0 0 0);
-    font-size: 40px;
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    color: rgb(255 255 255);
-    background-color: rgb(0 0 0);
-    font-size: 32px;
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    color: rgb(62 140 242);
-    background-color: rgb(0 0 0);
-    font-size: 32px;
-}
-
-.body, .armour, .boots, .gloves, .helmets, .bows, .crossbows, .foci, .one, .hand, .maces, .quivers, .quarterstaves, .sceptres, .shields, .staves, .two, .hand, .maces, .wands, .bucklers, .spears {
-    color: rgb(101 103 222);
-    background-color: rgb(0 0 0);
-    font-size: 32px;
-}
-
-    </style>
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-P8JFCCZC');</script>
-    <!-- End Google Tag Manager -->
-
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="dzx_filter/css/main.css">
+    <link rel="stylesheet" href="dzx_filter/css/filter_styles.css">
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JNBFDR6WBY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-    
-  gtag('config', 'G-JNBFDR6WBY');
-</script>
-
-
 <body>
+    <div class="container">
+        <div align="center">
+            <picture>
+                <img alt="DZX Poe2 Filter" 
+                     src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" 
+                     width="600" style="max-width: 100%; width: 100%; border-radius: 10px;">
+            </picture>
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8JFCCZC"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+            <h1>DZX Poe2 Filter <div class="version-tag" id="repo-version">v1.0.16</div></h1>
 
-    <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
-    <img alt="Darkxee Poe2 Filter" src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" width="800" style="max-width: 100%">
-  </picture>
+            <p style="font-size: 1.2rem; color: #cccccc; margin: 20px 0;">
+                🎯 <strong>Advanced Item Filter for Path of Exile 2</strong><br>
+                เป็น Item Filter ที่พัฒนาขึ้นสำหรับ Path of Exile 2 โดยเฉพาะ<br>
+                รองรับการรวมไฟล์อัตโนมัติด้วย Python
+            </p>
 
-  <h1 align="center">DZX Poe2 Filter <span id="repo-version">Loading version...</span></h1>
+            <div class="badges">
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases">
+                    <img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" alt="GitHub Release">
+                </a>
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/actions">
+                    <img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="Build Status">
+                </a>
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/stargazers">
+                    <img src="https://img.shields.io/github/stars/darkzerox/Darkxee-Poe2Filter" alt="Stars">
+                </a>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    async function fetchLatestTag() {
-        try {
-            const response = await fetch('https://api.github.com/repos/darkzerox/Darkxee-Poe2Filter/tags');
-            if (!response.ok) throw new Error('Network response was not ok');
-            const tags = await response.json();
-            const latestTag = tags[0]?.name || 'No tags available';
-            document.getElementById('repo-version').innerText = latestTag;
-            // Update meta tags with latest version
-            document.title = `DZX Filter for POE2 - ${latestTag} | Path of Exile 2 Item Filter`;
-            document.querySelector('meta[name="title"]').content = `DZX Filter for POE2 - ${latestTag} | Path of Exile 2 Item Filter`;
-            document.querySelector('meta[property="og:title"]').content = `DZX Filter for POE2 - ${latestTag} | Path of Exile 2 Item Filter`;
-            document.querySelector('meta[property="twitter:title"]').content = `DZX Filter for POE2 - ${latestTag} | Path of Exile 2 Item Filter`;
-        } catch (error) {
-            console.error('Error fetching latest tag:', error);
-            document.getElementById('repo-version').innerText = 'Error loading version';
-        }
-    }
+    <div class="container download-section">
+        <h2>📥 Download</h2>
+        <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">
+            💻 Download for PC
+        </a>
+        <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button">  
+            🎮 Download for PS5
+        </a>
+    </div>
 
-    // Fetch version on page load
-    document.addEventListener('DOMContentLoaded', fetchLatestTag);
-  </script>
-  
-  <p>
-    เป็นโปรเจคที่ทำขึ้นสำหรับกรอง Item จากเกม ซึ่งตอนนี้ poe2 ยังไม่รองรับ Function Import<br/>
-    ดังนั้นจึงต้องใช้วิธีการรวมไฟล์โดยใช้ Python เข้ามาช่วย
-  </p>
-
-  <div class="badges">
-    <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases">
-      <img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" alt="GitHub Release">
-    </a>
-    <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/actions">
-      <img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="Build Status">
-    </a>
-  </div>
-</div>
-
-<h2 align="center">📥 ดาวน์โหลด</h2>
-
-<div align="center">
-  <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest">
-    <img src="https://img.shields.io/badge/💻_Download-PC-blue?style=for-the-badge&logo=windows" alt="Download PC">
-  </a>
-  &nbsp;&nbsp;
-  <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">
-    <img src="https://img.shields.io/badge/🎮_Download-PS5-blue?style=for-the-badge&logo=playstation" alt="Download PS5">
-  </a>
-</div>
-
-<h2>🔧 วิธีติดตั้ง</h2>
-
-<p>แตกไฟล์และคัดลอกไฟล์ทั้งหมดไปไว้ที่:</p>
-
-  <summary>
-    <img src="https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows" alt="Windows">
-  </summary>
-  <p><code>%userprofile%\\Documents\\My Games\\Path of Exile 2</code></p>
-
-  <summary>
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black" alt="Linux">
-  </summary>
-  <p><code>steamapps/compatdata/2694490/pfx/drive_c/users/steamuser/My Documents/My Games/Path of Exile 2</code></p>
-
-  <summary>
-    <img src="https://img.shields.io/badge/🎮_-PS5-blue?style=flat&logo=playstation&logoColor=white" alt="Ps5 Xbox">
-  </summary>
-  <p><a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters">PS5 XBox กดเข้าลิ๊งนี้</a> แล้วกด Follow ทั้งสองอันได้เลย</p>
-
-    <h2>👨‍💻 สำหรับนักพัฒนา</h2>
-
-    <p>สามารถ <a href="https://github.com/darkzerox/Darkxee-Poe2Filter">Clone โปรเจค</a> ไปแก้ไขได้เลย</p>
-
-    <h3>📂 โครงสร้างโปรเจค</h3>
-
-    <table class="dev-table">
-    <tr>
-        <th>โฟลเดอร์/ไฟล์</th>
-        <th>รายละเอียด</th>
-    </tr>
-    <tr>
-        <td>📁 filter_group/</td>
-        <td>ไฟล์ filter หลักแยกตามหมวดหมู่</td>
-    </tr>
-    <tr>
-        <td>📁  dzx_filter/soundeffect/</td>
-        <td>ไฟล์เสียงทั้งหมด</td>
-    </tr>
-    <tr>
-        <td>📄 script/start_build.py</td>
-        <td>สคริปต์สำหรับรวมไฟล์ filter</td>
-    </tr>
-    </table>
-
-    <blockquote>
-    <p>💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตด้วยนะ</p>
-    </blockquote>
-
-    <hr/>
-
-    
-    <style>
+    <div class="container">
+        
+        <style>
         @keyframes fadeInScale {
-            0% {
-                opacity: 0;
-                transform: scale(0.5) translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
+            0% { opacity: 0; transform: scale(0.5) translateY(20px); }
+            100% { opacity: 1; transform: scale(1) translateY(0); }
         }
         
         @keyframes float {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
         }
         
         .tag-cloud .tag {
             display: inline-block;
-            padding: 5px 15px;
-            margin: 5px;
-            border-radius: 20px;
+            padding: 8px 16px;
+            margin: 6px;
+            border-radius: 25px;
             font-size: 14px;
+            font-weight: 500;
             transition: all 0.3s ease;
-            animation: 
-                fadeInScale 0.5s ease backwards,
-                float 3s ease-in-out infinite;
             cursor: pointer;
             position: relative;
+            border: 2px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
         }
         
         .tag-cloud .tag:hover {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transform: scale(1.15) translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
             animation-play-state: paused;
+            z-index: 10;
         }
     </style>
     <h2>Preview Items</h2>
     <div class="tag-cloud">
     
         <span class="tag" style="
-            color: rgb(30 233 148); font-size: 16px;
+            color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 0.0s,
                 float 3s ease-in-out infinite 0%;
-        ">Rune</span>
+        ">Belts</span>
+        
+        <span class="tag" style="
+            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.05s,
+                float 4s ease-in-out infinite 33%;
+        ">Mirror Divine</span>
         
         <span class="tag" style="
             color: rgb(201 184 224); background-color: rgb(23 7 69); font-size: 17px;
             animation: 
-                fadeInScale 0.5s ease backwards 0.05s,
-                float 4s ease-in-out infinite 33%;
-        ">Simulacrum Splinter ...</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px;
-            animation: 
                 fadeInScale 0.5s ease backwards 0.1s,
                 float 5s ease-in-out infinite 66%;
-        ">Crimson Amulet Emera...</span>
-        
-        <span class="tag" style="
-            color: rgb(30 233 148); font-size: 17px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.15000000000000002s,
-                float 3s ease-in-out infinite 99%;
-        ">Greater Desert Rune ...</span>
-        
-        <span class="tag" style="
-            color: rgb(175 96 37); border-color: rgb(175 96 37); background-color: rgb(53 13 13); font-size: 20px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.2s,
-                float 4s ease-in-out infinite 32%;
-        ">ALL</span>
-        
-        <span class="tag" style="
-            color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.25s,
-                float 5s ease-in-out infinite 65%;
-        ">Breach Ring</span>
+        ">Simulacrum Splinter ...</span>
         
         <span class="tag" style="
             color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
             animation: 
+                fadeInScale 0.5s ease backwards 0.15000000000000002s,
+                float 3s ease-in-out infinite 99%;
+        ">Bronze Key Gold Key ...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61);
+            animation: 
+                fadeInScale 0.5s ease backwards 0.2s,
+                float 4s ease-in-out infinite 32%;
+        ">Gemcutter's Prism Va...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(104 104 104);
+            animation: 
+                fadeInScale 0.5s ease backwards 0.25s,
+                float 5s ease-in-out infinite 65%;
+        ">Uncut Skill Gem</span>
+        
+        <span class="tag" style="
+            color: rgb(213 77 77); border-color: rgb(216 64 64); background-color: rgb(149 255 211); font-size: 22px;
+            animation: 
                 fadeInScale 0.5s ease backwards 0.30000000000000004s,
                 float 3s ease-in-out infinite 98%;
-        ">Fishing Rods</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.35000000000000003s,
-                float 4s ease-in-out infinite 31%;
-        ">Double Belt Fine Bel...</span>
-        
-        <span class="tag" style="
-            color: rgb(238 238 238); border-color: rgb(53 13 13); background-color: rgb(216 64 64); font-size: 22px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.4s,
-                float 5s ease-in-out infinite 64%;
-        ">Armoured Cap Emerald...</span>
-        
-        <span class="tag" style="
-            color: rgb(255 209 94); background-color: rgb(0 0 0); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 0.45s,
-                float 3s ease-in-out infinite 97%;
-        ">Body Armour Boots Gl...</span>
+        ">Amphora Relic Coffer...</span>
         
         <span class="tag" style="
             color: rgb(255 255 255); text-decoration: line-through;
             animation: 
-                fadeInScale 0.5s ease backwards 0.5s,
-                float 4s ease-in-out infinite 30%;
-        ">Belts</span>
+                fadeInScale 0.5s ease backwards 0.35000000000000003s,
+                float 4s ease-in-out infinite 31%;
+        ">Flasks</span>
         
         <span class="tag" style="
-            color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 20px;
+            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.4s,
+                float 5s ease-in-out infinite 64%;
+        ">Seaglass Spear Sacre...</span>
+        
+        <span class="tag" style="
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.45s,
+                float 3s ease-in-out infinite 97%;
+        ">Tablet</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.5s,
+                float 4s ease-in-out infinite 30%;
+        ">Waystone</span>
+        
+        <span class="tag" style="
+            color: rgb(201 218 191); border-color: rgb(201 218 191); background-color: rgb(33 33 33); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.55s,
+                float 5s ease-in-out infinite 63%;
+        ">Waystone</span>
+        
+        <span class="tag" style="
+            color: rgb(255 0 0); border-color: rgb(255 0 0); background-color: rgb(255 255 255); font-size: 22px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.6000000000000001s,
+                float 3s ease-in-out infinite 96%;
+        ">Uncut Skill Gem Uncu...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); font-size: 17px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.65s,
+                float 4s ease-in-out infinite 29%;
+        ">ALL</span>
+        
+        <span class="tag" style="
+            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.7000000000000001s,
+                float 5s ease-in-out infinite 62%;
+        ">Charms</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.75s,
+                float 3s ease-in-out infinite 95%;
+        ">Rings</span>
+        
+        <span class="tag" style="
+            color: rgb(30 233 148); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.8s,
+                float 4s ease-in-out infinite 28%;
+        ">Serpent Talisman Pri...</span>
+        
+        <span class="tag" style="
+            color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 0.8500000000000001s,
+                float 5s ease-in-out infinite 61%;
+        ">Flasks</span>
+        
+        <span class="tag" style="
+            color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 0.55s,
                 float 5s ease-in-out infinite 63%;
@@ -1192,1311 +279,750 @@
             animation: 
                 fadeInScale 0.5s ease backwards 0.9s,
                 float 3s ease-in-out infinite 94%;
-        ">Breach Ring</span>
+        ">Amulets</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 20px;
+            color: rgb(175 96 37); border-color: rgb(175 96 37); background-color: rgb(53 13 13); font-size: 20px;
             animation: 
                 fadeInScale 0.5s ease backwards 0.9500000000000001s,
                 float 4s ease-in-out infinite 27%;
-        ">Omen of</span>
+        ">ALL</span>
         
         <span class="tag" style="
-            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 19px;
+            color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px;
             animation: 
                 fadeInScale 0.5s ease backwards 1.0s,
                 float 5s ease-in-out infinite 60%;
-        ">Simulacrum</span>
+        ">Double Belt Fine Bel...</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
+            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
             animation: 
                 fadeInScale 0.5s ease backwards 1.05s,
                 float 3s ease-in-out infinite 93%;
-        ">Body Armour Boots Gl...</span>
+        ">Plate Belt Utility B...</span>
         
         <span class="tag" style="
-            color: rgb(218 145 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px;
+            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
             animation: 
                 fadeInScale 0.5s ease backwards 1.1s,
                 float 4s ease-in-out infinite 26%;
-        ">Orb of Annulment Exo...</span>
+        ">Precursor Tablet</span>
         
         <span class="tag" style="
-            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
+            color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 1.1500000000000001s,
                 float 5s ease-in-out infinite 59%;
-        ">Vault Keys</span>
-        
-        <span class="tag" style="
-            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.2000000000000002s,
-                float 3s ease-in-out infinite 92%;
-        ">Mirror Divine</span>
-        
-        <span class="tag" style="
-            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.25s,
-                float 4s ease-in-out infinite 25%;
-        ">Perfect Jeweller's O...</span>
-        
-        <span class="tag" style="
-            color: rgb(121 215 190); border-color: rgb(121 215 190); background-color: rgb(0 75 30); font-size: 21px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.3s,
-                float 5s ease-in-out infinite 58%;
         ">Time-Lost Emerald Ti...</span>
-        
-        <span class="tag" style="
-            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.35s,
-                float 3s ease-in-out infinite 91%;
-        ">Tablet</span>
-        
-        <span class="tag" style="
-            color: rgb(255 193 48); border-color: rgb(30 58 51); background-color: rgb(30 58 51);
-            animation: 
-                fadeInScale 0.5s ease backwards 1.4000000000000001s,
-                float 4s ease-in-out infinite 24%;
-        ">Greater Jeweller's O...</span>
         
         <span class="tag" style="
             color: rgb(255 255 255); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.4500000000000002s,
-                float 5s ease-in-out infinite 57%;
-        ">Rings</span>
+                fadeInScale 0.5s ease backwards 1.2000000000000002s,
+                float 3s ease-in-out infinite 92%;
+        ">Flasks</span>
         
         <span class="tag" style="
-            color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px;
+            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.5s,
-                float 3s ease-in-out infinite 90%;
-        ">Rings</span>
+                fadeInScale 0.5s ease backwards 1.25s,
+                float 4s ease-in-out infinite 25%;
+        ">Sapphire Ring Amethy...</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
+            color: rgb(255 188 17); border-color: rgb(156 106 255); background-color: rgb(88 57 150); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.55s,
-                float 4s ease-in-out infinite 23%;
-        ">Amber Amulet Azure A...</span>
+                fadeInScale 0.5s ease backwards 1.3s,
+                float 5s ease-in-out infinite 58%;
+        ">Breach Ring</span>
         
         <span class="tag" style="
             color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.6s,
-                float 5s ease-in-out infinite 56%;
+                fadeInScale 0.5s ease backwards 1.35s,
+                float 3s ease-in-out infinite 91%;
         ">Body Armour Boots Gl...</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); font-size: 17px;
+            color: rgb(30 233 148); border-color: rgb(30 233 148); font-size: 17px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.6500000000000001s,
-                float 3s ease-in-out infinite 89%;
-        ">ALL</span>
+                fadeInScale 0.5s ease backwards 1.4000000000000001s,
+                float 4s ease-in-out infinite 24%;
+        ">Relic</span>
         
         <span class="tag" style="
-            color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 17px;
+            color: rgb(168 179 49); border-color: rgb(168 179 49); background-color: rgb(0 0 0); font-size: 17px;
             animation: 
-                fadeInScale 0.5s ease backwards 1.7000000000000002s,
-                float 4s ease-in-out infinite 22%;
-        ">Waystone</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); text-decoration: line-through;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.75s,
-                float 5s ease-in-out infinite 55%;
-        ">Flasks</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.8s,
-                float 3s ease-in-out infinite 88%;
-        ">Amethyst Ring Breach...</span>
-        
-        <span class="tag" style="
-            color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.85s,
-                float 4s ease-in-out infinite 21%;
-        ">Belts</span>
-        
-        <span class="tag" style="
-            color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.9000000000000001s,
-                float 5s ease-in-out infinite 54%;
-        ">Ultimate Life Flask ...</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); text-decoration: line-through;
-            animation: 
-                fadeInScale 0.5s ease backwards 1.9500000000000002s,
-                float 3s ease-in-out infinite 87%;
-        ">Barya Ultimatum</span>
+                fadeInScale 0.5s ease backwards 1.4500000000000002s,
+                float 5s ease-in-out infinite 57%;
+        ">Uncut Support Gem</span>
         
         <span class="tag" style="
             color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.0s,
-                float 4s ease-in-out infinite 20%;
+                fadeInScale 0.5s ease backwards 1.5s,
+                float 3s ease-in-out infinite 90%;
         ">Arcanist's Etcher Ar...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.55s,
+                float 4s ease-in-out infinite 23%;
+        ">Amulets</span>
+        
+        <span class="tag" style="
+            color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.6s,
+                float 5s ease-in-out infinite 56%;
+        ">Gold</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.6500000000000001s,
+                float 3s ease-in-out infinite 89%;
+        ">Crimson Amulet Emera...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.7000000000000002s,
+                float 4s ease-in-out infinite 22%;
+        ">Barya Ultimatum</span>
+        
+        <span class="tag" style="
+            color: rgb(248 147 5); background-color: rgb(0 0 0); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.75s,
+                float 5s ease-in-out infinite 55%;
+        ">Body Armour Boots Gl...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.8s,
+                float 3s ease-in-out infinite 88%;
+        ">Omen of</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 1.85s,
+                float 4s ease-in-out infinite 21%;
+        ">Amulets</span>
         
         <span class="tag" style="
             color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.0500000000000003s,
-                float 5s ease-in-out infinite 53%;
+                fadeInScale 0.5s ease backwards 1.9000000000000001s,
+                float 5s ease-in-out infinite 54%;
         ">Waystone</span>
         
         <span class="tag" style="
-            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
+            color: rgb(255 193 48); border-color: rgb(30 58 51); background-color: rgb(30 58 51);
+            animation: 
+                fadeInScale 0.5s ease backwards 1.9500000000000002s,
+                float 3s ease-in-out infinite 87%;
+        ">Greater Jeweller's O...</span>
+        
+        <span class="tag" style="
+            color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.0s,
+                float 4s ease-in-out infinite 20%;
+        ">Charms</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.0500000000000003s,
+                float 5s ease-in-out infinite 53%;
+        ">ALL</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); text-decoration: line-through;
             animation: 
                 fadeInScale 0.5s ease backwards 2.1s,
                 float 3s ease-in-out infinite 86%;
         ">Charms</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); font-size: 16px;
+            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
             animation: 
                 fadeInScale 0.5s ease backwards 2.15s,
                 float 4s ease-in-out infinite 19%;
-        ">ALL</span>
+        ">Attuned Wand Siphoni...</span>
         
         <span class="tag" style="
-            color: rgb(168 179 49); border-color: rgb(168 179 49); background-color: rgb(0 0 0); font-size: 17px;
+            color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px;
             animation: 
                 fadeInScale 0.5s ease backwards 2.2s,
                 float 5s ease-in-out infinite 52%;
-        ">Uncut Support Gem</span>
+        ">Breach Ring</span>
         
         <span class="tag" style="
-            color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
+            color: rgb(238 238 238); border-color: rgb(53 13 13); background-color: rgb(216 64 64); font-size: 22px;
             animation: 
                 fadeInScale 0.5s ease backwards 2.25s,
                 float 3s ease-in-out infinite 85%;
-        ">Bronze Key Gold Key ...</span>
+        ">Armoured Cap Emerald...</span>
+        
+        <span class="tag" style="
+            color: rgb(128 136 54); border-color: rgb(128 136 54); font-size: 22px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.3000000000000003s,
+                float 4s ease-in-out infinite 18%;
+        ">Soul Core</span>
+        
+        <span class="tag" style="
+            color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 22px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.35s,
+                float 5s ease-in-out infinite 51%;
+        ">Timeless</span>
+        
+        <span class="tag" style="
+            color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.4000000000000004s,
+                float 3s ease-in-out infinite 84%;
+        ">Stellar Amulet Heavy...</span>
+        
+        <span class="tag" style="
+            color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.45s,
+                float 4s ease-in-out infinite 17%;
+        ">Body Armour Boots Gl...</span>
+        
+        <span class="tag" style="
+            color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.5s,
+                float 5s ease-in-out infinite 50%;
+        ">Body Armour Boots Gl...</span>
+        
+        <span class="tag" style="
+            color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 17px;
+            animation: 
+                fadeInScale 0.5s ease backwards 2.5500000000000003s,
+                float 3s ease-in-out infinite 83%;
+        ">Waystone</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61);
+            animation: 
+                fadeInScale 0.5s ease backwards 2.6s,
+                float 4s ease-in-out infinite 16%;
+        ">Gold Key Silver Key ...</span>
         
         <span class="tag" style="
             color: rgb(255 255 255); text-decoration: line-through;
             animation: 
-                fadeInScale 0.5s ease backwards 2.3000000000000003s,
-                float 4s ease-in-out infinite 18%;
-        ">Amulets</span>
+                fadeInScale 0.5s ease backwards 2.6500000000000004s,
+                float 5s ease-in-out infinite 49%;
+        ">Belts</span>
         
         <span class="tag" style="
-            color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px;
+            color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.35s,
-                float 5s ease-in-out infinite 51%;
-        ">Amulets</span>
+                fadeInScale 0.5s ease backwards 2.7s,
+                float 3s ease-in-out infinite 82%;
+        ">Rings</span>
         
         <span class="tag" style="
-            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
+            color: rgb(30 233 148); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.4000000000000004s,
-                float 3s ease-in-out infinite 84%;
-        ">Breachstone Cowardly...</span>
+                fadeInScale 0.5s ease backwards 2.75s,
+                float 4s ease-in-out infinite 15%;
+        ">Rune</span>
         
         <span class="tag" style="
-            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
+            color: rgb(218 145 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.45s,
-                float 4s ease-in-out infinite 17%;
-        ">Sapphire Ring Amethy...</span>
+                fadeInScale 0.5s ease backwards 2.8000000000000003s,
+                float 5s ease-in-out infinite 48%;
+        ">Orb of Annulment Exo...</span>
         
         <span class="tag" style="
             color: rgb(13 228 217); border-color: rgb(5 55 101); background-color: rgb(5 46 84); font-size: 19px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.5s,
-                float 5s ease-in-out infinite 50%;
+                fadeInScale 0.5s ease backwards 2.85s,
+                float 3s ease-in-out infinite 81%;
         ">Atmohua's Soul Core ...</span>
         
         <span class="tag" style="
             color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
             animation: 
-                fadeInScale 0.5s ease backwards 2.5500000000000003s,
-                float 3s ease-in-out infinite 83%;
-        ">Precursor Tablet</span>
-        
-        <span class="tag" style="
-            color: rgb(159 131 131); border-color: rgb(159 131 131);
-            animation: 
-                fadeInScale 0.5s ease backwards 2.6s,
-                float 4s ease-in-out infinite 16%;
-        ">Uncut Skill Gem</span>
-        
-        <span class="tag" style="
-            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
-            animation: 
-                fadeInScale 0.5s ease backwards 2.6500000000000004s,
-                float 5s ease-in-out infinite 49%;
-        ">Rabbit Talisman Fox ...</span>
-        
-        <span class="tag" style="
-            color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
-            animation: 
-                fadeInScale 0.5s ease backwards 2.7s,
-                float 3s ease-in-out infinite 82%;
-        ">Body Armour Boots Gl...</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); text-decoration: line-through;
-            animation: 
-                fadeInScale 0.5s ease backwards 2.75s,
-                float 4s ease-in-out infinite 15%;
-        ">Charms</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); text-decoration: line-through;
-            animation: 
-                fadeInScale 0.5s ease backwards 2.8000000000000003s,
-                float 5s ease-in-out infinite 48%;
-        ">Rings</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
-            animation: 
-                fadeInScale 0.5s ease backwards 2.85s,
-                float 3s ease-in-out infinite 81%;
-        ">Plate Belt Utility B...</span>
-        
-        <span class="tag" style="
-            color: rgb(211 82 35); border-color: rgb(211 82 35); font-size: 20px;
-            animation: 
                 fadeInScale 0.5s ease backwards 2.9000000000000004s,
                 float 4s ease-in-out infinite 14%;
-        ">Uncut Skill Gem Uncu...</span>
-        
-        <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61);
-            animation: 
-                fadeInScale 0.5s ease backwards 2.95s,
-                float 5s ease-in-out infinite 47%;
-        ">Gemcutter's Prism Va...</span>
-        
-        <span class="tag" style="
-            color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0);
-            animation: 
-                fadeInScale 0.5s ease backwards 3.0s,
-                float 3s ease-in-out infinite 80%;
-        ">Distilled Catalyst E...</span>
-        
-        <span class="tag" style="
-            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 3.0500000000000003s,
-                float 4s ease-in-out infinite 13%;
-        ">Barya Ultimatum</span>
-        
-        <span class="tag" style="
-            color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px;
-            animation: 
-                fadeInScale 0.5s ease backwards 3.1s,
-                float 5s ease-in-out infinite 46%;
-        ">Stellar Amulet Heavy...</span>
-        
-        <span class="tag" style="
-            color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 3.1500000000000004s,
-                float 3s ease-in-out infinite 79%;
-        ">Charms</span>
-        
-        <span class="tag" style="
-            color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 16px;
-            animation: 
-                fadeInScale 0.5s ease backwards 3.2s,
-                float 4s ease-in-out infinite 12%;
-        ">Flasks</span>
+        ">Rabbit Talisman Fox ...</span>
         
         <span class="tag" style="
             color: rgb(218 139 35); border-color: rgb(218 139 35); background-color: rgb(0 0 0); font-size: 17px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.25s,
-                float 5s ease-in-out infinite 45%;
+                fadeInScale 0.5s ease backwards 2.95s,
+                float 5s ease-in-out infinite 47%;
         ">Uncut Spirit Gem</span>
         
         <span class="tag" style="
             color: rgb(180 180 180); border-color: rgb(255 255 255); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.3000000000000003s,
-                float 3s ease-in-out infinite 78%;
+                fadeInScale 0.5s ease backwards 3.0s,
+                float 3s ease-in-out infinite 80%;
         ">Gold</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); border-color: rgb(104 104 104);
+            color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.35s,
-                float 4s ease-in-out infinite 11%;
-        ">Uncut Skill Gem</span>
+                fadeInScale 0.5s ease backwards 3.0500000000000003s,
+                float 4s ease-in-out infinite 13%;
+        ">Stag Talisman Ox Tal...</span>
         
         <span class="tag" style="
-            color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px;
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.4000000000000004s,
-                float 5s ease-in-out infinite 44%;
-        ">Rings</span>
+                fadeInScale 0.5s ease backwards 3.1s,
+                float 5s ease-in-out infinite 46%;
+        ">Breachstone Cowardly...</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255);
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.45s,
-                float 3s ease-in-out infinite 77%;
-        ">Distilled Isolation ...</span>
+                fadeInScale 0.5s ease backwards 3.1500000000000004s,
+                float 3s ease-in-out infinite 79%;
+        ">Pinnacle Keys</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); font-size: 16px;
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.5s,
-                float 4s ease-in-out infinite 10%;
-        ">Flasks</span>
+                fadeInScale 0.5s ease backwards 3.2s,
+                float 4s ease-in-out infinite 12%;
+        ">Barya Ultimatum</span>
         
         <span class="tag" style="
-            color: rgb(213 77 77); border-color: rgb(216 64 64); background-color: rgb(149 255 211); font-size: 22px;
+            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.5500000000000003s,
-                float 5s ease-in-out infinite 43%;
-        ">Amphora Relic Coffer...</span>
+                fadeInScale 0.5s ease backwards 3.25s,
+                float 5s ease-in-out infinite 45%;
+        ">Amber Amulet Azure A...</span>
         
         <span class="tag" style="
-            color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
+            color: rgb(30 233 148); font-size: 17px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.6s,
-                float 3s ease-in-out infinite 76%;
-        ">ALL</span>
-        
-        <span class="tag" style="
-            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
-            animation: 
-                fadeInScale 0.5s ease backwards 3.6500000000000004s,
-                float 4s ease-in-out infinite 9%;
-        ">Seaglass Spear Sacre...</span>
+                fadeInScale 0.5s ease backwards 3.3000000000000003s,
+                float 3s ease-in-out infinite 78%;
+        ">Greater Desert Rune ...</span>
         
         <span class="tag" style="
             color: rgb(156 169 134); border-color: rgb(156 169 134); background-color: rgb(10 10 10); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.7s,
-                float 5s ease-in-out infinite 42%;
+                fadeInScale 0.5s ease backwards 3.35s,
+                float 4s ease-in-out infinite 11%;
         ">Waystone</span>
         
         <span class="tag" style="
-            color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 22px;
+            color: rgb(255 209 94); background-color: rgb(0 0 0); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.75s,
-                float 3s ease-in-out infinite 75%;
-        ">Timeless</span>
+                fadeInScale 0.5s ease backwards 3.4000000000000004s,
+                float 5s ease-in-out infinite 44%;
+        ">Body Armour Boots Gl...</span>
         
         <span class="tag" style="
-            color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px;
+            color: rgb(255 255 255); font-size: 16px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.8000000000000003s,
-                float 4s ease-in-out infinite 8%;
-        ">Attuned Wand Siphoni...</span>
+                fadeInScale 0.5s ease backwards 3.45s,
+                float 3s ease-in-out infinite 77%;
+        ">Currency</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.5s,
+                float 4s ease-in-out infinite 10%;
+        ">Amethyst Ring Breach...</span>
+        
+        <span class="tag" style="
+            color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.5500000000000003s,
+                float 5s ease-in-out infinite 43%;
+        ">ALL</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.6s,
+                float 3s ease-in-out infinite 76%;
+        ">Currency</span>
         
         <span class="tag" style="
             color: rgb(255 255 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 15px;
             animation: 
-                fadeInScale 0.5s ease backwards 3.85s,
-                float 5s ease-in-out infinite 41%;
+                fadeInScale 0.5s ease backwards 3.6500000000000004s,
+                float 4s ease-in-out infinite 9%;
         ">Scroll of Wisdom</span>
         
         <span class="tag" style="
-            color: rgb(30 233 148); font-size: 16px;
+            color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.7s,
+                float 5s ease-in-out infinite 42%;
+        ">Fishing Rods</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.75s,
+                float 3s ease-in-out infinite 75%;
+        ">Body Armour Boots Gl...</span>
+        
+        <span class="tag" style="
+            color: rgb(255 255 255);
+            animation: 
+                fadeInScale 0.5s ease backwards 3.8000000000000003s,
+                float 4s ease-in-out infinite 8%;
+        ">Distilled Isolation ...</span>
+        
+        <span class="tag" style="
+            color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 16px;
+            animation: 
+                fadeInScale 0.5s ease backwards 3.85s,
+                float 5s ease-in-out infinite 41%;
+        ">Ultimate Life Flask ...</span>
+        
+        <span class="tag" style="
+            color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0);
             animation: 
                 fadeInScale 0.5s ease backwards 3.9000000000000004s,
                 float 3s ease-in-out infinite 74%;
-        ">Serpent Talisman Pri...</span>
+        ">Distilled Catalyst E...</span>
         
         <span class="tag" style="
-            color: rgb(128 136 54); border-color: rgb(128 136 54); font-size: 22px;
+            color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px;
             animation: 
                 fadeInScale 0.5s ease backwards 3.95s,
                 float 4s ease-in-out infinite 7%;
-        ">Soul Core</span>
+        ">Rings</span>
         
         <span class="tag" style="
-            color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px;
+            color: rgb(159 131 131); border-color: rgb(159 131 131);
             animation: 
                 fadeInScale 0.5s ease backwards 4.0s,
                 float 5s ease-in-out infinite 40%;
-        ">Gold</span>
+        ">Uncut Skill Gem</span>
         
         <span class="tag" style="
-            color: rgb(255 0 0); border-color: rgb(255 0 0); background-color: rgb(255 255 255); font-size: 22px;
+            color: rgb(211 82 35); border-color: rgb(211 82 35); font-size: 20px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.05s,
                 float 3s ease-in-out infinite 73%;
         ">Uncut Skill Gem Uncu...</span>
         
         <span class="tag" style="
-            color: rgb(201 218 191); border-color: rgb(201 218 191); background-color: rgb(33 33 33); font-size: 16px;
+            color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.1000000000000005s,
                 float 4s ease-in-out infinite 6%;
-        ">Waystone</span>
+        ">Jewel</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); font-size: 16px;
+            color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.15s,
                 float 5s ease-in-out infinite 39%;
-        ">Waystone</span>
+        ">Perfect Jeweller's O...</span>
         
         <span class="tag" style="
             color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.2s,
                 float 3s ease-in-out infinite 72%;
-        ">ALL</span>
+        ">Rings</span>
         
         <span class="tag" style="
-            color: rgb(255 255 255); font-size: 16px;
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 19px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.25s,
                 float 4s ease-in-out infinite 5%;
-        ">Currency</span>
+        ">Simulacrum</span>
         
         <span class="tag" style="
-            color: rgb(248 147 5); background-color: rgb(0 0 0); font-size: 20px;
+            color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.3s,
                 float 5s ease-in-out infinite 38%;
-        ">Body Armour Boots Gl...</span>
+        ">Vault Keys</span>
         
         <span class="tag" style="
-            color: rgb(30 233 148); border-color: rgb(30 233 148); font-size: 17px;
+            color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px;
             animation: 
                 fadeInScale 0.5s ease backwards 4.3500000000000005s,
                 float 3s ease-in-out infinite 71%;
-        ">Relic</span>
+        ">ALL</span>
         </div>
 
-    <h2>Filter Group Preview</h2>
-    <h3>gacha.filter</h3>
+    <div class="container">
+        <h2>📋 Filter Rules Preview</h2>
+        <h3>gacha.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Stellar Amulet Heavy Belt Breach Ring Solar Amulet Rampart Tower Shield Pearl Ring Jade Amulet Forked Spear</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px">Stellar Am...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Sapphire Ring Amethyst Ring Heavy Belt Breach Ring Gold Ring Gold Amulet Prismatic Ring Unset Ring</td>
-  <td>Normal</td>
-  <td>iLvl: >= 78</td>
-  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
-  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Sapphire R...</div></td>
-</tr>
-<tr>
-  <td>Charms</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>iLvl: >= 81</td>
-  <td><span class="minimap-icon-◆ minimap-icon-green">◆</span></td>
-  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Charms</div></td>
-</tr>
-</table> <h3>crafting.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Stellar Amulet Heavy Belt Breach Ring Solar Amulet Rampart Tower Shield Pearl Ring Jade Amulet Forked Spear</td><td>Normal</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-red">◆</span></td><td><div class="style-box" style="color: rgb(233 75 75); border-color: rgb(233 75 75); background-color: rgb(10 10 10); font-size: 20px">Stellar Am...</div></td></tr>
+<tr><td>ALL</td><td>Sapphire Ring Amethyst Ring Heavy Belt Breach Ring Gold Ring Gold Amulet Prismatic Ring Unset Ring</td><td>Normal</td><td>ItemLevel: >= 78</td><td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td><td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Sapphire R...</div></td></tr>
+<tr><td>Charms</td><td>ALL</td><td>Normal</td><td>ItemLevel: >= 81</td><td><span class="minimap-icon-◆ minimap-icon-green">◆</span></td><td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Charms</div></td></tr>
+</tbody></table><h3>crafting.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Attuned Wand Siphoning Wand Dualstring Bow Chiming Staff Rattling Sceptre Kamasan Tiara Seaglass Spear Striking Spear Spiked Spear Massive Spear Falconer's Jacket Vaal Gloves Vile robe SLeek jacket</td>
-  <td>Normal</td>
-  <td>iLvl: >= 81</td>
-  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
-  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Attuned Wa...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Seaglass Spear Sacred Focus</td>
-  <td>Normal</td>
-  <td>iLvl: >= 79</td>
-  <td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td>
-  <td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Seaglass S...</div></td>
-</tr>
-<tr>
-  <td>Amulets Rings</td>
-  <td>Amethyst Ring Breach Ring Prismatic Ring Solar Amulet</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65, iLvl: >= 82</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amethyst R...</div></td>
-</tr>
-<tr>
-  <td>Amulets Rings</td>
-  <td>Amber Amulet Azure Amulet Bloodstone Amulet Gold Amulet Gold Ring Jade Amulet Lapis Amulet Lazuli Ring Lunar Amulet Pearl Ring Ruby Ring Sapphire Ring Stellar Amulet Topaz Ring Unset Ring</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65, iLvl: >= 82</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amber Amul...</div></td>
-</tr>
-<tr>
-  <td>Amulets Rings</td>
-  <td>Crimson Amulet Emerald Ring Iron Ring</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65, iLvl: >= 82</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px">Crimson Am...</div></td>
-</tr>
-<tr>
-  <td>Amulets Rings</td>
-  <td>Amethyst Ring Breach Ring Prismatic Ring Solar Amulet</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amethyst R...</div></td>
-</tr>
-<tr>
-  <td>Belts</td>
-  <td>Plate Belt Utility Belt</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65, iLvl: >= 82</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Plate Belt...</div></td>
-</tr>
-<tr>
-  <td>Belts</td>
-  <td>Double Belt Fine Belt Heavy Belt Linen Belt Long Belt Mail Belt Ornate Belt Rawhide Belt Wide Belt</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 65, iLvl: >= 82</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px">Double Bel...</div></td>
-</tr>
-</table> <h3>gold.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Attuned Wand Siphoning Wand Dualstring Bow Chiming Staff Rattling Sceptre Kamasan Tiara Seaglass Spear Spiked Spear Massive Spear Falconer's Jacket Vaal Gloves Vile robe SLeek jacket</td><td>Normal</td><td>ItemLevel: >= 81</td><td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td><td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Attuned Wa...</div></td></tr>
+<tr><td>ALL</td><td>Seaglass Spear Sacred Focus</td><td>Normal</td><td>ItemLevel: >= 79</td><td><span class="minimap-icon-◆ minimap-icon-orange">◆</span></td><td><div class="style-box" style="color: rgb(160 255 71); background-color: rgb(10 10 10); font-size: 18px">Seaglass S...</div></td></tr>
+<tr><td>Amulets Rings</td><td>Amethyst Ring Breach Ring Prismatic Ring Solar Amulet</td><td>Normal Magic</td><td>ItemLevel: >= 82, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amethyst R...</div></td></tr>
+<tr><td>Amulets Rings</td><td>Amber Amulet Azure Amulet Bloodstone Amulet Gold Amulet Gold Ring Jade Amulet Lapis Amulet Lazuli Ring Lunar Amulet Pearl Ring Ruby Ring Sapphire Ring Stellar Amulet Topaz Ring Unset Ring</td><td>Normal Magic</td><td>ItemLevel: >= 82, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amber Amul...</div></td></tr>
+<tr><td>Amulets Rings</td><td>Crimson Amulet Emerald Ring Iron Ring</td><td>Normal Magic</td><td>ItemLevel: >= 82, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px">Crimson Am...</div></td></tr>
+<tr><td>Amulets Rings</td><td>Amethyst Ring Breach Ring Prismatic Ring Solar Amulet</td><td>Normal Magic</td><td>AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Amethyst R...</div></td></tr>
+<tr><td>Belts</td><td>Plate Belt Utility Belt</td><td>Normal Magic</td><td>ItemLevel: >= 82, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); background-color: rgb(30 0 70); font-size: 18px">Plate Belt...</div></td></tr>
+<tr><td>Belts</td><td>Double Belt Fine Belt Heavy Belt Linen Belt Long Belt Mail Belt Ornate Belt Rawhide Belt Wide Belt</td><td>Normal Magic</td><td>ItemLevel: >= 82, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(139 191 226); font-size: 18px">Double Bel...</div></td></tr>
+</tbody></table><h3>gold.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">ALL</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Gold</td>
-  <td>Any</td>
-  <td>Area: >= 70</td>
-  <td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td>
-  <td><div class="style-box" style="color: rgb(180 180 180); border-color: rgb(255 255 255); font-size: 16px">Gold</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Gold</td>
-  <td>Any</td>
-  <td>Area: < 70</td>
-  <td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td>
-  <td><div class="style-box" style="color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px">Gold</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Gold</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px">Gold</div></td>
-</tr>
-</table> <h3>uncut_gems.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>ALL</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">ALL</div></td></tr>
+<tr><td>ALL</td><td>Gold</td><td>Any</td><td>AreaLevel: >= 70</td><td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td><td><div class="style-box" style="color: rgb(180 180 180); border-color: rgb(255 255 255); font-size: 16px">Gold</div></td></tr>
+<tr><td>ALL</td><td>Gold</td><td>Any</td><td>AreaLevel: < 70</td><td><span class="minimap-icon-✕ minimap-icon-white">✕</span></td><td><div class="style-box" style="color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px">Gold</div></td></tr>
+<tr><td>ALL</td><td>Gold</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(180 180 180); background-color: rgb(255 255 255); font-size: 16px">Gold</div></td></tr>
+</tbody></table><h3>uncut_gems.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Skill Gem Uncut Spirit Gem</td>
-  <td>Any</td>
-  <td>iLvl: = 20</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(255 0 0); border-color: rgb(255 0 0); background-color: rgb(255 255 255); font-size: 22px">Uncut Skil...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Skill Gem Uncut Spirit Gem</td>
-  <td>Any</td>
-  <td>iLvl: = 19</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(211 82 35); border-color: rgb(211 82 35); font-size: 20px">Uncut Skil...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Skill Gem</td>
-  <td>Any</td>
-  <td>Area: >= 75, iLvl: <= 18</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(104 104 104)">Uncut Skil...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Skill Gem</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(159 131 131); border-color: rgb(159 131 131)">Uncut Skil...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">ALL</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Spirit Gem</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td>
-  <td><div class="style-box" style="color: rgb(218 139 35); border-color: rgb(218 139 35); background-color: rgb(0 0 0); font-size: 17px">Uncut Spir...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Uncut Support Gem</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td>
-  <td><div class="style-box" style="color: rgb(168 179 49); border-color: rgb(168 179 49); background-color: rgb(0 0 0); font-size: 17px">Uncut Supp...</div></td>
-</tr>
-</table> <h3>scroll_of_wisdom.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Uncut Skill Gem Uncut Spirit Gem</td><td>Any</td><td>ItemLevel: = 20</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(255 0 0); border-color: rgb(255 0 0); background-color: rgb(255 255 255); font-size: 22px">Uncut Skil...</div></td></tr>
+<tr><td>ALL</td><td>Uncut Skill Gem Uncut Spirit Gem</td><td>Any</td><td>ItemLevel: = 19</td><td>-</td><td><div class="style-box" style="color: rgb(211 82 35); border-color: rgb(211 82 35); font-size: 20px">Uncut Skil...</div></td></tr>
+<tr><td>ALL</td><td>Uncut Skill Gem</td><td>Any</td><td>AreaLevel: >= 75, ItemLevel: <= 18</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(104 104 104)">Uncut Skil...</div></td></tr>
+<tr><td>ALL</td><td>Uncut Skill Gem</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(159 131 131); border-color: rgb(159 131 131)">Uncut Skil...</div></td></tr>
+<tr><td>ALL</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 17px">ALL</div></td></tr>
+<tr><td>ALL</td><td>Uncut Spirit Gem</td><td>Any</td><td>Any</td><td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td><td><div class="style-box" style="color: rgb(218 139 35); border-color: rgb(218 139 35); background-color: rgb(0 0 0); font-size: 17px">Uncut Spir...</div></td></tr>
+<tr><td>ALL</td><td>Uncut Support Gem</td><td>Any</td><td>Any</td><td><span class="minimap-icon-▲ minimap-icon-brown">▲</span></td><td><div class="style-box" style="color: rgb(168 179 49); border-color: rgb(168 179 49); background-color: rgb(0 0 0); font-size: 17px">Uncut Supp...</div></td></tr>
+</tbody></table><h3>scroll_of_wisdom.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Scroll of Wisdom</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 15px">Scroll of ...</div></td>
-</tr>
-</table> <h3>salvage.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Scroll of Wisdom</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 15px">Scroll of ...</div></td></tr>
+</tbody></table><h3>salvage.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 75, Sock: > 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through">ALL</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 75, Qual: > 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through">ALL</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Normal Magic</td>
-  <td>Area: < 79, Sock: > 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px">ALL</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Normal Magic</td>
-  <td>Area: < 79, Qual: > 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px">ALL</div></td>
-</tr>
-</table> <h3>amulets.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>ALL</td><td>Normal Magic</td><td>Sockets: > 0, AreaLevel: >= 75</td><td>-</td><td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through; opacity: 0.7">ALL</div></td></tr>
+<tr><td>ALL</td><td>ALL</td><td>Normal Magic</td><td>Quality: > 0, AreaLevel: >= 75</td><td>-</td><td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through; opacity: 0.7">ALL</div></td></tr>
+<tr><td>ALL</td><td>ALL</td><td>Normal Magic</td><td>Sockets: > 0, AreaLevel: < 79</td><td>-</td><td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px">ALL</div></td></tr>
+<tr><td>ALL</td><td>ALL</td><td>Normal Magic</td><td>Quality: > 0, AreaLevel: < 79</td><td>-</td><td><div class="style-box" style="color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px">ALL</div></td></tr>
+</tbody></table><h3>amulets.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Amulets</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Area: >= 70</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Amulets</div></td>
-</tr>
-<tr>
-  <td>Amulets</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Area: >= 70, iLvl: < 80</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Amulets</div></td>
-</tr>
-<tr>
-  <td>Amulets</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Amulets</div></td>
-</tr>
-<tr>
-  <td>Amulets</td>
-  <td>ALL</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
-  <td><div class="style-box" style="color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px">Amulets</div></td>
-</tr>
-</table> <h3>belts.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Amulets</td><td>ALL</td><td>Magic</td><td>AreaLevel: >= 70</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Amulets</div></td></tr>
+<tr><td>Amulets</td><td>ALL</td><td>Normal</td><td>ItemLevel: < 80, AreaLevel: >= 70</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Amulets</div></td></tr>
+<tr><td>Amulets</td><td>ALL</td><td>Normal</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Amulets</div></td></tr>
+<tr><td>Amulets</td><td>ALL</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td><td><div class="style-box" style="color: rgb(221 168 83); border-color: rgb(22 64 77); background-color: rgb(22 64 77); font-size: 16px">Amulets</div></td></tr>
+</tbody></table><h3>belts.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Belts</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Qual: == 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Belts</div></td>
-</tr>
-<tr>
-  <td>Belts</td>
-  <td>ALL</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px">Belts</div></td>
-</tr>
-</table> <h3>jewel.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Belts</td><td>ALL</td><td>Magic</td><td>Quality: == 0</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Belts</div></td></tr>
+<tr><td>Belts</td><td>ALL</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td><td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px">Belts</div></td></tr>
+</tbody></table><h3>jewel.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Jewel</td>
-  <td>ALL</td>
-  <td>Normal Magic Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
-  <td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 16px">Jewel</div></td>
-</tr>
-<tr>
-  <td>Jewel</td>
-  <td>Time-Lost Emerald Time-Lost Ruby Time-Lost Sapphire</td>
-  <td>Normal Magic Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-blue">◆</span></td>
-  <td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); background-color: rgb(0 75 30); font-size: 21px">Time-Lost ...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Timeless</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
-  <td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 22px">Timeless</div></td>
-</tr>
-</table> <h3>key.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Jewel</td><td>ALL</td><td>Normal Magic Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td><td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 16px">Jewel</div></td></tr>
+<tr><td>Jewel</td><td>Time-Lost Emerald Time-Lost Ruby Time-Lost Sapphire</td><td>Normal Magic Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-blue">◆</span></td><td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); background-color: rgb(0 75 30); font-size: 21px">Time-Lost ...</div></td></tr>
+<tr><td>ALL</td><td>Timeless</td><td>Any</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td><td><div class="style-box" style="color: rgb(121 215 190); border-color: rgb(121 215 190); font-size: 22px">Timeless</div></td></tr>
+</tbody></table><h3>ring.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Precursor Tablet</td>
-  <td>Unique</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Precursor ...</div></td>
-</tr>
-<tr>
-  <td>Pinnacle Keys</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-brown">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Pinnacle K...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Simulacrum</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-brown">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 19px">Simulacrum</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Breachstone Cowardly Fate Deadly Fate Victorious Fate Expedition Logbook Test of</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-brown">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Breachston...</div></td>
-</tr>
-<tr>
-  <td>Tablet</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-yellow">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Tablet</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Barya Ultimatum</td>
-  <td>Any</td>
-  <td>Area: >= 75, iLvl: < 79</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Barya Ulti...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Barya Ultimatum</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-brown">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 16px">Barya Ulti...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Bronze Key Gold Key Silver Key</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-⬟ minimap-icon-green">⬟</span></td>
-  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Bronze Key...</div></td>
-</tr>
-<tr>
-  <td>Fishing Rods</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-⬟ minimap-icon-brown">⬟</span></td>
-  <td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Fishing Ro...</div></td>
-</tr>
-<tr>
-  <td>Vault Keys</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-brown">■</span></td>
-  <td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Vault Keys</div></td>
-</tr>
-</table> <h3>relics.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Breach Ring</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td><td><div class="style-box" style="color: rgb(255 188 17); border-color: rgb(156 106 255); background-color: rgb(88 57 150); font-size: 20px">Breach Rin...</div></td></tr>
+<tr><td>ALL</td><td>Breach Ring</td><td>Magic</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td><td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Breach Rin...</div></td></tr>
+<tr><td>Rings</td><td>ALL</td><td>Magic</td><td>AreaLevel: >= 60</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Rings</div></td></tr>
+<tr><td>Rings</td><td>ALL</td><td>Normal</td><td>AreaLevel: < 81</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Rings</div></td></tr>
+<tr><td>Rings</td><td>ALL</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td><td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px">Rings</div></td></tr>
+<tr><td>Rings</td><td>ALL</td><td>Normal</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td><td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Rings</div></td></tr>
+</tbody></table><h3>key.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Amphora Relic Coffer Relic Vase Relic Seal Relic Tapestry Relic Incense Relic</td>
-  <td>Unique</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(213 77 77); border-color: rgb(216 64 64); background-color: rgb(149 255 211); font-size: 22px">Amphora Re...</div></td>
-</tr>
-<tr>
-  <td>Relic</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
-  <td><div class="style-box" style="color: rgb(30 233 148); border-color: rgb(30 233 148); font-size: 17px">Relic</div></td>
-</tr>
-</table> <h3>ring.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Precursor Tablet</td><td>Unique</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Precursor ...</div></td></tr>
+<tr><td>Pinnacle Keys</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-brown">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Pinnacle K...</div></td></tr>
+<tr><td>ALL</td><td>Simulacrum</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-brown">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 19px">Simulacrum</div></td></tr>
+<tr><td>ALL</td><td>Breachstone Cowardly Fate Deadly Fate Victorious Fate Expedition Logbook Test of</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-brown">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Breachston...</div></td></tr>
+<tr><td>Tablet</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-yellow">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Tablet</div></td></tr>
+<tr><td>ALL</td><td>Barya Ultimatum</td><td>Any</td><td>AreaLevel: >= 75, ItemLevel: < 79</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Barya Ulti...</div></td></tr>
+<tr><td>ALL</td><td>Barya Ultimatum</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-brown">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 16px">Barya Ulti...</div></td></tr>
+<tr><td>ALL</td><td>Bronze Key Gold Key Silver Key</td><td>Any</td><td>Any</td><td><span class="minimap-icon-⬟ minimap-icon-green">⬟</span></td><td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Bronze Key...</div></td></tr>
+<tr><td>Fishing Rods</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-⬟ minimap-icon-brown">⬟</span></td><td><div class="style-box" style="color: rgb(125 241 37); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Fishing Ro...</div></td></tr>
+<tr><td>Vault Keys</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-brown">■</span></td><td><div class="style-box" style="color: rgb(177 90 18); border-color: rgb(177 90 18); background-color: rgb(24 39 71); font-size: 20px">Vault Keys</div></td></tr>
+</tbody></table><h3>relics.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Breach Ring</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td>
-  <td><div class="style-box" style="color: rgb(255 188 17); border-color: rgb(156 106 255); background-color: rgb(88 57 150); font-size: 20px">Breach Rin...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Breach Ring</td>
-  <td>Magic</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td>
-  <td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Breach Rin...</div></td>
-</tr>
-<tr>
-  <td>Rings</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Area: >= 60</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Rings</div></td>
-</tr>
-<tr>
-  <td>Rings</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Area: < 81</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Rings</div></td>
-</tr>
-<tr>
-  <td>Rings</td>
-  <td>ALL</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-yellow">◆</span></td>
-  <td><div class="style-box" style="color: rgb(233 206 75); border-color: rgb(233 206 75); font-size: 16px">Rings</div></td>
-</tr>
-<tr>
-  <td>Rings</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-purple">◆</span></td>
-  <td><div class="style-box" style="color: rgb(156 106 255); border-color: rgb(156 106 255); font-size: 20px">Rings</div></td>
-</tr>
-</table> <h3>rune.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Amphora Relic Coffer Relic Vase Relic Seal Relic Tapestry Relic Incense Relic</td><td>Unique</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(213 77 77); border-color: rgb(216 64 64); background-color: rgb(149 255 211); font-size: 22px">Amphora Re...</div></td></tr>
+<tr><td>Relic</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td><td><div class="style-box" style="color: rgb(30 233 148); border-color: rgb(30 233 148); font-size: 17px">Relic</div></td></tr>
+</tbody></table><h3>rune.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Atmohua's Soul Core of Retreat Cholotl's Soul Core of War Citaqualotl's Soul Core of Foulness Courtesan Mannan's Rune of Cruelty Craiceann's Rune of Recovery Craiceann's Rune of Warding Estazunti's Soul Core of Convalescence Farrul's Rune of Grace Farrul's Rune of the Hunt Farrul's Rune of the Chase Fenumus' Rune of Agony Fenumus' Rune of Draining Fenumus' Rune of Spinning Guatelitzi's Soul Core of Endurance Hayoxi's Soul Core of Heatproofing Lady Hestra's Rune of Winter Opiloti's Soul Core of Assault Ox Talisman Quipolatl's Soul Core of Flow Saqawal's Rune of Erosion Saqawal's Rune of Memory Saqawal's Rune of the Sky Soul Core of Atmohua Soul Core of Citaqualotl Soul Core of Opiloti Soul Core of Quipolatl Soul Core of Tacati Soul Core of Xopec Soul Core of Zantipi Tacati's Soul Core of Affliction Talisman of Eeshta Talisman of Egrin Talisman of Grold Talisman of Maxarius Talisman of Sirrius Talisman of Thruldana Thane Girt's Rune of Wildness Thane Grannell's Rune of Mastery Thane Leld's Rune of Spring Thane Myrk's Rune of Summer The Greatwolf's Rune of Claws The Greatwolf's Rune of Willpower Topotante's Soul Core of Dampening Tzamoto's Soul Core of Ferocity Uromoti's Soul Core of Attenuation Xipocado's Soul Core of Dominion Xopec's Soul Core of Power Zalatl's Soul Core of Insulation</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(13 228 217); border-color: rgb(5 55 101); background-color: rgb(5 46 84); font-size: 19px">Atmohua's ...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Greater Desert Rune Greater Glacial Rune Greater Iron Rune Greater Rune of Alacrity Greater Rune of Leadership Greater Rune of Nobility Greater Rune of Tithing Greater Storm Rune</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(30 233 148); font-size: 17px">Greater De...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Rune</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(30 233 148); font-size: 16px">Rune</div></td>
-</tr>
-</table> <h3>talisman.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Atmohua's Soul Core of Retreat Cholotl's Soul Core of War Citaqualotl's Soul Core of Foulness Courtesan Mannan's Rune of Cruelty Craiceann's Rune of Recovery Craiceann's Rune of Warding Estazunti's Soul Core of Convalescence Farrul's Rune of Grace Farrul's Rune of the Hunt Farrul's Rune of the Chase Fenumus' Rune of Agony Fenumus' Rune of Draining Fenumus' Rune of Spinning Guatelitzi's Soul Core of Endurance Hayoxi's Soul Core of Heatproofing Lady Hestra's Rune of Winter Opiloti's Soul Core of Assault Ox Talisman Quipolatl's Soul Core of Flow Saqawal's Rune of Erosion Saqawal's Rune of Memory Saqawal's Rune of the Sky Soul Core of Atmohua Soul Core of Citaqualotl Soul Core of Opiloti Soul Core of Quipolatl Soul Core of Tacati Soul Core of Xopec Soul Core of Zantipi Tacati's Soul Core of Affliction Talisman of Eeshta Talisman of Egrin Talisman of Grold Talisman of Maxarius Talisman of Sirrius Talisman of Thruldana Thane Girt's Rune of Wildness Thane Grannell's Rune of Mastery Thane Leld's Rune of Spring Thane Myrk's Rune of Summer The Greatwolf's Rune of Claws The Greatwolf's Rune of Willpower Topotante's Soul Core of Dampening Tzamoto's Soul Core of Ferocity Uromoti's Soul Core of Attenuation Xipocado's Soul Core of Dominion Xopec's Soul Core of Power Zalatl's Soul Core of Insulation</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(13 228 217); border-color: rgb(5 55 101); background-color: rgb(5 46 84); font-size: 19px">Atmohua's ...</div></td></tr>
+<tr><td>ALL</td><td>Greater Desert Rune Greater Glacial Rune Greater Iron Rune Greater Rune of Alacrity Greater Rune of Leadership Greater Rune of Nobility Greater Rune of Tithing Greater Storm Rune</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(30 233 148); font-size: 17px">Greater De...</div></td></tr>
+<tr><td>ALL</td><td>Rune</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(30 233 148); font-size: 16px">Rune</div></td></tr>
+</tbody></table><h3>talisman.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Rabbit Talisman Fox Talisman</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Rabbit Tal...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Serpent Talisman Primate Talisman Owl Talisman Cat Talisman Boar Talisman Bear Talisman</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(30 233 148); font-size: 16px">Serpent Ta...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Stag Talisman Ox Talisman Wolf Talisman</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px">Stag Talis...</div></td>
-</tr>
-</table> <h3>soul_core.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Rabbit Talisman Fox Talisman</td><td>Any</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Rabbit Tal...</div></td></tr>
+<tr><td>ALL</td><td>Serpent Talisman Primate Talisman Owl Talisman Cat Talisman Boar Talisman Bear Talisman</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(30 233 148); font-size: 16px">Serpent Ta...</div></td></tr>
+<tr><td>ALL</td><td>Stag Talisman Ox Talisman Wolf Talisman</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px">Stag Talis...</div></td></tr>
+</tbody></table><h3>soul_core.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Soul Core</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td>
-  <td><div class="style-box" style="color: rgb(128 136 54); border-color: rgb(128 136 54); font-size: 22px">Soul Core</div></td>
-</tr>
-</table> <h3>waystones.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Soul Core</td><td>Any</td><td>Any</td><td><span class="minimap-icon-◆ minimap-icon-cyan">◆</span></td><td><div class="style-box" style="color: rgb(128 136 54); border-color: rgb(128 136 54); font-size: 22px">Soul Core</div></td></tr>
+</tbody></table><h3>waystones.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Waystone</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 17px">Waystone</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(201 218 191); border-color: rgb(201 218 191); background-color: rgb(33 33 33); font-size: 16px">Waystone</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(156 169 134); border-color: rgb(156 169 134); background-color: rgb(10 10 10); font-size: 16px">Waystone</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Waystone</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-■ minimap-icon-blue">■</span></td>
-  <td><div class="style-box" style="color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 20px">Waystone</div></td>
-</tr>
-</table> <h3>flasks.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Waystone</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Waystone</div></td></tr>
+<tr><td>ALL</td><td>Waystone</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 17px">Waystone</div></td></tr>
+<tr><td>ALL</td><td>Waystone</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(201 218 191); border-color: rgb(201 218 191); background-color: rgb(33 33 33); font-size: 16px">Waystone</div></td></tr>
+<tr><td>ALL</td><td>Waystone</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(156 169 134); border-color: rgb(156 169 134); background-color: rgb(10 10 10); font-size: 16px">Waystone</div></td></tr>
+<tr><td>ALL</td><td>Waystone</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-■ minimap-icon-blue">■</span></td><td><div class="style-box" style="color: rgb(184 31 77); border-color: rgb(4 10 29); background-color: rgb(6 15 43); font-size: 20px">Waystone</div></td></tr>
+</tbody></table><h3>flasks.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Ultimate Life Flask Ultimate Mana Flask</td>
-  <td>Rare</td>
-  <td>Area: >= 65, iLvl: >= 83</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 16px">Ultimate L...</div></td>
-</tr>
-<tr>
-  <td>Flasks</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Area: >= 65, Qual: == 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Flasks</div></td>
-</tr>
-<tr>
-  <td>Flasks</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Qual: >= 1</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 16px">Flasks</div></td>
-</tr>
-<tr>
-  <td>Flasks</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Flasks</div></td>
-</tr>
-</table> <h3>charms.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Ultimate Life Flask Ultimate Mana Flask</td><td>Rare</td><td>AreaLevel: >= 65, ItemLevel: >= 83</td><td>-</td><td><div class="style-box" style="color: rgb(143 106 206); border-color: rgb(62 88 121); background-color: rgb(10 10 10); font-size: 16px">Ultimate L...</div></td></tr>
+<tr><td>Flasks</td><td>ALL</td><td>Magic</td><td>Quality: == 0, AreaLevel: >= 65</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Flasks</div></td></tr>
+<tr><td>Flasks</td><td>ALL</td><td>Magic</td><td>Quality: >= 1</td><td>-</td><td><div class="style-box" style="color: rgb(62 88 121); border-color: rgb(62 88 121); font-size: 16px">Flasks</div></td></tr>
+<tr><td>Flasks</td><td>ALL</td><td>Normal</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Flasks</div></td></tr>
+</tbody></table><h3>charms.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Charms</td>
-  <td>ALL</td>
-  <td>Normal Magic</td>
-  <td>Area: >= 60, iLvl: <= 80</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through">Charms</div></td>
-</tr>
-<tr>
-  <td>Charms</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Area: >= 65, Qual: >= 18, iLvl: >= 82</td>
-  <td><span class="minimap-icon-★ minimap-icon-green">★</span></td>
-  <td><div class="style-box" style="color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 16px">Charms</div></td>
-</tr>
-</table> <h3>currency.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Charms</td><td>ALL</td><td>Normal Magic</td><td>ItemLevel: <= 80, AreaLevel: >= 60</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); text-decoration: line-through; opacity: 0.7">Charms</div></td></tr>
+<tr><td>Charms</td><td>ALL</td><td>Any</td><td>Quality: >= 18, ItemLevel: >= 82, AreaLevel: >= 65</td><td><span class="minimap-icon-★ minimap-icon-green">★</span></td><td><div class="style-box" style="color: rgb(133 159 61); border-color: rgb(133 159 61); background-color: rgb(49 81 30); font-size: 16px">Charms</div></td></tr>
+</tbody></table><h3>currency.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Currency</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Currency</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Mirror Divine</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Mirror Div...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Perfect Jeweller's Orb Distilled Isolation Distilled Suffering</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Perfect Je...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Distilled Isolation Distilled Suffering</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255)">Distilled ...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Greater Jeweller's Orb Distilled Fear Distilled Despair</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-yellow">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 193 48); border-color: rgb(30 58 51); background-color: rgb(30 58 51)">Greater Je...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Orb of Annulment Exotic Coinage Exalted Orb Chaos Orb Fracturing Orb Orb of Chance Reaver Catalyst Esh's Catalyst Chance Shard</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-purple">●</span></td>
-  <td><div class="style-box" style="color: rgb(218 145 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px">Orb of Ann...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>Gold Key Silver Key Bronze Key</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61)">Gold Key S...</div></td>
-</tr>
-<tr>
-  <td>Omen</td>
-  <td>Omen of</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 20px">Omen of</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Gemcutter's Prism Vaal Orb Chaos Orb Lesser Jeweller's Orb Regal Orb Artificer's Orb Glassblower's Bauble Orb of Alchemy</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61)">Gemcutter'...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Simulacrum Splinter Breach Splinter  Artifact</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-purple">●</span></td>
-  <td><div class="style-box" style="color: rgb(201 184 224); background-color: rgb(23 7 69); font-size: 17px">Simulacrum...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Distilled Catalyst Essence of</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-purple">●</span></td>
-  <td><div class="style-box" style="color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0)">Distilled ...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td>
-  <td>Any</td>
-  <td>Area: >= 70</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px">Arcanist's...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-grey">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px">Arcanist's...</div></td>
-</tr>
-<tr>
-  <td>Currency</td>
-  <td>ALL</td>
-  <td>Any</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-● minimap-icon-white">●</span></td>
-  <td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 16px">Currency</div></td>
-</tr>
-</table> <h3>rarity_unique.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Currency</td><td>ALL</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); font-size: 16px">Currency</div></td></tr>
+<tr><td>Currency</td><td>Mirror Divine</td><td>Any</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Mirror Div...</div></td></tr>
+<tr><td>Currency</td><td>Perfect Jeweller's Orb Distilled Isolation Distilled Suffering</td><td>Any</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(232 231 171); border-color: rgb(232 37 97); background-color: rgb(232 37 97); font-size: 22px">Perfect Je...</div></td></tr>
+<tr><td>Currency</td><td>Distilled Isolation Distilled Suffering</td><td>Any</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255)">Distilled ...</div></td></tr>
+<tr><td>Currency</td><td>Greater Jeweller's Orb Distilled Fear Distilled Despair</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-yellow">●</span></td><td><div class="style-box" style="color: rgb(255 193 48); border-color: rgb(30 58 51); background-color: rgb(30 58 51)">Greater Je...</div></td></tr>
+<tr><td>ALL</td><td>Orb of Annulment Exotic Coinage Exalted Orb Chaos Orb Fracturing Orb Orb of Chance Reaver Catalyst Esh's Catalyst Chance Shard</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-purple">●</span></td><td><div class="style-box" style="color: rgb(218 145 255); border-color: rgb(0 0 0); background-color: rgb(0 0 0); font-size: 20px">Orb of Ann...</div></td></tr>
+<tr><td>ALL</td><td>Gold Key Silver Key Bronze Key</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-white">●</span></td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61)">Gold Key S...</div></td></tr>
+<tr><td>Omen</td><td>Omen of</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-white">●</span></td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 20px">Omen of</div></td></tr>
+<tr><td>Currency</td><td>Gemcutter's Prism Vaal Orb Chaos Orb Lesser Jeweller's Orb Regal Orb Artificer's Orb Glassblower's Bauble Orb of Alchemy</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-white">●</span></td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61)">Gemcutter'...</div></td></tr>
+<tr><td>Currency</td><td>Simulacrum Splinter Breach Splinter  Artifact</td><td>Any</td><td>Any</td><td><span class="minimap-icon-⬜ minimap-icon-purple">⬜</span></td><td><div class="style-box" style="color: rgb(201 184 224); background-color: rgb(23 7 69); font-size: 17px">Simulacrum...</div></td></tr>
+<tr><td>Currency</td><td>Distilled Catalyst Essence of</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-purple">●</span></td><td><div class="style-box" style="color: rgb(170 70 201); border-color: rgb(0 0 0); background-color: rgb(0 0 0)">Distilled ...</div></td></tr>
+<tr><td>Currency</td><td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td><td>Any</td><td>AreaLevel: >= 70</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px">Arcanist's...</div></td></tr>
+<tr><td>Currency</td><td>Arcanist's Etcher Armourer's Scrap Blacksmith's Whetstone Orb of Augmentation Orb of Transmutation Regal Shard</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-grey">●</span></td><td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px">Arcanist's...</div></td></tr>
+<tr><td>Currency</td><td>ALL</td><td>Any</td><td>Any</td><td><span class="minimap-icon-● minimap-icon-white">●</span></td><td><div class="style-box" style="color: rgb(255 255 255); border-color: rgb(255 255 255); background-color: rgb(47 10 61); font-size: 16px">Currency</div></td></tr>
+</tbody></table><h3>rarity_unique.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>ALL</td>
-  <td>Armoured Cap Emerald Furtive Wraps Ornate Belt Ring Ruby Sapphire Smuggler Coat Stone Tower Shield Time-Lost Diamond Timeless Jewel Ultimate Life Flask Ultimate Mana Flask Utility Belt Diamond Silk Robe Shrine Sceptre Grand Regalia Incense Relic Garment Blacksteel Tower Shield Tribal Mask Ornate Gauntlets</td>
-  <td>Unique</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-red">★</span></td>
-  <td><div class="style-box" style="color: rgb(238 238 238); border-color: rgb(53 13 13); background-color: rgb(216 64 64); font-size: 22px">Armoured C...</div></td>
-</tr>
-<tr>
-  <td>ALL</td>
-  <td>ALL</td>
-  <td>Unique</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-★ minimap-icon-brown">★</span></td>
-  <td><div class="style-box" style="color: rgb(175 96 37); border-color: rgb(175 96 37); background-color: rgb(53 13 13); font-size: 20px">ALL</div></td>
-</tr>
-</table> <h3>rarity_rare.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>ALL</td><td>Armoured Cap Emerald Furtive Wraps Ornate Belt Ring Ruby Sapphire Smuggler Coat Stone Tower Shield Time-Lost Diamond Timeless Jewel Ultimate Life Flask Ultimate Mana Flask Utility Belt Diamond Silk Robe Shrine Sceptre Grand Regalia Incense Relic Garment Blacksteel Tower Shield Tribal Mask Ornate Gauntlets</td><td>Unique</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-red">★</span></td><td><div class="style-box" style="color: rgb(238 238 238); border-color: rgb(53 13 13); background-color: rgb(216 64 64); font-size: 22px">Armoured C...</div></td></tr>
+<tr><td>ALL</td><td>ALL</td><td>Unique</td><td>Any</td><td><span class="minimap-icon-★ minimap-icon-brown">★</span></td><td><div class="style-box" style="color: rgb(175 96 37); border-color: rgb(175 96 37); background-color: rgb(53 13 13); font-size: 20px">ALL</div></td></tr>
+</tbody></table><h3>rarity_rare.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-✕ minimap-icon-yellow">✕</span></td>
-  <td><div class="style-box" style="color: rgb(248 147 5); background-color: rgb(0 0 0); font-size: 20px">Body Armou...</div></td>
-</tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Rare</td>
-  <td>Any</td>
-  <td><span class="minimap-icon-✕ minimap-icon-yellow">✕</span></td>
-  <td><div class="style-box" style="color: rgb(255 209 94); background-color: rgb(0 0 0); font-size: 16px">Body Armou...</div></td>
-</tr>
-</table> <h3>rarity_magic.filter</h3>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-✕ minimap-icon-yellow">✕</span></td><td><div class="style-box" style="color: rgb(248 147 5); background-color: rgb(0 0 0); font-size: 20px">Body Armou...</div></td></tr>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Rare</td><td>Any</td><td><span class="minimap-icon-✕ minimap-icon-yellow">✕</span></td><td><div class="style-box" style="color: rgb(255 209 94); background-color: rgb(0 0 0); font-size: 16px">Body Armou...</div></td></tr>
+</tbody></table><h3>rarity_magic.filter</h3>
 <table class="filter-table">
-<tr><th>Class</th><th>BaseType</th><th>Rarity</th><th>Conditions</th><th>Icon</th><th>Preview</th></tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Any</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 20px">Body Armou...</div></td>
-</tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Normal</td>
-  <td>Area: >= 50, Sock: == 0, Qual: == 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through">Body Armou...</div></td>
-</tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Area: >= 50, Sock: == 0, Qual: == 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through">Body Armou...</div></td>
-</tr>
-<tr>
-  <td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td>
-  <td>ALL</td>
-  <td>Magic</td>
-  <td>Qual: > 0</td>
-  <td>-</td>
-  <td><div class="style-box" style="color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 16px">Body Armou...</div></td>
-</tr>
-</table>
+<thead><tr>
+<th>Class</th><th>BaseType</th><th>Rarity</th>
+<th>Conditions</th><th>Icon</th><th>Preview</th>
+</tr></thead><tbody>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Magic</td><td>Any</td><td>-</td><td><div class="style-box" style="color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 20px">Body Armou...</div></td></tr>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Normal</td><td>Sockets: == 0, Quality: == 0, AreaLevel: >= 50</td><td>-</td><td><div class="style-box" style="color: rgb(255 255 255); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through; opacity: 0.7">Body Armou...</div></td></tr>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Magic</td><td>Sockets: == 0, Quality: == 0, AreaLevel: >= 50</td><td>-</td><td><div class="style-box" style="color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through; opacity: 0.7">Body Armou...</div></td></tr>
+<tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Magic</td><td>Quality: > 0</td><td>-</td><td><div class="style-box" style="color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 16px">Body Armou...</div></td></tr>
+</tbody></table>
+    </div>
+
+    <div class="container">
+        <h2>🛠️ Developer Information</h2>
+        <p>สามารถ <a href="https://github.com/darkzerox/Darkxee-Poe2Filter" style="color: #4a9eff;">Clone โปรเจค</a> ไปแก้ไขได้เลย</p>
+        
+        <h3>Build Instructions</h3>
+        <pre style="background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; overflow-x: auto;"><code># Clone the repository
+git clone https://github.com/darkzerox/Darkxee-Poe2Filter.git
+cd Darkxee-Poe2Filter
+
+# Build all filters
+cd script
+python start_build.py
+
+# Run tests
+python merge_file.py --test
+python build_css.py --test</code></pre>
+        
+        <blockquote style="border-left: 4px solid #4a9eff; padding: 15px; margin: 20px 0; background: rgba(74, 158, 255, 0.1);">
+            💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตและ Star โปรเจคเพื่อรับการแจ้งเตือน
+        </blockquote>
+    </div>
+
+    <div style="text-align: center; margin: 40px 0; color: #888;">
+        <p><sub>Made with ❤️ by <a href="https://github.com/darkzerox" style="color: #4a9eff;">Darkxee</a> for the Path of Exile 2 Community</sub></p>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="dzx_filter/js/main.js"></script>
 </body>
 </html>
