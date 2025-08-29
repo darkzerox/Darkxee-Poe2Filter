@@ -61,7 +61,7 @@ Show
 
 Show
 	Rarity Normal
-	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear"  "Striking Spear" "Spiked Spear" "Massive Spear" "Falconer's Jacket" "Vaal Gloves" "Vile robe" "SLeek jacket"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Dualstring Bow" "Chiming Staff" "Rattling Sceptre" "Kamasan Tiara" "Seaglass Spear" "Spiked Spear" "Massive Spear" "Falconer's Jacket" "Vaal Gloves" "Vile robe" "SLeek jacket"
 	ItemLevel >= 81
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
