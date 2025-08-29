@@ -1,0 +1,155 @@
+{
+  "project": {
+    "name": "DZX Filter POE2",
+    "version": "1.0.16",
+    "description": "Advanced Item Filter for Path of Exile 2",
+    "author": "Darkxee",
+    "repository": "https://github.com/darkzerox/Darkxee-Poe2Filter",
+    "website": "https://darkzerox.github.io/Darkxee-Poe2Filter/"
+  },
+  "build": {
+    "output_directory": "./",
+    "css_directory": "dzx_filter/css",
+    "js_directory": "dzx_filter/js",
+    "filter_group_directory": "dzx_filter/filter_group",
+    "backup_directory": "backup",
+    "temp_directory": "temp"
+  },
+  "sound_effects": {
+    "available_types": ["type-01"],
+    "default_type": "type-01",
+    "directory": "dzx_filter/soundeffect",
+    "volume_levels": {
+      "low": 100,
+      "medium": 200,
+      "high": 300
+    }
+  },
+  "filter_variants": [
+    {
+      "name": "dzx-poe2",
+      "description": "Main filter with all features",
+      "group": "MAIN_GROUP",
+      "sound_type": "type-01",
+      "platforms": ["pc"],
+      "no_hide_variant": true,
+      "enabled": true
+    },
+    {
+      "name": "dzx-poe2-breach",
+      "description": "Optimized for Breach league",
+      "group": "BREACH_GROUP",
+      "sound_type": "type-01",
+      "platforms": ["pc", "ps5"],
+      "no_hide_variant": false,
+      "enabled": true
+    },
+    {
+      "name": "dzx-poe2-PS5",
+      "description": "PS5 optimized version",
+      "group": "MAIN_GROUP",
+      "sound_type": "type-01",
+      "platforms": ["ps5"],
+      "no_hide_variant": true,
+      "enabled": true
+    }
+  ],
+  "special_variants": [
+    {
+      "name": "dzx-poe2-Color-Only",
+      "description": "PC only, no sounds",
+      "group": "MAIN_GROUP",
+      "remove_sounds": true,
+      "hide_items": false,
+      "enabled": true
+    },
+    {
+      "name": "dzx-poe2-Divine-Mirror",
+      "description": "High-value items only",
+      "group": ["currency.filter", "rarity_unique.filter", "gacha.filter", "key.filter", "waystones.filter"],
+      "remove_sounds": false,
+      "hide_items": false,
+      "enabled": true
+    }
+  ],
+  "filter_groups": {
+    "MAIN_GROUP": [
+      "gacha.filter",
+      "crafting.filter",
+      "gold.filter",
+      "uncut_gems.filter",
+      "scroll_of_wisdom.filter",
+      "salvage.filter",
+      "amulets.filter",
+      "belts.filter",
+      "jewel.filter",
+      "ring.filter",
+      "key.filter",
+      "relics.filter",
+      "rune.filter",
+      "talisman.filter",
+      "soul_core.filter",
+      "waystones.filter",
+      "flasks.filter",
+      "charms.filter",
+      "currency.filter",
+      "rarity_unique.filter",
+      "rarity_rare.filter",
+      "rarity_magic.filter"
+    ],
+    "BREACH_GROUP": [
+      "gacha.filter",
+      "crafting.filter",
+      "gold.filter",
+      "amulets.filter",
+      "jewel.filter",
+      "ring.filter",
+      "map_breach.filter",
+      "uncut_gems.filter",
+      "scroll_of_wisdom.filter",
+      "salvage.filter",
+      "belts.filter",
+      "key.filter",
+      "relics.filter",
+      "rune.filter",
+      "talisman.filter",
+      "soul_core.filter",
+      "waystones.filter",
+      "flasks.filter",
+      "charms.filter",
+      "currency.filter",
+      "rarity_unique.filter",
+      "rarity_rare.filter",
+      "rarity_magic.filter"
+    ]
+  },
+  "html_generation": {
+    "template_directory": "templates",
+    "use_external_assets": true,
+    "minify_output": false,
+    "generate_preview": true,
+    "include_animations": true
+  },
+  "css_generation": {
+    "include_filter_styles": true,
+    "minify_output": false,
+    "use_autoprefixer": false
+  },
+  "logging": {
+    "level": "INFO",
+    "format": "%(asctime)s - %(levelname)s - %(message)s",
+    "file": null
+  },
+  "validation": {
+    "check_file_existence": true,
+    "validate_filter_syntax": true,
+    "warn_missing_sounds": true,
+    "strict_mode": false
+  },
+  "optimization": {
+    "enable_caching": false,
+    "parallel_processing": false,
+    "incremental_build": false,
+    "backup_on_build": false
+  }
+}
