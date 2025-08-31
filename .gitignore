@@ -18,3 +18,7 @@ test*
 
 index.html
 EShop/eshop_*.json
+EShop/calls_for_action_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.json
+.gitignore
+poe2_production_Loaded.mtx
+ETrade/search_query_save.json
