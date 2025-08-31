@@ -83,6 +83,26 @@
 }
 
 
+/* Rules from mirror_tier.filter */
+.rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"] {
+    color: rgb(255 0 0);
+    border-color: rgb(255 255 255);
+    background-color: rgb(50 0 0);
+    font-size: 40px;
+}
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"] {
+    color: rgb(255 0 0);
+    border-color: rgb(255 255 255);
+    background-color: rgb(50 0 0);
+    font-size: 40px;
+}
+.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
+    color: rgb(255 215 0);
+    border-color: rgb(255 255 255);
+    background-color: rgb(50 40 0);
+    font-size: 39px;
+}
+
 /* Rules from gacha.filter */
 .rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(233 75 75);
@@ -102,41 +122,64 @@
 }
 
 /* Rules from crafting.filter */
-.rarity-normal, [data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Massive"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Vaal"], [data-basetype="Gloves"], [data-basetype="Vile"], [data-basetype="robe"], [data-basetype="SLeek"], [data-basetype="jacket"] {
+.rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Ruby"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Topaz"], [data-basetype="Ring"], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Lazuli"], [data-basetype="Ring"], [data-basetype="Pearl"], [data-basetype="Ring"] {
+    color: rgb(0 255 0);
+    border-color: rgb(255 255 0);
+    background-color: rgb(0 50 0);
+    font-size: 38px;
+}
+.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Ornate"], [data-basetype="Belt"] {
+    color: rgb(0 255 0);
+    border-color: rgb(255 255 0);
+    background-color: rgb(0 50 0);
+    font-size: 38px;
+}
+.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Jade"], [data-basetype="Choir"], [data-basetype="Amulet"] {
+    color: rgb(0 255 0);
+    border-color: rgb(255 255 0);
+    background-color: rgb(0 50 0);
+    font-size: 38px;
+}
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Gemini"], [data-basetype="Bow"] {
+    color: rgb(0 255 0);
+    border-color: rgb(255 255 0);
+    background-color: rgb(0 50 0);
+    font-size: 38px;
+}
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Vaal"], [data-basetype="Gloves"], [data-basetype="Vaal"], [data-basetype="Wraps"], [data-basetype="Kamasan"], [data-basetype="Tiara"] {
     color: rgb(160 255 71);
+    border-color: rgb(139 191 226);
     background-color: rgb(10 10 10);
     font-size: 37px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Sacred"], [data-basetype="Focus"] {
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(160 255 71);
+    border-color: rgb(139 191 226);
     background-color: rgb(10 10 10);
     font-size: 37px;
 }
-.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, .filter-rings, [data-basetype="=="], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"] {
+.rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"] {
+    color: rgb(160 255 71);
+    border-color: rgb(139 191 226);
+    background-color: rgb(10 10 10);
+    font-size: 37px;
+}
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Sacred"], [data-basetype="Focus"], [data-basetype="Seaglass"], [data-basetype="Spear"], [data-basetype="Dualstring"], [data-basetype="Bow"], [data-basetype="Chiming"], [data-basetype="Staff"], [data-basetype="Massive"], [data-basetype="Spear"] {
+    color: rgb(255 255 0);
+    border-color: rgb(255 255 0);
+    background-color: rgb(50 50 0);
+    font-size: 36px;
+}
+.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, .filter-rings, [data-basetype="=="], [data-basetype="Amber"], [data-basetype="Amulet"], [data-basetype="Azure"], [data-basetype="Amulet"], [data-basetype="Bloodstone"], [data-basetype="Amulet"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Lapis"], [data-basetype="Amulet"], [data-basetype="Lunar"], [data-basetype="Amulet"], [data-basetype="Unset"], [data-basetype="Ring"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"] {
     border-color: rgb(139 191 226);
     background-color: rgb(30 0 70);
     font-size: 36px;
 }
-.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, .filter-rings, [data-basetype="=="], [data-basetype="Amber"], [data-basetype="Amulet"], [data-basetype="Azure"], [data-basetype="Amulet"], [data-basetype="Bloodstone"], [data-basetype="Amulet"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Lapis"], [data-basetype="Amulet"], [data-basetype="Lazuli"], [data-basetype="Ring"], [data-basetype="Lunar"], [data-basetype="Amulet"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Ruby"], [data-basetype="Ring"], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Topaz"], [data-basetype="Ring"], [data-basetype="Unset"], [data-basetype="Ring"] {
+.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Plate"], [data-basetype="Belt"], [data-basetype="Utility"], [data-basetype="Belt"], [data-basetype="Double"], [data-basetype="Belt"], [data-basetype="Fine"], [data-basetype="Belt"], [data-basetype="Linen"], [data-basetype="Belt"], [data-basetype="Long"], [data-basetype="Belt"], [data-basetype="Mail"], [data-basetype="Belt"], [data-basetype="Rawhide"], [data-basetype="Belt"], [data-basetype="Wide"], [data-basetype="Belt"] {
     border-color: rgb(139 191 226);
-    background-color: rgb(30 0 70);
     font-size: 36px;
 }
 .rarity-normal, .rarity-magic, .filter-==, .filter-amulets, .filter-rings, [data-basetype="=="], [data-basetype="Crimson"], [data-basetype="Amulet"], [data-basetype="Emerald"], [data-basetype="Ring"], [data-basetype="Iron"], [data-basetype="Ring"] {
-    border-color: rgb(139 191 226);
-    font-size: 36px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, .filter-rings, [data-basetype="=="], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"] {
-    border-color: rgb(139 191 226);
-    background-color: rgb(30 0 70);
-    font-size: 36px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Plate"], [data-basetype="Belt"], [data-basetype="Utility"], [data-basetype="Belt"] {
-    border-color: rgb(139 191 226);
-    background-color: rgb(30 0 70);
-    font-size: 36px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Double"], [data-basetype="Belt"], [data-basetype="Fine"], [data-basetype="Belt"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Linen"], [data-basetype="Belt"], [data-basetype="Long"], [data-basetype="Belt"], [data-basetype="Mail"], [data-basetype="Belt"], [data-basetype="Ornate"], [data-basetype="Belt"], [data-basetype="Rawhide"], [data-basetype="Belt"], [data-basetype="Wide"], [data-basetype="Belt"] {
     border-color: rgb(139 191 226);
     font-size: 36px;
 }
@@ -602,11 +645,11 @@
 }
 
 /* Custom minimap icon colors */
-.minimap-icon-diamond { color: rgb(0 255 255); }
-.minimap-icon-cross { color: rgb(255 255 0); }
 .minimap-icon-star { color: rgb(160 110 60); }
+.minimap-icon-diamond { color: rgb(0 255 255); }
+.minimap-icon-circle { color: rgb(255 255 255); }
+.minimap-icon-cross { color: rgb(255 255 0); }
 .minimap-icon-triangle { color: rgb(160 110 60); }
 .minimap-icon-square { color: rgb(0 0 255); }
 .minimap-icon-pentagon { color: rgb(160 110 60); }
-.minimap-icon-circle { color: rgb(255 255 255); }
 .minimap-icon-kite { color: rgb(128 0 128); }
