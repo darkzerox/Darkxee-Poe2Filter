@@ -1,9 +1,7 @@
 
 #------------------------------------------------------------------------------
-# Rings
+# Rings - Legacy Rules Only
 #------------------------------------------------------------------------------
-
-
 
 # Special Highlight - Breach Rings
 Show 
@@ -27,6 +25,7 @@ Show
   MinimapIcon 2 Purple Diamond
   PlayEffect Purple Temp
 
+# Legacy Rules
 Hide
   Class "Rings"
   Rarity Magic
