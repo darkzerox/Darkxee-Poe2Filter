@@ -232,6 +232,12 @@
 }
 
 /* Rules from uncut_gems.filter */
+[data-basetype="Rakiata's"], [data-basetype="Flow"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);

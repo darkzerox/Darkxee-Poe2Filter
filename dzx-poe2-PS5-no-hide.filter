@@ -380,6 +380,15 @@ Show
 #   ItemLevel < 3
 #   AreaLevel >= 75
 
+Show
+  BaseType "Rakiata's Flow"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
 # Level 20 gems go tink
 Show
   ItemLevel = 20
