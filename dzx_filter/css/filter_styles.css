@@ -122,37 +122,19 @@
 }
 
 /* Rules from crafting.filter */
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Forked"], [data-basetype="Spear"] {
-    color: rgb(0 255 0);
-    border-color: rgb(255 255 0);
-    background-color: rgb(0 50 0);
-    font-size: 42px;
-}
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Forked"], [data-basetype="Spear"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(0 255 0);
     border-color: rgb(255 255 0);
     background-color: rgb(0 50 0);
     font-size: 40px;
 }
-.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"] {
-    color: rgb(0 255 0);
-    border-color: rgb(255 255 0);
-    background-color: rgb(0 50 0);
-    font-size: 40px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"] {
+.rarity-normal, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"] {
     color: rgb(0 255 0);
     border-color: rgb(255 255 0);
     background-color: rgb(0 50 0);
     font-size: 40px;
 }
 .rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Ruby"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Topaz"], [data-basetype="Ring"], [data-basetype="Lazuli"], [data-basetype="Ring"], [data-basetype="Sapphire"], [data-basetype="Ring"] {
-    color: rgb(160 255 71);
-    border-color: rgb(139 191 226);
-    background-color: rgb(10 10 10);
-    font-size: 38px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-belts, [data-basetype="=="], [data-basetype="Heavy"], [data-basetype="Belt"] {
     color: rgb(160 255 71);
     border-color: rgb(139 191 226);
     background-color: rgb(10 10 10);
@@ -194,7 +176,7 @@
     background-color: rgb(50 25 0);
     font-size: 36px;
 }
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Vile"], [data-basetype="Robe"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Vile"], [data-basetype="Robe"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
     background-color: rgb(50 0 0);
