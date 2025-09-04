@@ -114,24 +114,10 @@ Show
 # All crafting items from TFT market data
 # --------------------------------
 
-# Tier 1: Divine+ Value Items (Dark Green) - Highest Priority
-Show # Divine Tier Forks (8x = 1div)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Forked Spear"
-	AreaLevel >= 65
-	SetFontSize 42
-	SetTextColor 0 255 0
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 2 Yellow Star
-	PlayAlertSound 1 300
-	CustomAlertSound "dzx_filter/soundeffect/type-01/divine.mp3" 300
 
-# Tier 2: High Value Items (15-30 Exalted) - Bright Green
 Show # High Value Forks (15-30ex each)
 	ItemLevel >= 82
-	Rarity Normal Magic
+	Rarity Normal
 	BaseType == "Forked Spear"
 	AreaLevel >= 65
 	SetFontSize 40
@@ -144,7 +130,7 @@ Show # High Value Forks (15-30ex each)
 
 Show # High Value Heavy Belts (8ex each)
 	ItemLevel >= 82
-	Rarity Normal Magic
+	Rarity Normal
 	Class == "Belts"
 	BaseType == "Heavy Belt"
 	AreaLevel >= 65
@@ -156,19 +142,7 @@ Show # High Value Heavy Belts (8ex each)
 	PlayAlertSound 1 300
 	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 300
 
-Show # High Value Sapphire Rings (7ex each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Rings"
-	BaseType == "Sapphire Ring"
-	AreaLevel >= 65
-	SetFontSize 40
-	SetTextColor 0 255 0
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 2 Yellow Star
-	PlayAlertSound 1 300
-	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 300
+
 
 # Tier 3: Medium Value Items (2-3 Exalted) - Light Green
 Show # Medium Value Rings (2-3ex each)
@@ -185,19 +159,6 @@ Show # Medium Value Rings (2-3ex each)
 	PlayAlertSound 16 200
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
 
-Show # Medium Value Heavy Belts (2-3ex each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Belts"
-	BaseType == "Heavy Belt"
-	AreaLevel >= 65
-	SetFontSize 38
-	SetTextColor 160 255 71
-	SetBackgroundColor 10 10 10 200
-	SetBorderColor 139 191 226
-	MinimapIcon 2 Orange Diamond
-	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
 
 Show # Medium Value Stellar Amulets (3ex each)
 	ItemLevel >= 82
@@ -284,7 +245,7 @@ Show # Chaos Value Sceptres (2c each)
 # Tier 6: Low Value Items (1 Chaos) - Red
 Show # Low Value Armor (1c each)
 	ItemLevel >= 79
-	Rarity Normal Magic
+	Rarity Normal
 	BaseType == "Sleek Jacket" "Vile Robe"
 	AreaLevel >= 65
 	SetFontSize 35
