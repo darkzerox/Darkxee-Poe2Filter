@@ -74,6 +74,7 @@
   ],
   "filter_groups": {
     "MAIN_GROUP": [
+      "mirror_tier.filter",
       "gacha.filter",
       "crafting.filter",
       "gold.filter",
@@ -98,6 +99,7 @@
       "rarity_magic.filter"
     ],
     "BREACH_GROUP": [
+      "mirror_tier.filter",
       "gacha.filter",
       "crafting.filter",
       "gold.filter",

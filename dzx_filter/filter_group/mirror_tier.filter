@@ -1,0 +1,45 @@
+# --------------------------------
+# Mirror Tier Items - Ultra High Value
+# --------------------------------
+
+# Mirror Tier Items (20+ Exalted) - Bright Red
+Show # Mirror Tier Rings (10ex+)
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Rings"
+	BaseType == "Sapphire Ring"
+	AreaLevel >= 65
+	SetFontSize 40
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 0 0 255
+	SetBorderColor 255 255 255
+	MinimapIcon 2 Red Star
+	PlayAlertSound 1 300
+	CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 300
+
+Show # Mirror Tier Weapons (20ex+)
+	ItemLevel >= 81
+	Rarity Normal Magic
+	BaseType == "Gemini Bow"
+	AreaLevel >= 65
+	SetFontSize 40
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 0 0 255
+	SetBorderColor 255 255 255
+	MinimapIcon 2 Red Star
+	PlayAlertSound 1 300
+	CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 300
+
+Show # Divine Tier Items (1 Divine+)
+	ItemLevel >= 82
+	Rarity Normal Magic
+	Class == "Amulets"
+	BaseType == "Stellar Amulet"
+	AreaLevel >= 65
+	SetFontSize 39
+	SetTextColor 255 215 0
+	SetBackgroundColor 50 40 0 255
+	SetBorderColor 255 255 255
+	MinimapIcon 2 Yellow Star
+	PlayAlertSound 1 300
+	CustomAlertSound "dzx_filter/soundeffect/type-01/divine.mp3" 300
