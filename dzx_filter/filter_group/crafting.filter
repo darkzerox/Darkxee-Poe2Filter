@@ -5,9 +5,9 @@
 
 
 Show # High Value Forks (15-30ex each)
-	ItemLevel >= 82
+	ItemLevel >= 79
 	Rarity Normal
-	BaseType == "Forked Spear"
+	BaseType == "Forked Spear" "Heavy Belt"
 	AreaLevel >= 65
 	SetFontSize 40
 	SetTextColor 0 255 0
@@ -15,56 +15,12 @@ Show # High Value Forks (15-30ex each)
 	SetBorderColor 255 255 0
 	MinimapIcon 2 Yellow Star
 	PlayAlertSound 1 300
-	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 300
-
-Show # High Value Heavy Belts (8ex each)
-	ItemLevel >= 82
-	Rarity Normal
-	Class == "Belts"
-	BaseType == "Heavy Belt"
-	AreaLevel >= 65
-	SetFontSize 40
-	SetTextColor 0 255 0
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 2 Yellow Star
-	PlayAlertSound 1 300
-	CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 300
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 300
 
 
-
-# Tier 3: Medium Value Items (2-3 Exalted) - Light Green
-Show # Medium Value Rings (2-3ex each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Rings"
-	BaseType == "Ruby Ring" "Amethyst Ring" "Topaz Ring" "Lazuli Ring" "Sapphire Ring"
-	AreaLevel >= 65
-	SetFontSize 38
-	SetTextColor 160 255 71
-	SetBackgroundColor 10 10 10 200
-	SetBorderColor 139 191 226
-	MinimapIcon 2 Orange Diamond
-	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
-
-
-Show # Medium Value Stellar Amulets (3ex each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Amulets"
-	BaseType == "Stellar Amulet"
-	AreaLevel >= 65
-	SetFontSize 38
-	SetTextColor 160 255 71
-	SetBackgroundColor 10 10 10 200
-	SetBorderColor 139 191 226
-	MinimapIcon 2 Orange Diamond
-	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
 
 Show # Medium Value Wands (3ex each)
-	ItemLevel >= 82
+	ItemLevel >= 79
 	Rarity Normal Magic
 	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
 	AreaLevel >= 65
@@ -76,26 +32,13 @@ Show # Medium Value Wands (3ex each)
 	PlayAlertSound 16 200
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
 
-# Tier 4: Lower Value Items (1-2 Exalted) - Yellow
-Show # Lower Value Rings (1-2ex each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Rings"
-	BaseType == "Gold Ring" "Iron Ring"
-	AreaLevel >= 65
-	SetFontSize 37
-	SetTextColor 255 255 0
-	SetBackgroundColor 50 50 0 200
-	SetBorderColor 255 255 0
-	MinimapIcon 1 Yellow Circle
-	PlayAlertSound 8 150
-	CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 150
+ 
 
 # Tier 5: Chaos Value Items (1-5 Chaos) - Orange
 Show # Chaos Value Armor (5c each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"
+	ItemLevel >= 79
+	Rarity Normal 
+	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes" "Sleek Jacket" "Vile Robe"
 	AreaLevel >= 65
 	SetFontSize 36
 	SetTextColor 255 165 0
@@ -103,75 +46,22 @@ Show # Chaos Value Armor (5c each)
 	SetBorderColor 255 165 0
 	MinimapIcon 1 Orange Circle
 	PlayAlertSound 4 100
-	CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 Show # Chaos Value Weapons (5c each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver"
-	AreaLevel >= 65
-	SetFontSize 36
-	SetTextColor 255 165 0
-	SetBackgroundColor 50 25 0 200
-	SetBorderColor 255 165 0
-	MinimapIcon 1 Orange Circle
-	PlayAlertSound 4 100
-	CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
-
-Show # Chaos Value Sceptres (2c each)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	BaseType == "Rattling Sceptre"
-	AreaLevel >= 65
-	SetFontSize 36
-	SetTextColor 255 165 0
-	SetBackgroundColor 50 25 0 200
-	SetBorderColor 255 165 0
-	MinimapIcon 1 Orange Circle
-	PlayAlertSound 4 100
-	CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 100
-
-# Tier 6: Low Value Items (1 Chaos) - Red
-Show # Low Value Armor (1c each)
 	ItemLevel >= 79
-	Rarity Normal
-	BaseType == "Sleek Jacket" "Vile Robe"
+	Rarity Normal 
+	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver" "Rattling Sceptre" "Volant Quiver" "Visceral Quiver" "Jade Tiara"
 	AreaLevel >= 65
-	SetFontSize 35
+	SetFontSize 36
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
-	MinimapIcon 1 Red Circle
-	PlayAlertSound 2 50
-	CustomAlertSound "dzx_filter/soundeffect/type-01/salvage.mp3" 50
+	MinimapIcon 1 Orange Circle
+	PlayAlertSound 4 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
-# Legacy Rules (for compatibility with older items)
-Show # Legacy High Value Items
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Amulets" "Rings"
-	BaseType == "Amber Amulet" "Azure Amulet" "Bloodstone Amulet" "Gold Amulet" "Lapis Amulet" "Lunar Amulet" "Unset Ring" "Prismatic Ring" "Solar Amulet"
-	AreaLevel >= 65
-	SetFontSize 36
-	SetBackgroundColor 30 0 70 255
-	SetBorderColor 139 191 226
+ 
 
-Show # Legacy Belts
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Belts"
-	BaseType == "Plate Belt" "Utility Belt" "Double Belt" "Fine Belt" "Linen Belt" "Long Belt" "Mail Belt" "Rawhide Belt" "Wide Belt"
-	AreaLevel >= 65
-	SetFontSize 36
-	SetBorderColor 139 191 226
-
-Show # Legacy Low Value Items
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Amulets" "Rings"
-	BaseType == "Crimson Amulet" "Emerald Ring"
-	AreaLevel >= 65
-	SetFontSize 36
-	SetBorderColor 139 191 226
-
+ 
 

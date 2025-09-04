@@ -1,37 +1,21 @@
-WHITE Heavy Belts - 4:exalt2:/each (70x stock)
-2x White Fork Spear - 10 :exalt2: EA
-x10 Heavy Belt 3 :exalt2: ea 
-x1 White Sapphire Rings 3 :exalt2: Ea
-9x White stellar amulet - 3 :exalt2: EA 
-71x White Heavy Belt - 3  :exalt2:  EA
-10x White Fork Spear - 10 :exalt2: EA
-White Heavy Belts  3 :exalt2: Each     (Stock: 10)
-White Sapphire Rings 3 :exalt2: Each (Stock:4)
-White Stellar Amulet 3 :exalt2: Each (Stock: 6)
-Forked Spear white base 8x = 1 :divine2: 
-WHITE SAPPHIRE RING - 2 /each (stock 2)
-WHITE Heavy Belt - 2 /each (stock 19)
-5 Sapphire Rings 30% : 3 :exalt2: each
-2 Sapphire Rings : 2 :exalt2: each
-Forked Spear 8 = 1 :divine2:  (stock: 1)  or 1 = 15 :exalt2:  (stock: 8)
-Sapphire ring  1 = 3 :exalt2: (stock: 3)
-Iron ring  1 = 2 :exalt2: (stock: 1)
-Ruby Ring [루비 반지]  2ex //EA - stock 2
-Amethyst Ring [자수정 반지]  2ex //EA - stock 1
-Topaz Ring [토파즈 반지]  2ex //EA - stock 1
-Sapphire Ring [사파이어 반지]  7ex //EA - stock 2
-Lazuli Ring [청금석 반지]  2ex //EA - stock 2
-Gold Ring [황금 반지]  1ex // EA - stock 1
-Heavy Belt [무거운 허리띠] 8ex//EA - stock 5
-Forked Spear [갈라진 창] 23ex/EA - stock 2
-Normal/Magic Falconer's Jacket each 5 chaos
-Normal/Magic Sleek Jacket each 1 chaos
-Normal/Magic Vile Robe each 1 chaos 
-Normal Dragonscale Boots each 5 chaos
-Magic Sandsworn Sandals each 5 chaos
-Normal/Magic Quickslip Shoes each 5 chaos
-Normal Spiked Spear each 5 chaos
-Normal Gemini Bow  each 5 chaos
-Normal Primed Quiver  each 5 chaos
-Normal Wand (Siphoning/Attuned/Acrid ( each 3 ex)
-Normal Rattling Sceptre ( each 2chaos)
+Heavy Belt
+Fork Spear
+Sapphire Ring
+Stellar Amulet
+Iron Ring
+Ruby Ring
+Amethyst Ring
+Topaz Ring
+Lazuli Ring
+Gold Ring
+Falconer's Jacket
+Sleek Jacket
+Vile Robe
+Dragonscale Boots
+Sandsworn Sandals
+Quickslip Shoes
+Spiked Spear
+Gemini Bow
+Primed Quiver
+Wand (Siphoning/Attuned/Acrid)
+Rattling Sceptre
