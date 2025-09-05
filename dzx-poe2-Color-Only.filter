@@ -18,44 +18,11 @@
 # --------------------------------
 
 # Mirror Tier Items (20+ Exalted) - Bright Red
-Show # Mirror Tier Rings (10ex+)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Rings"
-	BaseType == "Sapphire Ring"
-	AreaLevel >= 65
-	SetFontSize 40
-	SetTextColor 255 0 0
-	SetBackgroundColor 50 0 0 255
-	SetBorderColor 255 255 255
-	MinimapIcon 2 Red Star
-	PlayAlertSound 1 300
+ 
 
-Show # Mirror Tier Weapons (20ex+)
-	ItemLevel >= 81
-	Rarity Normal Magic
-	BaseType == "Gemini Bow"
-	AreaLevel >= 65
-	SetFontSize 40
-	SetTextColor 255 0 0
-	SetBackgroundColor 50 0 0 255
-	SetBorderColor 255 255 255
-	MinimapIcon 2 Red Star
-	PlayAlertSound 1 300
+ 
 
-Show # Divine Tier Items (1 Divine+)
-	ItemLevel >= 82
-	Rarity Normal Magic
-	Class == "Amulets"
-	BaseType == "Stellar Amulet"
-	AreaLevel >= 65
-	SetFontSize 39
-	SetTextColor 255 215 0
-	SetBackgroundColor 50 40 0 255
-	SetBorderColor 255 255 255
-	MinimapIcon 2 Yellow Star
-	PlayAlertSound 1 300
-
+ 
 
 
 # ============================================
@@ -114,7 +81,6 @@ Show # High Value Forks (15-30ex each)
 	ItemLevel >= 79
 	Rarity Normal
 	BaseType == "Forked Spear" "Heavy Belt"
-	AreaLevel >= 65
 	SetFontSize 40
 	SetTextColor 0 255 0
 	SetBackgroundColor 0 50 0 255
@@ -128,7 +94,6 @@ Show # Medium Value Wands (3ex each)
 	ItemLevel >= 79
 	Rarity Normal Magic
 	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
-	AreaLevel >= 65
 	SetFontSize 38
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
@@ -143,7 +108,6 @@ Show # Chaos Value Armor (5c each)
 	ItemLevel >= 79
 	Rarity Normal 
 	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes" "Sleek Jacket" "Vile Robe"
-	AreaLevel >= 65
 	SetFontSize 36
 	SetTextColor 255 165 0
 	SetBackgroundColor 50 25 0 200
@@ -155,7 +119,6 @@ Show # Chaos Value Weapons (5c each)
 	ItemLevel >= 79
 	Rarity Normal 
 	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver" "Rattling Sceptre" "Volant Quiver" "Visceral Quiver" "Jade Tiara"
-	AreaLevel >= 65
 	SetFontSize 36
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200

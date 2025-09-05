@@ -83,26 +83,6 @@
 }
 
 
-/* Rules from mirror_tier.filter */
-.rarity-normal, .rarity-magic, .filter-==, .filter-rings, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"] {
-    color: rgb(255 0 0);
-    border-color: rgb(255 255 255);
-    background-color: rgb(50 0 0);
-    font-size: 40px;
-}
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"] {
-    color: rgb(255 0 0);
-    border-color: rgb(255 255 255);
-    background-color: rgb(50 0 0);
-    font-size: 40px;
-}
-.rarity-normal, .rarity-magic, .filter-==, .filter-amulets, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"] {
-    color: rgb(255 215 0);
-    border-color: rgb(255 255 255);
-    background-color: rgb(50 40 0);
-    font-size: 39px;
-}
-
 /* Rules from gacha.filter */
 .rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(233 75 75);
@@ -614,8 +594,8 @@
 }
 
 /* Custom minimap icon colors */
-.minimap-icon-star { color: rgb(160 110 60); }
 .minimap-icon-diamond { color: rgb(0 255 255); }
+.minimap-icon-star { color: rgb(160 110 60); }
 .minimap-icon-circle { color: rgb(255 255 255); }
 .minimap-icon-cross { color: rgb(255 255 0); }
 .minimap-icon-triangle { color: rgb(160 110 60); }
