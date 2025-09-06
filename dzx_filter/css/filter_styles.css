@@ -120,7 +120,7 @@
     background-color: rgb(50 25 0);
     font-size: 36px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Jade"], [data-basetype="Tiara"] {
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Spiked"], [data-basetype="Spear"], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Jade"], [data-basetype="Tiara"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
     background-color: rgb(50 0 0);
