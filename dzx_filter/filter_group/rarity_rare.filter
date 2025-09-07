@@ -2,6 +2,17 @@
 # Rare Items Group
 #------------------------------------------------------------------------------
 
+Hide
+  Rarity Rare
+  ItemLevel <= 80
+  AreaLevel >= 79
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  SetBackgroundColor 0 0 0 255
+  SetTextColor 255 209 94
+  SetFontSize 32
+  MinimapIcon 2 Yellow Cross
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
@@ -20,3 +31,4 @@ Show
   SetFontSize 32
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+

@@ -80,8 +80,8 @@ Show
 
 
 Show # High Value Forks (15-30ex each)
-	ItemLevel >= 81
-	Rarity Normal
+	ItemLevel >= 80
+	Rarity Normal Magic
 	BaseType == "Forked Spear" "Heavy Belt"
 	SetFontSize 40
 	SetTextColor 0 255 0
@@ -94,7 +94,7 @@ Show # High Value Forks (15-30ex each)
 
 
 Show # Medium Value Wands (3ex each)
-	ItemLevel >= 81
+	ItemLevel >= 80
 	Rarity Normal Magic
 	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
 	SetFontSize 38
@@ -109,8 +109,8 @@ Show # Medium Value Wands (3ex each)
 
 # Tier 5: Chaos Value Items (1-5 Chaos) - Orange
 Show # Chaos Value Armor (5c each)
-	ItemLevel >= 81
-	Rarity Normal 
+	ItemLevel >= 80
+	Rarity Normal Magic
 	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes" "Sleek Jacket" "Vile Robe"
 	SetFontSize 36
 	SetTextColor 255 165 0
@@ -121,7 +121,7 @@ Show # Chaos Value Armor (5c each)
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 Show # Chaos Value Weapons (5c each)
-	ItemLevel >= 81
+	ItemLevel >= 80
 	Rarity Normal  Magic
 	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver" "Rattling Sceptre" "Volant Quiver" "Visceral Quiver" "Jade Tiara"
 	SetFontSize 36
@@ -878,7 +878,7 @@ Show
 
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine"
+  BaseType "Mirror" "Divine" "Greater Exalted Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Perfect Chaos Orb" "Hinekora's Lock"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -1052,6 +1052,17 @@ Show
 
 Show
   Rarity Rare
+  ItemLevel <= 80
+  AreaLevel >= 79
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  SetBackgroundColor 0 0 0 255
+  SetTextColor 255 209 94
+  SetFontSize 32
+  MinimapIcon 2 Yellow Cross
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+
+Show
+  Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
   UnidentifiedItemTier >= 5
   SetBackgroundColor 0 0 0 203
@@ -1068,6 +1079,7 @@ Show
   SetFontSize 32
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+
 
 
 

@@ -102,7 +102,7 @@
 }
 
 /* Rules from crafting.filter */
-.rarity-normal, [data-basetype="=="], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Heavy"], [data-basetype="Belt"] {
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Heavy"], [data-basetype="Belt"] {
     color: rgb(0 255 0);
     border-color: rgb(255 255 0);
     background-color: rgb(0 50 0);
@@ -114,7 +114,7 @@
     background-color: rgb(10 10 10);
     font-size: 38px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Vile"], [data-basetype="Robe"] {
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Vile"], [data-basetype="Robe"] {
     color: rgb(255 165 0);
     border-color: rgb(255 165 0);
     background-color: rgb(50 25 0);
@@ -475,7 +475,7 @@
 .filter-currency {
     font-size: 32px;
 }
-.filter-currency, [data-basetype="Mirror"], [data-basetype="Divine"] {
+.filter-currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
@@ -556,6 +556,13 @@
 }
 
 /* Rules from rarity_rare.filter */
+.rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
+    color: rgb(255 209 94);
+    background-color: rgb(0 0 0);
+    font-size: 32px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
 .rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
     color: rgb(248 147 5);
     background-color: rgb(0 0 0);

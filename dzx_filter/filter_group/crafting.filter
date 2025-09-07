@@ -5,8 +5,8 @@
 
 
 Show # High Value Forks (15-30ex each)
-	ItemLevel >= 81
-	Rarity Normal
+	ItemLevel >= 80
+	Rarity Normal Magic
 	BaseType == "Forked Spear" "Heavy Belt"
 	SetFontSize 40
 	SetTextColor 0 255 0
@@ -19,7 +19,7 @@ Show # High Value Forks (15-30ex each)
 
 
 Show # Medium Value Wands (3ex each)
-	ItemLevel >= 81
+	ItemLevel >= 80
 	Rarity Normal Magic
 	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
 	SetFontSize 38
@@ -34,8 +34,8 @@ Show # Medium Value Wands (3ex each)
 
 # Tier 5: Chaos Value Items (1-5 Chaos) - Orange
 Show # Chaos Value Armor (5c each)
-	ItemLevel >= 81
-	Rarity Normal 
+	ItemLevel >= 80
+	Rarity Normal Magic
 	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes" "Sleek Jacket" "Vile Robe"
 	SetFontSize 36
 	SetTextColor 255 165 0
@@ -46,7 +46,7 @@ Show # Chaos Value Armor (5c each)
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 Show # Chaos Value Weapons (5c each)
-	ItemLevel >= 81
+	ItemLevel >= 80
 	Rarity Normal  Magic
 	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver" "Rattling Sceptre" "Volant Quiver" "Visceral Quiver" "Jade Tiara"
 	SetFontSize 36
