@@ -524,6 +524,7 @@ Show
 # Legacy Rules
 Hide
   Quality == 0
+  ItemLevel <= 79
   Rarity <= Magic
   Class "Belts"
   Continue
