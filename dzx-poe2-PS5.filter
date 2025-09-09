@@ -93,7 +93,7 @@ Show # High Value Forks (15-30ex each)
 Show # Medium Value Wands (3ex each)
 	ItemLevel >= 80
 	Rarity Normal Magic
-	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
+	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand"
 	SetFontSize 38
 	SetTextColor 160 255 71
 	SetBackgroundColor 10 10 10 200
