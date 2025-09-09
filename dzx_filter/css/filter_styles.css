@@ -108,7 +108,7 @@
     background-color: rgb(0 50 0);
     font-size: 40px;
 }
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"] {
+.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"] {
     color: rgb(160 255 71);
     border-color: rgb(139 191 226);
     background-color: rgb(10 10 10);
