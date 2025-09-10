@@ -75,56 +75,43 @@ Show
 # Crafting - Complete TFT Market Data (2024)
 # All crafting items from TFT market data
 # --------------------------------
-
-
-Show # High Value Forks (15-30ex each)
-	ItemLevel >= 80
-	Rarity Normal Magic
-	BaseType == "Forked Spear" "Heavy Belt"
-	SetFontSize 40
-	SetTextColor 0 255 0
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 2 Yellow Star
-	PlayAlertSound 1 300
-
-
-
-Show # Medium Value Wands (3ex each)
-	ItemLevel >= 80
-	Rarity Normal Magic
-	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand"
-	SetFontSize 38
-	SetTextColor 160 255 71
-	SetBackgroundColor 10 10 10 200
-	SetBorderColor 139 191 226
-	MinimapIcon 2 Orange Diamond
-	PlayAlertSound 16 200
-
- 
-
-# Tier 5: Chaos Value Items (1-5 Chaos) - Orange
-Show # Chaos Value Armor (5c each)
-	ItemLevel >= 80
-	Rarity Normal Magic
-	BaseType == "Falconer's Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes" "Sleek Jacket" "Vile Robe"
-	SetFontSize 36
-	SetTextColor 255 165 0
-	SetBackgroundColor 50 25 0 200
-	SetBorderColor 255 165 0
-	MinimapIcon 1 Orange Circle
-	PlayAlertSound 4 100
-
-Show # Chaos Value Weapons (5c each)
+Show  
 	ItemLevel >= 80
 	Rarity Normal  Magic
-	BaseType == "Spiked Spear" "Gemini Bow" "Primed Quiver" "Rattling Sceptre" "Volant Quiver" "Visceral Quiver" "Jade Tiara"
+	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt"
 	SetFontSize 36
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Circle
 	PlayAlertSound 4 100
+
+
+Show # Medium Value Wands (3ex each)
+	ItemLevel >= 80
+	Rarity Normal Magic
+	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear"
+	SetFontSize 38
+	SetTextColor 0 255 0
+	SetBackgroundColor 0 50 0 255
+	SetBorderColor 255 255 0
+	MinimapIcon 2 Orange Diamond
+	PlayAlertSound 16 200
+
+ 
+
+Show  
+	ItemLevel >= 80
+	Rarity Normal Magic
+	BaseType == "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	SetFontSize 36
+	SetTextColor 0 255 0
+	SetBackgroundColor 0 50 0 255
+	SetBorderColor 255 255 0
+	MinimapIcon 1 Orange Circle
+	PlayAlertSound 4 100
+
+
 
  
 
