@@ -102,23 +102,17 @@
 }
 
 /* Rules from crafting.filter */
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
     background-color: rgb(50 0 0);
-    font-size: 36px;
+    font-size: 37px;
 }
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"] {
-    color: rgb(0 255 0);
-    border-color: rgb(255 255 0);
+.rarity-magic, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
+    color: rgb(62 140 242);
+    border-color: rgb(62 140 242);
     background-color: rgb(0 50 0);
-    font-size: 38px;
-}
-.rarity-normal, .rarity-magic, [data-basetype="=="], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
-    color: rgb(0 255 0);
-    border-color: rgb(255 255 0);
-    background-color: rgb(0 50 0);
-    font-size: 36px;
+    font-size: 32px;
 }
 
 /* Rules from gold.filter */
@@ -139,11 +133,17 @@
 }
 
 /* Rules from uncut_gems.filter */
-[data-basetype="Rakiata's"], [data-basetype="Flow"] {
+[data-basetype="Rakiata's"], [data-basetype="Flow"], [data-basetype="Dialla's"], [data-basetype="Desire"], [data-basetype="Atalui's"], [data-basetype="Bloodletting"], [data-basetype="Uhtred's"], [data-basetype="Augury"], [data-basetype="Uul-Netol's"], [data-basetype="Embrace"], [data-basetype="Arjun's"], [data-basetype="Medal"], [data-basetype="Uhtred's"], [data-basetype="Omen"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 45px;
+}
+[data-basetype="Ratha's"], [data-basetype="Assault"], [data-basetype="Tul's"], [data-basetype="Stillness"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 40px;
 }
 [data-basetype="Uncut"], [data-basetype="Skill"], [data-basetype="Gem"], [data-basetype="Uncut"], [data-basetype="Spirit"], [data-basetype="Gem"] {
     color: rgb(255 0 0);
@@ -469,13 +469,19 @@
 .filter-currency {
     font-size: 32px;
 }
-.filter-currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
+.filter-currency, [data-basetype="Mirror"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 45px;
 }
-.filter-currency, [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"] {
+.filter-currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Perfect"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
+.filter-currency, [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Chaos"], [data-basetype="Orb"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);

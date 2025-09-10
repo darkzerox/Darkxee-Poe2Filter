@@ -79,9 +79,9 @@ Show
 # --------------------------------
 Show  
 	ItemLevel >= 80
-	Rarity Normal  Magic
-	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt"
-	SetFontSize 36
+	Rarity Normal 
+	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	SetFontSize 37
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
@@ -92,29 +92,15 @@ Show
 
 Show # Medium Value Wands (3ex each)
 	ItemLevel >= 80
-	Rarity Normal Magic
-	BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear"
-	SetFontSize 38
-	SetTextColor 0 255 0
+	Rarity  Magic
+	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	SetFontSize 32
+	SetTextColor 62 140 242
 	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 2 Orange Diamond
+	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
 
- 
-
-Show  
-	ItemLevel >= 80
-	Rarity Normal Magic
-	BaseType == "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
-	SetFontSize 36
-	SetTextColor 0 255 0
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 255 255 0
-	MinimapIcon 1 Orange Circle
-	PlayAlertSound 4 100
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 
 
@@ -364,7 +350,7 @@ Hide
 #   AreaLevel >= 75
 
 Show
-  BaseType "Rakiata's Flow"
+  BaseType "Rakiata's Flow" "Dialla's Desire"  "Atalui's Bloodletting" "Uhtred's Augury" "Uul-Netol's Embrace" "Arjun's Medal" "Uhtred's Omen" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -372,6 +358,18 @@ Show
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+
+
+Show
+  BaseType "Ratha's Assault" "Tul's Stillness"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 40
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
 
 # Level 20 gems go tink
 Show
@@ -886,9 +884,21 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   Continue
 
+
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine" "Greater Exalted Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Perfect Chaos Orb" "Hinekora's Lock"
+  BaseType "Mirror"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Divine" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -900,7 +910,7 @@ Show
  
 Show
   Class "Currency"
-  BaseType  "Perfect Jeweller's Orb" 
+  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
