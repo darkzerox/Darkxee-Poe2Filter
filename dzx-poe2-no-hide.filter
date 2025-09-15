@@ -77,6 +77,21 @@ Show
 # Crafting - Complete TFT Market Data (2024)
 # All crafting items from TFT market data
 # --------------------------------
+
+Show
+	ItemLevel >= 80
+	Rarity Normal 
+	BaseType == "Secured Wraps"
+	Sockets >= 2
+	SetFontSize 45
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 0 0 200
+	SetBorderColor 255 0 0
+	MinimapIcon 1 Orange Star
+	PlayAlertSound 4 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/divine.mp3" 100
+
+
 Show  
 	ItemLevel >= 80
 	Rarity Normal 
@@ -100,6 +115,8 @@ Show # Medium Value Wands (3ex each)
 	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
+
+
 
 
 
