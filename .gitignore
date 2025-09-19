@@ -79,3 +79,6 @@ EShop/eshop_recommend_config_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca49
 ETrade/search_query_save.json
 EShop/calls_for_action_e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.json
 .gitignore
+poe2_production/PoE-1758028323-20164.dmp
+poe2_production/PoE-1758028323-20164.dmp.log.txt
+poe2_production/PoE-1758028323-20164.dmp.txt
