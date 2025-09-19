@@ -102,6 +102,12 @@
 }
 
 /* Rules from crafting.filter */
+.filter-==, .filter-gloves {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(50 0 0);
+    font-size: 45px;
+}
 .rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
@@ -602,9 +608,9 @@
 
 /* Custom minimap icon colors */
 .minimap-icon-diamond { color: rgb(0 255 255); }
+.minimap-icon-star { color: rgb(160 110 60); }
 .minimap-icon-circle { color: rgb(255 255 255); }
 .minimap-icon-cross { color: rgb(255 255 0); }
-.minimap-icon-star { color: rgb(160 110 60); }
 .minimap-icon-triangle { color: rgb(160 110 60); }
 .minimap-icon-square { color: rgb(0 0 255); }
 .minimap-icon-pentagon { color: rgb(160 110 60); }
