@@ -102,7 +102,7 @@
 }
 
 /* Rules from crafting.filter */
-.rarity-normal, [data-basetype="=="], [data-basetype="Secured"], [data-basetype="Wraps"] {
+.filter-==, .filter-gloves {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
     background-color: rgb(50 0 0);

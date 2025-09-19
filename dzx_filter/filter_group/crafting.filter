@@ -5,8 +5,7 @@
 
 Show
 	ItemLevel >= 80
-	Rarity Normal 
-	BaseType == "Secured Wraps"
+	Class == "Gloves"
 	Sockets >= 2
 	SetFontSize 45
 	SetTextColor 255 0 0
