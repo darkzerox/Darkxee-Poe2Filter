@@ -48,6 +48,19 @@ Show
 
 Show 
   Rarity Normal
+  Class == "Belts"
+  SetBorderColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
+
+
+Show 
+  Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
   ItemLevel >= 78
   SetTextColor 160 255 71
@@ -77,6 +90,18 @@ Show
 # Crafting - Complete TFT Market Data (2024)
 # All crafting items from TFT market data
 # --------------------------------
+
+Show
+	ItemLevel >= 80
+	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours"
+	Sockets >= 3
+	SetFontSize 45
+	SetTextColor 255 0 0
+	SetBackgroundColor 50 0 0 200
+	SetBorderColor 255 0 0
+	MinimapIcon 1 Orange Star
+	PlayAlertSound 4 100
+	CustomAlertSound "dzx_filter/soundeffect/type-01/divine.mp3" 100
 
 Show
 	ItemLevel >= 80
@@ -113,7 +138,7 @@ Show # Medium Value Wands (3ex each)
 	SetBackgroundColor 0 50 0 255
 	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 200
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 
 
@@ -525,7 +550,7 @@ Show
 Hide
   Quality == 0
   ItemLevel <= 79
-  Rarity <= Magic
+  Rarity == Magic
   Class "Belts"
   Continue
   
@@ -778,6 +803,16 @@ Show
   Continue
 
 Show
+  WaystoneTier <= 5
+  BaseType "Waystone"
+  Rarity == Rare
+  SetTextColor 165 249 62
+  SetBorderColor 165 249 62
+  SetBackgroundColor 10 10 10
+  SetFontSize 32
+
+
+Show
   WaystoneTier == 13
   BaseType "Waystone"
   SetTextColor 184 31 77
@@ -930,7 +965,7 @@ Show
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
-  SetFontSize 45
+  SetFontSize 35
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
@@ -967,16 +1002,28 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
 
+
 Show
   Class "Omen"
-  BaseType "Omen of"
+  BaseType "Ancient Collarbone"  "Omen of Light" "Ancient Jawbone" "Ancient Rib" "Omen of Abyssal Echoes" "Preserved Cranium"
+  SetTextColor 218 145 255
+  SetFontSize 45
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+
+
+Show
+  Class "Omen"
   SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
+  SetBorderColor  50 2 68
+  SetBackgroundColor 50 2 68
   PlayEffect White
   MinimapIcon 2 White Circle
-  SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+  SetFontSize 35
   PlayAlertSound 2 0
 
 
@@ -992,12 +1039,12 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 201 184 224
-  SetBackgroundColor 23 7 69
-  PlayEffect Purple
-  MinimapIcon 1 Purple Kite
-  SetFontSize 35
+  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
+  SetTextColor 182 73 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Brown
+  MinimapIcon 1 Brown Kite
+  SetFontSize 40
 
 Show
   Class "Currency"

@@ -90,6 +90,12 @@
     background-color: rgb(10 10 10);
     font-size: 40px;
 }
+.rarity-normal, .filter-==, .filter-belts {
+    color: rgb(233 75 75);
+    border-color: rgb(233 75 75);
+    background-color: rgb(10 10 10);
+    font-size: 40px;
+}
 .rarity-normal, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Unset"], [data-basetype="Ring"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
@@ -102,6 +108,12 @@
 }
 
 /* Rules from crafting.filter */
+.filter-==, .filter-bows, .filter-crossbows, .filter-quarterstaves, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-gloves, .filter-body, .filter-armours {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(50 0 0);
+    font-size: 45px;
+}
 .filter-==, .filter-gloves {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
@@ -238,7 +250,7 @@
 }
 
 /* Rules from belts.filter */
-.rarity-<=, .rarity-magic, .filter-belts {
+.rarity-==, .rarity-magic, .filter-belts {
     opacity: 0.5;
     text-decoration: line-through;
 }
@@ -414,6 +426,12 @@
 [data-basetype="Waystone"] {
     font-size: 32px;
 }
+[data-basetype="Waystone"], .rarity-==, .rarity-rare {
+    color: rgb(165 249 62);
+    border-color: rgb(165 249 62);
+    background-color: rgb(10 10 10);
+    font-size: 32px;
+}
 [data-basetype="Waystone"] {
     color: rgb(184 31 77);
     border-color: rgb(4 10 29);
@@ -491,7 +509,7 @@
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
-    font-size: 45px;
+    font-size: 35px;
 }
 .filter-currency, [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"] {
     color: rgb(255 193 48);
@@ -509,21 +527,27 @@
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
 }
-.filter-omen, [data-basetype="Omen"], [data-basetype="of"] {
+.filter-omen, [data-basetype="Ancient"], [data-basetype="Collarbone"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Light"], [data-basetype="Ancient"], [data-basetype="Jawbone"], [data-basetype="Ancient"], [data-basetype="Rib"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Abyssal"], [data-basetype="Echoes"], [data-basetype="Preserved"], [data-basetype="Cranium"] {
+    color: rgb(218 145 255);
+    border-color: rgb(0 0 0);
+    background-color: rgb(0 0 0);
+    font-size: 45px;
+}
+.filter-omen {
     color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-    font-size: 40px;
+    border-color: rgb(50 2 68);
+    background-color: rgb(50 2 68);
+    font-size: 35px;
 }
 .filter-currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
 }
-.filter-currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype=""], [data-basetype="Artifact"] {
-    color: rgb(201 184 224);
-    background-color: rgb(23 7 69);
-    font-size: 35px;
+.filter-currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Runic"], [data-basetype="Splinter"] {
+    color: rgb(182 73 0);
+    background-color: rgb(0 0 0);
+    font-size: 40px;
 }
 .filter-currency, [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
     color: rgb(170 70 201);
@@ -614,4 +638,4 @@
 .minimap-icon-triangle { color: rgb(160 110 60); }
 .minimap-icon-square { color: rgb(0 0 255); }
 .minimap-icon-pentagon { color: rgb(160 110 60); }
-.minimap-icon-kite { color: rgb(128 0 128); }
+.minimap-icon-kite { color: rgb(160 110 60); }

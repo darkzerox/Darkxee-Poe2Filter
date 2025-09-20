@@ -38,7 +38,7 @@ Show
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
-  SetFontSize 45
+  SetFontSize 35
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
@@ -75,16 +75,28 @@ Show
   PlayEffect White
   MinimapIcon 2 White Circle
 
+
 Show
   Class "Omen"
-  BaseType "Omen of"
+  BaseType "Ancient Collarbone"  "Omen of Light" "Ancient Jawbone" "Ancient Rib" "Omen of Abyssal Echoes" "Preserved Cranium"
+  SetTextColor 218 145 255
+  SetFontSize 45
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+
+
+Show
+  Class "Omen"
   SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
+  SetBorderColor  50 2 68
+  SetBackgroundColor 50 2 68
   PlayEffect White
   MinimapIcon 2 White Circle
-  SetFontSize 40
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+  SetFontSize 35
   PlayAlertSound 2 0
 
 
@@ -100,12 +112,12 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 201 184 224
-  SetBackgroundColor 23 7 69
-  PlayEffect Purple
-  MinimapIcon 1 Purple Kite
-  SetFontSize 35
+  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
+  SetTextColor 182 73 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Brown
+  MinimapIcon 1 Brown Kite
+  SetFontSize 40
 
 Show
   Class "Currency"

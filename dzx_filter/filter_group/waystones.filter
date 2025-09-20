@@ -9,6 +9,16 @@ Show
   Continue
 
 Show
+  WaystoneTier <= 5
+  BaseType "Waystone"
+  Rarity == Rare
+  SetTextColor 165 249 62
+  SetBorderColor 165 249 62
+  SetBackgroundColor 10 10 10
+  SetFontSize 32
+
+
+Show
   WaystoneTier == 13
   BaseType "Waystone"
   SetTextColor 184 31 77
