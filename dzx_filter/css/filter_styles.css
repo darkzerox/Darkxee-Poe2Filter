@@ -108,6 +108,12 @@
 }
 
 /* Rules from crafting.filter */
+.filter-==, .filter-bows, .filter-crossbows, .filter-quarterstaves, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-gloves, .filter-body, .filter-armours {
+    color: rgb(255 0 0);
+    border-color: rgb(255 0 0);
+    background-color: rgb(50 0 0);
+    font-size: 45px;
+}
 .filter-==, .filter-gloves {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
@@ -521,11 +527,17 @@
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
 }
-.filter-omen, [data-basetype="Omen"], [data-basetype="of"] {
+.filter-omen, [data-basetype="Ancient"], [data-basetype="Collarbone"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Light"], [data-basetype="Ancient"], [data-basetype="Jawbone"], [data-basetype="Ancient"], [data-basetype="Rib"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Abyssal"], [data-basetype="Echoes"], [data-basetype="Preserved"], [data-basetype="Cranium"] {
+    color: rgb(218 145 255);
+    border-color: rgb(0 0 0);
+    background-color: rgb(0 0 0);
+    font-size: 45px;
+}
+.filter-omen {
     color: rgb(255 255 255);
-    border-color: rgb(255 255 255);
-    background-color: rgb(47 10 61);
-    font-size: 40px;
+    border-color: rgb(50 2 68);
+    background-color: rgb(50 2 68);
+    font-size: 35px;
 }
 .filter-currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
     color: rgb(255 255 255);
