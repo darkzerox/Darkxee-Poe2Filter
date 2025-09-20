@@ -38,7 +38,7 @@ Show
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
-  SetFontSize 45
+  SetFontSize 35
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
@@ -100,12 +100,12 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 201 184 224
-  SetBackgroundColor 23 7 69
-  PlayEffect Purple
-  MinimapIcon 1 Purple Kite
-  SetFontSize 35
+  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
+  SetTextColor 182 73 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Brown
+  MinimapIcon 1 Brown Kite
+  SetFontSize 40
 
 Show
   Class "Currency"

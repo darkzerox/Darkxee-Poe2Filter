@@ -47,6 +47,18 @@ Show
 
 Show 
   Rarity Normal
+  Class == "Belts"
+  SetBorderColor 233 75 75
+  SetBackgroundColor 10 10 10 200
+  SetTextColor 233 75 75
+  SetFontSize 40
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+
+
+Show 
+  Rarity Normal
   BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
   ItemLevel >= 78
   SetTextColor 160 255 71
@@ -387,7 +399,7 @@ Show
 Show
   Quality == 0
   ItemLevel <= 79
-  Rarity <= Magic
+  Rarity == Magic
   Class "Belts"
   Continue
   
@@ -742,6 +754,16 @@ Show
   Continue
 
 Show
+  WaystoneTier <= 5
+  BaseType "Waystone"
+  Rarity == Rare
+  SetTextColor 165 249 62
+  SetBorderColor 165 249 62
+  SetBackgroundColor 10 10 10
+  SetFontSize 32
+
+
+Show
   WaystoneTier == 13
   BaseType "Waystone"
   SetTextColor 184 31 77
@@ -890,7 +912,7 @@ Show
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
-  SetFontSize 45
+  SetFontSize 35
   PlayEffect Red
   MinimapIcon 0 Red Star
   
@@ -949,12 +971,12 @@ Show
  
 Show
   Class "Currency"
-  BaseType "Simulacrum Splinter" "Breach Splinter" " Artifact" 
-  SetTextColor 201 184 224
-  SetBackgroundColor 23 7 69
-  PlayEffect Purple
-  MinimapIcon 1 Purple Kite
-  SetFontSize 35
+  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
+  SetTextColor 182 73 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Brown
+  MinimapIcon 1 Brown Kite
+  SetFontSize 40
 
 Show
   Class "Currency"
