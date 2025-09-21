@@ -112,10 +112,21 @@ Show
 
 
 Show  
-	ItemLevel >= 80
+	ItemLevel >= 81
 	Rarity Normal 
 	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
-	SetFontSize 37
+	SetFontSize 40
+	SetTextColor 195 0 0
+	SetBackgroundColor 50 0 0 200
+	SetBorderColor 255 187 0
+	MinimapIcon 1 Red Circle
+	PlayAlertSound 4 100
+
+Show  
+	ItemLevel == 80
+	Rarity Normal 
+	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	SetFontSize 35
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
@@ -132,17 +143,6 @@ Show # Medium Value Wands (3ex each)
 	SetBackgroundColor 0 50 0 255
 	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
-
-
-
-
-
-
- 
-
- 
-
-
 
 
 # ============================================
@@ -850,29 +850,30 @@ Show
 
 Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
-  AreaLevel >= 65
-  ItemLevel >= 83
-  Rarity <= Rare
   SetFontSize 32
   SetTextColor 143 106 206
   SetBorderColor 62 88 121
   SetBackgroundColor 10 10 10 200
 
 
-
 Hide
   Quality == 0
   AreaLevel >= 65
-  Rarity <= Magic
+  ItemLevel < 60
   Class "Flasks"
   
 Show
-Class "Flasks"
-Rarity Magic
-Quality >= 1
-SetFontSize 32
-SetTextColor 62 88 121
-SetBorderColor 62 88 121
+  Class "Flasks"
+  ItemLevel >= 60
+  SetFontSize 32
+  SetTextColor 106 213 208
+  SetBorderColor 26 51 82
+
+Show
+  Class "Flasks"
+  SetFontSize 32
+  SetTextColor 83 145 200
+  SetBorderColor 26 51 82
 
 Show
 Class "Flasks"

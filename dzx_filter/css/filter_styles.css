@@ -121,10 +121,16 @@
     font-size: 45px;
 }
 .rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
+    color: rgb(195 0 0);
+    border-color: rgb(255 187 0);
+    background-color: rgb(50 0 0);
+    font-size: 40px;
+}
+.rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
     color: rgb(255 0 0);
     border-color: rgb(255 0 0);
     background-color: rgb(50 0 0);
-    font-size: 37px;
+    font-size: 35px;
 }
 .rarity-magic, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
     color: rgb(62 140 242);
@@ -458,19 +464,24 @@
 }
 
 /* Rules from flasks.filter */
-[data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"], .rarity-<=, .rarity-rare {
+[data-basetype="=="], [data-basetype="Ultimate"], [data-basetype="Life"], [data-basetype="Flask"], [data-basetype="Ultimate"], [data-basetype="Mana"], [data-basetype="Flask"] {
     color: rgb(143 106 206);
     border-color: rgb(62 88 121);
     background-color: rgb(10 10 10);
     font-size: 32px;
 }
-.rarity-<=, .rarity-magic, .filter-flasks {
+.filter-flasks {
     opacity: 0.5;
     text-decoration: line-through;
 }
-.filter-flasks, .rarity-magic {
-    color: rgb(62 88 121);
-    border-color: rgb(62 88 121);
+.filter-flasks {
+    color: rgb(106 213 208);
+    border-color: rgb(26 51 82);
+    font-size: 32px;
+}
+.filter-flasks {
+    color: rgb(83 145 200);
+    border-color: rgb(26 51 82);
     font-size: 32px;
 }
 .filter-flasks, .rarity-normal {
