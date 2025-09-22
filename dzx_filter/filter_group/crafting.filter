@@ -5,10 +5,11 @@
 
 Show
 	ItemLevel >= 80
-	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours"
+	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots"
 	Sockets >= 3
 	SetFontSize 45
-	SetTextColor 255 0 0
+	SetTextColor 255 140 0
+
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Star
@@ -17,10 +18,10 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Gloves"
+	Class == "Gloves" "Boots"
 	Sockets >= 2
 	SetFontSize 45
-	SetTextColor 255 0 0
+	SetTextColor 255 140 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Star
@@ -33,9 +34,9 @@ Show
 	Rarity Normal 
 	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
 	SetFontSize 40
-	SetTextColor 195 0 0
+	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
-	SetBorderColor 255 187 0
+	SetBorderColor 255 0 0
 	MinimapIcon 1 Red Circle
 	PlayAlertSound 4 100
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
@@ -47,19 +48,9 @@ Show
 	SetFontSize 35
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
-	SetBorderColor 255 0 0
+	SetBorderColor 0 0 0
 	MinimapIcon 1 Orange Circle
 	PlayAlertSound 4 100
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 
-Show # Medium Value Wands (3ex each)
-	ItemLevel >= 80
-	Rarity  Magic
-	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
-	SetFontSize 32
-	SetTextColor 62 140 242
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 62 140 242
-	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100

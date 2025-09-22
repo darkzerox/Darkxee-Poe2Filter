@@ -13,13 +13,26 @@ Hide
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
+
+
+Show
+  Rarity Rare
+  ItemLevel >= 81
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  SetBackgroundColor 0 0 0 255
+  SetTextColor 255 209 94
+  SetBorderColor 255 156 94
+  SetFontSize 35
+  MinimapIcon 2 Yellow Cross
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
   UnidentifiedItemTier >= 5
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 

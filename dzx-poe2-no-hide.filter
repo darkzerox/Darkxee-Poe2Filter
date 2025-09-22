@@ -93,10 +93,11 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours"
+	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots"
 	Sockets >= 3
 	SetFontSize 45
-	SetTextColor 255 0 0
+	SetTextColor 255 140 0
+
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Star
@@ -105,10 +106,10 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Gloves"
+	Class == "Gloves" "Boots"
 	Sockets >= 2
 	SetFontSize 45
-	SetTextColor 255 0 0
+	SetTextColor 255 140 0
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Star
@@ -121,9 +122,9 @@ Show
 	Rarity Normal 
 	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
 	SetFontSize 40
-	SetTextColor 195 0 0
+	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
-	SetBorderColor 255 187 0
+	SetBorderColor 255 0 0
 	MinimapIcon 1 Red Circle
 	PlayAlertSound 4 100
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
@@ -135,22 +136,13 @@ Show
 	SetFontSize 35
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
-	SetBorderColor 255 0 0
+	SetBorderColor 0 0 0
 	MinimapIcon 1 Orange Circle
 	PlayAlertSound 4 100
 	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 
-Show # Medium Value Wands (3ex each)
-	ItemLevel >= 80
-	Rarity  Magic
-	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
-	SetFontSize 32
-	SetTextColor 62 140 242
-	SetBackgroundColor 0 50 0 255
-	SetBorderColor 62 140 242
-	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
+
 
 
 # ============================================
@@ -168,13 +160,13 @@ Show
 # Gold ~~~ lollll ~~~
 #------------------------------------------------------------------------------
 
-# Hide
-#   BaseType == "Gold"
-#   AreaLevel >= 70
-#   StackSize <= 100
-#   SetTextColor 180 180 180
-#   SetBackgroundColor 255 255 255 0
-#   SetFontSize 32
+Show
+  BaseType == "Gold"
+  AreaLevel >= 70
+  StackSize <= 500
+  SetTextColor 180 180 180
+  SetBackgroundColor 255 255 255 0
+  SetFontSize 32
 
 Show
   AreaLevel >= 70
@@ -844,36 +836,17 @@ Show
 
 Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  Class "Flasks"
   SetFontSize 32
-  SetTextColor 143 106 206
-  SetBorderColor 62 88 121
+  SetTextColor 83 172 185
+  SetBorderColor 87 119 160
   SetBackgroundColor 10 10 10 200
-
 
 Show
   Quality == 0
   AreaLevel >= 65
   ItemLevel < 60
   Class "Flasks"
-  
-Show
-  Class "Flasks"
-  ItemLevel >= 60
-  SetFontSize 32
-  SetTextColor 106 213 208
-  SetBorderColor 26 51 82
-
-Show
-  Class "Flasks"
-  SetFontSize 32
-  SetTextColor 83 145 200
-  SetBorderColor 26 51 82
-
-Show
-Class "Flasks"
-Rarity Normal
-SetFontSize 32
-
 
 
 # ============================================
@@ -1123,13 +1096,26 @@ Show
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
+
+
+Show
+  Rarity Rare
+  ItemLevel >= 81
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  SetBackgroundColor 0 0 0 255
+  SetTextColor 255 209 94
+  SetBorderColor 255 156 94
+  SetFontSize 35
+  MinimapIcon 2 Yellow Cross
+  CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
+
 Show
   Rarity Rare
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
   UnidentifiedItemTier >= 5
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
-  SetFontSize 40
+  SetFontSize 35
   MinimapIcon 2 Yellow Cross
   CustomAlertSound "dzx_filter/soundeffect/type-01/rare.mp3" 100
 
@@ -1161,6 +1147,19 @@ Show
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0
   SetFontSize 40
+
+Show 
+	ItemLevel >= 80
+	Rarity  Magic
+	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	SetFontSize 32
+	SetTextColor 62 140 242
+	SetBackgroundColor 0 50 0 255
+	SetBorderColor 62 140 242
+	PlayAlertSound 16 200
+	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
+
+
 
 
 Show
