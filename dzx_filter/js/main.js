@@ -26,11 +26,191 @@ async function fetchLatestTag() {
 }
 
 /**
+ * Add smooth scrolling for anchor links
+ */
+function initSmoothScrolling() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+/**
+ * Add intersection observer for animations
+ */
+function initScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    const elementsToAnimate = document.querySelectorAll('.container, .tag-cloud, .filter-table');
+    elementsToAnimate.forEach(el => observer.observe(el));
+}
+
+/**
+ * Add keyboard navigation support
+ */
+function initKeyboardNavigation() {
+    document.addEventListener('keydown', function(e) {
+        // Skip to main content with Alt + M
+        if (e.altKey && e.key === 'm') {
+            e.preventDefault();
+            const mainContent = document.getElementById('main-content');
+            if (mainContent) {
+                mainContent.focus();
+                mainContent.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+        
+        // Skip to download section with Alt + D
+        if (e.altKey && e.key === 'd') {
+            e.preventDefault();
+            const downloadSection = document.getElementById('download');
+            if (downloadSection) {
+                downloadSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+}
+
+/**
+ * Add copy to clipboard functionality for code blocks
+ */
+function initCopyToClipboard() {
+    const codeBlocks = document.querySelectorAll('pre code');
+    codeBlocks.forEach(block => {
+        const button = document.createElement('button');
+        button.className = 'copy-button';
+        button.textContent = 'คัดลอก';
+        button.setAttribute('aria-label', 'คัดลอกโค้ด');
+        
+        button.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(block.textContent);
+                button.textContent = 'คัดลอกแล้ว!';
+                setTimeout(() => {
+                    button.textContent = 'คัดลอก';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+        });
+        
+        const wrapper = document.createElement('div');
+        wrapper.className = 'code-wrapper';
+        wrapper.style.position = 'relative';
+        block.parentNode.parentNode.insertBefore(wrapper, block.parentNode);
+        wrapper.appendChild(block.parentNode);
+        wrapper.appendChild(button);
+    });
+}
+
+/**
+ * Add theme toggle functionality
+ */
+function initThemeToggle() {
+    // Check for saved theme preference or default to 'dark'
+    const currentTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    
+    // Create theme toggle button
+    const themeToggle = document.createElement('button');
+    themeToggle.className = 'theme-toggle';
+    themeToggle.setAttribute('aria-label', 'เปลี่ยนธีม');
+    themeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+    
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        themeToggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+    });
+    
+    // Add to header
+    const header = document.querySelector('header');
+    if (header) {
+        header.appendChild(themeToggle);
+    }
+}
+
+/**
+ * Add loading states for external resources
+ */
+function initLoadingStates() {
+    const images = document.querySelectorAll('img[loading="lazy"]');
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            img.classList.add('loaded');
+        });
+        
+        img.addEventListener('error', () => {
+            img.classList.add('error');
+            img.alt = 'ไม่สามารถโหลดภาพได้';
+        });
+    });
+}
+
+/**
+ * Add performance monitoring
+ */
+function initPerformanceMonitoring() {
+    // Monitor page load time
+    window.addEventListener('load', () => {
+        const loadTime = performance.now();
+        console.log(`Page loaded in ${loadTime.toFixed(2)}ms`);
+        
+        // Send analytics if available
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_load_time', {
+                'value': Math.round(loadTime),
+                'event_category': 'Performance'
+            });
+        }
+    });
+}
+
+/**
  * Initialize the application
  */
 function initApp() {
     console.log('DZX Filter Preview initialized');
+    
+    // Initialize all features
     fetchLatestTag();
+    initSmoothScrolling();
+    initScrollAnimations();
+    initKeyboardNavigation();
+    initCopyToClipboard();
+    initThemeToggle();
+    initLoadingStates();
+    initPerformanceMonitoring();
+    
+    // Add loaded class to body
+    document.body.classList.add('loaded');
 }
 
 // Initialize when DOM is loaded

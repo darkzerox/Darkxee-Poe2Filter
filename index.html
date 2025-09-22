@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,97 +7,131 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="DZX Poe2 Filter - Professional item filter for Path of Exile 2. Enhance your gameplay with comprehensive item filtering. Download for PC and PS5.">
-    <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, Loot Filter, Gaming">
+    <meta name="keywords" content="Path of Exile 2, POE2, Item Filter, DZX Filter, Loot Filter, Gaming, Thai">
     <meta name="author" content="Darkxee">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#4a9eff">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="DZX Filter for POE2 - v1.3.7">
     <meta property="og:description" content="Professional Path of Exile 2 item filter system">
     <meta property="og:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
     <meta property="og:url" content="https://darkzerox.github.io/Darkxee-Poe2Filter/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DZX Filter POE2">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DZX Filter for POE2 - v1.3.7">
+    <meta name="twitter:description" content="Professional Path of Exile 2 item filter system">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="dzx_filter/fonts/Fontin-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="dzx_filter/css/main.css" as="style">
     
     <!-- External CSS Files -->
     <link rel="stylesheet" href="dzx_filter/css/main.css">
     <link rel="stylesheet" href="dzx_filter/css/filter_styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "DZX Filter for POE2",
+        "description": "Professional item filter for Path of Exile 2",
+        "url": "https://darkzerox.github.io/Darkxee-Poe2Filter/",
+        "author": {
+            "@type": "Person",
+            "name": "Darkxee"
+        },
+        "applicationCategory": "GameApplication",
+        "operatingSystem": ["PC", "PS5"],
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <div class="container">
-        <div align="center">
-            <picture>
-                <img alt="DZX Poe2 Filter" 
-                     src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" 
-                     width="600" style="max-width: 100%; width: 100%; border-radius: 10px;">
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">ข้ามไปยังเนื้อหาหลัก</a>
+    
+    <!-- Header Section -->
+    <header class="container" role="banner">
+        <div class="header-content">
+            <picture class="logo-container">
+                <img src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" 
+                     alt="DZX Poe2 Filter Logo" 
+                     width="600" 
+                     height="auto"
+                     class="logo-image"
+                     loading="eager">
             </picture>
 
-            <h1>DZX Poe2 Filter <div class="version-tag" id="repo-version">v1.3.7</div></h1>
+            <h1 class="main-title">
+                DZX Poe2 Filter 
+                <span class="version-tag" id="repo-version" aria-label="เวอร์ชันปัจจุบัน">v1.3.7</span>
+            </h1>
 
-            <p style="font-size: 1.2rem; color: #cccccc; margin: 20px 0;">
+            <p class="main-description">
                 🎯 <strong>Advanced Item Filter for Path of Exile 2</strong><br>
                 เป็น Item Filter ที่พัฒนาขึ้นสำหรับ Path of Exile 2 โดยเฉพาะ<br>
                 รองรับการรวมไฟล์อัตโนมัติด้วย Python
             </p>
 
-            <div class="badges">
-                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases">
-                    <img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" alt="GitHub Release">
+            <div class="badges" role="complementary" aria-label="สถานะโปรเจค">
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases" 
+                   aria-label="ดาวน์โหลดเวอร์ชันล่าสุด">
+                    <img src="https://img.shields.io/github/v/release/darkzerox/Darkxee-Poe2Filter" 
+                         alt="GitHub Release" 
+                         loading="lazy">
                 </a>
-                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/actions">
-                    <img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" alt="Build Status">
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/actions" 
+                   aria-label="สถานะการ build">
+                    <img src="https://img.shields.io/github/actions/workflow/status/darkzerox/Darkxee-Poe2Filter/python-app.yml" 
+                         alt="Build Status" 
+                         loading="lazy">
                 </a>
-                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/stargazers">
-                    <img src="https://img.shields.io/github/stars/darkzerox/Darkxee-Poe2Filter" alt="Stars">
+                <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/stargazers" 
+                   aria-label="จำนวนดาว GitHub">
+                    <img src="https://img.shields.io/github/stars/darkzerox/Darkxee-Poe2Filter" 
+                         alt="Stars" 
+                         loading="lazy">
                 </a>
             </div>
         </div>
-    </div>
+    </header>
 
-    <div class="container download-section">
-        <h2>📥 Download</h2>
-        <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">
-            💻 Download for PC
-        </a>
-        <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button">  
-            🎮 Download for PS5
-        </a>
-    </div>
+    <!-- Download Section -->
+    <section class="container download-section" id="download" role="region" aria-labelledby="download-heading">
+        <h2 id="download-heading">📥 ดาวน์โหลด</h2>
+        <div class="download-buttons">
+            <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" 
+               class="download-button download-pc"
+               aria-label="ดาวน์โหลดสำหรับ PC">
+                <span class="download-icon">💻</span>
+                <span class="download-text">Download for PC</span>
+            </a>
+            <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" 
+               class="download-button download-ps5"
+               aria-label="ดาวน์โหลดสำหรับ PS5">  
+                <span class="download-icon">🎮</span>
+                <span class="download-text">Download for PS5</span>
+            </a>
+        </div>
+    </section>
 
-    <div class="container">
-        
-        <style>
-        @keyframes fadeInScale {
-            0% { opacity: 0; transform: scale(0.5) translateY(20px); }
-            100% { opacity: 1; transform: scale(1) translateY(0); }
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
-        
-        .tag-cloud .tag {
-            display: inline-block;
-            padding: 8px 16px;
-            margin: 6px;
-            border-radius: 25px;
-            font-size: 14px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            position: relative;
-            border: 2px solid rgba(255,255,255,0.2);
-            backdrop-filter: blur(5px);
-        }
-        
-        .tag-cloud .tag:hover {
-            transform: scale(1.15) translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.4);
-            animation-play-state: paused;
-            z-index: 10;
-        }
-        </style>
-        
-        <h2>✨ Item Preview Gallery</h2>
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Item Preview Gallery -->
+        <section class="container preview-section" id="preview" role="region" aria-labelledby="preview-heading">
+            <h2 id="preview-heading">✨ Item Preview Gallery</h2>
+            <p class="preview-description">ตัวอย่างการแสดงผลไอเทมต่างๆ ในเกม Path of Exile 2</p>
         <div class="tag-cloud">
             <span class="tag" style="
                 color: rgb(135 135 135); background-color: rgb(0 0 0); font-size: 16px;
@@ -470,11 +504,13 @@
             <span class="tag" style="
                 color: rgb(255 255 255); font-size: 16px;
                
-                ">Waystone</span></div>
-    </div>
+                ">Waystone</span>        </div>
+        </section>
 
-    <div class="container">
-        <h2>📋 Filter Rules Preview</h2>
+        <!-- Filter Rules Preview -->
+        <section class="container rules-section" id="rules" role="region" aria-labelledby="rules-heading">
+            <h2 id="rules-heading">📋 Filter Rules Preview</h2>
+            <p class="rules-description">ตัวอย่างกฎการกรองไอเทมในแต่ละหมวดหมู่</p>
         <h3>mirror_tier.filter</h3>
 <table class="filter-table">
 <thead><tr>
@@ -712,11 +748,12 @@
 <tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Magic</td><td>Sockets: == 0, Quality: == 0, AreaLevel: >= 50</td><td>-</td><td><div class="style-box" style="color: rgb(62 140 242); background-color: rgb(0 0 0); font-size: 16px; text-decoration: line-through; opacity: 0.7">Body Armou...</div></td></tr>
 <tr><td>Body Armour Boots Gloves Helmets Bows Crossbows Foci One Hand Maces Quivers Quarterstaves Sceptres Shields Staves Two Hand Maces Wands Bucklers spears</td><td>ALL</td><td>Magic</td><td>Quality: > 0</td><td>-</td><td><div class="style-box" style="color: rgb(101 103 222); background-color: rgb(0 0 0); font-size: 16px">Body Armou...</div></td></tr>
 </tbody></table>
-    </div>
+        </section>
 
-    <div class="container">
-        <h2>🛠️ Developer Information</h2>
-        <p>สามารถ <a href="https://github.com/darkzerox/Darkxee-Poe2Filter" style="color: #4a9eff;">Clone โปรเจค</a> ไปแก้ไขได้เลย</p>
+        <!-- Developer Information -->
+        <section class="container dev-section" id="developer" role="region" aria-labelledby="dev-heading">
+            <h2 id="dev-heading">🛠️ Developer Information</h2>
+            <p>สามารถ <a href="https://github.com/darkzerox/Darkxee-Poe2Filter" class="github-link">Clone โปรเจค</a> ไปแก้ไขได้เลย</p>
         
         <h3>Build Instructions</h3>
         <pre style="background: rgba(0,0,0,0.5); padding: 20px; border-radius: 8px; overflow-x: auto;"><code># Clone the repository
@@ -731,14 +768,18 @@ python start_build.py
 python merge_file.py --test
 python build_css.py --test</code></pre>
         
-        <blockquote style="border-left: 4px solid #4a9eff; padding: 15px; margin: 20px 0; background: rgba(74, 158, 255, 0.1);">
-            💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตและ Star โปรเจคเพื่อรับการแจ้งเตือน
-        </blockquote>
-    </div>
+            <blockquote class="update-notice">
+                💡 Filter นี้จะมีการอัพเดตอย่างสม่ำเสมอ กรุณาติดตามการอัพเดตและ Star โปรเจคเพื่อรับการแจ้งเตือน
+            </blockquote>
+        </section>
+    </main>
 
-    <div style="text-align: center; margin: 40px 0; color: #888;">
-        <p><sub>Made with ❤️ by <a href="https://github.com/darkzerox" style="color: #4a9eff;">Darkxee</a> for the Path of Exile 2 Community</sub></p>
-    </div>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <p class="footer-text">
+            <small>Made with ❤️ by <a href="https://github.com/darkzerox" class="author-link">Darkxee</a> for the Path of Exile 2 Community</small>
+        </p>
+    </footer>
 
     <!-- External JavaScript -->
     <script src="dzx_filter/js/main.js"></script>
