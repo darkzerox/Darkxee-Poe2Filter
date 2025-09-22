@@ -1,0 +1,75 @@
+graph TB
+    subgraph "Web Interface Architecture"
+        UI[Web Interface]
+        subgraph "Frontend Components"
+            FE[Filter Editor]
+            RP[Realtime Preview]
+            IEM[Import/Export Manager]
+            SM[Settings Manager]
+            CM[Category Manager]
+        end
+        
+        subgraph "Backend Services"
+            API[REST API]
+            FP[Filter Parser]
+            FG[Filter Generator]
+            VM[Validation Manager]
+            FM[File Manager]
+        end
+        
+        subgraph "Data Layer"
+            DB[(JSON/SQLite)]
+            FS[File System]
+            CACHE[(Cache)]
+        end
+        
+        subgraph "External Systems"
+            GAME[Path of Exile 2]
+            FILES[Filter Files]
+        end
+    end
+    
+    UI --> FE
+    UI --> RP
+    UI --> IEM
+    UI --> SM
+    UI --> CM
+    
+    FE --> API
+    RP --> API
+    IEM --> API
+    SM --> API
+    CM --> API
+    
+    API --> FP
+    API --> FG
+    API --> VM
+    API --> FM
+    
+    FP --> DB
+    FG --> DB
+    VM --> DB
+    FM --> FS
+    
+    FP --> CACHE
+    FG --> CACHE
+    
+    FM --> FILES
+    FG --> GAME
+    
+    style UI fill:#e1f5fe
+    style FE fill:#f3e5f5
+    style RP fill:#f3e5f5
+    style IEM fill:#f3e5f5
+    style SM fill:#f3e5f5
+    style CM fill:#f3e5f5
+    style API fill:#e8f5e8
+    style FP fill:#e8f5e8
+    style FG fill:#e8f5e8
+    style VM fill:#e8f5e8
+    style FM fill:#e8f5e8
+    style DB fill:#fff3e0
+    style FS fill:#fff3e0
+    style CACHE fill:#fff3e0
+    style GAME fill:#ffebee
+    style FILES fill:#ffebee

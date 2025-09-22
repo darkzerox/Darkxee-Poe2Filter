@@ -1,0 +1,331 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #1e293b;
+  --secondary-foreground: #f1f5f9;
+  --accent: #8b5cf6;
+  --accent-foreground: #ffffff;
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
+  --border: #334155;
+  --input: #1e293b;
+  --ring: #3b82f6;
+  --radius: 0.75rem;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --secondary: #f1f5f9;
+    --secondary-foreground: #0f172a;
+    --accent: #8b5cf6;
+    --accent-foreground: #ffffff;
+    --muted: #f1f5f9;
+    --muted-foreground: #64748b;
+    --border: #e2e8f0;
+    --input: #ffffff;
+    --ring: #3b82f6;
+  }
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Modern Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Modern Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Modern Glass Effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Modern Gradients */
+.gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.gradient-success {
+  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+}
+
+.gradient-warning {
+  background: linear-gradient(135deg, #f2994a 0%, #f2c94c 100%);
+}
+
+.gradient-danger {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+}
+
+/* Modern Text Effects */
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+/* Modern Shadows */
+.shadow-modern {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-modern-lg {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-glow {
+  box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+}
+
+.shadow-glow-lg {
+  box-shadow: 0 0 40px rgba(102, 126, 234, 0.4);
+}
+
+/* Modern Buttons */
+.btn-modern {
+  @apply relative overflow-hidden rounded-xl px-6 py-3 font-semibold transition-all duration-200;
+  @apply hover:scale-105 hover:shadow-lg active:scale-95;
+}
+
+.btn-primary {
+  @apply btn-modern bg-gradient-to-r from-blue-500 to-purple-600 text-white;
+  @apply hover:from-blue-600 hover:to-purple-700;
+}
+
+.btn-secondary {
+  @apply btn-modern bg-gray-700 text-gray-200 hover:bg-gray-600;
+}
+
+.btn-ghost {
+  @apply btn-modern bg-transparent text-gray-400 hover:bg-gray-800 hover:text-white;
+}
+
+.btn-outline {
+  @apply btn-modern border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white;
+}
+
+/* Modern Cards */
+.card-modern {
+  @apply rounded-2xl bg-gray-800/50 backdrop-blur-sm border border-gray-700/50;
+  @apply hover:border-gray-600/50 transition-all duration-200;
+}
+
+.card-glass {
+  @apply rounded-2xl glass border border-white/10;
+  @apply hover:border-white/20 transition-all duration-200;
+}
+
+/* Modern Inputs */
+.input-modern {
+  @apply w-full rounded-xl bg-gray-800/50 border border-gray-700/50 px-4 py-3;
+  @apply text-white placeholder-gray-400 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20;
+  @apply transition-all duration-200 backdrop-blur-sm;
+}
+
+/* Modern Tabs */
+.tab-modern {
+  @apply relative px-6 py-3 text-sm font-medium transition-all duration-200;
+  @apply text-gray-400 hover:text-white;
+}
+
+.tab-modern.active {
+  @apply text-blue-400;
+}
+
+.tab-modern.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600;
+}
+
+/* Modern Loading States */
+.loading-skeleton {
+  @apply animate-pulse bg-gray-700 rounded;
+}
+
+.loading-shimmer {
+  @apply animate-shimmer bg-gray-700 rounded;
+}
+
+/* Modern Focus States */
+.focus-modern {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500;
+}
+
+/* Modern Transitions */
+.transition-modern {
+  @apply transition-all duration-200 ease-out;
+}
+
+.transition-bounce {
+  @apply transition-all duration-200 ease-out;
+}
+
+/* Modern Hover Effects */
+.hover-lift {
+  @apply transition-all duration-200 hover:transform hover:scale-105 hover:shadow-lg;
+}
+
+.hover-glow {
+  @apply transition-all duration-200 hover:shadow-glow;
+}
+
+/* Modern Grid Layouts */
+.grid-modern {
+  @apply grid gap-6;
+}
+
+.grid-auto-fit {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-auto-fill {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* Modern Typography */
+.text-display {
+  @apply text-4xl md:text-6xl font-bold tracking-tight;
+}
+
+.text-heading {
+  @apply text-2xl md:text-3xl font-bold tracking-tight;
+}
+
+.text-subheading {
+  @apply text-lg md:text-xl font-semibold;
+}
+
+.text-body {
+  @apply text-base leading-relaxed;
+}
+
+.text-caption {
+  @apply text-sm text-gray-400;
+}
+
+/* Modern Spacing */
+.space-modern > * + * {
+  @apply mt-6;
+}
+
+.space-modern-sm > * + * {
+  @apply mt-4;
+}
+
+.space-modern-lg > * + * {
+  @apply mt-8;
+}

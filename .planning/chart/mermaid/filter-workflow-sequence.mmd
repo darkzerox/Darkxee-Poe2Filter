@@ -1,0 +1,38 @@
+sequenceDiagram
+    participant U as User
+    participant UI as Web Interface
+    participant API as REST API
+    participant P as Filter Parser
+    participant DB as Database
+    participant FS as File System
+    
+    Note over U,FS: Import Filter Process
+    
+    U->>UI: Upload filter file
+    UI->>API: POST /api/import
+    API->>P: parse_file(file)
+    P->>P: validate_syntax()
+    P->>DB: save_filter_data()
+    P-->>API: return parsed_data
+    API-->>UI: return success + data
+    UI-->>U: Show imported rules
+    
+    Note over U,FS: Edit Filter Process
+    
+    U->>UI: Edit rule properties
+    UI->>API: PUT /api/rules/{id}
+    API->>DB: update_rule()
+    API->>UI: trigger_preview_update()
+    UI->>UI: Update realtime preview
+    UI-->>U: Show updated preview
+    
+    Note over U,FS: Export Filter Process
+    
+    U->>UI: Click export button
+    UI->>API: GET /api/export
+    API->>P: generate_filter_file()
+    P->>DB: get_all_rules()
+    P->>P: merge_rules()
+    P->>FS: save_filter_file()
+    API-->>UI: return file_url
+    UI-->>U: Download filter file

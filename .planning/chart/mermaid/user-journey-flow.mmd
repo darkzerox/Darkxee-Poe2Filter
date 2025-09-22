@@ -1,0 +1,54 @@
+graph LR
+    subgraph "User Journey"
+        A[Open Web Interface] --> B[Import Filter]
+        B --> C[Browse Categories]
+        C --> D[Select Section]
+        D --> E[Edit Rules]
+        E --> F[Preview Changes]
+        F --> G{Save Changes?}
+        G -->|Yes| H[Save to Database]
+        G -->|No| E
+        H --> I[Export Filter]
+        I --> J[Download File]
+        J --> K[Use in Game]
+    end
+    
+    subgraph "Categories Available"
+        C1[Currency]
+        C2[Equipment]
+        C3[Jewels]
+        C4[Maps]
+        C5[Special Items]
+    end
+    
+    subgraph "Edit Options"
+        E1[Colors]
+        E2[Font Size]
+        E3[Sounds]
+        E4[Icons]
+        E5[Conditions]
+    end
+    
+    C --> C1
+    C --> C2
+    C --> C3
+    C --> C4
+    C --> C5
+    
+    E --> E1
+    E --> E2
+    E --> E3
+    E --> E4
+    E --> E5
+    
+    style A fill:#e3f2fd
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#fce4ec
+    style F fill:#f1f8e9
+    style G fill:#fff8e1
+    style H fill:#e0f2f1
+    style I fill:#f3e5f5
+    style J fill:#e8f5e8
+    style K fill:#e1f5fe
