@@ -1,32 +1,14 @@
 
 Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
+  Class "Flasks"
   SetFontSize 32
-  SetTextColor 143 106 206
-  SetBorderColor 62 88 121
+  SetTextColor 83 172 185
+  SetBorderColor 87 119 160
   SetBackgroundColor 10 10 10 200
-
 
 Hide
   Quality == 0
   AreaLevel >= 65
   ItemLevel < 60
   Class "Flasks"
-  
-Show
-  Class "Flasks"
-  ItemLevel >= 60
-  SetFontSize 32
-  SetTextColor 106 213 208
-  SetBorderColor 26 51 82
-
-Show
-  Class "Flasks"
-  SetFontSize 32
-  SetTextColor 83 145 200
-  SetBorderColor 26 51 82
-
-Show
-Class "Flasks"
-Rarity Normal
-SetFontSize 32
