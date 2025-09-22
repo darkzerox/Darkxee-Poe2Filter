@@ -901,7 +901,18 @@ Show
 
 Show
   Class "Currency"
-  BaseType "Mirror" "Divine" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
+  BaseType "Divine Orb" 
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 100
+
+Show
+  Class "Currency"
+  BaseType "Mirror" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97

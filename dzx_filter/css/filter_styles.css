@@ -498,7 +498,13 @@
     background-color: rgb(232 37 97);
     font-size: 45px;
 }
-.filter-currency, [data-basetype="Mirror"], [data-basetype="Divine"], [data-basetype="Perfect"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
+.filter-currency, [data-basetype="Divine"], [data-basetype="Orb"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
+.filter-currency, [data-basetype="Mirror"], [data-basetype="Perfect"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
