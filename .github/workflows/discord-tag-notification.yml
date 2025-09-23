@@ -1,8 +1,9 @@
-name: Discord Release Notification
+name: Discord Tag Notification
 
 on:
-  release:
-    types: [published]
+  push:
+    tags:
+      - v*
 
 jobs:
   notify-discord:
@@ -14,39 +15,31 @@ jobs:
       - name: Debug event
         run: |
           echo "Event name: ${{ github.event_name }}"
-          echo "Release info: ${{ toJSON(github.event.release) }}"
-          
-      - name: Get release information
-        id: release_info
-        run: |
-          echo "version=${{ github.event.release.tag_name }}" >> $GITHUB_OUTPUT
-          echo "name=${{ github.event.release.name }}" >> $GITHUB_OUTPUT
-          echo "url=${{ github.event.release.html_url }}" >> $GITHUB_OUTPUT
-          echo "body=${{ github.event.release.body }}" >> $GITHUB_OUTPUT
+          echo "Tag: ${{ github.ref_name }}"
           
       - name: Send Discord notification
         uses: Ilshidur/action-discord@master
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_USERNAME: "DZX Filter POE2 Release Bot"
+          DISCORD_USERNAME: "DZX Filter POE2 Tag Bot"
           DISCORD_AVATAR: "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
         with:
           args: |
             {
               "embeds": [
                 {
-                  "title": "🚀 ${{ steps.release_info.outputs.name }}",
-                  "description": "${{ steps.release_info.outputs.body }}",
-                  "url": "${{ steps.release_info.outputs.url }}",
+                  "title": "🏷️ New tag pushed: ${{ github.ref_name }}",
+                  "description": "A new version tag has been pushed to the repository.",
+                  "url": "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}",
                   "color": 5814783,
                   "fields": [
                     {
-                      "name": "เวอร์ชัน",
-                      "value": "${{ steps.release_info.outputs.version }}",
+                      "name": "Tag",
+                      "value": "${{ github.ref_name }}",
                       "inline": true
                     },
                     {
-                      "name": "ผู้ปล่อย",
+                      "name": "ผู้สร้าง",
                       "value": "${{ github.actor }}",
                       "inline": true
                     }
@@ -55,7 +48,7 @@ jobs:
                     "url": "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
                   },
                   "footer": {
-                    "text": "DZX Filter POE2 | ปล่อยเมื่อ ${{ github.event.release.published_at }}"
+                    "text": "DZX Filter POE2 | สร้างเมื่อ ${{ github.event.head_commit.timestamp }}"
                   }
                 }
               ]
