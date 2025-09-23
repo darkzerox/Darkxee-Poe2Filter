@@ -23,7 +23,7 @@ jobs:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
           title: "🏷️ New filter version pushed: ${{ github.ref_name }} >> download now <<"
           description: "A new version filter has been pushed to the repository."
-          url: "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}"
+          url: "https://dzx-filter.darkxee.dev/"
           color: 5814783
           username: "DZX Filter Release Version"
           avatar_url: "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
