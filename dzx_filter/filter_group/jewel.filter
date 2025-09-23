@@ -15,7 +15,6 @@ Show
 
 Show 
 	Rarity Normal Magic Rare
-	Class "Jewel"
 	BaseType == "Time-Lost Emerald" "Time-Lost Ruby" "Time-Lost Sapphire"
 	SetFontSize 42
   SetTextColor 121 215 190

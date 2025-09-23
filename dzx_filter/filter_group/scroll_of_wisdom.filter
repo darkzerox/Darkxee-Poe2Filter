@@ -1,10 +1,10 @@
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-# Hide
-#   BaseType "Scroll of Wisdom"
-#   AreaLevel >= 65
-#   Rarity <= Magic
+Hide
+  BaseType "Scroll of Wisdom"
+  AreaLevel >= 80
+ 
 
 Show
   BaseType "Scroll of Wisdom"

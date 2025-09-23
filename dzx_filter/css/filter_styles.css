@@ -205,6 +205,10 @@
 
 /* Rules from scroll_of_wisdom.filter */
 [data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+[data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
     color: rgb(255 255 255);
     border-color: rgb(0 0 0);
     background-color: rgb(0 0 0);
@@ -273,7 +277,7 @@
     border-color: rgb(121 215 190);
     font-size: 32px;
 }
-.rarity-normal, .rarity-magic, .rarity-rare, .filter-jewel, [data-basetype="=="], [data-basetype="Time-Lost"], [data-basetype="Emerald"], [data-basetype="Time-Lost"], [data-basetype="Ruby"], [data-basetype="Time-Lost"], [data-basetype="Sapphire"] {
+.rarity-normal, .rarity-magic, .rarity-rare, [data-basetype="=="], [data-basetype="Time-Lost"], [data-basetype="Emerald"], [data-basetype="Time-Lost"], [data-basetype="Ruby"], [data-basetype="Time-Lost"], [data-basetype="Sapphire"] {
     color: rgb(121 215 190);
     border-color: rgb(121 215 190);
     background-color: rgb(0 75 30);
@@ -472,6 +476,9 @@
     font-size: 32px;
 }
 .filter-flasks {
+    color: rgb(83 172 185);
+    border-color: rgb(87 119 160);
+    background-color: rgb(10 10 10);
     opacity: 0.5;
     text-decoration: line-through;
 }
@@ -492,31 +499,31 @@
 .filter-currency {
     font-size: 32px;
 }
-.filter-currency, [data-basetype="Mirror"] {
+[data-basetype="Mirror"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 45px;
 }
-.filter-currency, [data-basetype="Divine"], [data-basetype="Orb"] {
+[data-basetype="Divine"], [data-basetype="Orb"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 45px;
 }
-.filter-currency, [data-basetype="Mirror"], [data-basetype="Perfect"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
+[data-basetype="Mirror"], [data-basetype="Perfect"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Perfect"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Hinekora's"], [data-basetype="Lock"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 45px;
 }
-.filter-currency, [data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Chaos"], [data-basetype="Orb"] {
+[data-basetype="Perfect"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Exalted"], [data-basetype="Orb"], [data-basetype="Greater"], [data-basetype="Chaos"], [data-basetype="Orb"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 35px;
 }
-.filter-currency, [data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"] {
+[data-basetype="Greater"], [data-basetype="Jeweller's"], [data-basetype="Orb"] {
     color: rgb(255 193 48);
     border-color: rgb(30 58 51);
     background-color: rgb(30 58 51);
@@ -532,7 +539,13 @@
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
 }
-.filter-omen, [data-basetype="Ancient"], [data-basetype="Collarbone"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Light"], [data-basetype="Ancient"], [data-basetype="Jawbone"], [data-basetype="Ancient"], [data-basetype="Rib"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Abyssal"], [data-basetype="Echoes"], [data-basetype="Preserved"], [data-basetype="Cranium"] {
+[data-basetype="Ancient"], [data-basetype="Collarbone"], [data-basetype="Omen"], [data-basetype="of"], [data-basetype="Light"], [data-basetype="Ancient"], [data-basetype="Jawbone"], [data-basetype="Ancient"], [data-basetype="Rib"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 45px;
+}
+[data-basetype="Omen"], [data-basetype="of"], [data-basetype="Abyssal"], [data-basetype="Echoes"], [data-basetype="Preserved"], [data-basetype="Cranium"] {
     color: rgb(218 145 255);
     border-color: rgb(0 0 0);
     background-color: rgb(0 0 0);
@@ -544,27 +557,27 @@
     background-color: rgb(50 2 68);
     font-size: 35px;
 }
-.filter-currency, [data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
+[data-basetype="Gemcutter's"], [data-basetype="Prism"], [data-basetype="Vaal"], [data-basetype="Orb"], [data-basetype="Chaos"], [data-basetype="Orb"], [data-basetype="Lesser"], [data-basetype="Jeweller's"], [data-basetype="Orb"], [data-basetype="Regal"], [data-basetype="Orb"], [data-basetype="Artificer's"], [data-basetype="Orb"], [data-basetype="Glassblower's"], [data-basetype="Bauble"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Alchemy"] {
     color: rgb(255 255 255);
     border-color: rgb(255 255 255);
     background-color: rgb(47 10 61);
 }
-.filter-currency, [data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Runic"], [data-basetype="Splinter"] {
+[data-basetype="Simulacrum"], [data-basetype="Splinter"], [data-basetype="Breach"], [data-basetype="Splinter"], [data-basetype="Runic"], [data-basetype="Splinter"] {
     color: rgb(182 73 0);
     background-color: rgb(0 0 0);
     font-size: 40px;
 }
-.filter-currency, [data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
+[data-basetype="Catalyst"], [data-basetype="Essence"], [data-basetype="of"] {
     color: rgb(170 70 201);
     border-color: rgb(0 0 0);
     background-color: rgb(0 0 0);
 }
-.filter-currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+[data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
     font-size: 32px;
 }
-.filter-currency, [data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
+[data-basetype="Arcanist's"], [data-basetype="Etcher"], [data-basetype="Armourer's"], [data-basetype="Scrap"], [data-basetype="Blacksmith's"], [data-basetype="Whetstone"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Augmentation"], [data-basetype="Orb"], [data-basetype="of"], [data-basetype="Transmutation"], [data-basetype="Regal"], [data-basetype="Shard"] {
     color: rgb(255 255 255);
     background-color: rgb(0 0 0);
     font-size: 32px;

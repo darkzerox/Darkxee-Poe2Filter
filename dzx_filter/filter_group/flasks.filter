@@ -10,5 +10,7 @@ Show
 Hide
   Quality == 0
   AreaLevel >= 65
-  ItemLevel < 60
   Class "Flasks"
+  SetTextColor 83 172 185
+  SetBorderColor 87 119 160
+  SetBackgroundColor 10 10 10 200 

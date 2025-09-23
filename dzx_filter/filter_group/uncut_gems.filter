@@ -2,17 +2,6 @@
 # Uncut Gems
 #------------------------------------------------------------------------------
 # Skill Gems
-  
-# Hide
-#   ItemLevel >= 14 
-#   ItemLevel <= 18
-#   AreaLevel >= 75
-#   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
-
-# Hide
-#   BaseType "Uncut Support Gem"
-#   ItemLevel < 3
-#   AreaLevel >= 75
 
 Show
   BaseType "Rakiata's Flow" "Dialla's Desire"  "Atalui's Bloodletting" "Uhtred's Augury" "Uul-Netol's Embrace" "Arjun's Medal" "Uhtred's Omen" 
