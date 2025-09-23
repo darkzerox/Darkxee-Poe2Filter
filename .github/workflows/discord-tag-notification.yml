@@ -21,7 +21,7 @@ jobs:
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: "🏷️ New filter version pushed: ${{ github.ref_name }} >> download now <<"
+          title: "@everyone 🏷️ New filter version pushed: ${{ github.ref_name }} >> download now <<"
           description: "A new version filter has been pushed to the repository."
           url: "https://dzx-filter.darkxee.dev/"
           color: 5814783
