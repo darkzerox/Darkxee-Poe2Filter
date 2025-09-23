@@ -25,38 +25,18 @@ jobs:
           echo "body=${{ github.event.release.body }}" >> $GITHUB_OUTPUT
           
       - name: Send Discord notification
-        uses: Ilshidur/action-discord@master
-        env:
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          DISCORD_USERNAME: "DZX Filter POE2 Release Bot"
-          DISCORD_AVATAR: "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
+        uses: sarisia/actions-status-discord@v1
         with:
-          args: |
-            {
-              "embeds": [
-                {
-                  "title": "🚀 ${{ steps.release_info.outputs.name }}",
-                  "description": "${{ steps.release_info.outputs.body }}",
-                  "url": "${{ steps.release_info.outputs.url }}",
-                  "color": 5814783,
-                  "fields": [
-                    {
-                      "name": "เวอร์ชัน",
-                      "value": "${{ steps.release_info.outputs.version }}",
-                      "inline": true
-                    },
-                    {
-                      "name": "ผู้ปล่อย",
-                      "value": "${{ github.actor }}",
-                      "inline": true
-                    }
-                  ],
-                  "thumbnail": {
-                    "url": "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
-                  },
-                  "footer": {
-                    "text": "DZX Filter POE2 | ปล่อยเมื่อ ${{ github.event.release.published_at }}"
-                  }
-                }
-              ]
-            }
+          webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          title: "🚀 ${{ steps.release_info.outputs.name }}"
+          description: "${{ steps.release_info.outputs.body }}"
+          url: "${{ steps.release_info.outputs.url }}"
+          color: 5814783
+          username: "DZX Filter POE2 Release Bot"
+          avatar_url: "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
+          fields: |
+            [
+              { "name": "เวอร์ชัน", "value": "${{ steps.release_info.outputs.version }}", "inline": true },
+              { "name": "ผู้ปล่อย", "value": "${{ github.actor }}", "inline": true }
+            ]
+          footer: "DZX Filter POE2 | ปล่อยเมื่อ ${{ github.event.release.published_at }}"
