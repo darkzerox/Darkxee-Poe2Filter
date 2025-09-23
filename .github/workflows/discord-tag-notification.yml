@@ -11,12 +11,12 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-        
+
       - name: Debug event
         run: |
           echo "Event name: ${{ github.event_name }}"
           echo "Tag: ${{ github.ref_name }}"
-          
+
       - name: Send Discord notification
         uses: sarisia/actions-status-discord@v1
         with:
