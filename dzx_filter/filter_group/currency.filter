@@ -10,7 +10,6 @@ Show
 
 
 Show
-  Class "Currency"
   BaseType "Mirror"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -21,7 +20,6 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
 
 Show
-  Class "Currency"
   BaseType "Divine Orb" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -32,7 +30,6 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 100
 
 Show
-  Class "Currency"
   BaseType "Mirror" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -44,7 +41,6 @@ Show
   
  
 Show
-  Class "Currency"
   BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -59,7 +55,6 @@ Show
 
 # Currency Tier A: Gemcutter, Annullment
 Show
-  Class "Currency"
   BaseType  "Greater Jeweller's Orb"  
   SetTextColor 255 193 48
   SetBorderColor  30 58 51
@@ -88,8 +83,17 @@ Show
 
 
 Show
-  Class "Omen"
-  BaseType "Ancient Collarbone"  "Omen of Light" "Ancient Jawbone" "Ancient Rib" "Omen of Abyssal Echoes" "Preserved Cranium"
+  BaseType "Ancient Collarbone"  "Omen of Light" "Ancient Jawbone" "Ancient Rib" 
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+Show
+  BaseType "Omen of Abyssal Echoes" "Preserved Cranium"
   SetTextColor 218 145 255
   SetFontSize 45
   SetBorderColor 0 0 0
@@ -114,7 +118,6 @@ Show
 
 # Currency Tier B: Regal, Vaal ...
 Show
-  Class "Currency"
   BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
@@ -122,7 +125,6 @@ Show
   MinimapIcon 2 White Circle
  
 Show
-  Class "Currency"
   BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
   SetTextColor 182 73 0
   SetBackgroundColor 0 0 0
@@ -131,7 +133,6 @@ Show
   SetFontSize 40
 
 Show
-  Class "Currency"
   BaseType   "Catalyst" "Essence of"
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
@@ -145,7 +146,6 @@ Show
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   AreaLevel >= 70
-  Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
@@ -155,7 +155,6 @@ Show
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
-  Class "Currency"
   BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
