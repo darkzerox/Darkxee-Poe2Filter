@@ -21,7 +21,7 @@ jobs:
         uses: sarisia/actions-status-discord@v1
         with:
           webhook: ${{ secrets.DISCORD_WEBHOOK_URL }}
-          title: "🏷️ New filter version pushed: >> ${{ github.ref_name }} download now <<"
+          title: "🏷️ New filter version pushed: ${{ github.ref_name }} >> download now <<"
           description: "A new version filter has been pushed to the repository."
           url: "https://github.com/${{ github.repository }}/releases/tag/${{ github.ref_name }}"
           color: 5814783
@@ -31,5 +31,5 @@ jobs:
             [
               { "name": "Tag", "value": "${{ github.ref_name }}", "inline": true },
               { "name": "ผู้สร้าง", "value": "${{ github.actor }}", "inline": true },
-              {"thumbnail": "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"}
+              { "thumbnail": "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png" }
             ]
