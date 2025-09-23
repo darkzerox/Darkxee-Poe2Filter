@@ -1,0 +1,57 @@
+name: Discord Release Notification
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify-discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Get release information
+        id: release_info
+        run: |
+          echo "::set-output name=version::${{ github.event.release.tag_name }}"
+          echo "::set-output name=name::${{ github.event.release.name }}"
+          echo "::set-output name=url::${{ github.event.release.html_url }}"
+          echo "::set-output name=body::${{ github.event.release.body }}"
+          
+      - name: Send Discord notification
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DISCORD_USERNAME: "DZX Filter POE2 Release Bot"
+          DISCORD_AVATAR: "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
+        with:
+          args: |
+            {
+              "embeds": [
+                {
+                  "title": "🚀 ${{ steps.release_info.outputs.name }}",
+                  "description": "${{ steps.release_info.outputs.body }}",
+                  "url": "${{ steps.release_info.outputs.url }}",
+                  "color": 5814783,
+                  "fields": [
+                    {
+                      "name": "เวอร์ชัน",
+                      "value": "${{ steps.release_info.outputs.version }}",
+                      "inline": true
+                    },
+                    {
+                      "name": "ผู้ปล่อย",
+                      "value": "${{ github.actor }}",
+                      "inline": true
+                    }
+                  ],
+                  "thumbnail": {
+                    "url": "https://raw.githubusercontent.com/${{ github.repository }}/master/dzx_filter/images/dzx-poe2-filter-logo.png"
+                  },
+                  "footer": {
+                    "text": "DZX Filter POE2 | ปล่อยเมื่อ ${{ github.event.release.published_at }}"
+                  }
+                }
+              ]
+            }
