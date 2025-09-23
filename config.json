@@ -56,17 +56,15 @@
   ],
   "special_variants": [
     {
-      "name": "dzx-poe2-Color-Only",
-      "description": "PC only, no sounds",
-      "group": "MAIN_GROUP",
-      "remove_sounds": true,
-      "hide_items": false,
-      "enabled": true
-    },
-    {
       "name": "dzx-poe2-Divine-Mirror",
       "description": "High-value items only",
-      "group": ["currency.filter", "rarity_unique.filter", "gacha.filter", "key.filter", "waystones.filter"],
+      "group": [
+        "currency.filter",
+        "rarity_unique.filter",
+        "gacha.filter",
+        "key.filter",
+        "waystones.filter"
+      ],
       "remove_sounds": false,
       "hide_items": false,
       "enabled": true
