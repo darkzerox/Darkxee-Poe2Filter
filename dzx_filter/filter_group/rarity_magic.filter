@@ -20,7 +20,6 @@ Show
 	SetBackgroundColor 0 50 0 255
 	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
-	CustomAlertSound "dzx_filter/soundeffect/type-01/base_item.mp3" 100
 
 
 

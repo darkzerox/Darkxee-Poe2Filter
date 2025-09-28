@@ -2,6 +2,17 @@
 # Gacha group
 #--------------------------------
 
+Show
+  BaseType == "Shrine Sceptre"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 35
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
+
 Show 
   Rarity Normal
   BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"

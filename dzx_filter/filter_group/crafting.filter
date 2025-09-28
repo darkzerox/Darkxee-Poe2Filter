@@ -44,7 +44,7 @@ Show
 Show  
 	ItemLevel == 80
 	Rarity Normal 
-	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	BaseType ==  "Gemini Bow" "Obliterator Bow" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear"  "Sleek Jacket"   "Sandsworn Sandals" "Vile Robe" "Jade Tiara"  "Ancestral Tiara" "Secured Wraps"
 	SetFontSize 35
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200

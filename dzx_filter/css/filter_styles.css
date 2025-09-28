@@ -84,6 +84,12 @@
 
 
 /* Rules from gacha.filter */
+[data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"] {
+    color: rgb(232 231 171);
+    border-color: rgb(232 37 97);
+    background-color: rgb(232 37 97);
+    font-size: 35px;
+}
 .rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(233 75 75);
     border-color: rgb(233 75 75);
@@ -126,7 +132,7 @@
     background-color: rgb(50 0 0);
     font-size: 40px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Primed"], [data-basetype="Quiver"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Falconer's"], [data-basetype="Jacket"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Dragonscale"], [data-basetype="Boots"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Quickslip"], [data-basetype="Shoes"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Slipstrike"], [data-basetype="Vest"], [data-basetype="Freebooter"], [data-basetype="Cap"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Kamasan"], [data-basetype="Tiara"], [data-basetype="Polished"], [data-basetype="Bracers"], [data-basetype="Trapper"], [data-basetype="Hood"], [data-basetype="Rambler"], [data-basetype="Jacket"], [data-basetype="Secured"], [data-basetype="Wraps"], [data-basetype="Daggerfoot"], [data-basetype="Shoes"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Gemini"], [data-basetype="Bow"], [data-basetype="Obliterator"], [data-basetype="Bow"], [data-basetype="Volant"], [data-basetype="Quiver"], [data-basetype="Visceral"], [data-basetype="Quiver"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Attuned"], [data-basetype="Wand"], [data-basetype="Siphoning"], [data-basetype="Wand"], [data-basetype="Acrid"], [data-basetype="Wand"], [data-basetype="Dueling"], [data-basetype="Wand"], [data-basetype="Galvanic"], [data-basetype="Wand"], [data-basetype="Rattling"], [data-basetype="Sceptre"], [data-basetype="Forked"], [data-basetype="Spear"], [data-basetype="Sleek"], [data-basetype="Jacket"], [data-basetype="Sandsworn"], [data-basetype="Sandals"], [data-basetype="Vile"], [data-basetype="Robe"], [data-basetype="Jade"], [data-basetype="Tiara"], [data-basetype="Ancestral"], [data-basetype="Tiara"], [data-basetype="Secured"], [data-basetype="Wraps"] {
     color: rgb(255 0 0);
     border-color: rgb(0 0 0);
     background-color: rgb(50 0 0);
@@ -204,10 +210,6 @@
 }
 
 /* Rules from scroll_of_wisdom.filter */
-[data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
-    opacity: 0.5;
-    text-decoration: line-through;
-}
 [data-basetype="Scroll"], [data-basetype="of"], [data-basetype="Wisdom"] {
     color: rgb(255 255 255);
     border-color: rgb(0 0 0);
@@ -605,6 +607,11 @@
 
 /* Rules from rarity_rare.filter */
 .rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
+    color: rgb(248 147 5);
+    background-color: rgb(0 0 0);
+    font-size: 35px;
+}
+.rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
     color: rgb(255 209 94);
     background-color: rgb(0 0 0);
     font-size: 32px;
@@ -614,11 +621,6 @@
 .rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
     color: rgb(255 209 94);
     border-color: rgb(255 156 94);
-    background-color: rgb(0 0 0);
-    font-size: 35px;
-}
-.rarity-rare, .filter-body, .filter-armour, .filter-boots, .filter-gloves, .filter-helmets, .filter-bows, .filter-crossbows, .filter-foci, .filter-one, .filter-hand, .filter-maces, .filter-quivers, .filter-quarterstaves, .filter-sceptres, .filter-shields, .filter-staves, .filter-two, .filter-hand, .filter-maces, .filter-wands, .filter-bucklers, .filter-spears {
-    color: rgb(248 147 5);
     background-color: rgb(0 0 0);
     font-size: 35px;
 }
