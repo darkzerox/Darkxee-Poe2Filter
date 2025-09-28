@@ -84,7 +84,7 @@
 
 
 /* Rules from gacha.filter */
-[data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Heavy"], [data-basetype="Belt"], .rarity-normal {
+.rarity-normal, [data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Heavy"], [data-basetype="Belt"] {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
