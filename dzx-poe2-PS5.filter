@@ -27,9 +27,20 @@
 # Gacha group
 #--------------------------------
 
+Show
+  Rarity Normal
+  BaseType == "Shrine Sceptre" "Heavy Belt"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 35
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+
 Show 
   Rarity Normal
-  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
+  BaseType == "Stellar Amulet" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
   SetBorderColor 233 75 75
   SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
@@ -53,7 +64,7 @@ Show
 
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
+  BaseType == "Sapphire Ring" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" 
   ItemLevel >= 78
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200
@@ -120,7 +131,7 @@ Show
 Show  
 	ItemLevel == 80
 	Rarity Normal 
-	BaseType ==  "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	BaseType ==  "Gemini Bow" "Obliterator Bow" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear"  "Sleek Jacket"   "Sandsworn Sandals" "Vile Robe" "Jade Tiara"  "Ancestral Tiara" "Secured Wraps"
 	SetFontSize 35
 	SetTextColor 255 0 0
 	SetBackgroundColor 50 0 0 200
@@ -276,9 +287,9 @@ Show
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-Hide
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 80
+# Hide
+#   BaseType "Scroll of Wisdom"
+#   AreaLevel >= 80
  
 
 Show
@@ -1053,6 +1064,16 @@ Show
 # Rare Items Group
 #------------------------------------------------------------------------------
 
+Show
+  Rarity Rare
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  UnidentifiedItemTier >= 4
+  SetBackgroundColor 0 0 0 203
+  SetTextColor 248 147 5
+  SetFontSize 35
+  MinimapIcon 2 Yellow Cross
+
+
 Hide
   Rarity Rare
   ItemLevel <= 80
@@ -1062,7 +1083,6 @@ Hide
   SetTextColor 255 209 94
   SetFontSize 32
   MinimapIcon 2 Yellow Cross
-
 
 
 Show
@@ -1075,14 +1095,6 @@ Show
   SetFontSize 35
   MinimapIcon 2 Yellow Cross
 
-Show
-  Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
-  UnidentifiedItemTier >= 5
-  SetBackgroundColor 0 0 0 203
-  SetTextColor 248 147 5
-  SetFontSize 35
-  MinimapIcon 2 Yellow Cross
 
 Show
   Rarity Rare

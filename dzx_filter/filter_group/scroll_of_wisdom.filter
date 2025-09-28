@@ -1,9 +1,9 @@
 #------------------------------------------------------------------------------
 # Scroll of Wisdom
 #------------------------------------------------------------------------------
-Hide
-  BaseType "Scroll of Wisdom"
-  AreaLevel >= 80
+# Hide
+#   BaseType "Scroll of Wisdom"
+#   AreaLevel >= 80
  
 
 Show

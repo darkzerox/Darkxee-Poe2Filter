@@ -42,7 +42,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 130
 
 Show
   BaseType "Mirror" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
@@ -231,9 +231,21 @@ Show
 # Gacha group
 #--------------------------------
 
+Show
+  Rarity Normal
+  BaseType == "Shrine Sceptre" "Heavy Belt"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 35
+  MinimapIcon 2 Red Diamond
+  PlayAlertSound 9 200
+  PlayEffect Red
+  CustomAlertSound "dzx_filter/soundeffect/type-01/gacha.mp3" 300
+
 Show 
   Rarity Normal
-  BaseType == "Stellar Amulet" "Heavy Belt" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
+  BaseType == "Stellar Amulet" "Breach Ring" "Solar Amulet" "Rampart Tower Shield" "Pearl Ring" "Jade Amulet" "Forked Spear"
   SetBorderColor 233 75 75
   SetBackgroundColor 10 10 10 200
   SetTextColor 233 75 75
@@ -259,7 +271,7 @@ Show
 
 Show 
   Rarity Normal
-  BaseType == "Sapphire Ring" "Amethyst Ring" "Heavy Belt" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" "Unset Ring"
+  BaseType == "Sapphire Ring" "Breach Ring" "Gold Ring" "Gold Amulet" "Prismatic Ring" 
   ItemLevel >= 78
   SetTextColor 160 255 71
   SetBackgroundColor 10 10 10 200

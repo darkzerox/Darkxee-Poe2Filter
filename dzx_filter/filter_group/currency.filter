@@ -27,7 +27,7 @@ Show
   SetFontSize 45
   PlayEffect Red
   MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 100
+  CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 130
 
 Show
   BaseType "Mirror" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
