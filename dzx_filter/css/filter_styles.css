@@ -84,13 +84,13 @@
 
 
 /* Rules from gacha.filter */
-[data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"] {
+[data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Heavy"], [data-basetype="Belt"], .rarity-normal {
     color: rgb(232 231 171);
     border-color: rgb(232 37 97);
     background-color: rgb(232 37 97);
     font-size: 35px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(233 75 75);
     border-color: rgb(233 75 75);
     background-color: rgb(10 10 10);
@@ -102,7 +102,7 @@
     background-color: rgb(10 10 10);
     font-size: 40px;
 }
-.rarity-normal, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Amethyst"], [data-basetype="Ring"], [data-basetype="Heavy"], [data-basetype="Belt"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Prismatic"], [data-basetype="Ring"], [data-basetype="Unset"], [data-basetype="Ring"] {
+.rarity-normal, [data-basetype="=="], [data-basetype="Sapphire"], [data-basetype="Ring"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Ring"], [data-basetype="Gold"], [data-basetype="Amulet"], [data-basetype="Prismatic"], [data-basetype="Ring"] {
     color: rgb(160 255 71);
     background-color: rgb(10 10 10);
     font-size: 37px;
