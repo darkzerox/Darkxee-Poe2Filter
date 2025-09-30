@@ -234,10 +234,10 @@ Show
 Show
   Rarity Normal
   BaseType == "Shrine Sceptre" "Heavy Belt"
-  SetTextColor 232 231 171
-  SetBorderColor 232 37 97
-  SetBackgroundColor 232 37 97
-  SetFontSize 35
+  SetTextColor 244 233 215
+  SetBorderColor 217 125 85
+  SetBackgroundColor 217 125 85
+  SetFontSize 37 
   MinimapIcon 2 Red Diamond
   PlayAlertSound 9 200
   PlayEffect Red
