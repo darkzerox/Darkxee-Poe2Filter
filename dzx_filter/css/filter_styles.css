@@ -85,10 +85,10 @@
 
 /* Rules from gacha.filter */
 .rarity-normal, [data-basetype="=="], [data-basetype="Shrine"], [data-basetype="Sceptre"], [data-basetype="Heavy"], [data-basetype="Belt"] {
-    color: rgb(232 231 171);
-    border-color: rgb(232 37 97);
-    background-color: rgb(232 37 97);
-    font-size: 35px;
+    color: rgb(244 233 215);
+    border-color: rgb(217 125 85);
+    background-color: rgb(217 125 85);
+    font-size: 37px;
 }
 .rarity-normal, [data-basetype="=="], [data-basetype="Stellar"], [data-basetype="Amulet"], [data-basetype="Breach"], [data-basetype="Ring"], [data-basetype="Solar"], [data-basetype="Amulet"], [data-basetype="Rampart"], [data-basetype="Tower"], [data-basetype="Shield"], [data-basetype="Pearl"], [data-basetype="Ring"], [data-basetype="Jade"], [data-basetype="Amulet"], [data-basetype="Forked"], [data-basetype="Spear"] {
     color: rgb(233 75 75);
