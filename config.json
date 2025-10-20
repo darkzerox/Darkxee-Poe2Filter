@@ -96,7 +96,7 @@
       "rarity_rare.filter",
       "rarity_magic.filter"
     ],
-    "BREACH_GROUP": [
+    "BREACH_GROUP": [ 
       "mirror_tier.filter",
       "gacha.filter",
       "crafting.filter",

@@ -350,22 +350,25 @@ Show
 # ============================================
 
 Hide
-  Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  Rarity Rare Normal Magic
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings"
 
 Hide 
   BaseType " Rune" " Charm"
 
-Hide
-  BaseType "Orb of Augmentation" "Orb of Transmutation"
 
 Hide
-  Sockets > 0
+  Sockets <= 2
   Rarity Normal Magic
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings"
+ 
 
 Hide
-  Quality > 0
-  Rarity Normal Magic
+  BaseType "Orb of Annulment" "Gemcutter's Prism"  "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+ 
+ 
+Hide 
+BaseType "flask" "Scroll of Wisdom"
 
 
 # ============================================
@@ -401,7 +404,7 @@ Show
 
 # Level 20 gems go tink
 Show
-  ItemLevel = 20
+  GemLevel  = 20
   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
   SetFontSize 45
   SetTextColor 255 0 0 255
@@ -412,9 +415,9 @@ Show
   MinimapIcon 0 Red Star
 
 Show
-  ItemLevel = 19
+  GemLevel = 19
   BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
-  SetFontSize 40
+  SetFontSize 35
   SetTextColor 211 82 35
   SetBorderColor 211 82 35
   PlayAlertSound 6 200
@@ -423,8 +426,8 @@ Show
 Show
   BaseType "Uncut Skill Gem" 
   AreaLevel >= 75
-  ItemLevel >= 16
-  ItemLevel <= 18
+  GemLevel >= 16
+  GemLevel <= 18
   SetTextColor 255 255 255 163
   SetBorderColor 104 104 104
  
