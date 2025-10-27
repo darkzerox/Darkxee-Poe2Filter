@@ -4,7 +4,7 @@
 # Skill Gems
 
 Show
-  BaseType "Rakiata's Flow" "Dialla's Desire"  "Atalui's Bloodletting" "Uhtred's Augury" "Uul-Netol's Embrace" "Arjun's Medal" "Uhtred's Omen" 
+  BaseType "Atalui's Bloodletting" "Brutus' Brain" "Dialla's Desire" "Esh's Radiance" "Rakiata's Flow" "Rigwald's Ferocity" "Tul's Stillness" "Uhtred's Augury" "Uhtred's Omen" "Uul-Netol's Embrace"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -15,7 +15,7 @@ Show
 
 
 Show
-  BaseType "Ratha's Assault" "Tul's Stillness"
+  BaseType "Amanamu's Tithe" "Arbiter's Ignition" "Arjun's Medal" "Garukhan's Resolve" "Ixchel's Torment" "Kalisa's Crescendo" "Ratha's Assault" "Romira's Requital" "Uhtred's Exodus" "Xoph's Pyre"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
