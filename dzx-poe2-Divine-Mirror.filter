@@ -56,7 +56,7 @@ Show
   
  
 Show
-  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb"
+  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Concentrated Liquid Isolation"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -147,13 +147,36 @@ Show
   MinimapIcon 1 Brown Kite
   SetFontSize 40
 
-Show
-  BaseType   "Catalyst" "Essence of"
+
+Show 
+	BaseType == "Essence of the Abyss" "Perfect Essence of Abrasion" "Perfect Essence of Alacrity" "Perfect Essence of Command" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Haste" "Perfect Essence of Ice" "Perfect Essence of Insulation" "Perfect Essence of Opulence" "Perfect Essence of Ruin" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Thawing" "Perfect Essence of the Body" "Perfect Essence of the Infinite" "Perfect Essence of the Mind"
+	SetFontSize 45
+  SetTextColor 170 70 201
+  SetBorderColor 170 70 201
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 
+
+Show 
+	Class "Currency"
+	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Perfect Essence of Battle"
+	SetFontSize 38
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
   SetBackgroundColor 0 0 0
   PlayEffect Purple
   MinimapIcon 2 Purple Circle
+
+Show
+	Class "Currency"
+  BaseType   "Catalyst" "Essence of"
+	SetFontSize 35
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  
+ 
 
 
 #--- Low Tier Currency ---
@@ -201,7 +224,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets"
+    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
@@ -211,8 +234,21 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
+
 Show
   Rarity Unique
+	BaseType == "Blacksteel Tower Shield" "Breach Precursor Tablet" "Chain Tiara" "Delirium Precursor Tablet" "Diamond" "Embroidered Gloves" "Expedition Precursor Tablet" "Heroic Armour" "Overseer Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet" "Ruby" "Spiral Wraps" "Stone Charm" "Time-Lost Diamond" "Timeless Jewel" "Unset Ring" "Viper Cap" "Amethyst Ring" "Bloodstone Amulet" "Crude Bow" "Garment" "Lazuli Ring" "Stellar Amulet"
+	SetFontSize 40
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
+Show
+  Rarity Unique	
   SetTextColor 175 96 37 255
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
