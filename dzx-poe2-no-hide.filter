@@ -99,7 +99,7 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots"
+	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
 	Sockets >= 3
 	SetFontSize 45
 	SetTextColor 255 140 0
@@ -112,7 +112,7 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Gloves" "Boots"
+  	Class == "Gloves" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
 	Sockets >= 2
 	SetFontSize 45
 	SetTextColor 255 140 0
@@ -211,7 +211,7 @@ Show
 # Skill Gems
 
 Show
-  BaseType "Rakiata's Flow" "Dialla's Desire"  "Atalui's Bloodletting" "Uhtred's Augury" "Uul-Netol's Embrace" "Arjun's Medal" "Uhtred's Omen" 
+  BaseType "Atalui's Bloodletting" "Brutus' Brain" "Dialla's Desire" "Esh's Radiance" "Rakiata's Flow" "Rigwald's Ferocity" "Tul's Stillness" "Uhtred's Augury" "Uhtred's Omen" "Uul-Netol's Embrace"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -222,7 +222,7 @@ Show
 
 
 Show
-  BaseType "Ratha's Assault" "Tul's Stillness"
+  BaseType "Amanamu's Tithe" "Arbiter's Ignition" "Arjun's Medal" "Garukhan's Resolve" "Ixchel's Torment" "Kalisa's Crescendo" "Ratha's Assault" "Romira's Requital" "Uhtred's Exodus" "Xoph's Pyre"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -676,13 +676,36 @@ Show
 #------------------------------------------------------------------------------
 # Rune
 #------------------------------------------------------------------------------
+
+Show 
+	Class == "Socketable"
+	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Fox Talisman" "Hedgewitch Assandra's Rune of Wisdom" "Opiloti's Soul Core of Assault" "Rabbit Talisman" "Soul Core of Azcapa" "Soul Core of Ticaba" "Talisman of Ralakesh" "Talisman of Sirrius"
+	SetFontSize 40
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+
+Show # รูน เครื่องราง โซลคอร์  Tier S
+	Class == "Socketable"
+	BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Xopec" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
+	SetFontSize 45
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+	PlayEffect Blue
+	MinimapIcon 0 Blue Star
+
+
 Show
   BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Talisman" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Sirrius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
   SetTextColor 13 228 217
   SetBorderColor 5 55 101
   SetBackgroundColor 5 46 84
   PlayEffect Green
-  SetFontSize 38
+  SetFontSize 35
 
 
 Show
@@ -916,7 +939,7 @@ Show
   
  
 Show
-  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb"
+  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Concentrated Liquid Isolation"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -1007,13 +1030,36 @@ Show
   MinimapIcon 1 Brown Kite
   SetFontSize 40
 
-Show
-  BaseType   "Catalyst" "Essence of"
+
+Show 
+	BaseType == "Essence of the Abyss" "Perfect Essence of Abrasion" "Perfect Essence of Alacrity" "Perfect Essence of Command" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Haste" "Perfect Essence of Ice" "Perfect Essence of Insulation" "Perfect Essence of Opulence" "Perfect Essence of Ruin" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Thawing" "Perfect Essence of the Body" "Perfect Essence of the Infinite" "Perfect Essence of the Mind"
+	SetFontSize 45
+  SetTextColor 170 70 201
+  SetBorderColor 170 70 201
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 
+
+Show 
+	Class "Currency"
+	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Perfect Essence of Battle"
+	SetFontSize 38
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
   SetBackgroundColor 0 0 0
   PlayEffect Purple
   MinimapIcon 2 Purple Circle
+
+Show
+	Class "Currency"
+  BaseType   "Catalyst" "Essence of"
+	SetFontSize 35
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  
+ 
 
 
 #--- Low Tier Currency ---
@@ -1061,7 +1107,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-  BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets"
+    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
@@ -1071,8 +1117,21 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
+
 Show
   Rarity Unique
+	BaseType == "Blacksteel Tower Shield" "Breach Precursor Tablet" "Chain Tiara" "Delirium Precursor Tablet" "Diamond" "Embroidered Gloves" "Expedition Precursor Tablet" "Heroic Armour" "Overseer Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet" "Ruby" "Spiral Wraps" "Stone Charm" "Time-Lost Diamond" "Timeless Jewel" "Unset Ring" "Viper Cap" "Amethyst Ring" "Bloodstone Amulet" "Crude Bow" "Garment" "Lazuli Ring" "Stellar Amulet"
+	SetFontSize 40
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+
+Show
+  Rarity Unique	
   SetTextColor 175 96 37 255
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
