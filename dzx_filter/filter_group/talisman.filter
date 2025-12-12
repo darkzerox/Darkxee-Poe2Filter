@@ -13,8 +13,8 @@ Show
     MinimapIcon 0 Red Star
     CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
 
-Show
-    BaseType == "Serpent Idol" "Primate Idol" "Owl Idol" "Cat Idol" "Boar Idol" "Bear Idol" 
+Show 
+    BaseType == "Snake Idol" "Primate Idol" "Owl Idol" "Cat Idol" "Boar Idol" "Bear Idol" 
     SetTextColor 30 233 148
     PlayEffect Cyan Temp
     SetFontSize 32
