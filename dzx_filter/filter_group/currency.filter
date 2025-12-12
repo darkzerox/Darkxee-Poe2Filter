@@ -41,7 +41,7 @@ Show
   
  
 Show
-  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb"
+  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Concentrated Liquid Isolation"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -132,13 +132,36 @@ Show
   MinimapIcon 1 Brown Kite
   SetFontSize 40
 
-Show
-  BaseType   "Catalyst" "Essence of"
+
+Show 
+	BaseType == "Essence of the Abyss" "Perfect Essence of Abrasion" "Perfect Essence of Alacrity" "Perfect Essence of Command" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Haste" "Perfect Essence of Ice" "Perfect Essence of Insulation" "Perfect Essence of Opulence" "Perfect Essence of Ruin" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Thawing" "Perfect Essence of the Body" "Perfect Essence of the Infinite" "Perfect Essence of the Mind"
+	SetFontSize 45
+  SetTextColor 170 70 201
+  SetBorderColor 170 70 201
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 
+
+Show 
+	Class "Currency"
+	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Perfect Essence of Battle"
+	SetFontSize 38
   SetTextColor 170 70 201
   SetBorderColor 0 0 0
   SetBackgroundColor 0 0 0
   PlayEffect Purple
   MinimapIcon 2 Purple Circle
+
+Show
+	Class "Currency"
+  BaseType   "Catalyst" "Essence of"
+	SetFontSize 35
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  
+ 
 
 
 #--- Low Tier Currency ---

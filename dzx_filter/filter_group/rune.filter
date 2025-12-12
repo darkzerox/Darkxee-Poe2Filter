@@ -1,13 +1,36 @@
 #------------------------------------------------------------------------------
 # Rune
 #------------------------------------------------------------------------------
+
+Show 
+	Class == "Socketable"
+	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Fox Talisman" "Hedgewitch Assandra's Rune of Wisdom" "Opiloti's Soul Core of Assault" "Rabbit Talisman" "Soul Core of Azcapa" "Soul Core of Ticaba" "Talisman of Ralakesh" "Talisman of Sirrius"
+	SetFontSize 40
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+	PlayEffect Red
+	MinimapIcon 0 Red Star
+
+
+Show # รูน เครื่องราง โซลคอร์  Tier S
+	Class == "Socketable"
+	BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Xopec" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
+	SetFontSize 45
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+	PlayEffect Blue
+	MinimapIcon 0 Blue Star
+
+
 Show
   BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Talisman" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Sirrius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
   SetTextColor 13 228 217
   SetBorderColor 5 55 101
   SetBackgroundColor 5 46 84
   PlayEffect Green
-  SetFontSize 38
+  SetFontSize 35
 
 
 Show

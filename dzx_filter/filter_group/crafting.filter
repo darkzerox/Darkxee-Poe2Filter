@@ -5,7 +5,7 @@
 
 Show
 	ItemLevel >= 80
-	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots"
+	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
 	Sockets >= 3
 	SetFontSize 45
 	SetTextColor 255 140 0
@@ -18,7 +18,7 @@ Show
 
 Show
 	ItemLevel >= 80
-	Class == "Gloves" "Boots"
+  	Class == "Gloves" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
 	Sockets >= 2
 	SetFontSize 45
 	SetTextColor 255 140 0
