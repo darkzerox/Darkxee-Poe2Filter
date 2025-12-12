@@ -746,8 +746,8 @@ Show
     MinimapIcon 0 Red Star
     CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
 
-Show
-    BaseType == "Serpent Idol" "Primate Idol" "Owl Idol" "Cat Idol" "Boar Idol" "Bear Idol" 
+Show 
+    BaseType == "Snake Idol" "Primate Idol" "Owl Idol" "Cat Idol" "Boar Idol" "Bear Idol" 
     SetTextColor 30 233 148
     PlayEffect Cyan Temp
     SetFontSize 32
@@ -1223,13 +1223,12 @@ Show
 Show 
 	ItemLevel >= 80
 	Rarity  Magic
-	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes" "Talismans"
+	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes" 
 	SetFontSize 32
 	SetTextColor 62 140 242
 	SetBackgroundColor 0 50 0 255
 	SetBorderColor 62 140 242
 	PlayAlertSound 16 200
-
 
 
 
