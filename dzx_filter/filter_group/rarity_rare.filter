@@ -4,7 +4,7 @@
 
 Show
   Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   UnidentifiedItemTier >= 4
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
@@ -17,7 +17,7 @@ Hide
   Rarity Rare
   ItemLevel <= 80
   AreaLevel >= 79
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
@@ -28,7 +28,7 @@ Hide
 Show
   Rarity Rare
   ItemLevel >= 81
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetBorderColor 255 156 94
@@ -39,7 +39,7 @@ Show
 
 Show
   Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32

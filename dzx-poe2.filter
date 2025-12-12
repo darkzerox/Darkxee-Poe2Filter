@@ -678,8 +678,8 @@ Show
 #------------------------------------------------------------------------------
 
 Show 
-	Class == "Socketable"
-	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Fox Talisman" "Hedgewitch Assandra's Rune of Wisdom" "Opiloti's Soul Core of Assault" "Rabbit Talisman" "Soul Core of Azcapa" "Soul Core of Ticaba" "Talisman of Ralakesh" "Talisman of Sirrius"
+	Class == "Augment"
+	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Fox Idol" "Hedgewitch Assandra's Rune of Wisdom" "Opiloti's Soul Core of Assault" "Rabbit Idol" "Soul Core of Azcapa" "Soul Core of Ticaba" "Idol of Ralakesh" "Idol of Sirrius"
 	SetFontSize 40
   SetTextColor 13 228 217
   SetBorderColor 42 250 233
@@ -689,8 +689,8 @@ Show
 
 
 Show # รูน เครื่องราง โซลคอร์  Tier S
-	Class == "Socketable"
-	BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Xopec" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
+	Class == "Augment"
+	BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Xopec" "Tacati's Soul Core of Affliction" "Idol of Eeshta" "Idol of Egrin" "Idol of Grold" "Idol of Maxarius" "Idol of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
 	SetFontSize 45
   SetTextColor 13 228 217
   SetBorderColor 42 250 233
@@ -700,7 +700,7 @@ Show # รูน เครื่องราง โซลคอร์  Tier S
 
 
 Show
-  BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Talisman" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Talisman of Eeshta" "Talisman of Egrin" "Talisman of Grold" "Talisman of Maxarius" "Talisman of Sirrius" "Talisman of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
+  BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Idol" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Idol of Eeshta" "Idol of Egrin" "Idol of Grold" "Idol of Maxarius" "Idol of Sirrius" "Idol of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
   SetTextColor 13 228 217
   SetBorderColor 5 55 101
   SetBackgroundColor 5 46 84
@@ -731,7 +731,7 @@ Show
 
 
 Show
-    BaseType "Rabbit Talisman" "Fox Talisman"
+    BaseType "Rabbit Idol" "Fox Idol"
     SetTextColor 232 231 171
     SetBorderColor 232 37 97
     SetBackgroundColor 232 37 97
@@ -741,13 +741,13 @@ Show
     CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
 
 Show
-    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Boar Talisman" "Bear Talisman" 
+    BaseType == "Serpent Idol" "Primate Idol" "Owl Idol" "Cat Idol" "Boar Idol" "Bear Idol" 
     SetTextColor 30 233 148
     PlayEffect Cyan Temp
     SetFontSize 32
 
 Show
-    BaseType == "Stag Talisman" "Ox Talisman" "Wolf Talisman" 
+    BaseType == "Stag Idol" "Ox Idol" "Wolf Idol" 
     SetTextColor 170 70 201
     SetBorderColor 0 0 0
     SetBackgroundColor 0 0 0
@@ -1152,7 +1152,7 @@ Show
 
 Show
   Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   UnidentifiedItemTier >= 4
   SetBackgroundColor 0 0 0 203
   SetTextColor 248 147 5
@@ -1165,7 +1165,7 @@ Hide
   Rarity Rare
   ItemLevel <= 80
   AreaLevel >= 79
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
@@ -1176,7 +1176,7 @@ Hide
 Show
   Rarity Rare
   ItemLevel >= 81
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetBorderColor 255 156 94
@@ -1187,7 +1187,7 @@ Show
 
 Show
   Rarity Rare
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetBackgroundColor 0 0 0 255
   SetTextColor 255 209 94
   SetFontSize 32
@@ -1209,7 +1209,7 @@ Show
 Show
   Rarity >= Magic
   UnidentifiedItemTier >= 4
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0
   SetFontSize 40
@@ -1217,7 +1217,7 @@ Show
 Show 
 	ItemLevel >= 80
 	Rarity  Magic
-	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes"
+	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes" "Talismans"
 	SetFontSize 32
 	SetTextColor 62 140 242
 	SetBackgroundColor 0 50 0 255
@@ -1232,7 +1232,7 @@ Hide
   Sockets == 0
   Quality == 0
   AreaLevel >= 50
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetTextColor 255 255 255
   SetBackgroundColor 0 0 0
   SetFontSize 32
@@ -1242,7 +1242,7 @@ Hide
   Sockets == 0
   Quality == 0
   AreaLevel >= 50
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetTextColor 62 140 242
   SetBackgroundColor 0 0 0
   SetFontSize 32
@@ -1251,7 +1251,7 @@ Hide
 Show
   Rarity >= Magic
   Quality > 0
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears"
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0 204
   SetFontSize 32
