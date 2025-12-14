@@ -29,7 +29,7 @@
 
 Show
   Rarity Normal
-  BaseType == "Shrine Sceptre" "Heavy Belt"
+  BaseType == "Shrine Sceptre" "Heavy Belt" "Gauze Wraps"
   SetTextColor 244 233 215
   SetBorderColor 217 125 85
   SetBackgroundColor 217 125 85
@@ -1107,7 +1107,7 @@ Show
 # Very Unique
 Show
   Rarity Unique
-    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic"
+    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic" "Gauze Wraps"
   SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255

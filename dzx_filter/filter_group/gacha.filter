@@ -4,7 +4,7 @@
 
 Show
   Rarity Normal
-  BaseType == "Shrine Sceptre" "Heavy Belt"
+  BaseType == "Shrine Sceptre" "Heavy Belt" "Gauze Wraps"
   SetTextColor 244 233 215
   SetBorderColor 217 125 85
   SetBackgroundColor 217 125 85
