@@ -221,19 +221,7 @@ Show
 # Unique Items group
 #------------------------------------------------------------------------------
 
-# Very Unique
-Show
-  Rarity Unique
-    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic" "Gauze Wraps"
-  SetFontSize 45
-  SetTextColor 238 238 238
-  SetBorderColor 53 13 13 255
-  SetBackgroundColor 216 64 64
-  PlayAlertSound 6 200
-  PlayEffect Red
-  MinimapIcon 0 Red Star
-  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
-
+ 
 
 Show
   Rarity Unique
@@ -326,6 +314,19 @@ Show
   MinimapIcon 2 Green Diamond
   PlayAlertSound 14 200
 
+
+# Very Unique
+Show
+  Rarity Unique
+    BaseType == "Armoured Cap" "Emerald" "Furtive Wraps" "Ornate Belt" "Ring" "Ruby" "Sapphire" "Smuggler Coat" "Stone Tower Shield" "Time-Lost Diamond" "Timeless Jewel" "Ultimate Life Flask" "Ultimate Mana Flask" "Utility Belt" "Diamond" "Silk Robe" "Shrine Sceptre" "Grand Regalia"  "Incense Relic"  "Garment" "Blacksteel Tower Shield" "Tribal Mask" "Ornate Gauntlets" "Artillery Bow" "Conqueror Plate" "Desolate Crossbow" "Fine Bracers" "Golden Charm" "Intricate Crest Shield" "Lattice Sandals"  "Primed Quiver" "Sacred Focus" "Silver Charm" "Thawing Charm"  "Utility Wraps" "Vase Relic" "Gauze Wraps"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 
 # ============================================
