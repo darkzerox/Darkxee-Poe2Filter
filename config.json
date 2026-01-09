@@ -61,6 +61,18 @@
       ],
       "no_hide_variant": true,
       "enabled": true
+    },
+    {
+      "name": "dzx-poe2-temple",
+      "description": "Optimized for Temple ",
+      "group": "TEMPLE_GROUP",
+      "sound_type": "type-01",
+      "platforms": [
+        "pc",
+        "ps5"
+      ],
+      "no_hide_variant": false,
+      "enabled": true
     }
   ],
   "special_variants": [
@@ -122,12 +134,13 @@
       "rune.filter",
       "talisman.filter",
       "soul_core.filter",
-      "waystones.filter",
-      "flasks.filter",
       "charms.filter",
-      "currency.filter",
-      "rarity_rare.filter",
-      "rarity_magic.filter"
+      "currency.filter"
+    ],
+    "TEMPLE_GROUP": [
+      "map_temple.filter",
+      "mirror_tier.filter",
+      "currency.filter"
     ]
   },
   "html_generation": {
