@@ -68,8 +68,7 @@
       "group": "TEMPLE_GROUP",
       "sound_type": "type-01",
       "platforms": [
-        "pc",
-        "ps5"
+        "pc"
       ],
       "no_hide_variant": false,
       "enabled": true

@@ -1,24 +1,35 @@
+# Hide currency
 Hide
-  Rarity Rare Normal Magic
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings"
+  BaseType "Orb of Annulment" "Gemcutter's Prism"  "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"  "Orb of Chance"   "Vaal Orb" "Artificer's Orb"
 
+Hide
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+
+
+# Hide Armor weapon Jewel
+Hide
+  Rarity Rare Normal Magic Unique 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings" "Amulet" "Talismans"
+
+# Hide flask Scroll
 Hide 
-  BaseType " Rune" " Charm"
+  BaseType "flask" "Scroll of Wisdom" " Rune" " Charm" "Barya" " Ultimatum"
 
 
-Hide
-  Sockets <= 2
-  Rarity Normal Magic
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings"
+
  
 
-Hide
-  BaseType "Orb of Annulment" "Gemcutter's Prism"  "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+
  
  
 Hide 
-BaseType "flask" "Scroll of Wisdom"
+  BaseType "flask" "Scroll of Wisdom"
 
 Hide
   Class "Jewel"
-  Rarity Normal Magic
+  Rarity Rare Normal Magic Unique
+
+ 
+
+Hide
+  BaseType == "Gold"
