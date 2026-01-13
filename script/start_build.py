@@ -92,7 +92,7 @@ def get_default_config() -> Dict:
                 "name": "dzx-poe2-temple",
                 "description": "Temple optimized",
                 "group": "TEMPLE_GROUP",
-                "platforms": ["pc"],    
+                "platforms": ["pc","ps5"],    
                 "no_hide_variant": False
              }
         ]
