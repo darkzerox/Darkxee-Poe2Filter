@@ -37,7 +37,7 @@ Show
 
 #special unique items
 Show
-  BaseType "The Gnashing Sash" "Bursting Decay" "Headhunter" "Choir of the Storm" "Temporalis" "Atziri's Splendour" "Death Articulated" "The Vertex" "Hateforge" "Sine Aequo" "Rathpith Globe" "Morior Invictus" "Sandstorm Visage" "The Covenant" "Alpha's Howl" "Rite of Passage" "Olroth's Resolve " "The Adorned" "Against the Darkness" "Undying Hate" "Heroic Tragedy" "Heart of the Well " "Megalomaniac" "Unforeseen Consequences" "Visions of Paradise" "The Grand Project"  "Palm of the Dreamer" "Sacred Flame" "Guiding Palm of the Mind" "Guiding Palm of the Heart" "Guiding Palm of the Eye" "The Last Flame" "The Desperate Alliance"
+  BaseType "Wide Belt" "Unset Ring" "Heavy Belt" "Jade Amulet" "Silk Robe" "Sacrificial Regalia" "Ornate Gauntlets" "Tribal Mask" "Moulded Mitts" "Grand Manchettes" "Sacred Focus" "Grand Regalia" "Chain Tiara" "Altar Robe" "Armoured Cap" "Golden Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Abyss Precursor Tablet" "Precursor Tablet" "Shrine Sceptre" "Incense Relic" "Vase Relic"
   SetTextColor 0 0 0
   SetBorderColor 0 0 0
   SetBackgroundColor 243 11 212
