@@ -85,5 +85,4 @@ poe2_production_Loaded.mtx
 EShop/
 ETrade/
 OnlineFilters/
-PassiveKeywordSearch/Solo_Lvlo.passivesearch
-PassiveKeywordSearch/SSF_II.passivesearch
+PassiveKeywordSearch/**
