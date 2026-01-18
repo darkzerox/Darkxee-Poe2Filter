@@ -4,7 +4,7 @@ Show
   BaseType "Soul Core of Jiquani" "Soul Core of Zalatl" "Soul Core of Azcapa" "The Trialmaster's Reliquary Key" "Zarokh's Reliquary Key" "Tangmazu's Reliquary Key" "Olroth's Reliquary Key" "The Arbiter's Reliquary Key" "Xesht's Reliquary Key" "Vaal Cultivation Orb" "Jiquani's Thesis" "Guatelitzi's Thesis"
   SetTextColor 0 0 0
   SetBorderColor 0 0 0
-  SetBackgroundColor 243 11 212
+  SetBackgroundColor 11 154 243
   SetFontSize 35
   PlayEffect Red
 
@@ -20,11 +20,11 @@ Show
 
 #special unique items
 Show
-  BaseType "Wide Belt" "Unset Ring" "Heavy Belt" "Jade Amulet" "Silk Robe" "Sacrificial Regalia" "Ornate Gauntlets" "Tribal Mask" "Moulded Mitts" "Grand Manchettes" "Sacred Focus" "Grand Regalia" "Chain Tiara" "Altar Robe" "Armoured Cap" "Golden Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Abyss Precursor Tablet"  "Shrine Sceptre" "Incense Relic" "Vase Relic"
+  BaseType "Wide Belt" "Unset Ring" "Heavy Belt"  "Silk Robe" "Sacrificial Regalia" "Ornate Gauntlets" "Tribal Mask" "Moulded Mitts" "Grand Manchettes" "Sacred Focus" "Grand Regalia" "Chain Tiara" "Altar Robe" "Armoured Cap" "Golden Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Abyss Precursor Tablet"  "Shrine Sceptre" "Incense Relic" "Vase Relic"
   Rarity Unique
   SetTextColor 0 0 0
   SetBorderColor 0 0 0
-  SetBackgroundColor 243 11 212
+  SetBackgroundColor 243 146 11
   SetFontSize 35
   PlayEffect Red
 
@@ -98,3 +98,7 @@ Hide
 
 Hide
   BaseType == "Gold"
+
+
+Hide
+  BaseType "Waystone"
