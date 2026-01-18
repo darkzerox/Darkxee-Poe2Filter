@@ -16,7 +16,9 @@
     "temp_directory": "temp"
   },
   "sound_effects": {
-    "available_types": ["type-01"],
+    "available_types": [
+      "type-01"
+    ],
     "default_type": "type-01",
     "directory": "dzx_filter/soundeffect",
     "volume_levels": {
@@ -31,7 +33,9 @@
       "description": "Main filter with all features",
       "group": "MAIN_GROUP",
       "sound_type": "type-01",
-      "platforms": ["pc"],
+      "platforms": [
+        "pc"
+      ],
       "no_hide_variant": true,
       "enabled": true
     },
@@ -40,7 +44,10 @@
       "description": "Optimized for Breach league",
       "group": "BREACH_GROUP",
       "sound_type": "type-01",
-      "platforms": ["pc", "ps5"],
+      "platforms": [
+        "pc",
+        "ps5"
+      ],
       "no_hide_variant": false,
       "enabled": true
     },
@@ -49,8 +56,22 @@
       "description": "PS5 optimized version",
       "group": "MAIN_GROUP",
       "sound_type": "type-01",
-      "platforms": ["ps5"],
+      "platforms": [
+        "ps5"
+      ],
       "no_hide_variant": true,
+      "enabled": true
+    },
+    {
+      "name": "dzx-poe2-temple",
+      "description": "Optimized for Temple ",
+      "group": "TEMPLE_GROUP",
+      "sound_type": "type-01",
+      "platforms": [
+        "pc",
+        "ps5"
+      ],
+      "no_hide_variant": false,
       "enabled": true
     }
   ],
@@ -96,7 +117,7 @@
       "rarity_rare.filter",
       "rarity_magic.filter"
     ],
-    "BREACH_GROUP": [ 
+    "BREACH_GROUP": [
       "mirror_tier.filter",
       "gacha.filter",
       "crafting.filter",
@@ -113,13 +134,13 @@
       "rune.filter",
       "talisman.filter",
       "soul_core.filter",
-      "waystones.filter",
-      "flasks.filter",
       "charms.filter",
-      "currency.filter",
-      "rarity_unique.filter",
-      "rarity_rare.filter",
-      "rarity_magic.filter"
+      "currency.filter"
+    ],
+    "TEMPLE_GROUP": [
+      "map_temple.filter",
+      "mirror_tier.filter",
+      "currency.filter"
     ]
   },
   "html_generation": {

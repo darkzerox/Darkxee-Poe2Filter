@@ -1,0 +1,105 @@
+#special items from temple
+
+Show
+  BaseType "Soul Core of Jiquani" "Soul Core of Zalatl" "Soul Core of Azcapa" "The Trialmaster's Reliquary Key" "Zarokh's Reliquary Key" "Tangmazu's Reliquary Key" "Olroth's Reliquary Key" "The Arbiter's Reliquary Key" "Xesht's Reliquary Key" "Vaal Cultivation Orb" "Jiquani's Thesis" "Guatelitzi's Thesis"
+  SetTextColor 0 0 0
+  SetBorderColor 0 0 0
+  SetBackgroundColor 243 11 212
+  SetFontSize 35
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  PlayAlertSound 11 300
+
+Show
+  BaseType "Divine Orb""
+  SetTextColor 0 0 0
+  SetBorderColor 0 0 0
+  SetBackgroundColor 241 45 45
+  SetFontSize 45
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  PlayAlertSound 11 300
+
+#special unique items
+Show
+  BaseType "Wide Belt" "Unset Ring" "Heavy Belt" "Jade Amulet" "Silk Robe" "Sacrificial Regalia" "Ornate Gauntlets" "Tribal Mask" "Moulded Mitts" "Grand Manchettes" "Sacred Focus" "Grand Regalia" "Chain Tiara" "Altar Robe" "Armoured Cap" "Golden Charm" "Ultimate Life Flask" "Ultimate Mana Flask" "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Abyss Precursor Tablet" "Precursor Tablet" "Shrine Sceptre" "Incense Relic" "Vase Relic"
+  SetTextColor 0 0 0
+  SetBorderColor 0 0 0
+  SetBackgroundColor 243 11 212
+  SetFontSize 35
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  PlayAlertSound 11 300
+
+ 
+
+#special support gems
+Show 
+  BaseType "Uhtred's Augury" "Uhtred's Omen" "Uul-Netol's Embrace" "Rakiata's Flow" "Garukhan's Resolve" "Tul's Stillness" "Esh's Radiance" "Rigwald's Ferocity" "Uhtred's Exodus" "Atalui's Bloodletting" "Ixchel's Torment" "Xoph's Pyre" "Arbiter's Ignition" "Dialla's Desire" "Atziri's Impatience" "Khatal's Rejuvenation" "Amanamu's Tithe"
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  SetFontSize 35
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  PlayAlertSound 1 100
+
+# Level 20 gems go tink
+Show
+  GemLevel  = 20
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+Show
+  GemLevel = 19
+  BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+  SetFontSize 35
+  SetTextColor 211 82 35
+  SetBorderColor 211 82 35
+  PlayAlertSound 6 200
+  PlayEffect Orange
+
+
+
+# Hide currency
+Hide
+  BaseType "Orb of Annulment" "Gemcutter's Prism"  "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"  "Orb of Chance"   "Vaal Orb" "Artificer's Orb" "Exalted Orb" "Greater Jeweller's Orb"
+
+Hide
+  BaseType "Gold Key" "Silver Key" "Bronze Key"
+
+
+# Hide Armor weapon Jewel
+Hide
+  Rarity Rare Normal Magic Unique 
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings" "Amulet" "Talismans"
+
+# Hide flask Scroll
+Hide 
+  BaseType "flask" "Scroll of Wisdom" " Rune" " Charm" "Barya" " Ultimatum"
+
+# Hide Support Gems
+Hide
+  Class "Support Gems"
+ 
+
+
+ 
+ 
+Hide 
+  BaseType "flask" "Scroll of Wisdom"
+
+Hide
+  Class "Jewel"
+  Rarity Rare Normal Magic Unique
+
+ 
+
+Hide
+  BaseType == "Gold"
