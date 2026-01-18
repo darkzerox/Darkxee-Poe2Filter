@@ -11,7 +11,7 @@ Show
   PlayAlertSound 11 300
 
 Show
-  BaseType "Divine Orb""
+  BaseType "Divine Orb"
   SetTextColor 0 0 0
   SetBorderColor 0 0 0
   SetBackgroundColor 241 45 45
