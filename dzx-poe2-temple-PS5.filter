@@ -76,6 +76,7 @@ Show
   PlayEffect Orange
 
 
+
 # Hide currency
 Hide
   BaseType "Orb of Annulment" "Gemcutter's Prism"  "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy" "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"  "Orb of Chance" "Chance Shard"   "Vaal Orb" "Artificer's Orb" "Exalted Orb" "Greater Jeweller's Orb" "Precursor Tablet"
@@ -143,7 +144,7 @@ Show
 
 
 Show
-  BaseType "Mirror"
+  BaseType "Mirror" "Hinekora's Lock" 
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -161,7 +162,7 @@ Show
   MinimapIcon 0 Red Star
 
 Show
-  BaseType "Mirror" "Perfect Exalted Orb" "Perfect Chaos Orb" "Hinekora's Lock" 
+  BaseType  "Fracturing Orb"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -171,7 +172,7 @@ Show
   
  
 Show
-  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Concentrated Liquid Isolation"
+  BaseType  "Perfect Jeweller's Orb" "Greater Exalted Orb" "Greater Chaos Orb" "Concentrated Liquid Isolation"  "Perfect Exalted Orb" "Perfect Chaos Orb"
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
   SetBackgroundColor 232 37 97
@@ -193,7 +194,7 @@ Show
 
 # Currency Tier B: Exalt
 Show
-  BaseType "Orb of Annulment" "Exotic Coinage" "Exalted Orb" "Chaos Orb" "Fracturing Orb" "Orb of Chance" "Reaver Catalyst" "Esh's Catalyst"  "Chance Shard"
+  BaseType "Orb of Annulment" "Exotic Coinage" "Exalted Orb" "Chaos Orb"  "Orb of Chance" "Reaver Catalyst" "Esh's Catalyst"  "Chance Shard"
   SetTextColor 218 145 255
   SetFontSize 40
   SetBorderColor 0 0 0
