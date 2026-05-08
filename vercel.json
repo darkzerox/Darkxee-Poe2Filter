@@ -1,0 +1,4 @@
+{
+  "buildCommand": "python script/start_build.py",
+  "outputDirectory": "dist/web"
+}
