@@ -205,7 +205,7 @@ def prepare_directories():
     
     # Copy soundeffect to dist/filter
     src_sound = project_root / "dzx_filter" / "soundeffect"
-    dst_sound = dist_filter / "soundeffect"
+    dst_sound = dist_filter / "dzx_filter" / "soundeffect"
     if src_sound.exists():
         if dst_sound.exists():
             shutil.rmtree(dst_sound)
