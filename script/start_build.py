@@ -239,6 +239,45 @@ def prepare_directories():
     except Exception as e:
         print(f"   ⚠️ Warning during cleanup: {e}")
 
+def copy_filters_to_game():
+    """Copy compiled filters and sound effects to the game directory"""
+    game_path_str = CONFIG.get("build", {}).get("output_game_filter_path")
+    if not game_path_str or game_path_str == "/path/to/pathofexile2/filter":
+        print("\n   ℹ️ Game filter path not configured, skipping copy to game folder")
+        return
+
+    # Expand environment variables like %USERPROFILE%
+    game_path_str = os.path.expandvars(game_path_str)
+    game_path = Path(game_path_str)
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent
+    dist_filter = project_root / "dist" / "filter"
+
+    if not dist_filter.exists():
+        print_error(f"Source directory {dist_filter} does not exist")
+        return
+
+    print_step("Deploying", f"Copying filters to {game_path}")
+    
+    try:
+        # Create game directory if it doesn't exist
+        game_path.mkdir(parents=True, exist_ok=True)
+        
+        # Copy all contents from dist/filter to game_path
+        # We use a loop or copytree with dirs_exist_ok=True (Python 3.8+)
+        for item in dist_filter.iterdir():
+            dest = game_path / item.name
+            if item.is_dir():
+                if dest.exists():
+                    shutil.rmtree(dest)
+                shutil.copytree(item, dest)
+            else:
+                shutil.copy2(item, dest)
+        
+        print_success(f"Successfully copied filters to {game_path}")
+    except Exception as e:
+        print_error(f"Failed to copy filters to game directory: {e}")
+
 # ==============================================================================
 # BUILD FUNCTIONS  
 # ==============================================================================
@@ -464,6 +503,10 @@ Examples:
     
     if total_success == len(FILTER_VARIANTS) and special_success and web_success:
         print("\n🎉 All builds completed successfully!")
+        
+        # Copy to game directory if configured
+        copy_filters_to_game()
+        
         return 0
     else:
         print(f"\n⚠️  Some builds failed. Check the output above for details.")

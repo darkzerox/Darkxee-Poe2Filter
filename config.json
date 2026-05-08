@@ -13,7 +13,8 @@
     "js_directory": "dzx_filter/js",
     "filter_group_directory": "dzx_filter/filter_group",
     "backup_directory": "backup",
-    "temp_directory": "temp"
+    "temp_directory": "temp",
+    "output_game_filter_path": "%USERPROFILE%\\Documents\\My Games\\Path of Exile 2"
   },
   "sound_effects": {
     "available_types": [
