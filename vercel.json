@@ -1,4 +1,5 @@
 {
+  "installCommand": "echo 'No dependencies needed'",
   "buildCommand": "python script/start_build.py",
   "outputDirectory": "dist/web"
 }
