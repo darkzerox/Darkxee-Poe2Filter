@@ -35,8 +35,14 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           if [ -n "$(git status --porcelain)" ]; then
-          git commit -m "build file completed"
-          git push
-            else
-          echo "No changes to commit"
-            fi
+            git commit -m "build file completed"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+      - name: Upload dist artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: dzx-filter-build
+          path: dist/

@@ -74,9 +74,11 @@ class CSSGenerator:
         'UpsideDownHouse': '⬢'
     }
     
-    def __init__(self, project_path: Path, filter_group_path: Path):
+    def __init__(self, project_path: Path, filter_group_path: Path, output_dir: Optional[Path] = None):
         self.project_path = project_path
         self.filter_group_path = filter_group_path
+        self.output_dir = output_dir if output_dir else project_path / "dist" / "web"
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         self.processed_selectors: Set[str] = set()
         self.minimap_styles: Dict[str, str] = {}
         
@@ -388,8 +390,8 @@ class CSSGenerator:
     
     def _write_css_file(self, css_content: str, output_file_name: str, rules_count: int) -> bool:
         """Write CSS content to file"""
-        css_dir = self.project_path / 'dzx_filter' / 'css'
-        css_dir.mkdir(exist_ok=True)
+        css_dir = self.output_dir / 'dzx_filter' / 'css'
+        css_dir.mkdir(parents=True, exist_ok=True)
         
         output_path = css_dir / output_file_name
         
@@ -422,7 +424,7 @@ def filter_to_css(filter_paths: List[str], output_file_name: str = "filter_style
     success = _css_generator.generate_css(filter_paths, output_file_name)
     if success:
         # Read and return the generated CSS
-        css_path = project_path / 'dzx_filter' / 'css' / output_file_name
+        css_path = _css_generator.output_dir / 'dzx_filter' / 'css' / output_file_name
         try:
             with open(css_path, 'r', encoding='utf-8') as f:
                 return f.read()
@@ -462,7 +464,7 @@ def run_tests():
     
     # Test 2: Check if CSS file was created
     print("\n   Test 2: CSS file creation")
-    css_path = project_path / 'dzx_filter' / 'css' / 'test_styles.css'
+    css_path = _css_generator.output_dir / 'dzx_filter' / 'css' / 'test_styles.css'
     if css_path.exists():
         print("   ✅ CSS file creation test passed")
     else:

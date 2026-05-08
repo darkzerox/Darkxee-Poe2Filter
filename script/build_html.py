@@ -62,9 +62,11 @@ class HTMLGenerator:
         'UpsideDownHouse': '⬢'
     }
     
-    def __init__(self, project_path: Path):
+    def __init__(self, project_path: Path, output_dir: Optional[Path] = None):
         self.project_path = project_path
         self.filter_group_path = project_path / "dzx_filter" / "filter_group"
+        self.output_dir = output_dir if output_dir else project_path / "dist" / "web"
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         self.preview_tags: Set[Tuple[str, str]] = set()
     
     def get_git_version(self) -> str:
@@ -367,7 +369,7 @@ class HTMLGenerator:
         self._ensure_css_files_exist()
         
         # Read CSS content (for backwards compatibility, but won't be used in new template)
-        css_path = self.project_path / 'dzx_filter' / 'css' / 'filter_styles.css'
+        css_path = self.output_dir / 'dzx_filter' / 'css' / 'filter_styles.css'
         css_content = ""
         try:
             with open(css_path, 'r', encoding='utf-8') as f:
@@ -393,8 +395,8 @@ class HTMLGenerator:
     
     def _ensure_css_files_exist(self):
         """Ensure main.css and filter_styles.css exist"""
-        css_dir = self.project_path / 'dzx_filter' / 'css'
-        js_dir = self.project_path / 'dzx_filter' / 'js'
+        css_dir = self.output_dir / 'dzx_filter' / 'css'
+        js_dir = self.output_dir / 'dzx_filter' / 'js'
         
         # Create directories if they don't exist
         css_dir.mkdir(parents=True, exist_ok=True)
@@ -746,7 +748,7 @@ python build_css.py --test</code></pre>
         
         try:
             html_content = self.generate_html_content(filter_array)
-            output_path = self.project_path / output_file_name
+            output_path = self.output_dir / output_file_name
             
             with open(output_path, 'w', encoding='utf-8') as f:
                 f.write(html_content)
@@ -786,7 +788,7 @@ def run_tests():
         return False
     
     # Check if file was created
-    test_path = project_path / "test_preview.html"
+    test_path = _html_generator.output_dir / "test_preview.html"
     if test_path.exists():
         print("   ✅ HTML file creation test passed")
         # Clean up
