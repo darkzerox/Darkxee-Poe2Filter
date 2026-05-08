@@ -248,7 +248,18 @@ def copy_filters_to_game():
 
     # Expand environment variables like %USERPROFILE%
     game_path_str = os.path.expandvars(game_path_str)
+    
+    # Check if we are in GitHub Actions or other CI
+    if os.environ.get('GITHUB_ACTIONS') == 'true' or os.environ.get('CI') == 'true':
+        print("\n   ℹ️ CI environment detected (GitHub Actions), skipping copy to game folder to avoid invalid paths")
+        return
+
     game_path = Path(game_path_str)
+    
+    # Ensure the path is absolute and valid after expansion
+    if not game_path.is_absolute():
+        print(f"\n   ⚠️ Expanded path '{game_path}' is not absolute. Skipping copy.")
+        return
     script_dir = Path(__file__).parent
     project_root = script_dir.parent
     dist_filter = project_root / "dist" / "filter"
