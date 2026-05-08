@@ -28,9 +28,11 @@ filter_group_path = project_path / "dzx_filter" / "filter_group"
 class FilterMerger:
     """Handle merging of filter files with various processing options"""
     
-    def __init__(self, project_path: Path, filter_group_path: Path):
+    def __init__(self, project_path: Path, filter_group_path: Path, output_dir: Optional[Path] = None):
         self.project_path = project_path
         self.filter_group_path = filter_group_path
+        self.output_dir = output_dir if output_dir else project_path / "dist" / "filter"
+        self.output_dir.mkdir(parents=True, exist_ok=True)
         self.stats = {
             'files_processed': 0,
             'files_missing': 0,
@@ -141,7 +143,7 @@ class FilterMerger:
             'hide_to_show_converted': 0
         }
         
-        output_file = self.project_path / f"{output_file_name}.filter"
+        output_file = self.output_dir / f"{output_file_name}.filter"
         
         logger.info(f"Starting merge: {len(file_paths)} files -> {output_file.name}")
         
@@ -253,7 +255,7 @@ def run_tests():
     ]
     
     # Clean up any existing test file
-    test_output = project_path / "test_merge.filter"
+    test_output = _merger.output_dir / "test_merge.filter"
     if test_output.exists():
         try:
             test_output.unlink()
@@ -292,7 +294,7 @@ def run_tests():
     
     # Clean up test files
     for test_file in ["test_merge.filter", "test_merge_no_sound.filter", "test_merge_show_all.filter"]:
-        test_path = project_path / test_file
+        test_path = _merger.output_dir / test_file
         if test_path.exists():
             try:
                 test_path.unlink()

@@ -16,6 +16,7 @@ import os
 import time
 import argparse
 import json
+import shutil
 from pathlib import Path
 from typing import List, Dict, Optional
 
@@ -189,6 +190,54 @@ def validate_filter_files(group: List[str]) -> List[str]:
             missing_files.append(str(filter_path))
     
     return missing_files
+
+def prepare_directories():
+    """Prepare dist directories and copy static assets, and clean up old root files"""
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent
+    
+    dist_filter = project_root / "dist" / "filter"
+    dist_web = project_root / "dist" / "web"
+    
+    # Create directories
+    dist_filter.mkdir(parents=True, exist_ok=True)
+    dist_web.mkdir(parents=True, exist_ok=True)
+    
+    # Copy soundeffect to dist/filter
+    src_sound = project_root / "dzx_filter" / "soundeffect"
+    dst_sound = dist_filter / "soundeffect"
+    if src_sound.exists():
+        if dst_sound.exists():
+            shutil.rmtree(dst_sound)
+        shutil.copytree(src_sound, dst_sound)
+        print("   ✅ Copied soundeffect to dist/filter/")
+        
+    # Copy web assets to dist/web/dzx_filter
+    web_assets = ["images", "fonts"]
+    for asset in web_assets:
+        src = project_root / "dzx_filter" / asset
+        if src.exists():
+            dst = dist_web / "dzx_filter" / asset
+            if dst.exists():
+                shutil.rmtree(dst)
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copytree(src, dst)
+            print(f"   ✅ Copied {asset} to dist/web/dzx_filter/")
+            
+    # Clean up old files in root
+    try:
+        # Delete old .filter files in root
+        for old_filter in project_root.glob("*.filter"):
+            old_filter.unlink()
+            print(f"   🧹 Removed old filter file from root: {old_filter.name}")
+            
+        # Delete old index.html in root
+        old_html = project_root / "index.html"
+        if old_html.exists():
+            old_html.unlink()
+            print("   🧹 Removed old index.html from root")
+    except Exception as e:
+        print(f"   ⚠️ Warning during cleanup: {e}")
 
 # ==============================================================================
 # BUILD FUNCTIONS  
@@ -365,6 +414,10 @@ Examples:
     print_banner()
     
     start_time = time.time()
+    
+    # Prepare directories and clean up
+    print_step("Preparation", "Setting up output directories and cleaning up")
+    prepare_directories()
     
     # Validate filter files
     print_step("Validation", "Checking filter files")
