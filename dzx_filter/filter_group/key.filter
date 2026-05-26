@@ -98,3 +98,11 @@ Show
   PlayEffect Brown
   MinimapIcon 1 Brown Square
   SetFontSize 40
+
+Show
+	Class == "Instance Local Items" "Quest Items"
+	SetFontSize 42
+	SetTextColor 74 230 58 255
+	PlayAlertSound 3 300
+	PlayEffect Green
+	MinimapIcon 0 Green Pentagon

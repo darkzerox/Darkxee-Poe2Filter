@@ -65,7 +65,7 @@ def get_default_config() -> Dict:
                 "scroll_of_wisdom.filter", "salvage.filter", "amulets.filter", "belts.filter", 
                 "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", 
                 "talisman.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
-                "charms.filter", "currency.filter", "rarity_unique.filter", 
+                "charms.filter", "currency.filter", "olroths_legacy.filter", "rarity_unique.filter", 
                 "rarity_rare.filter", "rarity_magic.filter"
             ],
             "BREACH_GROUP": [
@@ -74,7 +74,7 @@ def get_default_config() -> Dict:
                 "scroll_of_wisdom.filter", "salvage.filter", "belts.filter", "key.filter", 
                 "relics.filter", "rune.filter", "talisman.filter", "soul_core.filter", 
                 "waystones.filter", "flasks.filter", "charms.filter", "currency.filter", 
-                "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
+                "olroths_legacy.filter", "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
             ],
             "TEMPLE_GROUP": [
                 "map_temple.filter",
