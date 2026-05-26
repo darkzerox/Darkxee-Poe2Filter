@@ -108,6 +108,7 @@ def main():
         "--name", "DZX-PoE2-Filter-Launcher",
         "--add-data", "dist/filter;filters",
         "--add-data", "dzx_filter/images;dzx_filter/images",
+        "--add-data", "config.json;.",
         "script/installer_gui.py"
     ])
     exe_path = project_root / "dist" / "DZX-PoE2-Filter-Launcher.exe"
