@@ -122,7 +122,7 @@ class FilterInstallerGUI:
         # Path Selection Label
         path_label = tk.Label(
             body_frame,
-            text="โฟลเดอร์สำหรับติดตั้ง Filter (Target Folder):",
+            text="โฟลเดอร์สำหรับติดตั้ง (หากไม่ระบุ จะติดตั้งที่ My Documents\Path of Exile 2\Filters)",
             font=("Leelawadee UI", 9, "bold"),
             fg="#a0a0a0",
             bg="#0f0f0f"
