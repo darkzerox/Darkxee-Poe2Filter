@@ -12,6 +12,9 @@ jobs:
   release:
     name: Release pushed tag
     runs-on: windows-latest
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: 1
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3
