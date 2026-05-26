@@ -11,7 +11,7 @@ permissions:
 jobs:
   release:
     name: Release pushed tag
-    runs-on: ubuntu-22.04
+    runs-on: windows-latest
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3
@@ -19,27 +19,28 @@ jobs:
       - name: setup python
         uses: actions/setup-python@v4
         with:
-          python-version: 3.8
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          python -m pip install --upgrade pip
+          if (Test-Path requirements.txt) { pip install -r requirements.txt }
+          pip install pyinstaller
 
       - name: Build filters
         run: python script/start_build.py
 
       - name: Zip filters
         run: |
-          cd dist/filter
-          zip -r ../../dzx-poe2-filter.zip ./*
-          cd ../../
+          Compress-Archive -Path dist/filter/* -DestinationPath dzx-poe2-filter.zip -Force
+
+      - name: Build EXE Launcher
+        run: |
+          python -m PyInstaller --onefile --noconsole --name "DZX-PoE2-Filter-Launcher" --add-data "dist/filter;filters" --add-data "dzx_filter/images;dzx_filter/images" script/installer_gui.py
 
       - name: Create release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           tag: ${{ github.ref_name }}
         run: |
-          gh release create "$tag" dzx-poe2-filter.zip \
-              --repo="$GITHUB_REPOSITORY" \
-              --title="${GITHUB_REPOSITORY#*/} ${tag#v}" \
-              --generate-notes
+          gh release create "$env:tag" dzx-poe2-filter.zip dist/DZX-PoE2-Filter-Launcher.exe --repo="$env:GITHUB_REPOSITORY" --title="$(${env:GITHUB_REPOSITORY}.Split('/')[1]) $(${env:tag}.TrimStart('v'))" --generate-notes

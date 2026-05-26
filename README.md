@@ -63,7 +63,13 @@
 
 ### วิธีติดตั้งแบบง่าย (Easy Installation)
 
-1. **ดาวน์โหลดไฟล์**: ไปที่ [Releases Page](https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest) และดาวน์โหลดเวอร์ชันล่าสุด
+#### โหมดอัตโนมัติด้วย Launcher (แนะนำสำหรับ Windows)
+1. **ดาวน์โหลด Launcher**: ไปที่ [Releases Page](https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest) และดาวน์โหลดไฟล์ `DZX-PoE2-Filter-Launcher.exe`
+2. **รันตัวติดตั้ง**: เปิดโปรแกรม ขึ้นมา และระบบจะค้นหาโฟลเดอร์ของเกมให้โดยอัตโนมัติ
+3. **ติดตั้ง**: คลิกที่ปุ่ม **"ติดตั้ง / อัปเดต Filter"** เพื่อทำการลงฟิลเตอร์ลงในโฟลเดอร์ของเกมและพร้อมเข้าใช้งานทันที
+
+#### โหมดปกติ (Manual)
+1. **ดาวน์โหลดไฟล์**: ไปที่ [Releases Page](https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest) และดาวน์โหลดเวอร์ชันล่าสุด (.zip)
 2. **แตกไฟล์**: แตกไฟล์ zip ที่ดาวน์โหลดมา  
 3. **คัดลอกไฟล์**: คัดลอกไฟล์ทั้งหมดไปยังโฟลเดอร์เกมตามแพลตฟอร์มของคุณ
 
