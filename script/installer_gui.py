@@ -50,7 +50,7 @@ class FilterInstallerGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("DZX PoE2 Filter Installer & Launcher")
-        self.root.geometry("540x450")
+        self.root.geometry("540x510")
         self.root.configure(bg="#0f0f0f")
         self.root.resizable(False, False)
         
@@ -83,7 +83,7 @@ class FilterInstallerGUI:
         
     def create_widgets(self):
         # Header / Banner
-        header_frame = tk.Frame(self.root, bg="#1a1a1a", height=80)
+        header_frame = tk.Frame(self.root, bg="#1a1a1a", height=140)
         header_frame.pack(fill="x", side="top")
         header_frame.pack_propagate(False)
         
@@ -92,9 +92,9 @@ class FilterInstallerGUI:
         logo_loaded = False
         if logo_path.exists():
             try:
-                self.logo_img = tk.PhotoImage(file=str(logo_path))
+                self.logo_img = tk.PhotoImage(file=str(logo_path)).subsample(4, 4)
                 logo_label = tk.Label(header_frame, image=self.logo_img, bg="#1a1a1a")
-                logo_label.pack(pady=10)
+                logo_label.pack(pady=12)
                 logo_loaded = True
             except Exception:
                 pass
@@ -108,7 +108,7 @@ class FilterInstallerGUI:
                 fg="#d4b26f", 
                 bg="#1a1a1a"
             )
-            title_label.pack(pady=12)
+            title_label.pack(pady=(40, 5))
             subtitle_label = tk.Label(
                 header_frame, 
                 text="Item Filter Installer & Launcher", 
