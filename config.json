@@ -82,6 +82,7 @@
       "description": "High-value items only",
       "group": [
         "currency.filter",
+        "olroths_legacy.filter",
         "rarity_unique.filter",
         "gacha.filter",
         "key.filter",
@@ -114,6 +115,7 @@
       "flasks.filter",
       "charms.filter",
       "currency.filter",
+      "olroths_legacy.filter",
       "rarity_unique.filter",
       "rarity_rare.filter",
       "rarity_magic.filter"
@@ -136,6 +138,7 @@
       "talisman.filter",
       "soul_core.filter",
       "charms.filter",
+      "olroths_legacy.filter",
       "currency.filter"
     ],
     "TEMPLE_GROUP": [
