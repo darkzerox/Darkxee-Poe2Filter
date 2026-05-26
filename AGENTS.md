@@ -118,11 +118,12 @@ dzx-filter-poe2/
 ## Deployment
 
 ### Release Process
-1. สร้าง release branch
-2. ทดสอบระบบ
-3. สร้าง release notes
-4. Tag version
-5. Deploy ไปยัง production
+1. อัปเดตเวอร์ชันใน `config.json`
+2. รันสคริปต์ Release อัตโนมัติจากเครื่อง Local:
+   ```bash
+   python script/create_release.py
+   ```
+   *หมายเหตุ: สคริปต์จะทำหน้าที่คอมไพล์ฟิลเตอร์ทั้งหมด, บีบอัดไฟล์ ZIP, คอมไพล์ตัว Launcher (.exe), ทำการ Tag ใน Git และสร้างหน้า Release พร้อมอัปโหลดไฟล์ตัวช่วยติดตั้งลง GitHub แบบอัตโนมัติโดยตรงจากเครื่อง*
 
 ### Rollback Plan
 - มี rollback plan สำหรับทุก release
