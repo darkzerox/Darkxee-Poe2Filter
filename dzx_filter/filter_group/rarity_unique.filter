@@ -6,7 +6,7 @@
 
 Show
   Rarity Unique
-	BaseType == "Blacksteel Tower Shield" "Breach Precursor Tablet" "Chain Tiara" "Delirium Precursor Tablet" "Diamond" "Embroidered Gloves" "Expedition Precursor Tablet" "Heroic Armour" "Overseer Precursor Tablet" "Precursor Tablet" "Ritual Precursor Tablet" "Ruby" "Spiral Wraps" "Stone Charm" "Time-Lost Diamond" "Timeless Jewel" "Unset Ring" "Viper Cap" "Amethyst Ring" "Bloodstone Amulet" "Crude Bow" "Garment" "Lazuli Ring" "Stellar Amulet" "Heavy Belt" "Stoic Sceptre" "Twisted Wand" "Heartwood Shortbow"
+	BaseType == "Blacksteel Tower Shield" "Chain Tiara"   "Diamond" "Embroidered Gloves"   "Heroic Armour"   "Ruby" "Spiral Wraps" "Stone Charm" "Time-Lost Diamond" "Timeless Jewel" "Unset Ring" "Viper Cap" "Amethyst Ring" "Bloodstone Amulet" "Crude Bow" "Garment" "Lazuli Ring" "Stellar Amulet" "Heavy Belt" "Stoic Sceptre" "Twisted Wand" "Heartwood Shortbow"
 	SetFontSize 40
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
