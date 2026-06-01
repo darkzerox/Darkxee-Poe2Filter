@@ -1,0 +1,118 @@
+#------------------------------------------------------------------------------
+# Unique Armour (เกราะ Unique)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/uniques/armour
+# อัปเดต 2026-06 (225 รายการ — top 25 ระบุชัด, ที่เหลือใช้ fallback)
+
+#--------------------------------
+# Tier S: 100+ Divine
+#--------------------------------
+# Temporalis 288d | Nightfall 137d
+Show
+  Rarity Unique
+  BaseType "Silk Robe" "Fortress Tower Shield"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier A: 10-35 Divine
+#--------------------------------
+# Horror's Flight 32d | Sine Aequo 19d | Hateforge 14d | Cadiro's Gambit 12d | Hyrri's Ire 11d
+Show
+  Rarity Unique
+  BaseType "Engraved Bracers" "Grand Manchettes" "Moulded Mitts" "Primed Quiver" "Armoured Vest"
+  SetFontSize 43
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier B: 2-10 Divine
+#--------------------------------
+# Maligaro's Virtuosity 6.81d | Death Articulated 3.06d | Skin of the Loyal 3.03d
+# Sandstorm Visage 3.03d | Alpha's Howl 2.65d | Morior Invictus 2d
+Show
+  Rarity Unique
+  BaseType "Fine Bracers" "Ornate Gauntlets" "Garment" "Chain Tiara" "Armoured Cap" "Grand Regalia"
+  SetFontSize 40
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier C: 1-2 Divine
+#--------------------------------
+# Atziri's Splendour 1.84d | The Auspex 1.68d | Prism Guardian 1.36d
+Show
+  Rarity Unique
+  BaseType "Sacrificial Regalia" "Exquisite Vest" "Intricate Crest Shield"
+  SetFontSize 40
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 200
+  PlayEffect Red Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier D: 30-65 Exalted
+#--------------------------------
+# Atziri's Step 60ex | Mahuxotl's Machination 56.65ex | Thunderfist 39ex | Drillneck 33ex
+Show
+  Rarity Unique
+  BaseType "Cinched Boots" "Omen Crest Shield" "Utility Wraps" "Penetrating Quiver"
+  SetFontSize 38
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 200
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier E: 10-30 Exalted
+#--------------------------------
+# Vestige of Darkness 21ex | The Vertex 20ex | Hand of Wisdom and Action 17ex
+# Tabula Rasa 14ex | Bones of Ullr 14ex
+Show
+  Rarity Unique
+  BaseType "Tenebrous Crown" "Tribal Mask" "Spiral Wraps" "Garment" "Lattice Sandals"
+  SetFontSize 36
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 100
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Fallback: Unique Armour ทั้งหมด
+#--------------------------------
+Show
+  Rarity Unique
+  Class "Body Armours" "Helmets" "Gloves" "Boots" "Quivers" "Shields"
+  SetFontSize 40
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 0
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100

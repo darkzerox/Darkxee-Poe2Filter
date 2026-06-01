@@ -1,0 +1,90 @@
+#------------------------------------------------------------------------------
+# Delirium (เดลิเรียม / Liquid Emotions)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/delirium
+# อัปเดต 2026-06 (26 รายการ)
+
+#--------------------------------
+# Tier A: 1+ Divine
+#--------------------------------
+# Concentrated Liquid Isolation 3.72d | Ancient Potent Liquid Melancholy 2.66d
+# Potent Liquid Contempt 2.3d | Concentrated Liquid Fear 1.71d | Concentrated Liquid Suffering 1.33d
+Show
+  BaseType "Concentrated Liquid Isolation" "Ancient Potent Liquid Melancholy" "Potent Liquid Contempt" "Concentrated Liquid Fear" "Concentrated Liquid Suffering"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 30-65 Exalted
+#--------------------------------
+# Ancient Concentrated Liquid Isolation 62.19ex | Potent Liquid Ferocity 55.69ex
+# Ancient Potent Liquid Contempt 49.81ex | Ancient Concentrated Liquid Fear 39.97ex
+# Liquid Despair 30.73ex
+Show
+  BaseType "Ancient Concentrated Liquid Isolation" "Potent Liquid Ferocity" "Ancient Potent Liquid Contempt" "Ancient Concentrated Liquid Fear" "Liquid Despair"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 10-30 Exalted
+#--------------------------------
+# Ancient Potent Liquid Ferocity 26.5ex | Ancient Concentrated Liquid Suffering 22.4ex
+# Ancient Liquid Despair 14.58ex
+Show
+  BaseType "Ancient Potent Liquid Ferocity" "Ancient Concentrated Liquid Suffering" "Ancient Liquid Despair"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 3-10 Exalted
+#--------------------------------
+# Liquid Disgust 9.75ex | Potent Liquid Melancholy 5.43ex
+# Liquid Paranoia 4.21ex | Liquid Envy 3.07ex
+Show
+  BaseType "Liquid Disgust" "Potent Liquid Melancholy" "Liquid Paranoia" "Liquid Envy"
+  SetFontSize 38
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 1 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier E: 1-3 Exalted
+#--------------------------------
+# Ancient Diluted Liquid Greed 2.75ex | Ancient Liquid Paranoia 2.34ex
+# Diluted Liquid Greed 2.34ex | Ancient Liquid Disgust 1.79ex
+Show
+  BaseType "Ancient Diluted Liquid Greed" "Ancient Liquid Paranoia" "Diluted Liquid Greed" "Ancient Liquid Disgust"
+  SetFontSize 35
+  SetTextColor 200 200 200
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 50
+
+#--------------------------------
+# Fallback: Liquid ทั่วไป (< 1ex + ใหม่ในอนาคต)
+#--------------------------------
+# Ancient Diluted Liquid Ire 0.97ex | Diluted Liquid Ire 0.72ex
+# Ancient Liquid Envy 0.7ex | Diluted Liquid Guilt 0.69ex | Ancient Diluted Liquid Guilt 0.37ex
+Show
+  BaseType "Liquid"
+  SetFontSize 30
+  SetTextColor 170 170 170
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 20

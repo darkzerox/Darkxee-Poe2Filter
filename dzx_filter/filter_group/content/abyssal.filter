@@ -1,0 +1,84 @@
+#------------------------------------------------------------------------------
+# Abyssal Bones (กระดูกอะบิสซอล)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/abyss
+# อัปเดต 2026-06 (15 รายการ)
+# หมายเหตุ: วาง abyssal.filter ก่อน currency.filter ใน filter_groups
+
+#--------------------------------
+# Tier A: 1+ Divine (Ancient Bones + Gaze)
+#--------------------------------
+# Ancient Collarbone 3.43d | Ancient Jawbone 3.23d | Amanamu's Gaze 1.64d
+Show
+  BaseType "Ancient Collarbone" "Ancient Jawbone" "Amanamu's Gaze"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 50+ Exalted
+#--------------------------------
+# Tecrod's Gaze 64.09ex | Ancient Rib 63.71ex
+Show
+  BaseType "Tecrod's Gaze" "Ancient Rib"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 15-30 Exalted
+#--------------------------------
+# Preserved Collarbone 29.14ex | Altered Collarbone 27.43ex | Ulaman's Gaze 14.97ex
+Show
+  BaseType "Preserved Collarbone" "Altered Collarbone" "Ulaman's Gaze"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 5-15 Exalted
+#--------------------------------
+# Preserved Cranium 8.85ex | Preserved Rib 7.4ex | Kurgal's Gaze 6.26ex
+Show
+  BaseType "Preserved Cranium" "Preserved Rib" "Kurgal's Gaze"
+  SetFontSize 38
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 1 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier E: 1-2 Exalted
+#--------------------------------
+# Preserved Jawbone 1.47ex | Gnawed Collarbone 1.17ex
+Show
+  BaseType "Preserved Jawbone" "Gnawed Collarbone"
+  SetFontSize 35
+  SetTextColor 200 200 200
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 50
+
+#--------------------------------
+# Fallback: Abyssal Bones ทั่วไป (< 1ex)
+#--------------------------------
+# Gnawed Jawbone 0.76ex | Gnawed Rib 0.58ex + รองรับ Bone ใหม่
+Show
+  BaseType "Gnawed" "Abyssal" "Collarbone" "Jawbone" "Cranium" "Rib" "Gaze"
+  SetFontSize 30
+  SetTextColor 170 170 170
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 20

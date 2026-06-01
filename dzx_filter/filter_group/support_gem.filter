@@ -1,0 +1,95 @@
+#------------------------------------------------------------------------------
+# Lineage Support Gems (เจมทักษะมีชื่อเฉพาะ)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/lineagesupportgems
+# อัปเดต 2026-06 (74 รายการ)
+
+#--------------------------------
+# Tier S: 40+ Divine
+#--------------------------------
+# Rakiata's Flow 89d | Garukhan's Resolve 83d | Uul-Netol's Embrace 56d
+Show
+  BaseType "Rakiata's Flow" "Garukhan's Resolve" "Uul-Netol's Embrace"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+
+#--------------------------------
+# Tier A: 15-42 Divine
+#--------------------------------
+# Rigwald's Ferocity 41d | Tul's Stillness 29d | Vorana's Siege 27d
+# Dialla's Desire 26d | Esh's Radiance 24d | Uhtred's Exodus 20d | Breachlord's Rift 16d
+Show
+  BaseType "Rigwald's Ferocity" "Tul's Stillness" "Vorana's Siege" "Dialla's Desire" "Esh's Radiance" "Uhtred's Exodus" "Breachlord's Rift"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 8-13 Divine
+#--------------------------------
+# Xoph's Pyre 12d | Uhtred's Augury 12d | Ailith's Chimes 11d | Tangmazu's Thurible 10d
+# Arbiter's Ignition 9d | Catha's Brilliance 9d | Olroth's Conviction 9d
+# Uhtred's Omen 8d | Breachlord's Amalgam 8d
+Show
+  BaseType "Xoph's Pyre" "Uhtred's Augury" "Ailith's Chimes" "Tangmazu's Thurible" "Arbiter's Ignition" "Catha's Brilliance" "Olroth's Conviction" "Uhtred's Omen" "Breachlord's Amalgam"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 1-8 Divine
+#--------------------------------
+# Brutus' Brain 5d | Tecrod's Revenge 5d | Ixchel's Torment 5d | Olroth's Hubris 5d
+# Trickster's Shard 4d | Zerphi's Infamy 3d | Seraph's Heart 3d
+# Atziri's Impatience 2d | Her Declaration 2d | Esh's Prowess 2d
+# Sione's Temper 2d | Khatal's Rejuvenation 2d | Atalui's Bloodletting 1d
+Show
+  BaseType "Brutus' Brain" "Tecrod's Revenge" "Ixchel's Torment" "Olroth's Hubris" "Trickster's Shard" "Zerphi's Infamy" "Seraph's Heart" "Atziri's Impatience" "Her Declaration" "Esh's Prowess" "Sione's Temper" "Khatal's Rejuvenation" "Atalui's Bloodletting"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 6-59 Exalted
+#--------------------------------
+# Uhtred's Rite 58ex | Hayoxi's Fulmination 41ex | Ahn's Citadel 36ex
+# Doedre's Undoing 27ex | Styrn's Ferocity 24ex | Mórrigan's Insight 24ex
+# Zarokh's Refrain 19ex | Amanamu's Tithe 18ex | Uhtred's Constellation 15ex
+# Vruun's Aftermath 13ex | Romira's Requital 12ex | Uruk's Smelting 10ex
+# Medved's Felling 10ex | Ratha's Assault 8ex | Oisín's Oath 7ex
+# Tul's Avalanche 6ex | Prototype Seventeen 6ex | Kaom's Madness 6ex
+Show
+  BaseType "Uhtred's Rite" "Hayoxi's Fulmination" "Ahn's Citadel" "Doedre's Undoing" "Styrn's Ferocity" "Mórrigan's Insight" "Zarokh's Refrain" "Amanamu's Tithe" "Uhtred's Constellation" "Vruun's Aftermath" "Romira's Requital" "Uruk's Smelting" "Medved's Felling" "Ratha's Assault" "Oisín's Oath" "Tul's Avalanche" "Prototype Seventeen" "Kaom's Madness"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Fallback: Support Gems ทั่วไป + รองรับเจมใหม่ในอนาคต
+#--------------------------------
+Show
+  Class == "Support Gems"
+  SetFontSize 32
+  SetTextColor 170 170 170
+  SetBorderColor 80 80 80

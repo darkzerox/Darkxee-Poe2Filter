@@ -1,0 +1,63 @@
+#------------------------------------------------------------------------------
+# Incursion (อินเคอร์ชั่น / Temple of Atzoatl)
+#------------------------------------------------------------------------------
+# ไอเทม Currency จากกลไก Alva / Temple of Atzoatl
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/incursion
+# อัปเดต 2026-06 (11 รายการ)
+
+#--------------------------------
+# Tier A: 10+ Divine
+#--------------------------------
+# Guatelitzi's Thesis 19.82d | Jiquani's Thesis 13.78d
+Show
+  BaseType "Guatelitzi's Thesis" "Jiquani's Thesis"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 1-4 Divine
+#--------------------------------
+# Quipolatl's Thesis 3.18d | Orb of Extraction 2.2d | Vaal Cultivation Orb 1.66d
+Show
+  BaseType "Quipolatl's Thesis" "Orb of Extraction" "Vaal Cultivation Orb"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 10-36 Exalted
+#--------------------------------
+# Crystallised Corruption 35.71ex | Citaqualotl's Thesis 30ex
+# Architect's Orb 27.17ex | Ancient Infuser 11.5ex
+Show
+  BaseType "Crystallised Corruption" "Citaqualotl's Thesis" "Architect's Orb" "Ancient Infuser"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: < 10 Exalted
+#--------------------------------
+# Core Destabiliser 7.9ex | Vaal Siphoner 2ex
+Show
+  BaseType "Core Destabiliser" "Vaal Siphoner"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100

@@ -1,0 +1,78 @@
+#------------------------------------------------------------------------------
+# Essences (เอสเซนซ์)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/essences
+# อัปเดต 2026-06 (82 รายการ — top 25 ระบุชัด, ที่เหลือใช้ fallback)
+
+#--------------------------------
+# Tier A: 1+ Divine
+#--------------------------------
+# Essence of Hysteria 1.41d
+Show
+  BaseType "Essence of Hysteria"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 10-17 Exalted
+#--------------------------------
+# Perfect Essence of Battle 16.14ex | Lesser Essence of Opulence 13.33ex | Essence of Horror 11.24ex
+Show
+  BaseType "Perfect Essence of Battle" "Lesser Essence of Opulence" "Essence of Horror"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 3-10 Exalted
+#--------------------------------
+# Greater Essence of Opulence 6.08ex | Greater Essence of Ruin 5.56ex
+# Greater Essence of Seeking 4.87ex | Perfect Essence of Sorcery 4.36ex
+# Essence of Abrasion 3.74ex | Essence of Opulence 3.69ex
+# Essence of Insanity 3.54ex | Essence of the Breach 3.06ex
+Show
+  BaseType "Greater Essence of Opulence" "Greater Essence of Ruin" "Greater Essence of Seeking" "Perfect Essence of Sorcery" "Essence of Abrasion" "Essence of Opulence" "Essence of Insanity" "Essence of the Breach"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 2-3 Exalted
+#--------------------------------
+# Greater Essence of Abrasion 2.73ex | Essence of Command 2.63ex | Essence of the Abyss 2.58ex
+# Greater Essence of Insulation 2.5ex | Essence of Enhancement 2.46ex | Essence of Delirium 2.45ex
+# Greater Essence of Thawing 2.44ex | Perfect Essence of Electricity 2.35ex
+# Lesser Essence of Haste 2.33ex | Greater Essence of Grounding 2.24ex
+# Perfect Essence of Haste 2.17ex | Lesser Essence of Abrasion 2ex | Essence of the Body 1.94ex
+Show
+  BaseType "Greater Essence of Abrasion" "Essence of Command" "Essence of the Abyss" "Greater Essence of Insulation" "Essence of Enhancement" "Essence of Delirium" "Greater Essence of Thawing" "Perfect Essence of Electricity" "Lesser Essence of Haste" "Greater Essence of Grounding" "Perfect Essence of Haste" "Lesser Essence of Abrasion" "Essence of the Body"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Fallback: Essences ทั้งหมด (< 2ex)
+#--------------------------------
+Show
+  BaseType "Essence"
+  SetFontSize 32
+  SetTextColor 200 180 255
+  SetBorderColor 60 40 80
+  PlayAlertSound 2 50

@@ -1,0 +1,68 @@
+#------------------------------------------------------------------------------
+# Unique Flasks & Charms (ขวดและเครื่องราง Unique)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/uniques/flask
+# อัปเดต 2026-06 (18 รายการ ครบทั้งหมด)
+
+#--------------------------------
+# Tier S: 15+ Divine
+#--------------------------------
+# Olroth's Resolve 37.37d | Rite of Passage 17.32d
+Show
+  Rarity Unique
+  BaseType "Ultimate Life Flask" "Golden Charm"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier A: 1-10 Divine
+#--------------------------------
+# Melting Maelstrom 5.34d | The Fall of the Axe 4.78d | Lavianga's Spirits 1.59d
+Show
+  Rarity Unique
+  BaseType "Ultimate Mana Flask" "Silver Charm" "Gargantuan Mana Flask"
+  SetFontSize 40
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier B: 2-30 Exalted
+#--------------------------------
+# Nascent Hope 25ex | For Utopia 8.63ex | Uhtred's Chalice 5.49ex | Forsaken Bangle 2ex
+Show
+  Rarity Unique
+  BaseType "Thawing Charm" "Stone Charm" "Transcendent Mana Flask" "Amethyst Charm"
+  SetFontSize 38
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 200
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Fallback: Unique Flasks/Charms ทั้งหมด
+#--------------------------------
+Show
+  Rarity Unique
+  Class "Flasks" "Charms"
+  SetFontSize 40
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 0
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100

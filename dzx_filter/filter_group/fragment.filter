@@ -1,0 +1,105 @@
+#------------------------------------------------------------------------------
+# Fragments (แฟรกเมนต์)
+#------------------------------------------------------------------------------
+# Map Fragments, Splinters และ Invitations
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/fragments
+# อัปเดต 2026-06 (13 รายการ)
+
+#--------------------------------
+# Tier S: 40+ Divine
+#--------------------------------
+# Azmeri Reliquary Key 44.31d
+Show
+  BaseType "Azmeri Reliquary Key"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+
+#--------------------------------
+# Tier A: 4-5 Divine
+#--------------------------------
+# Simulacrum 4.4d | Breachlord Sac 4.36d
+Show
+  BaseType "Simulacrum" "Breachlord Sac"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 1-3 Divine
+#--------------------------------
+# Weathered Crisis Fragment 2.04d | Ancient Crisis Fragment 1.85d
+Show
+  BaseType "Weathered Crisis Fragment" "Ancient Crisis Fragment"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: 30-40 Exalted (Delirium Fates + Crisis)
+#--------------------------------
+# Cowardly Fate 39.21ex | Victorious Fate 36.89ex
+# Faded Crisis Fragment 36.67ex | Deadly Fate 33.42ex
+Show
+  BaseType "Cowardly Fate" "Victorious Fate" "Faded Crisis Fragment" "Deadly Fate"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 5-20 Exalted
+#--------------------------------
+# Breachstone 17.15ex | Kulemak's Invitation 9.2ex
+Show
+  BaseType "Breachstone" "Kulemak's Invitation"
+  SetFontSize 38
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 1 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier E: Splinters (สะสมเพื่อรวมเป็น Fragment)
+#--------------------------------
+# Simulacrum Splinter 1.1ex (300 = Simulacrum 4.4d)
+Show
+  BaseType "Simulacrum Splinter"
+  SetFontSize 35
+  SetTextColor 218 145 255
+  SetBorderColor 50 2 68
+  PlayEffect White Temp
+  MinimapIcon 2 White Circle
+
+# Breach Splinter 0.03ex (สะสมเป็น Breachstone)
+Show
+  BaseType "Breach Splinter"
+  SetFontSize 32
+  SetTextColor 170 170 255
+  SetBorderColor 30 30 80
+
+#--------------------------------
+# Fallback: Map Fragments ทั่วไป
+#--------------------------------
+Show
+  Class "Map Fragments"
+  SetFontSize 32
+  SetTextColor 200 200 200
+  SetBorderColor 80 80 80

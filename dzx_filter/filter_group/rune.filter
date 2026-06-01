@@ -1,10 +1,19 @@
 #------------------------------------------------------------------------------
-# Rune
+# Rune (รูน)
 #------------------------------------------------------------------------------
+# รูนคือไอเทมสำหรับใส่ในช่อง Socket ของอุปกรณ์เพื่อเพิ่มคุณสมบัติต่างๆ
+# ฟิลเตอร์นี้จะแบ่งรูนออกเป็นระดับตามความหายากและความต้องการใช้งาน
 
-Show 
+#--------------------------------
+# Tier S: Highly Valuable Runes (รูนระดับสูงมาก)
+#--------------------------------
+# รูนระดับสูงที่มีคุณสมบัติยอดเยี่ยมและหายากมาก เช่น รูนธนู (Archery), รูนสถานะผิดปกติ (Cruelty), รูนล่าสัตว์ (Chase)
+# แสดงผลด้วยตัวอักษรสีฟ้าสว่าง ขอบสีฟ้า พื้นหลังน้ำเงินเข้ม (SetBackgroundColor 5 46 84)
+# ขนาดอักษร 40 (ขนาดใหญ่)
+# มีแสงสีแดงชี้ขึ้นฟ้าถาวร (PlayEffect Red) และไอคอนดาวสีแดงบนแผนที่ย่อ (MinimapIcon 0 Red Star)
+Show  
 	Class == "Augment"
-	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Fox Idol" "Hedgewitch Assandra's Rune of Wisdom" "Opiloti's Soul Core of Assault" "Rabbit Idol" "Soul Core of Azcapa" "Soul Core of Ticaba" "Idol of Ralakesh" "Idol of Sirrius"
+	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom"
 	SetFontSize 40
   SetTextColor 13 228 217
   SetBorderColor 42 250 233
@@ -12,33 +21,57 @@ Show
 	PlayEffect Red
 	MinimapIcon 0 Red Star
 
-
+#--------------------------------
+# Tier A: Valuable Runes (รูนระดับสูง)
+#--------------------------------
+# รูนหายากและมีประโยชน์สูง เช่น รูนเกราะ (Warding), รูนหลบหลีก (Grace), รูนสายฟ้า (Storm), และรูนระดับ Greater ต่างๆ
+# แสดงผลด้วยตัวอักษรสีฟ้าสว่าง ขอบสีฟ้า พื้นหลังน้ำเงินเข้ม (เหมือน Tier S)
+# ขนาดอักษร 35
+# มีแสงสีน้ำเงินชี้ขึ้นฟ้าถาวร (PlayEffect Blue) และไอคอนดาวสีน้ำเงินบนแผนที่ย่อ (MinimapIcon 0 Blue Star)
 Show # รูน เครื่องราง โซลคอร์  Tier S
 	Class == "Augment"
-	BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Xopec" "Tacati's Soul Core of Affliction" "Idol of Eeshta" "Idol of Egrin" "Idol of Grold" "Idol of Maxarius" "Idol of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation"
-	SetFontSize 45
+	BaseType == "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Greater Rune of Tithing" "Lady Hestra's Rune of Winter" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Greater Rune of Leadership" "Greater Rune of Alacrity" "Perfect Iron Rune"
+  SetFontSize 35
   SetTextColor 13 228 217
   SetBorderColor 42 250 233
   SetBackgroundColor 5 46 84
 	PlayEffect Blue
 	MinimapIcon 0 Blue Star
 
-
+#--------------------------------
+# Tier B: Common Utility Runes (รูนระดับกลาง)
+#--------------------------------
+# รูนระดับกลางสำหรับใช้งานทั่วไป รวมถึงรูนเกรดต่ำลงมาบางประเภท
+# แสดงผลด้วยตัวอักษรสีฟ้าสว่าง ขอบน้ำเงิน พื้นหลังน้ำเงินเข้ม
+# ขนาดอักษร 35
+# มีแสงสีเขียวชี้ขึ้นฟ้าถาวร (PlayEffect Green)
 Show
-  BaseType == "Atmohua's Soul Core of Retreat" "Cholotl's Soul Core of War" "Citaqualotl's Soul Core of Foulness" "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Estazunti's Soul Core of Convalescence" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Guatelitzi's Soul Core of Endurance" "Hayoxi's Soul Core of Heatproofing" "Lady Hestra's Rune of Winter" "Opiloti's Soul Core of Assault" "Ox Idol" "Quipolatl's Soul Core of Flow" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Soul Core of Atmohua" "Soul Core of Citaqualotl" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Tacati" "Soul Core of Xopec" "Soul Core of Zantipi" "Tacati's Soul Core of Affliction" "Idol of Eeshta" "Idol of Egrin" "Idol of Grold" "Idol of Maxarius" "Idol of Sirrius" "Idol of Thruldana" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Topotante's Soul Core of Dampening" "Tzamoto's Soul Core of Ferocity" "Uromoti's Soul Core of Attenuation" "Xipocado's Soul Core of Dominion" "Xopec's Soul Core of Power" "Zalatl's Soul Core of Insulation" "Lesser Resolve Rune"
+  BaseType == "Courtesan Mannan's Rune of Cruelty" "Craiceann's Rune of Recovery" "Craiceann's Rune of Warding" "Farrul's Rune of Grace" "Farrul's Rune of the Hunt" "Farrul's Rune of the Chase" "Fenumus' Rune of Agony" "Fenumus' Rune of Draining" "Fenumus' Rune of Spinning" "Lady Hestra's Rune of Winter" "Saqawal's Rune of Erosion" "Saqawal's Rune of Memory" "Saqawal's Rune of the Sky" "Thane Girt's Rune of Wildness" "Thane Grannell's Rune of Mastery" "Thane Leld's Rune of Spring" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Claws" "The Greatwolf's Rune of Willpower" "Lesser Resolve Rune"
   SetTextColor 13 228 217
   SetBorderColor 5 55 101
   SetBackgroundColor 5 46 84
   PlayEffect Green
   SetFontSize 35
 
-
+#--------------------------------
+# Tier C: Base / Common Runes (รูนพื้นฐาน)
+#--------------------------------
+# รูนระดับพื้นฐานที่หาได้ทั่วไป เช่น Greater Desert/Glacial/Iron และ Iron Rune ปกติ
+# แสดงผลด้วยตัวอักษรสีเขียวสว่าง
+# ขนาดอักษร 34
+# มีแสงสีเขียวชี้ขึ้นฟ้าถาวร (PlayEffect Green)
 Show
   BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Iron Rune" "Greater Rune of Alacrity" "Greater Rune of Leadership" "Greater Rune of Nobility" "Greater Rune of Tithing" "Greater Storm Rune" "Iron Rune"
   SetTextColor 30 233 148
   PlayEffect Green
   SetFontSize 34
 
+#--------------------------------
+# Fallback Runes (รูนทั่วไปอื่นๆ)
+#--------------------------------
+# กฎครอบคลุมสำหรับไอเทมที่มีคำว่า " Rune" ลงท้าย เพื่อไม่ให้พลาดรูนแบบอื่นที่ตกหล่น
+# แสดงผลด้วยตัวอักษรสีเขียวสว่าง ขนาดอักษร 32
+# มีแสงสีฟ้าชี้ขึ้นฟ้าชั่วคราว (PlayEffect Cyan Temp)
 Show 
   BaseType " Rune"
   SetTextColor 30 233 148
