@@ -40,10 +40,9 @@ class FilterBlockData:
     alert_sound_volume: Optional[int] = None
     conditions: Dict[str, str] = field(default_factory=dict)
     styles: Dict[str, str] = field(default_factory=lambda: {
-        'color': 'rgb(255 255 255)',  # Default white text
+        'color': 'rgb(255 255 255)',
         'border-color': 'rgb(120 120 120)',
-        'background-color': 'rgba(10, 10, 10, 0.9)', 
-        'font-size': '16px'
+        'background-color': 'rgba(10, 10, 10, 0.9)',
     })
     is_hidden: bool = False
     source_file: str = ""
@@ -179,14 +178,6 @@ class HTMLGenerator:
                     a_val = 0.9
                 block_data.styles['background-color'] = f'rgba({r} {g} {b} / {a_val:.2f})'
                 
-            elif keyword == 'SetFontSize' and len(parts) >= 2:
-                try:
-                    # Keep size proportional
-                    original_size = int(parts[1])
-                    block_data.styles['font-size'] = f'{original_size}px'
-                except ValueError:
-                    pass
-                    
             elif keyword == 'MinimapIcon' and len(parts) >= 4:
                 shape = parts[3]
                 block_data.minimap_icon = shape
@@ -783,7 +774,7 @@ h3 { font-size: clamp(0.9rem, 2vw, 1.15rem); }
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     font-family: 'Outfit', sans-serif;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 600;
     border-radius: 2px;
     cursor: pointer;
@@ -793,6 +784,8 @@ h3 { font-size: clamp(0.9rem, 2vw, 1.15rem); }
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
     white-space: nowrap;
     line-height: 1.4;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .poe-item:hover { transform: scale(1.06); box-shadow: 0 0 12px currentColor; z-index: 5; }
