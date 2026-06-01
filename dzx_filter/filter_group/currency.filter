@@ -74,16 +74,7 @@ Show
   MinimapIcon 1 Purple Circle
 
 Show
-  BaseType "Gold Key" "Silver Key" "Bronze Key"
-  SetTextColor 255 255 255
-  SetBorderColor  255 255 255
-  SetBackgroundColor 47 10 61
-  PlayEffect White
-  MinimapIcon 2 White Circle
-
-
-Show
-  BaseType "Ancient Collarbone"  "Omen of Light" "Ancient Jawbone" "Ancient Rib" 
+  BaseType "Ancient Collarbone" "Ancient Jawbone" "Ancient Rib" 
   SetFontSize 45
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -93,7 +84,7 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 Show
-  BaseType "Omen of Abyssal Echoes" "Preserved Cranium"
+  BaseType "Preserved Cranium"
   SetTextColor 218 145 255
   SetFontSize 45
   SetBorderColor 0 0 0
@@ -104,15 +95,7 @@ Show
 
 
 
-Show
-  Class "Omen"
-  SetTextColor 255 255 255
-  SetBorderColor  50 2 68
-  SetBackgroundColor 50 2 68
-  PlayEffect White
-  MinimapIcon 2 White Circle
-  SetFontSize 35
-  PlayAlertSound 2 0
+
 
 
 

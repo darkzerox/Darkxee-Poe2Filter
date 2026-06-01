@@ -1,0 +1,100 @@
+#------------------------------------------------------------------------------
+# Omen (โอเมน)
+#------------------------------------------------------------------------------
+# โอเมนเป็นไอเทมพิเศษที่จะส่งผลเมื่อเงื่อนไขเฉพาะสำเร็จในการทำ Ritual
+# จัดลำดับตามราคาตลาด ที่มา: poe2db.tw/us/Economy_Ritual + Economy_Abyss (อัปเดต 2026-06)
+
+#--------------------------------
+# Tier S: Divine-Level Omen (3.5+ Divine)
+#--------------------------------
+# Chance 17.3d | Dextral Erasure 5.43d | Sinistral Erasure 5.32d
+# Dextral Annulment 4.8d | Sinistral Annulment 3.52d
+Show
+  Class "Omen"
+  BaseType "Omen of Chance" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Sinistral Annulment"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
+
+#--------------------------------
+# Tier A: Very High Value (50+ Exalted)
+#--------------------------------
+# Whittling 96.6ex | Sanctification 60.5ex | Light 139ex [Abyss]
+Show
+  Class "Omen"
+  BaseType "Omen of Whittling" "Omen of Sanctification" "Omen of Light"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: High Value (10-50 Exalted)
+#--------------------------------
+# Dextral Crystallisation 20.4ex | The Blessed 13.8ex | Sinistral Crystallisation 9.76ex
+# Putrefaction 14.8ex | Sinistral Necromancy 14.2ex [Abyss]
+Show
+  Class "Omen"
+  BaseType "Omen of Dextral Crystallisation" "Omen of the Blessed" "Omen of Sinistral Crystallisation" "Omen of Putrefaction" "Omen of Sinistral Necromancy"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier C: Medium Value (3-10 Exalted)
+#--------------------------------
+# Secret Compartments 8.14ex | Amelioration 5.86ex | Catalysing Exaltation 5.28ex
+# The Hunt 4.64ex | Reinforcements 4.5ex | Dextral Exaltation 4.33ex
+# Greater Exaltation 4.18ex | Chaotic Quantity 3.03ex | Dextral Necromancy 5.54ex [Abyss]
+Show
+  Class "Omen"
+  BaseType "Omen of Secret Compartments" "Omen of Amelioration" "Omen of Catalysing Exaltation" "Omen of the Hunt" "Omen of Reinforcements" "Omen of Dextral Exaltation" "Omen of Greater Exaltation" "Omen of Chaotic Quantity" "Omen of Dextral Necromancy"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: Low Value (1-3 Exalted)
+#--------------------------------
+# Sinistral Exaltation 2.7ex | Bartering 2.57ex | The Ancients 2.4ex
+# Chaotic Rarity 2.21ex | Chaotic Monsters 1.61ex | Resurgence 1.34ex
+# Answered Prayers 1.24ex | Refreshment ~1ex | Gambling ~1ex
+# The Sovereign 1.73ex | The Blackblooded 1.66ex | The Liege ~1ex [Abyss]
+Show
+  Class "Omen"
+  BaseType "Omen of Sinistral Exaltation" "Omen of Bartering" "Omen of the Ancients" "Omen of Chaotic Rarity" "Omen of Chaotic Monsters" "Omen of Resurgence" "Omen of Answered Prayers" "Omen of Refreshment" "Omen of Gambling" "Omen of the Sovereign" "Omen of the Blackblooded" "Omen of the Liege"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Fallback Omen (โอเมนทั่วไป / โอเมนใหม่ในอนาคต)
+#--------------------------------
+Show
+  Class "Omen"
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  SetFontSize 35
+  PlayAlertSound 2 0

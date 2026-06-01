@@ -1,12 +1,94 @@
 #------------------------------------------------------------------------------
-# Soul Core
+# Soul Core (โซลคอร์)
 #------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/ultimatum
+# อัปเดต 2026-06 (30 รายการ)
 
-Show 
+#--------------------------------
+# Tier S: 1+ Divine
+#--------------------------------
+# Xopec's Soul Core of Power 4.1d | Soul Core of Quipolatl 2.78d | Opiloti's Soul Core of Assault 1.23d
+Show
+  BaseType "Xopec's Soul Core of Power" "Soul Core of Quipolatl" "Opiloti's Soul Core of Assault"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier A: 30-51 Exalted
+#--------------------------------
+# Tzamoto's Soul Core of Ferocity 50.74ex | Soul Core of Azcapa 46.16ex
+# Quipolatl's Soul Core of Flow 40.47ex | Guatelitzi's Soul Core of Endurance 32.14ex
+# Estazunti's Soul Core of Convalescence 29.53ex
+Show
+  BaseType "Tzamoto's Soul Core of Ferocity" "Soul Core of Azcapa" "Quipolatl's Soul Core of Flow" "Guatelitzi's Soul Core of Endurance" "Estazunti's Soul Core of Convalescence"
+  SetFontSize 42
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 10-17 Exalted
+#--------------------------------
+# Soul Core of Tacati 16.45ex | Soul Core of Zantipi 13.47ex
+# Xipocado's Soul Core of Dominion 11.37ex | Atmohua's Soul Core of Retreat 9.89ex
+Show
+  BaseType "Soul Core of Tacati" "Soul Core of Zantipi" "Xipocado's Soul Core of Dominion" "Atmohua's Soul Core of Retreat"
+  SetFontSize 40
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+  PlayEffect Blue
+  MinimapIcon 0 Blue Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier C: 4-9 Exalted
+#--------------------------------
+# Soul Core of Jiquani 8.49ex | Tacati's Soul Core of Affliction 7.5ex
+# Soul Core of Zalatl 7.14ex | Soul Core of Citaqualotl 7.09ex | Soul Core of Cholotl 6.73ex
+# Soul Core of Ticaba 6.47ex | Zalatl's Soul Core of Insulation 4.75ex
+# Soul Core of Topotante 4.66ex | Soul Core of Opiloti 4.47ex | Soul Core of Xopec 4.46ex
+# Topotante's Soul Core of Dampening 4.36ex | Soul Core of Atmohua 4.29ex
+# Soul Core of Puhuarte 4.28ex | Soul Core of Tzamoto 4.04ex
+Show
+  BaseType "Soul Core of Jiquani" "Tacati's Soul Core of Affliction" "Soul Core of Zalatl" "Soul Core of Citaqualotl" "Soul Core of Cholotl" "Soul Core of Ticaba" "Zalatl's Soul Core of Insulation" "Soul Core of Topotante" "Soul Core of Opiloti" "Soul Core of Xopec" "Topotante's Soul Core of Dampening" "Soul Core of Atmohua" "Soul Core of Puhuarte" "Soul Core of Tzamoto"
+  SetFontSize 35
+  SetTextColor 13 228 217
+  SetBorderColor 5 55 101
+  SetBackgroundColor 5 46 84
+  PlayEffect Green
+  MinimapIcon 1 Green Circle
+
+#--------------------------------
+# Tier D: 1-4 Exalted
+#--------------------------------
+# Citaqualotl's Soul Core of Foulness 3.22ex | Hayoxi's Soul Core of Heatproofing 2.24ex
+# Cholotl's Soul Core of War 1.56ex | Uromoti's Soul Core of Attenuation 1.33ex
+Show
+  BaseType "Citaqualotl's Soul Core of Foulness" "Hayoxi's Soul Core of Heatproofing" "Cholotl's Soul Core of War" "Uromoti's Soul Core of Attenuation"
+  SetFontSize 32
+  SetTextColor 13 228 217
+  SetBorderColor 5 55 101
+  SetBackgroundColor 5 46 84
+  PlayEffect Cyan Temp
+  MinimapIcon 2 Cyan Circle
+
+#--------------------------------
+# Fallback: Soul Core ใหม่ในอนาคต
+#--------------------------------
+Show
   BaseType "Soul Core"
   SetTextColor 128 136 54
   SetBorderColor 128 136 54
-  SetFontSize 45
+  SetFontSize 40
   MinimapIcon 0 Cyan Diamond
   PlayAlertSound 2 200
   PlayEffect Cyan

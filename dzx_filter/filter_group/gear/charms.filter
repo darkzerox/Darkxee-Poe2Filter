@@ -1,0 +1,66 @@
+#------------------------------------------------------------------------------
+# Charms (เครื่องรางเวทมนตร์)
+#------------------------------------------------------------------------------
+# เครื่องรางมอบความสามารถติดตัวเพิ่มเติมให้กับตัวละครเมื่อสวมใส่ในช่องเฉพาะ
+# ฟิลเตอร์นี้จะคัดกรองเครื่องรางเวทมนตร์แบ่งเป็นระดับตามมูลค่า
+
+#--------------------------------
+# Tier S: Highly Valuable Charms (เครื่องรางระดับสูงมาก)
+#--------------------------------
+# เครื่องรางคุณภาพสูงสุดที่มีผลคุณสมบัติหายากมาก เช่น Astrid's / Cadigan's / Serle's
+# แสดงผลด้วยตัวอักษรสีฟ้าสว่าง ขอบสีฟ้า พื้นหลังน้ำเงินเข้ม (SetBackgroundColor 5 46 84)
+# ขนาดอักษร 40 (ขนาดใหญ่)
+# มีแสงสีแดงชี้ขึ้นฟ้าถาวร (PlayEffect Red) และไอคอนดาวสีแดงบนแผนที่ย่อ (MinimapIcon 0 Red Star)
+Show
+  Class "Augment"
+  BaseType "Astrid's Creativity" "Cadigan's Epiphany" "Serle's Triumph"
+  SetFontSize 40
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+#--------------------------------
+# Tier A: Valuable Charms (เครื่องรางระดับสูง)
+#--------------------------------
+# เครื่องรางหายากที่มีประโยชน์สูง เช่น Breath of Aldur, Medved's Tending, Kolr's Hunt
+# แสดงผลด้วยตัวอักษรสีฟ้าสว่าง ขอบสีฟ้า พื้นหลังน้ำเงินเข้ม (เหมือน Tier S)
+# ขนาดอักษร 35
+# มีแสงสีน้ำเงินชี้ขึ้นฟ้าถาวร (PlayEffect Blue) และไอคอนดาวสีน้ำเงินบนแผนที่ย่อ (MinimapIcon 0 Blue Star)
+Show
+  Class "Augment"
+  BaseType "Breath of Aldur" "Medved's Tending" "Kolr's Hunt"
+  SetFontSize 35
+  SetTextColor 13 228 217
+  SetBorderColor 42 250 233
+  SetBackgroundColor 5 46 84
+  PlayEffect Blue
+  MinimapIcon 0 Blue Star
+
+#--------------------------------
+# Existing General Charm Rules (กฎการกรองเครื่องรางทั่วไป)
+#--------------------------------
+
+# ซ่อนเครื่องรางทั่วไปที่เลเวลไอเทมต่ำกว่า 80 (เมื่อเลเวลพื้นที่ตั้งแต่ 60 ขึ้นไป) เพื่อจัดระเบียบหน้าจอในการฟาร์มช่วงท้ายเกม
+Hide
+  Class == "Charms"
+  Rarity Normal Magic
+  ItemLevel <= 80
+  AreaLevel >= 60
+
+# แสดงเครื่องรางทั่วไปคุณภาพสูง (Quality >= 18) หรือมีเลเวลไอเทมสูง (ItemLevel >= 82)
+# ตัวหนังสือสีเขียวตองอ่อน ขอบเขียวตองอ่อน พื้นหลังเขียวเข้ม (SetBackgroundColor 49 81 30) ขนาดอักษร 32
+# แสงสีเขียว (PlayEffect Green) และไอคอนดาวสีเขียวบนแผนที่ย่อ (MinimapIcon 1 Green Star)
+Show
+  Class == "Charms"
+  Quality >= 18
+  ItemLevel >= 82
+  AreaLevel >= 65
+  SetFontSize 32
+  SetTextColor 133 159 61
+  SetBorderColor 133 159 61
+  SetBackgroundColor 49 81 30
+  PlayAlertSound 3 200
+  PlayEffect Green
+  MinimapIcon 1 Green Star

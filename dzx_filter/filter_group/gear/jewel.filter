@@ -1,0 +1,59 @@
+#------------------------------------------------------------------------------
+# Jewel (เจเวล / อัญมณี)
+#------------------------------------------------------------------------------
+# เจเวลเป็นไอเทมสวมใส่เพื่อเพิ่ม passive stats ให้กับตัวละครในตาราง Passive Skill Tree
+# การเรียงลำดับกฎ: กฎเฉพาะเจาะจงต้องอยู่ด้านบน ส่วนกฎทั่วไป (Fallback) ต้องอยู่ด้านล่างสุด
+
+#--------------------------------
+# Premium/Special Jewels (เจเวลหายากพิเศษ)
+#--------------------------------
+
+# เจเวลจำกัดเวลา (Time-Lost Emerald, Ruby, Sapphire)
+# อัตราการตกต่ำและมีคุณค่าสูงมาก
+# แสดงผลด้วยตัวหนังสือสีเขียวพาสเทล ขอบเขียวพาสเทล บนพื้นหลังสีเขียวเข้มมาก (SetBackgroundColor 0 75 30)
+# ขนาดอักษร 42 (ขนาดใหญ่)
+# ส่งเสียงเตือนระดับ 3 ความดังระดับสูงสุด (300)
+# มีแสงสีน้ำเงินชี้ขึ้นฟ้าถาวร (PlayEffect Blue) และไอคอนเพชรสีน้ำเงินบนแผนที่ย่อ (MinimapIcon 0 Blue Diamond)
+Show 
+	Rarity Normal Magic Rare
+	BaseType == "Time-Lost Emerald" "Time-Lost Ruby" "Time-Lost Sapphire"
+	SetFontSize 42
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+	SetBackgroundColor 0 75 30 255
+	PlayAlertSound 3 300
+	PlayEffect Blue
+	MinimapIcon 0 Blue Diamond
+
+# เจเวลไร้กาลเวลา (Timeless Jewel)
+# แสดงผลด้วยตัวหนังสือสีเขียวพาสเทล ขอบเขียวพาสเทล
+# ขนาดอักษร 45 (ขนาดใหญ่ที่สุด) เพื่อสังเกตง่าย
+# ส่งเสียงเตือนระดับ 2 ปริมาณความดังสูงสุด
+# มีแสงสีฟ้าชี้ขึ้นฟ้าถาวร (PlayEffect Cyan) และไอคอนเพชรสีฟ้าบนแผนที่ย่อ (MinimapIcon 0 Cyan Diamond)
+Show 
+  BaseType "Timeless"
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 45
+  MinimapIcon 0 Cyan Diamond
+  PlayAlertSound 2 200
+  PlayEffect Cyan
+
+#--------------------------------
+# General Jewels Fallback (เจเวลทั่วไป)
+#--------------------------------
+# กฎครอบคลุมสำหรับเจเวลระดับทั่วไป (Normal, Magic, Rare) ทั้งหมด
+# แสดงผลด้วยตัวหนังสือสีเขียวพาสเทล ขอบเขียวพาสเทล
+# ขนาดอักษร 32
+# แสงสีฟ้า (PlayEffect Cyan), ไอคอนเพชรสีฟ้าบนแผนที่ย่อ (MinimapIcon 1 Cyan Diamond)
+# ส่งเสียงเตือนระดับ 2 และเสียงพิเศษ (jewel.mp3)
+Show
+  Class "Jewel"
+  Rarity Normal Magic Rare
+  SetTextColor 121 215 190
+  SetBorderColor 121 215 190
+  SetFontSize 32
+  MinimapIcon 1 Cyan Diamond
+  PlayEffect Cyan
+  PlayAlertSound 2 200
+  CustomAlertSound "dzx_filter/soundeffect/type-01/jewel.mp3" 100

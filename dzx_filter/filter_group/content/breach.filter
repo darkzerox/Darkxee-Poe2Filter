@@ -1,0 +1,76 @@
+#------------------------------------------------------------------------------
+# Breach (บรีช / Catalysts)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/breach
+# อัปเดต 2026-06 (24 รายการ)
+# หมายเหตุ: วาง breach.filter ก่อน currency.filter ใน filter_groups
+
+#--------------------------------
+# Tier A: 10+ Exalted
+#--------------------------------
+# Reaver Catalyst 16.02ex | Refined Reaver Catalyst 10ex
+Show
+  BaseType "Reaver Catalyst" "Refined Reaver Catalyst"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 5-10 Exalted
+#--------------------------------
+# Refined Chayula's Catalyst 8.33ex | Tul's Catalyst 8.3ex | Esh's Catalyst 6.32ex
+# Refined Sibilant Catalyst 6ex | Xoph's Catalyst 5.76ex | Refined Carapace Catalyst 5.68ex
+Show
+  BaseType "Refined Chayula's Catalyst" "Tul's Catalyst" "Esh's Catalyst" "Refined Sibilant Catalyst" "Xoph's Catalyst" "Refined Carapace Catalyst"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier C: 3-5 Exalted
+#--------------------------------
+# Chayula's Catalyst 3.78ex | Refined Xoph's Catalyst 3.56ex | Uul-Netol's Catalyst 3.48ex
+# Sibilant Catalyst 3.26ex | Refined Esh's Catalyst 3.08ex
+Show
+  BaseType "Chayula's Catalyst" "Refined Xoph's Catalyst" "Uul-Netol's Catalyst" "Sibilant Catalyst" "Refined Esh's Catalyst"
+  SetFontSize 38
+  SetTextColor 218 145 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 1-3 Exalted
+#--------------------------------
+# Neural 2.81ex | Adaptive 2.64ex | Carapace 2.07ex | Refined Tul's 2ex
+# Refined Uul-Netol's 2ex | Flesh 1.96ex | Refined Flesh 1.7ex
+# Skittering 1.66ex | Refined Adaptive 1.43ex | Refined Skittering 1ex
+Show
+  BaseType "Neural Catalyst" "Adaptive Catalyst" "Carapace Catalyst" "Refined Tul's Catalyst" "Refined Uul-Netol's Catalyst" "Flesh Catalyst" "Refined Flesh Catalyst" "Skittering Catalyst" "Refined Adaptive Catalyst" "Refined Skittering Catalyst"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+
+#--------------------------------
+# Fallback: Catalyst ทั่วไป + ใหม่ในอนาคต (< 1ex)
+#--------------------------------
+# Refined Neural Catalyst 0.83ex + รองรับ Catalyst ใหม่
+Show
+  BaseType "Catalyst"
+  SetFontSize 32
+  SetTextColor 170 170 170
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 30

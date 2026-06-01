@@ -65,7 +65,7 @@ def get_default_config() -> Dict:
                 "scroll_of_wisdom.filter", "salvage.filter", "amulets.filter", "belts.filter", 
                 "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", 
                 "talisman.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
-                "charms.filter", "currency.filter", "olroths_legacy.filter", "rarity_unique.filter", 
+                "charms.filter", "omen.filter", "currency.filter", "olroths_legacy.filter", "rarity_unique.filter", 
                 "rarity_rare.filter", "rarity_magic.filter"
             ],
             "BREACH_GROUP": [
@@ -73,12 +73,13 @@ def get_default_config() -> Dict:
                 "jewel.filter", "ring.filter", "map_breach.filter", "uncut_gems.filter", 
                 "scroll_of_wisdom.filter", "salvage.filter", "belts.filter", "key.filter", 
                 "relics.filter", "rune.filter", "talisman.filter", "soul_core.filter", 
-                "waystones.filter", "flasks.filter", "charms.filter", "currency.filter", 
+                "waystones.filter", "flasks.filter", "charms.filter", "omen.filter", "currency.filter", 
                 "olroths_legacy.filter", "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
             ],
             "TEMPLE_GROUP": [
                 "map_temple.filter",
                 "mirror_tier.filter",
+                "omen.filter",
                 "currency.filter"
             ]
         },
@@ -213,7 +214,7 @@ def prepare_directories():
         print("   ✅ Copied soundeffect to dist/filter/")
         
     # Copy web assets to dist/web/dzx_filter
-    web_assets = ["images", "fonts"]
+    web_assets = ["images", "fonts", "soundeffect"]
     for asset in web_assets:
         src = project_root / "dzx_filter" / asset
         if src.exists():

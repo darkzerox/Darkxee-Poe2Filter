@@ -1,0 +1,100 @@
+#------------------------------------------------------------------------------
+# Expedition (เอ็กซ์พีดิชั่น / Coinage & Artifacts)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/currencies/expedition
+# อัปเดต 2026-06 (32 รายการ)
+
+#--------------------------------
+# Tier S: 7+ Divine
+#--------------------------------
+# Carved Majesty 10d | Emergent Possibility 7d
+Show
+  BaseType "Carved Majesty" "Emergent Possibility"
+  SetFontSize 45
+  SetTextColor 232 231 171
+  SetBorderColor 232 37 97
+  SetBackgroundColor 232 37 97
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier A: 2-5 Divine
+#--------------------------------
+# Aldur's Saga 4.81d | Perfect Flux 3.55d | Emergent Vigour 2.94d
+# Emergent Instinct 2.53d | Carved Mischief 2.5d | Thaumaturgic Flux (Level 20) 2.02d
+Show
+  BaseType "Aldur's Saga" "Perfect Flux" "Emergent Vigour" "Emergent Instinct" "Carved Mischief" "Thaumaturgic Flux (Level 20)"
+  SetFontSize 42
+  SetTextColor 232 231 171
+  SetBorderColor 255 193 48
+  SetBackgroundColor 30 58 51
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
+
+#--------------------------------
+# Tier B: 1-2 Divine
+#--------------------------------
+# Carved Cunning 1.87d | Carved Tenacity 1.33d | Emergent Protection 1.26d
+Show
+  BaseType "Carved Cunning" "Carved Tenacity" "Emergent Protection"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier C: 30-57 Exalted
+#--------------------------------
+# Thaumaturgic Flux (Level 8) 56.53ex | Expedition Logbook 39.94ex
+Show
+  BaseType "Thaumaturgic Flux (Level 8)" "Expedition Logbook"
+  SetFontSize 40
+  SetTextColor 218 145 255
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 1 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier D: 3-10 Exalted
+#--------------------------------
+# Olroth's Saga 7.21ex | Void Flux 7.21ex | Vorana's Saga 4.06ex
+# Chilling Flux 4.01ex | Blazing Flux 3.53ex | Thaumaturgic Flux (Level 19) 3.21ex | Crackling Flux 3.1ex
+Show
+  BaseType "Olroth's Saga" "Void Flux" "Vorana's Saga" "Chilling Flux" "Blazing Flux" "Thaumaturgic Flux (Level 19)" "Crackling Flux"
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
+  PlayEffect White
+  MinimapIcon 2 White Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
+
+#--------------------------------
+# Tier E: 1-2 Exalted
+#--------------------------------
+# TF (Level 14) 1.91ex | Uhtred's Saga 1.77ex | Medved's Saga 1.41ex
+# TF (Level 9,11,17,18) ~1ex
+Show
+  BaseType "Thaumaturgic Flux (Level 14)" "Uhtred's Saga" "Medved's Saga" "Thaumaturgic Flux (Level 9)" "Thaumaturgic Flux (Level 11)" "Thaumaturgic Flux (Level 17)" "Thaumaturgic Flux (Level 18)"
+  SetFontSize 32
+  SetTextColor 200 200 200
+  SetBorderColor 80 80 80
+  PlayAlertSound 2 50
+
+#--------------------------------
+# Fallback: Expedition items ทั่วไป (< 1ex + อนาคต)
+#--------------------------------
+# TF (Level 10,12,13,15,16) ~0.7-1ex + รองรับ items ใหม่
+Show
+  BaseType "Thaumaturgic Flux" "Expedition Logbook" "Saga" "Flux" "Carved" "Emergent"
+  SetFontSize 30
+  SetTextColor 170 170 170
+  SetBorderColor 60 60 60
+  PlayAlertSound 2 30

@@ -1,0 +1,68 @@
+#------------------------------------------------------------------------------
+# Unique Maps / Precursor Tablets (แผนที่ Unique)
+#------------------------------------------------------------------------------
+# จัดลำดับตามราคาตลาด ที่มา: poe2scout.com/poe2/runes/economy/uniques/map
+# อัปเดต 2026-06 (9 รายการ ครบทั้งหมด)
+
+#--------------------------------
+# Tier A: 1+ Divine
+#--------------------------------
+# Visions of Paradise 6.27d | The Grand Project 4.42d
+Show
+  Rarity Unique
+  BaseType "Irradiated Tablet"
+  SetFontSize 45
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier B: 30-50 Exalted
+#--------------------------------
+# Unforeseen Consequences 49ex | Cruel Hegemony 30ex
+Show
+  Rarity Unique
+  BaseType "Abyss Tablet" "Overseer Tablet"
+  SetFontSize 40
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 200
+  PlayEffect Red Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Tier C: 1-10 Exalted
+#--------------------------------
+# Freedom of Faith 7ex | Season of the Hunt 2.15ex | Wraeclast Besieged 1.44ex | Mastered Domain 1.1ex
+Show
+  Rarity Unique
+  BaseType "Ritual Tablet" "Overseer Tablet" "Breach Tablet" "Irradiated Tablet"
+  SetFontSize 38
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 100
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#--------------------------------
+# Fallback: Unique Maps/Tablets ทั้งหมด
+#--------------------------------
+Show
+  Rarity Unique
+  Class "Tablet"
+  SetFontSize 40
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayAlertSound 3 0
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
