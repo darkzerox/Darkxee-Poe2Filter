@@ -56,13 +56,22 @@ Show
 # Refined Uul-Netol's 2ex | Flesh 1.96ex | Refined Flesh 1.7ex
 # Skittering 1.66ex | Refined Adaptive 1.43ex | Refined Skittering 1ex
 Show
-  BaseType "Neural Catalyst" "Adaptive Catalyst" "Carapace Catalyst" "Refined Tul's Catalyst" "Refined Uul-Netol's Catalyst" "Flesh Catalyst" "Refined Flesh Catalyst" "Skittering Catalyst" "Refined Adaptive Catalyst" "Refined Skittering Catalyst"
+  BaseType "Neural Catalyst" "Adaptive Catalyst" "Carapace Catalyst" "Refined Tul's Catalyst" "Refined Uul-Netol's Catalyst" "Flesh Catalyst" "Refined Flesh Catalyst" "Skittering Catalyst" "Refined Adaptive Catalyst" "Refined Skittering Catalyst" 
   SetFontSize 35
   SetTextColor 255 255 255
   SetBorderColor 50 2 68
   SetBackgroundColor 50 2 68
   PlayEffect White
   MinimapIcon 2 White Circle
+
+Show
+  Class == "Wombgifts"
+  SetFontSize 38
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
 
 #--------------------------------
 # Fallback: Catalyst ทั่วไป + ใหม่ในอนาคต (< 1ex)
