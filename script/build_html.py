@@ -482,31 +482,40 @@ class HTMLGenerator:
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Outfit:wght@300;400;500;600;700&display=swap');
 
-* {
+*, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #060608;
-    background-image: 
+    background-image:
         radial-gradient(circle at 50% 0%, rgba(139, 92, 26, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 10% 50%, rgba(10, 80, 150, 0.08) 0%, transparent 40%),
         radial-gradient(circle at 90% 80%, rgba(120, 20, 180, 0.08) 0%, transparent 40%);
     background-attachment: fixed;
     color: #e2e8f0;
     line-height: 1.6;
-    padding: 30px 15px;
+    padding: 20px 12px;
+}
+
+@media (max-width: 480px) {
+    body { padding: 10px 8px; }
 }
 
 .container {
     max-width: 1400px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 20px auto;
     background: rgba(14, 16, 22, 0.75);
     border-radius: 12px;
-    padding: 30px;
+    padding: clamp(14px, 3vw, 30px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
     border: 1px solid rgba(212, 175, 55, 0.15);
     backdrop-filter: blur(10px);
@@ -517,9 +526,7 @@ body {
 .container::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 3px;
     background: linear-gradient(90deg, transparent, #d4af37, transparent);
 }
@@ -532,54 +539,55 @@ h1, h2, h3 {
 
 h1 {
     font-family: 'Cinzel Decorative', serif;
-    font-size: 2.6rem;
+    font-size: clamp(1.3rem, 4.5vw, 2.5rem);
     color: #e5c158;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: clamp(0.5px, 0.4vw, 2px);
     margin-bottom: 5px;
     text-shadow: 0px 4px 15px rgba(229, 193, 88, 0.4);
+    line-height: 1.3;
+}
+
+h2 { font-size: clamp(1rem, 2.5vw, 1.4rem); margin-bottom: 8px; }
+h3 { font-size: clamp(0.9rem, 2vw, 1.15rem); }
+
+.header-logo {
+    max-width: min(560px, 88vw);
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    display: block;
+    margin: 0 auto;
 }
 
 .sub-title {
     text-align: center;
     color: #a0aec0;
-    font-size: 1.1rem;
-    margin-bottom: 25px;
+    font-size: clamp(0.82rem, 2vw, 1.05rem);
+    margin-bottom: 18px;
+    padding: 0 8px;
 }
 
-.badges {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-}
+.badges { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+.badges img { height: 20px; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5)); }
 
-.badges img {
-    height: 20px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
-}
-
-/* Download Cards */
 .download-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 16px;
     text-align: center;
 }
 
-@media(max-width: 768px) {
-    .download-section {
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 600px) {
+    .download-section { grid-template-columns: 1fr; gap: 12px; }
 }
 
 .download-card {
     background: rgba(22, 26, 36, 0.6);
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 8px;
-    padding: 20px;
-    transition: all 0.3s ease;
+    padding: clamp(12px, 2.5vw, 20px);
+    transition: border-color 0.3s, background 0.3s, transform 0.3s;
 }
 
 .download-card:hover {
@@ -588,21 +596,23 @@ h1 {
     transform: translateY(-2px);
 }
 
+.download-card p { color: #a0aec0; font-size: clamp(0.78rem, 1.5vw, 0.9rem); margin-top: 5px; }
+
 .download-button {
     display: inline-block;
-    padding: 14px 28px;
+    padding: clamp(9px, 1.5vw, 14px) clamp(14px, 2.5vw, 28px);
     background: linear-gradient(135deg, #c5a043 0%, #917122 100%);
     color: #060608;
     text-decoration: none;
     border-radius: 4px;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 0.95rem;
-    letter-spacing: 1px;
+    font-size: clamp(0.72rem, 1.4vw, 0.9rem);
+    letter-spacing: 0.8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(197, 160, 67, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 15px;
+    margin-top: 12px;
 }
 
 .download-button:hover {
@@ -612,79 +622,125 @@ h1 {
     color: #000;
 }
 
-/* Interactive Ground Preview */
+.ground-control-panel { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+.search-wrapper { width: 100%; }
+
+#item-search {
+    width: 100%;
+    padding: 10px 14px;
+    background: rgba(10, 12, 16, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #fff;
+    font-family: inherit;
+    font-size: clamp(0.85rem, 1.5vw, 0.95rem);
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#item-search:focus { border-color: #e5c158; outline: none; box-shadow: 0 0 8px rgba(229, 193, 88, 0.2); }
+#item-search::placeholder { color: #718096; }
+
+/* Tabs: horizontal scroll on mobile, wrap on desktop */
+.tabs-container {
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(212, 175, 55, 0.3) transparent;
+}
+
+@media (min-width: 1024px) {
+    .tabs-container { flex-wrap: wrap; overflow-x: visible; padding-bottom: 0; }
+}
+
+.tab-btn {
+    flex-shrink: 0;
+    padding: clamp(5px, 0.9vw, 8px) clamp(9px, 1.4vw, 13px);
+    background: rgba(22, 26, 36, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #a0aec0;
+    border-radius: 4px;
+    font-size: clamp(0.72rem, 1.2vw, 0.83rem);
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.tab-btn:hover { color: #fff; border-color: rgba(255,255,255,0.2); }
+.tab-btn.active { background: rgba(229, 193, 88, 0.15); border-color: #e5c158; color: #e5c158; }
+
 .game-ground-container {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     background-color: #090b0e;
-    background-image: 
+    background-image:
         radial-gradient(rgba(255,255,255,0.03) 1px, transparent 0),
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8));
     background-size: 24px 24px, 100%;
     border-radius: 8px;
-    padding: 25px;
-    min-height: 450px;
+    padding: clamp(12px, 2.5vw, 22px);
+    min-height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 0 40px rgba(0,0,0,0.9);
     position: relative;
 }
 
-@media(max-width: 992px) {
-    .game-ground-container {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+    .game-ground-container { flex-direction: column; gap: 10px; min-height: unset; }
 }
 
 .radar-map-wrapper {
-    flex: 0 0 220px;
+    flex: 0 0 auto;
+    width: 185px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: rgba(10, 12, 17, 0.85);
     border-radius: 6px;
-    padding: 15px;
+    padding: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     align-self: flex-start;
 }
 
-.radar-title {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #e5c158;
-    margin-bottom: 12px;
-    font-weight: 600;
+@media (max-width: 768px) {
+    .radar-map-wrapper { width: 100%; flex-direction: row; justify-content: center; gap: 14px; align-items: center; }
 }
 
+.radar-title { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: #e5c158; margin-bottom: 10px; font-weight: 600; }
+@media (max-width: 768px) { .radar-title { margin-bottom: 0; } }
+
 .radar-disc {
-    width: 170px;
-    height: 170px;
+    width: 145px;
+    height: 145px;
     border-radius: 50%;
     background-color: rgba(5, 10, 15, 0.8);
     border: 2px solid rgba(74, 158, 255, 0.3);
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(74, 158, 255, 0.1);
+    flex-shrink: 0;
 }
+
+@media (max-width: 480px) { .radar-disc { width: 100px; height: 100px; } }
 
 .radar-crosshair {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: 
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background:
         linear-gradient(to right, transparent 49.5%, rgba(74,158,255,0.15) 50%, transparent 50.5%),
         linear-gradient(to bottom, transparent 49.5%, rgba(74,158,255,0.15) 50%, transparent 50.5%);
 }
 
 .radar-ping {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 14px;
-    height: 14px;
+    width: 14px; height: 14px;
     border-radius: 50%;
     display: none;
     font-size: 14px;
@@ -693,14 +749,11 @@ h1 {
     font-weight: bold;
 }
 
-.radar-ping.active {
-    display: block;
-    animation: radarPulse 1.2s infinite;
-}
+.radar-ping.active { display: block; animation: radarPulse 1.2s infinite; }
 
 @keyframes radarPulse {
-    0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
-    50% { box-shadow: 0 0 15px currentColor; }
+    0%   { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+    50%  { box-shadow: 0 0 15px currentColor; }
     100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
 }
 
@@ -709,99 +762,28 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    gap: 10px;
+    gap: 7px;
     position: relative;
-    max-height: 550px;
+    max-height: 480px;
     overflow-y: auto;
-    padding-right: 5px;
+    padding-right: 4px;
 }
 
-/* Custom Scrollbar for ground and tables */
-::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-}
-::-webkit-scrollbar-track {
-    background: rgba(0,0,0,0.3);
-}
-::-webkit-scrollbar-thumb {
-    background: rgba(212, 175, 55, 0.3);
-    border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(212, 175, 55, 0.6);
-}
+@media (max-width: 768px) { .loot-ground { max-height: 320px; } }
 
-.ground-control-panel {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-}
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: rgba(0,0,0,0.3); }
+::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.3); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(212, 175, 55, 0.6); }
 
-.search-wrapper {
-    flex: 1;
-    min-width: 250px;
-}
-
-#item-search {
-    width: 100%;
-    padding: 10px 15px;
-    background: rgba(10, 12, 16, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    color: #fff;
-    font-family: inherit;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-}
-
-#item-search:focus {
-    border-color: #e5c158;
-    outline: none;
-    box-shadow: 0 0 8px rgba(229, 193, 88, 0.2);
-}
-
-.tabs-container {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-}
-
-.tab-btn {
-    padding: 8px 14px;
-    background: rgba(22, 26, 36, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: #a0aec0;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.tab-btn:hover {
-    color: #fff;
-    border-color: rgba(255,255,255,0.2);
-}
-
-.tab-btn.active {
-    background: rgba(229, 193, 88, 0.15);
-    border-color: #e5c158;
-    color: #e5c158;
-}
-
-/* POE Drop Label Styling */
 .poe-item {
     display: inline-block;
-    padding: 4px 10px;
+    padding: 3px 9px;
     border: 1px solid #7f7f7f;
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     font-family: 'Outfit', sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
     border-radius: 2px;
     cursor: pointer;
@@ -810,21 +792,14 @@ h1 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
     white-space: nowrap;
+    line-height: 1.4;
 }
 
-.poe-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px currentColor;
-    z-index: 5;
-}
+.poe-item:hover { transform: scale(1.06); box-shadow: 0 0 12px currentColor; z-index: 5; }
 
-/* Play Effect Beams Mockup */
 .beam-layer {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
     pointer-events: none;
     overflow: hidden;
     z-index: 1;
@@ -843,25 +818,25 @@ h1 {
 }
 
 @keyframes beamFade {
-    0% { height: 0%; opacity: 1; }
-    50% { height: 100%; opacity: 0.8; }
+    0%   { height: 0%;   opacity: 1; }
+    50%  { height: 100%; opacity: 0.8; }
     100% { height: 100%; opacity: 0; }
 }
 
-/* Table rules preview */
 .table-wrapper {
     overflow-x: auto;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 6px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .category-header {
-    margin-top: 35px;
-    margin-bottom: 10px;
+    margin-top: 28px;
+    margin-bottom: 8px;
     padding-bottom: 5px;
     border-bottom: 1px solid rgba(212, 175, 55, 0.25);
-    font-size: 1.25rem;
+    font-size: clamp(0.95rem, 2vw, 1.2rem);
     color: #e5c158;
 }
 
@@ -869,7 +844,8 @@ h1 {
     width: 100%;
     border-collapse: collapse;
     background-color: rgba(10, 12, 16, 0.6);
-    font-size: 0.9rem;
+    font-size: clamp(0.76rem, 1.4vw, 0.88rem);
+    min-width: 580px;
 }
 
 .filter-table th {
@@ -877,101 +853,81 @@ h1 {
     color: #a0aec0;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 0.75rem;
-    letter-spacing: 1px;
-    padding: 12px 15px;
+    font-size: 0.68rem;
+    letter-spacing: 0.8px;
+    padding: 9px 11px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
+    white-space: nowrap;
 }
 
-.filter-table td {
-    padding: 10px 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
-    text-align: center;
-    color: #cbd5e0;
-}
+.filter-table td { padding: 7px 11px; border-bottom: 1px solid rgba(255, 255, 255, 0.03); text-align: center; color: #cbd5e0; }
+.filter-table tr:hover { background-color: rgba(255, 255, 255, 0.02); }
+.filter-table td.basetype-cell { text-align: left; font-family: monospace; font-size: 0.8rem; color: #e2e8f0; }
+.effects-cell { display: flex; justify-content: center; gap: 6px; font-size: 0.95rem; }
 
-.filter-table tr:hover {
-    background-color: rgba(255, 255, 255, 0.02);
-}
+.minimap-indicator { font-size: 0.95rem; text-shadow: 0 0 5px currentColor; }
+.beam-indicator    { font-size: 1.1rem; font-weight: bold; text-shadow: 0 0 5px currentColor; }
+.sound-indicator   { font-size: 0.85rem; opacity: 0.8; }
 
-.filter-table td.basetype-cell {
-    text-align: left;
-    font-family: monospace;
-    color: #e2e8f0;
-}
-
-.effects-cell {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    font-size: 1.1rem;
-}
-
-/* Indicators */
-.minimap-indicator {
-    font-size: 1rem;
-    text-shadow: 0 0 5px currentColor;
-}
-
-.beam-indicator {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-shadow: 0 0 5px currentColor;
-}
-
-.sound-indicator {
-    font-size: 0.9rem;
-    opacity: 0.8;
-}
-
-/* Minimap / Beam color variables */
-.minimap-color-red, .beam-color-red { color: #f56565; }
-.minimap-color-green, .beam-color-green { color: #48bb78; }
-.minimap-color-blue, .beam-color-blue { color: #4299e1; }
-.minimap-color-brown, .beam-color-brown { color: #b7791f; }
-.minimap-color-white, .beam-color-white { color: #ffffff; }
+.minimap-color-red,    .beam-color-red    { color: #f56565; }
+.minimap-color-green,  .beam-color-green  { color: #48bb78; }
+.minimap-color-blue,   .beam-color-blue   { color: #4299e1; }
+.minimap-color-brown,  .beam-color-brown  { color: #b7791f; }
+.minimap-color-white,  .beam-color-white  { color: #ffffff; }
 .minimap-color-yellow, .beam-color-yellow { color: #ecc94b; }
-.minimap-color-cyan, .beam-color-cyan { color: #38b2ac; }
-.minimap-color-grey, .beam-color-grey { color: #a0aec0; }
+.minimap-color-cyan,   .beam-color-cyan   { color: #38b2ac; }
+.minimap-color-grey,   .beam-color-grey   { color: #a0aec0; }
 .minimap-color-orange, .beam-color-orange { color: #ed8936; }
-.minimap-color-pink, .beam-color-pink { color: #ed64a6; }
+.minimap-color-pink,   .beam-color-pink   { color: #ed64a6; }
 .minimap-color-purple, .beam-color-purple { color: #9f7aea; }
 
-/* Animate Drop Entrance */
 @keyframes tagDrop {
-    0% { opacity: 0; transform: scale(0.6) translateY(-15px); }
+    0%   { opacity: 0; transform: scale(0.6) translateY(-12px); }
     100% { opacity: 1; transform: scale(1) translateY(0); }
 }
-
-.animate-drop {
-    animation: tagDrop 0.25s ease-out both;
-}
+.animate-drop { animation: tagDrop 0.22s ease-out both; }
 
 .version-tag {
     display: inline-block;
-    padding: 2px 8px;
+    padding: 2px 7px;
     background: rgba(229, 193, 88, 0.15);
     border: 1px solid #e5c158;
     color: #e5c158;
     border-radius: 3px;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     vertical-align: middle;
-    margin-left: 10px;
+    margin-left: 8px;
     font-family: monospace;
 }
 
 pre {
     background-color: rgba(5, 7, 10, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 15px;
+    padding: clamp(10px, 2vw, 15px);
     border-radius: 4px;
     overflow-x: auto;
     font-family: monospace;
     color: #48bb78;
-    font-size: 0.85rem;
-    margin-top: 15px;
+    font-size: clamp(0.72rem, 1.3vw, 0.84rem);
+    margin-top: 14px;
+    -webkit-overflow-scrolling: touch;
 }
+
+.dev-tip {
+    border-left: 4px solid #e5c158;
+    padding: clamp(10px, 2vw, 15px);
+    margin: 18px 0;
+    background: rgba(229, 193, 88, 0.05);
+    border-radius: 0 4px 4px 0;
+    font-size: clamp(0.82rem, 1.4vw, 0.92rem);
+    line-height: 1.6;
+}
+
+.site-footer { text-align: center; margin: 36px 0 14px; color: #718096; font-size: clamp(0.78rem, 1.4vw, 0.88rem); }
+.site-footer a { color: #e5c158; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; }
+.site-footer .copyright { font-size: clamp(0.68rem, 1.2vw, 0.78rem); margin-top: 4px; opacity: 0.6; }
 '''
         with open(css_path, 'w', encoding='utf-8') as f:
             f.write(main_css_content)
@@ -1271,13 +1227,11 @@ document.addEventListener('DOMContentLoaded', () => {
 <body>
     <div class="container">
         <div align="center">
-            <picture>
-                <img alt="DZX Poe2 Filter Logo" 
-                     src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png" 
-                     width="600" style="max-width: 100%; border-radius: 6px; box-shadow: 0 4px 20px rgba(0,0,0,0.6);">
-            </picture>
+            <img alt="DZX Poe2 Filter Logo"
+                 src="https://raw.githubusercontent.com/darkzerox/Darkxee-Poe2Filter/refs/heads/master/dzx_filter/images/dzx-poe2-filter-logo.png"
+                 class="header-logo">
 
-            <h1 style="margin-top: 15px;">DZX Poe2 Filter <span class="version-tag" id="repo-version">{version}</span></h1>
+            <h1 style="margin-top: 12px;">DZX Poe2 Filter <span class="version-tag" id="repo-version">{version}</span></h1>
             <div class="sub-title">🎯 Advanced Item Filter for Path of Exile 2 (รองรับ PC และ PS5)</div>
 
             <div class="badges">
@@ -1298,15 +1252,15 @@ document.addEventListener('DOMContentLoaded', () => {
     <div class="container download-section">
         <div class="download-card">
             <h3>💻 PC (Steam / Client)</h3>
-            <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 5px;">ฟิลเตอร์แบบรวมไฟล์เสียงและเอฟเฟกต์ สำหรับเครื่องคอมพิวเตอร์</p>
+            <p>ฟิลเตอร์แบบรวมไฟล์เสียงและเอฟเฟกต์ สำหรับเครื่องคอมพิวเตอร์</p>
             <a href="https://github.com/darkzerox/Darkxee-Poe2Filter/releases/latest" class="download-button">
                 Download Latest Release (.zip)
             </a>
         </div>
         <div class="download-card">
             <h3>🎮 Console (PS5 / Xbox)</h3>
-            <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 5px;">ซิงค์โดยตรงกับบัญชี Path of Exile ผ่านเว็บบอร์ดหลักเพื่อใช้งานบนคอนโซล</p>
-            <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button" target="_blank">  
+            <p>ซิงค์โดยตรงกับบัญชี Path of Exile ผ่านเว็บบอร์ดหลักเพื่อใช้งานบนคอนโซล</p>
+            <a href="https://www.pathofexile.com/account/view-profile/Darkxee-3892/item-filters" class="download-button" target="_blank">
                 Follow on Path of Exile website
             </a>
         </div>
@@ -1320,7 +1274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Raw Rules Section -->
     <div class="container">
         <h2>📋 Detailed Filter Rules (โครงสร้างและสไตล์ไฟล์ดิบ)</h2>
-        <p style="color: #aaa; font-size: 0.95rem; margin-bottom: 20px;">
+        <p style="color: #a0aec0; font-size: clamp(0.82rem, 1.5vw, 0.95rem); margin-bottom: 16px;">
            ตารางแสดงผลสไตล์และกฎทั้งหมดของฟิลเตอร์ โดยแยกตามหัวข้อไฟล์ .filter ต่างๆ ในการใช้งาน
         </p>
         {''.join(tables_html)}
@@ -1329,7 +1283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     <!-- Developer Section -->
     <div class="container">
         <h2>🛠️ Developer Guide & Compilation</h2>
-        <p style="color: #cbd5e0;">สามารถดาวน์โหลด/โคลนคลังโค้ดเพื่อแก้ไข ปรับแต่งเสียง หรือแต่งสไตล์ของฟิลเตอร์เองได้ตามต้องการ</p>
+        <p style="color: #a0aec0; font-size: clamp(0.85rem, 1.5vw, 0.95rem);">สามารถดาวน์โหลด/โคลนคลังโค้ดเพื่อแก้ไข ปรับแต่งเสียง หรือแต่งสไตล์ของฟิลเตอร์เองได้ตามต้องการ</p>
         
         <pre><code># 1. โคลนคลังโค้ดลงเครื่อง
 git clone https://github.com/darkzerox/Darkxee-Poe2Filter.git
@@ -1341,15 +1295,15 @@ python script/start_build.py
 # 3. ไฟล์เอาต์พุตที่คอมไพล์แล้วจะอยู่ในโฟลเดอร์ dist/
 # สคริปต์จะคัดลอกไฟล์ตรงไปยังโฟลเดอร์ของเกม Path of Exile 2 ให้อัตโนมัติ (หากตั้งค่าไว้ใน config.json)</code></pre>
         
-        <div style="border-left: 4px solid #e5c158; padding: 15px; margin: 20px 0; background: rgba(229, 193, 88, 0.05); border-radius: 0 4px 4px 0;">
-            💡 <strong>Tip สำหรับนักพัฒนา:</strong> สามารถเข้าปปรับแต่งคีย์ไอเทมหรือแยก Tier ของไอเทมได้ง่ายๆ ผ่านโฟลเดอร์ <code>dzx_filter/filter_group</code> แล้วสั่งรันสคริปต์บิลด์ซ้ำอีกครั้ง
+        <div class="dev-tip">
+            💡 <strong>Tip สำหรับนักพัฒนา:</strong> ปรับแต่งคีย์ไอเทมหรือแยก Tier ได้ง่ายๆ ผ่านโฟลเดอร์ <code>dzx_filter/filter_group</code> (แยก subdirectory: content/, gear/, unique/) แล้วสั่งรันสคริปต์บิลด์ซ้ำอีกครั้ง
         </div>
     </div>
 
     <!-- Footer -->
-    <div style="text-align: center; margin: 50px 0 20px 0; color: #718096; font-size: 0.9rem;">
-        <p>Made with ⚔️ by <a href="https://github.com/darkzerox" style="color: #e5c158; text-decoration: none;">Darkxee</a> for the Path of Exile 2 Community</p>
-        <p style="font-size: 0.8rem; margin-top: 5px; opacity: 0.6;">This is a fan-made project. Path of Exile is a trademark of Grinding Gear Games.</p>
+    <div class="site-footer">
+        <p>Made with ⚔️ by <a href="https://github.com/darkzerox">Darkxee</a> for the Path of Exile 2 Community</p>
+        <p class="copyright">This is a fan-made project. Path of Exile is a trademark of Grinding Gear Games.</p>
     </div>
 
     <!-- Scripts -->
