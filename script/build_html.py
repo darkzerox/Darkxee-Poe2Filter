@@ -783,7 +783,7 @@ h3 { font-size: clamp(0.9rem, 2vw, 1.15rem); }
     background-color: rgba(0, 0, 0, 0.9);
     color: #fff;
     font-family: 'Outfit', sans-serif;
-    font-size: 13px;
+    font-size: 24px;
     font-weight: 600;
     border-radius: 2px;
     cursor: pointer;
@@ -793,6 +793,8 @@ h3 { font-size: clamp(0.9rem, 2vw, 1.15rem); }
     text-shadow: 1px 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000;
     white-space: nowrap;
     line-height: 1.4;
+    max-width: 300px;
+    overflow: hidden;
 }
 
 .poe-item:hover { transform: scale(1.06); box-shadow: 0 0 12px currentColor; z-index: 5; }
