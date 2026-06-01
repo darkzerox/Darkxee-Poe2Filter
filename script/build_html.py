@@ -40,10 +40,9 @@ class FilterBlockData:
     alert_sound_volume: Optional[int] = None
     conditions: Dict[str, str] = field(default_factory=dict)
     styles: Dict[str, str] = field(default_factory=lambda: {
-        'color': 'rgb(255 255 255)',  # Default white text
+        'color': 'rgb(255 255 255)',
         'border-color': 'rgb(120 120 120)',
-        'background-color': 'rgba(10, 10, 10, 0.9)', 
-        'font-size': '16px'
+        'background-color': 'rgba(10, 10, 10, 0.9)',
     })
     is_hidden: bool = False
     source_file: str = ""
@@ -179,14 +178,6 @@ class HTMLGenerator:
                     a_val = 0.9
                 block_data.styles['background-color'] = f'rgba({r} {g} {b} / {a_val:.2f})'
                 
-            elif keyword == 'SetFontSize' and len(parts) >= 2:
-                try:
-                    # Keep size proportional
-                    original_size = int(parts[1])
-                    block_data.styles['font-size'] = f'{original_size}px'
-                except ValueError:
-                    pass
-                    
             elif keyword == 'MinimapIcon' and len(parts) >= 4:
                 shape = parts[3]
                 block_data.minimap_icon = shape
