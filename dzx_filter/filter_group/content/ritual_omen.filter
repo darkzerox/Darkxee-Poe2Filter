@@ -11,7 +11,7 @@
 # Dextral Annulment 4.8d | Sinistral Annulment 3.52d
 Show
   Class "Omen"
-  BaseType "Omen of Chance" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Sinistral Annulment"
+  BaseType "Omen of Chance" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Dextral Annulment" "Omen of Sinistral Annulment" "Raven-Touched Shard"
   SetFontSize 45
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -26,7 +26,7 @@ Show
 # Whittling 96.6ex | Sanctification 60.5ex | Light 139ex [Abyss]
 Show
   Class "Omen"
-  BaseType "Omen of Whittling" "Omen of Sanctification" "Omen of Light"
+  BaseType "Omen of Whittling" "Omen of Sanctification" "Omen of Light"  "Omen of Abyssal Echoes"
   SetFontSize 45
   SetTextColor 232 231 171
   SetBorderColor 232 37 97

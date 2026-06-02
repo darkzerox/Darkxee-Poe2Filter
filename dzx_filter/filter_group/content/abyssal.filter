@@ -10,7 +10,7 @@
 #--------------------------------
 # Ancient Collarbone 3.43d | Ancient Jawbone 3.23d | Amanamu's Gaze 1.64d
 Show
-  BaseType "Ancient Collarbone" "Ancient Jawbone" "Amanamu's Gaze"
+  BaseType "Ancient Collarbone" "Ancient Jawbone" "Amanamu's Gaze" "Omen of Abyssal Echoes" "Omen of Light"
   SetFontSize 45
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
