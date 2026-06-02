@@ -13,7 +13,7 @@
 # มีแสงสีแดงชี้ขึ้นฟ้าถาวร (PlayEffect Red) และไอคอนดาวสีแดงบนแผนที่ย่อ (MinimapIcon 0 Red Star)
 Show  
 	Class == "Augment"
-	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom"
+	BaseType == "Countess Seske's Rune of Archery" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom" "Astrid's Creativity" "Cadigan's Epiphany" "Perfect Glacial Rune" "Greater Rune of Alacrity" "Perfect Iron Rune" "Perfect Storm Rune" "Perfect Inspiration Rune" "Perfect Ward Rune" "Perfect Robust Rune" "Perfect Resolve Rune" "Perfect Desert Rune" "Serle's Triumph" "Greater Rune of Leadership" "Cadigan's Epiphany"
 	SetFontSize 40
   SetTextColor 13 228 217
   SetBorderColor 42 250 233
@@ -61,7 +61,7 @@ Show
 # ขนาดอักษร 34
 # มีแสงสีเขียวชี้ขึ้นฟ้าถาวร (PlayEffect Green)
 Show
-  BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Iron Rune" "Greater Rune of Alacrity" "Greater Rune of Leadership" "Greater Rune of Nobility" "Greater Rune of Tithing" "Greater Storm Rune" "Iron Rune"
+  BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Iron Rune" "Greater Rune of Alacrity" "Greater Rune of Leadership" "Greater Rune of Nobility" "Greater Rune of Tithing" "Greater Storm Rune" "Iron Rune" 
   SetTextColor 30 233 148
   PlayEffect Green
   SetFontSize 34
@@ -73,7 +73,14 @@ Show
 # แสดงผลด้วยตัวอักษรสีเขียวสว่าง ขนาดอักษร 32
 # มีแสงสีฟ้าชี้ขึ้นฟ้าชั่วคราว (PlayEffect Cyan Temp)
 Show 
-  BaseType " Rune"
+  BaseType " Rune" "Runic Extraction" 
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
   SetFontSize 32
+
+Show 
+  Class ==  "Augment"
+  SetTextColor 30 233 148
+  PlayEffect Cyan Temp
+  SetFontSize 32
+
