@@ -101,5 +101,5 @@ Show
 Show
   Class "Map Fragments"
   SetFontSize 32
-  SetTextColor 200 200 200
-  SetBorderColor 80 80 80
+  SetTextColor 170 170 255
+  SetBorderColor 30 30 80
