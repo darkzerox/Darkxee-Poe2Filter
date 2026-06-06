@@ -67,7 +67,7 @@ Show
 # Fallback: Verisium/Vaal items ทั่วไป (< 1ex + ใหม่ในอนาคต)
 #--------------------------------
 Show
-  BaseType "Alloy" "Starlit Ore" "Crest" "Verisium"
+  BaseType "Alloy" "Starlit Ore"  "Verisium"
   SetFontSize 30
   SetTextColor 170 170 170
   SetBorderColor 60 60 60

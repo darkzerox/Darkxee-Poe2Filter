@@ -93,8 +93,8 @@
       "soul_core.filter",
       "waystones.filter",
       "fragment.filter",
-      "salvage.filter",
       "uncut_gems.filter",
+      "support_gem.filter",
       "crafting.filter",
       "currency.filter",
       "content/idol.filter",
@@ -123,7 +123,8 @@
       "gear/charms.filter",
       "gear/rarity_unique.filter",
       "gear/rarity_rare.filter",
-      "gear/rarity_magic.filter"
+      "gear/rarity_magic.filter",
+      "salvage.filter"
     ],
     "TEMPLE_GROUP": [
       "map_temple.filter",

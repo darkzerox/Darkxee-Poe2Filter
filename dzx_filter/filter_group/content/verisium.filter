@@ -68,7 +68,7 @@ Show
 #--------------------------------
 # Expansive Alloy 0.85ex | Adaptive Alloy 0.82ex | Medved's Crest 0.7ex | Verisium 0ex
 Show
-  BaseType "Alloy" "Starlit Ore" "Crest" "Verisium"
+  BaseType "Alloy" "Starlit Ore"  "Verisium"
   SetFontSize 30
   SetTextColor 170 170 170
   SetBorderColor 60 60 60

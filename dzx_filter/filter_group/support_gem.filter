@@ -90,6 +90,7 @@ Show
 #--------------------------------
 Show
   Class == "Support Gems"
-  SetFontSize 32
-  SetTextColor 170 170 170
-  SetBorderColor 80 80 80
+  SetFontSize 35
+  SetTextColor 255 255 255 255
+  SetBorderColor 117 183 76 255
+  SetBackgroundColor 9 88 10 255

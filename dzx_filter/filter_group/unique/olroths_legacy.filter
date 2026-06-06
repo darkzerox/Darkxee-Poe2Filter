@@ -7,8 +7,8 @@ Show
   BaseType == "Aberrant Sledge" "Acrid Wand" "Ashen Staff" "Attuned Wand" "Blacksteel Tower Shield" "Blazon Crest Shield" "Brimmed Helm" "Changeling Talisman" "Cowled Helm" "Crucible Tower Shield" "Doubled Gauntlets" "Elite Greathelm" "Felled Greatclub" "Full Plate" "Fur Plate" "Gothic Quarterstaff" "Guarded Helm" "Hunter Hood" "Iron Cuirass" "Ironhead Spear" "Kalguuran Forgehammer" "Laced Boots" "Leather Buckler" "Leather Vest" "Leatherbound Hood" "Lizardscale Boots" "Mail Sabatons" "Oak Greathammer" "Painted Tower Shield" "Pathfinder Coat" "Plated Buckler" "Quilted Vest" "Revered Vestments" "Rhoahide Coat" "Rough Greaves" "Rusted Cuirass" "Rusted Greathelm" "Shielded Helm" "Shortbow" "Sigil Crest Shield" "Siphoning Wand" "Soldier Greathelm" "Sombre Gloves" "Spiked Club" "Spiritbone Crown" "Splintered Tower Shield" "Stacked Sabatons" "Studded Greatclub" "Suede Bracers" "Torment Club" "Trimmed Greaves" "Twig Circlet" "Vagabond Armour" "Warden Bow" "Wooden Club" "Wrapped Quarterstaff" "Wrapped Sandals"
   SetFontSize 34
   SetTextColor 238 238 238
-  SetBorderColor 6 64 166 255
-  SetBackgroundColor 6 64 166 255
+  SetBorderColor 174 91 8 255
+  SetBackgroundColor 174 91 8 255
   PlayAlertSound 9 200
   PlayEffect Red
   MinimapIcon 0 Red Star
