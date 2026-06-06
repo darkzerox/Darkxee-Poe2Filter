@@ -5,9 +5,8 @@
 Show
   Class "Currency"
   SetFontSize 32
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   PlayAlertSound 2 100
-
+  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
   Continue
 
 
@@ -20,7 +19,7 @@ Show
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/mirror.mp3" 100
-  PlayAlertSound 10 200
+ 
 
 Show
   BaseType "Divine Orb" 
@@ -31,7 +30,7 @@ Show
   PlayEffect Red
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/dy-orb.mp3" 130
-  PlayAlertSound 10 200
+ 
 
 
 Show
