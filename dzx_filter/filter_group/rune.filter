@@ -64,7 +64,7 @@ Show
   BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Iron Rune" "Greater Rune of Alacrity" "Greater Rune of Leadership" "Greater Rune of Nobility" "Greater Rune of Tithing" "Greater Storm Rune" "Iron Rune" 
   SetTextColor 30 233 148
   PlayEffect Green
-  SetFontSize 34
+  SetFontSize 35
 
 #--------------------------------
 # Fallback Runes (รูนทั่วไปอื่นๆ)
@@ -76,11 +76,11 @@ Show
   BaseType " Rune" "Runic Extraction" 
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
-  SetFontSize 32
+  SetFontSize 34
 
 Show 
   Class ==  "Augment"
   SetTextColor 30 233 148
   PlayEffect Cyan Temp
-  SetFontSize 32
+  SetFontSize 34
 
