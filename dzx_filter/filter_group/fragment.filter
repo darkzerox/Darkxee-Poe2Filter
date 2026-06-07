@@ -68,7 +68,7 @@ Show
 # Breachstone 17.15ex | Kulemak's Invitation 9.2ex
 Show
   BaseType "Breachstone" "Kulemak's Invitation"
-  SetFontSize 38
+  SetFontSize 40
   SetTextColor 255 255 255
   SetBorderColor 50 2 68
   SetBackgroundColor 50 2 68
@@ -82,7 +82,7 @@ Show
 # Simulacrum Splinter 1.1ex (300 = Simulacrum 4.4d)
 Show
   BaseType "Simulacrum Splinter"
-  SetFontSize 35
+  SetFontSize 40
   SetTextColor 218 145 255
   SetBorderColor 50 2 68
   PlayEffect White Temp
@@ -91,7 +91,7 @@ Show
 # Breach Splinter 0.03ex (สะสมเป็น Breachstone)
 Show
   BaseType "Breach Splinter"
-  SetFontSize 32
+  SetFontSize 40
   SetTextColor 170 170 255
   SetBorderColor 30 30 80
 
@@ -100,6 +100,6 @@ Show
 #--------------------------------
 Show
   Class "Map Fragments"
-  SetFontSize 32
+  SetFontSize 40
   SetTextColor 170 170 255
   SetBorderColor 30 30 80

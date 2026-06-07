@@ -83,9 +83,10 @@ Show
 # TF (Level 9,11,17,18) ~1ex
 Show
   BaseType "Thaumaturgic Flux (Level 14)" "Uhtred's Saga" "Medved's Saga" "Thaumaturgic Flux (Level 9)" "Thaumaturgic Flux (Level 11)" "Thaumaturgic Flux (Level 17)" "Thaumaturgic Flux (Level 18)"
-  SetFontSize 32
-  SetTextColor 200 200 200
-  SetBorderColor 80 80 80
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
   PlayAlertSound 2 50
 
 #--------------------------------

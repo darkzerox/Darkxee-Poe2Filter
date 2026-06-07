@@ -108,14 +108,14 @@ Show
 
 # Currency Tier B: Regal, Vaal ...
 Show
-  BaseType "Gemcutter's Prism" "Vaal Orb" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
+  BaseType "Gemcutter's Prism" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
   SetTextColor 255 255 255
   SetBorderColor  255 255 255
   SetBackgroundColor 47 10 61
   MinimapIcon 2 White Circle
  
 Show
-  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter"
+  BaseType "Simulacrum Splinter" "Breach Splinter" "Runic Splinter" "Vaal Orb" 
   SetTextColor 182 73 0
   SetBackgroundColor 0 0 0
   PlayEffect Brown
