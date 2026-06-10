@@ -19,6 +19,27 @@ Show
   MinimapIcon 0 Red Star
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
+
+Show 
+	BaseType == "Essence of the Abyss" "Perfect Essence of Abrasion" "Perfect Essence of Alacrity" "Perfect Essence of Command" "Perfect Essence of Electricity" "Perfect Essence of Enhancement" "Perfect Essence of Flames" "Perfect Essence of Grounding" "Perfect Essence of Haste" "Perfect Essence of Ice" "Perfect Essence of Insulation" "Perfect Essence of Opulence" "Perfect Essence of Ruin" "Perfect Essence of Seeking" "Perfect Essence of Sorcery" "Perfect Essence of Thawing" "Perfect Essence of the Body" "Perfect Essence of the Infinite" "Perfect Essence of the Mind"
+	SetFontSize 45
+  SetTextColor 170 70 201
+  SetBorderColor 170 70 201
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
+  CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 
+
+Show 
+	Class "Currency"
+	BaseType == "Essence of Delirium" "Essence of Horror" "Essence of Hysteria" "Essence of Insanity" "Perfect Essence of Battle"
+	SetFontSize 38
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+  PlayEffect Purple
+  MinimapIcon 2 Purple Circle
+
 #--------------------------------
 # Tier B: 30-65 Exalted
 #--------------------------------
@@ -73,9 +94,22 @@ Show
 Show
   BaseType "Ancient Diluted Liquid Greed" "Ancient Liquid Paranoia" "Diluted Liquid Greed" "Ancient Liquid Disgust"
   SetFontSize 35
-  SetTextColor 200 200 200
-  SetBorderColor 60 60 60
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
   PlayAlertSound 2 50
+
+
+
+
+Show
+	Class "Currency"
+  BaseType   "Catalyst" "Essence of"
+	SetFontSize 38
+  SetTextColor 170 70 201
+  SetBorderColor 0 0 0
+  SetBackgroundColor 0 0 0
+
 
 #--------------------------------
 # Fallback: Liquid ทั่วไป (< 1ex + ใหม่ในอนาคต)
@@ -84,7 +118,8 @@ Show
 # Ancient Liquid Envy 0.7ex | Diluted Liquid Guilt 0.69ex | Ancient Diluted Liquid Guilt 0.37ex
 Show
   BaseType "Liquid"
-  SetFontSize 30
-  SetTextColor 170 170 170
-  SetBorderColor 60 60 60
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
   PlayAlertSound 2 20

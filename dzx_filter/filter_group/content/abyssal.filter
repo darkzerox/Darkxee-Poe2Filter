@@ -68,8 +68,9 @@ Show
 Show
   BaseType "Preserved Jawbone" "Gnawed Collarbone"
   SetFontSize 35
-  SetTextColor 200 200 200
-  SetBorderColor 60 60 60
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
   PlayAlertSound 2 50
 
 #--------------------------------
@@ -78,7 +79,8 @@ Show
 # Gnawed Jawbone 0.76ex | Gnawed Rib 0.58ex + รองรับ Bone ใหม่
 Show
   BaseType "Gnawed" "Abyssal" "Collarbone" "Jawbone" "Cranium" "Rib" "Gaze"
-  SetFontSize 30
-  SetTextColor 170 170 170
-  SetBorderColor 60 60 60
+  SetFontSize 35
+  SetTextColor 255 255 255
+  SetBorderColor 50 2 68
+  SetBackgroundColor 50 2 68
   PlayAlertSound 2 20
