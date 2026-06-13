@@ -52,35 +52,31 @@
       "enabled": true
     },
     {
-      "name": "dzx-poe2-temple",
-      "description": "Optimized for Temple ",
-      "group": "TEMPLE_GROUP",
-      "sound_type": "type-01",
-      "platforms": [
-        "pc",
-        "ps5"
-      ],
-      "no_hide_variant": false,
-      "enabled": true
-    }
-  ],
-  "special_variants": [
-    {
-      "name": "dzx-poe2-Divine-Mirror",
-      "description": "High-value items only",
-      "group": [
-        "currency.filter",
-        "unique/olroths_legacy.filter",
-        "gear/rarity_unique.filter",
-        "gacha.filter",
-        "key.filter",
-        "waystones.filter"
-      ],
+      "name": "dzx-poe2-dont-rare",
+      "description": "hide rare gear item",
+      "group": "DONT_RARE_GROUP",
       "remove_sounds": false,
       "hide_items": false,
-      "enabled": true
+      "enabled": true,
+      "platforms": [
+        "pc"
+      ],
+      "no_hide_variant": false
+    },
+    {
+      "name": "dzx-poe2-dont-rare",
+      "description": "hide rare gear item",
+      "group": "DONT_RARE_GROUP",
+      "remove_sounds": true,
+      "hide_items": false,
+      "enabled": true,
+      "platforms": [
+        "ps5"
+      ],
+      "no_hide_variant": false
     }
   ],
+  "special_variants": [],
   "filter_groups": {
     "MAIN_GROUP": [
       "scroll_of_wisdom.filter",
@@ -134,6 +130,51 @@
       "gear/rarity_unique.filter",
       "gear/rarity_rare.filter",
       "gear/rarity_magic.filter"
+    ],
+    "DONT_RARE_GROUP": [
+      "scroll_of_wisdom.filter",
+      "gold.filter",
+      "gacha.filter",
+      "key.filter",
+      "rune.filter",
+      "relics.filter",
+      "talisman.filter",
+      "soul_core.filter",
+      "waystones.filter",
+      "fragment.filter",
+      "uncut_gems.filter",
+      "support_gem.filter",
+      "crafting.filter",
+      "currency.filter",
+      "content/idol.filter",
+      "content/incursion.filter",
+      "content/expedition.filter",
+      "content/breach.filter",
+      "content/abyssal.filter",
+      "content/delirium.filter",
+      "content/verisium.filter",
+      "content/vaal.filter",
+      "content/essences.filter",
+      "content/ritual_omen.filter",
+      "unique/olroths_legacy.filter",
+      "unique/accessory.filter",
+      "unique/armour.filter",
+      "unique/flask.filter",
+      "unique/jewel.filter",
+      "unique/map.filter",
+      "unique/weapon.filter",
+      "unique/sanctum.filter",
+      "map_dont_rare.filter",
+      "gear/amulets.filter",
+      "gear/belts.filter",
+      "gear/jewel.filter",
+      "gear/ring.filter",
+      "gear/flasks.filter",
+      "gear/charms.filter",
+      "gear/rarity_unique.filter",
+      "gear/rarity_rare.filter",
+      "gear/rarity_magic.filter",
+      "salvage.filter"
     ]
   },
   "html_generation": {

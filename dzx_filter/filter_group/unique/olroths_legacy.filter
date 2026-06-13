@@ -10,5 +10,5 @@ Show
   SetBorderColor 174 91 8 255
   SetBackgroundColor 174 91 8 255
   PlayAlertSound 9 200
-  PlayEffect Red
-  MinimapIcon 0 Red Star
+  PlayEffect Orange
+  MinimapIcon 0 Orange Diamond

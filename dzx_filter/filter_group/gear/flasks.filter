@@ -1,3 +1,12 @@
+Hide
+  Quality == 0
+  AreaLevel >= 79
+  Class "Flasks"
+  Rarity Normal Magic
+  SetTextColor 83 172 185
+  SetBorderColor 87 119 160
+  SetBackgroundColor 10 10 10 200 
+
 
 Show
   BaseType == "Ultimate Life Flask" "Ultimate Mana Flask"
@@ -7,10 +16,3 @@ Show
   SetBorderColor 87 119 160
   SetBackgroundColor 10 10 10 200
 
-Hide
-  Quality == 0
-  AreaLevel >= 65
-  Class "Flasks"
-  SetTextColor 83 172 185
-  SetBorderColor 87 119 160
-  SetBackgroundColor 10 10 10 200 

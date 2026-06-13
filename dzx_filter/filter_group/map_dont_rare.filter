@@ -1,0 +1,18 @@
+Hide
+  Rarity Rare
+  AreaLevel <= 80
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings" 
+
+
+
+Hide
+  Sockets <= 1
+  Rarity Normal Magic
+  AreaLevel <= 80
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers"  
+ 
+ 
+Hide
+  Rarity Normal Magic 
+  BaseType "flask" "Scroll of Wisdom"
+
