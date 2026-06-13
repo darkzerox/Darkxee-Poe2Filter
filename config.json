@@ -64,7 +64,7 @@
       "no_hide_variant": false
     },
     {
-      "name": "dzx-poe2-dont-rare",
+      "name": "dzx-poe2-dont-rare-ps5",
       "description": "hide rare gear item",
       "group": "DONT_RARE_GROUP",
       "remove_sounds": true,
