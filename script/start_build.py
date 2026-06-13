@@ -63,8 +63,7 @@ def get_default_config() -> Dict:
             "MAIN_GROUP": [
                 "gacha.filter", "crafting.filter", "gold.filter", "uncut_gems.filter", 
                 "scroll_of_wisdom.filter", "salvage.filter", "amulets.filter", "belts.filter", 
-                "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", 
-                "talisman.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
+                "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
                 "charms.filter", "omen.filter", "currency.filter", "olroths_legacy.filter", "rarity_unique.filter", 
                 "rarity_rare.filter", "rarity_magic.filter"
             ],
@@ -72,7 +71,7 @@ def get_default_config() -> Dict:
                 "gacha.filter", "crafting.filter", "gold.filter", "amulets.filter", 
                 "jewel.filter", "ring.filter", "map_breach.filter", "uncut_gems.filter", 
                 "scroll_of_wisdom.filter", "salvage.filter", "belts.filter", "key.filter", 
-                "relics.filter", "rune.filter", "talisman.filter", "soul_core.filter", 
+                "relics.filter", "rune.filter", "soul_core.filter", 
                 "waystones.filter", "flasks.filter", "charms.filter", "omen.filter", "currency.filter", 
                 "olroths_legacy.filter", "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
             ],
@@ -110,6 +109,7 @@ SOUND_EFFECT_TYPES = CONFIG.get("sound_effects", {}).get("available_types", ["ty
 MAIN_GROUP = CONFIG.get("filter_groups", {}).get("MAIN_GROUP", [])
 BREACH_GROUP = CONFIG.get("filter_groups", {}).get("BREACH_GROUP", [])
 TEMPLE_GROUP = CONFIG.get("filter_groups", {}).get("TEMPLE_GROUP", [])
+DONT_RARE_GROUP = CONFIG.get("filter_groups", {}).get("DONT_RARE_GROUP", [])
 
 # Get filter variants from config
 def get_filter_variants():
@@ -129,6 +129,8 @@ def get_filter_variants():
             variant["group"] = BREACH_GROUP
         elif group_name == "TEMPLE_GROUP":
             variant["group"] = TEMPLE_GROUP
+        elif group_name == "DONT_RARE_GROUP":
+            variant["group"] = DONT_RARE_GROUP
         else:
             # If it's already a list, keep it as is
             if isinstance(group_name, list):
@@ -383,6 +385,8 @@ def build_special_variants(args: argparse.Namespace) -> bool:
                 group = BREACH_GROUP
             elif group_raw == "TEMPLE_GROUP":
                 group = TEMPLE_GROUP
+            elif group_raw == "DONT_RARE_GROUP":
+                group = DONT_RARE_GROUP
             else:
                 print(f"      ⚠️ Unknown group '{group_raw}', using MAIN_GROUP")
                 group = MAIN_GROUP
@@ -472,7 +476,7 @@ Examples:
     
     # Validate filter files
     print_step("Validation", "Checking filter files")
-    all_files = list(set(MAIN_GROUP + BREACH_GROUP + TEMPLE_GROUP))  # Remove duplicates
+    all_files = list(set(MAIN_GROUP + BREACH_GROUP + TEMPLE_GROUP + DONT_RARE_GROUP))  # Remove duplicates
     missing_files = validate_filter_files(all_files)
     
     if missing_files:

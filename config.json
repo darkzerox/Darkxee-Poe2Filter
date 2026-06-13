@@ -50,7 +50,9 @@
       ],
       "no_hide_variant": true,
       "enabled": true
-    },
+    }
+  ],
+  "special_variants": [
     {
       "name": "dzx-poe2-dont-rare",
       "description": "hide rare gear item",
@@ -76,7 +78,6 @@
       "no_hide_variant": false
     }
   ],
-  "special_variants": [],
   "filter_groups": {
     "MAIN_GROUP": [
       "scroll_of_wisdom.filter",
@@ -85,7 +86,6 @@
       "key.filter",
       "rune.filter",
       "relics.filter",
-      "talisman.filter",
       "soul_core.filter",
       "waystones.filter",
       "fragment.filter",
@@ -138,7 +138,6 @@
       "key.filter",
       "rune.filter",
       "relics.filter",
-      "talisman.filter",
       "soul_core.filter",
       "waystones.filter",
       "fragment.filter",
