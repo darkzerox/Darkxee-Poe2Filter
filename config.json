@@ -146,6 +146,7 @@
       "support_gem.filter",
       "crafting.filter",
       "currency.filter",
+      "map_dont_rare.filter",
       "content/idol.filter",
       "content/incursion.filter",
       "content/expedition.filter",

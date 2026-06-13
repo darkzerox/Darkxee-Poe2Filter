@@ -63,8 +63,7 @@ def get_default_config() -> Dict:
             "MAIN_GROUP": [
                 "gacha.filter", "crafting.filter", "gold.filter", "uncut_gems.filter", 
                 "scroll_of_wisdom.filter", "salvage.filter", "amulets.filter", "belts.filter", 
-                "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", 
-                "talisman.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
+                "jewel.filter", "ring.filter", "key.filter", "relics.filter", "rune.filter", "soul_core.filter", "waystones.filter", "flasks.filter", 
                 "charms.filter", "omen.filter", "currency.filter", "olroths_legacy.filter", "rarity_unique.filter", 
                 "rarity_rare.filter", "rarity_magic.filter"
             ],
@@ -72,7 +71,7 @@ def get_default_config() -> Dict:
                 "gacha.filter", "crafting.filter", "gold.filter", "amulets.filter", 
                 "jewel.filter", "ring.filter", "map_breach.filter", "uncut_gems.filter", 
                 "scroll_of_wisdom.filter", "salvage.filter", "belts.filter", "key.filter", 
-                "relics.filter", "rune.filter", "talisman.filter", "soul_core.filter", 
+                "relics.filter", "rune.filter", "soul_core.filter", 
                 "waystones.filter", "flasks.filter", "charms.filter", "omen.filter", "currency.filter", 
                 "olroths_legacy.filter", "rarity_unique.filter", "rarity_rare.filter", "rarity_magic.filter"
             ],
