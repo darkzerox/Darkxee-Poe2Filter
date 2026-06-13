@@ -1,7 +1,7 @@
 {
   "project": {
     "name": "DZX Filter POE2",
-    "version": "0.5.9",
+    "version": "0.6.0",
     "description": "Advanced Item Filter for Path of Exile 2",
     "author": "Darkxee",
     "repository": "https://github.com/darkzerox/Darkxee-Poe2Filter",
@@ -50,7 +50,9 @@
       ],
       "no_hide_variant": true,
       "enabled": true
-    },
+    }
+  ],
+  "special_variants": [
     {
       "name": "dzx-poe2-dont-rare",
       "description": "hide rare gear item",
@@ -76,7 +78,6 @@
       "no_hide_variant": false
     }
   ],
-  "special_variants": [],
   "filter_groups": {
     "MAIN_GROUP": [
       "scroll_of_wisdom.filter",
@@ -85,7 +86,6 @@
       "key.filter",
       "rune.filter",
       "relics.filter",
-      "talisman.filter",
       "soul_core.filter",
       "waystones.filter",
       "fragment.filter",
@@ -132,13 +132,13 @@
       "gear/rarity_magic.filter"
     ],
     "DONT_RARE_GROUP": [
+      "map_dont_rare.filter",
       "scroll_of_wisdom.filter",
       "gold.filter",
       "gacha.filter",
       "key.filter",
       "rune.filter",
       "relics.filter",
-      "talisman.filter",
       "soul_core.filter",
       "waystones.filter",
       "fragment.filter",
@@ -164,7 +164,6 @@
       "unique/map.filter",
       "unique/weapon.filter",
       "unique/sanctum.filter",
-      "map_dont_rare.filter",
       "gear/amulets.filter",
       "gear/belts.filter",
       "gear/jewel.filter",
