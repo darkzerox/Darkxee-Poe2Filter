@@ -5,14 +5,14 @@
 
 Hide
   Rarity Rare
-  AreaLevel <= 80
+  AreaLevel <= 81
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "belts" "rings" "Talismans"
 
 
 
 Hide
   Sockets <= 1
-  AreaLevel <= 80
+  AreaLevel <= 81
   Rarity Normal Magic
   Class "Body Armours" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers"  
  
