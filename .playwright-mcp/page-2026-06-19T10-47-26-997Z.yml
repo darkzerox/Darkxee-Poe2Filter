@@ -1,0 +1,333 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "poe2scout POE2 Scout" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "poe2scout" [ref=e6]
+          - text: POE2 Scout
+        - navigation "Breadcrumb" [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - link "Home" [ref=e10] [cursor=pointer]:
+                - /url: /poe2/runes
+            - listitem [ref=e11]:
+              - generic [ref=e12]: /
+              - link "Economy" [ref=e13] [cursor=pointer]:
+                - /url: /poe2/runes/economy
+            - listitem [ref=e14]:
+              - generic [ref=e15]: /
+              - generic [ref=e16]: expedition
+      - navigation "Primary navigation" [ref=e17]:
+        - link "Home" [ref=e18] [cursor=pointer]:
+          - /url: /poe2/runes
+        - link "Economy" [ref=e19] [cursor=pointer]:
+          - /url: /poe2/runes/economy
+        - link "Currency Exchange" [ref=e20] [cursor=pointer]:
+          - /url: /poe2/runes/exchange
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - search [ref=e25]:
+        - generic [ref=e26]: Search items
+        - searchbox "Search items" [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]: Currency
+        - combobox "Currency" [ref=e32]:
+          - option "Exalted Orb"
+          - option "Chaos Orb"
+          - option "Divine Orb" [selected]
+    - generic [ref=e33]:
+      - navigation [ref=e34]:
+        - generic [ref=e35]: Currency categories
+        - link "Currency" [ref=e36] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/currency?referenceCurrency=divine
+          - img [ref=e37]
+          - generic [ref=e38]: Currency
+        - link "Fragments" [ref=e39] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/fragments?referenceCurrency=divine
+          - img [ref=e40]
+          - generic [ref=e41]: Fragments
+        - link "Runes" [ref=e42] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/runes?referenceCurrency=divine
+          - img [ref=e43]
+          - generic [ref=e44]: Runes
+        - link "Essences" [ref=e45] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/essences?referenceCurrency=divine
+          - img [ref=e46]
+          - generic [ref=e47]: Essences
+        - link "Soul Cores" [ref=e48] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/ultimatum?referenceCurrency=divine
+          - img [ref=e49]
+          - generic [ref=e50]: Soul Cores
+        - link "Expedition Coinage & Artifacts" [ref=e51] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/expedition?referenceCurrency=divine
+          - img [ref=e52]
+          - generic [ref=e53]: Expedition Coinage & Artifacts
+        - link "Ritual Omens" [ref=e54] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/ritual?referenceCurrency=divine
+          - img [ref=e55]
+          - generic [ref=e56]: Ritual Omens
+        - link "Reliquary Keys" [ref=e57] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/vaultkeys?referenceCurrency=divine
+          - img [ref=e58]
+          - generic [ref=e59]: Reliquary Keys
+        - link "Breach" [ref=e60] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/breach?referenceCurrency=divine
+          - img [ref=e61]
+          - generic [ref=e62]: Breach
+        - link "Abyssal Bones" [ref=e63] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/abyss?referenceCurrency=divine
+          - img [ref=e64]
+          - generic [ref=e65]: Abyssal Bones
+        - link "Uncut Gems" [ref=e66] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/uncutgems?referenceCurrency=divine
+          - img [ref=e67]
+          - generic [ref=e68]: Uncut Gems
+        - link "Lineage Support Gems" [ref=e69] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/lineagesupportgems?referenceCurrency=divine
+          - img [ref=e70]
+          - generic [ref=e71]: Lineage Support Gems
+        - link "Delirium" [ref=e72] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/delirium?referenceCurrency=divine
+          - img [ref=e73]
+          - generic [ref=e74]: Delirium
+        - link "Incursion" [ref=e75] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/incursion?referenceCurrency=divine
+          - img [ref=e76]
+          - generic [ref=e77]: Incursion
+        - link "Idols" [ref=e78] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/idol?referenceCurrency=divine
+          - img [ref=e79]
+          - generic [ref=e80]: Idols
+        - link "Verisium" [ref=e81] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/verisium?referenceCurrency=divine
+          - img [ref=e82]
+          - generic [ref=e83]: Verisium
+        - link "Vaal" [ref=e84] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/vaal?referenceCurrency=divine
+          - img [ref=e85]
+          - generic [ref=e86]: Vaal
+        - generic [ref=e87]: Unique categories
+        - link "Accessories" [ref=e88] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/accessory?referenceCurrency=divine
+          - img [ref=e89]
+          - generic [ref=e90]: Accessories
+        - link "Armour" [ref=e91] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/armour?referenceCurrency=divine
+          - img [ref=e92]
+          - generic [ref=e93]: Armour
+        - link "Flasks" [ref=e94] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/flask?referenceCurrency=divine
+          - img [ref=e95]
+          - generic [ref=e96]: Flasks
+        - link "Jewels" [ref=e97] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/jewel?referenceCurrency=divine
+          - img [ref=e98]
+          - generic [ref=e99]: Jewels
+        - link "Maps" [ref=e100] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/map?referenceCurrency=divine
+          - img [ref=e101]
+          - generic [ref=e102]: Maps
+        - link "Weapons" [ref=e103] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/weapon?referenceCurrency=divine
+          - img [ref=e104]
+          - generic [ref=e105]: Weapons
+        - link "Sanctum Research" [ref=e106] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/sanctum?referenceCurrency=divine
+          - img [ref=e107]
+          - generic [ref=e108]: Sanctum Research
+      - generic [ref=e110]:
+        - table [ref=e112]:
+          - rowgroup [ref=e113]:
+            - row "Item Price Quantity History Actions" [ref=e114]:
+              - columnheader "Item" [ref=e115]
+              - columnheader "Price" [ref=e116]
+              - columnheader "Quantity" [ref=e117]
+              - columnheader "History" [ref=e118]
+              - columnheader "Actions" [ref=e119]
+          - rowgroup [ref=e120]:
+            - 'row "Thaumaturgic Flux (Level 14) 0.04 Divine Orb 29 2 days history (6h buckets): -56.1% in Divine Orb -56.1% Wiki / Trade" [ref=e675]':
+              - cell "Thaumaturgic Flux (Level 14)" [ref=e676]:
+                - link "Thaumaturgic Flux (Level 14)" [ref=e677] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13839/Thaumaturgic-Flux-(Level-14)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e679]: Thaumaturgic Flux (Level 14)
+              - cell "0.04 Divine Orb" [ref=e680]:
+                - generic "0.04 Divine Orb" [ref=e681]:
+                  - generic [ref=e682]: "0.04"
+                  - img "Divine Orb" [ref=e683]
+              - cell "29" [ref=e684]
+              - 'cell "2 days history (6h buckets): -56.1% in Divine Orb -56.1%" [ref=e685]':
+                - 'generic "2 days history (6h buckets): -56.1% in Divine Orb" [ref=e686]':
+                  - 'img "2 days history (6h buckets): -56.1% in Divine Orb" [ref=e687]'
+                  - generic [ref=e690]: "-56.1%"
+              - cell "Wiki / Trade" [ref=e691]:
+                - generic [ref=e692]:
+                  - link "Wiki" [ref=e693] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2014)
+                  - generic [ref=e694]: /
+                  - link "Trade" [ref=e695] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-14%22%5D%7D%7D
+            - 'row "Crackling Flux 0.03 Divine Orb 615 2 days history (6h buckets): +12.2% in Divine Orb +12.2% Wiki / Trade" [ref=e696]':
+              - cell "Crackling Flux" [ref=e697]:
+                - link "Crackling Flux" [ref=e698] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13811/Crackling-Flux?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e700]: Crackling Flux
+              - cell "0.03 Divine Orb" [ref=e701]:
+                - generic "0.03 Divine Orb" [ref=e702]:
+                  - generic [ref=e703]: "0.03"
+                  - img "Divine Orb" [ref=e704]
+              - cell "615" [ref=e705]
+              - 'cell "2 days history (6h buckets): +12.2% in Divine Orb +12.2%" [ref=e706]':
+                - 'generic "2 days history (6h buckets): +12.2% in Divine Orb" [ref=e707]':
+                  - 'img "2 days history (6h buckets): +12.2% in Divine Orb" [ref=e708]'
+                  - generic [ref=e711]: +12.2%
+              - cell "Wiki / Trade" [ref=e712]:
+                - generic [ref=e713]:
+                  - link "Wiki" [ref=e714] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Crackling%20Flux
+                  - generic [ref=e715]: /
+                  - link "Trade" [ref=e716] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22crackling-flux%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 13) 0.03 Divine Orb 11 2 days history (6h buckets): -78.1% in Divine Orb -78.1% Wiki / Trade" [ref=e717]':
+              - cell "Thaumaturgic Flux (Level 13)" [ref=e718]:
+                - link "Thaumaturgic Flux (Level 13)" [ref=e719] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13837/Thaumaturgic-Flux-(Level-13)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e721]: Thaumaturgic Flux (Level 13)
+              - cell "0.03 Divine Orb" [ref=e722]:
+                - generic "0.03 Divine Orb" [ref=e723]:
+                  - generic [ref=e724]: "0.03"
+                  - img "Divine Orb" [ref=e725]
+              - cell "11" [ref=e726]
+              - 'cell "2 days history (6h buckets): -78.1% in Divine Orb -78.1%" [ref=e727]':
+                - 'generic "2 days history (6h buckets): -78.1% in Divine Orb" [ref=e728]':
+                  - 'img "2 days history (6h buckets): -78.1% in Divine Orb" [ref=e729]'
+                  - generic [ref=e732]: "-78.1%"
+              - cell "Wiki / Trade" [ref=e733]:
+                - generic [ref=e734]:
+                  - link "Wiki" [ref=e735] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2013)
+                  - generic [ref=e736]: /
+                  - link "Trade" [ref=e737] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-13%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 17) 0.02 Divine Orb 17 2 days history (6h buckets): +55.9% in Divine Orb +55.9% Wiki / Trade" [ref=e738]':
+              - cell "Thaumaturgic Flux (Level 17)" [ref=e739]:
+                - link "Thaumaturgic Flux (Level 17)" [ref=e740] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13845/Thaumaturgic-Flux-(Level-17)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e742]: Thaumaturgic Flux (Level 17)
+              - cell "0.02 Divine Orb" [ref=e743]:
+                - generic "0.02 Divine Orb" [ref=e744]:
+                  - generic [ref=e745]: "0.02"
+                  - img "Divine Orb" [ref=e746]
+              - cell "17" [ref=e747]
+              - 'cell "2 days history (6h buckets): +55.9% in Divine Orb +55.9%" [ref=e748]':
+                - 'generic "2 days history (6h buckets): +55.9% in Divine Orb" [ref=e749]':
+                  - 'img "2 days history (6h buckets): +55.9% in Divine Orb" [ref=e750]'
+                  - generic [ref=e753]: +55.9%
+              - cell "Wiki / Trade" [ref=e754]:
+                - generic [ref=e755]:
+                  - link "Wiki" [ref=e756] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2017)
+                  - generic [ref=e757]: /
+                  - link "Trade" [ref=e758] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-17%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 11) 0.02 Divine Orb 20 2 days history (6h buckets): -33.8% in Divine Orb -33.8% Wiki / Trade" [ref=e759]':
+              - cell "Thaumaturgic Flux (Level 11)" [ref=e760]:
+                - link "Thaumaturgic Flux (Level 11)" [ref=e761] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13833/Thaumaturgic-Flux-(Level-11)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e763]: Thaumaturgic Flux (Level 11)
+              - cell "0.02 Divine Orb" [ref=e764]:
+                - generic "0.02 Divine Orb" [ref=e765]:
+                  - generic [ref=e766]: "0.02"
+                  - img "Divine Orb" [ref=e767]
+              - cell "20" [ref=e768]
+              - 'cell "2 days history (6h buckets): -33.8% in Divine Orb -33.8%" [ref=e769]':
+                - 'generic "2 days history (6h buckets): -33.8% in Divine Orb" [ref=e770]':
+                  - 'img "2 days history (6h buckets): -33.8% in Divine Orb" [ref=e771]'
+                  - generic [ref=e774]: "-33.8%"
+              - cell "Wiki / Trade" [ref=e775]:
+                - generic [ref=e776]:
+                  - link "Wiki" [ref=e777] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2011)
+                  - generic [ref=e778]: /
+                  - link "Trade" [ref=e779] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-11%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 18) 0.01 Divine Orb 46 2 days history (6h buckets): -52.4% in Divine Orb -52.4% Wiki / Trade" [ref=e780]':
+              - cell "Thaumaturgic Flux (Level 18)" [ref=e781]:
+                - link "Thaumaturgic Flux (Level 18)" [ref=e782] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13847/Thaumaturgic-Flux-(Level-18)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e784]: Thaumaturgic Flux (Level 18)
+              - cell "0.01 Divine Orb" [ref=e785]:
+                - generic "0.01 Divine Orb" [ref=e786]:
+                  - generic [ref=e787]: "0.01"
+                  - img "Divine Orb" [ref=e788]
+              - cell "46" [ref=e789]
+              - 'cell "2 days history (6h buckets): -52.4% in Divine Orb -52.4%" [ref=e790]':
+                - 'generic "2 days history (6h buckets): -52.4% in Divine Orb" [ref=e791]':
+                  - 'img "2 days history (6h buckets): -52.4% in Divine Orb" [ref=e792]'
+                  - generic [ref=e795]: "-52.4%"
+              - cell "Wiki / Trade" [ref=e796]:
+                - generic [ref=e797]:
+                  - link "Wiki" [ref=e798] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2018)
+                  - generic [ref=e799]: /
+                  - link "Trade" [ref=e800] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-18%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 16) 0.01 Divine Orb 12 2 days history (6h buckets): -21.1% in Divine Orb -21.1% Wiki / Trade" [ref=e801]':
+              - cell "Thaumaturgic Flux (Level 16)" [ref=e802]:
+                - link "Thaumaturgic Flux (Level 16)" [ref=e803] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13843/Thaumaturgic-Flux-(Level-16)?referenceCurrency=divine&page=2&perPage=25
+                  - generic [ref=e805]: Thaumaturgic Flux (Level 16)
+              - cell "0.01 Divine Orb" [ref=e806]:
+                - generic "0.01 Divine Orb" [ref=e807]:
+                  - generic [ref=e808]: "0.01"
+                  - img "Divine Orb" [ref=e809]
+              - cell "12" [ref=e810]
+              - 'cell "2 days history (6h buckets): -21.1% in Divine Orb -21.1%" [ref=e811]':
+                - 'generic "2 days history (6h buckets): -21.1% in Divine Orb" [ref=e812]':
+                  - 'img "2 days history (6h buckets): -21.1% in Divine Orb" [ref=e813]'
+                  - generic [ref=e816]: "-21.1%"
+              - cell "Wiki / Trade" [ref=e817]:
+                - generic [ref=e818]:
+                  - link "Wiki" [ref=e819] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2016)
+                  - generic [ref=e820]: /
+                  - link "Trade" [ref=e821] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-16%22%5D%7D%7D
+        - generic [ref=e647]:
+          - generic [ref=e648]: Page 2 of 2 · 32 items
+          - generic [ref=e649]:
+            - generic [ref=e650]:
+              - generic [ref=e651]: Rows
+              - combobox "Rows" [ref=e653]:
+                - option "10"
+                - option "25" [selected]
+                - option "50"
+                - option "100"
+            - button "Previous" [ref=e654]
+            - button "Next" [disabled] [ref=e655]
+  - contentinfo [ref=e656]:
+    - navigation [ref=e658]:
+      - link "Privacy Policy" [ref=e660] [cursor=pointer]:
+        - /url: /privacy
+      - generic [ref=e661]:
+        - generic [ref=e662]: "|"
+        - link "Discord" [ref=e663] [cursor=pointer]:
+          - /url: https://discord.gg/EHXVdQCpBq
+      - generic [ref=e664]:
+        - generic [ref=e665]: "|"
+        - link "GitHub" [ref=e666] [cursor=pointer]:
+          - /url: https://github.com/poe2scout/poe2scout
+      - generic [ref=e667]:
+        - generic [ref=e668]: "|"
+        - link "API Docs" [ref=e669] [cursor=pointer]:
+          - /url: /api/swagger
+    - generic [ref=e670]: © 2026 POE2 Scout. Not affiliated with Grinding Gear Games.
+  - insertion [ref=e671]:
+    - iframe [ref=e674]:
+      - generic [ref=f7e3]:
+        - button [ref=f7e4]:
+          - img [ref=f7e5]
+        - generic [ref=f7e7]:
+          - button "Replay" [ref=f7e23]:
+            - img [ref=f7e25] [cursor=pointer]
+          - button "Learn more" [ref=f7e37] [cursor=pointer]

@@ -1,0 +1,10 @@
+[     242ms] [LOG] 💿 Hey developer 👋. You can provide a way better UX than this when your app is loading JS modules and/or running `clientLoader` functions. Check out https://reactrouter.com/start/framework/route-module#hydratefallback for more information. @ https://poe2scout.com/poe2/runes/economy/currencies/expedition?referenceCurrency=divine:1
+[     276ms] Error: Minified React error #418; visit https://react.dev/errors/418?args[]=HTML&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at qi (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:31208)
+    at Ic (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:81708)
+    at Mu (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:115520)
+    at ju (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:115493)
+    at Au (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:115355)
+    at gu (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:110955)
+    at cd (https://poe2scout.com/assets/entry.client-BuT5XHls.js:8:122807)
+    at MessagePort.ae (https://poe2scout.com/assets/entry.client-BuT5XHls.js:1:1740)

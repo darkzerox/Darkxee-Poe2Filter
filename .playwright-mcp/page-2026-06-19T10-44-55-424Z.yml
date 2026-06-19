@@ -1,0 +1,702 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "poe2scout POE2 Scout" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - img "poe2scout" [ref=e6]
+          - text: POE2 Scout
+        - navigation "Breadcrumb" [ref=e7]:
+          - list [ref=e8]:
+            - listitem [ref=e9]:
+              - link "Home" [ref=e10] [cursor=pointer]:
+                - /url: /poe2/runes
+            - listitem [ref=e11]:
+              - generic [ref=e12]: /
+              - link "Economy" [ref=e13] [cursor=pointer]:
+                - /url: /poe2/runes/economy
+            - listitem [ref=e14]:
+              - generic [ref=e15]: /
+              - generic [ref=e16]: expedition
+      - navigation "Primary navigation" [ref=e17]:
+        - link "Home" [ref=e18] [cursor=pointer]:
+          - /url: /poe2/runes
+        - link "Economy" [ref=e19] [cursor=pointer]:
+          - /url: /poe2/runes/economy
+        - link "Currency Exchange" [ref=e20] [cursor=pointer]:
+          - /url: /poe2/runes/exchange
+  - main [ref=e21]:
+    - generic [ref=e24]:
+      - search [ref=e25]:
+        - generic [ref=e26]: Search items
+        - searchbox "Search items" [disabled] [ref=e28]
+      - generic [ref=e29]:
+        - generic [ref=e30]: Currency
+        - combobox "Currency" [ref=e32]:
+          - option "Exalted Orb"
+          - option "Chaos Orb"
+          - option "Divine Orb" [selected]
+    - generic [ref=e33]:
+      - navigation [ref=e34]:
+        - generic [ref=e35]: Currency categories
+        - link "Currency" [ref=e36] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/currency?referenceCurrency=divine
+          - img [ref=e37]
+          - generic [ref=e38]: Currency
+        - link "Fragments" [ref=e39] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/fragments?referenceCurrency=divine
+          - img [ref=e40]
+          - generic [ref=e41]: Fragments
+        - link "Runes" [ref=e42] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/runes?referenceCurrency=divine
+          - img [ref=e43]
+          - generic [ref=e44]: Runes
+        - link "Essences" [ref=e45] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/essences?referenceCurrency=divine
+          - img [ref=e46]
+          - generic [ref=e47]: Essences
+        - link "Soul Cores" [ref=e48] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/ultimatum?referenceCurrency=divine
+          - img [ref=e49]
+          - generic [ref=e50]: Soul Cores
+        - link "Expedition Coinage & Artifacts" [ref=e51] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/expedition?referenceCurrency=divine
+          - img [ref=e52]
+          - generic [ref=e53]: Expedition Coinage & Artifacts
+        - link "Ritual Omens" [ref=e54] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/ritual?referenceCurrency=divine
+          - img [ref=e55]
+          - generic [ref=e56]: Ritual Omens
+        - link "Reliquary Keys" [ref=e57] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/vaultkeys?referenceCurrency=divine
+          - img [ref=e58]
+          - generic [ref=e59]: Reliquary Keys
+        - link "Breach" [ref=e60] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/breach?referenceCurrency=divine
+          - img [ref=e61]
+          - generic [ref=e62]: Breach
+        - link "Abyssal Bones" [ref=e63] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/abyss?referenceCurrency=divine
+          - img [ref=e64]
+          - generic [ref=e65]: Abyssal Bones
+        - link "Uncut Gems" [ref=e66] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/uncutgems?referenceCurrency=divine
+          - img [ref=e67]
+          - generic [ref=e68]: Uncut Gems
+        - link "Lineage Support Gems" [ref=e69] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/lineagesupportgems?referenceCurrency=divine
+          - img [ref=e70]
+          - generic [ref=e71]: Lineage Support Gems
+        - link "Delirium" [ref=e72] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/delirium?referenceCurrency=divine
+          - img [ref=e73]
+          - generic [ref=e74]: Delirium
+        - link "Incursion" [ref=e75] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/incursion?referenceCurrency=divine
+          - img [ref=e76]
+          - generic [ref=e77]: Incursion
+        - link "Idols" [ref=e78] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/idol?referenceCurrency=divine
+          - img [ref=e79]
+          - generic [ref=e80]: Idols
+        - link "Verisium" [ref=e81] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/verisium?referenceCurrency=divine
+          - img [ref=e82]
+          - generic [ref=e83]: Verisium
+        - link "Vaal" [ref=e84] [cursor=pointer]:
+          - /url: /poe2/runes/economy/currencies/vaal?referenceCurrency=divine
+          - img [ref=e85]
+          - generic [ref=e86]: Vaal
+        - generic [ref=e87]: Unique categories
+        - link "Accessories" [ref=e88] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/accessory?referenceCurrency=divine
+          - img [ref=e89]
+          - generic [ref=e90]: Accessories
+        - link "Armour" [ref=e91] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/armour?referenceCurrency=divine
+          - img [ref=e92]
+          - generic [ref=e93]: Armour
+        - link "Flasks" [ref=e94] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/flask?referenceCurrency=divine
+          - img [ref=e95]
+          - generic [ref=e96]: Flasks
+        - link "Jewels" [ref=e97] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/jewel?referenceCurrency=divine
+          - img [ref=e98]
+          - generic [ref=e99]: Jewels
+        - link "Maps" [ref=e100] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/map?referenceCurrency=divine
+          - img [ref=e101]
+          - generic [ref=e102]: Maps
+        - link "Weapons" [ref=e103] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/weapon?referenceCurrency=divine
+          - img [ref=e104]
+          - generic [ref=e105]: Weapons
+        - link "Sanctum Research" [ref=e106] [cursor=pointer]:
+          - /url: /poe2/runes/economy/uniques/sanctum?referenceCurrency=divine
+          - img [ref=e107]
+          - generic [ref=e108]: Sanctum Research
+      - generic [ref=e110]:
+        - table [ref=e112]:
+          - rowgroup [ref=e113]:
+            - row "Item Price Quantity History Actions" [ref=e114]:
+              - columnheader "Item" [ref=e115]
+              - columnheader "Price" [ref=e116]
+              - columnheader "Quantity" [ref=e117]
+              - columnheader "History" [ref=e118]
+              - columnheader "Actions" [ref=e119]
+          - rowgroup [ref=e120]:
+            - 'row "Carved Majesty 52.05 Divine Orb 39 2 days history (6h buckets): +4.2% in Divine Orb +4.2% Wiki / Trade" [ref=e121]':
+              - cell "Carved Majesty" [ref=e122]:
+                - link "Carved Majesty" [ref=e123] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13865/Carved-Majesty?referenceCurrency=divine
+                  - generic [ref=e125]: Carved Majesty
+              - cell "52.05 Divine Orb" [ref=e126]:
+                - generic "52.05 Divine Orb" [ref=e127]:
+                  - generic [ref=e128]: "52.05"
+                  - img "Divine Orb" [ref=e129]
+              - cell "39" [ref=e130]
+              - 'cell "2 days history (6h buckets): +4.2% in Divine Orb +4.2%" [ref=e131]':
+                - 'generic "2 days history (6h buckets): +4.2% in Divine Orb" [ref=e132]':
+                  - 'img "2 days history (6h buckets): +4.2% in Divine Orb" [ref=e133]'
+                  - generic [ref=e136]: +4.2%
+              - cell "Wiki / Trade" [ref=e137]:
+                - generic [ref=e138]:
+                  - link "Wiki" [ref=e139] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Carved%20Majesty
+                  - generic [ref=e140]: /
+                  - link "Trade" [ref=e141] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22carved-majesty%22%5D%7D%7D
+            - 'row "Perfect Flux 28.2 Divine Orb 142 2 days history (6h buckets): -13.5% in Divine Orb -13.5% Wiki / Trade" [ref=e142]':
+              - cell "Perfect Flux" [ref=e143]:
+                - link "Perfect Flux" [ref=e144] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13853/Perfect-Flux?referenceCurrency=divine
+                  - generic [ref=e146]: Perfect Flux
+              - cell "28.2 Divine Orb" [ref=e147]:
+                - generic "28.2 Divine Orb" [ref=e148]:
+                  - generic [ref=e149]: "28.2"
+                  - img "Divine Orb" [ref=e150]
+              - cell "142" [ref=e151]
+              - 'cell "2 days history (6h buckets): -13.5% in Divine Orb -13.5%" [ref=e152]':
+                - 'generic "2 days history (6h buckets): -13.5% in Divine Orb" [ref=e153]':
+                  - 'img "2 days history (6h buckets): -13.5% in Divine Orb" [ref=e154]'
+                  - generic [ref=e157]: "-13.5%"
+              - cell "Wiki / Trade" [ref=e158]:
+                - generic [ref=e159]:
+                  - link "Wiki" [ref=e160] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Perfect%20Flux
+                  - generic [ref=e161]: /
+                  - link "Trade" [ref=e162] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22perfect-flux%22%5D%7D%7D
+            - 'row "Aldur''s Saga 27.84 Divine Orb 897 2 days history (6h buckets): -21.0% in Divine Orb -21.0% Wiki / Trade" [ref=e163]':
+              - cell "Aldur's Saga" [ref=e164]:
+                - link "Aldur's Saga" [ref=e165] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13797/Aldur's-Saga?referenceCurrency=divine
+                  - generic [ref=e167]: Aldur's Saga
+              - cell "27.84 Divine Orb" [ref=e168]:
+                - generic "27.84 Divine Orb" [ref=e169]:
+                  - generic [ref=e170]: "27.84"
+                  - img "Divine Orb" [ref=e171]
+              - cell "897" [ref=e172]
+              - 'cell "2 days history (6h buckets): -21.0% in Divine Orb -21.0%" [ref=e173]':
+                - 'generic "2 days history (6h buckets): -21.0% in Divine Orb" [ref=e174]':
+                  - 'img "2 days history (6h buckets): -21.0% in Divine Orb" [ref=e175]'
+                  - generic [ref=e178]: "-21.0%"
+              - cell "Wiki / Trade" [ref=e179]:
+                - generic [ref=e180]:
+                  - link "Wiki" [ref=e181] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Aldur's%20Saga
+                  - generic [ref=e182]: /
+                  - link "Trade" [ref=e183] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22aldurs-saga%22%5D%7D%7D
+            - 'row "Emergent Possibility 19.62 Divine Orb 47 2 days history (6h buckets): +7.1% in Divine Orb +7.1% Wiki / Trade" [ref=e184]':
+              - cell "Emergent Possibility" [ref=e185]:
+                - link "Emergent Possibility" [ref=e186] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13857/Emergent-Possibility?referenceCurrency=divine
+                  - generic [ref=e188]: Emergent Possibility
+              - cell "19.62 Divine Orb" [ref=e189]:
+                - generic "19.62 Divine Orb" [ref=e190]:
+                  - generic [ref=e191]: "19.62"
+                  - img "Divine Orb" [ref=e192]
+              - cell "47" [ref=e193]
+              - 'cell "2 days history (6h buckets): +7.1% in Divine Orb +7.1%" [ref=e194]':
+                - 'generic "2 days history (6h buckets): +7.1% in Divine Orb" [ref=e195]':
+                  - 'img "2 days history (6h buckets): +7.1% in Divine Orb" [ref=e196]'
+                  - generic [ref=e199]: +7.1%
+              - cell "Wiki / Trade" [ref=e200]:
+                - generic [ref=e201]:
+                  - link "Wiki" [ref=e202] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Emergent%20Possibility
+                  - generic [ref=e203]: /
+                  - link "Trade" [ref=e204] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22emergent-possibility%22%5D%7D%7D
+            - 'row "Carved Cunning 3.69 Divine Orb 30 2 days history (6h buckets): -0.2% in Divine Orb -0.2% Wiki / Trade" [ref=e205]':
+              - cell "Carved Cunning" [ref=e206]:
+                - link "Carved Cunning" [ref=e207] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13863/Carved-Cunning?referenceCurrency=divine
+                  - generic [ref=e209]: Carved Cunning
+              - cell "3.69 Divine Orb" [ref=e210]:
+                - generic "3.69 Divine Orb" [ref=e211]:
+                  - generic [ref=e212]: "3.69"
+                  - img "Divine Orb" [ref=e213]
+              - cell "30" [ref=e214]
+              - 'cell "2 days history (6h buckets): -0.2% in Divine Orb -0.2%" [ref=e215]':
+                - 'generic "2 days history (6h buckets): -0.2% in Divine Orb" [ref=e216]':
+                  - 'img "2 days history (6h buckets): -0.2% in Divine Orb" [ref=e217]'
+                  - generic [ref=e220]: "-0.2%"
+              - cell "Wiki / Trade" [ref=e221]:
+                - generic [ref=e222]:
+                  - link "Wiki" [ref=e223] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Carved%20Cunning
+                  - generic [ref=e224]: /
+                  - link "Trade" [ref=e225] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22carved-cunning%22%5D%7D%7D
+            - 'row "Expedition Logbook 1.43 Divine Orb 6,141 2 days history (6h buckets): +62.6% in Divine Orb +62.6% Wiki / Trade" [ref=e226]':
+              - cell "Expedition Logbook" [ref=e227]:
+                - link "Expedition Logbook" [ref=e228] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13795/Expedition-Logbook?referenceCurrency=divine
+                  - generic [ref=e230]: Expedition Logbook
+              - cell "1.43 Divine Orb" [ref=e231]:
+                - generic "1.43 Divine Orb" [ref=e232]:
+                  - generic [ref=e233]: "1.43"
+                  - img "Divine Orb" [ref=e234]
+              - cell "6,141" [ref=e235]
+              - 'cell "2 days history (6h buckets): +62.6% in Divine Orb +62.6%" [ref=e236]':
+                - 'generic "2 days history (6h buckets): +62.6% in Divine Orb" [ref=e237]':
+                  - 'img "2 days history (6h buckets): +62.6% in Divine Orb" [ref=e238]'
+                  - generic [ref=e241]: +62.6%
+              - cell "Wiki / Trade" [ref=e242]:
+                - generic [ref=e243]:
+                  - link "Wiki" [ref=e244] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Expedition%20Logbook
+                  - generic [ref=e245]: /
+                  - link "Trade" [ref=e246] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22expedition-logbook%22%5D%7D%7D
+            - 'row "Emergent Vigour 1.27 Divine Orb 18 2 days history (6h buckets): +38.5% in Divine Orb +38.5% Wiki / Trade" [ref=e247]':
+              - cell "Emergent Vigour" [ref=e248]:
+                - link "Emergent Vigour" [ref=e249] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13855/Emergent-Vigour?referenceCurrency=divine
+                  - generic [ref=e251]: Emergent Vigour
+              - cell "1.27 Divine Orb" [ref=e252]:
+                - generic "1.27 Divine Orb" [ref=e253]:
+                  - generic [ref=e254]: "1.27"
+                  - img "Divine Orb" [ref=e255]
+              - cell "18" [ref=e256]
+              - 'cell "2 days history (6h buckets): +38.5% in Divine Orb +38.5%" [ref=e257]':
+                - 'generic "2 days history (6h buckets): +38.5% in Divine Orb" [ref=e258]':
+                  - 'img "2 days history (6h buckets): +38.5% in Divine Orb" [ref=e259]'
+                  - generic [ref=e262]: +38.5%
+              - cell "Wiki / Trade" [ref=e263]:
+                - generic [ref=e264]:
+                  - link "Wiki" [ref=e265] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Emergent%20Vigour
+                  - generic [ref=e266]: /
+                  - link "Trade" [ref=e267] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22emergent-vigour%22%5D%7D%7D
+            - 'row "Uhtred''s Saga 0.8 Divine Orb 1,558 2 days history (6h buckets): +7.9% in Divine Orb +7.9% Wiki / Trade" [ref=e268]':
+              - cell "Uhtred's Saga" [ref=e269]:
+                - link "Uhtred's Saga" [ref=e270] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13803/Uhtred's-Saga?referenceCurrency=divine
+                  - generic [ref=e272]: Uhtred's Saga
+              - cell "0.8 Divine Orb" [ref=e273]:
+                - generic "0.8 Divine Orb" [ref=e274]:
+                  - generic [ref=e275]: "0.8"
+                  - img "Divine Orb" [ref=e276]
+              - cell "1,558" [ref=e277]
+              - 'cell "2 days history (6h buckets): +7.9% in Divine Orb +7.9%" [ref=e278]':
+                - 'generic "2 days history (6h buckets): +7.9% in Divine Orb" [ref=e279]':
+                  - 'img "2 days history (6h buckets): +7.9% in Divine Orb" [ref=e280]'
+                  - generic [ref=e283]: +7.9%
+              - cell "Wiki / Trade" [ref=e284]:
+                - generic [ref=e285]:
+                  - link "Wiki" [ref=e286] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Uhtred's%20Saga
+                  - generic [ref=e287]: /
+                  - link "Trade" [ref=e288] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22uhtreds-saga%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 20) 0.69 Divine Orb 82 2 days history (6h buckets): +42.7% in Divine Orb +42.7% Wiki / Trade" [ref=e289]':
+              - cell "Thaumaturgic Flux (Level 20)" [ref=e290]:
+                - link "Thaumaturgic Flux (Level 20)" [ref=e291] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13851/Thaumaturgic-Flux-(Level-20)?referenceCurrency=divine
+                  - generic [ref=e293]: Thaumaturgic Flux (Level 20)
+              - cell "0.69 Divine Orb" [ref=e294]:
+                - generic "0.69 Divine Orb" [ref=e295]:
+                  - generic [ref=e296]: "0.69"
+                  - img "Divine Orb" [ref=e297]
+              - cell "82" [ref=e298]
+              - 'cell "2 days history (6h buckets): +42.7% in Divine Orb +42.7%" [ref=e299]':
+                - 'generic "2 days history (6h buckets): +42.7% in Divine Orb" [ref=e300]':
+                  - 'img "2 days history (6h buckets): +42.7% in Divine Orb" [ref=e301]'
+                  - generic [ref=e304]: +42.7%
+              - cell "Wiki / Trade" [ref=e305]:
+                - generic [ref=e306]:
+                  - link "Wiki" [ref=e307] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2020)
+                  - generic [ref=e308]: /
+                  - link "Trade" [ref=e309] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-20%22%5D%7D%7D
+            - 'row "Carved Tenacity 0.5 Divine Orb 91 2 days history (6h buckets): +20.4% in Divine Orb +20.4% Wiki / Trade" [ref=e310]':
+              - cell "Carved Tenacity" [ref=e311]:
+                - link "Carved Tenacity" [ref=e312] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13869/Carved-Tenacity?referenceCurrency=divine
+                  - generic [ref=e314]: Carved Tenacity
+              - cell "0.5 Divine Orb" [ref=e315]:
+                - generic "0.5 Divine Orb" [ref=e316]:
+                  - generic [ref=e317]: "0.5"
+                  - img "Divine Orb" [ref=e318]
+              - cell "91" [ref=e319]
+              - 'cell "2 days history (6h buckets): +20.4% in Divine Orb +20.4%" [ref=e320]':
+                - 'generic "2 days history (6h buckets): +20.4% in Divine Orb" [ref=e321]':
+                  - 'img "2 days history (6h buckets): +20.4% in Divine Orb" [ref=e322]'
+                  - generic [ref=e325]: +20.4%
+              - cell "Wiki / Trade" [ref=e326]:
+                - generic [ref=e327]:
+                  - link "Wiki" [ref=e328] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Carved%20Tenacity
+                  - generic [ref=e329]: /
+                  - link "Trade" [ref=e330] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22carved-tenacity%22%5D%7D%7D
+            - 'row "Olroth''s Saga 0.42 Divine Orb 1,342 2 days history (6h buckets): +60.7% in Divine Orb +60.7% Wiki / Trade" [ref=e331]':
+              - cell "Olroth's Saga" [ref=e332]:
+                - link "Olroth's Saga" [ref=e333] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13805/Olroth's-Saga?referenceCurrency=divine
+                  - generic [ref=e335]: Olroth's Saga
+              - cell "0.42 Divine Orb" [ref=e336]:
+                - generic "0.42 Divine Orb" [ref=e337]:
+                  - generic [ref=e338]: "0.42"
+                  - img "Divine Orb" [ref=e339]
+              - cell "1,342" [ref=e340]
+              - 'cell "2 days history (6h buckets): +60.7% in Divine Orb +60.7%" [ref=e341]':
+                - 'generic "2 days history (6h buckets): +60.7% in Divine Orb" [ref=e342]':
+                  - 'img "2 days history (6h buckets): +60.7% in Divine Orb" [ref=e343]'
+                  - generic [ref=e346]: +60.7%
+              - cell "Wiki / Trade" [ref=e347]:
+                - generic [ref=e348]:
+                  - link "Wiki" [ref=e349] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Olroth's%20Saga
+                  - generic [ref=e350]: /
+                  - link "Trade" [ref=e351] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22olroths-saga%22%5D%7D%7D
+            - 'row "Carved Mischief 0.37 Divine Orb 27 2 days history (6h buckets): +34.9% in Divine Orb +34.9% Wiki / Trade" [ref=e352]':
+              - cell "Carved Mischief" [ref=e353]:
+                - link "Carved Mischief" [ref=e354] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13867/Carved-Mischief?referenceCurrency=divine
+                  - generic [ref=e356]: Carved Mischief
+              - cell "0.37 Divine Orb" [ref=e357]:
+                - generic "0.37 Divine Orb" [ref=e358]:
+                  - generic [ref=e359]: "0.37"
+                  - img "Divine Orb" [ref=e360]
+              - cell "27" [ref=e361]
+              - 'cell "2 days history (6h buckets): +34.9% in Divine Orb +34.9%" [ref=e362]':
+                - 'generic "2 days history (6h buckets): +34.9% in Divine Orb" [ref=e363]':
+                  - 'img "2 days history (6h buckets): +34.9% in Divine Orb" [ref=e364]'
+                  - generic [ref=e367]: +34.9%
+              - cell "Wiki / Trade" [ref=e368]:
+                - generic [ref=e369]:
+                  - link "Wiki" [ref=e370] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Carved%20Mischief
+                  - generic [ref=e371]: /
+                  - link "Trade" [ref=e372] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22carved-mischief%22%5D%7D%7D
+            - 'row "Emergent Instinct 0.3 Divine Orb 58 2 days history (6h buckets): -19.9% in Divine Orb -19.9% Wiki / Trade" [ref=e373]':
+              - cell "Emergent Instinct" [ref=e374]:
+                - link "Emergent Instinct" [ref=e375] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13861/Emergent-Instinct?referenceCurrency=divine
+                  - generic [ref=e377]: Emergent Instinct
+              - cell "0.3 Divine Orb" [ref=e378]:
+                - generic "0.3 Divine Orb" [ref=e379]:
+                  - generic [ref=e380]: "0.3"
+                  - img "Divine Orb" [ref=e381]
+              - cell "58" [ref=e382]
+              - 'cell "2 days history (6h buckets): -19.9% in Divine Orb -19.9%" [ref=e383]':
+                - 'generic "2 days history (6h buckets): -19.9% in Divine Orb" [ref=e384]':
+                  - 'img "2 days history (6h buckets): -19.9% in Divine Orb" [ref=e385]'
+                  - generic [ref=e388]: "-19.9%"
+              - cell "Wiki / Trade" [ref=e389]:
+                - generic [ref=e390]:
+                  - link "Wiki" [ref=e391] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Emergent%20Instinct
+                  - generic [ref=e392]: /
+                  - link "Trade" [ref=e393] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22emergent-instinct%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 8) 0.14 Divine Orb 2 2 days history (6h buckets): +33.1% in Divine Orb +33.1% Wiki / Trade" [ref=e394]':
+              - cell "Thaumaturgic Flux (Level 8)" [ref=e395]:
+                - link "Thaumaturgic Flux (Level 8)" [ref=e396] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13827/Thaumaturgic-Flux-(Level-8)?referenceCurrency=divine
+                  - generic [ref=e398]: Thaumaturgic Flux (Level 8)
+              - cell "0.14 Divine Orb" [ref=e399]:
+                - generic "0.14 Divine Orb" [ref=e400]:
+                  - generic [ref=e401]: "0.14"
+                  - img "Divine Orb" [ref=e402]
+              - cell "2" [ref=e403]
+              - 'cell "2 days history (6h buckets): +33.1% in Divine Orb +33.1%" [ref=e404]':
+                - 'generic "2 days history (6h buckets): +33.1% in Divine Orb" [ref=e405]':
+                  - 'img "2 days history (6h buckets): +33.1% in Divine Orb" [ref=e406]'
+                  - generic [ref=e409]: +33.1%
+              - cell "Wiki / Trade" [ref=e410]:
+                - generic [ref=e411]:
+                  - link "Wiki" [ref=e412] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%208)
+                  - generic [ref=e413]: /
+                  - link "Trade" [ref=e414] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-8%22%5D%7D%7D
+            - 'row "Void Flux 0.11 Divine Orb 430 2 days history (6h buckets): -2.2% in Divine Orb -2.2% Wiki / Trade" [ref=e415]':
+              - cell "Void Flux" [ref=e416]:
+                - link "Void Flux" [ref=e417] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13813/Void-Flux?referenceCurrency=divine
+                  - generic [ref=e419]: Void Flux
+              - cell "0.11 Divine Orb" [ref=e420]:
+                - generic "0.11 Divine Orb" [ref=e421]:
+                  - generic [ref=e422]: "0.11"
+                  - img "Divine Orb" [ref=e423]
+              - cell "430" [ref=e424]
+              - 'cell "2 days history (6h buckets): -2.2% in Divine Orb -2.2%" [ref=e425]':
+                - 'generic "2 days history (6h buckets): -2.2% in Divine Orb" [ref=e426]':
+                  - 'img "2 days history (6h buckets): -2.2% in Divine Orb" [ref=e427]'
+                  - generic [ref=e430]: "-2.2%"
+              - cell "Wiki / Trade" [ref=e431]:
+                - generic [ref=e432]:
+                  - link "Wiki" [ref=e433] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Void%20Flux
+                  - generic [ref=e434]: /
+                  - link "Trade" [ref=e435] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22void-flux%22%5D%7D%7D
+            - 'row "Emergent Protection 0.08 Divine Orb 14 2 days history (6h buckets): -11.1% in Divine Orb -11.1% Wiki / Trade" [ref=e436]':
+              - cell "Emergent Protection" [ref=e437]:
+                - link "Emergent Protection" [ref=e438] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13859/Emergent-Protection?referenceCurrency=divine
+                  - generic [ref=e440]: Emergent Protection
+              - cell "0.08 Divine Orb" [ref=e441]:
+                - generic "0.08 Divine Orb" [ref=e442]:
+                  - generic [ref=e443]: "0.08"
+                  - img "Divine Orb" [ref=e444]
+              - cell "14" [ref=e445]
+              - 'cell "2 days history (6h buckets): -11.1% in Divine Orb -11.1%" [ref=e446]':
+                - 'generic "2 days history (6h buckets): -11.1% in Divine Orb" [ref=e447]':
+                  - 'img "2 days history (6h buckets): -11.1% in Divine Orb" [ref=e448]'
+                  - generic [ref=e451]: "-11.1%"
+              - cell "Wiki / Trade" [ref=e452]:
+                - generic [ref=e453]:
+                  - link "Wiki" [ref=e454] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Emergent%20Protection
+                  - generic [ref=e455]: /
+                  - link "Trade" [ref=e456] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22emergent-protection%22%5D%7D%7D
+            - 'row "Medved''s Saga 0.07 Divine Orb 1,407 2 days history (6h buckets): +91.5% in Divine Orb +91.5% Wiki / Trade" [ref=e457]':
+              - cell "Medved's Saga" [ref=e458]:
+                - link "Medved's Saga" [ref=e459] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13799/Medved's-Saga?referenceCurrency=divine
+                  - generic [ref=e461]: Medved's Saga
+              - cell "0.07 Divine Orb" [ref=e462]:
+                - generic "0.07 Divine Orb" [ref=e463]:
+                  - generic [ref=e464]: "0.07"
+                  - img "Divine Orb" [ref=e465]
+              - cell "1,407" [ref=e466]
+              - 'cell "2 days history (6h buckets): +91.5% in Divine Orb +91.5%" [ref=e467]':
+                - 'generic "2 days history (6h buckets): +91.5% in Divine Orb" [ref=e468]':
+                  - 'img "2 days history (6h buckets): +91.5% in Divine Orb" [ref=e469]'
+                  - generic [ref=e472]: +91.5%
+              - cell "Wiki / Trade" [ref=e473]:
+                - generic [ref=e474]:
+                  - link "Wiki" [ref=e475] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Medved's%20Saga
+                  - generic [ref=e476]: /
+                  - link "Trade" [ref=e477] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22medveds-saga%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 12) 0.06 Divine Orb 10 2 days history (6h buckets): +38.5% in Divine Orb +38.5% Wiki / Trade" [ref=e478]':
+              - cell "Thaumaturgic Flux (Level 12)" [ref=e479]:
+                - link "Thaumaturgic Flux (Level 12)" [ref=e480] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13835/Thaumaturgic-Flux-(Level-12)?referenceCurrency=divine
+                  - generic [ref=e482]: Thaumaturgic Flux (Level 12)
+              - cell "0.06 Divine Orb" [ref=e483]:
+                - generic "0.06 Divine Orb" [ref=e484]:
+                  - generic [ref=e485]: "0.06"
+                  - img "Divine Orb" [ref=e486]
+              - cell "10" [ref=e487]
+              - 'cell "2 days history (6h buckets): +38.5% in Divine Orb +38.5%" [ref=e488]':
+                - 'generic "2 days history (6h buckets): +38.5% in Divine Orb" [ref=e489]':
+                  - 'img "2 days history (6h buckets): +38.5% in Divine Orb" [ref=e490]'
+                  - generic [ref=e493]: +38.5%
+              - cell "Wiki / Trade" [ref=e494]:
+                - generic [ref=e495]:
+                  - link "Wiki" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2012)
+                  - generic [ref=e497]: /
+                  - link "Trade" [ref=e498] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-12%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 19) 0.05 Divine Orb 92 2 days history (6h buckets): +39.7% in Divine Orb +39.7% Wiki / Trade" [ref=e499]':
+              - cell "Thaumaturgic Flux (Level 19)" [ref=e500]:
+                - link "Thaumaturgic Flux (Level 19)" [ref=e501] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13849/Thaumaturgic-Flux-(Level-19)?referenceCurrency=divine
+                  - generic [ref=e503]: Thaumaturgic Flux (Level 19)
+              - cell "0.05 Divine Orb" [ref=e504]:
+                - generic "0.05 Divine Orb" [ref=e505]:
+                  - generic [ref=e506]: "0.05"
+                  - img "Divine Orb" [ref=e507]
+              - cell "92" [ref=e508]
+              - 'cell "2 days history (6h buckets): +39.7% in Divine Orb +39.7%" [ref=e509]':
+                - 'generic "2 days history (6h buckets): +39.7% in Divine Orb" [ref=e510]':
+                  - 'img "2 days history (6h buckets): +39.7% in Divine Orb" [ref=e511]'
+                  - generic [ref=e514]: +39.7%
+              - cell "Wiki / Trade" [ref=e515]:
+                - generic [ref=e516]:
+                  - link "Wiki" [ref=e517] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2019)
+                  - generic [ref=e518]: /
+                  - link "Trade" [ref=e519] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-19%22%5D%7D%7D
+            - 'row "Chilling Flux 0.05 Divine Orb 485 2 days history (6h buckets): +35.5% in Divine Orb +35.5% Wiki / Trade" [ref=e520]':
+              - cell "Chilling Flux" [ref=e521]:
+                - link "Chilling Flux" [ref=e522] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13809/Chilling-Flux?referenceCurrency=divine
+                  - generic [ref=e524]: Chilling Flux
+              - cell "0.05 Divine Orb" [ref=e525]:
+                - generic "0.05 Divine Orb" [ref=e526]:
+                  - generic [ref=e527]: "0.05"
+                  - img "Divine Orb" [ref=e528]
+              - cell "485" [ref=e529]
+              - 'cell "2 days history (6h buckets): +35.5% in Divine Orb +35.5%" [ref=e530]':
+                - 'generic "2 days history (6h buckets): +35.5% in Divine Orb" [ref=e531]':
+                  - 'img "2 days history (6h buckets): +35.5% in Divine Orb" [ref=e532]'
+                  - generic [ref=e535]: +35.5%
+              - cell "Wiki / Trade" [ref=e536]:
+                - generic [ref=e537]:
+                  - link "Wiki" [ref=e538] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Chilling%20Flux
+                  - generic [ref=e539]: /
+                  - link "Trade" [ref=e540] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22chilling-flux%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 9) 0.04 Divine Orb 13 2 days history (6h buckets): +6.8% in Divine Orb +6.8% Wiki / Trade" [ref=e541]':
+              - cell "Thaumaturgic Flux (Level 9)" [ref=e542]:
+                - link "Thaumaturgic Flux (Level 9)" [ref=e543] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13829/Thaumaturgic-Flux-(Level-9)?referenceCurrency=divine
+                  - generic [ref=e545]: Thaumaturgic Flux (Level 9)
+              - cell "0.04 Divine Orb" [ref=e546]:
+                - generic "0.04 Divine Orb" [ref=e547]:
+                  - generic [ref=e548]: "0.04"
+                  - img "Divine Orb" [ref=e549]
+              - cell "13" [ref=e550]
+              - 'cell "2 days history (6h buckets): +6.8% in Divine Orb +6.8%" [ref=e551]':
+                - 'generic "2 days history (6h buckets): +6.8% in Divine Orb" [ref=e552]':
+                  - 'img "2 days history (6h buckets): +6.8% in Divine Orb" [ref=e553]'
+                  - generic [ref=e556]: +6.8%
+              - cell "Wiki / Trade" [ref=e557]:
+                - generic [ref=e558]:
+                  - link "Wiki" [ref=e559] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%209)
+                  - generic [ref=e560]: /
+                  - link "Trade" [ref=e561] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-9%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 15) 0.04 Divine Orb 18 2 days history (6h buckets): +24.0% in Divine Orb +24.0% Wiki / Trade" [ref=e562]':
+              - cell "Thaumaturgic Flux (Level 15)" [ref=e563]:
+                - link "Thaumaturgic Flux (Level 15)" [ref=e564] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13841/Thaumaturgic-Flux-(Level-15)?referenceCurrency=divine
+                  - generic [ref=e566]: Thaumaturgic Flux (Level 15)
+              - cell "0.04 Divine Orb" [ref=e567]:
+                - generic "0.04 Divine Orb" [ref=e568]:
+                  - generic [ref=e569]: "0.04"
+                  - img "Divine Orb" [ref=e570]
+              - cell "18" [ref=e571]
+              - 'cell "2 days history (6h buckets): +24.0% in Divine Orb +24.0%" [ref=e572]':
+                - 'generic "2 days history (6h buckets): +24.0% in Divine Orb" [ref=e573]':
+                  - 'img "2 days history (6h buckets): +24.0% in Divine Orb" [ref=e574]'
+                  - generic [ref=e577]: +24.0%
+              - cell "Wiki / Trade" [ref=e578]:
+                - generic [ref=e579]:
+                  - link "Wiki" [ref=e580] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2015)
+                  - generic [ref=e581]: /
+                  - link "Trade" [ref=e582] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-15%22%5D%7D%7D
+            - 'row "Thaumaturgic Flux (Level 10) 0.04 Divine Orb 29 2 days history (6h buckets): -0.5% in Divine Orb -0.5% Wiki / Trade" [ref=e583]':
+              - cell "Thaumaturgic Flux (Level 10)" [ref=e584]:
+                - link "Thaumaturgic Flux (Level 10)" [ref=e585] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13831/Thaumaturgic-Flux-(Level-10)?referenceCurrency=divine
+                  - generic [ref=e587]: Thaumaturgic Flux (Level 10)
+              - cell "0.04 Divine Orb" [ref=e588]:
+                - generic "0.04 Divine Orb" [ref=e589]:
+                  - generic [ref=e590]: "0.04"
+                  - img "Divine Orb" [ref=e591]
+              - cell "29" [ref=e592]
+              - 'cell "2 days history (6h buckets): -0.5% in Divine Orb -0.5%" [ref=e593]':
+                - 'generic "2 days history (6h buckets): -0.5% in Divine Orb" [ref=e594]':
+                  - 'img "2 days history (6h buckets): -0.5% in Divine Orb" [ref=e595]'
+                  - generic [ref=e598]: "-0.5%"
+              - cell "Wiki / Trade" [ref=e599]:
+                - generic [ref=e600]:
+                  - link "Wiki" [ref=e601] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Thaumaturgic%20Flux%20(Level%2010)
+                  - generic [ref=e602]: /
+                  - link "Trade" [ref=e603] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22thaumaturgic-flux-10%22%5D%7D%7D
+            - 'row "Blazing Flux 0.04 Divine Orb 547 2 days history (6h buckets): +25.1% in Divine Orb +25.1% Wiki / Trade" [ref=e604]':
+              - cell "Blazing Flux" [ref=e605]:
+                - link "Blazing Flux" [ref=e606] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13807/Blazing-Flux?referenceCurrency=divine
+                  - generic [ref=e608]: Blazing Flux
+              - cell "0.04 Divine Orb" [ref=e609]:
+                - generic "0.04 Divine Orb" [ref=e610]:
+                  - generic [ref=e611]: "0.04"
+                  - img "Divine Orb" [ref=e612]
+              - cell "547" [ref=e613]
+              - 'cell "2 days history (6h buckets): +25.1% in Divine Orb +25.1%" [ref=e614]':
+                - 'generic "2 days history (6h buckets): +25.1% in Divine Orb" [ref=e615]':
+                  - 'img "2 days history (6h buckets): +25.1% in Divine Orb" [ref=e616]'
+                  - generic [ref=e619]: +25.1%
+              - cell "Wiki / Trade" [ref=e620]:
+                - generic [ref=e621]:
+                  - link "Wiki" [ref=e622] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Blazing%20Flux
+                  - generic [ref=e623]: /
+                  - link "Trade" [ref=e624] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22blazing-flux%22%5D%7D%7D
+            - 'row "Vorana''s Saga 0.04 Divine Orb 608 2 days history (6h buckets): +15.1% in Divine Orb +15.1% Wiki / Trade" [ref=e625]':
+              - cell "Vorana's Saga" [ref=e626]:
+                - link "Vorana's Saga" [ref=e627] [cursor=pointer]:
+                  - /url: /poe2/runes/economy/currencies/expedition/13801/Vorana's-Saga?referenceCurrency=divine
+                  - generic [ref=e629]: Vorana's Saga
+              - cell "0.04 Divine Orb" [ref=e630]:
+                - generic "0.04 Divine Orb" [ref=e631]:
+                  - generic [ref=e632]: "0.04"
+                  - img "Divine Orb" [ref=e633]
+              - cell "608" [ref=e634]
+              - 'cell "2 days history (6h buckets): +15.1% in Divine Orb +15.1%" [ref=e635]':
+                - 'generic "2 days history (6h buckets): +15.1% in Divine Orb" [ref=e636]':
+                  - 'img "2 days history (6h buckets): +15.1% in Divine Orb" [ref=e637]'
+                  - generic [ref=e640]: +15.1%
+              - cell "Wiki / Trade" [ref=e641]:
+                - generic [ref=e642]:
+                  - link "Wiki" [ref=e643] [cursor=pointer]:
+                    - /url: https://www.poe2wiki.net/wiki/Vorana's%20Saga
+                  - generic [ref=e644]: /
+                  - link "Trade" [ref=e645] [cursor=pointer]:
+                    - /url: https://www.pathofexile.com/trade2/exchange/poe2/runes%20of%20aldur?q=%7B%22exchange%22%3A%7B%22status%22%3A%7B%22option%22%3A%22online%22%7D%2C%22have%22%3A%5B%22exalted%22%5D%2C%22want%22%3A%5B%22voranas-saga%22%5D%7D%7D
+        - generic [ref=e647]:
+          - generic [ref=e648]: Page 1 of 2 · 32 items
+          - generic [ref=e649]:
+            - generic [ref=e650]:
+              - generic [ref=e651]: Rows
+              - combobox "Rows" [ref=e653]:
+                - option "10"
+                - option "25" [selected]
+                - option "50"
+                - option "100"
+            - button "Previous" [disabled] [ref=e654]
+            - button "Next" [ref=e655]
+  - contentinfo [ref=e656]:
+    - navigation [ref=e658]:
+      - link "Privacy Policy" [ref=e660] [cursor=pointer]:
+        - /url: /privacy
+      - generic [ref=e661]:
+        - generic [ref=e662]: "|"
+        - link "Discord" [ref=e663] [cursor=pointer]:
+          - /url: https://discord.gg/EHXVdQCpBq
+      - generic [ref=e664]:
+        - generic [ref=e665]: "|"
+        - link "GitHub" [ref=e666] [cursor=pointer]:
+          - /url: https://github.com/poe2scout/poe2scout
+      - generic [ref=e667]:
+        - generic [ref=e668]: "|"
+        - link "API Docs" [ref=e669] [cursor=pointer]:
+          - /url: /api/swagger
+    - generic [ref=e670]: © 2026 POE2 Scout. Not affiliated with Grinding Gear Games.

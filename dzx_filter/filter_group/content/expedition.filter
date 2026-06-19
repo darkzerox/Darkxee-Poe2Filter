@@ -5,11 +5,11 @@
 # อัปเดต 2026-06 (32 รายการ)
 
 #--------------------------------
-# Tier S: 7+ Divine
+# Tier S: 15+ Divine
 #--------------------------------
-# Carved Majesty 10d | Emergent Possibility 7d
+# Carved Majesty 52d | Perfect Flux 28.2d | Aldur's Saga 27.84d | Emergent Possibility 19.62d
 Show
-  BaseType "Carved Majesty" "Emergent Possibility"
+  BaseType "Carved Majesty" "Perfect Flux" "Aldur's Saga" "Emergent Possibility"
   SetFontSize 45
   SetTextColor 232 231 171
   SetBorderColor 232 37 97
@@ -19,12 +19,11 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 #--------------------------------
-# Tier A: 2-5 Divine
+# Tier A: 1-5 Divine
 #--------------------------------
-# Aldur's Saga 4.81d | Perfect Flux 3.55d | Emergent Vigour 2.94d
-# Emergent Instinct 2.53d | Carved Mischief 2.5d | Thaumaturgic Flux (Level 20) 2.02d
+# Carved Cunning 3.69d | Expedition Logbook 1.43d | Emergent Vigour 1.27d
 Show
-  BaseType "Aldur's Saga" "Perfect Flux" "Emergent Vigour" "Emergent Instinct" "Carved Mischief" "Thaumaturgic Flux (Level 20)"
+  BaseType "Carved Cunning" "Expedition Logbook" "Emergent Vigour"
   SetFontSize 42
   SetTextColor 232 231 171
   SetBorderColor 255 193 48
@@ -34,11 +33,12 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/special_currency.mp3" 100
 
 #--------------------------------
-# Tier B: 1-2 Divine
+# Tier B: 0.3-1 Divine
 #--------------------------------
-# Carved Cunning 1.87d | Carved Tenacity 1.33d | Emergent Protection 1.26d
+# Uhtred's Saga 0.8d | TF (Level 20) 0.69d | Carved Tenacity 0.5d
+# Olroth's Saga 0.42d | Carved Mischief 0.37d | Emergent Instinct 0.3d
 Show
-  BaseType "Carved Cunning" "Carved Tenacity" "Emergent Protection"
+  BaseType "Uhtred's Saga" "Thaumaturgic Flux (Level 20)" "Carved Tenacity" "Olroth's Saga" "Carved Mischief" "Emergent Instinct"
   SetFontSize 40
   SetTextColor 218 145 255
   SetBorderColor 0 0 0
@@ -48,26 +48,11 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
 
 #--------------------------------
-# Tier C: 30-57 Exalted
+# Tier C: 0.07-0.3 Divine
 #--------------------------------
-# Thaumaturgic Flux (Level 8) 56.53ex | Expedition Logbook 39.94ex
+# TF (Level 8) 0.14d | Void Flux 0.11d | Emergent Protection 0.08d | Medved's Saga 0.07d
 Show
-  BaseType "Thaumaturgic Flux (Level 8)" "Expedition Logbook"
-  SetFontSize 40
-  SetTextColor 218 145 255
-  SetBorderColor 0 0 0
-  SetBackgroundColor 0 0 0
-  PlayEffect Purple
-  MinimapIcon 1 Purple Circle
-  CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
-
-#--------------------------------
-# Tier D: 3-10 Exalted
-#--------------------------------
-# Olroth's Saga 7.21ex | Void Flux 7.21ex | Vorana's Saga 4.06ex
-# Chilling Flux 4.01ex | Blazing Flux 3.53ex | Thaumaturgic Flux (Level 19) 3.21ex | Crackling Flux 3.1ex
-Show
-  BaseType "Olroth's Saga" "Void Flux" "Vorana's Saga" "Chilling Flux" "Blazing Flux" "Thaumaturgic Flux (Level 19)" "Crackling Flux"
+  BaseType "Thaumaturgic Flux (Level 8)" "Void Flux" "Emergent Protection" "Medved's Saga"
   SetFontSize 35
   SetTextColor 255 255 255
   SetBorderColor 50 2 68
@@ -77,25 +62,13 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
 
 #--------------------------------
-# Tier E: 1-2 Exalted
+# Fallback: Expedition items ทั่วไป (< 0.07d + อนาคต)
 #--------------------------------
-# TF (Level 14) 1.91ex | Uhtred's Saga 1.77ex | Medved's Saga 1.41ex
-# TF (Level 9,11,17,18) ~1ex
+# TF Level 9-19 (0.01-0.06d) | Chilling/Blazing/Vorana's/Crackling Flux
 Show
-  BaseType "Thaumaturgic Flux (Level 14)" "Uhtred's Saga" "Medved's Saga" "Thaumaturgic Flux (Level 9)" "Thaumaturgic Flux (Level 11)" "Thaumaturgic Flux (Level 17)" "Thaumaturgic Flux (Level 18)"
-  SetFontSize 35
+  BaseType "Thaumaturgic Flux" "Saga" "Flux" "Carved" "Emergent"
+  SetFontSize 32
   SetTextColor 255 255 255
   SetBorderColor 50 2 68
   SetBackgroundColor 50 2 68
-  PlayAlertSound 2 50
-
-#--------------------------------
-# Fallback: Expedition items ทั่วไป (< 1ex + อนาคต)
-#--------------------------------
-# TF (Level 10,12,13,15,16) ~0.7-1ex + รองรับ items ใหม่
-Show
-  BaseType "Thaumaturgic Flux" "Expedition Logbook" "Saga" "Flux" "Carved" "Emergent"
-  SetFontSize 30
-  SetTextColor 170 170 170
-  SetBorderColor 60 60 60
   PlayAlertSound 2 30
