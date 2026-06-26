@@ -4,9 +4,9 @@
 
 Show
   Class "Pinnacle Keys"
-  SetTextColor 177 90 18
-  SetBorderColor 177 90 18
-  SetBackgroundColor 24 39 71
+  SetTextColor 251 168 101 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 92 9 59 255
   PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Brown Square
@@ -14,9 +14,9 @@ Show
 
 Show
   BaseType "Simulacrum" 
-  SetTextColor 177 90 18
-  SetBorderColor 177 90 18
-  SetBackgroundColor 24 39 71
+  SetTextColor 251 168 101 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 92 9 59 255
   PlayAlertSound 12 100
   PlayEffect Brown
   MinimapIcon 1 Brown Square
@@ -34,9 +34,9 @@ Show
 
 Show
   Class "Tablet"
-  SetTextColor 177 90 18
-  SetBorderColor 177 90 18
-  SetBackgroundColor 24 39 71
+  SetTextColor 251 168 101 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 92 9 59 255
   PlayAlertSound 2 200
   PlayEffect Brown
   MinimapIcon 1 Yellow Square
