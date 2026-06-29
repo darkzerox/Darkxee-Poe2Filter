@@ -99,23 +99,31 @@ def main():
     print("\n[Step 2/5] Zipping compiled filters...")
     zip_path = zip_filters()
     
-    # Step 3: Build EXE Launcher
+    # Step 3: Build EXE Launcher (optional - skipped if PyInstaller unavailable)
     print("\n[Step 3/5] Compiling Windows EXE Launcher...")
-    run_command([
-        sys.executable, "-m", "PyInstaller",
-        "--onefile",
-        "--noconsole",
-        "--name", "DZX-PoE2-Filter-Launcher",
-        "--add-data", "dist/filter;filters",
-        "--add-data", "dzx_filter/images;dzx_filter/images",
-        "--add-data", "config.json;.",
-        "script/installer_gui.py"
-    ])
     exe_path = project_root / "dist" / "DZX-PoE2-Filter-Launcher.exe"
-    if not exe_path.exists():
-        print(f"❌ Launcher compilation failed. Executable not found at {exe_path}")
-        sys.exit(1)
-    print(f"✅ Successfully compiled launcher: {exe_path.name}")
+    try:
+        import importlib.util
+        if importlib.util.find_spec("PyInstaller") is None:
+            raise ImportError("PyInstaller not installed")
+        run_command([
+            sys.executable, "-m", "PyInstaller",
+            "--onefile",
+            "--noconsole",
+            "--name", "DZX-PoE2-Filter-Launcher",
+            "--add-data", "dist/filter;filters",
+            "--add-data", "dzx_filter/images;dzx_filter/images",
+            "--add-data", "config.json;.",
+            "script/installer_gui.py"
+        ])
+        if not exe_path.exists():
+            print(f"⚠️ Launcher compilation ran but exe not found at {exe_path}. Skipping.")
+            exe_path = None
+        else:
+            print(f"✅ Successfully compiled launcher: {exe_path.name}")
+    except (ImportError, SystemExit):
+        print("⚠️ PyInstaller not available. Skipping EXE launcher build.")
+        exe_path = None
     
     # Step 4: Tag commits locally
     print("\n[Step 4/5] Creating local git tags...")
@@ -148,11 +156,12 @@ def main():
     release_cmd = [
         "gh", "release", "create", tag_v,
         str(zip_path),
-        str(exe_path),
         "--repo", "darkzerox/Darkxee-Poe2Filter",
         "--title", f"Darkxee-Poe2Filter {version}",
         "--generate-notes"
     ]
+    if exe_path:
+        release_cmd.insert(release_cmd.index(str(zip_path)) + 1, str(exe_path))
     
     # Check if prerelease
     if "beta" in version.lower() or "alpha" in version.lower():
