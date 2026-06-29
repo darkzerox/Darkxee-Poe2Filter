@@ -128,6 +128,11 @@ Show
 
 #--- Low Tier Currency ---
 
+Hide
+  AreaLevel >= 79
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+
+
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Show
   AreaLevel >= 70
