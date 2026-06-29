@@ -1,5 +1,6 @@
 Hide
   Quality == 0
+  ItemLevel < 83
   AreaLevel >= 79
   Class "Flasks"
   Rarity Normal Magic
