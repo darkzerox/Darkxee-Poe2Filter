@@ -2,6 +2,12 @@
 # Currency
 #------------------------------------------------------------------------------
 
+Hide
+  AreaLevel >= 79
+  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard" "Lesser Jeweller's Orb" "Artificer's Orb"
+
+
+
 Show
   Class "Currency"
   SetFontSize 32
@@ -101,11 +107,6 @@ Show
   CustomAlertSound "dzx_filter/soundeffect/type-01/currency.mp3" 100
 
 
-
-
-
-
-
 # Currency Tier B: Regal, Vaal ...
 Show
   BaseType "Gemcutter's Prism" "Chaos Orb" "Lesser Jeweller's Orb" "Regal Orb" "Artificer's Orb" "Glassblower's Bauble" "Orb of Alchemy"
@@ -128,9 +129,7 @@ Show
 
 #--- Low Tier Currency ---
 
-Hide
-  AreaLevel >= 79
-  BaseType "Arcanist's Etcher" "Armourer's Scrap" "Blacksmith's Whetstone" "Orb of Augmentation" "Orb of Transmutation" "Regal Shard"
+
 
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
