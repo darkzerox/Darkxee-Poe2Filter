@@ -3,19 +3,53 @@
 #------------------------------------------------------------------------------
 
  
-
+# T1
 Show
   Rarity Unique
-	BaseType == "Blacksteel Tower Shield" "Chain Tiara"   "Diamond" "Embroidered Gloves"   "Heroic Armour"   "Ruby" "Spiral Wraps" "Stone Charm" "Time-Lost Diamond" "Timeless Jewel" "Unset Ring" "Viper Cap" "Amethyst Ring" "Bloodstone Amulet" "Crude Bow" "Garment" "Lazuli Ring" "Stellar Amulet" "Heavy Belt" "Stoic Sceptre" "Twisted Wand" "Heartwood Shortbow"
-	SetFontSize 40
+	BaseType == "Abyss Tablet" "Armoured Cap" "Emerald" "Golden Charm" "Grand Spear" "Incense Relic" "Ornate Gauntlets" "Primed Quiver" "Ring" "Ruby" "Runic Fork" "Sacred Focus" "Sacrificial Regalia" "Sapphire" "Shrine Sceptre" "Time-Lost Diamond" "Unset Ring" "Vase Relic" "Heavy Belt" "Irradiated Tablet" "Utility Belt"
+
+	SetFontSize 45
   SetTextColor 238 238 238
   SetBorderColor 53 13 13 255
   SetBackgroundColor 216 64 64
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
 
+
+# T2
+Show 
+  Rarity Unique
+  BaseType == "Aberrant Sledge" "Ancient Leggings" "Array Buckler" "Brimmed Helm" "Chain Tiara" "Composite Bow" "Conqueror Plate" "Covert Hood" "Crucible Tower Shield" "Decorated Helm" "Diamond" "Fine Bracers" "Gargantuan Mana Flask" "Garment" "Glacial Fortress" "Grand Manchettes" "Grand Regalia" "Ironclad Vestments" "Morning Star" "Ornate Ringmail" "Primal Markings" "Ritual Tablet" "Silver Charm" "Siphoning Wand" "Spiral Wraps" "Stoic Sceptre" "Stone Charm" "Temple Tablet" "Thawing Charm" "Timeless Jewel" "Twisted Wand" "Two-Stone Ring" "Veridical Chain"
+
+  SetFontSize 40
+  SetTextColor 238 238 238
+  SetBorderColor 53 13 13 255
+  SetBackgroundColor 216 64 64
+  PlayAlertSound 6 200
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+#------------------------------------------------------------------------------
+# Hide Uniques (เลเวลน้อย / ไม่ใช้)
+#------------------------------------------------------------------------------
+
+Hide
+  Rarity Unique
+  ItemLevel <= 83
+  AreaLevel >= 79
+  Height > 1
+  Class "Quarterstaves" "Two Hand Maces" "Bows" "Crossbows" "Staves" "Body Armours" "Wands" "Sceptres" "Helmets" "Gloves" "Boots" "Shields" "One Hand Mace" "Focus" "Bucklers" "Spears"
+  PlayEffect Brown Temp
+  MinimapIcon 1 Brown Star
+  SetFontSize 40
+  PlayAlertSound 3 0
+  CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+# Default Unique  
 Show
   Rarity Unique	
   SetTextColor 175 96 37 255
@@ -26,3 +60,6 @@ Show
   SetFontSize 40
   PlayAlertSound 3 0
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
+
+
+

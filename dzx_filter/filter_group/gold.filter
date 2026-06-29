@@ -11,8 +11,8 @@ Show
 
 Hide
   BaseType == "Gold"
-  AreaLevel >= 70
-  StackSize <= 500
+  AreaLevel >= 79
+  StackSize <= 1000
   SetTextColor 180 180 180
   SetBackgroundColor 255 255 255 0
   SetFontSize 32

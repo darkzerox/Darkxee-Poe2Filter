@@ -23,3 +23,9 @@ Hide
   Rarity Normal Magic 
   BaseType "flask" "Scroll of Wisdom"
 
+
+# Hide Low Delirium Currency
+Hide
+  AreaLevel >= 80
+  BaseType "Ancient Concentrated Liquid Fear" "Ancient Concentrated Liquid Isolation" "Ancient Concentrated Liquid Suffering" "Ancient Diluted Liquid Greed" "Ancient Diluted Liquid Guilt" "Ancient Diluted Liquid Ire" "Ancient Liquid Despair" "Ancient Liquid Disgust" "Ancient Liquid Envy" "Ancient Liquid Paranoia" "Ancient Potent Liquid Ferocity" "Diluted Liquid Greed" "Diluted Liquid Guilt" "Diluted Liquid Ire" "Liquid Despair" "Liquid Disgust" "Liquid Envy" "Liquid Paranoia" "Potent Liquid Melancholy"
+

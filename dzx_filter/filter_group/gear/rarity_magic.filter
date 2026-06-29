@@ -5,14 +5,15 @@
 
 Show
   Rarity >= Magic
-  UnidentifiedItemTier >= 4
+  ItemLevel >= 81
+  UnidentifiedItemTier >= 5
   Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Foci" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands" "Bucklers" "spears" "Talismans"
   SetTextColor 101 103 222
   SetBackgroundColor 0 0 0
   SetFontSize 40
 
 Show 
-	ItemLevel >= 80
+	ItemLevel >= 81
 	Rarity  Magic
 	BaseType == "Gemini Bow" "Obliterator Bow" "Primed Quiver" "Volant Quiver" "Visceral Quiver" "Heavy Belt" "Attuned Wand" "Siphoning Wand" "Acrid Wand" "Dueling Wand" "Galvanic Wand" "Rattling Sceptre" "Forked Spear" "Falconer's Jacket" "Sleek Jacket" "Dragonscale Boots" "Sandsworn Sandals" "Quickslip Shoes"  "Vile Robe" "Jade Tiara" "Slipstrike Vest" "Freebooter Cap" "Ancestral Tiara" "Kamasan Tiara" "Polished Bracers" "Trapper Hood" "Rambler Jacket" "Secured Wraps" "Daggerfoot Shoes" 
 	SetFontSize 32

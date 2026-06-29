@@ -3,23 +3,24 @@
 # All crafting items from TFT market data
 # --------------------------------
 
+#Socket == 3
 Show
-	ItemLevel >= 80
-	Class == "Bows" "Crossbows" "Quarterstaves" "Staves" "Two Hand Maces" "Wands" "Gloves"  "Body Armours" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
-	Sockets >= 3
+	ItemLevel >= 81
+	Sockets == 3
+  Class "Quarterstaves" "Two Hand Maces" "Bows" "Crossbows" "Staves" "Body Armours" 
 	SetFontSize 45
 	SetTextColor 255 140 0
-
 	SetBackgroundColor 50 0 0 200
 	SetBorderColor 255 0 0
 	MinimapIcon 1 Orange Star
 	PlayAlertSound 4 100
 	CustomAlertSound "dzx_filter/soundeffect/type-01/divine.mp3" 100
 
+#Socket == 2
 Show
-	ItemLevel >= 80
-  	Class == "Gloves" "Boots" "Bucklers" "Foci" "Helmets" "One Hand Maces" "Sceptres" "Shields" "Spears" "Wands" "Staves" "Two Hand Maces"
-	Sockets >= 2
+	ItemLevel >= 81
+	Sockets == 2
+  Class "Wands" "Sceptres" "Helmets" "Gloves" "Boots" "Shields" "One Hand Mace" "Focus" "Bucklers" "Spears"
 	SetFontSize 45
 	SetTextColor 255 140 0
 	SetBackgroundColor 50 0 0 200

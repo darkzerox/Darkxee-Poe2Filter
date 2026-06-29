@@ -100,8 +100,6 @@ Show
   PlayAlertSound 2 50
 
 
-
-
 Show
 	Class "Currency"
   BaseType   "Catalyst" "Essence of"
