@@ -7,10 +7,9 @@
 Show
   Rarity Unique
 	BaseType == "Abyss Tablet" "Armoured Cap" "Emerald" "Golden Charm" "Grand Spear" "Incense Relic" "Ornate Gauntlets" "Primed Quiver" "Ring" "Ruby" "Runic Fork" "Sacred Focus" "Sacrificial Regalia" "Sapphire" "Shrine Sceptre" "Time-Lost Diamond" "Unset Ring" "Vase Relic" "Heavy Belt" "Irradiated Tablet" "Utility Belt"
-
 	SetFontSize 45
   SetTextColor 238 238 238
-  SetBorderColor 53 13 13 255
+  SetBorderColor 53 23 13 255
   SetBackgroundColor 216 64 64
   PlayAlertSound 6 200
   PlayEffect Red
@@ -23,11 +22,10 @@ Show
 Show 
   Rarity Unique
   BaseType == "Aberrant Sledge" "Ancient Leggings" "Array Buckler" "Brimmed Helm" "Chain Tiara" "Composite Bow" "Conqueror Plate" "Covert Hood" "Crucible Tower Shield" "Decorated Helm" "Diamond" "Fine Bracers" "Gargantuan Mana Flask" "Garment" "Glacial Fortress" "Grand Manchettes" "Grand Regalia" "Ironclad Vestments" "Morning Star" "Ornate Ringmail" "Primal Markings" "Ritual Tablet" "Silver Charm" "Siphoning Wand" "Spiral Wraps" "Stoic Sceptre" "Stone Charm" "Temple Tablet" "Thawing Charm" "Timeless Jewel" "Twisted Wand" "Two-Stone Ring" "Veridical Chain"
-
   SetFontSize 40
-  SetTextColor 238 238 238
+  SetTextColor 252 233 89 255
   SetBorderColor 53 13 13 255
-  SetBackgroundColor 216 64 64
+  SetBackgroundColor 211 111 45 255
   PlayAlertSound 6 200
   PlayEffect Red
   MinimapIcon 0 Red Star
@@ -45,7 +43,7 @@ Hide
   Class "Quarterstaves" "Two Hand Maces" "Bows" "Crossbows" "Staves" "Body Armours" "Wands" "Sceptres" "Helmets" "Gloves" "Boots" "Shields" "One Hand Mace" "Focus" "Bucklers" "Spears"
   PlayEffect Brown Temp
   MinimapIcon 1 Brown Star
-  SetFontSize 40
+  SetFontSize 35
   PlayAlertSound 3 0
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
@@ -57,7 +55,7 @@ Show
   SetBackgroundColor 53 13 13 255
   PlayEffect Brown Temp
   MinimapIcon 1 Brown Star
-  SetFontSize 40
+  SetFontSize 35
   PlayAlertSound 3 0
   CustomAlertSound "dzx_filter/soundeffect/type-01/unique.mp3" 100
 
